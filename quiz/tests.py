@@ -1,3 +1,5 @@
+import os
+
 from django.test import TestCase
 from django.urls import reverse
 
@@ -56,3 +58,25 @@ class QuestionAdminTests(TestCase):
     def test_single_answer_rejected(self):
         resp = self.client.post(self.url, self._payload([True, False, False, False], ["A", "", "", ""]))
         self.assertContains(resp, "kamida 2 ta javob")
+
+
+class SeedDataTests(TestCase):
+    def test_seed_is_idempotent_and_valid(self):
+        import tempfile
+
+        from django.core.management import call_command
+        from django.db.models import Count, Q
+
+        with tempfile.TemporaryDirectory() as media, self.settings(MEDIA_ROOT=media, DEBUG=True):
+            call_command("seed_data", stdout=open(os.devnull, "w"))
+            call_command("seed_data", stdout=open(os.devnull, "w"))
+            self.assertEqual(Topic.objects.count(), 6)
+            self.assertGreaterEqual(Question.objects.count(), 50)
+            counts = Question.objects.annotate(
+                n=Count("answers"), ok=Count("answers", filter=Q(answers__is_correct=True))
+            )
+            self.assertFalse(counts.exclude(n=4).exists())
+            self.assertFalse(counts.exclude(ok=1).exists())
+            self.assertGreaterEqual(Question.objects.exclude(image="").exclude(image=None).count(), 4)
+            self.assertEqual(User.objects.get(username="demo").exams.count(), 3)
+            self.assertTrue(User.objects.get(username="admin").is_staff)

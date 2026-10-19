@@ -8,25 +8,45 @@
       "questions": [
         {
           "text": "O'zbekiston Respublikasida transport vositalari yo'lning qaysi tomonida harakatlanadi?",
-          "answers": ["Chap tomonida", "O'ng tomonida", "Yo'lning o'rtasida", "Haydovchi xohlagan tomonida"],
+          "answers": [
+            "Chap tomonida",
+            "O'ng tomonida",
+            "Yo'lning o'rtasida",
+            "Haydovchi xohlagan tomonida"
+          ],
           "correct": 1,
           "explanation": "O'zbekistonda o'ng tomonlama harakat qabul qilingan: transport vositalari qatnov qismining o'ng tomonida harakatlanadi."
         },
         {
           "text": "Aholi punktlarida transport vositalarining ruxsat etilgan eng yuqori tezligi qancha (agar belgilar bilan boshqacha tartib o'rnatilmagan bo'lsa)?",
-          "answers": ["50 km/soat", "60 km/soat", "70 km/soat", "90 km/soat"],
+          "answers": [
+            "50 km/soat",
+            "60 km/soat",
+            "70 km/soat",
+            "90 km/soat"
+          ],
           "correct": 2,
           "explanation": "Aholi punktlarida umumiy tezlik chegarasi — 70 km/soat. Belgilar orqali bundan past chegara o'rnatilishi mumkin."
         },
         {
           "text": "Turar-joy dahalari va hovli hududlarida harakat tezligi qanchadan oshmasligi kerak?",
-          "answers": ["20 km/soat", "40 km/soat", "50 km/soat", "70 km/soat"],
+          "answers": [
+            "20 km/soat",
+            "40 km/soat",
+            "50 km/soat",
+            "70 km/soat"
+          ],
           "correct": 0,
           "explanation": "Turar-joy dahalari va hovlilarda piyodalar ko'p bo'ladi, shuning uchun tezlik 20 km/soatdan oshmasligi kerak va piyodalar ustunlikka ega."
         },
         {
           "text": "Transport vositasini boshqa transport vositasi bilan shatakka olib harakatlanganda tezlik qanchadan oshmasligi kerak?",
-          "answers": ["30 km/soat", "50 km/soat", "70 km/soat", "90 km/soat"],
+          "answers": [
+            "30 km/soat",
+            "50 km/soat",
+            "70 km/soat",
+            "90 km/soat"
+          ],
           "correct": 1,
           "explanation": "Shatakka olib harakatlanishda tezlik 50 km/soatdan oshmasligi kerak — tormozlash masofasi uzayadi va boshqarish qiyinlashadi."
         },
@@ -94,7 +114,7 @@
       "order": 2,
       "questions": [
         {
-          "text": "Rasmdagi belgi nimani bildiradi?",
+          "text": "Rasmdagi qizil hoshiyali belgi nimani bildiradi?",
           "image": "speed_70.png",
           "answers": [
             "Tavsiya etilgan tezlik 70 km/soat",
@@ -118,7 +138,7 @@
           "explanation": "\"To'xtamasdan harakatlanish taqiqlangan\" (STOP) belgisi — chorraha bo'sh bo'lsa ham to'liq to'xtash va kesishayotgan yo'ldagi transportga yo'l berish shart."
         },
         {
-          "text": "Rasmdagi belgi nimani bildiradi?",
+          "text": "Rasmdagi qizil doira ichida oq chiziqli belgi nimani bildiradi?",
           "image": "no_entry.png",
           "answers": [
             "Kirish taqiqlangan — barcha transport vositalarining shu yo'nalishda kirishi taqiqlanadi",
@@ -142,7 +162,7 @@
           "explanation": "Uchi pastga qaragan uchburchak — \"Yo'l bering\" belgisi. Haydovchi kesishayotgan yo'ldagilarga yo'l berishi kerak, to'xtash esa faqat zarurat bo'lganda."
         },
         {
-          "text": "Rasmdagi belgi nimani bildiradi?",
+          "text": "Rasmdagi ko'k fonli, qizil \"X\" chizilgan belgi nimani bildiradi?",
           "image": "no_stopping.png",
           "answers": [
             "To'xtab turish taqiqlangan, lekin to'xtash mumkin",
@@ -154,7 +174,7 @@
           "explanation": "Ko'k fondagi qizil hoshiyali doira va qizil \"X\" — \"To'xtash taqiqlangan\" belgisi: bu joyda to'xtash ham, to'xtab turish ham mumkin emas."
         },
         {
-          "text": "Rasmdagi belgi nimani bildiradi?",
+          "text": "Rasmdagi sariq romb shaklidagi belgi nimani bildiradi?",
           "image": "main_road.png",
           "answers": [
             "Yo'l ta'mirlanmoqda",
@@ -529,7 +549,12 @@
       "questions": [
         {
           "text": "O'zbekistonda tez tibbiy yordamni chaqirish uchun qaysi raqam teriladi?",
-          "answers": ["101", "102", "103", "104"],
+          "answers": [
+            "101",
+            "102",
+            "103",
+            "104"
+          ],
           "correct": 2,
           "explanation": "103 — tez tibbiy yordam, 102 — ichki ishlar (militsiya), 101 — yong'in xavfsizligi xizmati."
         },
