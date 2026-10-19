@@ -1,0 +1,26 @@
+{# item: ExamAnswer, n: 0 dan boshlangan indeks, reveal: to'g'ri javobni ko'rsatish (faqat mashqda javob berilganda) #}
+<section class="question-card card{% if n != start_index %} d-none{% endif %}" data-index="{{ n }}" data-question-id="{{ item.question_id }}"{% if item.selected_answer_id %} data-answered="1"{% endif %} aria-label="Savol {{ item.order }}">
+  <div class="card-body">
+    <div class="small text-muted mb-2">Savol {{ item.order }} / {{ total }}</div>
+    {% if item.question.image %}
+      <div class="text-center mb-3"><img src="{{ item.question.image.url }}" alt="Savol rasmi" class="img-fluid q-img" loading="lazy"></div>
+    {% endif %}
+    <p class="q-text">{{ item.question.text|linebreaksbr }}</p>
+    <div class="d-grid gap-2 answers">
+      {% for answer in item.question.answers.all %}
+        <button type="button" class="btn answer-btn{% if answer.pk == item.selected_answer_id %} selected{% endif %}{% if reveal and item.selected_answer_id %}{% if answer.is_correct %} correct{% elif answer.pk == item.selected_answer_id %} wrong{% endif %}{% endif %}" data-answer-id="{{ answer.pk }}"{% if reveal and item.selected_answer_id %} disabled{% endif %}>
+          <span class="answer-key">F{{ forloop.counter }}</span>
+          <span class="answer-text">{{ answer.text }}</span>
+        </button>
+      {% endfor %}
+    </div>
+    {% if reveal %}
+      <div class="explanation alert mt-3{% if not item.selected_answer_id %} d-none{% elif item.is_correct %} alert-success{% else %} alert-danger{% endif %}" role="status">
+        {% if item.selected_answer_id %}
+          <strong>{% if item.is_correct %}To'g'ri!{% else %}Xato.{% endif %}</strong>
+          {% if item.question.explanation %}<div class="mt-1">{{ item.question.explanation }}</div>{% endif %}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+</section>

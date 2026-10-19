@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Mashq: {{ exam.topic.name }} — Prava.uz{% endblock %}
+{% block content %}
+<div id="practice" class="quiz-wrap"
+     data-answer-url="{% url 'exam_answer' exam.pk %}"
+     data-total="{{ items|length }}"
+     data-answered="{{ answered_count }}"
+     data-correct="{{ correct_count }}"
+     data-start="{{ start_index }}">
+
+  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
+    <div>
+      <div class="small text-muted">Mashq</div>
+      <h1 class="h5 mb-0">{{ exam.topic.name }}</h1>
+    </div>
+    <div class="text-end">
+      <span class="badge text-bg-light fs-6"><span id="answered-count">{{ answered_count }}</span> / {{ items|length }}</span>
+      <span class="badge text-bg-success fs-6"><i class="bi bi-check-lg"></i> <span id="correct-count">{{ correct_count }}</span></span>
+    </div>
+  </div>
+  <div class="progress mb-3" style="height: 6px" aria-hidden="true">
+    <div id="practice-progress" class="progress-bar" style="width: 0%"></div>
+  </div>
+
+  <div id="ajax-alert" class="alert alert-warning d-none" role="alert"></div>
+
+  {% for item in items %}
+    {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=True %}
+  {% endfor %}
+
+  <div id="practice-summary" class="card d-none">
+    <div class="card-body text-center py-4">
+      <i class="bi bi-flag-fill text-brand fs-1"></i>
+      <h2 class="h4 mt-2">Mashq tugadi!</h2>
+      <p class="fs-5 mb-3">To'g'ri javoblar: <strong id="summary-score"></strong> / {{ items|length }}</p>
+      <button type="submit" form="finish-form" class="btn btn-primary btn-lg">Natijani ko'rish <i class="bi bi-arrow-right"></i></button>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-between gap-2 mt-3">
+    <button type="button" id="prev-btn" class="btn btn-outline-secondary">&lsaquo; Oldingi</button>
+    <button type="button" id="next-btn" class="btn btn-primary">Keyingi savol &rsaquo;</button>
+  </div>
+
+  <form id="finish-form" method="post" action="{% url 'exam_finish' exam.pk %}" class="text-center mt-4">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-link text-muted">Mashqni hozir yakunlash</button>
+  </form>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/practice.js' %}"></script>
+{% endblock %}

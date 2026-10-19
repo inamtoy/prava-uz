@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block title %}Natija — Prava.uz{% endblock %}
+{% block content %}
+<h1 class="h3">Natija</h1>
+<p class="fs-4">{{ exam.score }} / {{ exam.total_questions }} ({{ exam.percent }}%)</p>
+<a href="{% url 'topic_list' %}" class="btn btn-primary">Mavzular</a>
+{% endblock %}

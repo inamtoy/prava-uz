@@ -16,3 +16,29 @@ img { max-width: 100%; }
 .text-bad { color: var(--bad); }
 .navbar .btn-link.nav-link { text-decoration: none; }
 .card { border: 0; box-shadow: 0 1px 3px rgba(0, 0, 0, .08); }
+
+/* ---- Savol kartasi ---- */
+.quiz-wrap { max-width: 820px; margin: 0 auto; }
+.q-text { font-size: 1.125rem; font-weight: 500; }
+.q-img { max-height: 260px; border-radius: .5rem; }
+.answer-btn {
+  display: flex; align-items: center; gap: .75rem;
+  min-height: 52px; padding: .625rem .875rem;
+  text-align: left; font-size: 1rem; white-space: normal;
+  background: #fff; border: 2px solid #d0d7de; color: #1f2328;
+}
+.answer-btn:hover:not(:disabled) { border-color: var(--brand); background: #f0f6ff; }
+.answer-btn:focus-visible { outline: 3px solid rgba(31, 111, 235, .4); outline-offset: 2px; }
+.answer-key {
+  flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
+  min-width: 2.25rem; height: 2.25rem; border-radius: .375rem;
+  background: #eaeef2; font-weight: 700; font-size: .875rem;
+}
+.answer-text { flex: 1 1 auto; overflow-wrap: anywhere; }
+.answer-btn.selected { border-color: var(--brand); background: #e7f0ff; }
+.answer-btn.selected .answer-key { background: var(--brand); color: #fff; }
+.answer-btn.correct, .answer-btn.correct:disabled { border-color: var(--ok); background: #dafbe1; color: #1f2328; opacity: 1; }
+.answer-btn.correct .answer-key { background: var(--ok); color: #fff; }
+.answer-btn.wrong, .answer-btn.wrong:disabled { border-color: var(--bad); background: #ffebe9; color: #1f2328; opacity: 1; }
+.answer-btn.wrong .answer-key { background: var(--bad); color: #fff; }
+.answer-btn:disabled { opacity: .85; }
