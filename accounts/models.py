@@ -1,5 +1,11 @@
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, UserManager as BaseUserManager
 from django.db import models
+
+
+class UserManager(BaseUserManager):
+    def create_superuser(self, username, email=None, password=None, **extra_fields):
+        extra_fields.setdefault("role", User.ROLE_ADMIN)
+        return super().create_superuser(username, email, password, **extra_fields)
 
 
 class User(AbstractUser):
@@ -10,16 +16,18 @@ class User(AbstractUser):
     email = models.EmailField("email", unique=True)
     role = models.CharField("rol", max_length=20, choices=ROLE_CHOICES, default=ROLE_STUDENT)
 
+    objects = UserManager()
+
     class Meta:
         db_table = "foydalanuvchilar"
         verbose_name = "foydalanuvchi"
         verbose_name_plural = "foydalanuvchilar"
 
     def save(self, *args, **kwargs):
-        # Superuser har doim admin roliga ega; is_staff rol bilan sinxron.
-        if self.is_superuser:
-            self.role = self.ROLE_ADMIN
-        self.is_staff = self.role == self.ROLE_ADMIN
+        # Rol — yagona manba: admin roli admin panelga to'liq kirish huquqini beradi.
+        is_admin = self.role == self.ROLE_ADMIN
+        self.is_staff = is_admin
+        self.is_superuser = is_admin
         super().save(*args, **kwargs)
 
     @property
