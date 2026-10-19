@@ -236,3 +236,38 @@ class UserStatsTests(ServiceTestBase):
         progress = services.topic_progress(self.user)
         self.assertEqual(progress[self.topic_a.pk], 20)  # 3/15
         self.assertEqual(progress[self.topic_b.pk], 0)
+
+
+class ResultProfileViewTests(ServiceTestBase):
+    def setUp(self):
+        self.client.force_login(self.user)
+
+    def test_result_shows_mistake_analysis(self):
+        exam = services.start_exam(self.user)
+        self.answer_all(exam, 18)
+        services.finish_exam(exam)
+        resp = self.client.get(f"/natija/{exam.pk}/")
+        self.assertEqual(resp.status_code, 200)
+        self.assertEqual(len(resp.context["mistakes"]), 2)
+        for item in resp.context["mistakes"]:
+            self.assertTrue(item.correct_answer.is_correct)
+            self.assertContains(resp, item.question.text)
+
+    def test_result_query_count_is_constant(self):
+        exam = services.start_exam(self.user)
+        self.answer_all(exam, 5)
+        services.finish_exam(exam)
+        self.client.get(f"/natija/{exam.pk}/")  # sessiya/kesh isitish
+        with self.assertNumQueries(5):  # sessiya, user, exam, items, answers — savollar soniga bog'liq emas
+            self.client.get(f"/natija/{exam.pk}/")
+
+    def test_profile_empty_state(self):
+        resp = self.client.get("/accounts/profile/")
+        self.assertContains(resp, "Hali imtihon topshirmagansiz")
+
+    def test_profile_shows_only_own_exams(self):
+        mine = services.finish_exam(services.start_exam(self.user))
+        services.finish_exam(services.start_exam(self.other))
+        resp = self.client.get("/accounts/profile/")
+        self.assertEqual([e.pk for e in resp.context["recent_exams"]], [mine.pk])
+        self.assertEqual(resp.context["stats"]["total_exams"], 1)

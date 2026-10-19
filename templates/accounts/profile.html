@@ -2,5 +2,15 @@
 {% block title %}Profil — Prava.uz{% endblock %}
 {% block content %}
 <h1 class="h3">{{ user.get_full_name|default:user.username }}</h1>
-<p class="text-muted">{{ user.email }}</p>
+<p>Jami imtihonlar: {{ stats.total_exams }} · O'tganlar: {{ stats.passed_exams }} · O'rtacha: {{ stats.average_percent }}% · Eng yaxshi: {{ stats.best_percent }}%</p>
+{% for t in stats.topics %}<div>{{ t.topic.name }}: {{ t.percent }}%</div>{% endfor %}
+<h2 class="h5 mt-3">Kuchsiz mavzular</h2>
+{% for t in stats.weakest_topics %}<div>{{ t.topic.name }} — {{ t.percent }}%</div>{% endfor %}
+<h2 class="h5 mt-3">Oxirgi imtihonlar</h2>
+{% for e in recent_exams %}
+  <div><a href="{% url 'result' e.pk %}">{{ e.get_mode_display }} {{ e.score }}/{{ e.total_questions }}</a></div>
+{% empty %}
+  <p>Hali imtihon topshirmagansiz — <a href="{% url 'exam_start' %}">Boshlash</a></p>
+{% endfor %}
+{{ chart_data|json_script:"chart-data" }}
 {% endblock %}

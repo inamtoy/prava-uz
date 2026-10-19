@@ -16,7 +16,13 @@ from .models import Question, Topic
 
 
 def home(request):
-    return render(request, "quiz/home.html")
+    return render(request, "quiz/home.html", {
+        "question_count": Question.objects.filter(is_active=True).count(),
+        "topic_count": Topic.objects.count(),
+        "exam_question_count": settings.EXAM_QUESTION_COUNT,
+        "exam_minutes": settings.EXAM_DURATION_SECONDS // 60,
+        "exam_max_mistakes": settings.EXAM_MAX_MISTAKES,
+    })
 
 
 @login_required
@@ -25,9 +31,18 @@ def topic_list(request):
         question_count=Count("questions", filter=Q(questions__is_active=True))
     ).order_by("order", "name")
     progress = services.topic_progress(request.user)
+    topics = list(topics)
     for topic in topics:
         topic.progress = progress.get(topic.pk, 0)
-    return render(request, "quiz/topic_list.html", {"topics": topics})
+    total_questions = sum(t.question_count for t in topics)
+    solved = sum(round(t.progress * t.question_count / 100) for t in topics)
+    return render(request, "quiz/topic_list.html", {
+        "topics": topics,
+        "total_questions": total_questions,
+        "solved_questions": solved,
+        "overall_progress": round(solved * 100 / total_questions) if total_questions else 0,
+        "weakest_topics": services.user_stats(request.user)["weakest_topics"],
+    })
 
 
 @login_required

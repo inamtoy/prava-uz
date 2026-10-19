@@ -1,7 +1,20 @@
 {% extends "base.html" %}
 {% block title %}Natija — Prava.uz{% endblock %}
 {% block content %}
-<h1 class="h3">Natija</h1>
+<h1 class="h3">{% if exam.is_exam %}{% if exam.is_passed %}Imtihondan o'tdingiz{% else %}Imtihondan o'ta olmadingiz{% endif %}{% else %}Mashq natijasi{% endif %}</h1>
 <p class="fs-4">{{ exam.score }} / {{ exam.total_questions }} ({{ exam.percent }}%)</p>
-<a href="{% url 'topic_list' %}" class="btn btn-primary">Mavzular</a>
+<p>Xatolar: {{ wrong_count }}, javobsiz: {{ unanswered_count }}</p>
+{% for item in mistakes %}
+  <div class="card mb-2 p-3">
+    <p>{{ item.order }}. {{ item.question.text }}</p>
+    {% if item.question.image %}<img src="{{ item.question.image.url }}" alt="" class="img-fluid" style="max-height:150px">{% endif %}
+    <p class="text-bad">Siz tanlagan: {{ item.selected_answer.text|default:"Javob berilmagan" }}</p>
+    <p class="text-ok">To'g'ri javob: {{ item.correct_answer.text }}</p>
+    {% if item.question.explanation %}<p class="small">{{ item.question.explanation }}</p>{% endif %}
+  </div>
+{% empty %}
+  <p>Xato yo'q!</p>
+{% endfor %}
+<a href="{% url 'exam_start' %}" class="btn btn-primary">Yana imtihon</a>
+<a href="{% url 'profile' %}" class="btn btn-outline-primary">Profil</a>
 {% endblock %}
