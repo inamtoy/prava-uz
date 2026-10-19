@@ -1,0 +1,200 @@
+{% extends "admin/base.html" %}
+{% load i18n unfold %}
+
+{% block title %}Boshqaruv paneli | {{ site_title }}{% endblock %}
+
+{% block branding %}
+  {% include "unfold/helpers/site_branding.html" %}
+{% endblock %}
+
+{% block content %}
+{% with d=dash k=dash.kpi %}
+<div class="prava-dash">
+
+  {# ---- Sarlavha ---- #}
+  <header class="prava-dash__head">
+    <div>
+      <h1 class="prava-h1">{{ d.greeting }}, {{ d.name }} <span class="prava-chip prava-chip--live">Tizim holati: faol</span></h1>
+      <p class="prava-muted"><span class="material-symbols-outlined">calendar_today</span> {{ d.date }}</p>
+    </div>
+    <div class="prava-dash__actions">
+      <a class="prava-btn prava-btn--ghost" href="{{ d.links.exams }}"><span class="material-symbols-outlined">assignment</span> Imtihonlar</a>
+      <a class="prava-btn prava-btn--accent" href="{{ d.links.add_question }}"><span class="material-symbols-outlined">add_circle</span> Yangi savol</a>
+    </div>
+  </header>
+
+  {# ---- 4 KPI ---- #}
+  <section class="prava-kpis">
+    <a class="prava-kpi" href="{{ d.links.questions }}">
+      <div class="prava-kpi__top"><span class="prava-label">Jami savollar</span><span class="prava-kpi__icon material-symbols-outlined">quiz</span></div>
+      <div class="prava-kpi__value">{{ k.questions.total }}</div>
+      <div class="prava-kpi__foot">
+        <span class="prava-chip">{{ k.questions.active }} ta faol</span>
+        {% if k.questions.week %}<span class="prava-chip prava-chip--up">+{{ k.questions.week }} bu hafta</span>{% endif %}
+      </div>
+    </a>
+    <a class="prava-kpi" href="{% url 'admin:accounts_user_changelist' %}?role__exact=student">
+      <div class="prava-kpi__top"><span class="prava-label">Foydalanuvchilar</span><span class="prava-kpi__icon material-symbols-outlined">group</span></div>
+      <div class="prava-kpi__value">{{ k.users.students }}</div>
+      <div class="prava-kpi__foot">
+        <span class="prava-chip">Oʻquvchilar</span>
+        {% if k.users.week %}<span class="prava-chip prava-chip--accent">+{{ k.users.week }} bu hafta</span>{% endif %}
+      </div>
+    </a>
+    <a class="prava-kpi" href="{{ d.links.exams }}?mode__exact=exam">
+      <div class="prava-kpi__top"><span class="prava-label">Bugungi imtihonlar</span><span class="prava-kpi__icon material-symbols-outlined">event_available</span></div>
+      <div class="prava-kpi__value">{{ k.exams.today }}</div>
+      <div class="prava-kpi__foot"><span class="prava-chip">Kecha: {{ k.exams.yesterday }}</span></div>
+    </a>
+    <a class="prava-kpi" href="{{ d.links.exams }}?mode__exact=exam&natija=otdi">
+      <div class="prava-kpi__top"><span class="prava-label">Oʻrtacha oʻtish koʻrsatkichi</span><span class="prava-kpi__icon material-symbols-outlined">trending_up</span></div>
+      <div class="prava-kpi__value">{{ k.pass_rate }}%</div>
+      <div class="prava-kpi__foot">
+        <span class="prava-chip">{{ k.exams.passed }} / {{ k.exams.finished }} imtihon</span>
+        <span class="prava-muted">Meʼyor: {{ k.min_correct }}/20</span>
+      </div>
+    </a>
+  </section>
+
+  {# ---- Grafik + mavzular ---- #}
+  <section class="prava-grid prava-grid--chart">
+    <div class="prava-card">
+      <div class="prava-card__head">
+        <div>
+          <h2 class="prava-h2">Oxirgi 7 kunlik imtihonlar dinamikasi</h2>
+          <p class="prava-muted">Topshirilgan imtihonlar va muvaffaqiyatli oʻtishlar</p>
+        </div>
+        <div class="prava-legend">
+          <span><i class="prava-dot prava-dot--ink"></i> Topshirildi ({{ d.chart.total }})</span>
+          <span><i class="prava-dot prava-dot--accent"></i> Oʻtdi ({{ d.chart.passed }})</span>
+        </div>
+      </div>
+      {% if d.chart.total %}
+        {% component "unfold/components/chart/line.html" with data=d.chart.json height=260 %}{% endcomponent %}
+      {% else %}
+        <div class="prava-empty"><span class="material-symbols-outlined">monitoring</span>Oxirgi 7 kunda yakunlangan imtihon yoʻq.</div>
+      {% endif %}
+      <div class="prava-card__foot">
+        <span><span class="material-symbols-outlined">verified</span> Oʻrtacha kunlik topshirish: <strong>{{ d.chart.daily_avg }} ta</strong></span>
+        <a href="{{ d.links.exams }}">Barcha imtihonlar →</a>
+      </div>
+    </div>
+
+    <div class="prava-card">
+      <div class="prava-card__head">
+        <div>
+          <h2 class="prava-h2">Mavzular samaradorligi</h2>
+          <p class="prava-muted">Toʻgʻri javob berish foizi boʻyicha</p>
+        </div>
+      </div>
+      <ul class="prava-bars">
+        {% for t in d.topics %}
+          <li class="prava-bars__item prava-tone--{{ t.tone }}">
+            <div class="prava-bars__row">
+              <span>{{ t.topic.name }}</span>
+              <strong>{% if t.total %}{{ t.percent }}%{% else %}—{% endif %}</strong>
+            </div>
+            <div class="prava-bar"><i style="width: {{ t.percent }}%"></i></div>
+            <span class="prava-muted">{{ t.total }} ta javob · {{ t.active }} ta faol savol</span>
+          </li>
+        {% empty %}
+          <li class="prava-empty">Mavzular yoʻq.</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  {# ---- Kontent holati ---- #}
+  <section class="prava-card">
+    <div class="prava-card__head">
+      <div class="prava-card__title-icon">
+        <span class="prava-icon-tile material-symbols-outlined">shield</span>
+        <div>
+          <h2 class="prava-h2">Kontent holati va tavsiyalar</h2>
+          <p class="prava-muted">{% if d.health.issues %}{{ d.health.issues }} ta masala eʼtibor talab qiladi{% else %}Muammo topilmadi{% endif %}</p>
+        </div>
+      </div>
+    </div>
+    <div class="prava-alerts">
+      {% for a in d.health.alerts %}
+        <div class="prava-alert prava-alert--{{ a.tone }}">
+          <div class="prava-alert__title"><span class="material-symbols-outlined">{{ a.icon }}</span> {{ a.title }}</div>
+          <p>{{ a.text }}</p>
+          {% if a.link %}<a href="{{ a.link }}">{{ a.link_text }} →</a>{% else %}<span class="prava-label">Muvaffaqiyatli</span>{% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  {# ---- Eng ko'p xato + oxirgi imtihonlar ---- #}
+  <section class="prava-grid prava-grid--bottom">
+    <div class="prava-card">
+      <div class="prava-card__head">
+        <div>
+          <h2 class="prava-h2">Eng koʻp xato qilinadigan savollar</h2>
+          <p class="prava-muted">Oʻquvchilar eng koʻp adashayotgan 5 ta savol</p>
+        </div>
+        <span class="prava-chip prava-chip--danger">Diqqat markazida</span>
+      </div>
+      {% if d.hardest %}
+        <div class="prava-table-wrap">
+          <table class="prava-table">
+            <thead><tr><th>Savol mazmuni</th><th>Mavzu</th><th>Xato %</th><th class="prava-right">Amal</th></tr></thead>
+            <tbody>
+              {% for q in d.hardest %}
+                <tr>
+                  <td class="prava-table__text"><a href="{{ q.url }}">{{ q.text|truncatechars:70 }}</a></td>
+                  <td><span class="prava-chip">{{ q.topic }}</span></td>
+                  <td>
+                    <div class="prava-rate prava-rate--{% if q.rate >= 50 %}bad{% else %}mid{% endif %}">
+                      <strong>{{ q.rate }}%</strong><span class="prava-muted">{{ q.wrong }}/{{ q.total }}</span>
+                      <div class="prava-bar"><i style="width: {{ q.rate }}%"></i></div>
+                    </div>
+                  </td>
+                  <td class="prava-right"><a class="prava-icon-btn" href="{{ q.url }}" title="Tahrirlash" aria-label="Tahrirlash"><span class="material-symbols-outlined">edit_note</span></a></td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      {% else %}
+        <div class="prava-empty"><span class="material-symbols-outlined">task_alt</span>Hali xato javoblar yoʻq.</div>
+      {% endif %}
+      <div class="prava-card__foot">
+        <span class="prava-muted">Jami {{ k.questions.active }} ta faol savol</span>
+        <a href="{{ d.links.questions }}">Barcha {{ k.questions.total }} ta savolni koʻrish →</a>
+      </div>
+    </div>
+
+    <div class="prava-card">
+      <div class="prava-card__head">
+        <div>
+          <h2 class="prava-h2">Oxirgi imtihonlar</h2>
+          <p class="prava-muted">Oʻquvchilar topshirgan oxirgi natijalar</p>
+        </div>
+      </div>
+      <ul class="prava-feed">
+        {% for e in d.recent %}
+          <li>
+            <a href="{% url 'admin:results_exam_change' e.pk %}">
+              <span class="prava-avatar">{{ e.user.first_name|default:e.user.username|slice:":1"|upper }}</span>
+              <span class="prava-feed__who">
+                <strong>{{ e.user.get_full_name|default:e.user.username }}</strong>
+                <span class="prava-muted">{% if e.mode == "practice" %}Mashq · {{ e.topic.name }}{% else %}Imtihon{% endif %} · {{ e.finished_at|timesince }} oldin</span>
+              </span>
+              <span class="prava-feed__score">{{ e.score }}/{{ e.total_questions }}</span>
+              {% if e.is_passed is None %}<span class="prava-chip">Mashq</span>{% elif e.is_passed %}<span class="prava-chip prava-chip--ok">Oʻtdi</span>{% else %}<span class="prava-chip prava-chip--danger">Oʻtmadi</span>{% endif %}
+            </a>
+          </li>
+        {% empty %}
+          <li class="prava-empty">Hali yakunlangan imtihon yoʻq.</li>
+        {% endfor %}
+      </ul>
+      <div class="prava-card__foot prava-card__foot--center">
+        <a href="{{ d.links.exams }}">Barcha natijalar jurnaliga oʻtish →</a>
+      </div>
+    </div>
+  </section>
+</div>
+{% endwith %}
+{% endblock %}

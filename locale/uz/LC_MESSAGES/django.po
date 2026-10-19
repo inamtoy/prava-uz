@@ -1,0 +1,307 @@
+# Prava.uz — django-unfold interfeysi uchun o'zbekcha (lotin) tarjimalar.
+# Unfold o'zbekcha katalog bilan kelmaydi; Django'ning uz katalogida yo'q satrlar shu yerda.
+# Kompilyatsiya: python tools/compile_messages.py  (yoki gettext bo'lsa: python manage.py compilemessages)
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Language: uz\n"
+
+msgid "Action"
+msgstr "Amal"
+
+msgid "Add new item"
+msgstr "Yangi qoʻshish"
+
+msgid "Add row"
+msgstr "Qator qoʻshish"
+
+msgid "After you've created a user, you’ll be able to edit more user options."
+msgstr "Foydalanuvchi yaratilgach, qoʻshimcha sozlamalarni tahrirlashingiz mumkin."
+
+msgid "All applications"
+msgstr "Barcha boʻlimlar"
+
+msgid "Apply Filters"
+msgstr "Filtrlarni qoʻllash"
+
+msgid "Cancel"
+msgstr "Bekor qilish"
+
+msgid "Change History"
+msgstr "Oʻzgarishlar tarixi"
+
+msgid "Changes"
+msgstr "Oʻzgarishlar"
+
+msgid "Choose file to upload"
+msgstr "Yuklash uchun fayl tanlang"
+
+msgid "Clear all filters"
+msgstr "Barcha filtrlarni tozalash"
+
+msgid "Clear selection"
+msgstr "Tanlovni bekor qilish"
+
+msgid "Click here to select the objects across all pages"
+msgstr "Barcha sahifalardagi yozuvlarni tanlash uchun bosing"
+
+msgid "Close"
+msgstr "Yopish"
+
+msgid "Collapse"
+msgstr "Yigʻish"
+
+msgid "Current file"
+msgstr "Joriy fayl"
+
+msgid "Dark"
+msgstr "Qorongʻi"
+
+msgid "Date"
+msgstr "Sana"
+
+msgid "Date from"
+msgstr "Sanadan"
+
+msgid "Date to"
+msgstr "Sanagacha"
+
+msgid "Date/time"
+msgstr "Sana/vaqt"
+
+msgid "Edit"
+msgstr "Tahrirlash"
+
+msgid "Expand row"
+msgstr "Qatorni ochish"
+
+msgid "False"
+msgstr "Yoʻq"
+
+msgid "Filter navigation items"
+msgstr "Menyudan qidirish"
+
+msgid "Filters"
+msgstr "Filtrlar"
+
+msgid "Forgotten your password or username?"
+msgstr "Parol yoki loginni unutdingizmi?"
+
+msgid "From"
+msgstr "Dan"
+
+msgid "General"
+msgstr "Umumiy"
+
+msgid "Go back"
+msgstr "Orqaga"
+
+msgid "Group"
+msgstr "Guruh"
+
+msgid "Group permissions"
+msgstr "Guruh ruxsatlari"
+
+msgid "Hide counts"
+msgstr "Sonlarni yashirish"
+
+msgid "History"
+msgstr "Tarix"
+
+msgid "Home"
+msgstr "Bosh sahifa"
+
+msgid "Image preview"
+msgstr "Rasm koʻrinishi"
+
+msgid "Items must be selected in order to perform actions on them. No items have been changed."
+msgstr "Amal bajarish uchun avval yozuvlarni tanlang. Hech narsa oʻzgarmadi."
+
+msgid "Light"
+msgstr "Yorugʻ"
+
+msgid "Loading more results..."
+msgstr "Yana natijalar yuklanmoqda..."
+
+msgid "Log in"
+msgstr "Kirish"
+
+msgid "Log in again"
+msgstr "Qayta kirish"
+
+msgid "Manage group"
+msgstr "Guruhni boshqarish"
+
+msgid "Manage user"
+msgstr "Foydalanuvchini boshqarish"
+
+msgid "More actions"
+msgstr "Boshqa amallar"
+
+msgid "Name"
+msgstr "Nomi"
+
+msgid "New"
+msgstr "Yangi"
+
+msgid "Next"
+msgstr "Keyingi"
+
+msgid "No data"
+msgstr "Maʼlumot yoʻq"
+
+msgid "No recent searches"
+msgstr "Soʻnggi qidiruvlar yoʻq"
+
+msgid "No results found"
+msgstr "Hech narsa topilmadi"
+
+msgid "No results matching your query"
+msgstr "Soʻrovingiz boʻyicha natija yoʻq"
+
+msgid "No, take me back"
+msgstr "Yoʻq, orqaga qaytish"
+
+msgid "Not enough data."
+msgstr "Maʼlumot yetarli emas."
+
+msgid "Object"
+msgstr "Obyekt"
+
+msgid "Object permissions"
+msgstr "Obyekt ruxsatlari"
+
+msgid "Objects"
+msgstr "Obyektlar"
+
+msgid "Please enter your old password, for security’s sake, and then enter your new password twice so we can verify you typed it in correctly."
+msgstr "Xavfsizlik uchun eski parolingizni, soʻng yangi parolni ikki marta kiriting."
+
+msgid "Previous"
+msgstr "Oldingi"
+
+msgid "Recent searches"
+msgstr "Soʻnggi qidiruvlar"
+
+msgid "Record picture"
+msgstr "Rasm"
+
+msgid "Reset filters"
+msgstr "Filtrlarni tozalash"
+
+msgid "Reset to default"
+msgstr "Standart holatga qaytarish"
+
+msgid "Return to site"
+msgstr "Saytga qaytish"
+
+msgid "Row"
+msgstr "Qator"
+
+msgid "Run"
+msgstr "Bajarish"
+
+msgid "Save and add another"
+msgstr "Saqlash va yana qoʻshish"
+
+msgid "Save and continue editing"
+msgstr "Saqlash va tahrirlashni davom ettirish"
+
+msgid "Save and view"
+msgstr "Saqlash va koʻrish"
+
+msgid "Save as new"
+msgstr "Yangi sifatida saqlash"
+
+msgid "Search apps and models..."
+msgstr "Savol, mavzu yoki foydalanuvchini qidiring..."
+
+msgid "Select action"
+msgstr "Amalni tanlang"
+
+msgid "Select action to run"
+msgstr "Bajariladigan amalni tanlang"
+
+msgid "Select all objects on this page for an action"
+msgstr "Shu sahifadagi barcha yozuvlarni tanlash"
+
+msgid "Select all rows"
+msgstr "Barcha qatorlarni tanlash"
+
+msgid "Select record"
+msgstr "Yozuvni tanlash"
+
+msgid "Select value"
+msgstr "Qiymatni tanlang"
+
+msgid "Show all"
+msgstr "Hammasini koʻrsatish"
+
+msgid "Show counts"
+msgstr "Sonlarni koʻrsatish"
+
+msgid "Submit"
+msgstr "Yuborish"
+
+msgid "System"
+msgstr "Tizim"
+
+msgid "Thanks for spending some quality time with the web site today."
+msgstr "Bugun sayt bilan ishlaganingiz uchun rahmat."
+
+msgid "This item will be deleted."
+msgstr "Bu yozuv oʻchiriladi."
+
+msgid "This object doesn't have a change history."
+msgstr "Bu yozuvning oʻzgarishlar tarixi yoʻq."
+
+msgid "This object doesn’t have a change history. It probably wasn’t added via this admin site."
+msgstr "Bu yozuvning oʻzgarishlar tarixi yoʻq. Ehtimol, u boshqaruv paneli orqali qoʻshilmagan."
+
+msgid "This page yielded into no results. Create a new item or reset your filters."
+msgstr "Bu sahifada natija yoʻq. Yangi yozuv qoʻshing yoki filtrlarni tozalang."
+
+msgid "To"
+msgstr "Gacha"
+
+msgid "Toggle password visibility"
+msgstr "Parolni koʻrsatish/yashirish"
+
+msgid "Toggle sorting"
+msgstr "Saralashni almashtirish"
+
+msgid "True"
+msgstr "Ha"
+
+msgid "Type to search"
+msgstr "Qidirish uchun yozing"
+
+msgid "Update"
+msgstr "Yangilash"
+
+msgid "User"
+msgstr "Foydalanuvchi"
+
+msgid "User permissions"
+msgstr "Foydalanuvchi ruxsatlari"
+
+msgid "Value"
+msgstr "Qiymat"
+
+msgid "Yes, I’m sure"
+msgstr "Ha, ishonchim komil"
+
+msgid "You don’t have permission to view or edit anything."
+msgstr "Sizda hech narsani koʻrish yoki tahrirlash huquqi yoʻq."
+
+msgid "You have been successfully logged out from the administration"
+msgstr "Boshqaruv panelidan muvaffaqiyatli chiqdingiz"
+
+msgid "Your password was changed."
+msgstr "Parolingiz oʻzgartirildi."
+
+msgid "Site administration"
+msgstr "Boshqaruv paneli"
+
+msgid "Clear"
+msgstr "Oʻchirish"

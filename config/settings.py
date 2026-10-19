@@ -4,6 +4,8 @@ import sys
 from pathlib import Path
 
 from decouple import Csv, config
+from django.templatetags.static import static
+from django.urls import reverse_lazy
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -12,6 +14,9 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = config("ALLOWED_HOSTS", default="127.0.0.1,localhost", cast=Csv())
 
 INSTALLED_APPS = [
+    # unfold django.contrib.admin dan OLDIN turishi shart (admin.site ni almashtiradi)
+    "unfold",
+    "unfold.contrib.filters",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -90,6 +95,8 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LANGUAGE_CODE = "uz"
+# unfold o'zbekcha katalogsiz keladi — tarjimalar locale/uz/ da (tools/compile_messages.py)
+LOCALE_PATHS = [BASE_DIR / "locale"]
 TIME_ZONE = "Asia/Tashkent"
 USE_I18N = True
 USE_TZ = True
@@ -122,3 +129,73 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
     CSRF_TRUSTED_ORIGINS = config("CSRF_TRUSTED_ORIGINS", default="", cast=Csv())
+
+
+# ---------------------------------------------------------------------------
+# Admin panel (django-unfold) — dizayn manbasi: design/admin/ (Stitch)
+# ---------------------------------------------------------------------------
+UNFOLD = {
+    "SITE_TITLE": "Prava.uz boshqaruv paneli",
+    "SITE_HEADER": "Prava.uz",
+    "SITE_SUBHEADER": "Boshqaruv paneli",
+    "SITE_URL": "/",
+    "SITE_ICON": lambda request: static("img/logo.svg"),
+    "SITE_SYMBOL": "traffic",
+    "SITE_FAVICONS": [{"rel": "icon", "type": "image/svg+xml", "href": lambda request: static("img/logo.svg")}],
+    "SHOW_HISTORY": True,
+    "SHOW_VIEW_ON_SITE": False,
+    "DASHBOARD_CALLBACK": "results.dashboard.dashboard_callback",
+    "STYLES": [lambda request: static("css/admin.css")],
+    "BORDER_RADIUS": "10px",
+    "COLORS": {
+        # Saytdagi tokenlar: --ink-900 #0B1B33 ... --bg #F4F6FA
+        "base": {
+            "50": "#F4F6FA", "100": "#EEF1F6", "200": "#E6EAF0", "300": "#CBD5E1",
+            "400": "#A9B4C6", "500": "#7D8BA3", "600": "#51627E", "700": "#3A4A66",
+            "800": "#1E3355", "900": "#132541", "950": "#0B1B33",
+        },
+        # --primary #2457F5 (600)
+        "primary": {
+            "50": "#EEF2FF", "100": "#E0E7FF", "200": "#C7D3FE", "300": "#A3B6FC",
+            "400": "#6F8DF9", "500": "#4570F7", "600": "#2457F5", "700": "#1B45D1",
+            "800": "#1A3AA8", "900": "#1B3584", "950": "#142250",
+        },
+    },
+    "SIDEBAR": {
+        "show_search": True,
+        "show_all_applications": False,
+        "navigation": [
+            {
+                "title": "Asosiy",
+                "items": [
+                    {"title": "Boshqaruv paneli", "icon": "dashboard", "link": reverse_lazy("admin:index")},
+                ],
+            },
+            {
+                "title": "Kontent",
+                "items": [
+                    {"title": "Mavzular", "icon": "menu_book", "link": reverse_lazy("admin:quiz_topic_changelist")},
+                    {"title": "Savollar", "icon": "quiz", "link": reverse_lazy("admin:quiz_question_changelist")},
+                ],
+            },
+            {
+                "title": "Natijalar",
+                "items": [
+                    {"title": "Imtihonlar", "icon": "assignment", "link": reverse_lazy("admin:results_exam_changelist")},
+                ],
+            },
+            {
+                "title": "Foydalanuvchilar",
+                "items": [
+                    {"title": "Foydalanuvchilar", "icon": "group", "link": reverse_lazy("admin:accounts_user_changelist")},
+                ],
+            },
+            {
+                "title": "Sayt",
+                "items": [
+                    {"title": "Saytni ochish", "icon": "open_in_new", "link": "/", "active": False},
+                ],
+            },
+        ],
+    },
+}

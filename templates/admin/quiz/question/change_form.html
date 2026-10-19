@@ -1,0 +1,32 @@
+{% extends "admin/change_form.html" %}
+{# Stitch "Savolni tahrirlash": chapda matn + javoblar + izoh, o'ngda nashr, mavzu, rasm, statistika #}
+
+{% block field_sets %}
+  <div class="prava-qform">
+    <div class="prava-qform__main">
+      {% for fieldset in adminform %}
+        {% if "prava-side" not in fieldset.classes %}
+          {% include "admin/includes/fieldset.html" %}
+        {% endif %}
+        {% if forloop.first %}
+          {% for inline_admin_formset in inline_admin_formsets %}
+            <div class="prava-qform__answers">
+              <p class="prava-qform__hint">Aynan bitta toʻgʻri javobni belgilang. Kamida 2 ta, koʻpi bilan 4 ta variant.</p>
+              {% include inline_admin_formset.opts.template %}
+            </div>
+          {% endfor %}
+        {% endif %}
+      {% endfor %}
+    </div>
+    <aside class="prava-qform__side">
+      {% for fieldset in adminform %}
+        {% if "prava-side" in fieldset.classes %}
+          {% include "admin/includes/fieldset.html" %}
+        {% endif %}
+      {% endfor %}
+    </aside>
+  </div>
+{% endblock %}
+
+{# Javoblar inline yuqorida, chap ustun ichida chiqarildi #}
+{% block inline_field_sets %}{% endblock %}

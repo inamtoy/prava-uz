@@ -19,3 +19,22 @@
 - Texnik sabablar: `psycopg[binary]` Windows'da kompilyatsiyasiz o'rnatiladi (`mysqlclient` C kompilyator/wheel muammosi yo'q); lokal kompyuterda PostgreSQL 18 allaqachon o'rnatilgan; `select_for_update()` (results/services.py) Postgres'da haqiqiy qator qulfini beradi (SQLite'da e'tiborsiz qoladi); DDL tranzaksiyali — migratsiya yarim yo'lda buzilsa orqaga qaytadi; standart rejimda qat'iy (MySQL'dagi `STRICT_TRANS_TABLES` sozlamasi kerak emas).
 - `manage.py test` sukut bo'yicha SQLite'da (tezlik, CLAUDE.md §12). Postgres'da sinash: `TEST_DB_ENGINE=postgres python manage.py test` (`prava` userda `CREATEDB` bo'lishi kerak).
 - Ko'chirish: `dumpdata --natural-foreign --natural-primary ...` → `backup.json` (repoga kirmaydi), Postgres'da `migrate` + `loaddata` + `sqlsequencereset`.
+
+## Admin panel: django-unfold + Stitch (design/admin/)
+- `unfold`, `unfold.contrib.filters` — `django.contrib.admin` dan oldin. Sozlamalar: `settings.UNFOLD` (ranglar saytdagi tokenlardan: primary #2457F5, base #0B1B33…#F4F6FA), stillar `static/css/admin.css` (Manrope sarlavhalar, "prava-" klasslari — unfold Tailwind'i oldindan kompilyatsiya qilingan, yangi Tailwind klasslari ishlamaydi).
+- Dashboard: `results/dashboard.py` (DASHBOARD_CALLBACK) + `templates/admin/index.html`. Har blok — bitta aggregatsiya so'rovi; test: `AdminPagesTests` (ma'lumot ko'payganda so'rovlar soni o'zgarmaydi).
+- Savol formasi 2 ustunli: `templates/admin/quiz/question/change_form.html` ("prava-side" klassli fieldset'lar o'ngga, javoblar inline chap ustunga).
+- Unfold o'zbekcha tarjimasiz keladi: `locale/uz/LC_MESSAGES/django.po` (+ `.mo`). Bu muhitda GNU gettext yo'q — `python tools/compile_messages.py` bilan kompilyatsiya qilinadi.
+- `role=admin` → `is_staff` va `is_superuser` (to'liq huquq); admin formada bu ikki maydon faqat o'qish uchun.
+
+### Unfold'da qilib bo'lmagan / soddalashtirilgan joylar (Stitch'ga nisbatan)
+1. Tepadagi global qidiruv (savol/mavzu/foydalanuvchi bo'yicha) — unfold'da yon menyu qidiruvi faqat menyu bandlarini filtrlaydi; ro'yxatlarda har model o'z qidiruviga ega.
+2. Ro'yxat ustidagi tezkor filtr "pill"lari (Hammasi/Faol/Nofaol, Faqat rasmli, Izohsiz) — unfold'da filtrlar "Filtrlar" yon panelida (mavzu dropdown, faol, rasm, izoh).
+3. Ro'yxatda qator ichidagi faol/nofaol tugmachasi (toggle) — o'rniga holat belgisi va bulk action'lar (Faollashtirish / O'chirib qo'yish).
+4. Javob variantlarini sudrab tartiblash, A–D harflari va "to'g'ri javob" radio tugmasi — oddiy tabular inline (matn + "To'g'ri mi" switch); qoida formset validatsiyasida (aynan 1 to'g'ri, 2–4 javob).
+5. Savol formasidagi "O'quvchi ko'rinishi (live preview)", "Qiyinlik darajasi", "Savol bali", "Vaqt chegarasi", "Modda/YHQ havolasi", matn muharriri (bold/italic) — modelda bunday maydonlar yo'q.
+6. Import (CSV) / Eksport tugmalari, dashboard'dagi "Oxirgi 7 kun" davr tanlagichi va "Eksport" — qilinmadi (django-import-export kerak bo'lardi; davr 7 kunga qat'iy).
+7. Bildirishnomalar (qo'ng'iroqcha), "Adminlar", "Rasmlar", "Statistika" alohida bo'limlari — sahifalar yo'q (statistika = dashboard; adminlar = Foydalanuvchilar, rol filtri).
+8. Dashboard KPI'laridagi o'sish foizlari (+14% va h.k.) — o'rniga real "bu hafta +N" va "kecha: N" qiymatlari.
+9. Bo'sh holat (empty state) — unfold'ning standart "natija yo'q" bloki.
+10. "O'chirish savol" so'z tartibi — Django'ning o'zbekcha katalogidan ("O'chirish %(verbose_name)s").

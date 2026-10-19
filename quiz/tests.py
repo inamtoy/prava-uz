@@ -309,3 +309,79 @@ class QueryCountTests(TestCase):
         large = self._counts(exam, practice, open_exam)
         self.assertEqual(small, large)
         self.assertTrue(all(n <= 10 for n in large.values()), large)
+
+
+class AdminPagesTests(TestCase):
+    """Admin (unfold): sahifalar ochiladi, so'rovlar soni ma'lumotga bog'liq emas."""
+
+    def setUp(self):
+        self.admin = User.objects.create_user("boss", "boss@example.com", "parol12345", role="admin")
+        self.client.force_login(self.admin)
+
+    def _fill(self, n_topics, per_topic):
+        from results import services
+        from results.tests import make_questions
+
+        start = Topic.objects.count()
+        student = User.objects.create_user(f"s{start}", f"s{start}@example.com", "Kuchli-parol-2026")
+        for i in range(start, start + n_topics):
+            topic = Topic.objects.create(name=f"Mavzu {i}", slug=f"mavzu-{i}", order=i)
+            make_questions(topic, per_topic, start=i * 100)
+        exam = services.start_exam(student)
+        for item in exam.items.select_related("question"):
+            services.save_answer(exam, item.question_id, item.question.answers.last().pk)
+        return services.finish_exam(exam)
+
+    def _count(self, url):
+        from django.db import connection
+        from django.test.utils import CaptureQueriesContext
+
+        with CaptureQueriesContext(connection) as ctx:
+            resp = self.client.get(url)
+        self.assertEqual(resp.status_code, 200, url)
+        return len(ctx)
+
+    def test_dashboard_shows_real_data(self):
+        self._fill(2, 12)
+        resp = self.client.get(reverse("admin:index"))
+        dash = resp.context["dash"]
+        self.assertEqual(dash["kpi"]["questions"]["total"], 24)
+        self.assertEqual(dash["kpi"]["exams"]["finished"], 1)
+        self.assertEqual(dash["chart"]["total"], 1)
+        self.assertEqual(len(dash["hardest"]), 5)
+        self.assertContains(resp, "Kontent holati")
+
+    def test_query_counts_do_not_grow(self):
+        exam = self._fill(2, 12)
+        urls = lambda e: [
+            reverse("admin:index"),
+            reverse("admin:quiz_question_changelist"),
+            reverse("admin:quiz_question_changelist") + "?izoh=yoq",
+            reverse("admin:results_exam_changelist"),
+            reverse("admin:results_exam_change", args=[e.pk]),
+            reverse("admin:accounts_user_changelist"),
+            reverse("admin:quiz_topic_changelist"),
+        ]
+        [self._count(u) for u in urls(exam)]  # keshlarni isitish (ContentType va h.k.)
+        small = [self._count(u) for u in urls(exam)]
+        exam = self._fill(4, 15)
+        large = [self._count(u) for u in urls(exam)]
+        self.assertEqual(small, large)
+
+    def test_question_change_form_with_stats(self):
+        exam = self._fill(1, 20)
+        question = exam.items.first().question
+        resp = self.client.get(reverse("admin:quiz_question_change", args=[question.pk]))
+        self.assertContains(resp, "Savol statistikasi")
+        self.assertContains(resp, "1 marta")
+
+    def test_bulk_deactivate(self):
+        self._fill(1, 3)
+        ids = list(Question.objects.values_list("pk", flat=True))
+        self.client.post(reverse("admin:quiz_question_changelist"), {"action": "deactivate", "_selected_action": ids})
+        self.assertFalse(Question.objects.filter(is_active=True).exists())
+
+    def test_exam_admin_is_read_only(self):
+        exam = self._fill(1, 3)
+        resp = self.client.post(reverse("admin:results_exam_delete", args=[exam.pk]), {"post": "yes"})
+        self.assertEqual(resp.status_code, 403)
