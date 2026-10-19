@@ -129,6 +129,12 @@ if not DEBUG:
     SECURE_HSTS_PRELOAD = True
     SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
     CSRF_TRUSTED_ORIGINS = config("CSRF_TRUSTED_ORIGINS", default="", cast=Csv())
+    if not RUNNING_TESTS:
+        # Fayl nomida hash (main.3f2a1c.css) — nginx uzoq muddat keshlay oladi; collectstatic shart
+        STORAGES = {
+            "default": {"BACKEND": "django.core.files.storage.FileSystemStorage"},
+            "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.ManifestStaticFilesStorage"},
+        }
 
 
 # ---------------------------------------------------------------------------

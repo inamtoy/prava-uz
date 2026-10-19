@@ -57,3 +57,9 @@
    - dashboard davr tanlagichi (7/30 kun) va eksport;
    - qiyinlik darajasi — `Question.difficulty` maydoni yoki xato % dan avtomatik.
 4. **Boshqa:** `deploy/` fayllari (nginx, gunicorn.service, `backup.sh` — kunlik `pg_dump` + cron), `ExamAnswer.question` uchun `PROTECT` (savol o'chirilsa tarix saqlansin), Stitch'dagi "Rasmlar" bo'limi (yuklangan belgilar kutubxonasi).
+
+## Deploy (10-bosqich)
+- `deploy/`: `nginx.conf` (unix socket, `/static/` 1 yil immutable — `ManifestStaticFilesStorage` hash beradi, `/media/` da skriptlar taqiqlangan), `gunicorn.service` (Type=notify, `RuntimeDirectory=prava_uz`, socket guruhi www-data, `ProtectSystem=strict` + yozish faqat `media/`), `backup.sh` (`pg_dump -Fc` + `pg_restore --list` tekshiruvi + media tar, 14 kun), `prava_uz.cron`, `env.production.example`.
+- `DEBUG=False` da `STORAGES.staticfiles = ManifestStaticFilesStorage` (testlarda emas). Tekshirilgan: collectstatic (unfold bilan) va barcha sahifalar hashli statik bilan 200.
+- `seed_data` serverda: demo foydalanuvchi yaratilmaydi (`--demo` bilan majburlash mumkin), `--reset` taqiqlangan (imtihon tarixi o'chib ketmasin).
+- Bu Windows muhitda Linux/Docker yo'q: `nginx -t` va `systemd-analyze verify` ishga tushirilmagan — birinchi o'rnatishda serverda bajarilsin. `backup.sh` Git Bash'da lokal PostgreSQL'ga qarshi to'liq sinalgan (dump → retention → tiklash, qatorlar soni bir xil).

@@ -82,6 +82,24 @@ class SeedDataTests(TestCase):
             self.assertTrue(User.objects.get(username="admin").is_staff)
 
 
+class SeedDataProductionTests(TestCase):
+    def test_production_skips_demo_and_refuses_reset(self):
+        import tempfile
+
+        from django.core.management import call_command
+        from django.core.management.base import CommandError
+
+        with tempfile.TemporaryDirectory() as media, self.settings(MEDIA_ROOT=media, DEBUG=False):
+            call_command("seed_data", stdout=io.StringIO())
+            self.assertFalse(User.objects.filter(username__in=["admin", "demo"]).exists())
+            self.assertGreaterEqual(Question.objects.count(), 50)
+            with self.assertRaises(CommandError):
+                call_command("seed_data", "--reset", stdout=io.StringIO())
+            self.assertGreaterEqual(Question.objects.count(), 50)
+            call_command("seed_data", "--demo", stdout=io.StringIO())
+            self.assertTrue(User.objects.filter(username="demo").exists())
+
+
 class PracticeFlowTests(TestCase):
     def setUp(self):
         from results.tests import make_questions

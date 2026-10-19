@@ -6,7 +6,7 @@ from pathlib import Path
 
 from django.conf import settings
 from django.core.files.base import ContentFile
-from django.core.management.base import BaseCommand
+from django.core.management.base import BaseCommand, CommandError
 from django.db import transaction
 from django.utils import timezone
 
@@ -22,10 +22,14 @@ class Command(BaseCommand):
     help = "Namuna maʼlumotlar: mavzular, savollar, rasmlar, admin va demo foydalanuvchi."
 
     def add_arguments(self, parser):
-        parser.add_argument("--reset", action="store_true", help="Mavzular, savollar va demo maʼlumotlarni oʻchirib qayta yaratish")
+        parser.add_argument("--reset", action="store_true", help="Mavzular, savollar va demo maʼlumotlarni oʻchirib qayta yaratish (faqat DEBUG=True)")
+        parser.add_argument("--demo", action="store_true", help="DEBUG=False boʻlsa ham demo oʻquvchini yaratish")
 
     @transaction.atomic
-    def handle(self, *args, reset=False, **options):
+    def handle(self, *args, reset=False, demo=False, **options):
+        if reset and not settings.DEBUG:
+            # Serverda barcha foydalanuvchilarning imtihon tarixini o'chirib yubormaslik uchun
+            raise CommandError("--reset faqat DEBUG=True (lokal) muhitda ishlaydi.")
         if reset:
             Exam.objects.all().delete()
             for question in Question.objects.exclude(image=""):
@@ -35,7 +39,7 @@ class Command(BaseCommand):
             self.stdout.write("Eski maʼlumotlar oʻchirildi.")
 
         created = self._load_questions()
-        self._create_users()
+        self._create_users(with_demo=settings.DEBUG or demo)
         self.stdout.write(self.style.SUCCESS(
             f"Tayyor: {Topic.objects.count()} mavzu, {Question.objects.count()} savol ({created} ta yangi)."
         ))
@@ -71,7 +75,7 @@ class Command(BaseCommand):
         draw().save(buf, format="PNG")
         question.image.save(filename, ContentFile(buf.getvalue()), save=True)
 
-    def _create_users(self):
+    def _create_users(self, with_demo):
         if settings.DEBUG:
             if not User.objects.filter(username="admin").exists():
                 User.objects.create_user("admin", "admin@prava.uz", "admin12345", role=User.ROLE_ADMIN, first_name="Admin")
@@ -79,6 +83,9 @@ class Command(BaseCommand):
         else:
             self.stdout.write(self.style.WARNING("DEBUG=False: demo admin yaratilmadi (createsuperuser dan foydalaning)."))
 
+        if not with_demo:
+            self.stdout.write(self.style.WARNING("DEBUG=False: demo oʻquvchi yaratilmadi (kerak boʻlsa: --demo)."))
+            return
         demo = User.objects.filter(username="demo").first()
         if demo is None:
             demo = User.objects.create_user("demo", "demo@prava.uz", "demo12345", first_name="Demo")

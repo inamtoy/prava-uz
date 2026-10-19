@@ -46,7 +46,7 @@ Barcha sahifalar 1440px va 375px kenglikda: [`screenshots/`](screenshots/). Himo
 | Admin | django-unfold (dizayn: `design/admin/`, stillar `static/css/admin.css`) |
 | Frontend | Django shablonlari, oʻz CSS dizayn tizimi (`static/css/main.css`), Bootstrap 5.3 faqat grid va modal JS uchun, Bootstrap Icons, vanilla JS |
 | Grafik | Chart.js 4 (faqat profil sahifasida, CDN) |
-| Server (deploy) | Ubuntu VPS, Nginx + Gunicorn, Let's Encrypt |
+| Server (deploy) | Ubuntu VPS, Nginx + Gunicorn (systemd), Let's Encrypt, kunlik `pg_dump` — `deploy/` |
 
 > Universitet hujjatida baza sifatida MySQL koʻrsatilgan. Loyihada PostgreSQL ishlatiladi — sabablari `NOTES.md` da.
 
@@ -103,6 +103,68 @@ python manage.py loaddata backup.json
 python manage.py sqlsequencereset accounts quiz results auth | python manage.py dbshell
 ```
 
+## Serverga oʻrnatish (Ubuntu VPS)
+
+Fayllar: [`deploy/`](deploy/) — `nginx.conf`, `gunicorn.service` (systemd), `backup.sh` (kunlik `pg_dump` + media), `prava_uz.cron`, `env.production.example`. Yoʻllar: kod `/srv/prava_uz`, tizim foydalanuvchisi `prava`, socket `/run/prava_uz/gunicorn.sock`.
+
+```bash
+# 1. Paketlar va foydalanuvchi
+sudo apt update && sudo apt install -y python3-venv python3-dev git nginx postgresql postgresql-client certbot python3-certbot-nginx
+sudo adduser --system --group --home /srv/prava_uz --shell /bin/bash prava
+sudo usermod -aG prava www-data            # nginx staticfiles/ va media/ ni oʻqiy olsin (.env esa 600)
+sudo mkdir -p /var/backups/prava_uz /var/log/prava_uz && sudo chown prava:prava /var/backups/prava_uz /var/log/prava_uz
+
+# 2. PostgreSQL
+sudo -u postgres psql -c "CREATE USER prava WITH PASSWORD 'kuchli-parol';"
+sudo -u postgres psql -c "CREATE DATABASE prava_uz OWNER prava ENCODING 'UTF8' TEMPLATE template0;"
+
+# 3. Kod (private repo: deploy key yoki `gh auth login` bilan)
+sudo -u prava git clone https://github.com/inamtoy/prava-uz.git /srv/prava_uz
+cd /srv/prava_uz
+sudo -u prava python3 -m venv .venv
+sudo -u prava .venv/bin/pip install -r requirements.txt
+
+# 4. .env (namuna: deploy/env.production.example) — SECRET_KEY, DB_PASSWORD, domen
+sudo -u prava cp deploy/env.production.example .env && sudo -u prava nano .env && sudo chmod 600 .env
+
+# 5. Baza, statik fayllar, savollar, admin
+sudo -u prava .venv/bin/python manage.py migrate
+sudo -u prava .venv/bin/python manage.py collectstatic --noinput
+sudo -u prava .venv/bin/python manage.py seed_data          # DEBUG=False: faqat mavzu va savollar (demo foydalanuvchisiz)
+sudo -u prava .venv/bin/python manage.py createsuperuser    # avtomatik role=admin
+sudo -u prava .venv/bin/python manage.py check --deploy
+
+# 6. Gunicorn (systemd)
+sudo cp deploy/gunicorn.service /etc/systemd/system/prava_uz.service
+sudo systemctl daemon-reload && sudo systemctl enable --now prava_uz
+
+# 7. Nginx + HTTPS
+sudo cp deploy/nginx.conf /etc/nginx/sites-available/prava_uz
+sudo ln -s /etc/nginx/sites-available/prava_uz /etc/nginx/sites-enabled/prava_uz
+sudo rm -f /etc/nginx/sites-enabled/default
+sudo nginx -t && sudo systemctl reload nginx
+sudo certbot --nginx -d prava.uz -d www.prava.uz          # 443 bloki va HTTP->HTTPS redirect
+sudo ufw allow OpenSSH && sudo ufw allow 'Nginx Full' && sudo ufw enable
+
+# 8. Kunlik zaxira (03:30, 14 kun saqlanadi) va birinchi qoʻlda sinov
+sudo cp deploy/prava_uz.cron /etc/cron.d/prava_uz && sudo chmod 644 /etc/cron.d/prava_uz
+sudo -u prava /srv/prava_uz/deploy/backup.sh && ls -lh /var/backups/prava_uz
+```
+
+> `SECURE_SSL_REDIRECT=True` sababli sertifikat olinmaguncha sayt HTTPS'ga yoʻnaltiradi — 7-qadamni darhol bajaring (yoki vaqtincha `.env` da `SECURE_SSL_REDIRECT=False`). HSTS'ni avval qisqa (`SECURE_HSTS_SECONDS=3600`) qoʻying, hammasi ishlagach `31536000`.
+
+**Yangilash:**
+
+```bash
+cd /srv/prava_uz && sudo -u prava git pull
+sudo -u prava .venv/bin/pip install -r requirements.txt
+sudo -u prava .venv/bin/python manage.py migrate
+sudo -u prava .venv/bin/python manage.py collectstatic --noinput
+sudo systemctl reload prava_uz        # workerlar uzilishsiz qayta ishga tushadi
+```
+
+**Tiklash (zaxiradan):** `pg_restore --clean --if-exists --no-owner -h localhost -U prava -d prava_uz /var/backups/prava_uz/db-YYYYmmdd-HHMM.dump` va `tar -xzf /var/backups/prava_uz/media-YYYYmmdd-HHMM.tar.gz -C /srv/prava_uz`. Loglar: `journalctl -u prava_uz -f`, `/var/log/nginx/prava_uz.error.log`, `/var/log/prava_uz/backup.log`.
+
 ## Demo loginlar
 
 `seed_data` quyidagilarni yaratadi:
@@ -112,7 +174,7 @@ python manage.py sqlsequencereset accounts quiz results auth | python manage.py 
 | `admin` | `admin12345` | Admin (faqat `DEBUG=True` boʻlsa yaratiladi) — kirgach `/admin/` ga oʻtadi |
 | `demo` | `demo12345` | Oʻquvchi, 3 ta tugallangan imtihon bilan — kirgach profilga oʻtadi |
 
-> ⚠️ Bu parollar faqat lokal ishlab chiqish uchun. Serverda (`DEBUG=False`) demo admin yaratilmaydi — `python manage.py createsuperuser` ishlating va `demo` parolini almashtiring.
+> ⚠️ Bu parollar faqat lokal ishlab chiqish uchun. Serverda (`DEBUG=False`) `seed_data` na admin, na demo oʻquvchini yaratmaydi (demo kerak boʻlsa `--demo`), `--reset` esa butunlay taqiqlangan — `python manage.py createsuperuser` ishlating.
 
 `seed_data` qayta ishga tushirilsa dublikat yaratmaydi; `--reset` — mavzular, savollar va demo maʼlumotlarni oʻchirib qayta yaratadi. Savollar matni: `quiz/fixtures/questions_uz.json` (54 savol, 6 mavzu); yoʻl belgilari rasmlari Pillow bilan chiziladi (`quiz/signs.py`).
 

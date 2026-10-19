@@ -1,0 +1,46 @@
+# Prava.uz — gunicorn (systemd). O'rnatish:
+#   sudo cp deploy/gunicorn.service /etc/systemd/system/prava_uz.service
+#   sudo systemctl daemon-reload && sudo systemctl enable --now prava_uz
+#   sudo systemctl status prava_uz        # loglar: journalctl -u prava_uz -f
+# Kod yangilangandan keyin: sudo systemctl reload prava_uz  (workerlar uzilishsiz qayta ishga tushadi)
+
+[Unit]
+Description=Prava.uz (gunicorn)
+After=network.target postgresql.service
+Wants=postgresql.service
+
+[Service]
+Type=notify
+NotifyAccess=main
+User=prava
+# nginx (www-data) socket'ga ulana olishi uchun guruh
+Group=www-data
+WorkingDirectory=/srv/prava_uz
+# /run/prava_uz — har ishga tushishda yaratiladi (egasi prava:www-data)
+RuntimeDirectory=prava_uz
+RuntimeDirectoryMode=0750
+Environment=PYTHONUNBUFFERED=1
+# Workerlar soni: 2 * CPU + 1 (1 yadroli VPS uchun 3)
+ExecStart=/srv/prava_uz/.venv/bin/gunicorn config.wsgi:application \
+    --bind unix:/run/prava_uz/gunicorn.sock \
+    --umask 007 \
+    --workers 3 \
+    --timeout 30 \
+    --max-requests 1000 --max-requests-jitter 100 \
+    --access-logfile - \
+    --error-logfile -
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=15
+Restart=on-failure
+RestartSec=3
+
+# Himoya: tizim fayllari faqat o'qish uchun, yozish faqat media/ ga
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/srv/prava_uz/media
+
+[Install]
+WantedBy=multi-user.target
