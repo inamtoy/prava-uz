@@ -10,6 +10,18 @@ Universitet loyihasi — TATU, Dasturiy injiniring.
 | Guruh | _____________________ |
 | Ilmiy rahbar | _____________________ |
 
+## Skrinshotlar
+
+| Imtihon ekrani (taymer, savollar xaritasi) | Natija va xatolar tahlili |
+|---|---|
+| ![Imtihon](screenshots/08-exam-desktop.png) | ![Natija](screenshots/11-result-desktop.png) |
+| **Mashq: javobdan keyin izoh** | **Profil va statistika** |
+| ![Mashq](screenshots/06-practice-answered-desktop.png) | ![Profil](screenshots/10-profile-desktop.png) |
+| **Admin: boshqaruv paneli** | **Admin: savolni tahrirlash** |
+| ![Admin dashboard](screenshots/13-admin-dashboard-desktop.png) | ![Savol formasi](screenshots/15-admin-question-form-desktop.png) |
+
+Barcha sahifalar 1440px va 375px kenglikda: [`screenshots/`](screenshots/). Himoya uchun demo ssenariysi: [`docs/demo.md`](docs/demo.md).
+
 ## Imkoniyatlar (MVP)
 
 - Roʻyxatdan oʻtish, kirish (**username yoki email** bilan), chiqish
@@ -104,7 +116,46 @@ python manage.py sqlsequencereset accounts quiz results auth | python manage.py 
 
 `seed_data` qayta ishga tushirilsa dublikat yaratmaydi; `--reset` — mavzular, savollar va demo maʼlumotlarni oʻchirib qayta yaratadi. Savollar matni: `quiz/fixtures/questions_uz.json` (54 savol, 6 mavzu); yoʻl belgilari rasmlari Pillow bilan chiziladi (`quiz/signs.py`).
 
+## Yagona login va rollar
+
+Kirish sahifasi bitta — `/accounts/login/` (username yoki email + parol). Kirgandan keyin manzil rolga qarab tanlanadi (`accounts/views.py` → `redirect_url_for`):
+
+| Holat | Natija |
+|---|---|
+| Admin (`role=admin` yoki superuser) kiradi | `/admin/` — boshqaruv paneli |
+| Oʻquvchi kiradi | `/accounts/profile/` |
+| `?next=` bor | Faqat shu saytga tegishli va rolga ruxsat etilgan boʻlsa: oʻquvchining `next=/admin/…` yoki tashqi havola (`https://evil.com`) eʼtiborsiz qoladi |
+| Mehmon `/admin/` ni ochadi | `/accounts/login/?next=/admin/` |
+| Oʻquvchi `/admin/` ni ochadi | Profilga qaytariladi: «Bu boʻlimga faqat administratorlar kira oladi» |
+| Kirgan foydalanuvchi `/accounts/login/` yoki `/register/` ni ochadi | Rolga qarab yoʻnaltiriladi |
+| `/admin/login/` | Yagona login'ga yoʻnaltiriladi (`next` saqlanadi); admin'dan chiqish → bosh sahifa |
+
+- **Rol — yagona manba.** `role="admin"` → `is_staff` va `is_superuser` avtomatik (`User.save()`), `user.is_admin_role` = `role == "admin" or is_superuser`. `createsuperuser` → `role="admin"`.
+- **Roʻyxatdan oʻtish har doim oʻquvchi yaratadi** — formada rol maydoni yoʻq, POST'ga `role=admin` qoʻshilsa ham eʼtiborsiz qoladi.
+- Admin saytning oʻquvchi qismidan ham foydalana oladi (imtihon yechib koʻrish); avatar menyusida «Boshqaruv paneli», admin sidebar'ida «Saytni ochish».
+
+## Admin imkoniyatlari
+
+Admin panel — Django admin + [django-unfold](https://github.com/unfoldadmin/django-unfold), dizayn manbasi `design/admin/` (Stitch).
+
+- **Boshqaruv paneli:** 4 KPI (jami savollar, oʻquvchilar, bugungi imtihonlar, oʻrtacha oʻtish %), oxirgi 7 kunlik imtihonlar grafigi (topshirildi / oʻtdi), mavzular boʻyicha toʻgʻri javob %, eng koʻp xato qilinadigan 5 savol (tahrirlash havolasi bilan), oxirgi imtihonlar, «Kontent holati» ogohlantirishlari (izohsiz savollar, 15 tadan kam savolli mavzular, nofaol savollar). Hammasi bazadagi real maʼlumotdan, har blok bitta soʻrov.
+- **Savollar:** rasm miniatyurasi, mavzu, variantlar soni, toʻgʻri javob % (chiziq bilan), faol/nofaol; filtrlar — mavzu, faol, rasmli, izohsiz; qidiruv; bulk: faollashtirish / oʻchirib qoʻyish.
+- **Savol formasi (2 ustun):** chapda matn, 4 ta javob varianti (aynan bitta toʻgʻri — tekshiriladi), izoh; oʻngda holat, mavzu, rasm (preview), statistika — necha marta javob berilgan, toʻgʻri %, eng koʻp tanlangan xato variant.
+- **Imtihonlar:** faqat koʻrish (oʻzgartirish va oʻchirish yopiq); filtrlar — sana oraligʻi, rejim, natija, holat; ichida 20 ta savol: tanlangan javob, toʻgʻri javob, natija.
+- **Mavzular** (savollar va faol savollar soni, tartib), **foydalanuvchilar** (rol, imtihonlar soni, unfold formalari).
+
+Unfold'da qilib boʻlmagan joylar roʻyxati — `NOTES.md`.
+
 ## Arxitektura
+
+### Hujjat va loyiha
+
+| Hujjatda | Loyihada | Izoh |
+|---|---|---|
+| Python + Django | Python 3.11, Django 5.2 | — |
+| **MySQL** | **PostgreSQL** (psycopg 3) | Muallif qarori; Windows'da drayver kompilyatsiyasiz oʻrnatiladi, `select_for_update` haqiqiy qulf beradi, DDL tranzaksiyali. Batafsil — `NOTES.md`. Testlar tezlik uchun SQLite'da ham ishlaydi |
+| Bootstrap | Bootstrap 5.3 grid + modal JS, oʻz dizayn tizimi (`main.css`) | Standart Bootstrap koʻrinishi olib tashlangan |
+| Admin modul | Django admin + django-unfold | — |
 
 ### 5 qatlam
 
@@ -114,7 +165,7 @@ python manage.py sqlsequencereset accounts quiz results auth | python manage.py 
 | 2. Marshrutlash | `config/urls.py`, `*/urls.py` |
 | 3. Boshqaruv (view'lar) | `accounts/views.py`, `quiz/views.py`, `results/views.py` — faqat soʻrov/javob, mantiq yoʻq |
 | 4. Biznes mantiq (servislar) | `results/services.py` — `start_exam`, `start_practice`, `save_answer`, `finish_exam`, `user_stats` |
-| 5. Maʼlumotlar | Django modellari (ORM) + PostgreSQL |
+| 5. Maʼlumotlar | Django modellari (ORM) + PostgreSQL (hujjatda MySQL) |
 
 ### 4 modul
 
@@ -123,7 +174,7 @@ python manage.py sqlsequencereset accounts quiz results auth | python manage.py 
 | accounts | `accounts` | Roʻyxatdan oʻtish, kirish (email yoki username), profil |
 | tests | **`quiz`** | Mavzular, savollar, mashq va imtihon ekranlari |
 | results | `results` | Ball hisoblash, xatolar tahlili, statistika |
-| admin | Django admin (`*/admin.py`) | Savol, javob, rasm boshqaruvi |
+| admin | Django admin + unfold (`*/admin.py`, `results/dashboard.py`) | Boshqaruv paneli, savol, javob, rasm, natijalar |
 
 > **tests moduli = `quiz` app.** Django'da `tests` nomli app test-runner va `tests.py` fayllari bilan toʻqnashadi, shuning uchun nomi `quiz`.
 
@@ -171,6 +222,8 @@ python tools/screenshots.py           # screenshots/ ga 1440px va 375px suratlar
 Skript `sinov…` nomli test foydalanuvchilar yaratadi va demo uchun ochiq imtihon qoldiradi — keyin `python manage.py seed_data --reset`.
 
 ## Keyingi rejalar
+
+Texnik reja (kontent admin guruhi, CSV import, admin'dagi qolgan joylar) — `NOTES.md` → «Keyingi versiya». Mahsulot boʻyicha:
 
 - Mobil ilova
 - Rus tili
