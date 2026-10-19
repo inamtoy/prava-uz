@@ -1,0 +1,206 @@
+/* =====================================================================
+   Mavzular va mashq ekranlari (Stitch: prava.uz_mavzular, prava.uz_mashq_rejimi)
+   Faqat main.css tokenlari ishlatiladi.
+   ===================================================================== */
+
+/* ---------- Mavzular: sarlavha ---------- */
+.topics-head {
+  display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.75rem;
+}
+.topics-head__title { margin: .5rem 0 .5rem; }
+.topics-head__lead { margin: 0; max-width: 620px; color: var(--ink-500); }
+.topics-head__cta { align-self: flex-start; white-space: normal; flex-wrap: wrap; }
+.topics-head__cta .chip { font-size: .75rem; }
+@media (min-width: 768px) {
+  .topics-head { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+  .topics-head__cta { align-self: auto; flex-wrap: nowrap; }
+}
+
+/* ---------- Umumiy o'zlashtirish banneri ---------- */
+.overall-banner { display: flex; flex-direction: column; gap: 1.5rem; }
+.overall-banner::before {
+  content: ""; position: absolute; right: -80px; top: -80px; width: 280px; height: 280px;
+  border-radius: 50%; background: rgba(36, 87, 245, .18); filter: blur(48px); pointer-events: none;
+}
+.overall-banner > * { position: relative; }
+.overall-banner__main { flex: 1 1 auto; min-width: 0; }
+.overall-banner__title {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem 1rem; margin-bottom: 1.25rem;
+}
+.overall-banner__value { margin: 0; font-size: clamp(1.5rem, 3.4vw, 2rem); letter-spacing: -0.025em; }
+.overall-banner__sub { color: var(--ink-300); font-size: .9375rem; font-weight: 500; }
+
+.overall-bar { position: relative; }
+.overall-bar__track { height: 12px; }
+.overall-bar__mark {
+  position: absolute; left: 90%; top: -5px; bottom: -5px; width: 3px; margin-left: -1.5px;
+  background: var(--accent); border-radius: 3px; box-shadow: 0 0 0 2px var(--ink-900);
+}
+.overall-bar__labels {
+  position: relative; height: 1.25rem; margin-top: .625rem;
+  font-size: .8125rem; font-weight: 500; color: var(--ink-300);
+}
+.overall-bar__labels > span { position: absolute; top: 0; white-space: nowrap; }
+.overall-bar__labels > span:first-child { left: 0; }
+.overall-bar__pass {
+  left: 90%; transform: translateX(-100%); padding-right: .375rem;
+  font-weight: 700; color: var(--accent);
+}
+.overall-bar__end { right: 0; display: none; }
+
+.overall-banner__rule {
+  display: flex; align-items: center; gap: .875rem;
+  padding: .875rem 1rem; border-radius: var(--radius);
+  background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .1);
+}
+.overall-banner__rule-icon { color: var(--accent); background: rgba(255, 194, 32, .16); }
+.overall-banner__rule strong { display: block; font-family: var(--font-display); font-size: 1.0625rem; color: #fff; }
+.overall-banner__rule-label {
+  display: block; font-family: var(--font-display); font-size: .6875rem; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+}
+.overall-banner__rule-hint { display: block; font-size: .8125rem; color: var(--ink-300); }
+@media (min-width: 992px) {
+  .overall-banner { flex-direction: row; align-items: center; gap: 2.5rem; }
+  .overall-banner__rule { flex: 0 0 auto; min-width: 250px; }
+}
+
+/* ---------- Mavzu kartasi ---------- */
+.topic-card { display: flex; flex-direction: column; height: 100%; gap: 1rem; border-radius: var(--radius-lg); }
+.topic-card__top { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; }
+.topic-card__meta { display: flex; align-items: center; gap: .875rem; }
+.topic-card__meta .kicker { display: block; }
+.topic-card__count { display: block; font-size: .9375rem; font-weight: 500; color: var(--ink-700); }
+.topic-card__title { margin: 0; font-size: 1.25rem; font-weight: 800; }
+.topic-card__desc { margin: -.5rem 0 0; color: var(--ink-500); line-height: 1.55; }
+.topic-card__action { margin-top: auto; padding-top: .25rem; }
+.topic-card__action .btn { min-height: 48px; }
+
+/* ---------- Kuchsiz mavzular ---------- */
+.weak-block { margin-top: 2.5rem; border-radius: var(--radius-lg); }
+.weak-block__head { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem; }
+.weak-block__head h2 { margin: 0 0 .25rem; font-size: 1.375rem; }
+.weak-block__head p { margin: 0; }
+.weak-block__empty { padding: 1.75rem 1.25rem; }
+.weak-block__empty p { margin: 0; }
+
+.weak-card {
+  display: flex; flex-direction: column; gap: .875rem; height: 100%;
+  padding: 1.25rem; background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.weak-card__level::before { display: inline-block !important; content: ""; width: 8px; height: 8px; border-radius: 50%; }
+.weak-card__level.is-danger { color: var(--danger); }
+.weak-card__level.is-danger::before { background: var(--danger); }
+.weak-card__level.is-warn { color: #B45309; }
+.weak-card__level.is-warn::before { background: var(--warning); }
+.weak-card__title { margin: 0; font-size: 1.125rem; }
+.weak-card__stat {
+  display: flex; flex-direction: column; gap: .375rem;
+  padding: .875rem 1rem; background: var(--surface-2); border-radius: 12px;
+}
+.weak-card__percent {
+  font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; line-height: 1.1;
+  letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
+}
+.weak-card__hint { font-size: .875rem; color: var(--ink-500); }
+.weak-card form { margin-top: auto; }
+.weak-card .btn { min-height: 48px; }
+
+/* =====================================================================
+   Mashq ekrani
+   ===================================================================== */
+.practice-bar {
+  display: flex; align-items: center; gap: .75rem;
+  padding: .75rem 1rem; margin-bottom: .875rem;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.practice-bar__back { flex: 0 0 auto; width: 48px; min-height: 48px; border-radius: 12px; }
+.practice-bar__info { flex: 1 1 auto; min-width: 0; }
+.practice-bar__row { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
+.practice-bar__pos { font-size: .875rem; font-weight: 700; color: var(--ink-900); white-space: nowrap; }
+.practice-bar__title {
+  margin: .125rem 0 .5rem; font-size: 1.0625rem; font-weight: 800; overflow-wrap: anywhere;
+}
+.practice-bar__progress { height: 6px; }
+
+.practice-chips { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1rem; }
+.practice-chips .chip { padding: .375rem .75rem; font-size: .8125rem; }
+
+.practice-card { border-radius: var(--radius-lg); }
+@media (min-width: 768px) { .practice-card { padding: 2rem; } }
+
+/* Savol kartasi: planshet/desktopda rasm chapda, matn o'ngda (Stitch) */
+@media (min-width: 768px) {
+  .practice .question-card:has(.qc-media) {
+    display: grid; grid-template-columns: 240px minmax(0, 1fr); column-gap: 1.75rem;
+    grid-template-areas: "media meta" "media text" "list list" "explain explain";
+    grid-template-rows: auto 1fr auto auto;
+  }
+  .practice .question-card:has(.qc-media) .qc-meta { grid-area: meta; align-self: end; }
+  .practice .question-card:has(.qc-media) .qc-media { grid-area: media; margin-bottom: 1.5rem !important; min-height: 220px; }
+  .practice .question-card:has(.qc-media) .qc-text { grid-area: text; }
+  .practice .question-card:has(.qc-media) .answer-list { grid-area: list; }
+  .practice .question-card:has(.qc-media) .explanation { grid-area: explain; }
+}
+.practice .answer-option { min-height: 60px; }
+
+/* Izoh paneli — to'q navy (Stitch "Izoh va qoida asosi") */
+.practice .explain {
+  margin-top: 1.25rem; padding: 1.125rem 1.25rem;
+  color: #E6EAF0; background: var(--ink-900);
+  border: 0; border-left: 4px solid var(--accent); border-radius: var(--radius);
+  font-size: 1rem; line-height: 1.6;
+  animation: explain-in var(--t) var(--ease);
+}
+.practice .explain .explain__title { font-family: var(--font-display); font-size: 1.0625rem; color: #fff; margin-bottom: .25rem; }
+.practice .explain--success { border-left-color: var(--success); }
+.practice .explain--success > .bi { color: #4ADE80; }
+.practice .explain--danger { border-left-color: var(--danger); }
+.practice .explain--danger > .bi { color: var(--accent); }
+@keyframes explain-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+
+/* Pastki navigatsiya */
+.practice-nav {
+  display: flex; align-items: center; gap: .75rem;
+  margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+}
+.practice-nav__prev { flex: 0 0 auto; }
+.practice-nav__next { flex: 1 1 auto; margin-left: auto; }
+.practice-nav__hint { display: none; margin-left: auto; font-size: .875rem; color: var(--ink-500); white-space: nowrap; }
+@media (max-width: 399.98px) { .practice-nav__prev span { display: none; } .practice-nav__prev { width: 52px; padding: 0; } }
+@media (min-width: 768px) {
+  .practice-nav__hint { display: inline; }
+  .practice-nav__next { flex: 0 0 auto; min-width: 220px; margin-left: 0; }
+}
+.practice.is-summary .practice-nav { justify-content: flex-start; }
+.practice.is-summary .practice-nav__hint { display: none; }
+
+/* Yakuniy natija */
+.practice-summary {
+  display: flex; flex-direction: column; align-items: center; text-align: center; gap: .5rem;
+  padding: 1rem 0 .5rem;
+  animation: explain-in var(--t) var(--ease);
+}
+.practice-summary .progress-ring { margin-bottom: .75rem; }
+.practice-summary__title { margin: 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+.practice-summary__score { margin: 0 0 .75rem; font-size: 1.125rem; color: var(--ink-500); }
+.practice-summary__score strong { color: var(--ink-900); }
+.practice-summary__actions { display: flex; flex-direction: column; gap: .625rem; width: 100%; }
+@media (min-width: 576px) {
+  .practice-summary__actions { flex-direction: row; justify-content: center; width: auto; }
+}
+
+/* O'ng panel (desktop) */
+.practice-side { position: sticky; top: calc(var(--nav-h) + 1rem); display: grid; gap: 1rem; }
+.practice-side__score { display: flex; align-items: center; gap: 1rem; }
+.practice-side__score .progress-ring { --size: 72px; }
+.practice-side__text { margin: .25rem 0 0; font-size: .875rem; color: var(--ink-500); }
+.key-list { margin: .75rem 0 0; padding: 0; list-style: none; display: grid; gap: .625rem; font-size: .9375rem; color: var(--ink-700); }
+.key-list li { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }
+.key-list li > span { display: inline-flex; align-items: center; gap: .25rem; color: var(--ink-500); }
+
+@media (prefers-reduced-motion: reduce) {
+  .practice .explain, .practice-summary { animation: none; }
+}

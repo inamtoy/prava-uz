@@ -1,2 +1,198 @@
 {% extends "base.html" %}
-{% block content %}<h1>Prava.uz</h1>{% endblock %}
+{% load static %}
+{% block title %}Prava.uz — haydovchilik imtihoniga bepul tayyorgarlik{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/home.css' %}">{% endblock %}
+
+{% block main %}
+{# 1. Hero #}
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__lane" aria-hidden="true"></div>
+  <div class="container-x hero__inner">
+    {% include "partials/messages.html" %}
+    <div class="row align-items-center gx-4 gy-5">
+      <div class="col-12 col-lg-7">
+        <span class="hero__badge"><span class="hero__badge-dot" aria-hidden="true"></span>Yoʻl harakati qoidalari asosida · Bepul</span>
+        <h1 id="hero-title" class="display hero__title">Haydovchilik imtihonini <span class="hero__accent">birinchi urinishda</span> topshiring</h1>
+        <p class="hero__lead">{{ question_count }} ta savol, {{ exam_minutes }} daqiqalik imtihon simulyatori va xatolar tahlili — bepul.</p>
+        <div class="hero__ctas">
+          {% if user.is_authenticated %}
+            <a class="btn btn-accent btn-lg" href="{% url 'topic_list' %}">Mashqni davom ettirish <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          {% else %}
+            <a class="btn btn-accent btn-lg" href="{% url 'register' %}">Bepul boshlash <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+          {% endif %}
+          <a class="btn btn-outline-light btn-lg" href="{% url 'exam_start' %}"><i class="bi bi-play-circle-fill" aria-hidden="true"></i> Imtihonni sinab koʻrish</a>
+        </div>
+        <ul class="hero__trust">
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ topic_count }} ta mavzu</li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Har javobga izoh</li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Telefonda ham qulay</li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        {# Dekorativ savol kartasi — haqiqiy maʼlumot emas #}
+        <div class="mock" aria-hidden="true">
+          <div class="mock__glow"></div>
+          <div class="mock__card">
+            <div class="mock__hud">
+              <div class="d-flex align-items-center gap-2 flex-wrap">
+                <span class="chip chip--dark">SAVOL 14 / {{ exam_question_count }}</span>
+                <span class="chip">Taqiqlovchi belgilar</span>
+              </div>
+              <span class="chip chip--fail"><i class="bi bi-stopwatch"></i> 18:42</span>
+            </div>
+            <div class="mock__media">
+              <svg class="mock__sign" viewBox="0 0 120 120" focusable="false">
+                <circle cx="60" cy="60" r="54" fill="#E5383B"/>
+                <circle cx="60" cy="60" r="43" fill="#2457F5"/>
+                <path d="M30 30 L90 90 M90 30 L30 90" stroke="#E5383B" stroke-width="9" stroke-linecap="butt"/>
+              </svg>
+            </div>
+            <p class="mock__q">Ushbu yoʻl belgisi nimani bildiradi?</p>
+            <div class="mock__answers">
+              <div class="answer-option"><span class="answer-option__key">F1</span><span class="answer-option__text">Toʻxtab turish taqiqlanadi</span></div>
+              <div class="answer-option is-correct"><span class="answer-option__key">F2</span><span class="answer-option__text">Toʻxtash taqiqlanadi</span><i class="answer-option__mark answer-option__mark--ok bi bi-check-circle-fill"></i></div>
+              <div class="answer-option is-dimmed"><span class="answer-option__key">F3</span><span class="answer-option__text">Kirish taqiqlanadi</span></div>
+              <div class="answer-option is-dimmed"><span class="answer-option__key">F4</span><span class="answer-option__text">Faqat yuk avtomobillari uchun taqiq</span></div>
+            </div>
+            <div class="mock__foot">
+              <span><i class="bi bi-info-circle-fill"></i> 3.27-belgi: toʻxtash taqiqlanadi.</span>
+              <span class="mock__next">Keyingi <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# 2. Raqamlar — faqat bazadagi haqiqiy qiymatlar #}
+<section class="container-x stats-strip" aria-label="Prava.uz raqamlarda">
+  <div class="stats-strip__card">
+    <div class="stats-strip__item">
+      <span class="stats-strip__value">{{ question_count }}</span>
+      <span class="stats-strip__label">Savol</span>
+      <span class="stats-strip__hint">Izohlari bilan</span>
+    </div>
+    <div class="stats-strip__item">
+      <span class="stats-strip__value">{{ topic_count }} <small>ta</small></span>
+      <span class="stats-strip__label">Mavzu</span>
+      <span class="stats-strip__hint">Qoidalar boʻlimlari boʻyicha</span>
+    </div>
+    <div class="stats-strip__item">
+      <span class="stats-strip__value">{{ exam_question_count }}<small> / {{ exam_minutes }} daq</small></span>
+      <span class="stats-strip__label">Imtihon</span>
+      <span class="stats-strip__hint">{{ exam_question_count }} savol, {{ exam_minutes }} daqiqa</span>
+    </div>
+    <div class="stats-strip__item">
+      <span class="stats-strip__value stats-strip__value--accent">{{ exam_max_mistakes }} <small>ta</small></span>
+      <span class="stats-strip__label">Xato ruxsat</span>
+      <span class="stats-strip__hint">{{ exam_max_mistakes }} tagacha xato bilan oʻtasiz</span>
+    </div>
+  </div>
+</section>
+
+{# 3. Qanday ishlaydi #}
+<section class="container-x home-section" aria-labelledby="how-title">
+  <div class="home-section__head home-section__head--center">
+    <span class="home-pill">Bosqichma-bosqich</span>
+    <h2 id="how-title">3 oddiy qadamda imtihonga tayyorlaning</h2>
+    <p>Mavzularni oʻrganing, mashq qiling va haqiqiy imtihon formatida oʻzingizni sinab koʻring.</p>
+  </div>
+  <div class="row g-4">
+    <div class="col-12 col-md-4">
+      <article class="step-card">
+        <span class="step-card__num">01</span>
+        <h3>Mavzuni tanlang</h3>
+        <p>Umumiy qoidalar, yoʻl belgilari, svetofor, chorrahalar va boshqa boʻlimlardan birini tanlang.</p>
+        <span class="step-card__foot"><i class="bi bi-book" aria-hidden="true"></i> {{ topic_count }} ta mavzu</span>
+      </article>
+    </div>
+    <div class="col-12 col-md-4">
+      <article class="step-card">
+        <span class="step-card__num step-card__num--accent">02</span>
+        <h3>Mashq qiling</h3>
+        <p>Har javobdan keyin darhol toʻgʻri yoki xato ekanini koʻrasiz va qisqa izohni oʻqiysiz.</p>
+        <span class="step-card__foot"><i class="bi bi-lightbulb" aria-hidden="true"></i> Har savolga izoh</span>
+      </article>
+    </div>
+    <div class="col-12 col-md-4">
+      <article class="step-card">
+        <span class="step-card__num step-card__num--dark">03</span>
+        <h3>Imtihon topshiring</h3>
+        <p>{{ exam_question_count }} ta tasodifiy savol va {{ exam_minutes }} daqiqa vaqt. Oxirida natija va xatolar tahlili.</p>
+        <span class="step-card__foot"><i class="bi bi-stopwatch" aria-hidden="true"></i> {{ exam_question_count }} savol · {{ exam_minutes }} daqiqa</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+{# 4. Imkoniyatlar #}
+<section class="features" aria-labelledby="features-title">
+  <div class="container-x">
+    <div class="home-section__head home-section__head--split">
+      <div>
+        <span class="kicker">Imkoniyatlar</span>
+        <h2 id="features-title">Nega aynan Prava.uz?</h2>
+      </div>
+      <p>Javoblarni yodlash oʻrniga qoidaning mantigʻini tushunishingiz uchun kerakli vositalar.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-md-6">
+        <article class="feature-card">
+          <span class="icon-tile icon-tile--lg icon-tile--t3"><i class="bi bi-display" aria-hidden="true"></i></span>
+          <div>
+            <h3>Imtihon simulyatori</h3>
+            <p>{{ exam_question_count }} ta tasodifiy savol, {{ exam_minutes }} daqiqalik taymer va navigatsiya paneli — haqiqiy imtihon formatida.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6">
+        <article class="feature-card">
+          <span class="icon-tile icon-tile--lg icon-tile--t2"><i class="bi bi-search" aria-hidden="true"></i></span>
+          <div>
+            <h3>Xatolar tahlili</h3>
+            <p>Har bir xato savol uchun siz tanlagan javob, toʻgʻri javob va qoidaga oid izoh koʻrsatiladi.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6">
+        <article class="feature-card">
+          <span class="icon-tile icon-tile--lg icon-tile--t1"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span>
+          <div>
+            <h3>Shaxsiy statistika</h3>
+            <p>Qaysi mavzularda kuchli va qaysilarida koʻproq mashq kerakligini profilingizda koʻrasiz.</p>
+          </div>
+        </article>
+      </div>
+      <div class="col-12 col-md-6">
+        <article class="feature-card">
+          <span class="icon-tile icon-tile--lg icon-tile--t4"><i class="bi bi-phone" aria-hidden="true"></i></span>
+          <div>
+            <h3>Telefonda qulay</h3>
+            <p>Ilova yuklab olish shart emas — sayt istalgan smartfon va planshetda qulay ochiladi.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# 5. Yakuniy CTA #}
+<section class="container-x home-section" aria-labelledby="cta-title">
+  <div class="cta-band">
+    <div class="cta-band__text">
+      <h2 id="cta-title">Bugunoq tayyorgarlikni boshlang</h2>
+      <p>Mavzular boʻyicha mashq qiling va imtihonni birinchi urinishda topshiring.</p>
+    </div>
+    <div class="cta-band__actions">
+      {% if user.is_authenticated %}
+        <a class="btn btn-accent btn-lg" href="{% url 'topic_list' %}">Mavzularni koʻrish</a>
+      {% else %}
+        <a class="btn btn-accent btn-lg" href="{% url 'register' %}">Bepul boshlash</a>
+      {% endif %}
+      <a class="btn btn-outline-light btn-lg" href="{% url 'exam_start' %}">Imtihonni sinab koʻrish</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

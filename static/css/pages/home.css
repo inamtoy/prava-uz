@@ -1,0 +1,212 @@
+/* =====================================================================
+   Bosh sahifa (landing) — Stitch: prava.uz_bosh_sahifa
+   Faqat main.css tokenlari ishlatiladi.
+   ===================================================================== */
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative; overflow: hidden;
+  color: #fff;
+  background:
+    radial-gradient(60% 80% at 85% 10%, rgba(36, 87, 245, .22) 0%, transparent 60%),
+    radial-gradient(50% 60% at 0% 100%, rgba(255, 194, 32, .08) 0%, transparent 60%),
+    var(--ink-900);
+  padding: 2.5rem 0 6rem;
+}
+/* Asfalt teksturasi: juda nozik diagonal chiziqlar */
+.hero::before {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: repeating-linear-gradient(115deg, rgba(255, 255, 255, .025) 0 2px, transparent 2px 28px);
+}
+/* Yoʻl chizigʻi: pastki qismda uzuq-uzuq sariq chiziq */
+.hero__lane {
+  position: absolute; left: 0; right: 0; bottom: 3.25rem; height: 4px; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(255, 194, 32, .55) 0 48px, transparent 48px 96px);
+  opacity: .5;
+}
+.hero__lane::before, .hero__lane::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 2px; background: rgba(255, 255, 255, .08);
+}
+.hero__lane::before { top: -2.25rem; }
+.hero__lane::after { bottom: -2.25rem; }
+.hero__inner { position: relative; z-index: 1; }
+.hero .messages { margin-bottom: 1.5rem; }
+
+.hero__badge {
+  display: inline-flex; align-items: center; gap: .5rem;
+  padding: .375rem .875rem; margin-bottom: 1.25rem;
+  font-size: .8125rem; font-weight: 600; color: var(--ink-300);
+  background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .12);
+  border-radius: var(--radius-pill);
+}
+.hero__badge-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px rgba(255, 194, 32, .18); }
+.hero__title { color: #fff; margin-bottom: 1rem; overflow-wrap: break-word; }
+.hero__accent {
+  color: var(--accent);
+  text-decoration: underline; text-decoration-color: rgba(255, 194, 32, .4);
+  text-decoration-thickness: 3px; text-underline-offset: 8px;
+}
+.hero__lead { max-width: 40rem; margin-bottom: 1.75rem; font-size: 1.125rem; line-height: 1.6; color: var(--ink-300); }
+.hero__ctas { display: flex; flex-wrap: wrap; gap: .75rem; }
+.hero__trust {
+  display: flex; flex-wrap: wrap; gap: .5rem 1.25rem;
+  margin: 1.5rem 0 0; padding: 0; list-style: none;
+  font-size: .875rem; color: var(--ink-300);
+}
+.hero__trust li { display: inline-flex; align-items: center; gap: .375rem; }
+.hero__trust .bi { color: var(--accent); }
+@media (max-width: 575.98px) {
+  .hero__ctas .btn { width: 100%; }
+}
+@media (min-width: 992px) {
+  .hero { padding: 4.5rem 0 7.5rem; }
+}
+
+/* ---------- Dekorativ savol kartasi (mockup) ---------- */
+.mock { position: relative; max-width: 460px; margin: 0 auto; }
+.mock__glow {
+  position: absolute; inset: -10px; border-radius: 32px; pointer-events: none;
+  background: linear-gradient(120deg, rgba(255, 194, 32, .22), rgba(36, 87, 245, .3));
+  filter: blur(28px); opacity: .7;
+}
+.mock__card {
+  position: relative;
+  display: flex; flex-direction: column; gap: .875rem;
+  padding: 1.125rem;
+  color: var(--ink-900); background: var(--surface);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+}
+@media (min-width: 768px) { .mock__card { padding: 1.5rem; } }
+.mock__hud { display: flex; align-items: center; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
+.mock__media {
+  display: flex; align-items: center; justify-content: center;
+  padding: 1rem; background: var(--surface-2); border-radius: var(--radius);
+}
+.mock__sign { width: 96px; height: 96px; filter: drop-shadow(0 4px 8px rgba(11, 27, 51, .18)); }
+.mock__q { margin: 0; font-family: var(--font-display); font-size: 1.0625rem; font-weight: 700; line-height: 1.35; }
+.mock__answers { display: grid; gap: .5rem; }
+.mock .answer-option {
+  min-height: 44px; padding: .5rem .75rem; gap: .625rem;
+  font-size: .875rem; cursor: default; pointer-events: none;
+}
+.mock .answer-option__key { min-width: 32px; height: 32px; font-size: .75rem; border-radius: 8px; }
+.mock .answer-option.is-correct { font-weight: 600; }
+.mock__foot {
+  display: flex; align-items: center; justify-content: space-between; gap: .75rem;
+  padding: .625rem .75rem; font-size: .8125rem; color: var(--ink-500);
+  background: var(--surface-2); border-radius: 12px;
+}
+.mock__foot .bi-info-circle-fill { color: var(--primary); }
+.mock__next { display: inline-flex; align-items: center; gap: .25rem; flex: 0 0 auto; font-weight: 700; color: var(--ink-900); }
+
+/* ---------- Raqamlar qatori ---------- */
+.stats-strip { position: relative; z-index: 2; margin-top: -3.5rem; }
+.stats-strip__card {
+  display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem 1rem;
+  padding: 1.5rem 1.25rem;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+}
+.stats-strip__item { display: flex; flex-direction: column; gap: .125rem; min-width: 0; }
+.stats-strip__value {
+  font-family: var(--font-display); font-weight: 800; font-size: 2rem; line-height: 1.1;
+  letter-spacing: -0.03em; color: var(--primary); font-variant-numeric: tabular-nums;
+}
+.stats-strip__value small { font-size: .5em; font-weight: 700; letter-spacing: 0; color: var(--ink-500); }
+.stats-strip__value--accent { color: var(--accent-ink); }
+.stats-strip__label { font-family: var(--font-display); font-weight: 700; color: var(--ink-900); }
+.stats-strip__hint { font-size: .8125rem; color: var(--ink-500); }
+@media (min-width: 992px) {
+  .stats-strip__card { grid-template-columns: repeat(4, minmax(0, 1fr)); padding: 2rem 2.5rem; }
+  .stats-strip__item + .stats-strip__item { padding-left: 1.5rem; border-left: 1px solid var(--line); }
+  .stats-strip__value { font-size: 2.75rem; }
+}
+
+/* ---------- Boʻlimlar ---------- */
+.home-section { padding-top: 4rem; padding-bottom: 4rem; }
+@media (min-width: 992px) { .home-section { padding-top: 6rem; padding-bottom: 6rem; } }
+.home-section__head { margin-bottom: 2rem; }
+.home-section__head h2 { margin: .5rem 0; font-size: clamp(1.5rem, 3vw, 2rem); }
+.home-section__head p { margin: 0; color: var(--ink-500); }
+.home-section__head--center { display: flex; flex-direction: column; align-items: center; text-align: center; }
+.home-section__head--center p { max-width: 36rem; }
+.home-section__head--split { display: flex; flex-direction: column; gap: .75rem; }
+.home-section__head--split p { max-width: 28rem; }
+@media (min-width: 768px) {
+  .home-section__head--split { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+}
+.home-pill {
+  display: inline-flex; padding: .3rem .875rem;
+  font-family: var(--font-display); font-size: .6875rem; font-weight: 800;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--accent-ink); background: var(--accent-50); border-radius: var(--radius-pill);
+}
+
+/* Qadamlar */
+.step-card {
+  display: flex; flex-direction: column; gap: .75rem; height: 100%;
+  padding: 1.5rem;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--t) var(--ease);
+}
+.step-card:hover { box-shadow: var(--shadow); }
+@media (min-width: 992px) { .step-card { padding: 2rem; } }
+.step-card h3 { margin: .5rem 0 0; font-size: 1.25rem; }
+.step-card p { margin: 0; color: var(--ink-500); }
+.step-card__num {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 56px; height: 56px; border-radius: var(--radius);
+  font-family: var(--font-display); font-weight: 800; font-size: 1.25rem;
+  color: var(--ink-900); background: var(--surface-2);
+}
+.step-card__num--accent { background: var(--accent); box-shadow: var(--shadow-key); }
+.step-card__num--dark { color: var(--accent); background: var(--ink-900); }
+.step-card__foot {
+  display: inline-flex; align-items: center; gap: .5rem;
+  margin-top: auto; padding-top: .75rem;
+  font-size: .875rem; font-weight: 600; color: var(--accent-ink);
+}
+
+/* Imkoniyatlar */
+.features { padding: 4rem 0; background: var(--surface-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+@media (min-width: 992px) { .features { padding: 6rem 0; } }
+.feature-card {
+  display: flex; flex-direction: column; align-items: flex-start; gap: 1rem; height: 100%;
+  padding: 1.5rem;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--t) var(--ease);
+}
+.feature-card:hover { box-shadow: var(--shadow-lg); }
+.feature-card h3 { margin: 0 0 .375rem; font-size: 1.1875rem; }
+.feature-card p { margin: 0; color: var(--ink-500); }
+@media (min-width: 576px) { .feature-card { flex-direction: row; gap: 1.25rem; } }
+@media (min-width: 992px) { .feature-card { padding: 2rem; } }
+
+/* Yakuniy CTA */
+.cta-band {
+  position: relative; overflow: hidden;
+  display: flex; flex-direction: column; gap: 1.5rem;
+  padding: 2rem 1.5rem;
+  color: #fff;
+  background:
+    radial-gradient(40% 80% at 100% 0%, rgba(255, 194, 32, .18), transparent 70%),
+    radial-gradient(40% 80% at 0% 100%, rgba(36, 87, 245, .35), transparent 70%),
+    var(--ink-900);
+  border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
+}
+.cta-band::after {
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 4px; pointer-events: none;
+  background: repeating-linear-gradient(90deg, rgba(255, 194, 32, .5) 0 40px, transparent 40px 80px);
+}
+.cta-band__text { position: relative; max-width: 36rem; }
+.cta-band__text h2 { color: #fff; margin-bottom: .5rem; font-size: clamp(1.5rem, 3vw, 2rem); }
+.cta-band__text p { margin: 0; color: var(--ink-300); font-size: 1.0625rem; }
+.cta-band__actions { position: relative; display: flex; flex-wrap: wrap; gap: .75rem; }
+@media (max-width: 575.98px) { .cta-band__actions .btn { width: 100%; } }
+@media (min-width: 768px) {
+  .cta-band { flex-direction: row; align-items: center; justify-content: space-between; padding: 3rem; }
+  .cta-band__actions { flex: 0 0 auto; }
+}
+@media (min-width: 992px) { .cta-band { padding: 4rem; } }

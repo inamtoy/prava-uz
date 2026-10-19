@@ -1,16 +1,219 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}Profil — Prava.uz{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/results.css' %}">{% endblock %}
+
 {% block content %}
-<h1 class="h3">{{ user.get_full_name|default:user.username }}</h1>
-<p>Jami imtihonlar: {{ stats.total_exams }} · O'tganlar: {{ stats.passed_exams }} · O'rtacha: {{ stats.average_percent }}% · Eng yaxshi: {{ stats.best_percent }}%</p>
-{% for t in stats.topics %}<div>{{ t.topic.name }}: {{ t.percent }}%</div>{% endfor %}
-<h2 class="h5 mt-3">Kuchsiz mavzular</h2>
-{% for t in stats.weakest_topics %}<div>{{ t.topic.name }} — {{ t.percent }}%</div>{% endfor %}
-<h2 class="h5 mt-3">Oxirgi imtihonlar</h2>
-{% for e in recent_exams %}
-  <div><a href="{% url 'result' e.pk %}">{{ e.get_mode_display }} {{ e.score }}/{{ e.total_questions }}</a></div>
-{% empty %}
-  <p>Hali imtihon topshirmagansiz — <a href="{% url 'exam_start' %}">Boshlash</a></p>
-{% endfor %}
-{{ chart_data|json_script:"chart-data" }}
+{# ---------- Sarlavha kartasi ---------- #}
+<section class="card-x profile-head" aria-labelledby="profile-name">
+  <div class="profile-head__who">
+    <span class="avatar avatar--lg" aria-hidden="true">{{ user.first_name|default:user.username|slice:":1" }}</span>
+    <div class="profile-head__text">
+      <h1 id="profile-name" class="profile-head__name">{{ user.get_full_name|default:user.username }}</h1>
+      <ul class="profile-head__meta">
+        <li><i class="bi bi-calendar3" aria-hidden="true"></i> Roʻyxatdan oʻtgan: {{ user.date_joined|date:"d.m.Y" }}</li>
+        {% if user.email %}<li><i class="bi bi-envelope" aria-hidden="true"></i> <span class="profile-head__email">{{ user.email }}</span></li>{% endif %}
+        <li><i class="bi bi-at" aria-hidden="true"></i> {{ user.username }}</li>
+      </ul>
+    </div>
+  </div>
+  <a href="{% url 'exam_start' %}" class="btn btn-accent btn-lg profile-head__cta"><i class="bi bi-play-circle" aria-hidden="true"></i> Imtihon topshirish</a>
+</section>
+
+{# ---------- Davom etayotgan imtihon ---------- #}
+{% if open_exam %}
+  <div class="alert-x alert-x--warning profile-open" role="status">
+    <i class="bi bi-hourglass-split" aria-hidden="true"></i>
+    <div class="alert-x__body">
+      <strong>Sizda tugallanmagan imtihon bor.</strong>
+      <span class="text-muted">Taymer davom etmoqda — vaqt tugashidan oldin yakunlang.</span>
+    </div>
+    <a href="{% url 'exam' open_exam.pk %}" class="btn btn-dark btn-sm">Davom ettirish <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+  </div>
+{% endif %}
+
+{# ---------- Oʻrtacha natija banneri (faqat haqiqiy maʼlumotdan) ---------- #}
+{% if stats.total_exams %}
+  <section class="card-dark profile-banner" aria-label="Oʻrtacha natija">
+    <div class="progress-ring progress-ring--accent profile-banner__ring" style="--p:{{ stats.average_percent }}">
+      <svg viewBox="0 0 36 36" aria-hidden="true">
+        <circle class="progress-ring__track" cx="18" cy="18" r="15.9155"/>
+        <circle class="progress-ring__fill" cx="18" cy="18" r="15.9155" pathLength="100"/>
+      </svg>
+      <span class="progress-ring__value">{{ stats.average_percent }}%</span>
+    </div>
+    <div class="profile-banner__body">
+      <span class="kicker profile-banner__kicker">Imtihon simulyatori</span>
+      <h2 class="profile-banner__title">Oʻrtacha natija</h2>
+      <p class="text-muted mb-0">{{ stats.total_exams }} ta imtihondan {{ stats.passed_exams }} tasidan oʻtgansiz. Oʻtish uchun 20 ta savoldan kamida 18 tasiga (90%) toʻgʻri javob kerak.</p>
+    </div>
+  </section>
+{% endif %}
+
+{# ---------- 4 ta KPI ---------- #}
+<div class="row g-3 profile-stats">
+  <div class="col-6 col-lg-3">
+    <div class="stat-card">
+      <div class="stat-card__head"><span class="stat-card__label">Jami imtihonlar</span><span class="icon-tile icon-tile--sm icon-tile--t1"><i class="bi bi-clipboard-check" aria-hidden="true"></i></span></div>
+      <div class="stat-card__value">{{ stats.total_exams }}</div>
+      <div class="stat-card__hint"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Mashqlar: {{ stats.practice_count }}</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="stat-card">
+      <div class="stat-card__head"><span class="stat-card__label">Oʻtgan</span><span class="icon-tile icon-tile--sm icon-tile--t4"><i class="bi bi-patch-check" aria-hidden="true"></i></span></div>
+      <div class="stat-card__value">{{ stats.passed_exams }} <small>/ {{ stats.total_exams }}</small></div>
+      <div class="stat-card__hint">Muvaffaqiyatli imtihonlar</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="stat-card">
+      <div class="stat-card__head"><span class="stat-card__label">Oʻrtacha natija</span><span class="icon-tile icon-tile--sm icon-tile--t5"><i class="bi bi-bar-chart-line" aria-hidden="true"></i></span></div>
+      <div class="stat-card__value">{{ stats.average_percent }}<small>%</small></div>
+      <div class="stat-card__hint"><i class="bi bi-flag" aria-hidden="true"></i> Oʻtish chegarasi: 90%</div>
+    </div>
+  </div>
+  <div class="col-6 col-lg-3">
+    <div class="stat-card">
+      <div class="stat-card__head"><span class="stat-card__label">Eng yaxshi</span><span class="icon-tile icon-tile--sm icon-tile--t3"><i class="bi bi-trophy" aria-hidden="true"></i></span></div>
+      <div class="stat-card__value">{{ stats.best_percent }}<small>%</small></div>
+      <div class="stat-card__hint">Eng yuqori imtihon natijasi</div>
+    </div>
+  </div>
+</div>
+
+<div class="row g-3 mt-1">
+  {# ---------- Chap ustun ---------- #}
+  <div class="col-12 col-lg-8 d-flex flex-column gap-3">
+    <section class="card-x chart-card" aria-labelledby="chart-title">
+      <div class="card-head">
+        <div>
+          <h2 id="chart-title" class="card-head__title">Natijalar dinamikasi</h2>
+          <p class="card-head__sub">Oxirgi {{ chart_data.percents|length }} ta imtihon boʻyicha toʻgʻri javoblar foizi</p>
+        </div>
+        <ul class="chart-legend" aria-hidden="true">
+          <li><i class="chart-legend__line"></i> Natija</li>
+          <li><i class="chart-legend__line chart-legend__line--dash"></i> Oʻtish chegarasi (90%)</li>
+        </ul>
+      </div>
+      {% if chart_data.percents %}
+        <div class="chart-box">
+          <canvas id="results-chart" role="img" aria-label="Oxirgi imtihonlar natijalari grafigi"></canvas>
+        </div>
+      {% endif %}
+      <div class="empty-state empty-state--sm" id="chart-empty"{% if chart_data.percents %} hidden{% endif %}>
+        <span class="empty-state__icon"><i class="bi bi-graph-up" aria-hidden="true"></i></span>
+        <p>Grafik birinchi imtihondan keyin paydo boʻladi.</p>
+      </div>
+      {{ chart_data|json_script:"chart-data" }}
+    </section>
+
+    {# ---------- Oxirgi imtihonlar ---------- #}
+    <section class="card-x" aria-labelledby="recent-title">
+      <div class="card-head">
+        <div>
+          <h2 id="recent-title" class="card-head__title">Oxirgi imtihonlar</h2>
+          <p class="card-head__sub">Topshirilgan testlar va ularning batafsil tahlili</p>
+        </div>
+      </div>
+
+      {% if recent_exams %}
+        <table class="table-x recent-table">
+          <thead>
+            <tr><th scope="col">Sana va vaqt</th><th scope="col">Rejim</th><th scope="col">Natija</th><th scope="col">Holat</th><th scope="col" class="text-end">Amal</th></tr>
+          </thead>
+          <tbody>
+            {% for e in recent_exams %}
+              <tr>
+                <td class="recent-table__date" data-label="Sana">{{ e.started_at|date:"d.m.Y, H:i" }}</td>
+                <td class="recent-table__mode" data-label="Rejim">
+                  <span class="mode-dot{% if not e.is_exam %} mode-dot--practice{% endif %}" aria-hidden="true"></span>
+                  {{ e.get_mode_display }}{% if not e.is_exam and e.topic %} <span class="text-muted">· {{ e.topic.name }}</span>{% endif %}
+                </td>
+                <td class="recent-table__score" data-label="Natija">
+                  <span class="score{% if e.is_passed == False %} text-danger{% endif %}">{{ e.score }}</span> <small class="text-muted">/ {{ e.total_questions }}</small>
+                </td>
+                <td class="recent-table__status" data-label="Holat">
+                  {% if not e.is_exam %}<span class="chip chip--progress">Mashq</span>
+                  {% elif e.is_passed %}<span class="chip chip--pass"><i class="bi bi-check-circle" aria-hidden="true"></i> Oʻtdi</span>
+                  {% else %}<span class="chip chip--fail"><i class="bi bi-x-circle" aria-hidden="true"></i> Oʻtmadi</span>{% endif %}
+                </td>
+                <td class="recent-table__action text-end">
+                  <a href="{% url 'result' e.pk %}" class="recent-link">Koʻrish <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      {% else %}
+        <div class="empty-state">
+          <span class="empty-state__icon"><i class="bi bi-clipboard" aria-hidden="true"></i></span>
+          <h3>Hali imtihon topshirmagansiz</h3>
+          <p>Birinchi imtihonni topshiring — natijalar, grafik va xatolar tahlili shu yerda paydo boʻladi.</p>
+          <a href="{% url 'exam_start' %}" class="btn btn-accent"><i class="bi bi-play-circle" aria-hidden="true"></i> Boshlash</a>
+        </div>
+      {% endif %}
+    </section>
+  </div>
+
+  {# ---------- Oʻng ustun ---------- #}
+  <div class="col-12 col-lg-4 d-flex flex-column gap-3">
+    <section class="card-x" aria-labelledby="topics-title">
+      <div class="card-head">
+        <div>
+          <h2 id="topics-title" class="card-head__title">Mavzular boʻyicha</h2>
+          <p class="card-head__sub">Toʻgʻri javoblar foizi</p>
+        </div>
+        <span class="icon-tile icon-tile--sm icon-tile--t1"><i class="bi bi-diagram-3" aria-hidden="true"></i></span>
+      </div>
+      <ul class="topic-progress">
+        {% for t in stats.topics %}
+          <li class="topic-progress__item">
+            <div class="topic-progress__row">
+              <span class="topic-progress__name">{{ t.topic.name }}{% if t.total and t.percent < 70 %} <span class="topic-progress__warn" title="70% dan past">!</span>{% endif %}</span>
+              <span class="topic-progress__pct{% if t.total and t.percent < 70 %} is-low{% endif %}">{% if t.total %}{{ t.percent }}%{% else %}—{% endif %}</span>
+            </div>
+            <div class="bar" role="progressbar" aria-label="{{ t.topic.name }}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="{% if t.total %}{{ t.percent }}{% else %}0{% endif %}">
+              {% if t.total %}<div class="bar__fill {% if t.percent < 50 %}bar__fill--danger{% elif t.percent < 70 %}bar__fill--accent{% else %}bar__fill--dark{% endif %}" style="width: {{ t.percent }}%"></div>{% endif %}
+            </div>
+            {% if t.total %}<span class="topic-progress__hint">{{ t.correct }} / {{ t.total }} toʻgʻri</span>{% else %}<span class="topic-progress__hint">Hali yechilmagan</span>{% endif %}
+          </li>
+        {% empty %}
+          <li class="text-muted">Mavzular hali qoʻshilmagan.</li>
+        {% endfor %}
+      </ul>
+    </section>
+
+    <section class="card-x card-x--muted" aria-labelledby="weak-title">
+      <h2 id="weak-title" class="card-head__title d-flex align-items-center gap-2"><i class="bi bi-exclamation-triangle text-accent" aria-hidden="true"></i> Kuchsiz mavzular</h2>
+      {% if stats.weakest_topics %}
+        <p class="card-head__sub mb-3">Bu mavzularda eng koʻp xato qilingan. Imtihondan oldin ularni alohida mustahkamlang.</p>
+        <ul class="weak-list">
+          {% for t in stats.weakest_topics %}
+            <li class="weak-item">
+              <div class="weak-item__text">
+                <span class="weak-item__name">{{ t.topic.name }}</span>
+                <span class="weak-item__meta text-danger"><i class="bi bi-x-lg" aria-hidden="true"></i> {{ t.percent }}% toʻgʻri · {{ t.correct }} / {{ t.total }}</span>
+              </div>
+              <form method="post" action="{% url 'practice_start' t.topic.slug %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-ghost btn-sm weak-item__btn">Mashq qilish</button>
+              </form>
+            </li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p class="card-head__sub mb-3">Hozircha maʼlumot yetarli emas. Mashq yoki imtihon topshirgach, eng kuchsiz mavzular shu yerda chiqadi.</p>
+      {% endif %}
+      <a href="{% url 'topic_list' %}" class="btn btn-dark btn-block mt-3"><i class="bi bi-grid" aria-hidden="true"></i> Barcha mavzular</a>
+    </section>
+  </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+  {% if chart_data.percents %}
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+    <script src="{% static 'js/profile.js' %}" defer></script>
+  {% endif %}
 {% endblock %}

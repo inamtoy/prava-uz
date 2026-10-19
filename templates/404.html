@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Sahifa topilmadi — Prava.uz{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/results.css' %}">{% endblock %}
+
+{% block content %}
+<section class="error-page" aria-labelledby="error-title">
+  <svg class="error-page__sign" viewBox="0 0 120 150" role="img" aria-label="Yoʻl belgisi: kirish taqiqlangan">
+    <rect x="56" y="78" width="8" height="70" rx="3" fill="#A9B4C6"/>
+    <circle cx="60" cy="54" r="50" fill="#fff"/>
+    <circle cx="60" cy="54" r="46" fill="#E5383B"/>
+    <rect x="28" y="46" width="64" height="16" rx="3" fill="#fff"/>
+  </svg>
+  <div class="error-page__body">
+    <span class="kicker">Xato 404</span>
+    <p class="error-page__code" aria-hidden="true">404</p>
+    <h1 id="error-title">Sahifa topilmadi</h1>
+    <p class="lead">Bu yoʻl yopiq. Siz qidirgan sahifa mavjud emas, koʻchirilgan yoki unga kirish huquqingiz yoʻq.</p>
+    <div class="error-page__actions">
+      <a href="{% url 'home' %}" class="btn btn-accent btn-lg"><i class="bi bi-house" aria-hidden="true"></i> Bosh sahifa</a>
+      <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-lg"><i class="bi bi-grid" aria-hidden="true"></i> Mavzular</a>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,54 +1,112 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Imtihon — Prava.uz{% endblock %}
-{% block content %}
-<div id="exam" class="quiz-wrap"
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/exam.css' %}">{% endblock %}
+{% block body_class %}{% endblock %}
+{% block navbar %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block tabbar %}{% endblock %}
+{% block main %}
+<div id="exam" class="exam"
      data-answer-url="{% url 'exam_answer' exam.pk %}"
      data-time-left="{{ time_left }}"
      data-start="{{ start_index }}">
 
-  <div class="exam-bar card mb-3">
-    <div class="card-body py-2 d-flex align-items-center justify-content-between gap-2">
-      <div class="fw-semibold">Savol <span id="current-number">{{ start_index|add:1 }}</span> / {{ items|length }}</div>
-      <div id="timer" class="timer badge fs-5" role="timer" aria-live="off" aria-label="Qolgan vaqt">--:--</div>
-      <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#finishModal">Yakunlash</button>
+  {# Fokus rejimi: ingichka yopishqoq yuqori panel #}
+  <header class="exam-top">
+    <div class="container-x exam-top__inner">
+      <div class="exam-top__left">
+        <a class="brand" href="{% url 'home' %}" aria-label="Prava.uz bosh sahifa">
+          {% include "partials/logo.html" %}<span class="exam-top__brand-text">Prava<span class="brand__tld">.uz</span></span>
+        </a>
+        <span class="exam-top__divider" aria-hidden="true"></span>
+        <span class="chip exam-top__mode"><span class="exam-top__live" aria-hidden="true"></span>Imtihon rejimi</span>
+      </div>
+
+      <div id="timer" class="timer-pill exam-timer" role="timer" aria-live="off" aria-label="Qolgan vaqt">
+        <i class="bi bi-stopwatch" aria-hidden="true"></i>
+        <span id="timer-value" class="exam-timer__value">--:--</span>
+        <span class="exam-timer__suffix">qoldi</span>
+      </div>
+
+      <div class="exam-top__right">
+        <button type="button" class="btn exam-finish-btn" data-bs-toggle="modal" data-bs-target="#finishModal">
+          <i class="bi bi-flag" aria-hidden="true"></i><span>Yakunlash</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container-x exam-body">
+    {% include "partials/messages.html" %}
+
+    <div class="exam-layout">
+      {# Savol kartasi va boshqaruv #}
+      <section class="exam-main" aria-label="Joriy savol">
+        <div class="card-x exam-card">
+          {% for item in items %}
+            {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=False %}
+          {% endfor %}
+
+          <div class="exam-controls">
+            <div class="exam-controls__nav">
+              <button type="button" id="prev-btn" class="btn btn-ghost btn-lg">&lsaquo; Oldingi</button>
+              <button type="button" id="next-btn" class="btn btn-primary btn-lg">Keyingi &rsaquo;</button>
+            </div>
+            <div class="exam-keys" aria-hidden="true">
+              <i class="bi bi-keyboard"></i>
+              <span><kbd>1</kbd>–<kbd>4</kbd> javob</span>
+              <span><kbd><i class="bi bi-arrow-left" aria-label="chap"></i></kbd>/<kbd><i class="bi bi-arrow-right" aria-label="oʻng"></i></kbd> savollar</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {# Savollar xaritasi: kompyuterda yon panel, telefonda yuqoridagi gorizontal lenta #}
+      <aside class="exam-side" aria-label="Savollar xaritasi">
+        <div class="exam-map">
+          <div class="exam-map__head">
+            <h2 class="exam-map__title">Savollar xaritasi</h2>
+            <span class="exam-map__pos">Savol <strong id="current-number">{{ start_index|add:1 }}</strong> / {{ items|length }}</span>
+            <span class="exam-map__count">Javob berildi: <span id="answered-count">0</span> / {{ items|length }}</span>
+          </div>
+
+          <nav class="q-nav exam-map__grid" id="q-nav" aria-label="Savollar">
+            {% for item in items %}
+              <button type="button" class="nav-num{% if item.selected_answer_id %} answered{% endif %}" data-goto="{{ forloop.counter0 }}" aria-label="Savol {{ forloop.counter }}">{{ forloop.counter }}</button>
+            {% endfor %}
+          </nav>
+
+          <div class="q-legend exam-map__legend">
+            <span><i class="is-answered" aria-hidden="true"></i>Javob berilgan</span>
+            <span><i class="is-current" aria-hidden="true"></i>Joriy</span>
+            <span><i aria-hidden="true"></i>Javobsiz</span>
+          </div>
+        </div>
+      </aside>
     </div>
   </div>
 
-  <nav class="exam-nav mb-3" aria-label="Savollar">
-    {% for item in items %}
-      <button type="button" class="nav-num{% if item.selected_answer_id %} answered{% endif %}" data-goto="{{ forloop.counter0 }}" aria-label="Savol {{ forloop.counter }}">{{ forloop.counter }}</button>
-    {% endfor %}
-  </nav>
-
-  <div id="ajax-alert" class="alert alert-warning d-none" role="alert"></div>
-
-  {% for item in items %}
-    {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=False %}
-  {% endfor %}
-
-  <div class="d-flex justify-content-between gap-2 mt-3">
-    <button type="button" id="prev-btn" class="btn btn-outline-secondary">&lsaquo; Oldingi</button>
-    <button type="button" id="next-btn" class="btn btn-primary">Keyingi &rsaquo;</button>
-  </div>
+  <div id="ajax-alert" class="alert-x alert-x--warning exam-alert d-none" role="alert"></div>
 
   <form id="finish-form" method="post" action="{% url 'exam_finish' exam.pk %}">{% csrf_token %}</form>
 </div>
 
-<div class="modal fade" id="finishModal" tabindex="-1" aria-labelledby="finishModalLabel" aria-hidden="true">
+<div class="modal fade" id="finishModal" tabindex="-1" aria-labelledby="finishModalLabel" aria-describedby="unanswered-text" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h2 class="modal-title h5" id="finishModalLabel">Imtihonni yakunlaysizmi?</h2>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+    <div class="modal-content finish-modal">
+      <div class="icon-tile icon-tile--lg finish-modal__icon" aria-hidden="true"><i class="bi bi-exclamation-triangle"></i></div>
+      <h2 class="finish-modal__title" id="finishModalLabel">Imtihonni yakunlaysizmi?</h2>
+      <p id="unanswered-text" class="finish-modal__text"></p>
+      <div class="finish-modal__time">
+        <span>Qolgan vaqt:</span>
+        <span id="modal-time" class="font-mono">--:--</span>
       </div>
-      <div class="modal-body">
-        <p id="unanswered-text" class="mb-0"></p>
+      <div class="finish-modal__actions">
+        <button type="button" class="btn btn-soft btn-lg" data-bs-dismiss="modal">Davom etish</button>
+        <button type="submit" form="finish-form" class="btn btn-danger btn-lg">Yakunlash</button>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Davom etish</button>
-        <button type="submit" form="finish-form" class="btn btn-danger">Ha, yakunlash</button>
-      </div>
+      <button type="button" class="btn btn-link finish-modal__dismiss" data-bs-dismiss="modal">Oynani yopish</button>
     </div>
   </div>
 </div>

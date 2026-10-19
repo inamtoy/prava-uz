@@ -28,6 +28,8 @@ class Command(BaseCommand):
     def handle(self, *args, reset=False, **options):
         if reset:
             Exam.objects.all().delete()
+            for question in Question.objects.exclude(image=""):
+                question.image.delete(save=False)  # media/ da eski fayllar qolmasin
             Topic.objects.all().delete()
             User.objects.filter(username__in=["admin", "demo"]).delete()
             self.stdout.write("Eski ma'lumotlar o'chirildi.")

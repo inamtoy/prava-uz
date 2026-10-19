@@ -8,3 +8,8 @@
 - `ExamAnswer.question` CASCADE: savolni o'chirish o'rniga admin `is_active` ni o'chirsin (tarix saqlanadi).
 - Dizayn manbasi: `design/` (Stitch, "Asphalt & Signal"). Shrift Manrope + Inter (Stitch bo'yicha), Bootstrap'dan faqat bootstrap-grid.min.css va JS (modal/dropdown); modal/dropdown CSS main.css da.
 - Landing'da Stitch'dagi soxta raqamlar (12 000+ o'quvchi, 4.9 reyting), fikrlar va narxlar qo'yilmadi — statistika bazadan olinadi.
+- `playwright` faqat dev uchun (`requirements-dev.txt`): `tools/screenshots.py` dizayn skrinshotlari va to'liq oqim tekshiruvi. Lokal Chrome ishlatiladi (`channel="chrome"`).
+- Natija sahifasida MM:SS custom template tag'siz `widthratio` bilan hisoblanadi (.py o'zgarmasin deb).
+- Chart.js 4.4.1 (jsDelivr) faqat profilda va faqat imtihon ma'lumoti bo'lsa yuklanadi.
+- Sahifaga xos stillar `static/css/pages/*.css` da; umumiy tokenlar va komponentlar `main.css` da.
+- `accounts/forms.py` xato matnlarida oddiy apostrof (') qolgan — shablonlarda U+02BB (ʻ) ishlatilgan.

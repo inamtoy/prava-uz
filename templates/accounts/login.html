@@ -1,18 +1,141 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}Kirish — Prava.uz{% endblock %}
-{% block content %}
-<div class="row justify-content-center">
-  <div class="col-12 col-md-8 col-lg-5">
-    <div class="card p-3 p-md-4">
-      <h1 class="h3 mb-3">Kirish</h1>
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/auth.css' %}">{% endblock %}
+{% block body_class %}{% endblock %}
+{% block navbar %}{% endblock %}
+{% block footer %}{% endblock %}
+{% block tabbar %}{% endblock %}
+
+{% block main %}
+<div class="auth">
+  <aside class="auth__panel">
+    <div class="auth__panel-top">
+      <a class="brand brand--light" href="{% url 'home' %}" aria-label="Prava.uz bosh sahifa">
+        {% include "partials/logo.html" %}<span>Prava<span class="brand__tld">.uz</span></span>
+      </a>
+      <span class="auth__tag"><i class="bi bi-patch-check" aria-hidden="true"></i> Yoʻl harakati qoidalari asosida</span>
+    </div>
+
+    <div class="auth__art" aria-hidden="true">
+      <svg viewBox="0 0 400 260" focusable="false">
+        <defs>
+          <radialGradient id="authGlow" cx="50%" cy="30%" r="55%">
+            <stop offset="0" stop-color="#2457F5" stop-opacity=".35"/>
+            <stop offset="1" stop-color="#2457F5" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="authBeam" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#FFC220" stop-opacity=".7"/>
+            <stop offset="1" stop-color="#FFC220" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <ellipse cx="200" cy="80" rx="190" ry="90" fill="url(#authGlow)"/>
+        <path d="M0 112 Q60 92 120 102 T240 96 T400 106 V124 H0 Z" fill="#132A4C"/>
+        <polygon points="182,104 218,104 362,260 38,260" fill="#0F2443"/>
+        <line x1="182" y1="104" x2="38" y2="260" stroke="#A9B4C6" stroke-opacity=".35" stroke-width="2"/>
+        <line x1="218" y1="104" x2="362" y2="260" stroke="#A9B4C6" stroke-opacity=".35" stroke-width="2"/>
+        <g fill="#FFC220">
+          <polygon points="199,110 201,110 201.6,124 198.4,124"/>
+          <polygon points="198,138 202,138 203,160 197,160"/>
+          <polygon points="196.5,180 203.5,180 205,212 195,212"/>
+          <polygon points="194.5,232 205.5,232 207,260 193,260"/>
+        </g>
+        <g>
+          <line x1="140" y1="104" x2="140" y2="76" stroke="#51627E" stroke-width="2"/>
+          <circle cx="140" cy="74" r="10" fill="#FFC220" opacity=".18"/>
+          <circle cx="140" cy="74" r="3" fill="#FFC220"/>
+          <line x1="260" y1="104" x2="260" y2="76" stroke="#51627E" stroke-width="2"/>
+          <circle cx="260" cy="74" r="10" fill="#FFC220" opacity=".18"/>
+          <circle cx="260" cy="74" r="3" fill="#FFC220"/>
+        </g>
+        <g>
+          <line x1="78" y1="196" x2="78" y2="150" stroke="#A9B4C6" stroke-width="2.5"/>
+          <circle cx="78" cy="144" r="14" fill="#fff" stroke="#E5383B" stroke-width="4"/>
+          <text x="78" y="148.5" text-anchor="middle" font-family="Manrope, sans-serif" font-size="12" font-weight="800" fill="#0B1B33">70</text>
+        </g>
+        <polygon points="232,205 268,205 306,260 194,260" fill="url(#authBeam)" opacity=".7"/>
+        <g>
+          <path d="M235 189 L241 178 H259 L265 189 Z" fill="#2A4470"/>
+          <path d="M239 188 L243 181 H257 L261 188 Z" fill="#51627E"/>
+          <rect x="228" y="187" width="44" height="19" rx="7" fill="#1E3355"/>
+          <rect x="242" y="197" width="16" height="3" rx="1.5" fill="#FFC220"/>
+          <circle cx="235" cy="197" r="3.2" fill="#FFF7DD"/>
+          <circle cx="265" cy="197" r="3.2" fill="#FFF7DD"/>
+          <ellipse cx="250" cy="208" rx="26" ry="3" fill="#0B1B33" opacity=".6"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="auth__quote">
+      <blockquote>«Har kuni bir oz mashq — va guvohnoma sizniki»</blockquote>
+      <p>Mavzular boʻyicha mashq qiling, imtihon simulyatorida oʻzingizni sinang va xatolaringizdan oʻrganing.</p>
+    </div>
+  </aside>
+
+  <div class="auth__main">
+    <div class="auth__form">
+      {% include "partials/messages.html" %}
+      <div class="auth__head">
+        <span class="kicker auth__kicker">Shaxsiy kabinet</span>
+        <h1>Xush kelibsiz!</h1>
+        <p>Profilingizga kiring va mashgʻulotlarni davom ettiring.</p>
+      </div>
+
       <form method="post" novalidate>
         {% csrf_token %}
         <input type="hidden" name="next" value="{{ next }}">
-        {% include "partials/form_fields.html" %}
-        <button type="submit" class="btn btn-primary btn-lg w-100">Kirish</button>
+
+        {% if form.non_field_errors %}
+          <div class="alert-x alert-x--danger" role="alert">
+            <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+            <div class="alert-x__body">{% for e in form.non_field_errors %}{{ e }}{% if not forloop.last %}<br>{% endif %}{% endfor %}</div>
+          </div>
+        {% endif %}
+
+        <div class="field">
+          <label class="field__label" for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+          <div class="input-icon">
+            <i class="bi bi-person-circle input-icon__icon" aria-hidden="true"></i>
+            {{ form.username }}
+          </div>
+          {% for e in form.username.errors %}<div class="field__error"><i class="bi bi-exclamation-circle" aria-hidden="true"></i><span>{{ e }}</span></div>{% endfor %}
+        </div>
+
+        <div class="field">
+          <label class="field__label" for="{{ form.password.id_for_label }}">{{ form.password.label }}</label>
+          <div class="input-icon input-icon--password">
+            <i class="bi bi-lock input-icon__icon" aria-hidden="true"></i>
+            {{ form.password }}
+            <button type="button" class="pw-toggle" data-pw-toggle aria-label="Parolni koʻrsatish" aria-pressed="false"><i class="bi bi-eye" aria-hidden="true"></i></button>
+          </div>
+          {% for e in form.password.errors %}<div class="field__error"><i class="bi bi-exclamation-circle" aria-hidden="true"></i><span>{{ e }}</span></div>{% endfor %}
+        </div>
+
+        <button type="submit" class="btn btn-accent btn-lg btn-block auth__submit">Kirish <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
       </form>
-      <p class="mt-3 mb-0 text-center">Hali akkauntingiz yo'qmi? <a href="{% url 'register' %}">Ro'yxatdan o'ting</a></p>
+
+      <p class="auth__switch">Akkauntingiz yoʻqmi? <a href="{% url 'register' %}">Roʻyxatdan oʻtish</a></p>
+    </div>
+
+    <div class="auth__foot">
+      <a href="{% url 'home' %}"><i class="bi bi-arrow-left" aria-hidden="true"></i> Bosh sahifa</a>
+      <span>&copy; {% now "Y" %} Prava.uz</span>
     </div>
   </div>
 </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+  document.querySelectorAll("[data-pw-toggle]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var input = btn.parentElement.querySelector("input");
+      var show = input.type === "password";
+      input.type = show ? "text" : "password";
+      btn.setAttribute("aria-pressed", show ? "true" : "false");
+      btn.setAttribute("aria-label", show ? "Parolni yashirish" : "Parolni koʻrsatish");
+      btn.querySelector(".bi").className = "bi " + (show ? "bi-eye-slash" : "bi-eye");
+    });
+  });
+</script>
 {% endblock %}

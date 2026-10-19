@@ -1,0 +1,37 @@
+{% load static %}<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0B1B33">
+  <title>Serverda xatolik — Prava.uz</title>
+  <link rel="icon" href="{% static 'img/logo.svg' %}" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="{% static 'css/main.css' %}" rel="stylesheet">
+  <link href="{% static 'css/pages/results.css' %}" rel="stylesheet">
+</head>
+<body>
+  <main class="site-main">
+    <div class="container-x page">
+      <a class="brand error-page__brand" href="/">Prava<span class="brand__tld">.uz</span></a>
+      <section class="error-page" aria-labelledby="error-title">
+        <svg class="error-page__sign" viewBox="0 0 120 150" role="img" aria-label="Yoʻl belgisi: ehtiyot boʻling">
+          <rect x="56" y="80" width="8" height="68" rx="3" fill="#A9B4C6"/>
+          <path d="M60 6 L114 98 H6 Z" fill="#fff" stroke="#E5383B" stroke-width="10" stroke-linejoin="round"/>
+          <rect x="55" y="36" width="10" height="34" rx="4" fill="#0B1B33"/>
+          <circle cx="60" cy="82" r="6" fill="#0B1B33"/>
+        </svg>
+        <div class="error-page__body">
+          <span class="kicker">Xato 500</span>
+          <p class="error-page__code" aria-hidden="true">500</p>
+          <h1 id="error-title">Serverda xatolik</h1>
+          <p class="lead">Kutilmagan nosozlik yuz berdi. Biz bundan xabardormiz — birozdan keyin qayta urinib koʻring.</p>
+          <div class="error-page__actions">
+            <a href="/" class="btn btn-accent btn-lg">Bosh sahifaga qaytish</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</body>
+</html>

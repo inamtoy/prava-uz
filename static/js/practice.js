@@ -15,6 +15,14 @@
   const answeredEl = document.getElementById("answered-count");
   const correctEl = document.getElementById("correct-count");
   const progressEl = document.getElementById("practice-progress");
+  const positionEl = document.getElementById("practice-position");
+  const wrongEl = document.getElementById("wrong-count");
+  const scoreRing = document.getElementById("score-ring");
+  const scoreRingValue = document.getElementById("score-ring-value");
+  const summaryRing = document.getElementById("summary-ring");
+  const summaryPercent = document.getElementById("summary-percent");
+  const toast = document.getElementById("practice-toast");
+  let toastTimer = null;
 
   let answered = parseInt(root.dataset.answered, 10) || 0;
   let correct = parseInt(root.dataset.correct, 10) || 0;
@@ -29,19 +37,45 @@
     const onSummary = current >= total;
     cards.forEach(function (card, i) { card.classList.toggle("d-none", i !== current); });
     summary.classList.toggle("d-none", !onSummary);
-    if (onSummary) document.getElementById("summary-score").textContent = correct;
+    if (onSummary) {
+      document.getElementById("summary-score").textContent = correct;
+      const sp = total ? Math.round((correct * 100) / total) : 0;
+      setRing(summaryRing, summaryPercent, sp);
+      summaryRing.classList.toggle("progress-ring--success", sp >= 90);
+      summaryRing.classList.toggle("progress-ring--danger", sp < 70);
+    }
 
     prevBtn.disabled = current === 0;
     const card = cards[current];
     const isLast = current === total - 1;
     nextBtn.classList.toggle("d-none", onSummary);
-    nextBtn.innerHTML = isLast && allAnswered() ? "Yakunlash &rsaquo;" : "Keyingi savol &rsaquo;";
-    nextBtn.classList.toggle("btn-primary", !!(card && card.dataset.answered));
-    nextBtn.classList.toggle("btn-outline-primary", !(card && card.dataset.answered));
+    nextBtn.innerHTML = (isLast && allAnswered() ? "Yakunlash" : "Keyingi savol") +
+      ' <i class="bi bi-arrow-right" aria-hidden="true"></i>';
+    nextBtn.classList.toggle("btn-accent", !!(card && card.dataset.answered));
+    nextBtn.classList.toggle("btn-ghost", !(card && card.dataset.answered));
+    root.classList.toggle("is-summary", onSummary);
+    if (positionEl) {
+      positionEl.textContent = onSummary ? "Yakunlandi" : "Savol " + (current + 1) + " / " + total;
+    }
 
     answeredEl.textContent = answered;
     correctEl.textContent = correct;
     progressEl.style.width = Math.round((answered * 100) / total) + "%";
+    if (wrongEl) wrongEl.textContent = answered - correct;
+    setRing(scoreRing, scoreRingValue, answered ? Math.round((correct * 100) / answered) : 0);
+  }
+
+  function setRing(ring, valueEl, percent) {
+    if (!ring) return;
+    ring.style.setProperty("--p", percent);
+    if (valueEl) valueEl.textContent = percent + "%";
+  }
+
+  function showToast() {
+    if (!toast) return;
+    toast.classList.add("is-visible");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toast.classList.remove("is-visible"); }, 1600);
   }
 
   function go(index) {
@@ -105,6 +139,7 @@
       answered += 1;
       if (res.body.is_correct) correct += 1;
       showResult(card, res.body);
+      if (res.body.is_correct) showToast();
       render();
     } catch (e) {
       btn.classList.remove("is-selected");

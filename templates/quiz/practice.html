@@ -1,52 +1,106 @@
 {% extends "base.html" %}
 {% load static %}
 {% block title %}Mashq: {{ exam.topic.name }} — Prava.uz{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/quiz.css' %}">{% endblock %}
 {% block content %}
-<div id="practice" class="quiz-wrap"
+<div id="practice" class="practice"
      data-answer-url="{% url 'exam_answer' exam.pk %}"
      data-total="{{ items|length }}"
      data-answered="{{ answered_count }}"
      data-correct="{{ correct_count }}"
      data-start="{{ start_index }}">
 
-  <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-3">
-    <div>
-      <div class="small text-muted">Mashq</div>
-      <h1 class="h5 mb-0">{{ exam.topic.name }}</h1>
+  <header class="practice-bar">
+    <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-icon practice-bar__back" aria-label="Mavzularga qaytish" title="Mavzularga qaytish">
+      <i class="bi bi-x-lg" aria-hidden="true"></i>
+    </a>
+    <div class="practice-bar__info">
+      <div class="practice-bar__row">
+        <span class="kicker">Mashq jarayoni</span>
+        <span class="practice-bar__pos tabular" id="practice-position">Savol {{ start_index|add:1 }} / {{ items|length }}</span>
+      </div>
+      <h1 class="practice-bar__title">{{ exam.topic.name }}</h1>
+      <div class="bar bar--thin practice-bar__progress" aria-hidden="true">
+        <div id="practice-progress" class="bar__fill bar__fill--accent" style="width: 0%"></div>
+      </div>
     </div>
-    <div class="text-end">
-      <span class="badge text-bg-light fs-6"><span id="answered-count">{{ answered_count }}</span> / {{ items|length }}</span>
-      <span class="badge text-bg-success fs-6"><i class="bi bi-check-lg"></i> <span id="correct-count">{{ correct_count }}</span></span>
+  </header>
+
+  <div class="practice-chips">
+    <span class="chip"><i class="bi bi-ui-checks" aria-hidden="true"></i> Javob berildi: <strong class="tabular"><span id="answered-count">{{ answered_count }}</span> / {{ items|length }}</strong></span>
+    <span class="chip chip--done"><i class="bi bi-check-circle" aria-hidden="true"></i> Toʻgʻri: <strong class="tabular" id="correct-count">{{ correct_count }}</strong></span>
+    <span class="chip chip--fail"><i class="bi bi-exclamation-circle" aria-hidden="true"></i> Xatolar: <strong class="tabular" id="wrong-count"></strong></span>
+  </div>
+
+  <div class="row g-3 g-lg-4">
+    <div class="col-12 col-lg-8">
+      <div class="card-x card-x--raised practice-card">
+        <div id="ajax-alert" class="alert-x alert-x--warning d-none" role="alert"></div>
+
+        {% for item in items %}
+          {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=True %}
+        {% endfor %}
+
+        <div id="practice-summary" class="practice-summary d-none">
+          <div id="summary-ring" class="progress-ring progress-ring--lg" style="--p:0">
+            <svg viewBox="0 0 36 36" aria-hidden="true">
+              <circle class="progress-ring__track" cx="18" cy="18" r="15.9155"/>
+              <circle class="progress-ring__fill" cx="18" cy="18" r="15.9155" pathLength="100"/>
+            </svg>
+            <span class="progress-ring__value" id="summary-percent">0%</span>
+          </div>
+          <span class="kicker">{{ exam.topic.name }}</span>
+          <h2 class="practice-summary__title">Mashq tugadi!</h2>
+          <p class="practice-summary__score">Toʻgʻri javoblar: <strong id="summary-score"></strong> / {{ items|length }}</p>
+          <div class="practice-summary__actions">
+            <button type="submit" form="finish-form" class="btn btn-accent btn-lg">Natijani koʻrish <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+            <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-lg"><i class="bi bi-grid" aria-hidden="true"></i> Boshqa mavzu</a>
+          </div>
+        </div>
+
+        <div class="practice-nav">
+          <button type="button" id="prev-btn" class="btn btn-soft btn-lg practice-nav__prev"><i class="bi bi-arrow-left" aria-hidden="true"></i> <span>Oldingi</span></button>
+          <span class="practice-nav__hint"><kbd>Enter</kbd> orqali davom eting</span>
+          <button type="button" id="next-btn" class="btn btn-accent btn-lg practice-nav__next">Keyingi savol <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+        </div>
+      </div>
+
+      <form id="finish-form" method="post" action="{% url 'exam_finish' exam.pk %}" class="text-center mt-3">
+        {% csrf_token %}
+        <button type="submit" class="btn btn-link">Mashqni hozir yakunlash</button>
+      </form>
     </div>
+
+    <aside class="col-12 col-lg-4 d-none d-lg-block">
+      <div class="practice-side">
+        <div class="card-x practice-side__score">
+          <div id="score-ring" class="progress-ring progress-ring--success" style="--p:{% widthratio correct_count answered_count 100 %}">
+            <svg viewBox="0 0 36 36" aria-hidden="true">
+              <circle class="progress-ring__track" cx="18" cy="18" r="15.9155"/>
+              <circle class="progress-ring__fill" cx="18" cy="18" r="15.9155" pathLength="100"/>
+            </svg>
+            <span class="progress-ring__value" id="score-ring-value">{% widthratio correct_count answered_count 100 %}%</span>
+          </div>
+          <div>
+            <span class="stat-card__label">Aniqlik</span>
+            <p class="practice-side__text">Javob berilgan savollarning necha foizi toʻgʻri.</p>
+          </div>
+        </div>
+        <div class="card-x practice-side__keys">
+          <span class="stat-card__label">Klaviatura</span>
+          <ul class="key-list">
+            <li><span><kbd>1</kbd>–<kbd>4</kbd></span> Javob tanlash</li>
+            <li><span><kbd>Enter</kbd> / <kbd><i class="bi bi-arrow-right" aria-label="oʻng"></i></kbd></span> Keyingi savol</li>
+            <li><span><kbd><i class="bi bi-arrow-left" aria-label="chap"></i></kbd></span> Oldingi savol</li>
+          </ul>
+        </div>
+      </div>
+    </aside>
   </div>
-  <div class="progress mb-3" style="height: 6px" aria-hidden="true">
-    <div id="practice-progress" class="progress-bar" style="width: 0%"></div>
+
+  <div id="practice-toast" class="toast-x toast-x--success" role="status" aria-live="polite">
+    <i class="bi bi-check-circle-fill" aria-hidden="true"></i> Toʻgʻri javob!
   </div>
-
-  <div id="ajax-alert" class="alert alert-warning d-none" role="alert"></div>
-
-  {% for item in items %}
-    {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=True %}
-  {% endfor %}
-
-  <div id="practice-summary" class="card d-none">
-    <div class="card-body text-center py-4">
-      <i class="bi bi-flag-fill text-brand fs-1"></i>
-      <h2 class="h4 mt-2">Mashq tugadi!</h2>
-      <p class="fs-5 mb-3">To'g'ri javoblar: <strong id="summary-score"></strong> / {{ items|length }}</p>
-      <button type="submit" form="finish-form" class="btn btn-primary btn-lg">Natijani ko'rish <i class="bi bi-arrow-right"></i></button>
-    </div>
-  </div>
-
-  <div class="d-flex justify-content-between gap-2 mt-3">
-    <button type="button" id="prev-btn" class="btn btn-outline-secondary">&lsaquo; Oldingi</button>
-    <button type="button" id="next-btn" class="btn btn-primary">Keyingi savol &rsaquo;</button>
-  </div>
-
-  <form id="finish-form" method="post" action="{% url 'exam_finish' exam.pk %}" class="text-center mt-4">
-    {% csrf_token %}
-    <button type="submit" class="btn btn-link text-muted">Mashqni hozir yakunlash</button>
-  </form>
 </div>
 {% endblock %}
 {% block extra_js %}

@@ -17,11 +17,33 @@
   const finishForm = document.getElementById("finish-form");
   const unansweredText = document.getElementById("unanswered-text");
   const modalEl = document.getElementById("finishModal");
+  const timerValue = document.getElementById("timer-value") || timerEl;
+  const modalTime = document.getElementById("modal-time");
+  const answeredCount = document.getElementById("answered-count");
+  const navStrip = document.getElementById("q-nav");
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   let current = parseInt(root.dataset.start, 10) || 0;
   let deadline = Date.now() + (parseInt(root.dataset.timeLeft, 10) || 0) * 1000;
   let submitting = false;
   let timerId = null;
+
+  /* ---- UI yordamchilari ---- */
+  function answeredTotal() {
+    return cards.filter(function (c) { return c.dataset.answered; }).length;
+  }
+
+  function updateCounter() {
+    if (answeredCount) answeredCount.textContent = answeredTotal();
+  }
+
+  // Telefondagi gorizontal lentada joriy katakni ko'rinadigan joyga surish (sahifani vertikal siljitmaydi)
+  function revealNav(btn) {
+    if (!navStrip || !btn || navStrip.scrollWidth <= navStrip.clientWidth) return;
+    const left = btn.offsetLeft - (navStrip.clientWidth - btn.offsetWidth) / 2;
+    if (navStrip.scrollTo) navStrip.scrollTo({ left: left, behavior: reduceMotion ? "auto" : "smooth" });
+    else navStrip.scrollLeft = left;
+  }
 
   /* ---- Navigatsiya ---- */
   function go(index) {
@@ -33,6 +55,7 @@
       if (i === current) b.setAttribute("aria-current", "step"); else b.removeAttribute("aria-current");
     });
     numberEl.textContent = current + 1;
+    revealNav(navBtns[current]);
     prevBtn.disabled = current === 0;
     nextBtn.disabled = current === total - 1;
   }
@@ -59,6 +82,7 @@
       if (!res.ok) throw new Error(res.body.error || "");
       card.dataset.answered = "1";
       navBtns[index].classList.add("answered");
+      updateCounter();
       if (typeof res.body.time_left === "number") deadline = Date.now() + res.body.time_left * 1000;
     } catch (e) {
       // Holatni qaytarish: avvalgi tanlov saqlanib qolgan
@@ -78,7 +102,8 @@
 
   function tick() {
     const left = Math.max(0, Math.round((deadline - Date.now()) / 1000));
-    timerEl.textContent = format(left);
+    timerValue.textContent = format(left);
+    if (modalTime) modalTime.textContent = format(left);
     timerEl.classList.toggle("is-warning", left <= 300 && left > 60);
     timerEl.classList.toggle("is-danger", left <= 60);
     if (left <= 0) {
@@ -117,10 +142,18 @@
   });
 
   modalEl.addEventListener("show.bs.modal", function () {
-    const left = cards.filter(function (c) { return !c.dataset.answered; }).length;
-    unansweredText.textContent = left
-      ? "Javob berilmagan savollar: " + left + " ta. Ular xato hisoblanadi."
-      : "Barcha savollarga javob berdingiz.";
+    const left = total - answeredTotal();
+    // DOM API bilan quriladi (innerHTML ishlatilmaydi)
+    unansweredText.textContent = "";
+    if (left) {
+      const strong = document.createElement("strong");
+      strong.className = "text-danger";
+      strong.textContent = left + " ta savolga";
+      unansweredText.append("Sizda hali vaqt bor, biroq ", strong, " javob berilmagan. Ular xato hisoblanadi.");
+    } else {
+      unansweredText.textContent = "Barcha savollarga javob berdingiz. Yakunlagach natijani koʻrasiz.";
+    }
+    if (modalTime) modalTime.textContent = timerValue.textContent;
   });
 
   finishForm.addEventListener("submit", function () { submitting = true; });
@@ -132,6 +165,7 @@
   });
 
   go(current);
+  updateCounter();
   tick();
   timerId = setInterval(tick, 1000);
 })();

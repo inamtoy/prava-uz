@@ -1,43 +1,94 @@
 {% extends "base.html" %}
+{% load static %}
 {% block title %}Imtihon — Prava.uz{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/exam.css' %}">{% endblock %}
 {% block content %}
 <div class="row justify-content-center">
-  <div class="col-12 col-lg-8">
-    <div class="card">
-      <div class="card-body p-3 p-md-4">
-        <h1 class="h3 mb-3"><i class="bi bi-stopwatch text-brand"></i> Imtihon rejimi</h1>
-        <p>Haqiqiy imtihon sharoitiga yaqin sinov: savollar barcha mavzulardan tasodifiy tanlanadi.</p>
-        <div class="row g-2 text-center mb-3">
-          <div class="col-4"><div class="border rounded p-2 h-100"><div class="fs-3 fw-bold">{{ question_count }}</div><div class="small text-muted">savol</div></div></div>
-          <div class="col-4"><div class="border rounded p-2 h-100"><div class="fs-3 fw-bold">{{ minutes }}</div><div class="small text-muted">daqiqa</div></div></div>
-          <div class="col-4"><div class="border rounded p-2 h-100"><div class="fs-3 fw-bold">{{ max_mistakes }}</div><div class="small text-muted">xatogacha ruxsat</div></div></div>
+  <div class="col-12 col-lg-9 col-xl-8">
+
+    <section class="card-dark es-hero" aria-labelledby="es-title">
+      <span class="kicker">Imtihon simulyatori</span>
+      <h1 id="es-title">Imtihon rejimi</h1>
+      <p class="es-hero__lead">Haqiqiy imtihon sharoitiga yaqin sinov: savollar barcha mavzulardan tasodifiy tanlanadi.</p>
+      <div class="es-stats">
+        <div class="es-stat">
+          <i class="bi bi-ui-checks-grid" aria-hidden="true"></i>
+          <span class="es-stat__value">{{ question_count }}</span>
+          <span class="es-stat__label">savol</span>
         </div>
-        <ul class="small text-muted">
-          <li>O'tish uchun kamida {{ min_correct }} ta to'g'ri javob kerak (xatolar {{ max_mistakes }} tadan oshmasin).</li>
-          <li>Javob berilmagan savol xato hisoblanadi.</li>
-          <li>Imtihon davomida to'g'ri/xato ko'rsatilmaydi — natijani oxirida ko'rasiz.</li>
-          <li>Yakunlaguningizcha javobni o'zgartirishingiz mumkin. Vaqt tugasa imtihon avtomatik yakunlanadi.</li>
-          <li>Klaviatura: <kbd>1</kbd>–<kbd>4</kbd> javob tanlash, <kbd>&larr;</kbd>/<kbd>&rarr;</kbd> savollar orasida o'tish.</li>
-        </ul>
-        {% if available < question_count %}
-          <div class="alert alert-warning">Bazada hozircha {{ available }} ta savol bor — imtihonda shuncha savol bo'ladi.</div>
-        {% endif %}
-        {% if current %}
-          <div class="alert alert-info d-flex flex-wrap align-items-center justify-content-between gap-2">
-            <span>Sizda tugallanmagan imtihon bor. Qolgan vaqt: taxminan <strong>{% widthratio current.time_left_seconds 60 1 %} daqiqa</strong></span>
-            <a href="{% url 'exam' current.pk %}" class="btn btn-primary">Davom ettirish</a>
-          </div>
-        {% elif available %}
-          <form method="post">
-            {% csrf_token %}
-            <button type="submit" class="btn btn-primary btn-lg w-100"><i class="bi bi-play-fill"></i> Imtihonni boshlash</button>
-          </form>
-        {% else %}
-          <div class="alert alert-secondary mb-0">Hozircha savollar qo'shilmagan.</div>
-        {% endif %}
-        <p class="text-center mt-3 mb-0"><a href="{% url 'topic_list' %}">Avval mavzular bo'yicha mashq qilish</a></p>
+        <div class="es-stat">
+          <i class="bi bi-stopwatch" aria-hidden="true"></i>
+          <span class="es-stat__value">{{ minutes }}</span>
+          <span class="es-stat__label">daqiqa</span>
+        </div>
+        <div class="es-stat">
+          <i class="bi bi-shield-exclamation" aria-hidden="true"></i>
+          <span class="es-stat__value">{{ max_mistakes }}</span>
+          <span class="es-stat__label">xatogacha ruxsat</span>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="card-x" aria-labelledby="es-rules-title">
+      <h2 class="h4" id="es-rules-title">Imtihon qoidalari</h2>
+      <ul class="es-rules">
+        <li>
+          <span class="icon-tile icon-tile--sm icon-tile--t4" aria-hidden="true"><i class="bi bi-trophy"></i></span>
+          <span>Oʻtish uchun kamida <strong>{{ min_correct }} ta toʻgʻri</strong> javob kerak (xatolar {{ max_mistakes }} tadan oshmasin).</span>
+        </li>
+        <li>
+          <span class="icon-tile icon-tile--sm icon-tile--t2" aria-hidden="true"><i class="bi bi-dash-circle"></i></span>
+          <span>Javob berilmagan savol <strong>xato</strong> hisoblanadi.</span>
+        </li>
+        <li>
+          <span class="icon-tile icon-tile--sm icon-tile--t1" aria-hidden="true"><i class="bi bi-eye-slash"></i></span>
+          <span>Imtihon davomida toʻgʻri/xato koʻrsatilmaydi — natijani oxirida koʻrasiz.</span>
+        </li>
+        <li>
+          <span class="icon-tile icon-tile--sm icon-tile--t5" aria-hidden="true"><i class="bi bi-arrow-repeat"></i></span>
+          <span>Yakunlaguningizcha javobni oʻzgartirishingiz mumkin.</span>
+        </li>
+        <li>
+          <span class="icon-tile icon-tile--sm icon-tile--t3" aria-hidden="true"><i class="bi bi-hourglass-split"></i></span>
+          <span>Vaqt tugasa imtihon <strong>avtomatik yakunlanadi</strong>.</span>
+        </li>
+        <li>
+          <span class="icon-tile icon-tile--sm icon-tile--t6" aria-hidden="true"><i class="bi bi-keyboard"></i></span>
+          <span>Klaviatura: <kbd>1</kbd>–<kbd>4</kbd> javob tanlash, <kbd><i class="bi bi-arrow-left" aria-label="chap"></i></kbd>/<kbd><i class="bi bi-arrow-right" aria-label="oʻng"></i></kbd> savollar orasida oʻtish.</span>
+        </li>
+      </ul>
+
+      {% if available < question_count %}
+        <div class="alert-x alert-x--warning">
+          <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+          <div class="alert-x__body">Bazada hozircha {{ available }} ta savol bor — imtihonda shuncha savol boʻladi.</div>
+        </div>
+      {% endif %}
+
+      {% if current %}
+        <div class="es-resume" role="status">
+          <i class="bi bi-hourglass-split" aria-hidden="true"></i>
+          <div class="es-resume__body">Sizda tugallanmagan imtihon bor. Qolgan vaqt: taxminan <strong>{% widthratio current.time_left_seconds 60 1 %} daqiqa</strong></div>
+        </div>
+        <a href="{% url 'exam' current.pk %}" class="btn btn-accent btn-lg btn-block"><i class="bi bi-play-fill" aria-hidden="true"></i> Davom ettirish</a>
+      {% elif available %}
+        <form method="post">
+          {% csrf_token %}
+          <button type="submit" class="btn btn-accent btn-lg btn-block"><i class="bi bi-play-fill" aria-hidden="true"></i> Imtihonni boshlash</button>
+        </form>
+      {% else %}
+        <div class="empty-state">
+          <span class="empty-state__icon" aria-hidden="true"><i class="bi bi-inbox"></i></span>
+          <h3>Hozircha savollar qoʻshilmagan</h3>
+          <p>Administrator savollarni qoʻshgach, imtihonni shu yerdan boshlashingiz mumkin.</p>
+        </div>
+      {% endif %}
+
+      <div class="es-alt">
+        <a href="{% url 'topic_list' %}" class="btn btn-ghost"><i class="bi bi-journal-text" aria-hidden="true"></i> Avval mavzular boʻyicha mashq qilish</a>
+      </div>
+    </section>
+
   </div>
 </div>
 {% endblock %}
