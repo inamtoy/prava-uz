@@ -252,3 +252,60 @@ class ExamFlowTests(TestCase):
         self.assertEqual(self.client.post(reverse("exam_finish", args=[exam.pk])).status_code, 404)
         services.finish_exam(exam)
         self.assertEqual(self.client.get(reverse("result", args=[exam.pk])).status_code, 404)
+
+
+class QueryCountTests(TestCase):
+    """N+1 yo'qligini tekshiradi: ma'lumot ko'paysa ham sahifadagi so'rovlar soni o'zgarmaydi."""
+
+    def setUp(self):
+        self.user = User.objects.create_user("ali", "ali@example.com", "Kuchli-parol-2026")
+        self.client.force_login(self.user)
+
+    def _grow(self, topics, per_topic):
+        from results import services
+        from results.tests import make_questions
+
+        start = Topic.objects.count()
+        for i in range(start, start + topics):
+            topic = Topic.objects.create(name=f"Mavzu {i}", slug=f"mavzu-{i}", order=i)
+            make_questions(topic, per_topic, start=i * 100)
+            practice = services.start_practice(self.user, topic)
+            for item in practice.items.select_related("question")[:3]:
+                services.save_answer(practice, item.question_id, item.question.answers.first().pk)
+            services.finish_exam(practice)
+        exam = services.start_exam(self.user)
+        for item in exam.items.select_related("question"):
+            services.save_answer(exam, item.question_id, item.question.answers.last().pk)
+        services.finish_exam(exam)
+        return exam, services.start_practice(self.user, Topic.objects.first()), services
+
+    def _counts(self, exam, practice, open_exam):
+        from django.db import connection
+        from django.test.utils import CaptureQueriesContext
+
+        urls = {
+            "topics": reverse("topic_list"),
+            "profile": reverse("profile"),
+            "result": reverse("result", args=[exam.pk]),
+            "practice": reverse("practice", args=[practice.pk]),
+            "exam": reverse("exam", args=[open_exam.pk]),
+            "home": reverse("home"),
+        }
+        counts = {}
+        for name, url in urls.items():
+            with CaptureQueriesContext(connection) as ctx:
+                self.assertEqual(self.client.get(url).status_code, 200, name)
+            counts[name] = len(ctx)
+        return counts
+
+    def test_query_count_does_not_grow_with_data(self):
+        exam, practice, services = self._grow(topics=2, per_topic=12)
+        open_exam = services.start_exam(self.user)
+        small = self._counts(exam, practice, open_exam)
+        services.finish_exam(open_exam)
+
+        exam, practice, services = self._grow(topics=4, per_topic=15)
+        open_exam = services.start_exam(self.user)
+        large = self._counts(exam, practice, open_exam)
+        self.assertEqual(small, large)
+        self.assertTrue(all(n <= 10 for n in large.values()), large)

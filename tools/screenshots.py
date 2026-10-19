@@ -17,6 +17,7 @@ from playwright.sync_api import sync_playwright
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "screenshots"
 WIDTHS = {"desktop": (1440, 900), "mobile": (375, 812)}
+CHECK_ONLY = {"small": (360, 740)}  # qabul mezoni: 360px, faqat tekshiruv (surat saqlanmaydi)
 
 problems = []
 
@@ -33,6 +34,9 @@ def check_page(page, name):
 def shot(page, name, full_page=True):
     page.wait_for_timeout(350)  # shriftlar va animatsiyalar
     check_page(page, name)
+    if name.endswith("-small"):
+        print("  ok", name)
+        return
     path = OUT / f"{name}.png"
     page.screenshot(path=str(path), full_page=full_page)
     print("  +", path.relative_to(ROOT))
@@ -60,8 +64,8 @@ def new_context(browser, viewport):
     return ctx, page
 
 
-def run_shots(browser, base):
-    for label, viewport in WIDTHS.items():
+def run_shots(browser, base, widths=WIDTHS):
+    for label, viewport in widths.items():
         print(f"[{label} {viewport[0]}px]")
         ctx, page = new_context(browser, viewport)
 
@@ -183,6 +187,7 @@ def main():
         browser = p.chromium.launch(channel="chrome", headless=True)
         if args.only != "flow":
             run_shots(browser, args.base)
+            run_shots(browser, args.base, CHECK_ONLY)
         if args.only != "shots":
             run_flow(browser, args.base)
         browser.close()

@@ -133,7 +133,7 @@
       });
       if (!res.ok) {
         btn.classList.remove("is-selected");
-        Q.showAlert(alertBox, res.body.error || "Javob saqlanmadi. Qayta urinib ko'ring.");
+        Q.showAlert(alertBox, res.body.error || "Javob saqlanmadi. Qayta urinib koʻring.");
         return;
       }
       answered += 1;
@@ -143,7 +143,7 @@
       render();
     } catch (e) {
       btn.classList.remove("is-selected");
-      Q.showAlert(alertBox, "Internet aloqasi bilan muammo. Qayta urinib ko'ring.");
+      Q.showAlert(alertBox, "Internet aloqasi bilan muammo. Qayta urinib koʻring.");
     } finally {
       busy = false;
     }
