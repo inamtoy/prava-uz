@@ -1,6 +1,19 @@
-<footer class="border-top bg-white py-3 mt-auto">
-  <div class="container small text-muted d-flex flex-wrap justify-content-between gap-2">
-    <span>&copy; Prava.uz — haydovchilik imtihoniga bepul tayyorlov</span>
-    <span>TATU, Dasturiy injiniring</span>
+<footer class="site-footer">
+  <div class="container-x">
+    <div class="site-footer__top">
+      <div>
+        <a class="brand brand--light" href="{% url 'home' %}">{% include "partials/logo.html" %}<span>Prava<span class="brand__tld">.uz</span></span></a>
+        <p class="site-footer__about">Haydovchilik guvohnomasi imtihoniga bepul onlayn tayyorgarlik: mavzular boʻyicha mashq, imtihon simulyatori va xatolar tahlili.</p>
+      </div>
+      <ul class="site-footer__links">
+        <li><a href="{% url 'topic_list' %}">Mavzular</a></li>
+        <li><a href="{% url 'exam_start' %}">Imtihon</a></li>
+        {% if user.is_authenticated %}<li><a href="{% url 'profile' %}">Profil</a></li>{% else %}<li><a href="{% url 'register' %}">Roʻyxatdan oʻtish</a></li>{% endif %}
+      </ul>
+    </div>
+    <div class="site-footer__bottom">
+      <span>&copy; {% now "Y" %} Prava.uz</span>
+      <span>TATU · Dasturiy injiniring</span>
+    </div>
   </div>
 </footer>

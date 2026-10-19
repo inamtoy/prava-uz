@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prava.uz - Imtihon Simulyatori</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            asphalt: '#0B1B33',
+            signal: '#FFC220',
+            primaryBlue: '#2457F5',
+            successGreen: '#14A44D',
+            errorRed: '#E5383B',
+            surfaceBg: '#F4F6FA',
+            borderSubtle: '#E6EAF0'
+          },
+          fontFamily: {
+            sans: ['Manrope', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #F4F6FA;
+      color: #0B1B33;
+    }
+    .custom-shadow {
+      box-shadow: 0 10px 30px -5px rgba(11, 27, 51, 0.05), 0 4px 12px -2px rgba(11, 27, 51, 0.03);
+    }
+    .modal-shadow {
+      box-shadow: 0 25px 50px -12px rgba(11, 27, 51, 0.25);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col antialiased selection:bg-signal selection:text-asphalt">
+
+  <!-- Slim Topbar (Distraction-Free) -->
+  <header class="h-16 bg-white border-b border-borderSubtle px-4 sm:px-8 flex items-center justify-between sticky top-0 z-30">
+    <!-- Brand / Mode -->
+    <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-asphalt flex items-center justify-center text-signal font-extrabold text-base tracking-tight shadow-sm">
+          P
+        </div>
+        <span class="font-bold text-lg text-asphalt tracking-tight hidden sm:inline">Prava<span class="text-primaryBlue">.uz</span></span>
+      </div>
+      <div class="h-4 w-px bg-slate-200 mx-1 hidden sm:block"></div>
+      <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-slate-100 text-slate-700">
+        <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+        Imtihon rejimi
+      </span>
+    </div>
+
+    <!-- Center Timer Pill -->
+    <div class="flex items-center gap-2 bg-slate-900 text-white px-4 py-1.5 rounded-full font-mono text-sm sm:text-base font-bold shadow-inner">
+      <svg class="w-4 h-4 text-signal" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+      <span class="tracking-wider text-signal font-extrabold">18:42</span>
+      <span class="text-xs font-normal text-slate-400 border-l border-slate-700 pl-2 hidden md:inline">qoldi</span>
+    </div>
+
+    <!-- Right Action -->
+    <div class="flex items-center gap-3">
+      <button onclick="document.getElementById('confirmModal').classList.remove('hidden')" class="px-4 py-2 text-sm font-bold text-errorRed hover:bg-red-50 active:scale-95 transition-all rounded-xl border border-red-200">
+        Yakunlash
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Exam Layout -->
+  <main class="flex-1 max-w-7xl w-full mx-auto p-4 sm:p-6 lg:p-8 flex flex-col lg:flex-row gap-6">
+
+    <!-- Left / Center: Question & Answer Workspace -->
+    <section class="flex-1 flex flex-col bg-white rounded-2xl border border-borderSubtle custom-shadow p-6 sm:p-8">
+      
+      <!-- Question Header Meta -->
+      <div class="flex items-center justify-between pb-5 border-b border-borderSubtle">
+        <div class="flex items-center gap-3">
+          <span class="px-3 py-1 bg-blue-50 text-primaryBlue font-bold text-sm rounded-lg border border-blue-100">
+            Savol 7 / 20
+          </span>
+          <span class="text-xs font-medium text-slate-500">Mavzu: Yo'l belgilari va chiziqlari</span>
+        </div>
+        <div class="flex items-center gap-2 text-xs font-semibold text-slate-400">
+          <span class="inline-block w-2 h-2 rounded-full bg-signal"></span>
+          1 urinish
+        </div>
+      </div>
+
+      <!-- Question Image & Prompt -->
+      <div class="py-6 flex flex-col md:flex-row gap-6 items-center md:items-start">
+        <!-- Road Sign Graphic Container -->
+        <div class="w-44 h-44 sm:w-52 sm:h-52 bg-slate-50 rounded-2xl border border-borderSubtle p-4 flex items-center justify-center flex-shrink-0 shadow-sm relative group overflow-hidden">
+          <div class="absolute inset-0 bg-gradient-to-tr from-slate-100/50 to-transparent"></div>
+          <!-- Road Sign SVG Image Asset -->
+          <img src="https://lh3.googleusercontent.com/aida/AEtjO1VnDtRAz9eO5RzzC5s8oTMIqubBuqlnAnoB7Ftq4Qg5rIsjqga0nibscTi0spdbeaZDmDRDKFBWTMiCKB-kCalEa9ZhQsE792BFp4mF7-Md4CTssOXhA7q27e79qs2p3mXxXDV9C-aqnsXIRRCqeM4apjjjaaQ0QbC3SCw71S_N_fzLeH9MNoQO4_XGUE_6eCcOEj4mbhaik_JpNIey4pPyCPay6NZk1FMX5cOxfc_DRpup8js1Y27FSFk" alt="To'xtash taqiqlanadi yo'l belgisi" class="w-36 h-36 sm:w-44 sm:h-44 object-contain relative z-10 transition-transform duration-300 group-hover:scale-105" />
+          <span class="absolute bottom-2 right-2 text-[10px] font-mono font-medium text-slate-400 bg-white/80 px-1.5 py-0.5 rounded border border-slate-200">
+            3.28-belgi
+          </span>
+        </div>
+
+        <!-- Question Text -->
+        <div class="flex-1 text-center md:text-left">
+          <h2 class="text-xl sm:text-2xl font-extrabold text-asphalt leading-snug">
+            Ushbu 3.28 yo'l belgisi qanday harakatlanish tartibini bildiradi?
+          </h2>
+          <p class="mt-3 text-sm text-slate-500 leading-relaxed">
+            Qoidalarga muvofiq, ushbu yo'l belgisi o'rnatilgan hududda qanday cheklov amal qilishi haqida to'g'ri javobni tanlang.
+          </p>
+        </div>
+      </div>
+
+      <!-- Four Large Answer Options (F1-F4) -->
+      <div class="space-y-3.5 my-4 flex-1">
+        
+        <!-- Option 1 -->
+        <label class="relative flex items-center p-4 sm:p-5 rounded-2xl border border-borderSubtle bg-white hover:border-slate-300 hover:bg-slate-50/50 cursor-pointer transition-all duration-150 group">
+          <input type="radio" name="exam_answer" value="1" class="sr-only">
+          <span class="w-9 h-9 rounded-xl bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mr-4 group-hover:bg-slate-200 border border-slate-200">
+            F1
+          </span>
+          <span class="flex-1 text-sm sm:text-base font-semibold text-slate-800">
+            Barcha transport vositalarining to'xtashi va to'xtab turishi butunlay taqiqlangan.
+          </span>
+          <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center ml-3"></div>
+        </label>
+
+        <!-- Option 2 (Selected State) -->
+        <label class="relative flex items-center p-4 sm:p-5 rounded-2xl border-2 border-primaryBlue bg-blue-50/40 cursor-pointer transition-all duration-150 shadow-sm">
+          <input type="radio" name="exam_answer" value="2" checked class="sr-only">
+          <span class="w-9 h-9 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center mr-4 shadow-sm">
+            F2
+          </span>
+          <span class="flex-1 text-sm sm:text-base font-bold text-asphalt">
+            Transport vositalarining to'xtab turishi taqiqlanadi (5 daqiqagacha to'xtash ruxsat etiladi).
+          </span>
+          <div class="w-5 h-5 rounded-full border-2 border-primaryBlue bg-primaryBlue flex items-center justify-center ml-3">
+            <svg class="w-3 h-3 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+            </svg>
+          </div>
+        </label>
+
+        <!-- Option 3 -->
+        <label class="relative flex items-center p-4 sm:p-5 rounded-2xl border border-borderSubtle bg-white hover:border-slate-300 hover:bg-slate-50/50 cursor-pointer transition-all duration-150 group">
+          <input type="radio" name="exam_answer" value="3" class="sr-only">
+          <span class="w-9 h-9 rounded-xl bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mr-4 group-hover:bg-slate-200 border border-slate-200">
+            F3
+          </span>
+          <span class="flex-1 text-sm sm:text-base font-semibold text-slate-800">
+            Faqat yuk avtomobillarining to'xtab turishi taqiqlanadi.
+          </span>
+          <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center ml-3"></div>
+        </label>
+
+        <!-- Option 4 -->
+        <label class="relative flex items-center p-4 sm:p-5 rounded-2xl border border-borderSubtle bg-white hover:border-slate-300 hover:bg-slate-50/50 cursor-pointer transition-all duration-150 group">
+          <input type="radio" name="exam_answer" value="4" class="sr-only">
+          <span class="w-9 h-9 rounded-xl bg-slate-100 text-slate-700 font-mono font-bold text-sm flex items-center justify-center mr-4 group-hover:bg-slate-200 border border-slate-200">
+            F4
+          </span>
+          <span class="flex-1 text-sm sm:text-base font-semibold text-slate-800">
+            Pullik to'xtash joyi belgisi hisoblanadi.
+          </span>
+          <div class="w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center ml-3"></div>
+        </label>
+
+      </div>
+
+      <!-- Navigation & Keyboard Hints Footer -->
+      <div class="pt-6 border-t border-borderSubtle flex flex-col sm:flex-row items-center justify-between gap-4 mt-auto">
+        <div class="flex items-center gap-3 w-full sm:w-auto">
+          <button class="px-5 py-2.5 rounded-xl border border-borderSubtle bg-slate-50 text-slate-700 hover:bg-slate-100 font-bold text-sm flex items-center justify-center gap-2 transition active:scale-95">
+            <span>‹</span> Oldingi
+          </button>
+          <button class="px-6 py-2.5 rounded-xl bg-primaryBlue hover:bg-blue-600 text-white font-bold text-sm flex items-center justify-center gap-2 shadow-sm transition active:scale-95">
+            Keyingi <span>›</span>
+          </button>
+        </div>
+
+        <div class="flex items-center gap-2 text-xs font-semibold text-slate-400 bg-slate-50 px-3 py-1.5 rounded-lg border border-slate-200">
+          <svg class="w-3.5 h-3.5 text-slate-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v1m6 11h2m-6 0h-2v4m0-11v3m0 0h.01M12 12h4.01M16 20h4M4 12h4m12 0h.01M5 8h2a1 1 0 001-1V5a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1zm12 0h2a1 1 0 001-1V5a1 1 0 00-1-1h-2a1 1 0 00-1 1v2a1 1 0 001 1zM5 20h2a1 1 0 001-1v-2a1 1 0 00-1-1H5a1 1 0 00-1 1v2a1 1 0 001 1z" />
+          </svg>
+          <span>Klaviaturada <kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded font-mono text-[11px] text-slate-700 font-bold shadow-xs">1</kbd>–<kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded font-mono text-[11px] text-slate-700 font-bold shadow-xs">4</kbd> yoki <kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded font-mono text-[11px] text-slate-700 font-bold shadow-xs">F1</kbd>–<kbd class="px-1.5 py-0.5 bg-white border border-slate-300 rounded font-mono text-[11px] text-slate-700 font-bold shadow-xs">F4</kbd> tugmalaridan foydalaning</span>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Right Sidebar: Question Navigator (Desktop) -->
+    <aside class="w-full lg:w-80 flex flex-col gap-5">
+      
+      <!-- Navigator Card -->
+      <div class="bg-white rounded-2xl border border-borderSubtle custom-shadow p-6 flex flex-col">
+        <div class="flex items-center justify-between pb-4 border-b border-borderSubtle">
+          <h3 class="font-extrabold text-asphalt text-base">Savollar xaritasi</h3>
+          <span class="text-xs font-bold text-primaryBlue bg-blue-50 px-2.5 py-1 rounded-md border border-blue-100">
+            6 / 20 javob berildi
+          </span>
+        </div>
+
+        <!-- 20 Question Grid -->
+        <div class="grid grid-cols-5 gap-2.5 my-5">
+          <!-- 1 to 6: Answered (Blue filled) -->
+          <button class="h-10 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center hover:opacity-90 transition">1</button>
+          <button class="h-10 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center hover:opacity-90 transition">2</button>
+          <button class="h-10 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center hover:opacity-90 transition">3</button>
+          <button class="h-10 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center hover:opacity-90 transition">4</button>
+          <button class="h-10 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center hover:opacity-90 transition">5</button>
+          <button class="h-10 rounded-xl bg-primaryBlue text-white font-mono font-bold text-sm flex items-center justify-center hover:opacity-90 transition">6</button>
+
+          <!-- 7: Current (Outlined & Highlighted) -->
+          <button class="h-10 rounded-xl border-2 border-primaryBlue bg-blue-50 text-primaryBlue font-mono font-extrabold text-sm flex items-center justify-center ring-2 ring-primaryBlue/20">7</button>
+
+          <!-- 8 to 20: Unanswered (Light Gray) -->
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">8</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">9</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">10</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">11</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">12</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">13</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">14</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">15</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">16</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">17</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">18</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">19</button>
+          <button class="h-10 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-mono font-bold text-sm flex items-center justify-center transition">20</button>
+        </div>
+
+        <!-- Legend -->
+        <div class="pt-4 border-t border-borderSubtle space-y-2 text-xs font-semibold text-slate-600">
+          <div class="flex items-center gap-2.5">
+            <span class="w-3.5 h-3.5 rounded bg-primaryBlue"></span>
+            <span>Javob berilgan (6)</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="w-3.5 h-3.5 rounded border-2 border-primaryBlue bg-blue-50"></span>
+            <span>Joriy savol (1)</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <span class="w-3.5 h-3.5 rounded bg-slate-200"></span>
+            <span>Javob berilmagan (13)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Rules & Warning Card -->
+      <div class="bg-amber-50/60 border border-amber-200 rounded-2xl p-5 text-xs text-amber-900 flex flex-col gap-2">
+        <div class="flex items-center gap-2 font-bold text-amber-950">
+          <svg class="w-4 h-4 text-amber-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          Rasmiy imtihon qoidasi
+        </div>
+        <p class="leading-relaxed text-amber-800">
+          Imtihondan o'tish uchun kamida <strong>18 ta</strong> (90%) savolga to'g'ri javob berish lozim. Maksimal ruxsat etilgan xatolar soni: <strong>2 ta</strong>.
+        </p>
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Mobile Collapsible / Horizontal Scrollable Navigator Strip (Mobile View Preview) -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-borderSubtle p-3 shadow-lg z-20">
+    <div class="flex items-center justify-between mb-2 px-1">
+      <span class="text-xs font-bold text-slate-700">Savollar (7/20)</span>
+      <span class="text-[11px] font-semibold text-primaryBlue">6 ta belgilandi</span>
+    </div>
+    <div class="flex items-center gap-2 overflow-x-auto pb-1 scrollbar-none">
+      <button class="w-9 h-9 rounded-lg bg-primaryBlue text-white font-mono text-xs font-bold flex-shrink-0">1</button>
+      <button class="w-9 h-9 rounded-lg bg-primaryBlue text-white font-mono text-xs font-bold flex-shrink-0">2</button>
+      <button class="w-9 h-9 rounded-lg bg-primaryBlue text-white font-mono text-xs font-bold flex-shrink-0">3</button>
+      <button class="w-9 h-9 rounded-lg bg-primaryBlue text-white font-mono text-xs font-bold flex-shrink-0">4</button>
+      <button class="w-9 h-9 rounded-lg bg-primaryBlue text-white font-mono text-xs font-bold flex-shrink-0">5</button>
+      <button class="w-9 h-9 rounded-lg bg-primaryBlue text-white font-mono text-xs font-bold flex-shrink-0">6</button>
+      <button class="w-9 h-9 rounded-lg border-2 border-primaryBlue bg-blue-50 text-primaryBlue font-mono text-xs font-extrabold flex-shrink-0">7</button>
+      <button class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 font-mono text-xs font-bold flex-shrink-0">8</button>
+      <button class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 font-mono text-xs font-bold flex-shrink-0">9</button>
+      <button class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 font-mono text-xs font-bold flex-shrink-0">10</button>
+      <button class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 font-mono text-xs font-bold flex-shrink-0">11</button>
+      <button class="w-9 h-9 rounded-lg bg-slate-100 text-slate-600 font-mono text-xs font-bold flex-shrink-0">12</button>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal (Displayed as an active overlay or interactive) -->
+  <div id="confirmModal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-asphalt/60 backdrop-blur-sm transition-all duration-200">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 modal-shadow border border-borderSubtle flex flex-col items-center text-center relative animate-in fade-in zoom-in-95 duration-150">
+      
+      <!-- Icon -->
+      <div class="w-16 h-16 rounded-2xl bg-amber-50 text-amber-600 flex items-center justify-center mb-4 border border-amber-200">
+        <svg class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+        </svg>
+      </div>
+
+      <!-- Title & Details -->
+      <h3 class="text-xl font-extrabold text-asphalt">Imtihonni yakunlaysizmi?</h3>
+      <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+        Sizda hali belgilangan vaqt bor, biroq <span class="font-bold text-errorRed">13 ta savolga</span> javob berilmagan.
+      </p>
+
+      <!-- Badge Info -->
+      <div class="mt-4 px-4 py-2.5 rounded-xl bg-slate-50 border border-slate-200 w-full flex items-center justify-between text-xs font-bold text-slate-700">
+        <span>Qolgan vaqt:</span>
+        <span class="font-mono text-asphalt text-sm">18:42</span>
+      </div>
+
+      <!-- Modal Action Buttons -->
+      <div class="grid grid-cols-2 gap-3 w-full mt-6">
+        <button onclick="document.getElementById('confirmModal').classList.add('hidden')" class="px-5 py-3 rounded-xl border border-borderSubtle bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm transition active:scale-95">
+          Davom etish
+        </button>
+        <button class="px-5 py-3 rounded-xl bg-errorRed hover:bg-red-700 text-white font-bold text-sm shadow-sm transition active:scale-95">
+          Yakunlash
+        </button>
+      </div>
+
+      <button onclick="document.getElementById('confirmModal').classList.add('hidden')" class="mt-3 text-xs text-slate-400 hover:text-slate-600 font-medium">
+        Oynani yopish
+      </button>
+
+    </div>
+  </div>
+
+</body>
+</html>

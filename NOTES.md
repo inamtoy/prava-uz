@@ -6,3 +6,5 @@
 - `role` — yagona manba: `role=admin` → `is_staff=True` va `is_superuser=True` (prototipda admin to'liq huquqli). `createsuperuser` avtomatik `role=admin` qo'yadi.
 - `gunicorn` Windows'da ishlamaydi — faqat serverda kerak; lokal ishlab chiqishda `runserver`.
 - `ExamAnswer.question` CASCADE: savolni o'chirish o'rniga admin `is_active` ni o'chirsin (tarix saqlanadi).
+- Dizayn manbasi: `design/` (Stitch, "Asphalt & Signal"). Shrift Manrope + Inter (Stitch bo'yicha), Bootstrap'dan faqat bootstrap-grid.min.css va JS (modal/dropdown); modal/dropdown CSS main.css da.
+- Landing'da Stitch'dagi soxta raqamlar (12 000+ o'quvchi, 4.9 reyting), fikrlar va narxlar qo'yilmadi — statistika bazadan olinadi.

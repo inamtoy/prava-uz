@@ -41,11 +41,11 @@
   async function choose(card, btn) {
     if (submitting) return;
     const index = parseInt(card.dataset.index, 10);
-    const previous = card.querySelector(".answer-btn.selected");
+    const previous = card.querySelector(".answer-option.is-selected");
     if (previous === btn) return;
 
-    card.querySelectorAll(".answer-btn").forEach(function (b) { b.classList.toggle("selected", b === btn); });
-    btn.classList.add("saving");
+    card.querySelectorAll(".answer-option").forEach(function (b) { b.classList.toggle("is-selected", b === btn); });
+    btn.classList.add("is-saving");
     try {
       const res = await Q.postJSON(root.dataset.answerUrl, {
         question_id: parseInt(card.dataset.questionId, 10),
@@ -62,10 +62,10 @@
       if (typeof res.body.time_left === "number") deadline = Date.now() + res.body.time_left * 1000;
     } catch (e) {
       // Holatni qaytarish: avvalgi tanlov saqlanib qolgan
-      card.querySelectorAll(".answer-btn").forEach(function (b) { b.classList.toggle("selected", b === previous); });
+      card.querySelectorAll(".answer-option").forEach(function (b) { b.classList.toggle("is-selected", b === previous); });
       Q.showAlert(alertBox, (e && e.message) || "Javob saqlanmadi. Internetni tekshirib, qayta bosing.");
     } finally {
-      btn.classList.remove("saving");
+      btn.classList.remove("is-saving");
     }
   }
 
@@ -79,8 +79,8 @@
   function tick() {
     const left = Math.max(0, Math.round((deadline - Date.now()) / 1000));
     timerEl.textContent = format(left);
-    timerEl.classList.toggle("timer-warn", left <= 300 && left > 60);
-    timerEl.classList.toggle("timer-danger", left <= 60);
+    timerEl.classList.toggle("is-warning", left <= 300 && left > 60);
+    timerEl.classList.toggle("is-danger", left <= 60);
     if (left <= 0) {
       clearInterval(timerId);
       submitFinish();
@@ -95,7 +95,7 @@
 
   /* ---- Hodisalar ---- */
   root.addEventListener("click", function (e) {
-    const btn = e.target.closest(".answer-btn");
+    const btn = e.target.closest(".answer-option");
     if (btn) { choose(btn.closest(".question-card"), btn); return; }
     const nav = e.target.closest(".nav-num");
     if (nav) go(parseInt(nav.dataset.goto, 10));
@@ -107,7 +107,7 @@
     if (Q.isTyping(e) || e.ctrlKey || e.altKey || e.metaKey) return;
     if (modalEl.classList.contains("show")) return;
     if (e.key >= "1" && e.key <= "4") {
-      const btn = cards[current].querySelectorAll(".answer-btn")[parseInt(e.key, 10) - 1];
+      const btn = cards[current].querySelectorAll(".answer-option")[parseInt(e.key, 10) - 1];
       if (btn) choose(cards[current], btn);
     } else if (e.key === "ArrowRight") {
       go(current + 1);

@@ -1,29 +1,45 @@
-<nav class="navbar navbar-expand-md navbar-dark bg-primary-brand">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="{% url 'home' %}"><i class="bi bi-car-front-fill"></i> Prava.uz</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menyu">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mainNav">
-      <ul class="navbar-nav ms-auto align-items-md-center">
-        <li class="nav-item"><a class="nav-link" href="{% url 'topic_list' %}"><i class="bi bi-grid"></i> Mavzular</a></li>
-        <li class="nav-item"><a class="nav-link" href="{% url 'exam_start' %}"><i class="bi bi-stopwatch"></i> Imtihon</a></li>
+{% with url_name=request.resolver_match.url_name %}
+<header class="site-nav">
+  <div class="container-x site-nav__inner">
+    <a class="brand" href="{% url 'home' %}" aria-label="Prava.uz bosh sahifa">
+      {% include "partials/logo.html" %}<span>Prava<span class="brand__tld">.uz</span></span>
+    </a>
+    <nav aria-label="Asosiy menyu">
+      <ul class="site-nav__links">
+        <li><a class="site-nav__link{% if url_name == 'topic_list' or url_name == 'practice' %} is-active{% endif %}" href="{% url 'topic_list' %}"{% if url_name == 'topic_list' %} aria-current="page"{% endif %}>Mavzular</a></li>
+        <li><a class="site-nav__link{% if url_name == 'exam_start' or url_name == 'exam' or url_name == 'result' %} is-active{% endif %}" href="{% url 'exam_start' %}"{% if url_name == 'exam_start' %} aria-current="page"{% endif %}>Imtihon</a></li>
         {% if user.is_authenticated %}
-          <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}"><i class="bi bi-person-circle"></i> Profil</a></li>
-          {% if user.is_staff %}
-            <li class="nav-item"><a class="nav-link" href="{% url 'admin:index' %}"><i class="bi bi-gear"></i> Admin</a></li>
-          {% endif %}
-          <li class="nav-item">
-            <form method="post" action="{% url 'logout' %}" class="d-inline">
-              {% csrf_token %}
-              <button type="submit" class="nav-link btn btn-link"><i class="bi bi-box-arrow-right"></i> Chiqish</button>
-            </form>
-          </li>
-        {% else %}
-          <li class="nav-item"><a class="nav-link" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-right"></i> Kirish</a></li>
-          <li class="nav-item"><a class="btn btn-light btn-sm ms-md-2 mt-2 mt-md-0" href="{% url 'register' %}">Ro'yxatdan o'tish</a></li>
+          <li><a class="site-nav__link{% if url_name == 'profile' %} is-active{% endif %}" href="{% url 'profile' %}"{% if url_name == 'profile' %} aria-current="page"{% endif %}>Profil</a></li>
         {% endif %}
       </ul>
+    </nav>
+    <div class="site-nav__actions">
+      {% if user.is_authenticated %}
+        <div class="dropdown">
+          <button class="user-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Foydalanuvchi menyusi">
+            <span class="avatar">{{ user.first_name|default:user.username|slice:":1" }}</span>
+            <span class="user-btn__name">{{ user.first_name|default:user.username }}</span>
+            <i class="bi bi-chevron-down" aria-hidden="true"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li class="dropdown-header"><strong>{{ user.get_full_name|default:user.username }}</strong><span>{{ user.email }}</span></li>
+            <li><a class="dropdown-item" href="{% url 'profile' %}"><i class="bi bi-person"></i> Profil va statistika</a></li>
+            <li><a class="dropdown-item" href="{% url 'topic_list' %}"><i class="bi bi-grid"></i> Mavzular</a></li>
+            {% if user.is_staff %}<li><a class="dropdown-item" href="{% url 'admin:index' %}"><i class="bi bi-gear"></i> Boshqaruv paneli</a></li>{% endif %}
+            <li><hr class="dropdown-divider"></li>
+            <li>
+              <form method="post" action="{% url 'logout' %}">
+                {% csrf_token %}
+                <button type="submit" class="dropdown-item dropdown-item--danger"><i class="bi bi-box-arrow-right"></i> Chiqish</button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      {% else %}
+        <a class="btn btn-link site-nav__login" href="{% url 'login' %}">Kirish</a>
+        <a class="btn btn-accent" href="{% url 'register' %}">Boshlash</a>
+      {% endif %}
     </div>
   </div>
-</nav>
+</header>
+{% endwith %}

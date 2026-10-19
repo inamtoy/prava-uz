@@ -1,11 +1,14 @@
 {% if form.non_field_errors %}
-  <div class="alert alert-danger">{% for e in form.non_field_errors %}{{ e }}{% if not forloop.last %}<br>{% endif %}{% endfor %}</div>
+  <div class="alert-x alert-x--danger" role="alert">
+    <i class="bi bi-x-circle-fill" aria-hidden="true"></i>
+    <div class="alert-x__body">{% for e in form.non_field_errors %}{{ e }}{% if not forloop.last %}<br>{% endif %}{% endfor %}</div>
+  </div>
 {% endif %}
 {% for field in form %}
-  <div class="mb-3">
-    <label class="form-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+  <div class="field">
+    <label class="field__label" for="{{ field.id_for_label }}">{{ field.label }}</label>
     {{ field }}
-    {% for e in field.errors %}<div class="text-bad small mt-1">{{ e }}</div>{% endfor %}
-    {% if field.help_text %}<div class="form-text">{{ field.help_text|safe }}</div>{% endif %}
+    {% for e in field.errors %}<div class="field__error"><i class="bi bi-exclamation-circle" aria-hidden="true"></i><span>{{ e }}</span></div>{% endfor %}
+    {% if field.help_text %}<div class="field__hint">{{ field.help_text|safe }}</div>{% endif %}
   </div>
 {% endfor %}

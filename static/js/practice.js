@@ -59,39 +59,46 @@
 
   function showResult(card, data) {
     card.dataset.answered = "1";
-    card.querySelectorAll(".answer-btn").forEach(function (btn) {
+    card.querySelectorAll(".answer-option").forEach(function (btn) {
       const id = parseInt(btn.dataset.answerId, 10);
       btn.disabled = true;
-      btn.classList.toggle("selected", id === data.selected_answer_id);
-      if (id === data.correct_answer_id) btn.classList.add("correct");
-      else if (id === data.selected_answer_id) btn.classList.add("wrong");
+      btn.classList.toggle("is-selected", id === data.selected_answer_id);
+      if (id === data.correct_answer_id) btn.classList.add("is-correct");
+      else if (id === data.selected_answer_id) btn.classList.add("is-wrong");
+      else btn.classList.add("is-dimmed");
     });
     const box = card.querySelector(".explanation");
-    box.classList.remove("d-none", "alert-success", "alert-danger");
-    box.classList.add(data.is_correct ? "alert-success" : "alert-danger");
+    box.classList.remove("d-none", "explain--success", "explain--danger");
+    box.classList.add(data.is_correct ? "explain--success" : "explain--danger");
     box.innerHTML = "";
+    const icon = document.createElement("i");
+    icon.className = "bi " + (data.is_correct ? "bi-check-circle-fill" : "bi-lightbulb-fill");
+    icon.setAttribute("aria-hidden", "true");
+    const body = document.createElement("div");
     const head = document.createElement("strong");
-    head.textContent = data.is_correct ? "To'g'ri!" : "Xato.";
-    box.appendChild(head);
+    head.className = "explain__title";
+    head.textContent = data.is_correct ? "Toʻgʻri!" : "Xato — toʻgʻri javob yashil bilan belgilangan";
+    body.appendChild(head);
     if (data.explanation) {
-      const text = document.createElement("div");
-      text.className = "mt-1";
+      const text = document.createElement("span");
       text.textContent = data.explanation;
-      box.appendChild(text);
+      body.appendChild(text);
     }
+    box.appendChild(icon);
+    box.appendChild(body);
   }
 
   async function choose(card, btn) {
     if (busy || card.dataset.answered) return;
     busy = true;
-    btn.classList.add("selected");
+    btn.classList.add("is-selected");
     try {
       const res = await Q.postJSON(root.dataset.answerUrl, {
         question_id: parseInt(card.dataset.questionId, 10),
         answer_id: parseInt(btn.dataset.answerId, 10),
       });
       if (!res.ok) {
-        btn.classList.remove("selected");
+        btn.classList.remove("is-selected");
         Q.showAlert(alertBox, res.body.error || "Javob saqlanmadi. Qayta urinib ko'ring.");
         return;
       }
@@ -100,7 +107,7 @@
       showResult(card, res.body);
       render();
     } catch (e) {
-      btn.classList.remove("selected");
+      btn.classList.remove("is-selected");
       Q.showAlert(alertBox, "Internet aloqasi bilan muammo. Qayta urinib ko'ring.");
     } finally {
       busy = false;
@@ -108,7 +115,7 @@
   }
 
   root.addEventListener("click", function (e) {
-    const btn = e.target.closest(".answer-btn");
+    const btn = e.target.closest(".answer-option");
     if (!btn) return;
     choose(btn.closest(".question-card"), btn);
   });
@@ -119,7 +126,7 @@
     if (Q.isTyping(e) || e.ctrlKey || e.altKey || e.metaKey) return;
     const card = cards[current];
     if (card && e.key >= "1" && e.key <= "4") {
-      const btn = card.querySelectorAll(".answer-btn")[parseInt(e.key, 10) - 1];
+      const btn = card.querySelectorAll(".answer-option")[parseInt(e.key, 10) - 1];
       if (btn) choose(card, btn);
     } else if (e.key === "ArrowRight" || (e.key === "Enter" && card && card.dataset.answered)) {
       e.preventDefault();

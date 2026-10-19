@@ -1,0 +1,12 @@
+{% with url_name=request.resolver_match.url_name %}
+<nav class="tabbar" aria-label="Mobil menyu">
+  <a class="tabbar__item{% if url_name == 'home' %} is-active{% endif %}" href="{% url 'home' %}"><i class="bi bi-house{% if url_name == 'home' %}-fill{% endif %}" aria-hidden="true"></i>Bosh</a>
+  <a class="tabbar__item{% if url_name == 'topic_list' or url_name == 'practice' %} is-active{% endif %}" href="{% url 'topic_list' %}"><i class="bi bi-grid{% if url_name == 'topic_list' or url_name == 'practice' %}-fill{% endif %}" aria-hidden="true"></i>Mavzular</a>
+  <a class="tabbar__item{% if url_name == 'exam_start' or url_name == 'exam' or url_name == 'result' %} is-active{% endif %}" href="{% url 'exam_start' %}"><i class="bi bi-stopwatch{% if url_name == 'exam_start' or url_name == 'exam' or url_name == 'result' %}-fill{% endif %}" aria-hidden="true"></i>Imtihon</a>
+  {% if user.is_authenticated %}
+    <a class="tabbar__item{% if url_name == 'profile' %} is-active{% endif %}" href="{% url 'profile' %}"><i class="bi bi-person{% if url_name == 'profile' %}-fill{% endif %}" aria-hidden="true"></i>Profil</a>
+  {% else %}
+    <a class="tabbar__item{% if url_name == 'login' or url_name == 'register' %} is-active{% endif %}" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-right" aria-hidden="true"></i>Kirish</a>
+  {% endif %}
+</nav>
+{% endwith %}
