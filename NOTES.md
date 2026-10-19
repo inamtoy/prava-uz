@@ -13,3 +13,9 @@
 - Chart.js 4.4.1 (jsDelivr) faqat profilda va faqat imtihon ma'lumoti bo'lsa yuklanadi.
 - Sahifaga xos stillar `static/css/pages/*.css` da; umumiy tokenlar va komponentlar `main.css` da.
 - `accounts/forms.py` xato matnlarida oddiy apostrof (') qolgan — shablonlarda U+02BB (ʻ) ishlatilgan.
+
+## Baza: MySQL o'rniga PostgreSQL (2026-10-20)
+- Qaror egasi — loyiha muallifi ("MySQL o'rniga PostgreSQL ishlatamiz"). Universitet hujjatida MySQL yozilgan — himoyada shu almashtirishni izohlash kerak.
+- Texnik sabablar: `psycopg[binary]` Windows'da kompilyatsiyasiz o'rnatiladi (`mysqlclient` C kompilyator/wheel muammosi yo'q); lokal kompyuterda PostgreSQL 18 allaqachon o'rnatilgan; `select_for_update()` (results/services.py) Postgres'da haqiqiy qator qulfini beradi (SQLite'da e'tiborsiz qoladi); DDL tranzaksiyali — migratsiya yarim yo'lda buzilsa orqaga qaytadi; standart rejimda qat'iy (MySQL'dagi `STRICT_TRANS_TABLES` sozlamasi kerak emas).
+- `manage.py test` sukut bo'yicha SQLite'da (tezlik, CLAUDE.md §12). Postgres'da sinash: `TEST_DB_ENGINE=postgres python manage.py test` (`prava` userda `CREATEDB` bo'lishi kerak).
+- Ko'chirish: `dumpdata --natural-foreign --natural-primary ...` → `backup.json` (repoga kirmaydi), Postgres'da `migrate` + `loaddata` + `sqlsequencereset`.

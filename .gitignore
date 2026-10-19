@@ -10,3 +10,5 @@ media/questions/*
 !media/questions/.gitkeep
 .idea/
 .vscode/
+backup.json
+db.sqlite3.bak

@@ -1,5 +1,5 @@
 Django>=5.0,<6
-mysqlclient>=2.2
+psycopg[binary]>=3.2
 python-decouple>=3.8
 Pillow>=10.0
 gunicorn>=22.0

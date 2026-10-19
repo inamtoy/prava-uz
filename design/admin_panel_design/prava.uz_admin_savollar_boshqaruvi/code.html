@@ -1,0 +1,629 @@
+<!DOCTYPE html><html lang="uz" style=""><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed":"#0c1c34","error-container":"#ffdad6","primary":"#000000","secondary-fixed":"#ffdf9f","background":"#f7f9fd","surface-container":"#eceef2","surface-tint":"#505f7a","on-secondary-container":"#6c5000","tertiary-container":"#001453","error":"#ba1a1a","inverse-surface":"#2d3134","on-surface-variant":"#44474d","surface-container-highest":"#e0e3e6","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-error":"#ffffff","primary-fixed":"#d6e3ff","secondary-fixed-dim":"#f9bd19","secondary-container":"#fcc01d","surface-dim":"#d8dade","inverse-primary":"#b8c7e6","primary-fixed-dim":"#b8c7e6","outline":"#75777e","on-tertiary-fixed-variant":"#0037b9","on-primary":"#ffffff","surface":"#f7f9fd","on-primary-fixed-variant":"#394761","on-tertiary-container":"#5679ff","primary-container":"#0c1c34","surface-container-low":"#f2f4f8","outline-variant":"#c5c6ce","secondary":"#795900","surface-container-high":"#e6e8ec","on-secondary":"#ffffff","on-background":"#191c1f","on-secondary-fixed":"#261a00","on-primary-container":"#7684a1","tertiary":"#000000","inverse-on-surface":"#eff1f5","on-tertiary":"#ffffff","tertiary-fixed":"#dde1ff","on-surface":"#191c1f","tertiary-fixed-dim":"#b8c4ff","on-secondary-fixed-variant":"#5b4300","surface-variant":"#e0e3e6","surface-bright":"#f7f9fd","on-tertiary-fixed":"#001453"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-desktop":"3rem","space-xs":"0.25rem",gutter:"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"1rem","gutter-desktop":"1.5rem","margin-tablet":"2rem"},fontFamily:{"label-md":["Inter"],"body-md":["Inter"],"label-caps":["Manrope"],"headline-md":["Manrope"],"headline-sm":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-lg":["Manrope"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Manrope"],"label-lg":["Inter"],"display-lg-mobile":["Manrope"]},fontSize:{"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}]}}}}</script></head><body class="bg-surface font-body-sm text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">traffic</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight tracking-tight">Prava<span class="text-secondary">.uz</span></span></div></div></div><nav class="px-space-sm py-space-sm space-y-space-md overflow-y-auto max-h-[calc(100vh-210px)]" data-active-classes="bg-surface-container-highest text-on-surface font-semibold"><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Asosiy</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="boshqaruv-paneli" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-label-lg text-label-lg">Boshqaruv paneli</span></a></div></div><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Kontent</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mavzular" href="#"><span class="material-symbols-outlined text-[18px]">menu_book</span><span class="font-label-lg text-label-lg">Mavzular</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-all bg-surface-container-highest text-on-surface font-semibold" data-path="savollar" href="#"><span class="material-symbols-outlined text-[18px]">help_outline</span><span class="font-label-lg text-label-lg">Savollar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rasmlar" href="#"><span class="material-symbols-outlined text-[18px]">image</span><span class="font-label-lg text-label-lg">Rasmlar</span></a></div></div><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Natijalar</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="imtihonlar" href="#"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-label-lg text-label-lg">Imtihonlar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="statistika" href="#"><span class="material-symbols-outlined text-[18px]">bar_chart</span><span class="font-label-lg text-label-lg">Statistika</span></a></div></div><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Foydalanuvchilar</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="foydalanuvchilar" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span class="font-label-lg text-label-lg">Foydalanuvchilar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="adminlar" href="#"><span class="material-symbols-outlined text-[18px]">admin_panel_settings</span><span class="font-label-lg text-label-lg">Adminlar</span></a></div></div></nav></div><div class="p-space-sm space-y-space-xs bg-surface-container-low"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#"><span class="font-label-md text-label-md">Saytni ochish</span><span class="material-symbols-outlined text-[16px]">open_in_new</span></a><div class="h-px bg-surface-container-high my-space-xs"></div><div class="flex items-center justify-between px-space-xs py-1.5"><div class="flex items-center gap-space-sm min-w-0"><div class="relative w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-[15px] font-bold shrink-0">I<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary-container rounded-full ring-2 ring-surface-container-low"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Inamjon Rustamov</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate">Super Admin</span></div></div><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-error transition-colors" title="Chiqish" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"></div><div class="w-full max-w-md mx-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-9 pr-14 py-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Savol, mavzu yoki foydalanuvchini qidiring…" type="text"><span class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="hidden lg:flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container font-label-md text-label-md text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span></div><div class="flex items-center gap-space-xs"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-space-lg pb-space-xl bg-surface"><div class="flex flex-col w-full">
+<!-- Dynamic Sidebar Active State Injector for "Savollar" under "Kontent" -->
+<script>
+    (function highlightNav() {
+      const activeItem = document.querySelector('a[data-path="savollar"]');
+      if (activeItem) {
+        activeItem.classList.add('bg-surface-container-highest', 'text-on-surface', 'font-semibold');
+        activeItem.classList.remove('text-on-surface-variant');
+      }
+    })();
+  </script>
+<!-- Page Header -->
+<div class="flex flex-col md:flex-row md:items-center md:justify-between gap-space-md mb-space-lg">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant mb-1">
+<span class="">Boshqaruv paneli</span>
+<span class="text-outline-variant">/</span>
+<span class="">Kontent</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Savollar</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Savollar</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-md text-label-md">
+          54 ta savol
+        </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        YHQ nazariy imtihon savollar bazasi, toifalar va ko'rsatkichlarni boshqarish.
+      </p>
+</div>
+<!-- Right Header Action Bar -->
+<div class="flex items-center gap-space-sm shrink-0">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">upload_file</span>
+<span class="">Import (CSV)</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">download</span>
+<span class="">Eksport</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-label-lg font-bold shadow-sm hover:bg-secondary-fixed-dim active:scale-95 transition-all" type="button">
+<span class="material-symbols-outlined text-[18px] font-bold">add</span>
+<span class="">Yangi savol</span>
+</button>
+</div>
+</div>
+<!-- Filter & Search Bar Section -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md mb-space-md">
+<!-- Top Row: Search and Core Selectors -->
+<div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-space-sm">
+<!-- Search Input -->
+<div class="relative flex-1 min-w-[280px]">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-9 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Savol matni yoki kalit so'z bo'yicha qidiring..." type="text" value="Yo'l belgisi">
+<button class="absolute right-2.5 top-1/2 -translate-y-1/2 text-on-surface-variant hover:text-on-surface p-0.5 rounded" title="Tozalash" type="button">
+<span class="material-symbols-outlined text-[16px]">close</span>
+</button>
+</div>
+<!-- Controls Right -->
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- Topic Select -->
+<div class="relative inline-flex items-center">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-lg text-label-lg pl-3 pr-8 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-container cursor-pointer transition-all">
+<option value="">Mavzu: Barcha mavzular</option>
+<option selected="" value="1">Yo'l belgilari</option>
+<option value="2">Chorrahalarda harakatlanish</option>
+<option value="3">Svetofor va tartibga soluvchi</option>
+<option value="4">Harakatlanish tezligi</option>
+<option value="5">Quvib o'tish</option>
+<option value="6">Umumiy qoidalar</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<!-- Segmented Control: Hammasi / Faol / Nofaol -->
+<div class="inline-flex p-1 bg-surface-container-low rounded-lg font-label-md text-label-md">
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-medium transition-all" type="button">
+            Hammasi (54)
+          </button>
+<button class="px-3 py-1.5 rounded-md bg-surface-container-lowest text-on-surface font-semibold shadow-sm transition-all" type="button">
+            Faol (49)
+          </button>
+<button class="px-3 py-1.5 rounded-md text-on-surface-variant hover:text-on-surface font-medium transition-all" type="button">
+            Nofaol (5)
+          </button>
+</div>
+</div>
+</div>
+<!-- Bottom Filter Chips and Toggle Row -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pt-space-xs">
+<div class="flex flex-wrap items-center gap-space-sm">
+<!-- With Photo Toggle -->
+<label class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-surface-container-low cursor-pointer hover:bg-surface-container transition-colors select-none">
+<input checked="" class="rounded text-secondary-container focus:ring-0 accent-secondary-container w-4 h-4" type="checkbox">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">image</span>
+<span class="font-label-md text-label-md text-on-surface font-medium">Faqat rasmli</span>
+</label>
+<!-- Alert Filter: Izohsiz -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-md text-label-md">Izohsiz</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface font-semibold text-[10px]">3</span>
+</button>
+<!-- Alert Filter: Qiyin savollar -->
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface transition-all" type="button">
+<span class="w-2 h-2 rounded-full bg-error"></span>
+<span class="font-label-md text-label-md">Qiyin savollar (&gt;50% xato)</span>
+<span class="px-1.5 py-0.2 rounded-full bg-surface-container-highest text-on-surface font-semibold text-[10px]">11</span>
+</button>
+</div>
+<!-- Reset Filters -->
+<button class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface-variant hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">restart_alt</span>
+<span class="">Filtrlarni tozalash</span>
+</button>
+</div>
+</div>
+<!-- Floating / Integrated Bulk Action Bar (Active state: 3 items selected) -->
+<div class="flex items-center justify-between px-space-md py-3 rounded-xl bg-primary-container text-on-primary shadow-md mb-space-md animate-fadeIn">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary-container"></span>
+<span class="font-label-lg text-label-lg font-bold">3 ta savol tanlandi</span>
+</div>
+<div class="h-4 w-px bg-surface-tint"></div>
+<button class="font-label-md text-label-md text-on-primary-container hover:text-on-primary transition-colors underline" type="button">
+        Tanlovni bekor qilish
+      </button>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-tint/40 hover:bg-surface-tint/60 text-on-primary font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">bolt</span>
+<span class="">Faollashtirish</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-tint/40 hover:bg-surface-tint/60 text-on-primary font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">pause_circle</span>
+<span class="">O'chirib qo'yish</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-tint/40 hover:bg-surface-tint/60 text-on-primary font-label-md text-label-md transition-all" type="button">
+<span class="material-symbols-outlined text-[16px]">label</span>
+<span class="">Mavzuni o'zgartirish</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-error hover:bg-error/90 text-on-error font-label-md text-label-md transition-all ml-1" type="button">
+<span class="material-symbols-outlined text-[16px]">delete</span>
+<span class="">O'chirish</span>
+</button>
+</div>
+</div>
+<!-- High-Fidelity Data Table Container -->
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden mb-space-md">
+<div class="overflow-x-auto">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase select-none">
+<th class="w-12 px-space-md py-3.5">
+<input checked="" class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</th>
+<th class="w-16 px-space-xs py-3.5">Rasm</th>
+<th class="px-space-md py-3.5 min-w-[320px]">Savol mazmuni</th>
+<th class="px-space-md py-3.5 min-w-[140px]">Mavzu</th>
+<th class="px-space-md py-3.5 w-28 text-center">Variantlar</th>
+<th class="px-space-md py-3.5 w-44">To'g'ri javob %</th>
+<th class="px-space-md py-3.5 w-28 text-center">Holat</th>
+<th class="px-space-md py-3.5 w-32">Yaratilgan sana</th>
+<th class="px-space-md py-3.5 w-24 text-right">Amallar</th>
+</tr>
+</thead>
+<tbody class="divide-none">
+<!-- Row 1: Selected (Checked) -->
+<tr class="bg-primary-fixed/30 hover:bg-primary-fixed/45 transition-colors">
+<td class="px-space-md py-3 align-middle">
+<input checked="" class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</td>
+<td class="px-space-xs py-3 align-middle">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center shadow-xs">
+<img alt="3.28 to'xtab turish taqiqlangan yo'l belgisi" class="w-full h-full object-contain p-1" src="https://lh3.googleusercontent.com/aida/AEtjO1VnDtRAz9eO5RzzC5s8oTMIqubBuqlnAnoB7Ftq4Qg5rIsjqga0nibscTi0spdbeaZDmDRDKFBWTMiCKB-kCalEa9ZhQsE792BFp4mF7-Md4CTssOXhA7q27e79qs2p3mXxXDV9C-aqnsXIRRCqeM4apjjjaaQ0QbC3SCw71S_N_fzLeH9MNoQO4_XGUE_6eCcOEj4mbhaik_JpNIey4pPyCPay6NZk1FMX5cOxfc_DRpup8js1Y27FSFk">
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-0.5">
+<a class="font-headline-sm text-[15px] font-bold text-on-surface hover:text-on-primary-fixed-variant transition-colors line-clamp-2" href="#">
+                  3.28 to'xtab turish taqiqlangan belgisi ta'sir doirasida qaysi hollarda to'xtab turishga ruxsat etiladi?
+                </a>
+<span class="font-label-md text-label-md text-on-surface-variant">ID: #YHQ-1042 • 1-ilova, 3-guruh</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold">
+                Yo'l belgilari
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<span class="px-2 py-1 rounded bg-surface-container-low font-label-md text-label-md text-on-surface font-medium">
+                4 ta javob
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-error font-bold">36%</span>
+<span class="text-error font-semibold text-[11px]">Qiyin</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-error rounded-full" style="width: 36%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</td>
+<td class="px-space-md py-3 align-middle text-on-surface-variant font-label-md text-label-md">
+              12-okt, 2026
+            </td>
+<td class="px-space-md py-3 align-middle text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Tahrirlash" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Nusxalash" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Selected (Checked) -->
+<tr class="bg-primary-fixed/30 hover:bg-primary-fixed/45 transition-colors">
+<td class="px-space-md py-3 align-middle">
+<input checked="" class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</td>
+<td class="px-space-xs py-3 align-middle">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high overflow-hidden shrink-0 flex items-center justify-center shadow-xs">
+<img class="w-full h-full object-cover" data-alt="Chorrahada teng ahamiyatli yo'llar kesishmasi, harakatlanish ustunligi ko'rsatilgan sxema, professional transport grafikasi, O'zbekiston YHQ" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBxmqBKMwZlSNKN2dTP_2RxdxjcwmDt0vVtMpDyLAf81tmRWRtBjTi-AreLy1BpqjQkvrVqqp-1674Bp9C7yNe0DKV3kNTczb65Mh2xGVuuixbDoYF5r8YZZOSMyNTxTT6geZkcwacSzQd-ny3V37gxNU4cXzmq-mzr7TXR_EZpBBB7_VQYzbH53Z_NTRdQ0MZ1dopQl31kBIwib9RMkV8r5q8pYd38_WcIMlzZLfZdUe4YcLp4w2sb">
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-0.5">
+<a class="font-headline-sm text-[15px] font-bold text-on-surface hover:text-on-primary-fixed-variant transition-colors line-clamp-2" href="#">
+                  Teng ahamiyatli yo'llar kesishmasida o'ng tomondan yaqinlashayotgan avtomobilga yo'l berish qoidasi qanday amalga oshiriladi?
+                </a>
+<span class="font-label-md text-label-md text-on-surface-variant">ID: #YHQ-0871 • 13-bob</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-secondary-fixed text-on-secondary-fixed font-label-md text-label-md font-semibold">
+                Chorrahalar
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<span class="px-2 py-1 rounded bg-surface-container-low font-label-md text-label-md text-on-surface font-medium">
+                4 ta javob
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-secondary font-bold">42%</span>
+<span class="text-on-surface-variant text-[11px]">O'rtacha</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 42%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</td>
+<td class="px-space-md py-3 align-middle text-on-surface-variant font-label-md text-label-md">
+              14-okt, 2026
+            </td>
+<td class="px-space-md py-3 align-middle text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Tahrirlash" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Nusxalash" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Selected (Checked) -->
+<tr class="bg-primary-fixed/30 hover:bg-primary-fixed/45 transition-colors">
+<td class="px-space-md py-3 align-middle">
+<input checked="" class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</td>
+<td class="px-space-xs py-3 align-middle">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-on-surface-variant shadow-xs">
+<span class="material-symbols-outlined text-[24px]">speed</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-0.5">
+<a class="font-headline-sm text-[15px] font-bold text-on-surface hover:text-on-primary-fixed-variant transition-colors line-clamp-2" href="#">
+                  Aholi punktlarida ruxsat etilgan maksimal tezlik me'yori qancha etib belgilangan?
+                </a>
+<span class="font-label-md text-label-md text-on-surface-variant">ID: #YHQ-0519 • 11-bob</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold">
+                Tezlik me'yori
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<span class="px-2 py-1 rounded bg-surface-container-low font-label-md text-label-md text-on-surface font-medium">
+                3 ta javob
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-secondary-fixed-dim font-bold">49%</span>
+<span class="text-on-surface-variant text-[11px]">O'rtacha</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary-fixed-dim rounded-full" style="width: 49%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</td>
+<td class="px-space-md py-3 align-middle text-on-surface-variant font-label-md text-label-md">
+              18-okt, 2026
+            </td>
+<td class="px-space-md py-3 align-middle text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Tahrirlash" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Nusxalash" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: Unchecked with Izohsiz Badge -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-3 align-middle">
+<input class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</td>
+<td class="px-space-xs py-3 align-middle">
+<div class="w-12 h-12 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[24px]">traffic</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-0.5">
+<div class="flex items-center gap-2">
+<a class="font-headline-sm text-[15px] font-bold text-on-surface hover:text-secondary transition-colors line-clamp-1" href="#">
+                    Svetoforning miltillovchi yashil chirog'i qanday harakatlanish imkoniyatini bildiradi va nima haqida ogohlantiradi?
+                  </a>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-[10px] shrink-0 font-bold">
+                    Izohsiz
+                  </span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">ID: #YHQ-0342 • 7-bob</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md font-semibold">
+                Svetofor
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<span class="px-2 py-1 rounded bg-surface-container-low font-label-md text-label-md text-on-surface font-medium">
+                4 ta javob
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-bold">53%</span>
+<span class="text-on-surface-variant text-[11px]">Yaxshi</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 53%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</td>
+<td class="px-space-md py-3 align-middle text-on-surface-variant font-label-md text-label-md">
+              20-okt, 2026
+            </td>
+<td class="px-space-md py-3 align-middle text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Tahrirlash" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Nusxalash" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Unchecked -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="px-space-md py-3 align-middle">
+<input class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</td>
+<td class="px-space-xs py-3 align-middle">
+<div class="w-12 h-12 rounded-lg bg-surface-container flex items-center justify-center shrink-0 text-on-surface-variant shadow-xs">
+<span class="material-symbols-outlined text-[24px]">alt_route</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-0.5">
+<a class="font-headline-sm text-[15px] font-bold text-on-surface hover:text-secondary transition-colors line-clamp-1" href="#">
+                  Quvib o'tish taqiqlangan joylar va sharoitlar: piyodalar o'tish joyida quvib o'tish qoidasi?
+                </a>
+<span class="font-label-md text-label-md text-on-surface-variant">ID: #YHQ-0211 • 12-bob</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-surface-container-high text-on-surface font-label-md text-label-md font-semibold">
+                Quvib o'tish
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<span class="px-2 py-1 rounded bg-surface-container-low font-label-md text-label-md text-on-surface font-medium">
+                4 ta javob
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-bold">57%</span>
+<span class="text-on-surface-variant text-[11px]">Yaxshi</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 57%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</td>
+<td class="px-space-md py-3 align-middle text-on-surface-variant font-label-md text-label-md">
+              22-okt, 2026
+            </td>
+<td class="px-space-md py-3 align-middle text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Tahrirlash" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Nusxalash" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 6: Unchecked, Inactive (OFF), High Score -->
+<tr class="hover:bg-surface-container-low transition-colors bg-surface-container-lowest/50 opacity-90">
+<td class="px-space-md py-3 align-middle">
+<input class="rounded text-primary-container focus:ring-0 accent-primary-container w-4 h-4 cursor-pointer" type="checkbox">
+</td>
+<td class="px-space-xs py-3 align-middle">
+<div class="w-12 h-12 rounded-lg bg-surface-container-high text-outline flex items-center justify-center shrink-0 shadow-xs">
+<span class="material-symbols-outlined text-[20px]">hide_image</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-0.5">
+<a class="font-headline-sm text-[15px] font-bold text-on-surface hover:text-secondary transition-colors line-clamp-1" href="#">
+                  YHQ 1-ilovasi bo'yicha ogohlantiruvchi belgilar qanday geometrik shaklda va fonda tasvirlanadi?
+                </a>
+<span class="font-label-md text-label-md text-on-surface-variant">ID: #YHQ-0105 • 1-ilova, 1-guruh</span>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle">
+<span class="inline-flex items-center px-2.5 py-1 rounded-md bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold">
+                Yo'l belgilari
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<span class="px-2 py-1 rounded bg-surface-container-low font-label-md text-label-md text-on-surface font-medium">
+                4 ta javob
+              </span>
+</td>
+<td class="px-space-md py-3 align-middle">
+<div class="flex flex-col gap-1 w-36">
+<div class="flex justify-between items-center font-label-md text-label-md">
+<span class="text-on-surface font-bold">88%</span>
+<span class="text-on-surface-variant text-[11px]">Oson</span>
+</div>
+<div class="h-1.5 w-full bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-secondary-container rounded-full" style="width: 88%;"></div>
+</div>
+</div>
+</td>
+<td class="px-space-md py-3 align-middle text-center">
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox">
+<div class="w-9 h-5 bg-surface-container-high peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-surface-container-lowest after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surface-container-lowest after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-secondary-container"></div>
+</label>
+</td>
+<td class="px-space-md py-3 align-middle text-on-surface-variant font-label-md text-label-md">
+              23-okt, 2026
+            </td>
+<td class="px-space-md py-3 align-middle text-right">
+<div class="inline-flex items-center gap-1">
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Tahrirlash" type="button">
+<span class="material-symbols-outlined text-[18px]">edit</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Nusxalash" type="button">
+<span class="material-symbols-outlined text-[18px]">content_copy</span>
+</button>
+<button class="p-1 rounded hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer & Pagination -->
+<div class="flex flex-col sm:flex-row items-center justify-between px-space-md py-3.5 bg-surface-container-low gap-space-sm select-none">
+<div class="flex items-center gap-space-md">
+<span class="font-label-md text-label-md text-on-surface-variant">
+          Jami 54 ta savoldan <span class="font-semibold text-on-surface">1–10</span> ko'rsatilmoqda
+        </span>
+<div class="relative inline-flex items-center">
+<select class="appearance-none bg-surface-container-lowest text-on-surface font-label-md text-label-md pl-2.5 pr-7 py-1 rounded shadow-xs focus:outline-none cursor-pointer">
+<option>10 ta / sahifa</option>
+<option>25 ta / sahifa</option>
+<option>50 ta / sahifa</option>
+</select>
+<span class="material-symbols-outlined absolute right-1.5 pointer-events-none text-on-surface-variant text-[16px]">expand_more</span>
+</div>
+</div>
+<!-- Pagination Buttons -->
+<div class="flex items-center gap-1">
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs hover:bg-surface-container transition-colors disabled:opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px]">chevron_left</span>
+<span class="">Oldingi</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-label-md text-label-md font-bold shadow-xs" type="button">
+          1
+        </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs hover:bg-surface-container transition-colors" type="button">
+          2
+        </button>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs hover:bg-surface-container transition-colors" type="button">
+          3
+        </button>
+<span class="px-1 text-on-surface-variant font-bold text-xs">...</span>
+<button class="w-8 h-8 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs hover:bg-surface-container transition-colors" type="button">
+          6
+        </button>
+<button class="inline-flex items-center gap-1 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface font-label-md text-label-md shadow-xs hover:bg-surface-container transition-colors" type="button">
+<span class="">Keyingi</span>
+<span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Secondary / Collapsible Preview: Bo'sh holat ko'rinishi (Empty State Preview Card) -->
+<div class="bg-surface-container-low rounded-xl p-space-md">
+<div class="flex items-center justify-between mb-space-sm cursor-pointer" onclick="document.getElementById('empty-preview-body').classList.toggle('hidden');">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">visibility</span>
+<span class="font-headline-sm text-[16px] font-bold text-on-surface">Bo'sh holat ko'rinishi (Empty State Preview)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-caps text-[10px]">Tizim andozasi</span>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface p-1" type="button">
+<span class="material-symbols-outlined text-[20px]">expand_more</span>
+</button>
+</div>
+<div class="p-space-xl bg-surface-container-lowest rounded-xl flex flex-col items-center justify-center text-center shadow-xs" id="empty-preview-body">
+<div class="w-16 h-16 rounded-2xl bg-surface-container flex items-center justify-center text-on-surface-variant mb-space-sm">
+<span class="material-symbols-outlined text-[36px]">folder_off</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface font-bold tracking-tight mb-1">
+        Hali savol yo'q
+      </h3>
+<p class="font-body-md text-body-sm text-on-surface-variant max-w-md mb-space-md">
+        Tanlangan filtrlar bo'yicha savollar topilmadi yoki savollar bazasi hali bo'sh. Qidiruv parametrlarini o'zgartiring yoki birinchi savolni tizimga kiriting.
+      </p>
+<div class="flex items-center gap-space-sm">
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-label-lg font-bold shadow-sm hover:bg-secondary-fixed-dim transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="">Birinchi savolni qo'shing</span>
+</button>
+<button class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-surface-container-low text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">filter_alt_off</span>
+<span class="">Filtrlarni tozalash</span>
+</button>
+</div>
+</div>
+</div>
+</div></main></div>
+
+</body></html>

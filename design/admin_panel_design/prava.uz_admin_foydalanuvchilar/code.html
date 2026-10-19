@@ -1,0 +1,772 @@
+<!DOCTYPE html><html lang="uz" style=""><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed":"#0c1c34","error-container":"#ffdad6","primary":"#000000","secondary-fixed":"#ffdf9f","background":"#f7f9fd","surface-container":"#eceef2","surface-tint":"#505f7a","on-secondary-container":"#6c5000","tertiary-container":"#001453","error":"#ba1a1a","inverse-surface":"#2d3134","on-surface-variant":"#44474d","surface-container-highest":"#e0e3e6","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-error":"#ffffff","primary-fixed":"#d6e3ff","secondary-fixed-dim":"#f9bd19","secondary-container":"#fcc01d","surface-dim":"#d8dade","inverse-primary":"#b8c7e6","primary-fixed-dim":"#b8c7e6","outline":"#75777e","on-tertiary-fixed-variant":"#0037b9","on-primary":"#ffffff","surface":"#f7f9fd","on-primary-fixed-variant":"#394761","on-tertiary-container":"#5679ff","primary-container":"#0c1c34","surface-container-low":"#f2f4f8","outline-variant":"#c5c6ce","secondary":"#795900","surface-container-high":"#e6e8ec","on-secondary":"#ffffff","on-background":"#191c1f","on-secondary-fixed":"#261a00","on-primary-container":"#7684a1","tertiary":"#000000","inverse-on-surface":"#eff1f5","on-tertiary":"#ffffff","tertiary-fixed":"#dde1ff","on-surface":"#191c1f","tertiary-fixed-dim":"#b8c4ff","on-secondary-fixed-variant":"#5b4300","surface-variant":"#e0e3e6","surface-bright":"#f7f9fd","on-tertiary-fixed":"#001453"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-desktop":"3rem","space-xs":"0.25rem",gutter:"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"1rem","gutter-desktop":"1.5rem","margin-tablet":"2rem"},fontFamily:{"label-md":["Inter"],"body-md":["Inter"],"label-caps":["Manrope"],"headline-md":["Manrope"],"headline-sm":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-lg":["Manrope"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Manrope"],"label-lg":["Inter"],"display-lg-mobile":["Manrope"]},fontSize:{"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}]}}}}</script></head><body class="bg-surface font-body-sm text-on-surface antialiased"><svg class="inline-defs-container" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden"></svg><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;family=Manrope:wght@100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-fixed":"#0c1c34","error-container":"#ffdad6","primary":"#000000","secondary-fixed":"#ffdf9f","background":"#f7f9fd","surface-container":"#eceef2","surface-tint":"#505f7a","on-secondary-container":"#6c5000","tertiary-container":"#001453","error":"#ba1a1a","inverse-surface":"#2d3134","on-surface-variant":"#44474d","surface-container-highest":"#e0e3e6","surface-container-lowest":"#ffffff","on-error-container":"#93000a","on-error":"#ffffff","primary-fixed":"#d6e3ff","secondary-fixed-dim":"#f9bd19","secondary-container":"#fcc01d","surface-dim":"#d8dade","inverse-primary":"#b8c7e6","primary-fixed-dim":"#b8c7e6","outline":"#75777e","on-tertiary-fixed-variant":"#0037b9","on-primary":"#ffffff","surface":"#f7f9fd","on-primary-fixed-variant":"#394761","on-tertiary-container":"#5679ff","primary-container":"#0c1c34","surface-container-low":"#f2f4f8","outline-variant":"#c5c6ce","secondary":"#795900","surface-container-high":"#e6e8ec","on-secondary":"#ffffff","on-background":"#191c1f","on-secondary-fixed":"#261a00","on-primary-container":"#7684a1","tertiary":"#000000","inverse-on-surface":"#eff1f5","on-tertiary":"#ffffff","tertiary-fixed":"#dde1ff","on-surface":"#191c1f","tertiary-fixed-dim":"#b8c4ff","on-secondary-fixed-variant":"#5b4300","surface-variant":"#e0e3e6","surface-bright":"#f7f9fd","on-tertiary-fixed":"#001453"},borderRadius:{DEFAULT:"0.25rem",lg:"0.5rem",xl:"0.75rem",full:"9999px"},spacing:{"margin-desktop":"3rem","space-xs":"0.25rem",gutter:"1rem","space-xl":"2.5rem","space-sm":"0.5rem","space-md":"1rem","space-lg":"1.5rem",margin:"1rem","gutter-desktop":"1.5rem","margin-tablet":"2rem"},fontFamily:{"label-md":["Inter"],"body-md":["Inter"],"label-caps":["Manrope"],"headline-md":["Manrope"],"headline-sm":["Manrope"],"headline-lg-mobile":["Manrope"],"headline-lg":["Manrope"],"body-lg":["Inter"],"body-sm":["Inter"],"display-lg":["Manrope"],"label-lg":["Inter"],"display-lg-mobile":["Manrope"]},fontSize:{"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.02em",fontWeight:"600"}],"body-md":["16px",{lineHeight:"24px",fontWeight:"400"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.08em",fontWeight:"800"}],"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"-0.015em",fontWeight:"700"}],"headline-lg-mobile":["24px",{lineHeight:"32px",letterSpacing:"-0.02em",fontWeight:"700"}],"headline-lg":["32px",{lineHeight:"40px",letterSpacing:"-0.025em",fontWeight:"800"}],"body-lg":["18px",{lineHeight:"28px",fontWeight:"400"}],"body-sm":["14px",{lineHeight:"20px",fontWeight:"400"}],"display-lg":["48px",{lineHeight:"56px",letterSpacing:"-0.03em",fontWeight:"800"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"600"}],"display-lg-mobile":["32px",{lineHeight:"40px",letterSpacing:"-0.02em",fontWeight:"800"}]}}}}</script><aside class="fixed left-0 top-0 h-full w-[260px] bg-surface-container-low shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-50 flex flex-col justify-between select-none"><div class="flex flex-col"><div class="h-16 px-space-md flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container shadow-sm"><span class="material-symbols-outlined text-[22px]">traffic</span></div><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold leading-tight tracking-tight">Prava<span class="text-secondary">.uz</span></span></div></div></div><nav class="px-space-sm py-space-sm space-y-space-md overflow-y-auto max-h-[calc(100vh-210px)]" data-active-classes="bg-surface-container-highest text-on-surface font-semibold"><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Asosiy</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="boshqaruv-paneli" href="#"><span class="material-symbols-outlined text-[18px]">dashboard</span><span class="font-label-lg text-label-lg">Boshqaruv paneli</span></a></div></div><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Kontent</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="mavzular" href="#"><span class="material-symbols-outlined text-[18px]">menu_book</span><span class="font-label-lg text-label-lg">Mavzular</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="savollar" href="#"><span class="material-symbols-outlined text-[18px]">help_outline</span><span class="font-label-lg text-label-lg">Savollar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="rasmlar" href="#"><span class="material-symbols-outlined text-[18px]">image</span><span class="font-label-lg text-label-lg">Rasmlar</span></a></div></div><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Natijalar</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="imtihonlar" href="#"><span class="material-symbols-outlined text-[18px]">assignment</span><span class="font-label-lg text-label-lg">Imtihonlar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="statistika" href="#"><span class="material-symbols-outlined text-[18px]">bar_chart</span><span class="font-label-lg text-label-lg">Statistika</span></a></div></div><div><span class="px-space-sm font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider block mb-space-xs">Foydalanuvchilar</span><div class="space-y-0.5"><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg hover:bg-surface-container-high hover:text-on-surface transition-all bg-surface-container-highest text-on-surface font-semibold" data-path="foydalanuvchilar" href="#"><span class="material-symbols-outlined text-[18px]">group</span><span class="font-label-lg text-label-lg">Foydalanuvchilar</span></a><a class="flex items-center gap-space-sm px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-all" data-path="adminlar" href="#"><span class="material-symbols-outlined text-[18px]">admin_panel_settings</span><span class="font-label-lg text-label-lg">Adminlar</span></a></div></div></nav></div><div class="p-space-sm space-y-space-xs bg-surface-container-low"><a class="flex items-center justify-between px-space-sm py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-on-surface transition-colors" href="#"><span class="font-label-md text-label-md">Saytni ochish</span><span class="material-symbols-outlined text-[16px]">open_in_new</span></a><div class="h-px bg-surface-container-high my-space-xs"></div><div class="flex items-center justify-between px-space-xs py-1.5"><div class="flex items-center gap-space-sm min-w-0"><div class="relative w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-[15px] font-bold shrink-0">I<span class="absolute bottom-0 right-0 w-2.5 h-2.5 bg-secondary-container rounded-full ring-2 ring-surface-container-low"></span></div><div class="flex flex-col min-w-0"><span class="font-label-md text-label-md text-on-surface truncate font-semibold">Inamjon Rustamov</span><span class="font-label-caps text-label-caps text-on-surface-variant truncate">Super Admin</span></div></div><button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container-high hover:text-error transition-colors" title="Chiqish" type="button"><span class="material-symbols-outlined text-[20px]">logout</span></button></div></div></aside><div class="pl-[260px]"><header class="fixed top-0 left-[260px] right-0 h-16 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)] z-40 flex items-center justify-between px-space-lg"><div class="flex items-center gap-space-xs font-label-md text-label-md text-on-surface-variant"></div><div class="w-full max-w-md mx-space-md"><div class="relative flex items-center"><span class="material-symbols-outlined absolute left-3 text-on-surface-variant text-[18px]">search</span><input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-9 pr-14 py-2 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Savol, mavzu yoki foydalanuvchini qidiring…" type="text"><span class="absolute right-2 px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">⌘K</span></div></div><div class="flex items-center gap-space-md"><div class="flex items-center gap-space-xs"><button class="relative p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">notifications</span><span class="absolute top-1.5 right-1.5 w-2 h-2 rounded-full bg-error"></span></button><button class="p-2 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button"></button></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="relative pt-16 w-full px-space-lg pb-space-xl bg-surface"><div class="flex flex-col w-full space-y-space-lg">
+<!-- Header & Actions -->
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-space-md pt-space-xs">
+<div class="flex flex-col">
+<div class="flex items-center gap-2 font-label-md text-label-md text-on-surface-variant mb-1">
+<span class="">Boshqaruv paneli</span>
+<span class="text-outline-variant">/</span>
+<span class="">Foydalanuvchilar</span>
+<span class="text-outline-variant">/</span>
+<span class="text-on-surface font-semibold">Ro'yxat</span>
+</div>
+<div class="flex items-baseline gap-3">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Foydalanuvchilar boshqaruvi</h1>
+<span class="px-2.5 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-label-caps">128 ta jami</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+        Platformada ro'yxatdan o'tgan barcha o'quvchilar va administratorlar nazorati (128 ta faol foydalanuvchi)
+      </p>
+</div>
+<!-- Top Action Buttons -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+<span class="">Filtrlar</span>
+</button>
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container-high transition-colors flex items-center gap-2" type="button">
+<span class="material-symbols-outlined text-[18px]">file_download</span>
+<span class="">Eksport</span>
+</button>
+<button class="px-4 py-2 rounded-lg bg-secondary-container text-on-secondary-container font-headline-sm text-[14px] font-bold shadow-md hover:bg-secondary-fixed-dim transition-all flex items-center gap-2 [box-shadow:inset_0_-2px_0_0_rgba(11,27,51,0.18)] active:translate-y-0.5" type="button">
+<span class="material-symbols-outlined text-[20px]">person_add</span>
+<span class="">+ Yangi foydalanuvchi</span>
+</button>
+</div>
+</div>
+<!-- KPI Top Stats (3 in a row) -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Stat 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start justify-between relative overflow-hidden">
+<div class="flex flex-col space-y-1 z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Jami foydalanuvchilar</span>
+<div class="flex items-baseline gap-2 pt-1">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-extrabold">128</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">ta</span>
+</div>
+<div class="flex items-center gap-1.5 pt-1">
+<span class="inline-flex items-center text-[#14A44D] font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+            +14%
+          </span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">o'tgan oyga nisbatan</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-primary-container text-on-primary flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">groups</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-low rounded-full opacity-60 pointer-events-none"></div>
+</div>
+<!-- Stat 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start justify-between relative overflow-hidden">
+<div class="flex flex-col space-y-1 z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Faol o'rganuvchilar</span>
+<div class="flex items-baseline gap-2 pt-1">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-extrabold">94</span>
+<span class="font-label-md text-label-md text-on-surface-variant font-medium">ta</span>
+</div>
+<div class="flex items-center gap-1.5 pt-1">
+<span class="inline-flex items-center px-1.5 py-0.5 rounded bg-surface-container-high text-on-surface font-label-caps text-[10px] font-bold">7 kunlik</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">oxirgi 7 kunda test topshirgan</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">electric_bolt</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-secondary-fixed/30 rounded-full opacity-60 pointer-events-none"></div>
+</div>
+<!-- Stat 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex items-start justify-between relative overflow-hidden">
+<div class="flex flex-col space-y-1 z-10">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">O'rtacha tayyorgarlik</span>
+<div class="flex items-baseline gap-2 pt-1">
+<span class="font-display-lg text-display-lg text-on-surface tracking-tight font-extrabold">68.4%</span>
+</div>
+<div class="flex items-center gap-2 pt-1 w-full max-w-[200px]">
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-primary-container rounded-full" style="width: 68.4%"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Maqsad: 85%</span>
+</div>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container text-on-surface flex items-center justify-center shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[26px]">speed</span>
+</div>
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-surface-container-low rounded-full opacity-60 pointer-events-none"></div>
+</div>
+</div>
+<!-- Users Table Section -->
+<div class="rounded-xl bg-surface-container-lowest shadow-sm overflow-hidden flex flex-col">
+<!-- Filter bar -->
+<div class="p-space-md bg-surface-container-lowest flex flex-col lg:flex-row items-center justify-between gap-space-md">
+<div class="relative w-full lg:max-w-md">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-low text-on-surface placeholder:text-on-surface-variant font-body-sm text-body-sm pl-10 pr-4 py-2.5 rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-secondary-container transition-all" placeholder="Ism, login, telefon yoki email bo'yicha qidiruv..." type="text" value="Sardor">
+</div>
+<div class="flex items-center gap-space-sm w-full lg:w-auto flex-wrap justify-end">
+<!-- Role selector -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md pl-3.5 pr-8 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-container cursor-pointer font-medium">
+<option>Roli: Barchasi</option>
+<option>O'quvchi</option>
+<option>Moderator</option>
+<option>Admin</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<!-- Status selector -->
+<div class="relative">
+<select class="appearance-none bg-surface-container-low text-on-surface font-label-md text-label-md pl-3.5 pr-8 py-2.5 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary-container cursor-pointer font-medium">
+<option>Holat: Barchasi</option>
+<option>Faol foydalanuvchilar</option>
+<option>Bloklangan</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 top-1/2 -translate-y-1/2 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<button class="p-2.5 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors" title="Yangilash" type="button">
+<span class="material-symbols-outlined text-[20px]">refresh</span>
+</button>
+</div>
+</div>
+<!-- Data Table -->
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface min-w-[980px]">
+<thead>
+<tr class="bg-surface-container-low text-on-surface-variant font-label-caps text-label-caps uppercase tracking-wider select-none">
+<th class="py-3 px-space-md font-bold">Foydalanuvchi</th>
+<th class="py-3 px-space-md font-bold">Roli</th>
+<th class="py-3 px-space-md font-bold text-center">Imtihonlar</th>
+<th class="py-3 px-space-md font-bold">Eng yaxshi natija</th>
+<th class="py-3 px-space-md font-bold">Oxirgi faollik</th>
+<th class="py-3 px-space-md font-bold">Ro'yxat sanasi</th>
+<th class="py-3 px-space-md font-bold text-right">Amallar</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-low">
+<!-- Row 1 (Selected User - Sardor Umarov) -->
+<tr class="bg-primary-fixed/30 hover:bg-primary-fixed/40 transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-headline-sm text-headline-sm shrink-0 shadow-sm">
+<span class="">SU</span>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-[#14A44D] rounded-full ring-2 ring-surface-container-lowest" title="Onlayn"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Sardor Umarov</span>
+<span class="px-1.5 py-0.2 rounded bg-secondary-container text-on-secondary-container font-label-caps text-[9px] font-extrabold uppercase tracking-wide">Tanlangan</span>
+</div>
+<div class="flex items-center gap-2 font-body-sm text-[12px] text-on-surface-variant">
+<span class="">@sardor_u</span>
+<span class="">•</span>
+<span class="">+998 93 456-78-90</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">school</span>
+                O'quvchi
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-headline-sm text-[14px] font-bold text-on-surface">14</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant"> ta</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#14A44D]/10 text-[#14A44D] font-label-md text-[12px] font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                19 / 20 (95%)
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#14A44D]"></span>
+<span class="font-label-md text-[13px] font-semibold text-on-surface">Bugun, 11:24</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-[13px] text-on-surface-variant">
+              12-okt, 2026
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container-high text-on-surface font-label-md text-label-md font-bold hover:bg-secondary-container hover:text-on-secondary-container transition-colors" type="button">
+                  Batafsil
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" title="Boshqa amallar" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2 (Malika Karimova) -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+<span class="">MK</span>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-outline-variant rounded-full ring-2 ring-surface-container-lowest" title="Oflayn"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Malika Karimova</span>
+<div class="flex items-center gap-2 font-body-sm text-[12px] text-on-surface-variant">
+<span class="">@karimova_m</span>
+<span class="">•</span>
+<span class="">+998 90 123-45-67</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">school</span>
+                O'quvchi
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-headline-sm text-[14px] font-bold text-on-surface">22</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant"> ta</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#14A44D]/10 text-[#14A44D] font-label-md text-[12px] font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                20 / 20 (100%)
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-[13px] text-on-surface-variant">Kecha, 21:05</span>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-[13px] text-on-surface-variant">
+              05-okt, 2026
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                  Batafsil
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3 (Jasur Aliyev - Admin) -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-full bg-secondary-fixed text-on-secondary-fixed flex items-center justify-center font-headline-sm text-headline-sm shrink-0 font-bold">
+<span class="">JA</span>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-[#14A44D] rounded-full ring-2 ring-surface-container-lowest" title="Onlayn"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Jasur Aliyev</span>
+<div class="flex items-center gap-2 font-body-sm text-[12px] text-on-surface-variant">
+<span class="">@jasur_admin</span>
+<span class="">•</span>
+<span class="">+998 97 770-11-22</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-secondary-container text-on-secondary-container font-label-md text-[12px] font-bold shadow-xs">
+<span class="material-symbols-outlined text-[14px]">shield_person</span>
+                Admin
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-headline-sm text-[14px] font-bold text-on-surface">38</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant"> ta</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#14A44D]/10 text-[#14A44D] font-label-md text-[12px] font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                20 / 20 (100%)
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-[#14A44D]"></span>
+<span class="font-label-md text-[13px] font-semibold text-on-surface">Bugun, 09:12</span>
+</div>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-[13px] text-on-surface-variant">
+              18-sent, 2026
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                  Batafsil
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4 (Dilshod Rahimov) -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+<span class="">DR</span>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-outline-variant rounded-full ring-2 ring-surface-container-lowest" title="Oflayn"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Dilshod Rahimov</span>
+<div class="flex items-center gap-2 font-body-sm text-[12px] text-on-surface-variant">
+<span class="">@dilshod_r</span>
+<span class="">•</span>
+<span class="">+998 94 333-88-99</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">school</span>
+                O'quvchi
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-headline-sm text-[14px] font-bold text-on-surface">6</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant"> ta</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-surface-container text-on-surface-variant font-label-md text-[12px] font-bold">
+<span class="material-symbols-outlined text-[15px]">info</span>
+                15 / 20 (75%)
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-[13px] text-on-surface-variant">21-okt, 18:40</span>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-[13px] text-on-surface-variant">
+              15-okt, 2026
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                  Batafsil
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5 (Nigora Zokirova) -->
+<tr class="hover:bg-surface-container-low transition-colors cursor-pointer group">
+<td class="py-3.5 px-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="relative w-10 h-10 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-headline-sm text-headline-sm shrink-0">
+<span class="">NZ</span>
+<span class="absolute bottom-0 right-0 w-3 h-3 bg-outline-variant rounded-full ring-2 ring-surface-container-lowest" title="Oflayn"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-[15px] font-bold text-on-surface group-hover:text-primary transition-colors">Nigora Zokirova</span>
+<div class="flex items-center gap-2 font-body-sm text-[12px] text-on-surface-variant">
+<span class="">@nigora_z</span>
+<span class="">•</span>
+<span class="">+998 91 555-12-34</span>
+</div>
+</div>
+</div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-surface-container-high text-on-surface font-label-md text-[12px] font-semibold">
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">school</span>
+                O'quvchi
+              </span>
+</td>
+<td class="py-3.5 px-space-md text-center">
+<span class="font-headline-sm text-[14px] font-bold text-on-surface">9</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant"> ta</span>
+</td>
+<td class="py-3.5 px-space-md">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-lg bg-[#14A44D]/10 text-[#14A44D] font-label-md text-[12px] font-bold">
+<span class="material-symbols-outlined text-[15px]">verified</span>
+                18 / 20 (90%)
+              </div>
+</td>
+<td class="py-3.5 px-space-md">
+<span class="font-body-sm text-[13px] text-on-surface-variant">23-okt, 14:15</span>
+</td>
+<td class="py-3.5 px-space-md font-body-sm text-[13px] text-on-surface-variant">
+              08-okt, 2026
+            </td>
+<td class="py-3.5 px-space-md text-right">
+<div class="flex items-center justify-end gap-1">
+<button class="px-2.5 py-1 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md font-semibold hover:bg-surface-container-highest transition-colors" type="button">
+                  Batafsil
+                </button>
+<button class="p-1.5 rounded-lg text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Footer / Pagination -->
+<div class="p-space-md bg-surface-container-low flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-md text-label-md text-on-surface-variant">
+<div class="">
+        Ko'rsatilmoqda: <span class="font-bold text-on-surface">1–5</span> / 128 ta foydalanuvchi
+      </div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface-variant disabled:opacity-50" disabled="" type="button">
+<span class="material-symbols-outlined text-[16px] align-middle">chevron_left</span>
+</button>
+<button class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-container font-bold" type="button">1</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">2</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">3</button>
+<span class="">...</span>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">26</button>
+<button class="px-2.5 py-1 rounded bg-surface-container text-on-surface hover:bg-surface-container-highest transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px] align-middle">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+<!-- EMBEDDED USER DETAIL INSPECTION PANEL (Sardor Umarov) -->
+<div class="flex flex-col rounded-2xl bg-surface-container-lowest shadow-md overflow-hidden relative">
+<!-- Top Accent Bar -->
+<div class="h-2 w-full bg-secondary-container"></div>
+<!-- Profile Header / Banner -->
+<div class="p-space-lg flex flex-col xl:flex-row xl:items-center justify-between gap-space-lg bg-surface-container-low/50">
+<!-- User Identification -->
+<div class="flex items-start sm:items-center gap-space-md flex-wrap sm:flex-nowrap">
+<div class="relative shrink-0">
+<div class="w-20 h-20 rounded-2xl bg-primary-container text-on-primary flex items-center justify-center font-display-lg text-display-lg-mobile font-bold shadow-md">
+            SU
+          </div>
+<span class="absolute -bottom-1 -right-1 w-5 h-5 bg-[#14A44D] rounded-full ring-4 ring-surface-container-lowest flex items-center justify-center text-white" title="Onlayn">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</span>
+</div>
+<div class="flex flex-col space-y-1 min-w-0">
+<div class="flex items-center gap-2.5 flex-wrap">
+<h2 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Sardor Umarov</h2>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps uppercase tracking-wider font-extrabold flex items-center gap-1">
+<span class="material-symbols-outlined text-[13px]">workspace_premium</span>
+              Premium a'zo
+            </span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-on-surface-variant font-label-caps text-[11px] font-bold">
+              ID: #USR-0891
+            </span>
+</div>
+<div class="flex items-center gap-space-md text-on-surface-variant font-body-sm text-body-sm flex-wrap">
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">alternate_email</span>
+<span class="font-medium text-on-surface">@sardor_u</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span class="">sardor.u@mail.uz</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="">+998 93 456-78-90</span>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">calendar_month</span>
+<span class="">Ro'yxatdan o'tgan: 12-okt, 2026</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Action Cluster -->
+<div class="flex items-center gap-space-sm flex-wrap shrink-0">
+<!-- Role Modifier Dropdown -->
+<div class="relative">
+<label class="sr-only">Roli o'zgartirish</label>
+<div class="flex items-center bg-surface-container-lowest rounded-lg shadow-sm px-3 py-2 gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">badge</span>
+<select class="appearance-none bg-transparent text-on-surface font-label-lg text-label-lg pr-6 focus:outline-none cursor-pointer font-semibold">
+<option selected="">O'quvchi</option>
+<option>Moderator</option>
+<option>Admin</option>
+</select>
+<span class="material-symbols-outlined absolute right-2.5 pointer-events-none text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+</div>
+<!-- Reset Password -->
+<button class="px-3.5 py-2 rounded-lg bg-surface-container-lowest text-on-surface font-label-lg text-label-lg shadow-sm hover:bg-surface-container transition-colors flex items-center gap-1.5 font-semibold" type="button">
+<span class="material-symbols-outlined text-[18px]">lock_reset</span>
+<span class="">Parolni tiklash</span>
+</button>
+<!-- Block Danger Button -->
+<button class="px-3.5 py-2 rounded-lg bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-headline-sm text-[13px] font-bold flex items-center gap-1.5 shadow-sm" type="button">
+<span class="material-symbols-outlined text-[18px]">block</span>
+<span class="">Bloklash</span>
+</button>
+</div>
+</div>
+<!-- Sardor's Metrics Row (4 Dense Cards) -->
+<div class="p-space-lg grid grid-cols-2 lg:grid-cols-4 gap-space-md bg-surface-container-lowest">
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col space-y-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Jami urinishlar</span>
+<div class="flex items-baseline gap-1.5 pt-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">14</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">marotaba</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Barchasi to'liq yakunlangan</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col space-y-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Muvaffaqiyatli</span>
+<div class="flex items-baseline gap-1.5 pt-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-[#14A44D]">11</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">ta (78.6%)</span>
+</div>
+<span class="font-label-md text-label-md text-[#14A44D] font-semibold">Imtihondan o'tish ko'rsatkichi</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col space-y-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">O'rtacha ball</span>
+<div class="flex items-baseline gap-1.5 pt-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">17.2</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 20</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">Standart o'tish bali: 18</span>
+</div>
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col space-y-1">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">O'zlashtirilgan mavzular</span>
+<div class="flex items-baseline gap-1.5 pt-0.5">
+<span class="font-headline-lg text-headline-lg font-extrabold text-on-surface">16</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">/ 18 ta</span>
+</div>
+<span class="font-label-md text-label-md text-on-surface-variant">2 ta mavzuda xatolar mavjud</span>
+</div>
+</div>
+<!-- Sardor's Deep Dive: Left Dynamics Chart + Right Recent Tests Table -->
+<div class="p-space-lg pt-0 grid grid-cols-1 lg:grid-cols-12 gap-space-lg bg-surface-container-lowest">
+<!-- Left Column: Score Progression Dynamic Chart (5 cols) -->
+<div class="lg:col-span-5 p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] font-bold text-on-surface">Oxirgi 5 ta imtihon dinamikasi</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Har bir urinishdagi to'g'ri javoblar o'sishi</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-caps text-label-caps font-extrabold">
+            +35% o'sish
+          </span>
+</div>
+<!-- Inline SVG Dynamics Progression -->
+<div class="py-4 flex flex-col">
+<div class="h-44 w-full relative">
+<svg class="w-full h-full overflow-visible" preserveAspectRatio="none" viewBox="0 0 400 160">
+<!-- Background grid dashes -->
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="400" y1="12" y2="12"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="400" y1="50" y2="50"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="400" y1="90" y2="90"></line>
+<line class="text-surface-container-highest" stroke="currentColor" stroke-dasharray="4 4" stroke-width="1" x1="0" x2="400" y1="130" y2="130"></line>
+<!-- Pass threshold line at 18 score (y ~ 28) -->
+<line opacity="0.6" stroke="#14A44D" stroke-dasharray="2 3" stroke-width="1.5" x1="0" x2="400" y1="28" y2="28"></line>
+<text class="font-label-caps text-[9px] font-bold uppercase" fill="#14A44D" text-anchor="end" x="395" y="24">O'tish chegarasi (18 ball)</text>
+<!-- Chart Gradient Fill -->
+<defs>
+<linearGradient id="chartGradient" x1="0%" x2="0%" y1="0%" y2="100%">
+<stop offset="0%" stop-color="#fcc01d" stop-opacity="0.45"></stop>
+<stop offset="100%" stop-color="#fcc01d" stop-opacity="0.0"></stop>
+</linearGradient>
+</defs>
+<!-- Area under curve: Points: (40, 110[14]), (120, 80[16]), (200, 60[17]), (280, 40[18]), (360, 18[19]) -->
+<path d="M 40 110 L 120 80 L 200 60 L 280 40 L 360 18 L 360 150 L 40 150 Z" fill="url(#chartGradient)"></path>
+<!-- Main Dynamic Trend Line -->
+<path d="M 40 110 L 120 80 L 200 60 L 280 40 L 360 18" fill="none" stroke="#0c1c34" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path>
+<!-- Interactive Node Circles & Labels -->
+<!-- Pt 1: 14 -->
+<circle cx="40" cy="110" fill="#ffffff" r="5" stroke="#0c1c34" stroke-width="2.5"></circle>
+<text class="font-label-caps text-[10px] font-extrabold fill-on-surface" text-anchor="middle" x="40" y="132">14 ball</text>
+<text class="font-body-sm text-[10px] fill-on-surface-variant" text-anchor="middle" x="40" y="152">1-test</text>
+<!-- Pt 2: 16 -->
+<circle cx="120" cy="80" fill="#ffffff" r="5" stroke="#0c1c34" stroke-width="2.5"></circle>
+<text class="font-label-caps text-[10px] font-extrabold fill-on-surface" text-anchor="middle" x="120" y="102">16 ball</text>
+<text class="font-body-sm text-[10px] fill-on-surface-variant" text-anchor="middle" x="120" y="152">2-test</text>
+<!-- Pt 3: 17 -->
+<circle cx="200" cy="60" fill="#ffffff" r="5" stroke="#0c1c34" stroke-width="2.5"></circle>
+<text class="font-label-caps text-[10px] font-extrabold fill-on-surface" text-anchor="middle" x="200" y="82">17 ball</text>
+<text class="font-body-sm text-[10px] fill-on-surface-variant" text-anchor="middle" x="200" y="152">3-test</text>
+<!-- Pt 4: 18 -->
+<circle cx="280" cy="40" fill="#14A44D" r="5" stroke="#ffffff" stroke-width="2"></circle>
+<text class="font-label-caps text-[10px] font-extrabold fill-[#14A44D]" text-anchor="middle" x="280" y="32">18 ball</text>
+<text class="font-body-sm text-[10px] fill-on-surface-variant" text-anchor="middle" x="280" y="152">4-test</text>
+<!-- Pt 5: 19 (Max) -->
+<circle cx="360" cy="18" fill="#fcc01d" r="6" stroke="#0c1c34" stroke-width="2.5"></circle>
+<text class="font-label-caps text-[11px] font-black fill-on-surface" text-anchor="middle" x="360" y="10">19 ball</text>
+<text class="font-body-sm text-[10px] fill-on-surface-variant font-bold" text-anchor="middle" x="360" y="152">5-test</text>
+</svg>
+</div>
+</div>
+<div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">psychology</span>
+            Xulosa: Davlat imtihoniga tayyorgarlik yuqori darajada.
+          </span>
+<span class="font-bold text-on-surface">95% tayyor</span>
+</div>
+</div>
+<!-- Right Column: Recent Tests Log Compact Table (7 cols) -->
+<div class="lg:col-span-7 p-space-md rounded-xl bg-surface-container-low flex flex-col justify-between">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex flex-col">
+<span class="font-headline-sm text-[16px] font-bold text-on-surface">Oxirgi topshirgan testlari jadvali</span>
+<span class="font-body-sm text-[12px] text-on-surface-variant">Har bir sessiya natijasi va vaqt sarfi</span>
+</div>
+<button class="text-on-surface font-label-md text-label-md font-bold hover:underline flex items-center gap-1" type="button">
+            Barcha 14 tasini ko'rish
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</button>
+</div>
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left font-body-sm text-body-sm text-on-surface">
+<thead>
+<tr class="text-on-surface-variant font-label-caps text-[10px] uppercase tracking-wider select-none">
+<th class="py-2 px-3">Sana &amp; Vaqt</th>
+<th class="py-2 px-3">Natija</th>
+<th class="py-2 px-3">Holat</th>
+<th class="py-2 px-3">Vaqt sarfi</th>
+<th class="py-2 px-3 text-right">Tekshirish</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-surface-container-highest/60 font-body-sm text-[13px]">
+<!-- Log 1 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">history</span>
+<span class="font-semibold text-on-surface">24-okt, 14:10</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<span class="font-headline-sm text-[13px] font-bold text-on-surface">19</span>
+<span class="text-on-surface-variant text-[12px]"> / 20</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-[#14A44D]/15 text-[#14A44D] font-label-caps text-[10px] font-extrabold uppercase">
+                    O'tdi
+                  </span>
+</td>
+<td class="py-2.5 px-3 font-mono text-[12px] text-on-surface-variant">
+                  12:40 daq
+                </td>
+<td class="py-2.5 px-3 text-right">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-bold hover:text-secondary transition-colors" href="#">
+                    Ko'rish
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Log 2 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">history</span>
+<span class="font-semibold text-on-surface">23-okt, 19:30</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<span class="font-headline-sm text-[13px] font-bold text-on-surface">18</span>
+<span class="text-on-surface-variant text-[12px]"> / 20</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-[#14A44D]/15 text-[#14A44D] font-label-caps text-[10px] font-extrabold uppercase">
+                    O'tdi
+                  </span>
+</td>
+<td class="py-2.5 px-3 font-mono text-[12px] text-on-surface-variant">
+                  14:15 daq
+                </td>
+<td class="py-2.5 px-3 text-right">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-bold hover:text-secondary transition-colors" href="#">
+                    Ko'rish
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Log 3 (Failed) -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">history</span>
+<span class="font-semibold text-on-surface">22-okt, 10:05</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<span class="font-headline-sm text-[13px] font-bold text-error">15</span>
+<span class="text-on-surface-variant text-[12px]"> / 20</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-error-container text-on-error-container font-label-caps text-[10px] font-extrabold uppercase">
+                    O'tmadi
+                  </span>
+</td>
+<td class="py-2.5 px-3 font-mono text-[12px] text-on-surface-variant">
+                  17:50 daq
+                </td>
+<td class="py-2.5 px-3 text-right">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-bold hover:text-secondary transition-colors" href="#">
+                    Ko'rish
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</td>
+</tr>
+<!-- Log 4 -->
+<tr class="hover:bg-surface-container/60 transition-colors">
+<td class="py-2.5 px-3">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[16px] text-on-surface-variant">history</span>
+<span class="font-semibold text-on-surface">20-okt, 16:45</span>
+</div>
+</td>
+<td class="py-2.5 px-3">
+<span class="font-headline-sm text-[13px] font-bold text-on-surface">17</span>
+<span class="text-on-surface-variant text-[12px]"> / 20</span>
+</td>
+<td class="py-2.5 px-3">
+<span class="px-2 py-0.5 rounded-full bg-[#14A44D]/15 text-[#14A44D] font-label-caps text-[10px] font-extrabold uppercase">
+                    O'tdi
+                  </span>
+</td>
+<td class="py-2.5 px-3 font-mono text-[12px] text-on-surface-variant">
+                  15:20 daq
+                </td>
+<td class="py-2.5 px-3 text-right">
+<a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface font-bold hover:text-secondary transition-colors" href="#">
+                    Ko'rish
+                    <span class="material-symbols-outlined text-[14px]">arrow_forward</span>
+</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="mt-2 pt-2 flex items-center justify-between text-on-surface-variant font-label-md text-label-md">
+<span class="">Oxirgi test: 24-okt, 2026 (YHQ 2026 yangi qoidalari asosida)</span>
+<span class="text-[#14A44D] font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+            Muvaffaqiyatli
+          </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Active highlight synchronization for sidebar
+  document.addEventListener('DOMContentLoaded', function () {
+    const activeLink = document.querySelector('a[data-path="foydalanuvchilar"]');
+    if (activeLink) {
+      activeLink.classList.remove('text-on-surface-variant');
+      activeLink.classList.add('bg-surface-container-highest', 'text-on-surface', 'font-semibold');
+    }
+  });
+</script></main></div>
+
+</body></html>

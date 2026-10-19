@@ -12,7 +12,7 @@
 3. Butun interfeys matni **o'zbek tilida (lotin yozuvi)**. Kod, o'zgaruvchi va model nomlari — inglizcha.
 4. Har bir bosqichdan keyin git commit qil (`git init` qilinmagan bo'lsa — qil). Commit xabarlari qisqa, inglizcha.
 5. Maxfiy narsalar (SECRET_KEY, DB parol) faqat `.env` da. `.env` → `.gitignore` ga. `.env.example` ni repoga qo'sh.
-6. Kutubxonalarni minimal tut. Ruxsat etilganlari: `Django>=5.0,<6`, `mysqlclient`, `python-decouple`, `Pillow`, `gunicorn`. Boshqa kerak bo'lsa — sababini `NOTES.md` ga yoz.
+6. Kutubxonalarni minimal tut. Ruxsat etilganlari: `Django>=5.0,<6`, `psycopg[binary]` (psycopg 3), `python-decouple`, `Pillow`, `gunicorn`. Boshqa kerak bo'lsa — sababini `NOTES.md` ga yoz.
 7. Frontend: Bootstrap 5.3 va Bootstrap Icons — CDN orqali. React/Vue/npm ishlatilmaydi. JavaScript — oddiy (vanilla), `static/js/` da.
 
 ---
@@ -20,7 +20,7 @@
 ## 1. Loyiha haqida qisqacha
 
 **Prava.uz** — haydovchilik guvohnomasi imtihoniga tayyorlanuvchilar uchun bepul onlayn test sayti.
-Universitet loyihasi (TATU, Dasturiy injiniring). Hujjatlarda belgilangan: **Python + Django, MySQL, Bootstrap**.
+Universitet loyihasi (TATU, Dasturiy injiniring). Hujjatlarda belgilangan: **Python + Django, MySQL, Bootstrap**. Baza keyinroq **PostgreSQL** ga almashtirildi (sababi — `NOTES.md`).
 
 ### Birinchi versiyaga (MVP) kiradi
 - Ro'yxatdan o'tish, kirish, chiqish
@@ -49,7 +49,7 @@ Mobil ilova, to'lov, video darslar, reyting jadvali, rus tili.
 | Qism | Tanlov |
 |---|---|
 | Backend | Python 3.11+, Django 5.x |
-| Baza | **MySQL 8** (asosiy). Lokal tez ishga tushirish uchun `.env` da `DB_ENGINE=sqlite` bo'lsa — SQLite |
+| Baza | **PostgreSQL** (asosiy, 14+). Lokal tez ishga tushirish uchun `.env` da `DB_ENGINE=sqlite` bo'lsa — SQLite |
 | Frontend | Django templates + Bootstrap 5.3 (CDN) + vanilla JS |
 | Statik/media | `static/` (CSS, JS), `media/questions/` (savol rasmlari) |
 | Server (keyin) | Ubuntu VPS, Nginx + Gunicorn, Let's Encrypt |
@@ -264,8 +264,8 @@ Yaratadi:
 
 ## 11. Xavfsizlik va sozlamalar (`config/settings.py`)
 
-- `python-decouple`: `SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`, `DB_ENGINE` (`mysql`|`sqlite`), `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`, `DB_PORT`.
-- MySQL: `OPTIONS = {"charset": "utf8mb4", "init_command": "SET sql_mode='STRICT_TRANS_TABLES'"}`.
+- `python-decouple`: `SECRET_KEY`, `DEBUG`, `ALLOWED_HOSTS`, `DB_ENGINE` (`postgres`|`sqlite`), `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`, `DB_PORT`.
+- PostgreSQL: `ENGINE = "django.db.backends.postgresql"` (psycopg 3), baza `ENCODING 'UTF8'`. `manage.py test` sukut bo'yicha SQLite'da (`TEST_DB_ENGINE=postgres` bilan Postgres'da).
 - `LANGUAGE_CODE = "uz"`, `TIME_ZONE = "Asia/Tashkent"`, `USE_TZ = True`.
 - `LOGIN_URL = "login"`, `LOGIN_REDIRECT_URL = "topic_list"`, `LOGOUT_REDIRECT_URL = "home"`.
 - `STATIC_ROOT`, `MEDIA_ROOT`, `MEDIA_URL`; DEBUG'da media'ni `urls.py` orqali ber.
@@ -326,7 +326,7 @@ Testlar SQLite'da ishlasin (tezlik uchun) — settings'da `DB_ENGINE` orqali.
 - `README.md` ni yakunla. ✅ 1-bo'limdagi qabul mezonlarining hammasi belgilandi.
 
 **Bosqich 10 — (ixtiyoriy, vaqt qolsa) Deploy fayllari**
-- `deploy/nginx.conf`, `deploy/gunicorn.service` (systemd), `deploy/backup.sh` (kunlik `mysqldump` + cron qatori), README'da VPS'ga qo'yish qadamlari (Ubuntu, `git clone`, `.env`, `collectstatic`, `certbot --nginx`).
+- `deploy/nginx.conf`, `deploy/gunicorn.service` (systemd), `deploy/backup.sh` (kunlik `pg_dump` + cron qatori), README'da VPS'ga qo'yish qadamlari (Ubuntu, `git clone`, `.env`, `collectstatic`, `certbot --nginx`).
 
 ---
 
@@ -339,18 +339,17 @@ Testlar SQLite'da ishlasin (tezlik uchun) — settings'da `DB_ENGINE` orqali.
    ```bash
    python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
    pip install -r requirements.txt
-   cp .env.example .env            # DB_ENGINE=sqlite
+   cp .env.example .env            # tez ishga tushirish uchun DB_ENGINE=sqlite qiling
    python manage.py migrate
    python manage.py seed_data
    python manage.py runserver
    ```
-5. **MySQL bilan ishga tushirish:**
+5. **PostgreSQL bilan ishga tushirish** (`psql -U postgres`):
    ```sql
-   CREATE DATABASE prava_uz CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-   CREATE USER 'prava'@'localhost' IDENTIFIED BY 'parol';
-   GRANT ALL PRIVILEGES ON prava_uz.* TO 'prava'@'localhost';
+   CREATE USER prava WITH PASSWORD 'parol' CREATEDB;
+   CREATE DATABASE prava_uz OWNER prava ENCODING 'UTF8' TEMPLATE template0;
    ```
-   `.env` da `DB_ENGINE=mysql` va ulanish ma'lumotlari. (Windows'da `mysqlclient` o'rnatilmasa — `pip install mysqlclient` uchun wheel; muammo bo'lsa SQLite bilan davom eting.)
+   `.env` da `DB_ENGINE=postgres`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST=localhost`, `DB_PORT=5432`. Drayver: `psycopg[binary]` (Windows'da ham tayyor wheel). `CREATEDB` faqat `TEST_DB_ENGINE=postgres` bilan test uchun kerak.
 6. Demo loginlar: `admin/admin12345`, `demo/demo12345`
 7. Arxitektura: 5 qatlam, 4 modul (accounts, quiz=tests, results, admin), 6 jadval — hujjatdagi nomlar bilan moslik jadvali
 8. Testlarni ishga tushirish: `python manage.py test`
