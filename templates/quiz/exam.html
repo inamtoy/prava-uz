@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Imtihon — Prava.uz{% endblock %}
+{% block content %}
+<div id="exam" class="quiz-wrap"
+     data-answer-url="{% url 'exam_answer' exam.pk %}"
+     data-time-left="{{ time_left }}"
+     data-start="{{ start_index }}">
+
+  <div class="exam-bar card mb-3">
+    <div class="card-body py-2 d-flex align-items-center justify-content-between gap-2">
+      <div class="fw-semibold">Savol <span id="current-number">{{ start_index|add:1 }}</span> / {{ items|length }}</div>
+      <div id="timer" class="timer badge fs-5" role="timer" aria-live="off" aria-label="Qolgan vaqt">--:--</div>
+      <button type="button" class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#finishModal">Yakunlash</button>
+    </div>
+  </div>
+
+  <nav class="exam-nav mb-3" aria-label="Savollar">
+    {% for item in items %}
+      <button type="button" class="nav-num{% if item.selected_answer_id %} answered{% endif %}" data-goto="{{ forloop.counter0 }}" aria-label="Savol {{ forloop.counter }}">{{ forloop.counter }}</button>
+    {% endfor %}
+  </nav>
+
+  <div id="ajax-alert" class="alert alert-warning d-none" role="alert"></div>
+
+  {% for item in items %}
+    {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=False %}
+  {% endfor %}
+
+  <div class="d-flex justify-content-between gap-2 mt-3">
+    <button type="button" id="prev-btn" class="btn btn-outline-secondary">&lsaquo; Oldingi</button>
+    <button type="button" id="next-btn" class="btn btn-primary">Keyingi &rsaquo;</button>
+  </div>
+
+  <form id="finish-form" method="post" action="{% url 'exam_finish' exam.pk %}">{% csrf_token %}</form>
+</div>
+
+<div class="modal fade" id="finishModal" tabindex="-1" aria-labelledby="finishModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 class="modal-title h5" id="finishModalLabel">Imtihonni yakunlaysizmi?</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Yopish"></button>
+      </div>
+      <div class="modal-body">
+        <p id="unanswered-text" class="mb-0"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Davom etish</button>
+        <button type="submit" form="finish-form" class="btn btn-danger">Ha, yakunlash</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block extra_js %}
+<script src="{% static 'js/common.js' %}"></script>
+<script src="{% static 'js/exam.js' %}"></script>
+{% endblock %}

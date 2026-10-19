@@ -21,7 +21,9 @@ def home(request):
 
 @login_required
 def topic_list(request):
-    topics = Topic.objects.annotate(question_count=Count("questions", filter=Q(questions__is_active=True)))
+    topics = Topic.objects.annotate(
+        question_count=Count("questions", filter=Q(questions__is_active=True))
+    ).order_by("order", "name")
     progress = services.topic_progress(request.user)
     for topic in topics:
         topic.progress = progress.get(topic.pk, 0)
@@ -103,4 +105,50 @@ def exam_finish(request, pk):
 
 @login_required
 def exam_start(request):
-    return render(request, "quiz/home.html")
+    if request.method == "POST":
+        try:
+            exam = services.start_exam(request.user)
+        except services.ExamError as e:
+            messages.warning(request, str(e))
+            return redirect("exam_start")
+        if exam.resumed:
+            messages.info(request, "Sizda tugallanmagan imtihon bor — davom ettiryapsiz.")
+        elif exam.total_questions < settings.EXAM_QUESTION_COUNT:
+            messages.warning(
+                request,
+                f"Bazada savollar yetarli emas: imtihonda {exam.total_questions} ta savol bo'ladi.",
+            )
+        return redirect("exam", pk=exam.pk)
+
+    current = (
+        Exam.objects.filter(user=request.user, mode=Exam.MODE_EXAM, status=Exam.STATUS_IN_PROGRESS)
+        .order_by("-started_at")
+        .first()
+    )
+    if current is not None and services.expire_if_needed(current):
+        current = None
+    return render(request, "quiz/exam_start.html", {
+        "current": current,
+        "question_count": settings.EXAM_QUESTION_COUNT,
+        "minutes": settings.EXAM_DURATION_SECONDS // 60,
+        "max_mistakes": settings.EXAM_MAX_MISTAKES,
+        "min_correct": settings.EXAM_QUESTION_COUNT - settings.EXAM_MAX_MISTAKES,
+        "available": Question.objects.filter(is_active=True).count(),
+    })
+
+
+@login_required
+def exam(request, pk):
+    exam = get_object_or_404(Exam, pk=pk, user=request.user, mode=Exam.MODE_EXAM)
+    if services.expire_if_needed(exam):
+        messages.warning(request, "Imtihon vaqti tugadi. Natijangiz quyida.")
+        return redirect("result", pk=exam.pk)
+    if not exam.is_in_progress:
+        return redirect("result", pk=exam.pk)
+    items = list(_session_items(exam))
+    return render(request, "quiz/exam.html", {
+        "exam": exam,
+        "items": items,
+        "time_left": exam.time_left_seconds,
+        "start_index": next((n for n, i in enumerate(items) if not i.selected_answer_id), 0),
+    })

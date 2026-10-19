@@ -42,3 +42,21 @@ img { max-width: 100%; }
 .answer-btn.wrong, .answer-btn.wrong:disabled { border-color: var(--bad); background: #ffebe9; color: #1f2328; opacity: 1; }
 .answer-btn.wrong .answer-key { background: var(--bad); color: #fff; }
 .answer-btn:disabled { opacity: .85; }
+
+/* ---- Imtihon ekrani ---- */
+.exam-bar { position: sticky; top: 0; z-index: 1020; }
+.timer { background: #eaeef2; color: #1f2328; font-variant-numeric: tabular-nums; min-width: 5.5rem; }
+.timer.timer-warn { background: #fff3cd; color: #7a5a00; }
+.timer.timer-danger { background: var(--bad); color: #fff; }
+.exam-nav { display: grid; grid-template-columns: repeat(10, 1fr); gap: .375rem; }
+.nav-num {
+  min-height: 40px; padding: 0; border-radius: .375rem;
+  border: 2px solid transparent; background: #d0d7de; color: #1f2328; font-weight: 600;
+}
+.nav-num.answered { background: var(--brand); color: #fff; }
+.nav-num.current { border-color: #1f2328; box-shadow: 0 0 0 2px #fff inset; }
+.answer-btn.saving { opacity: .7; }
+@media (max-width: 400px) {
+  .exam-nav { gap: .25rem; }
+  .nav-num { min-height: 36px; font-size: .875rem; }
+}

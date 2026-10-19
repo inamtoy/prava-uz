@@ -157,3 +157,98 @@ class PracticeFlowTests(TestCase):
             content_type="application/json",
         )
         self.assertEqual(resp.status_code, 403)
+
+
+class ExamFlowTests(TestCase):
+    @classmethod
+    def setUpTestData(cls):
+        from results.tests import make_questions
+
+        cls.user = User.objects.create_user("ali", "ali@example.com", "Kuchli-parol-2026")
+        cls.other = User.objects.create_user("vali", "vali@example.com", "Kuchli-parol-2026")
+        topic = Topic.objects.create(name="Umumiy", slug="umumiy")
+        make_questions(topic, 25)
+
+    def setUp(self):
+        self.client.force_login(self.user)
+
+    def test_anonymous_redirected_to_login(self):
+        self.client.logout()
+        resp = self.client.get(reverse("exam_start"))
+        self.assertRedirects(resp, reverse("login") + "?next=" + reverse("exam_start"))
+
+    def test_full_exam_flow(self):
+        from results.models import Exam
+
+        self.assertContains(self.client.get(reverse("exam_start")), "Imtihonni boshlash")
+        resp = self.client.post(reverse("exam_start"))
+        exam = Exam.objects.get(user=self.user)
+        self.assertRedirects(resp, reverse("exam", args=[exam.pk]))
+
+        page = self.client.get(reverse("exam", args=[exam.pk]))
+        self.assertEqual(page.status_code, 200)
+        self.assertContains(page, 'class="question-card', count=20)
+        self.assertContains(page, 'data-time-left="')
+        self.assertNotContains(page, "answer-btn correct")
+
+        api = reverse("exam_answer", args=[exam.pk])
+        for i, item in enumerate(exam.items.select_related("question")):
+            answers = item.question.answers.all()
+            answer = answers.filter(is_correct=False).first() if i == 0 else answers.get(is_correct=True)
+            data = self.client.post(api, {"question_id": item.question_id, "answer_id": answer.pk}, content_type="application/json").json()
+            self.assertTrue(data["ok"])
+            self.assertNotIn("is_correct", data)  # imtihonda to'g'ri/xato oshkor qilinmaydi
+            self.assertNotIn("correct_answer_id", data)
+            self.assertGreater(data["time_left"], 0)
+
+        # Sahifa yangilansa o'sha savollar chiqadi, tanlangan javoblar saqlangan
+        page = self.client.get(reverse("exam", args=[exam.pk]))
+        self.assertContains(page, "nav-num answered", count=20)
+
+        resp = self.client.post(reverse("exam_finish", args=[exam.pk]))
+        self.assertRedirects(resp, reverse("result", args=[exam.pk]))
+        exam.refresh_from_db()
+        self.assertEqual(exam.score, 19)
+        self.assertTrue(exam.is_passed)
+        self.assertEqual(self.client.get(reverse("result", args=[exam.pk])).status_code, 200)
+        # Yakunlangan imtihon sahifasi natijaga yo'naltiradi
+        self.assertRedirects(self.client.get(reverse("exam", args=[exam.pk])), reverse("result", args=[exam.pk]))
+
+    def test_start_twice_resumes(self):
+        from results.models import Exam
+
+        self.client.post(reverse("exam_start"))
+        self.client.post(reverse("exam_start"))
+        self.assertEqual(Exam.objects.filter(user=self.user).count(), 1)
+        self.assertContains(self.client.get(reverse("exam_start")), "Davom ettirish")
+
+    def test_answer_after_deadline_rejected(self):
+        from datetime import timedelta
+
+        from django.utils import timezone
+
+        from results import services
+        from results.models import Exam
+
+        exam = services.start_exam(self.user)
+        Exam.objects.filter(pk=exam.pk).update(started_at=timezone.now() - timedelta(minutes=26))
+        item = exam.items.first()
+        resp = self.client.post(
+            reverse("exam_answer", args=[exam.pk]),
+            {"question_id": item.question_id, "answer_id": item.question.answers.first().pk},
+            content_type="application/json",
+        )
+        self.assertEqual(resp.status_code, 409)
+        self.assertTrue(resp.json()["expired"])
+        exam.refresh_from_db()
+        self.assertEqual(exam.status, Exam.STATUS_EXPIRED)
+        self.assertRedirects(self.client.get(reverse("exam", args=[exam.pk])), reverse("result", args=[exam.pk]))
+
+    def test_foreign_exam_and_result_404(self):
+        from results import services
+
+        exam = services.start_exam(self.other)
+        self.assertEqual(self.client.get(reverse("exam", args=[exam.pk])).status_code, 404)
+        self.assertEqual(self.client.post(reverse("exam_finish", args=[exam.pk])).status_code, 404)
+        services.finish_exam(exam)
+        self.assertEqual(self.client.get(reverse("result", args=[exam.pk])).status_code, 404)
