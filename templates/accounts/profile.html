@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Profil — Prava.uz{% endblock %}
+{% block content %}
+<h1 class="h3">{{ user.get_full_name|default:user.username }}</h1>
+<p class="text-muted">{{ user.email }}</p>
+{% endblock %}
