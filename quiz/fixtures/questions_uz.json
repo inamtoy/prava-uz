@@ -1,0 +1,627 @@
+{
+  "topics": [
+    {
+      "name": "Umumiy qoidalar va atamalar",
+      "slug": "umumiy-qoidalar",
+      "description": "Yo'l harakati qoidalaridagi asosiy tushunchalar, haydovchining majburiyatlari va tezlik chegaralari.",
+      "order": 1,
+      "questions": [
+        {
+          "text": "O'zbekiston Respublikasida transport vositalari yo'lning qaysi tomonida harakatlanadi?",
+          "answers": ["Chap tomonida", "O'ng tomonida", "Yo'lning o'rtasida", "Haydovchi xohlagan tomonida"],
+          "correct": 1,
+          "explanation": "O'zbekistonda o'ng tomonlama harakat qabul qilingan: transport vositalari qatnov qismining o'ng tomonida harakatlanadi."
+        },
+        {
+          "text": "Aholi punktlarida transport vositalarining ruxsat etilgan eng yuqori tezligi qancha (agar belgilar bilan boshqacha tartib o'rnatilmagan bo'lsa)?",
+          "answers": ["50 km/soat", "60 km/soat", "70 km/soat", "90 km/soat"],
+          "correct": 2,
+          "explanation": "Aholi punktlarida umumiy tezlik chegarasi — 70 km/soat. Belgilar orqali bundan past chegara o'rnatilishi mumkin."
+        },
+        {
+          "text": "Turar-joy dahalari va hovli hududlarida harakat tezligi qanchadan oshmasligi kerak?",
+          "answers": ["20 km/soat", "40 km/soat", "50 km/soat", "70 km/soat"],
+          "correct": 0,
+          "explanation": "Turar-joy dahalari va hovlilarda piyodalar ko'p bo'ladi, shuning uchun tezlik 20 km/soatdan oshmasligi kerak va piyodalar ustunlikka ega."
+        },
+        {
+          "text": "Transport vositasini boshqa transport vositasi bilan shatakka olib harakatlanganda tezlik qanchadan oshmasligi kerak?",
+          "answers": ["30 km/soat", "50 km/soat", "70 km/soat", "90 km/soat"],
+          "correct": 1,
+          "explanation": "Shatakka olib harakatlanishda tezlik 50 km/soatdan oshmasligi kerak — tormozlash masofasi uzayadi va boshqarish qiyinlashadi."
+        },
+        {
+          "text": "\"To'xtash\" deganda nima tushuniladi?",
+          "answers": [
+            "Transport vositasi harakatini 5 daqiqagacha (yoki yo'lovchi tushirish/yuk ortish uchun undan ko'proq vaqtga) atayin to'xtatish",
+            "Transport vositasi harakatini 30 daqiqadan ortiq vaqtga to'xtatish",
+            "Svetoforning qizil ishorasida to'xtab turish",
+            "Faqat avtoturargohda to'xtab turish"
+          ],
+          "correct": 0,
+          "explanation": "To'xtash — harakatni 5 daqiqagacha, yo'lovchilarni chiqarish-tushirish yoki yuk ortish-tushirish uchun esa undan ham ko'proq vaqtga atayin to'xtatish."
+        },
+        {
+          "text": "Haydovchi transport vositasini boshqarayotganda o'zi bilan qaysi hujjatlarga ega bo'lishi shart?",
+          "answers": [
+            "Faqat pasport",
+            "Haydovchilik guvohnomasi va transport vositasini ro'yxatdan o'tkazish hujjati (texnik pasport)",
+            "Faqat tibbiy ma'lumotnoma",
+            "Hech qanday hujjat shart emas"
+          ],
+          "correct": 1,
+          "explanation": "Haydovchi tegishli toifadagi haydovchilik guvohnomasi va transport vositasining ro'yxatdan o'tganlik hujjatini (hamda talab qilinadigan boshqa hujjatlarni) o'zi bilan olib yurishi shart."
+        },
+        {
+          "text": "Harakatlanish vaqtida haydovchiga qo'lda ushlab mobil telefondan foydalanish mumkinmi?",
+          "answers": [
+            "Mumkin, agar tezlik past bo'lsa",
+            "Mumkin, faqat qisqa qo'ng'iroq uchun",
+            "Mumkin emas; faqat qo'lni band qilmaydigan qurilma (garnitura) orqali so'zlashish mumkin",
+            "Faqat tunda mumkin"
+          ],
+          "correct": 2,
+          "explanation": "Telefonni qo'lda ushlab gaplashish diqqatni chalg'itadi va taqiqlangan. Faqat qo'lni band qilmaydigan qurilmadan foydalanish mumkin."
+        },
+        {
+          "text": "Xavfsizlik kamarini taqish majburiyati kimga tegishli?",
+          "answers": [
+            "Faqat haydovchiga",
+            "Faqat oldingi o'rindiqdagi yo'lovchiga",
+            "Haydovchiga va kamar bilan jihozlangan o'rindiqlardagi yo'lovchilarga",
+            "Faqat shahar tashqarisida harakatlanganda hammaga"
+          ],
+          "correct": 2,
+          "explanation": "Xavfsizlik kamari bilan jihozlangan transport vositasida haydovchi ham, yo'lovchilar ham kamar taqib olishi shart."
+        },
+        {
+          "text": "Spirtli ichimlik ichgan holda transport vositasini boshqarish mumkinmi?",
+          "answers": [
+            "Oz miqdorda ichgan bo'lsa mumkin",
+            "Mumkin emas — mast holda transport boshqarish qat'iyan taqiqlanadi",
+            "Faqat qisqa masofaga mumkin",
+            "Yo'lovchi bo'lmasa mumkin"
+          ],
+          "correct": 1,
+          "explanation": "Alkogol reaksiya tezligini va diqqatni pasaytiradi. Mast holda (spirtli ichimlik, giyohvand moddalar ta'sirida) transport boshqarish taqiqlanadi va qattiq javobgarlikka sabab bo'ladi."
+        }
+      ]
+    },
+    {
+      "name": "Yo'l belgilari",
+      "slug": "yol-belgilari",
+      "description": "Ogohlantiruvchi, imtiyoz, taqiqlovchi, buyuruvchi va axborot belgilari.",
+      "order": 2,
+      "questions": [
+        {
+          "text": "Rasmdagi belgi nimani bildiradi?",
+          "image": "speed_70.png",
+          "answers": [
+            "Tavsiya etilgan tezlik 70 km/soat",
+            "Eng kam tezlik 70 km/soat",
+            "Eng yuqori tezlik 70 km/soat bilan cheklangan",
+            "70 km masofada yo'l ta'mirlanmoqda"
+          ],
+          "correct": 2,
+          "explanation": "Qizil hoshiyali oq doira ichidagi raqam — \"Eng yuqori tezlikni cheklash\" belgisi. Bu belgidan keyin ko'rsatilgan tezlikdan oshish mumkin emas."
+        },
+        {
+          "text": "Rasmdagi belgi o'rnatilgan joyda haydovchi qanday harakat qilishi kerak?",
+          "image": "stop.png",
+          "answers": [
+            "Tezlikni kamaytirib, to'xtamasdan o'tishi",
+            "To'xtash chizig'i (u bo'lmasa — kesishayotgan qatnov qismi chetida) oldida albatta to'xtashi va kesishayotgan yo'ldagilarga yo'l berishi",
+            "Faqat chapga burilishi",
+            "Faqat tunda to'xtashi"
+          ],
+          "correct": 1,
+          "explanation": "\"To'xtamasdan harakatlanish taqiqlangan\" (STOP) belgisi — chorraha bo'sh bo'lsa ham to'liq to'xtash va kesishayotgan yo'ldagi transportga yo'l berish shart."
+        },
+        {
+          "text": "Rasmdagi belgi nimani bildiradi?",
+          "image": "no_entry.png",
+          "answers": [
+            "Kirish taqiqlangan — barcha transport vositalarining shu yo'nalishda kirishi taqiqlanadi",
+            "To'xtash taqiqlangan",
+            "Asosiy yo'l",
+            "Bir tomonlama harakat"
+          ],
+          "correct": 0,
+          "explanation": "Qizil doira ichidagi oq gorizontal chiziq — \"Kirish taqiqlangan\" belgisi. Odatda bir tomonlama yo'lning qarama-qarshi chetiga o'rnatiladi."
+        },
+        {
+          "text": "Rasmdagi belgi haydovchidan nimani talab qiladi?",
+          "image": "yield.png",
+          "answers": [
+            "Kesishayotgan yo'lda harakatlanayotgan transport vositalariga yo'l berishni",
+            "Albatta to'xtashni",
+            "Tezlikni oshirishni",
+            "Ovozli signal berishni"
+          ],
+          "correct": 0,
+          "explanation": "Uchi pastga qaragan uchburchak — \"Yo'l bering\" belgisi. Haydovchi kesishayotgan yo'ldagilarga yo'l berishi kerak, to'xtash esa faqat zarurat bo'lganda."
+        },
+        {
+          "text": "Rasmdagi belgi nimani bildiradi?",
+          "image": "no_stopping.png",
+          "answers": [
+            "To'xtab turish taqiqlangan, lekin to'xtash mumkin",
+            "To'xtash va to'xtab turish taqiqlangan",
+            "Faqat yuk avtomobillari to'xtashi mumkin",
+            "Avtoturargoh"
+          ],
+          "correct": 1,
+          "explanation": "Ko'k fondagi qizil hoshiyali doira va qizil \"X\" — \"To'xtash taqiqlangan\" belgisi: bu joyda to'xtash ham, to'xtab turish ham mumkin emas."
+        },
+        {
+          "text": "Rasmdagi belgi nimani bildiradi?",
+          "image": "main_road.png",
+          "answers": [
+            "Yo'l ta'mirlanmoqda",
+            "Xavfli burilish",
+            "Asosiy yo'l — bu yo'lda harakatlanayotganlarga tartibga solinmagan chorrahalarda yo'l beriladi",
+            "Yo'l bering"
+          ],
+          "correct": 2,
+          "explanation": "Sariq romb — \"Asosiy yo'l\" belgisi. Tartibga solinmagan chorrahalardan o'tishda bu yo'ldagi haydovchi imtiyozga ega."
+        },
+        {
+          "text": "Ogohlantiruvchi belgilar odatda qanday shaklda bo'ladi?",
+          "answers": [
+            "Ko'k doira",
+            "Qizil hoshiyali oq (yoki sariq) uchburchak",
+            "Yashil to'rtburchak",
+            "Sariq romb"
+          ],
+          "correct": 1,
+          "explanation": "Ogohlantiruvchi belgilar qizil hoshiyali uchburchak shaklida bo'lib, oldinda xavfli joy borligini bildiradi."
+        },
+        {
+          "text": "Buyuruvchi belgilar qanday ko'rinishga ega?",
+          "answers": [
+            "Ko'k fondagi oq tasvirli doira",
+            "Qizil uchburchak",
+            "Oq to'rtburchak",
+            "Qora doira"
+          ],
+          "correct": 0,
+          "explanation": "Buyuruvchi belgilar (masalan, \"To'g'riga harakatlanish\", \"Aylanma harakat\") ko'k doira ichida oq tasvir bilan beriladi."
+        },
+        {
+          "text": "Vaqtinchalik (sariq fondagi) yo'l belgilari va doimiy belgilar bir-biriga zid bo'lsa, haydovchi qaysi biriga amal qiladi?",
+          "answers": [
+            "Doimiy belgilarga",
+            "Vaqtinchalik belgilarga",
+            "O'zi qulay deb bilganiga",
+            "Ikkalasiga ham amal qilmaydi"
+          ],
+          "correct": 1,
+          "explanation": "Ko'chma yoki vaqtinchalik (masalan, yo'l ta'mirlash vaqtida qo'yilgan) belgilar doimiy belgilardan ustun turadi."
+        }
+      ]
+    },
+    {
+      "name": "Svetofor va tartibga soluvchi ishoralari",
+      "slug": "svetofor-va-tartibga-soluvchi",
+      "description": "Svetofor ishoralarining ma'nosi va tartibga soluvchining imo-ishoralari.",
+      "order": 3,
+      "questions": [
+        {
+          "text": "Svetoforning yashil ishorasi miltillay boshlasa, bu nimani bildiradi?",
+          "answers": [
+            "Harakat taqiqlanadi",
+            "Yashil ishora vaqti tugayotganini va tez orada taqiqlovchi ishora yonishini",
+            "Svetofor buzilganini",
+            "Faqat piyodalarga ruxsat berilganini"
+          ],
+          "correct": 1,
+          "explanation": "Miltillovchi yashil ishora harakatga ruxsat beradi, lekin uning vaqti tugayotganini bildiradi — haydovchi to'xtashga tayyor bo'lishi kerak."
+        },
+        {
+          "text": "Svetoforning sariq ishorasi (miltillamaydigan) nimani bildiradi?",
+          "answers": [
+            "Harakatga ruxsat beradi",
+            "Harakatni taqiqlaydi va ishoralar almashinishini ogohlantiradi",
+            "Faqat o'ngga burilishga ruxsat beradi",
+            "Tezlikni oshirish kerakligini"
+          ],
+          "correct": 1,
+          "explanation": "Sariq ishora harakatni taqiqlaydi. Faqat keskin tormoz bermasdan to'xtash imkoni bo'lmagan haydovchigina harakatni davom ettirishi mumkin."
+        },
+        {
+          "text": "Miltillovchi sariq ishora nimani bildiradi?",
+          "answers": [
+            "Harakat taqiqlangan",
+            "Harakatga ruxsat beriladi va chorraha yoki piyodalar o'tish joyi tartibga solinmaganligi haqida ogohlantiradi",
+            "Svetoforga yaqinlashmaslik kerak",
+            "Faqat jamoat transportiga ruxsat"
+          ],
+          "correct": 1,
+          "explanation": "Miltillovchi sariq ishorada chorraha tartibga solinmagan hisoblanadi — haydovchi yo'l belgilari va imtiyoz qoidalariga amal qilib, ehtiyot bo'lib o'tadi."
+        },
+        {
+          "text": "Qizil va sariq ishoralar bir vaqtda yonsa, bu nimani bildiradi?",
+          "answers": [
+            "Harakatlanish mumkin",
+            "Harakat taqiqlangan, tez orada yashil ishora yonadi",
+            "Svetofor nosoz",
+            "Faqat chapga burilish mumkin"
+          ],
+          "correct": 1,
+          "explanation": "Qizil va sariq ishoraning birga yonishi harakatni taqiqlaydi va yashil ishora yonishini oldindan bildiradi."
+        },
+        {
+          "text": "Tartibga soluvchining ishoralari svetofor ishoralari va yo'l belgilariga zid bo'lsa, haydovchi nimaga amal qilishi kerak?",
+          "answers": [
+            "Svetofor ishoralariga",
+            "Yo'l belgilariga",
+            "Tartibga soluvchining ishoralariga",
+            "O'z xohishiga"
+          ],
+          "correct": 2,
+          "explanation": "Tartibga soluvchining ishoralari svetofor ishoralari, yo'l belgilari va chiziqlardan ustun turadi."
+        },
+        {
+          "text": "Tartibga soluvchi qo'lini yuqoriga ko'targan bo'lsa, bu nimani bildiradi?",
+          "answers": [
+            "Barcha yo'nalishlarda harakatga ruxsat",
+            "Faqat piyodalarga ruxsat",
+            "Barcha transport vositalari va piyodalarning harakati taqiqlanadi (chorrahada turganlardan tashqari)",
+            "Faqat o'ngga burilishga ruxsat"
+          ],
+          "correct": 2,
+          "explanation": "Yuqoriga ko'tarilgan qo'l — svetoforning sariq ishorasiga o'xshash: hamma uchun harakat taqiqlanadi, faqat to'xtay olmaydigan haydovchilar o'tib ketadi."
+        },
+        {
+          "text": "Tartibga soluvchi sizga ko'kragi yoki orqasi bilan turgan bo'lsa, harakatlanish mumkinmi?",
+          "answers": [
+            "Mumkin, faqat to'g'riga",
+            "Mumkin emas — ko'krak va orqa tomonidan harakat taqiqlanadi",
+            "Faqat o'ngga burilish mumkin",
+            "Barcha yo'nalishlarda mumkin"
+          ],
+          "correct": 1,
+          "explanation": "Tartibga soluvchining ko'kragi va orqa tomonidan barcha transport vositalari va piyodalarning harakati taqiqlanadi."
+        },
+        {
+          "text": "Tartibga soluvchi qo'llarini yon tomonlarga uzatgan yoki tushirgan bo'lsa, uning chap va o'ng yonbosh tomonidan transport vositalari qaysi yo'nalishda harakatlanishi mumkin?",
+          "answers": [
+            "Faqat chapga",
+            "To'g'riga va o'ngga",
+            "Faqat orqaga qayrilish",
+            "Hech qaysi yo'nalishda"
+          ],
+          "correct": 1,
+          "explanation": "Bu holatda yonbosh tomonlardan tramvayga to'g'riga, rels izsiz transport vositalariga esa to'g'riga va o'ngga harakatlanishga ruxsat beriladi; piyodalar ko'krak va orqa tomonidan o'tishlari mumkin."
+        },
+        {
+          "text": "Svetofordagi qo'shimcha seksiyada yashil strelka yonsa, haydovchi nima qilishi mumkin?",
+          "answers": [
+            "Strelka ko'rsatgan yo'nalishda harakatlanishi mumkin (boshqa yo'nalishlardagi harakatga xalaqit bermasdan)",
+            "Har qanday yo'nalishda harakatlanishi mumkin",
+            "To'xtashi shart",
+            "Faqat orqaga qayrilishi mumkin"
+          ],
+          "correct": 0,
+          "explanation": "Qo'shimcha seksiyadagi yashil strelka faqat u ko'rsatgan yo'nalishda harakatlanishga ruxsat beradi; bunda boshqa yo'nalishlardan harakatlanayotganlarga yo'l beriladi."
+        }
+      ]
+    },
+    {
+      "name": "Chorrahalardan o'tish",
+      "slug": "chorrahalardan-otish",
+      "description": "Tartibga solingan va tartibga solinmagan chorrahalarda imtiyoz tartibi, burilish va piyodalarga yo'l berish.",
+      "order": 4,
+      "questions": [
+        {
+          "text": "Teng ahamiyatli yo'llar kesishgan tartibga solinmagan chorrahada haydovchi kimga yo'l berishi kerak?",
+          "answers": [
+            "Chap tomondan yaqinlashayotgan transport vositalariga",
+            "O'ng tomondan yaqinlashayotgan transport vositalariga",
+            "Hech kimga — kim birinchi kelsa, o'sha o'tadi",
+            "Faqat yuk avtomobillariga"
+          ],
+          "correct": 1,
+          "explanation": "Teng ahamiyatli yo'llar chorrahasida \"o'ng qo'l qoidasi\" amal qiladi: o'ng tomondan yaqinlashayotgan transport vositasiga yo'l beriladi (tramvay bundan mustasno — u imtiyozga ega)."
+        },
+        {
+          "text": "Chorrahada svetoforning yashil ishorasida chapga burilayotgan haydovchi kimga yo'l berishi kerak?",
+          "answers": [
+            "Hech kimga",
+            "Qarama-qarshi yo'nalishdan to'g'riga va o'ngga harakatlanayotgan transport vositalariga",
+            "Faqat orqadan kelayotganlarga",
+            "Faqat o'ng tomondagi piyodalarga"
+          ],
+          "correct": 1,
+          "explanation": "Chapga burilish yoki qayrilishda haydovchi qarama-qarshi yo'nalishdan to'g'riga yoki o'ngga harakatlanayotgan transport vositalariga yo'l berishi shart."
+        },
+        {
+          "text": "Ikkinchi darajali yo'ldan asosiy yo'lga chiqayotgan haydovchi nima qilishi kerak?",
+          "answers": [
+            "Asosiy yo'lda harakatlanayotgan transport vositalariga, ularning keyingi harakat yo'nalishidan qat'i nazar, yo'l berishi",
+            "Faqat o'ngdan kelayotganlarga yo'l berishi",
+            "Ovozli signal berib, birinchi o'tishi",
+            "Faqat yuk avtomobillariga yo'l berishi"
+          ],
+          "correct": 0,
+          "explanation": "Ikkinchi darajali yo'ldagi haydovchi asosiy yo'lda harakatlanayotgan barcha transport vositalariga yo'l beradi."
+        },
+        {
+          "text": "Chorrahada burilayotganda haydovchi kesib o'tayotgan qatnov qismidagi piyodalarga nisbatan qanday harakat qilishi kerak?",
+          "answers": [
+            "Piyodalar to'xtashini kutmasdan o'tishi",
+            "Ovozli signal berib, o'tishi",
+            "Burilayotgan qatnov qismini kesib o'tayotgan piyodalarga yo'l berishi",
+            "Faqat bolalarga yo'l berishi"
+          ],
+          "correct": 2,
+          "explanation": "O'ngga yoki chapga burilishda haydovchi o'zi burilayotgan qatnov qismini kesib o'tayotgan piyodalar va velosipedchilarga yo'l berishi shart."
+        },
+        {
+          "text": "Svetofor yashil yonib turgan bo'lsa-da, chorrahadan keyin tirbandlik bo'lsa, haydovchi chorrahaga kirishi mumkinmi?",
+          "answers": [
+            "Mumkin, chunki yashil yonib turibdi",
+            "Mumkin emas — tirbandlik tufayli chorrahada to'xtab qolib, kesishayotgan yo'nalishdagi harakatga to'sqinlik qiladigan bo'lsa, chorrahaga kirish taqiqlanadi",
+            "Faqat ovozli signal berib kirish mumkin",
+            "Faqat chapga burilish uchun mumkin"
+          ],
+          "correct": 1,
+          "explanation": "Chorrahada to'xtab qolib, boshqa yo'nalishlardagi harakatga xalaqit berish xavfi bo'lsa, ruxsat beruvchi ishorada ham chorrahaga kirish mumkin emas."
+        },
+        {
+          "text": "Teng ahamiyatli yo'llar chorrahasida tramvay va avtomobil bir vaqtda yaqinlashsa, qaysi biri imtiyozga ega (harakat yo'nalishidan qat'i nazar)?",
+          "answers": [
+            "Avtomobil",
+            "Tramvay",
+            "O'ng tomondan kelgani",
+            "Tezroq harakatlanayotgani"
+          ],
+          "correct": 1,
+          "explanation": "Teng ahamiyatli yo'llar chorrahasida tramvay rels izsiz transport vositalariga nisbatan, harakat yo'nalishidan qat'i nazar, imtiyozga ega."
+        },
+        {
+          "text": "Tartibga solinmagan piyodalar o'tish joyiga yaqinlashayotgan haydovchi nima qilishi kerak?",
+          "answers": [
+            "Tezlikni oshirib, tezroq o'tib ketishi",
+            "O'tish joyidan o'tayotgan yoki o'tishga kirgan piyodalarga yo'l berish uchun tezlikni kamaytirishi yoki to'xtashi",
+            "Ovozli signal bilan piyodalarni to'xtatishi",
+            "Faqat bolalar bo'lsa to'xtashi"
+          ],
+          "correct": 1,
+          "explanation": "Tartibga solinmagan piyodalar o'tish joyida haydovchi qatnov qismini kesib o'tayotgan piyodalarga yo'l berishi shart."
+        },
+        {
+          "text": "Maxsus yorug'lik (ko'k miltillovchi) va ovozli signal yoqilgan transport vositasi (tez yordam, o't o'chirish) yaqinlashsa, haydovchi nima qilishi kerak?",
+          "answers": [
+            "E'tibor bermasdan harakatni davom ettirishi",
+            "Unga yo'l berishi va to'siqsiz o'tishini ta'minlashi",
+            "Tezlikni oshirib, undan uzoqlashishi",
+            "Uning orqasidan harakatlanishi"
+          ],
+          "correct": 1,
+          "explanation": "Ko'k miltillovchi chiroq va maxsus ovozli signal yoqilgan transport vositalariga barcha haydovchilar yo'l berishi shart."
+        },
+        {
+          "text": "Chorrahada orqaga qayrilish (razvorot) qaysi holatda taqiqlanadi?",
+          "answers": [
+            "Hech qachon taqiqlanmaydi",
+            "Agar bu harakat yo'l belgisi yoki chizig'i bilan taqiqlangan bo'lsa",
+            "Faqat kunduzi",
+            "Faqat yomg'irda"
+          ],
+          "correct": 1,
+          "explanation": "Chorrahada qayrilish, agar u belgi (masalan, \"Qayrilish taqiqlangan\") yoki yo'l chizig'i bilan taqiqlanmagan bo'lsa, ruxsat etiladi. Bunda qarama-qarshi yo'nalishdagilarga yo'l beriladi."
+        }
+      ]
+    },
+    {
+      "name": "Quvib o'tish, to'xtash va to'xtab turish",
+      "slug": "quvib-otish-toxtash",
+      "description": "Quvib o'tish qoidalari, to'xtash va to'xtab turish taqiqlangan joylar, avariya to'xtash belgisi.",
+      "order": 5,
+      "questions": [
+        {
+          "text": "Quvib o'tishni boshlashdan oldin haydovchi nimaga ishonch hosil qilishi kerak?",
+          "answers": [
+            "Faqat oldindagi transport sekin harakatlanayotganiga",
+            "Quvib o'tish uchun mo'ljallangan qatnov qismi yetarli masofada bo'shligiga va hech kimga xalaqit bermasligiga",
+            "Faqat ovozli signal berganiga",
+            "Orqada hech kim yo'qligiga"
+          ],
+          "correct": 1,
+          "explanation": "Quvib o'tishdan oldin haydovchi qarama-qarshi qatnov qismi yetarli masofada bo'shligiga, orqadagilar quvib o'tishni boshlamaganiga va oldindagi transport chapga burilish ishorasini bermaganiga ishonch hosil qilishi kerak."
+        },
+        {
+          "text": "Qaysi joyda quvib o'tish taqiqlanadi?",
+          "answers": [
+            "To'g'ri va keng yo'lda",
+            "Temir yo'l kesishmalarida va ulardan oldingi 100 metrdan yaqin masofada",
+            "Ko'p qatorli avtomagistralda o'ng qatordan",
+            "Hech qayerda taqiqlanmaydi"
+          ],
+          "correct": 1,
+          "explanation": "Temir yo'l kesishmalari va ulardan oldingi 100 m, piyodalar o'tish joylari, ko'priklar, tunnellar hamda ko'rinish cheklangan joylarda quvib o'tish taqiqlanadi."
+        },
+        {
+          "text": "Sizni quvib o'tayotgan transport vositasining haydovchisiga nisbatan sizning majburiyatingiz qanday?",
+          "answers": [
+            "Tezlikni oshirish",
+            "Tezlikni oshirish yoki boshqa harakatlar bilan quvib o'tishga to'sqinlik qilmaslik",
+            "Chapga siljib, yo'lni to'sish",
+            "Ovozli signal berish"
+          ],
+          "correct": 1,
+          "explanation": "Quvib o'tilayotgan haydovchiga tezlikni oshirish yoki boshqa harakatlar bilan quvib o'tishga xalaqit berish taqiqlanadi."
+        },
+        {
+          "text": "Piyodalar o'tish joyiga nisbatan to'xtash qayerda taqiqlanadi?",
+          "answers": [
+            "O'tish joyining o'zida va undan oldingi 5 metrdan yaqin masofada",
+            "O'tish joyidan 50 metr uzoqlikda",
+            "Faqat o'tish joyidan keyin",
+            "Taqiqlanmaydi"
+          ],
+          "correct": 0,
+          "explanation": "Piyodalar o'tish joylarida va ulardan oldin 5 metrdan yaqin masofada to'xtash taqiqlanadi — bu piyodalarni ko'rishga xalaqit beradi."
+        },
+        {
+          "text": "Qaysi joyda to'xtash taqiqlanadi?",
+          "answers": [
+            "Avtoturargohda",
+            "Temir yo'l kesishmalarida, tunnellarda, ko'priklar va estakadalarda",
+            "Yo'l chetidagi bo'sh joyda",
+            "\"Avtoturargoh\" belgisi yonida"
+          ],
+          "correct": 1,
+          "explanation": "Temir yo'l kesishmalari, tunnellar, ko'priklar, estakadalar va ularning ostida to'xtash taqiqlanadi."
+        },
+        {
+          "text": "Aholi punktida majburiy to'xtaganda avariya to'xtash belgisi transport vositasidan qancha masofada qo'yilishi kerak?",
+          "answers": [
+            "Kamida 5 metr",
+            "Kamida 15 metr",
+            "Kamida 50 metr",
+            "Belgi qo'yish shart emas"
+          ],
+          "correct": 1,
+          "explanation": "Avariya to'xtash belgisi aholi punktlarida kamida 15 metr, aholi punktidan tashqarida esa kamida 30 metr masofada qo'yiladi."
+        },
+        {
+          "text": "Aholi punktidan tashqarida avariya to'xtash belgisi transport vositasidan qancha masofada qo'yilishi kerak?",
+          "answers": [
+            "Kamida 10 metr",
+            "Kamida 15 metr",
+            "Kamida 30 metr",
+            "Kamida 200 metr"
+          ],
+          "correct": 2,
+          "explanation": "Aholi punktidan tashqarida tezlik yuqori bo'lgani uchun avariya to'xtash belgisi kamida 30 metr masofada qo'yiladi."
+        },
+        {
+          "text": "Jamoat transporti bekatlariga nisbatan to'xtash qayerda taqiqlanadi?",
+          "answers": [
+            "Bekat belgisidan 15 metrdan yaqin masofada (yo'lovchilarni chiqarish-tushirish uchun ham)",
+            "Bekatdan 100 metr uzoqlikda",
+            "Faqat tunda",
+            "Hech qayerda"
+          ],
+          "correct": 0,
+          "explanation": "Jamoat transporti to'xtash joyini bildiruvchi belgidan 15 metrdan yaqin masofada boshqa transport vositalarining to'xtashi taqiqlanadi."
+        },
+        {
+          "text": "Transport vositasi to'xtab turgan joyni tark etayotganda haydovchi nima qilishi kerak?",
+          "answers": [
+            "Hech narsa qilish shart emas",
+            "Transport vositasining o'z-o'zidan harakatlanib ketishi va undan ruxsatsiz foydalanilishining oldini oladigan choralarni ko'rishi (tormoz, dvigatelni o'chirish, eshiklarni qulflash)",
+            "Faqat chiroqlarni yoqib qo'yishi",
+            "Dvigatelni ishlab turgan holda qoldirishi"
+          ],
+          "correct": 1,
+          "explanation": "Haydovchi joyidan ketishdan oldin to'xtash tormozini tortishi, dvigatelni o'chirishi va transport vositasidan ruxsatsiz foydalanishning oldini olishi kerak."
+        }
+      ]
+    },
+    {
+      "name": "Birinchi tibbiy yordam va xavfsizlik",
+      "slug": "birinchi-tibbiy-yordam",
+      "description": "Yo'l-transport hodisasida birinchi yordam ko'rsatish va xavfsiz haydash asoslari.",
+      "order": 6,
+      "questions": [
+        {
+          "text": "O'zbekistonda tez tibbiy yordamni chaqirish uchun qaysi raqam teriladi?",
+          "answers": ["101", "102", "103", "104"],
+          "correct": 2,
+          "explanation": "103 — tez tibbiy yordam, 102 — ichki ishlar (militsiya), 101 — yong'in xavfsizligi xizmati."
+        },
+        {
+          "text": "Yo'l-transport hodisasiga aloqador haydovchining birinchi navbatdagi majburiyati nima?",
+          "answers": [
+            "Darhol voqea joyidan ketishi",
+            "Transport vositasini to'xtatishi, avariya chiroqlarini yoqishi, avariya belgisini qo'yishi va jabrlanganlarga yordam ko'rsatishi",
+            "Faqat suratga olishi",
+            "Transport vositasini darhol boshqa joyga olib ketishi"
+          ],
+          "correct": 1,
+          "explanation": "YTH sodir bo'lganda haydovchi darhol to'xtashi, avariya yorug'lik signalini yoqishi, avariya to'xtash belgisini qo'yishi, jabrlanganlarga yordam berishi va tez yordam hamda militsiyani chaqirishi kerak."
+        },
+        {
+          "text": "Arterial qon ketishida (qon fontan kabi otilib chiqsa) birinchi yordam qanday ko'rsatiladi?",
+          "answers": [
+            "Jarohatga issiq kompress qo'yiladi",
+            "Jarohatdan yuqoriroqqa qon to'xtatuvchi jgut qo'yiladi va qo'yilgan vaqt yozib qo'yiladi",
+            "Hech narsa qilinmaydi",
+            "Jarohat suv bilan yuviladi va ochiq qoldiriladi"
+          ],
+          "correct": 1,
+          "explanation": "Arterial qon ketishida jarohatdan yuqoriroqqa jgut qo'yiladi. Jgut qo'yilgan vaqt albatta yozib qo'yiladi va jabrlanuvchi tezda shifokorga yetkaziladi."
+        },
+        {
+          "text": "Hushsiz, lekin nafas olayotgan jabrlanuvchini qanday holatga yotqizish kerak?",
+          "answers": [
+            "Chalqancha, boshini orqaga tashlab",
+            "Yonboshiga (barqaror yonbosh holatiga)",
+            "O'tirgan holatga",
+            "Qorniga, qo'llarini yuqoriga ko'tarib"
+          ],
+          "correct": 1,
+          "explanation": "Barqaror yonbosh holati til orqaga ketishi va qusuq massalari nafas yo'liga tushishining oldini oladi."
+        },
+        {
+          "text": "Suyak sinishida (masalan, qo'l yoki oyoq) birinchi yordam nimadan iborat?",
+          "answers": [
+            "Suyakni o'z joyiga to'g'rilash",
+            "Shikastlangan a'zoni shina yoki qo'l ostidagi vositalar bilan harakatsiz holatga keltirish (immobilizatsiya)",
+            "Shikastlangan joyni massaj qilish",
+            "Jabrlanuvchini yurishga majburlash"
+          ],
+          "correct": 1,
+          "explanation": "Sinishda suyakni to'g'rilashga urinish mumkin emas. Shikastlangan a'zo yaqin ikki bo'g'im bilan birga harakatsiz qilinadi."
+        },
+        {
+          "text": "Kuyishda birinchi yordam sifatida nima qilish kerak?",
+          "answers": [
+            "Kuygan joyga moy surtish",
+            "Kuygan joyni 10–20 daqiqa davomida salqin oqar suv bilan sovitish va toza bog'lam qo'yish",
+            "Pufakchalarni yorish",
+            "Kuygan joyga muz qo'yib qo'yish"
+          ],
+          "correct": 1,
+          "explanation": "Kuygan joy salqin suv bilan sovitiladi, so'ng toza (steril) bog'lam qo'yiladi. Moy surtish va pufaklarni yorish mumkin emas."
+        },
+        {
+          "text": "Kattalarda yurak-o'pka reanimatsiyasi (YO'R) o'tkazishda ko'krak qafasini bosish va sun'iy nafas berish nisbati qanday?",
+          "answers": [
+            "5 bosish : 1 nafas",
+            "15 bosish : 1 nafas",
+            "30 bosish : 2 nafas",
+            "50 bosish : 5 nafas"
+          ],
+          "correct": 2,
+          "explanation": "Hozirgi tavsiyalarga ko'ra kattalarda 30 ta ko'krak qafasini bosishdan keyin 2 ta sun'iy nafas beriladi."
+        },
+        {
+          "text": "Qarama-qarshi transport vositasi bilan uchrashganda uzoqni yorituvchi chiroqlar qachon yaqinni yorituvchiga almashtirilishi kerak?",
+          "answers": [
+            "Kamida 150 metr masofada",
+            "10 metr qolganda",
+            "Almashtirish shart emas",
+            "Faqat shaharda"
+          ],
+          "correct": 0,
+          "explanation": "Qarama-qarshi haydovchini ko'zini qamashtirmaslik uchun uzoqni yorituvchi chiroqlar kamida 150 metr masofada yaqinni yorituvchiga almashtiriladi."
+        },
+        {
+          "text": "Har bir yengil avtomobilda nimalar bo'lishi shart?",
+          "answers": [
+            "Faqat zaxira g'ildirak",
+            "Dori qutichasi (aptechka), o't o'chirgich va avariya to'xtash belgisi",
+            "Faqat musiqa tizimi",
+            "Faqat navigator"
+          ],
+          "correct": 1,
+          "explanation": "Avtomobilda birinchi yordam dori qutichasi, o't o'chirgich va avariya to'xtash belgisi bo'lishi shart — ular favqulodda vaziyatda hayot saqlab qolishi mumkin."
+        }
+      ]
+    }
+  ]
+}
