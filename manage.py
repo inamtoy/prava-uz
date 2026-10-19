@@ -7,6 +7,10 @@ import sys
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'config.settings')
+    # Windows'da pipe/fayl chiqishi cp1252 bo'ladi — o'zbekcha belgilar (U+02BB/U+02BC) uchun UTF-8
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

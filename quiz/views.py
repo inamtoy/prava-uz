@@ -86,7 +86,7 @@ def exam_answer(request, pk):
         question_id = int(payload["question_id"])
         answer_id = int(payload["answer_id"])
     except (ValueError, KeyError, TypeError):
-        return JsonResponse({"ok": False, "error": "So'rov noto'g'ri."}, status=400)
+        return JsonResponse({"ok": False, "error": "Soʻrov notoʻgʻri."}, status=400)
 
     try:
         item = services.save_answer(exam, question_id, answer_id, user=request.user)
@@ -131,7 +131,7 @@ def exam_start(request):
         elif exam.total_questions < settings.EXAM_QUESTION_COUNT:
             messages.warning(
                 request,
-                f"Bazada savollar yetarli emas: imtihonda {exam.total_questions} ta savol bo'ladi.",
+                f"Bazada savollar yetarli emas: imtihonda {exam.total_questions} ta savol boʻladi.",
             )
         return redirect("exam", pk=exam.pk)
 

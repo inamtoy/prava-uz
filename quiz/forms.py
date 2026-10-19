@@ -18,8 +18,8 @@ class AnswerInlineFormSet(forms.BaseInlineFormSet):
             if data.get("is_correct"):
                 correct += 1
         if total < 2:
-            raise ValidationError("Savolda kamida 2 ta javob bo'lishi kerak.")
+            raise ValidationError("Savolda kamida 2 ta javob boʻlishi kerak.")
         if total > 4:
-            raise ValidationError("Savolda ko'pi bilan 4 ta javob bo'lishi mumkin.")
+            raise ValidationError("Savolda koʻpi bilan 4 ta javob boʻlishi mumkin.")
         if correct != 1:
-            raise ValidationError("Aynan bitta javob to'g'ri deb belgilanishi kerak (hozir: %d ta)." % correct)
+            raise ValidationError("Aynan bitta javob toʻgʻri deb belgilanishi kerak (hozir: %d ta)." % correct)

@@ -26,8 +26,8 @@ class Exam(models.Model):
     finished_at = models.DateTimeField("yakunlangan", null=True, blank=True)
     duration_seconds = models.PositiveIntegerField("davomiyligi (s)", default=1500)
     total_questions = models.PositiveSmallIntegerField("savollar soni", default=0)
-    score = models.PositiveSmallIntegerField("to'g'ri javoblar", default=0)
-    is_passed = models.BooleanField("o'tdi", null=True, blank=True)
+    score = models.PositiveSmallIntegerField("toʻgʻri javoblar", default=0)
+    is_passed = models.BooleanField("oʻtdi", null=True, blank=True)
     status = models.CharField("holat", max_length=20, choices=STATUS_CHOICES, default=STATUS_IN_PROGRESS)
 
     class Meta:
@@ -84,7 +84,7 @@ class ExamAnswer(models.Model):
     exam = models.ForeignKey(Exam, on_delete=models.CASCADE, related_name="items", verbose_name="imtihon")
     question = models.ForeignKey("quiz.Question", on_delete=models.CASCADE, related_name="exam_answers", verbose_name="savol")
     selected_answer = models.ForeignKey("quiz.Answer", on_delete=models.SET_NULL, null=True, blank=True, related_name="+", verbose_name="tanlangan javob")
-    is_correct = models.BooleanField("to'g'ri", default=False)
+    is_correct = models.BooleanField("toʻgʻri", default=False)
     order = models.PositiveSmallIntegerField("tartib", default=0)
     answered_at = models.DateTimeField("javob vaqti", null=True, blank=True)
 

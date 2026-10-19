@@ -38,7 +38,7 @@ class Question(models.Model):
 class Answer(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="answers", verbose_name="savol")
     text = models.CharField("javob matni", max_length=500)
-    is_correct = models.BooleanField("to'g'ri mi", default=False)
+    is_correct = models.BooleanField("toʻgʻri mi", default=False)
 
     class Meta:
         db_table = "javoblar"

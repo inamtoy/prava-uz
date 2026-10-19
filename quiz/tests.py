@@ -1,4 +1,4 @@
-import os
+import io
 
 from django.test import TestCase
 from django.urls import reverse
@@ -68,8 +68,8 @@ class SeedDataTests(TestCase):
         from django.db.models import Count, Q
 
         with tempfile.TemporaryDirectory() as media, self.settings(MEDIA_ROOT=media, DEBUG=True):
-            call_command("seed_data", stdout=open(os.devnull, "w"))
-            call_command("seed_data", stdout=open(os.devnull, "w"))
+            call_command("seed_data", stdout=io.StringIO())
+            call_command("seed_data", stdout=io.StringIO())
             self.assertEqual(Topic.objects.count(), 6)
             self.assertGreaterEqual(Question.objects.count(), 50)
             counts = Question.objects.annotate(

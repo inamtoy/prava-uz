@@ -37,13 +37,13 @@ class RegisterForm(BootstrapMixin, UserCreationForm):
     def clean_email(self):
         email = self.cleaned_data["email"].strip().lower()
         if User.objects.filter(email__iexact=email).exists():
-            raise forms.ValidationError("Bu email bilan allaqachon ro'yxatdan o'tilgan.")
+            raise forms.ValidationError("Bu email bilan allaqachon roʻyxatdan oʻtilgan.")
         return email
 
 
 class LoginForm(BootstrapMixin, AuthenticationForm):
     error_messages = {
-        "invalid_login": "Login (yoki email) yoki parol noto'g'ri.",
+        "invalid_login": "Login (yoki email) yoki parol notoʻgʻri.",
         "inactive": "Bu akkaunt faol emas.",
     }
 

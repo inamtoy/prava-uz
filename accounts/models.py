@@ -11,7 +11,7 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     ROLE_STUDENT = "student"
     ROLE_ADMIN = "admin"
-    ROLE_CHOICES = [(ROLE_STUDENT, "O'quvchi"), (ROLE_ADMIN, "Admin")]
+    ROLE_CHOICES = [(ROLE_STUDENT, "Oʻquvchi"), (ROLE_ADMIN, "Admin")]
 
     email = models.EmailField("email", unique=True)
     role = models.CharField("rol", max_length=20, choices=ROLE_CHOICES, default=ROLE_STUDENT)

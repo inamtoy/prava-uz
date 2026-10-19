@@ -47,7 +47,7 @@ class QuestionAdmin(admin.ModelAdmin):
     def has_image(self, obj):
         return bool(obj.image)
 
-    @admin.display(description="Rasm ko'rinishi")
+    @admin.display(description="Rasm koʻrinishi")
     def image_preview(self, obj):
         if obj.image:
             return format_html('<img src="{}" style="max-height:120px">', obj.image.url)

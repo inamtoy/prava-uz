@@ -64,7 +64,7 @@ def start_practice(user, topic):
         topic.questions.filter(is_active=True).order_by("?")[: settings.PRACTICE_QUESTION_COUNT]
     )
     if not questions:
-        raise ExamError("Bu mavzuda hozircha savollar yo'q.")
+        raise ExamError("Bu mavzuda hozircha savollar yoʻq.")
     return _create_session(user, Exam.MODE_PRACTICE, questions, topic=topic)
 
 

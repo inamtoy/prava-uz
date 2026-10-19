@@ -19,10 +19,10 @@ FIXTURE = Path(__file__).resolve().parents[2] / "fixtures" / "questions_uz.json"
 
 
 class Command(BaseCommand):
-    help = "Namuna ma'lumotlar: mavzular, savollar, rasmlar, admin va demo foydalanuvchi."
+    help = "Namuna maʼlumotlar: mavzular, savollar, rasmlar, admin va demo foydalanuvchi."
 
     def add_arguments(self, parser):
-        parser.add_argument("--reset", action="store_true", help="Mavzular, savollar va demo ma'lumotlarni o'chirib qayta yaratish")
+        parser.add_argument("--reset", action="store_true", help="Mavzular, savollar va demo maʼlumotlarni oʻchirib qayta yaratish")
 
     @transaction.atomic
     def handle(self, *args, reset=False, **options):
@@ -32,7 +32,7 @@ class Command(BaseCommand):
                 question.image.delete(save=False)  # media/ da eski fayllar qolmasin
             Topic.objects.all().delete()
             User.objects.filter(username__in=["admin", "demo"]).delete()
-            self.stdout.write("Eski ma'lumotlar o'chirildi.")
+            self.stdout.write("Eski maʼlumotlar oʻchirildi.")
 
         created = self._load_questions()
         self._create_users()
@@ -82,7 +82,7 @@ class Command(BaseCommand):
         demo = User.objects.filter(username="demo").first()
         if demo is None:
             demo = User.objects.create_user("demo", "demo@prava.uz", "demo12345", first_name="Demo")
-            self.stdout.write("Demo o'quvchi yaratildi: demo / demo12345")
+            self.stdout.write("Demo oʻquvchi yaratildi: demo / demo12345")
         if not demo.exams.exists():
             self._create_demo_exams(demo)
 
@@ -124,4 +124,4 @@ class Command(BaseCommand):
                 status=Exam.STATUS_FINISHED,
                 is_passed=(len(picked) - score <= settings.EXAM_MAX_MISTAKES) if mode == Exam.MODE_EXAM else None,
             )
-        self.stdout.write("Demo foydalanuvchiga 3 ta tugallangan imtihon qo'shildi.")
+        self.stdout.write("Demo foydalanuvchiga 3 ta tugallangan imtihon qoʻshildi.")
