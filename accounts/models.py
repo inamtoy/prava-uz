@@ -24,12 +24,12 @@ class User(AbstractUser):
         verbose_name_plural = "foydalanuvchilar"
 
     def save(self, *args, **kwargs):
-        # Rol — yagona manba: admin roli admin panelga to'liq kirish huquqini beradi.
-        is_admin = self.role == self.ROLE_ADMIN
-        self.is_staff = is_admin
-        self.is_superuser = is_admin
+        # Rol — yagona manba: admin roli panelga to'liq kirish huquqini beradi
+        # (is_superuser va is_staff roldan hosil bo'ladi; createsuperuser role="admin" qo'yadi).
+        self.is_superuser = self.role == self.ROLE_ADMIN
+        self.is_staff = self.is_admin_role
         super().save(*args, **kwargs)
 
     @property
     def is_admin_role(self):
-        return self.role == self.ROLE_ADMIN
+        return self.role == self.ROLE_ADMIN or self.is_superuser

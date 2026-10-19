@@ -111,7 +111,7 @@ MEDIA_ROOT = BASE_DIR / "media"
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 LOGIN_URL = "login"
-LOGIN_REDIRECT_URL = "topic_list"
+LOGIN_REDIRECT_URL = "profile"  # amalda rolga qarab: accounts.views.redirect_url_for
 LOGOUT_REDIRECT_URL = "home"
 
 # Imtihon qoidalari

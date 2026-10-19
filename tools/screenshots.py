@@ -177,18 +177,65 @@ def run_flow(browser, base):
     ctx.close()
 
 
+def run_roles(browser, base):
+    """Yagona login: admin -> dashboard (13–15), mehmon /admin/ -> login (16), o'quvchi /admin/ -> profil (17)."""
+    for label, viewport in WIDTHS.items():
+        print(f"[rollar {label} {viewport[0]}px]")
+        ctx, page = new_context(browser, viewport)
+
+        page.goto(f"{base}/admin/")
+        page.wait_for_load_state("networkidle")
+        if "/accounts/login/?next=%2Fadmin%2F" not in page.url:
+            problems.append(f"mehmon /admin/ -> {page.url}")
+        shot(page, f"16-login-redirect-{label}", full_page=False)
+        page.fill("input[name=username]", "admin")
+        page.fill("input[name=password]", "admin12345")
+        page.click("form[method=post] button[type=submit]")
+        page.wait_for_load_state("networkidle")
+        if not page.url.rstrip("/").endswith("/admin"):
+            problems.append(f"admin login -> {page.url}")
+        print("  ok: admin -> boshqaruv paneli")
+        shot(page, f"13-admin-dashboard-{label}")
+
+        page.goto(f"{base}/admin/quiz/question/")
+        shot(page, f"14-admin-questions-{label}")
+        page.goto(f"{base}/admin/quiz/question/?rasm=bor")
+        page.locator("#result_list a[href*='/change/']").first.click()
+        page.wait_for_load_state("networkidle")
+        shot(page, f"15-admin-question-form-{label}")
+        ctx.close()
+
+        ctx, page = new_context(browser, viewport)
+        page.goto(f"{base}/accounts/login/")
+        page.fill("input[name=username]", "demo")
+        page.fill("input[name=password]", "demo12345")
+        page.click("form[method=post] button[type=submit]")
+        page.wait_for_load_state("networkidle")
+        if not page.url.endswith("/accounts/profile/"):
+            problems.append(f"demo login -> {page.url}")
+        page.goto(f"{base}/admin/")
+        page.wait_for_load_state("networkidle")
+        if not page.url.endswith("/accounts/profile/") or "faqat administratorlar" not in page.content():
+            problems.append(f"o'quvchi /admin/ -> {page.url}")
+        print("  ok: demo -> profil; /admin/ -> profil + ogohlantirish")
+        shot(page, f"17-student-admin-denied-{label}", full_page=False)
+        ctx.close()
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--base", default="http://127.0.0.1:8765")
-    parser.add_argument("--only", choices=["shots", "flow"])
+    parser.add_argument("--only", choices=["shots", "flow", "roles"])
     args = parser.parse_args()
     OUT.mkdir(exist_ok=True)
     with sync_playwright() as p:
         browser = p.chromium.launch(channel="chrome", headless=True)
-        if args.only != "flow":
+        if args.only in (None, "shots"):
             run_shots(browser, args.base)
             run_shots(browser, args.base, CHECK_ONLY)
-        if args.only != "shots":
+        if args.only in (None, "roles"):
+            run_roles(browser, args.base)
+        if args.only in (None, "flow"):
             run_flow(browser, args.base)
         browser.close()
     if problems:

@@ -21,7 +21,8 @@ Universitet loyihasi — TATU, Dasturiy injiniring.
   - savollar xaritasi, klaviatura (`1`–`4`, `←`/`→`), yakunlash modali
 - **Natija sahifasi** va **xatolar tahlili** (siz tanlagan javob, toʻgʻri javob, izoh, rasm)
 - **Profil va statistika** — jami/oʻtgan imtihonlar, oʻrtacha va eng yaxshi natija, natijalar dinamikasi grafigi, mavzular boʻyicha foizlar, kuchsiz mavzular
-- **Admin panel** (Django admin) — savol + 4 ta javob + rasm qoʻshish; aynan bitta toʻgʻri javob tekshiriladi
+- **Yagona kirish** — `/accounts/login/` hammaga: admin → boshqaruv paneli, oʻquvchi → profil (Django admin'ning oʻz login sahifasi yoʻq)
+- **Admin panel** (django-unfold) — dashboard (KPI, 7 kunlik grafik, mavzular samaradorligi, eng koʻp xato qilinadigan savollar, kontent holati), savol + 4 ta javob + rasm, aynan bitta toʻgʻri javob tekshiriladi, bulk faollashtirish/oʻchirib qoʻyish
 - Telefon ekranida (360px) toʻliq ishlaydi
 
 ## Texnologiyalar
@@ -30,6 +31,7 @@ Universitet loyihasi — TATU, Dasturiy injiniring.
 |---|---|
 | Backend | Python 3.11+, Django 5.2 |
 | Baza | **PostgreSQL** 14+ (asosiy; psycopg 3). Tez ishga tushirish va testlar uchun — SQLite |
+| Admin | django-unfold (dizayn: `design/admin/`, stillar `static/css/admin.css`) |
 | Frontend | Django shablonlari, oʻz CSS dizayn tizimi (`static/css/main.css`), Bootstrap 5.3 faqat grid va modal JS uchun, Bootstrap Icons, vanilla JS |
 | Grafik | Chart.js 4 (faqat profil sahifasida, CDN) |
 | Server (deploy) | Ubuntu VPS, Nginx + Gunicorn, Let's Encrypt |
@@ -95,8 +97,8 @@ python manage.py sqlsequencereset accounts quiz results auth | python manage.py 
 
 | Login | Parol | Rol |
 |---|---|---|
-| `admin` | `admin12345` | Admin (faqat `DEBUG=True` boʻlsa yaratiladi) |
-| `demo` | `demo12345` | Oʻquvchi, 3 ta tugallangan imtihon bilan |
+| `admin` | `admin12345` | Admin (faqat `DEBUG=True` boʻlsa yaratiladi) — kirgach `/admin/` ga oʻtadi |
+| `demo` | `demo12345` | Oʻquvchi, 3 ta tugallangan imtihon bilan — kirgach profilga oʻtadi |
 
 > ⚠️ Bu parollar faqat lokal ishlab chiqish uchun. Serverda (`DEBUG=False`) demo admin yaratilmaydi — `python manage.py createsuperuser` ishlating va `demo` parolini almashtiring.
 
@@ -145,6 +147,10 @@ Imtihon boshlanganda 20 ta `imtihon_javoblari` qatori oldindan yaratiladi — sa
 - Maxfiy sozlamalar faqat `.env` da (`python-decouple`); `.env` repoga kirmaydi
 - `DEBUG=False` da: HTTPS redirect, secure cookie'lar, HSTS — `python manage.py check --deploy` toza
 
+## Tarjimalar
+
+Unfold oʻzbekcha tarjimasiz keladi — `locale/uz/LC_MESSAGES/django.po`. Oʻzgartirgandan keyin: `python tools/compile_messages.py` (GNU gettext boʻlsa `python manage.py compilemessages` ham boʻladi).
+
 ## Testlar
 
 ```bash
@@ -152,7 +158,7 @@ python manage.py test                          # SQLite'da (tez), .env dagi DB_E
 TEST_DB_ENGINE=postgres python manage.py test  # PostgreSQL'da
 ```
 
-51 ta test: roʻyxatdan oʻtish va email bilan kirish, parol xeshlanishi, servislar (20 ta takrorlanmas savol, ochiq imtihonni davom ettirish, begona javob/foydalanuvchi/muddat rad etilishi, 18/20 → oʻtdi, 17/20 → oʻtmadi, javobsiz = xato, statistika foizlari), view'lar (login'ga yoʻnaltirish, begona natija → 404, toʻliq oqim), admin (2 ta toʻgʻri javob → xato), soʻrovlar soni maʼlumot koʻpayganda oʻsmasligi (N+1 yoʻq).
+71 ta test: roʻyxatdan oʻtish va email bilan kirish, parol xeshlanishi, servislar (20 ta takrorlanmas savol, ochiq imtihonni davom ettirish, begona javob/foydalanuvchi/muddat rad etilishi, 18/20 → oʻtdi, 17/20 → oʻtmadi, javobsiz = xato, statistika foizlari), view'lar (login'ga yoʻnaltirish, begona natija → 404, toʻliq oqim), admin (2 ta toʻgʻri javob → xato, dashboard real maʼlumot, bulk action, imtihonlar faqat oʻqish uchun), yagona login (rolga qarab yoʻnaltirish, `next` xavfsizligi, oʻquvchi `/admin/` ga kira olmaydi, roʻyxatdan oʻtishda admin boʻlib boʻlmaydi), soʻrovlar soni maʼlumot koʻpayganda oʻsmasligi (N+1 yoʻq).
 
 ### Dizayn va oqim tekshiruvi (ixtiyoriy)
 

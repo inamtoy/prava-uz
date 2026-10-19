@@ -38,3 +38,10 @@
 8. Dashboard KPI'laridagi o'sish foizlari (+14% va h.k.) — o'rniga real "bu hafta +N" va "kecha: N" qiymatlari.
 9. Bo'sh holat (empty state) — unfold'ning standart "natija yo'q" bloki.
 10. "O'chirish savol" so'z tartibi — Django'ning o'zbekcha katalogidan ("O'chirish %(verbose_name)s").
+
+## Yagona login (rolga qarab)
+- Bitta kirish sahifasi `/accounts/login/` (`accounts.views.RoleLoginView`). Manzil `redirect_url_for(user, next)`: admin → `/admin/`, o'quvchi → profil; `next` faqat shu sayt (`url_has_allowed_host_and_scheme`) va rolga ruxsat bo'lsa (o'quvchiga `/admin/...` berilmaydi).
+- `/admin/login/` → `admin_login_redirect` (URL admin'dan oldin ulangan): mehmon → `/accounts/login/?next=...`, o'quvchi → profil + "Bu bo'limga faqat administratorlar kira oladi", admin → `next`. Admin'dan chiqish → bosh sahifa (`LOGOUT_REDIRECT_URL`).
+- Rol qoidasi: `role` — yagona manba; `is_superuser = role == "admin"`, `is_staff = is_admin_role` (`role == "admin" or is_superuser`). Admin roli to'liq huquq beradi, aks holda unfold'da 403 bo'lardi. `createsuperuser` → role="admin"; `0003_sync_admin_roles` mavjud yozuvlarni tuzatadi.
+- Ro'yxatdan o'tish formasida rol maydoni yo'q — POST'da `role=admin` yuborilsa ham o'quvchi yaratiladi (test bor).
+- Ro'yxatdan o'tgandan keyin avvalgidek mavzularga (birinchi qadam — mashq); keyingi kirishlarda — profil.

@@ -3,7 +3,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 
+from accounts.views import admin_login_redirect
+
 urlpatterns = [
+    # Admin'ning o'z login sahifasi o'chirilgan — yagona login: /accounts/login/
+    path("admin/login/", admin_login_redirect, name="admin_login_redirect"),
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
     path("", include("results.urls")),
