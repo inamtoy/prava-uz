@@ -1,0 +1,18 @@
+:root {
+  --brand: #1f6feb;
+  --brand-dark: #1958c0;
+  --ok: #1a7f37;
+  --bad: #cf222e;
+  --bg: #f6f8fa;
+}
+html { font-size: 16px; }
+body { background: var(--bg); font-size: 1rem; overflow-x: hidden; }
+img { max-width: 100%; }
+.bg-primary-brand { background: var(--brand); }
+.btn-primary { --bs-btn-bg: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand-dark); --bs-btn-hover-border-color: var(--brand-dark); --bs-btn-active-bg: var(--brand-dark); }
+.btn-outline-primary { --bs-btn-color: var(--brand); --bs-btn-border-color: var(--brand); --bs-btn-hover-bg: var(--brand); --bs-btn-hover-border-color: var(--brand); }
+.text-brand { color: var(--brand); }
+.text-ok { color: var(--ok); }
+.text-bad { color: var(--bad); }
+.navbar .btn-link.nav-link { text-decoration: none; }
+.card { border: 0; box-shadow: 0 1px 3px rgba(0, 0, 0, .08); }

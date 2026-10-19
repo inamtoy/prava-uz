@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-primary-brand">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{% url 'home' %}"><i class="bi bi-car-front-fill"></i> Prava.uz</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Menyu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-md-center">
+        <li class="nav-item"><a class="nav-link" href="{% url 'topic_list' %}"><i class="bi bi-grid"></i> Mavzular</a></li>
+        <li class="nav-item"><a class="nav-link" href="{% url 'exam_start' %}"><i class="bi bi-stopwatch"></i> Imtihon</a></li>
+        {% if user.is_authenticated %}
+          <li class="nav-item"><a class="nav-link" href="{% url 'profile' %}"><i class="bi bi-person-circle"></i> Profil</a></li>
+          {% if user.is_staff %}
+            <li class="nav-item"><a class="nav-link" href="{% url 'admin:index' %}"><i class="bi bi-gear"></i> Admin</a></li>
+          {% endif %}
+          <li class="nav-item">
+            <form method="post" action="{% url 'logout' %}" class="d-inline">
+              {% csrf_token %}
+              <button type="submit" class="nav-link btn btn-link"><i class="bi bi-box-arrow-right"></i> Chiqish</button>
+            </form>
+          </li>
+        {% else %}
+          <li class="nav-item"><a class="nav-link" href="{% url 'login' %}"><i class="bi bi-box-arrow-in-right"></i> Kirish</a></li>
+          <li class="nav-item"><a class="btn btn-light btn-sm ms-md-2 mt-2 mt-md-0" href="{% url 'register' %}">Ro'yxatdan o'tish</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>
