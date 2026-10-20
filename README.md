@@ -30,6 +30,7 @@ Barcha sahifalar 1440px va 375px kenglikda: [`screenshots/`](screenshots/). Himo
 - **Imtihon rejimi** — 20 ta tasodifiy savol, 25 daqiqa, 2 tagacha xato ruxsat (18/20 — oʻtdi)
   - taymer brauzerda, vaqt nazorati serverda; sahifa yangilansa ham imtihon va taymer davom etadi
   - vaqt tugasa imtihon avtomatik yakunlanadi, muddatdan keyingi javob qabul qilinmaydi
+  - javob bosilgach darrov koʻrinadi: xato — qizil, toʻgʻri — yashil; birinchi javob yakuniy
   - savollar xaritasi, klaviatura (`1`–`4`, `←`/`→`), yakunlash modali
 - **Natija sahifasi** va **xatolar tahlili** (siz tanlagan javob, toʻgʻri javob, izoh, rasm)
 - **Profil va statistika** — jami/oʻtgan imtihonlar, oʻrtacha va eng yaxshi natija, natijalar dinamikasi grafigi, mavzular boʻyicha foizlar, kuchsiz mavzular

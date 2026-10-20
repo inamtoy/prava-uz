@@ -1,4 +1,4 @@
-/* Imtihon ekrani: navigatsiya, taymer, javob saqlash, yakunlash modali. */
+/* Imtihon ekrani: navigatsiya, taymer, javob saqlash (to'g'ri/xato darrov), yakunlash modali. */
 (function () {
   "use strict";
 
@@ -62,10 +62,10 @@
 
   /* ---- Javob saqlash ---- */
   async function choose(card, btn) {
-    if (submitting) return;
+    if (submitting || card.dataset.answered || card.dataset.busy) return;
     const index = parseInt(card.dataset.index, 10);
     const previous = card.querySelector(".answer-option.is-selected");
-    if (previous === btn) return;
+    card.dataset.busy = "1";
 
     card.querySelectorAll(".answer-option").forEach(function (b) { b.classList.toggle("is-selected", b === btn); });
     btn.classList.add("is-saving");
@@ -80,8 +80,8 @@
         return;
       }
       if (!res.ok) throw new Error(res.body.error || "");
-      card.dataset.answered = "1";
-      navBtns[index].classList.add("answered");
+      Q.revealAnswer(card, res.body);
+      navBtns[index].classList.add("answered", res.body.is_correct ? "is-ok" : "is-bad");
       updateCounter();
       if (typeof res.body.time_left === "number") deadline = Date.now() + res.body.time_left * 1000;
     } catch (e) {
@@ -90,6 +90,7 @@
       Q.showAlert(alertBox, (e && e.message) || "Javob saqlanmadi. Internetni tekshirib, qayta bosing.");
     } finally {
       btn.classList.remove("is-saving");
+      delete card.dataset.busy;
     }
   }
 

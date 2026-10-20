@@ -46,6 +46,10 @@
 - Ro'yxatdan o'tish formasida rol maydoni yo'q — POST'da `role=admin` yuborilsa ham o'quvchi yaratiladi (test bor).
 - Ro'yxatdan o'tgandan keyin avvalgidek mavzularga (birinchi qadam — mashq); keyingi kirishlarda — profil.
 
+## Imtihonda to'g'ri/xato darrov ko'rsatiladi (2026-10-20)
+- Foydalanuvchi so'rovi bilan CLAUDE.md 5-bo'limidagi "imtihon davomida to'g'ri/xato ko'rsatilmaydi" qoidasi o'zgartirildi: xato javob qizil, to'g'risi yashil, izoh chiqadi; savollar xaritasida katak qizil/yashil.
+- Shu sababli imtihonda ham **birinchi javob yakuniy** (`save_answer`) — aks holda to'g'ri javobni ko'rib almashtirish mumkin bo'lardi. API imtihonda ham `is_correct`, `correct_answer_id`, `explanation` (+ `time_left`) qaytaradi.
+
 ## Keyingi versiya
 1. **Kontent admin guruhi (superuser'siz, cheklangan huquqlar).** Hozir `role=admin` = superuser. Keyingi qadam: `role` choices'ga `editor` qo'shish; `editor` → `is_staff=True`, `is_superuser=False` va data migratsiyada yaratiladigan "Kontent muharrirlari" guruhi (`quiz.add/change/view_topic|question|answer`, `results.view_exam`, foydalanuvchilarni ko'rmaydi). `is_admin_role` faqat to'liq admin uchun qoladi, `redirect_url_for` editor'ni ham `/admin/` ga yuboradi; dashboard'dagi "Foydalanuvchilar" KPI va sidebar bandi `permission` callback bilan yashiriladi. Testlar: editor savol qo'sha oladi, foydalanuvchi/imtihonni o'zgartira olmaydi, rolni o'zgartira olmaydi.
 2. **CSV import (savollar).** `django-import-export` + `unfold.contrib.import_export` (Stitch'dagi "Import (CSV)" tugmasi). Format: `mavzu_slug, savol, javob1..javob4, togri (1–4), izoh, rasm_fayl`. Import oldidan preview va bir xil validatsiya: aynan 1 to'g'ri, 2–4 javob; xato qatorlar hisoboti. Eksport — natijalar jurnali (imtihonlar) uchun ham.

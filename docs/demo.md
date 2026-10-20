@@ -33,7 +33,7 @@ python manage.py runserver
 
 ### 1:15 – 2:45 · Imtihon simulyatori
 - «Imtihon» → qoidalar kartasi (20 savol · 25 daqiqa · 2 xatogacha) → «Imtihonni boshlash».
-- 3–4 savolga javob bering: klaviatura `1`–`4`, `→` keyingi savol; savollar xaritasida javob berilganlar koʻk.
+- 3–4 savolga javob bering: klaviatura `1`–`4`, `→` keyingi savol; xato javob darrov qizil (toʻgʻrisi yashil), savollar xaritasida ham katak qizil/yashil boʻladi.
 - **F5 bosing** → taymer va javoblar joyida qoladi. **Ayting:** «taymer brauzerda, vaqt nazorati serverda — muddat oʻtgan javob qabul qilinmaydi».
 - «Yakunlash» → modal: «N ta savolga javob berilmagan» → «Yakunlash».
 - Natija: katta ball doirasi, «Oʻtmadi» (javobsizlar = xato), **xatolar tahlili** — birinchi kartani oching: siz tanlagan (qizil), toʻgʻri (yashil), izoh.

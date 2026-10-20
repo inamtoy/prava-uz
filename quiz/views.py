@@ -98,16 +98,17 @@ def exam_answer(request, pk):
     except services.ExamError as e:
         return JsonResponse({"ok": False, "error": str(e)}, status=400)
 
-    if exam.is_exam:
-        return JsonResponse({"ok": True, "time_left": exam.time_left_seconds})
     correct = item.question.answers.get(is_correct=True)
-    return JsonResponse({
+    data = {
         "ok": True,
         "is_correct": item.is_correct,
         "selected_answer_id": item.selected_answer_id,
         "correct_answer_id": correct.pk,
         "explanation": item.question.explanation,
-    })
+    }
+    if exam.is_exam:
+        data["time_left"] = exam.time_left_seconds
+    return JsonResponse(data)
 
 
 @login_required

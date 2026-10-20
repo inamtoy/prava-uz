@@ -95,8 +95,8 @@ def save_answer(exam, question_id, answer_id, user=None):
         except (Answer.DoesNotExist, ValueError, TypeError):
             raise ExamError("Bu javob ushbu savolga tegishli emas.")
 
-        # Mashqda birinchi javob hisoblanadi — to'g'ri javobni ko'rib, o'zgartirib bo'lmaydi.
-        if not exam.is_exam and item.selected_answer_id is not None:
+        # Birinchi javob hisoblanadi — to'g'ri/xato darrov ko'rsatiladi, keyin o'zgartirib bo'lmaydi.
+        if item.selected_answer_id is not None:
             return item
 
         item.selected_answer = answer

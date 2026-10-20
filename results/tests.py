@@ -97,10 +97,10 @@ class SaveAnswerTests(ServiceTestBase):
         item = services.save_answer(self.exam, self.item.question_id, self.correct.pk)
         self.assertTrue(item.is_correct)
         self.assertIsNotNone(item.answered_at)
-        # Javobni o'zgartirish mumkin
+        # Birinchi javob yakuniy — o'zgartirib bo'lmaydi
         item = services.save_answer(self.exam, self.item.question_id, self.wrong.pk)
-        self.assertFalse(item.is_correct)
-        self.assertEqual(item.selected_answer_id, self.wrong.pk)
+        self.assertTrue(item.is_correct)
+        self.assertEqual(item.selected_answer_id, self.correct.pk)
 
     def test_rejects_answer_of_another_question(self):
         other_item = self.exam.items.exclude(pk=self.item.pk).first()

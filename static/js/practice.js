@@ -91,37 +91,6 @@
     return i === -1 ? fallback : i;
   }
 
-  function showResult(card, data) {
-    card.dataset.answered = "1";
-    card.querySelectorAll(".answer-option").forEach(function (btn) {
-      const id = parseInt(btn.dataset.answerId, 10);
-      btn.disabled = true;
-      btn.classList.toggle("is-selected", id === data.selected_answer_id);
-      if (id === data.correct_answer_id) btn.classList.add("is-correct");
-      else if (id === data.selected_answer_id) btn.classList.add("is-wrong");
-      else btn.classList.add("is-dimmed");
-    });
-    const box = card.querySelector(".explanation");
-    box.classList.remove("d-none", "explain--success", "explain--danger");
-    box.classList.add(data.is_correct ? "explain--success" : "explain--danger");
-    box.innerHTML = "";
-    const icon = document.createElement("i");
-    icon.className = "bi " + (data.is_correct ? "bi-check-circle-fill" : "bi-lightbulb-fill");
-    icon.setAttribute("aria-hidden", "true");
-    const body = document.createElement("div");
-    const head = document.createElement("strong");
-    head.className = "explain__title";
-    head.textContent = data.is_correct ? "Toʻgʻri!" : "Xato — toʻgʻri javob yashil bilan belgilangan";
-    body.appendChild(head);
-    if (data.explanation) {
-      const text = document.createElement("span");
-      text.textContent = data.explanation;
-      body.appendChild(text);
-    }
-    box.appendChild(icon);
-    box.appendChild(body);
-  }
-
   async function choose(card, btn) {
     if (busy || card.dataset.answered) return;
     busy = true;
@@ -138,7 +107,7 @@
       }
       answered += 1;
       if (res.body.is_correct) correct += 1;
-      showResult(card, res.body);
+      Q.revealAnswer(card, res.body);
       if (res.body.is_correct) showToast();
       render();
     } catch (e) {

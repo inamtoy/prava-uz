@@ -215,13 +215,16 @@ class ExamFlowTests(TestCase):
             answer = answers.filter(is_correct=False).first() if i == 0 else answers.get(is_correct=True)
             data = self.client.post(api, {"question_id": item.question_id, "answer_id": answer.pk}, content_type="application/json").json()
             self.assertTrue(data["ok"])
-            self.assertNotIn("is_correct", data)  # imtihonda to'g'ri/xato oshkor qilinmaydi
-            self.assertNotIn("correct_answer_id", data)
+            # Imtihonda ham to'g'ri/xato darrov qaytariladi (xato javob qizil ko'rsatiladi)
+            self.assertEqual(data["is_correct"], i != 0)
+            self.assertEqual(data["correct_answer_id"], answers.get(is_correct=True).pk)
             self.assertGreater(data["time_left"], 0)
 
         # Sahifa yangilansa o'sha savollar chiqadi, tanlangan javoblar saqlangan
         page = self.client.get(reverse("exam", args=[exam.pk]))
         self.assertContains(page, "nav-num answered", count=20)
+        self.assertContains(page, "nav-num answered is-bad", count=1)  # 1-savol xato — qizil
+        self.assertContains(page, "is-selected is-wrong", count=1)
 
         resp = self.client.post(reverse("exam_finish", args=[exam.pk]))
         self.assertRedirects(resp, reverse("result", args=[exam.pk]))

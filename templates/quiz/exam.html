@@ -45,7 +45,7 @@
       <section class="exam-main" aria-label="Joriy savol">
         <div class="card-x exam-card">
           {% for item in items %}
-            {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=False %}
+            {% include "partials/question_card.html" with n=forloop.counter0 total=items|length reveal=True %}
           {% endfor %}
 
           <div class="exam-controls">
@@ -73,7 +73,7 @@
 
           <nav class="q-nav exam-map__grid" id="q-nav" aria-label="Savollar">
             {% for item in items %}
-              <button type="button" class="nav-num{% if item.selected_answer_id %} answered{% endif %}" data-goto="{{ forloop.counter0 }}" aria-label="Savol {{ forloop.counter }}">{{ forloop.counter }}</button>
+              <button type="button" class="nav-num{% if item.selected_answer_id %} answered {% if item.is_correct %}is-ok{% else %}is-bad{% endif %}{% endif %}" data-goto="{{ forloop.counter0 }}" aria-label="Savol {{ forloop.counter }}">{{ forloop.counter }}</button>
             {% endfor %}
           </nav>
 

@@ -467,6 +467,8 @@ h5, .h5, h6, .h6 { font-size: 1rem; font-weight: 700; }
 .q-nav .nav-num.answered { color: #fff; background: var(--primary); }
 .q-nav .nav-num.current { border-color: var(--primary); color: var(--primary); background: var(--surface); box-shadow: var(--ring); }
 .q-nav .nav-num.answered.current { color: #fff; background: var(--primary); border-color: var(--ink-900); }
+.q-nav .nav-num.answered.is-ok { background: var(--success); }
+.q-nav .nav-num.answered.is-bad { background: var(--danger); }
 .q-legend { display: flex; flex-wrap: wrap; gap: .75rem 1rem; font-size: .8125rem; color: var(--ink-500); }
 .q-legend span { display: inline-flex; align-items: center; gap: .375rem; }
 .q-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 4px; background: var(--surface-2); border: 2px solid transparent; }
