@@ -254,6 +254,8 @@ h1, h2, #site-name, .prava-h1, .prava-h2, .prava-kpi__value,
   letter-spacing: .1em; text-transform: uppercase; color: var(--prava-muted) !important;
 }
 #nav-sidebar-apps a.active { color: var(--prava-ink) !important; font-weight: 700; }
+/* Yon menyu qidiruvidagi "t" yorlig'i yashirilgan (t tugmasi baribir qidiruvga o'tkazadi) */
+#nav-filter + kbd { display: none; }
 .dark #nav-sidebar-apps a.active { color: var(--prava-accent) !important; }
 
 /* Asosiy amal — sariq signal tugma (siyoh rang matn) */
