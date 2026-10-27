@@ -3,14 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&display=swap");
 
 :root {
-  --prava-ink: #0B1B33;
-  --prava-accent: #FFC220;
+  --prava-ink: #0C1C34;
+  --prava-accent: #FCC01D;
+  --prava-accent-hover: #F0B30F;
   --prava-accent-ink: #795900;
-  --prava-accent-50: #FFF7DD;
-  --prava-ok: #14A44D;
-  --prava-ok-50: #E8F7EE;
-  --prava-bad: #E5383B;
-  --prava-bad-50: #FDECEC;
+  --prava-accent-50: #FFF4D6;
+  --prava-ok: #1A7F37;
+  --prava-ok-50: #E6F4EA;
+  --prava-bad: #BA1A1A;
+  --prava-bad-50: #FFDAD6;
   --prava-warn-50: #FEF3E2;
   --prava-card: #FFFFFF;
   --prava-line: var(--color-base-200);
@@ -20,6 +21,13 @@
   --prava-radius: 16px;
   --prava-shadow: 0 2px 8px -2px rgba(11, 27, 51, .05), 0 1px 3px -1px rgba(11, 27, 51, .03);
   --prava-display: "Manrope", "Inter", system-ui, sans-serif;
+}
+html.dark {
+  /* Qorong'i rejimda primary — sariq signal (to'q siyoh qora fonda ko'rinmaydi) */
+  --color-primary-400: #FFD45C;
+  --color-primary-500: #FCC01D;
+  --color-primary-600: #FCC01D;
+  --color-primary-700: #F0B30F;
 }
 .dark {
   --prava-card: var(--color-base-900);
@@ -237,6 +245,215 @@ h1, h2, #site-name, .prava-h1, .prava-h2, .prava-kpi__value,
   color: var(--prava-bad); background: var(--prava-bad-50);
 }
 .dark .prava-hint, .dark .prava-bar--split { background: rgba(229, 56, 59, .12); }
+
+/* =================== Unfold umumiy ko'rinishi (Stitch "Asphalt & Signal") =================== */
+
+/* Sidebar guruh sarlavhalari: kichik bosh harflar */
+#nav-sidebar-apps h2 {
+  margin-top: .75rem; font-family: var(--prava-display); font-size: 11px !important; font-weight: 800;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--prava-muted) !important;
+}
+#nav-sidebar-apps a.active { color: var(--prava-ink) !important; font-weight: 700; }
+.dark #nav-sidebar-apps a.active { color: var(--prava-accent) !important; }
+
+/* Asosiy amal — sariq signal tugma (siyoh rang matn) */
+button[name="_save"], .prava-btn--accent {
+  background: var(--prava-accent) !important; color: #0C1C34 !important; border-color: transparent !important;
+  font-family: var(--prava-display); font-weight: 800 !important; box-shadow: inset 0 -2px 0 rgba(12, 28, 52, .15);
+}
+button[name="_save"]:hover, .prava-btn--accent:hover { background: var(--prava-accent-hover) !important; }
+.dark .bg-primary-600.text-white, .dark .bg-primary-600 .text-white { color: #0C1C34 !important; }
+.prava-btn--ink { background: #0C1C34; color: #fff; }
+.prava-btn--ink:hover { color: #fff; }
+.dark .prava-btn--ink { background: var(--color-base-100); color: #0C1C34; }
+
+/* Ro'yxat jadvali: sarlavhalar Manrope bosh harflar, qatorlar kengroq */
+#result_list thead th {
+  font-family: var(--prava-display); font-size: 11px; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--prava-muted);
+}
+#result_list thead th a { color: inherit; }
+#result_list tbody td, #result_list tbody th { padding-top: .875rem; padding-bottom: .875rem; vertical-align: middle; }
+#result_list tbody tr:has(input.action-select:checked) > * { background: #EEF2F8; }
+.dark #result_list tbody tr:has(input.action-select:checked) > * { background: rgba(252, 192, 29, .06); }
+#result_list input[name$="-order"] { max-width: 72px; text-align: center; font-weight: 700; }
+
+/* ---- Ro'yxat sarlavhasi (list_head.html) ---- */
+.prava-page { display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.5rem; }
+.prava-page__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem; }
+.prava-page__sub { margin: .25rem 0 0; color: var(--prava-muted); font-size: .9375rem; }
+.prava-page .prava-h1 { font-size: 2rem; letter-spacing: -0.03em; }
+.prava-h1 .prava-chip { font-family: Inter, system-ui, sans-serif; letter-spacing: 0; font-size: .8125rem; }
+.prava-note {
+  display: flex; align-items: center; gap: .875rem; padding: 1rem 1.25rem; border-radius: var(--prava-radius);
+  background: var(--prava-card); border: 1px solid var(--prava-line); box-shadow: var(--prava-shadow);
+  font-size: .875rem; color: var(--prava-muted);
+}
+.prava-note .prava-icon-tile { flex: 0 0 auto; width: 36px; height: 36px; font-size: 20px; background: var(--prava-accent-50); color: var(--prava-accent-ink); }
+.prava-note strong { color: var(--prava-text); }
+.prava-kpi__value small { font-family: Inter, system-ui, sans-serif; font-size: .875rem; font-weight: 500; letter-spacing: 0; color: var(--prava-muted); }
+.prava-kpi__icon--ink { background: #0C1C34; color: #fff; }
+.prava-kpi__icon--accent { background: var(--prava-accent); color: #0C1C34; }
+.prava-bar--accent > i { background: #0C1C34; }
+.dark .prava-bar--accent > i { background: var(--prava-accent); }
+
+.prava-toolbar {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .625rem; padding: .75rem;
+  background: var(--prava-card); border: 1px solid var(--prava-line); border-radius: var(--prava-radius); box-shadow: var(--prava-shadow);
+}
+.prava-seg { display: inline-flex; flex-wrap: wrap; gap: .25rem; padding: .25rem; border-radius: 12px; background: var(--prava-soft); border: 1px solid var(--prava-line); }
+.prava-seg a, .prava-seg button {
+  padding: .4rem .875rem; border-radius: 9px; font-size: .8125rem; font-weight: 600; color: var(--prava-muted); white-space: nowrap;
+}
+.prava-seg a:hover, .prava-seg button:hover { color: var(--prava-text); }
+.prava-seg .is-active { background: var(--prava-card); color: var(--prava-text); box-shadow: 0 1px 3px rgba(12, 28, 52, .12); }
+.prava-seg--dark .is-active { background: #0C1C34; color: #fff; }
+.prava-seg--dark .prava-seg__bad.is-active { background: var(--prava-bad); color: #fff; }
+.dark .prava-seg--dark .is-active { background: var(--prava-accent); color: #0C1C34; }
+.prava-pill {
+  display: inline-flex; align-items: center; gap: .375rem; padding: .4rem .75rem; border-radius: 10px;
+  font-size: .8125rem; font-weight: 600; color: var(--prava-text); background: var(--prava-soft); border: 1px solid var(--prava-line);
+}
+.prava-pill .material-symbols-outlined { font-size: 18px; color: var(--prava-muted); }
+.prava-pill b { padding: 0 .4rem; border-radius: 9999px; font-size: 11px; background: var(--prava-line); }
+.prava-pill--warn::before, .prava-pill--bad::before { content: ""; order: 1; width: 7px; height: 7px; border-radius: 50%; background: var(--prava-accent); }
+.prava-pill--bad::before { background: var(--prava-bad); }
+.prava-pill.is-active { border-color: #0C1C34; }
+.prava-pill.is-active .material-symbols-outlined { color: #0C1C34; }
+.dark .prava-pill.is-active { border-color: var(--prava-accent); }
+.dark .prava-pill.is-active .material-symbols-outlined { color: var(--prava-accent); }
+.prava-toolbar__clear { display: inline-flex; align-items: center; gap: .25rem; margin-left: auto; font-size: .8125rem; font-weight: 600; color: var(--prava-muted); }
+.prava-toolbar__clear:hover { color: var(--prava-text); }
+.prava-toolbar__clear .material-symbols-outlined { font-size: 18px; }
+
+/* ---- Ro'yxat ustunlari ---- */
+.prava-tag {
+  display: inline-flex; align-items: center; gap: .25rem; padding: .2rem .625rem; border-radius: 8px;
+  font-size: .75rem; font-weight: 700; line-height: 1.4; white-space: nowrap; color: var(--prava-text); background: var(--prava-soft);
+}
+.prava-tag .material-symbols-outlined { font-size: 15px; }
+.prava-tag--0 { background: #DCE6FF; color: #1B3584; }
+.prava-tag--1 { background: #E6EAF0; color: #1E2B42; }
+.prava-tag--2 { background: #FFF0C2; color: #6C5000; }
+.prava-tag--3 { background: #E3E1FF; color: #3A2E8C; }
+.prava-tag--4 { background: #E1F2E7; color: #135C2A; }
+.prava-tag--5 { background: #FFE2DE; color: #8C1D18; }
+.prava-tag--ok { background: var(--prava-ok-50); color: var(--prava-ok); }
+.prava-tag--bad { background: var(--prava-bad-50); color: var(--prava-bad); }
+.prava-tag--warn, .prava-tag--mid { background: var(--prava-accent-50); color: var(--prava-accent-ink); }
+.dark .prava-tag, .dark .prava-topic__icon { background: rgba(255, 255, 255, .07) !important; color: var(--color-base-200) !important; }
+.dark .prava-tag--bad { color: #FF8A80 !important; }
+.dark .prava-tag--ok { color: #7EE2A0 !important; }
+.dark .prava-tag--warn, .dark .prava-tag--mid { color: var(--prava-accent) !important; }
+
+.prava-topic { display: flex; align-items: center; gap: .875rem; min-width: 260px; max-width: 420px; }
+.prava-topic__icon {
+  flex: 0 0 auto; display: inline-flex; align-items: center; justify-content: center;
+  width: 44px; height: 44px; border-radius: 12px; font-size: 24px;
+}
+.prava-topic__text { display: flex; flex-direction: column; gap: .125rem; white-space: normal; }
+.prava-topic__text strong { font-family: var(--prava-display); font-size: 1rem; font-weight: 800; color: var(--prava-text); }
+.prava-link { font-size: .8125rem; font-weight: 700; color: var(--prava-text); white-space: nowrap; }
+.prava-link:hover { color: var(--prava-accent-ink); }
+.prava-link--chip { padding: .3rem .75rem; border-radius: 8px; background: var(--prava-soft); border: 1px solid var(--prava-line); }
+.prava-score {
+  display: inline-flex; align-items: center; gap: .375rem; padding: .3rem .625rem; border-radius: 10px;
+  font-size: .8125rem; font-weight: 700; white-space: nowrap; background: var(--prava-soft); color: var(--prava-muted);
+}
+.prava-score .material-symbols-outlined { font-size: 16px; }
+.prava-score--ok { background: var(--prava-ok-50); color: var(--prava-ok); }
+.dark .prava-score--ok { background: rgba(26, 127, 55, .15); color: #7EE2A0; }
+.prava-when { white-space: nowrap; }
+.prava-when.is-recent::before {
+  content: ""; display: inline-block; width: 7px; height: 7px; margin-right: .375rem;
+  border-radius: 50%; background: var(--prava-ok); vertical-align: 1px;
+}
+.prava-mode {
+  display: inline-block; margin-right: .375rem; padding: .15rem .5rem; border-radius: 6px;
+  font-family: var(--prava-display); font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+}
+.prava-mode--exam { background: #0C1C34; color: #fff; }
+.prava-mode--practice { background: var(--prava-accent); color: #0C1C34; }
+.dark .prava-mode--exam { background: var(--color-base-200); }
+.dark .prava-mode--exam { color: #0C1C34; }
+.prava-rate--score { min-width: 140px; }
+.prava-rate--score.prava-rate--ok strong { color: var(--prava-text); }
+.prava-rate--score.prava-rate--ok .prava-bar > i { background: var(--prava-accent); }
+
+/* ---- Imtihon tahlili (results/exam/change_form.html) ---- */
+.prava-exam { display: flex; flex-direction: column; gap: 1rem; max-width: 960px; }
+.prava-exam__summary { gap: 1.25rem; }
+.prava-exam__who { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem; }
+.prava-exam__who > div { flex: 1 1 auto; min-width: 0; }
+.prava-exam__who .prava-h1 { font-size: 1.5rem; }
+.prava-exam__who .prava-tag { padding: .375rem .875rem; font-size: .875rem; }
+.prava-avatar--lg { width: 56px; height: 56px; border-radius: 16px; font-size: 1.25rem; }
+.prava-exam__stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .75rem; }
+.prava-exam__stats > div {
+  display: flex; flex-direction: column; gap: .125rem; padding: .875rem 1rem;
+  border-radius: 12px; background: var(--prava-soft); text-align: center;
+}
+.prava-exam__stats strong { font-family: var(--prava-display); font-size: 1.375rem; font-weight: 800; color: var(--prava-text); }
+.prava-exam .prava-seg { align-self: flex-start; }
+.prava-items { display: flex; flex-direction: column; gap: .75rem; margin: 0; padding: 0; list-style: none; }
+.prava-item {
+  display: flex; flex-direction: column; gap: .75rem; padding: 1.125rem 1.25rem;
+  background: var(--prava-card); border: 1px solid var(--prava-line); border-radius: var(--prava-radius); box-shadow: var(--prava-shadow);
+}
+.prava-item--bad { border-left: 4px solid var(--prava-bad); }
+.prava-item--empty { border-left: 4px solid var(--prava-accent); }
+.prava-item__head { display: flex; align-items: center; gap: .625rem; }
+.prava-item__head .prava-tag { margin-left: auto; }
+.prava-item__no {
+  display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 8px;
+  font-family: var(--prava-display); font-weight: 800; background: var(--prava-accent); color: #0C1C34;
+}
+.prava-item--bad .prava-item__no { background: var(--prava-bad); color: #fff; }
+.prava-item__body { display: flex; gap: 1rem; align-items: flex-start; }
+.prava-item__img {
+  flex: 0 0 auto; width: 72px; height: 72px; object-fit: contain; padding: 4px;
+  border-radius: 10px; background: var(--prava-soft); border: 1px solid var(--prava-line);
+}
+.prava-item__q { margin: 0; font-size: 1rem; font-weight: 700; color: var(--prava-text); }
+.prava-item__q a { color: inherit; }
+.prava-item__q a:hover { text-decoration: underline; }
+.prava-answer {
+  display: flex; align-items: flex-start; gap: .625rem; padding: .75rem 1rem; border-radius: 12px;
+  background: var(--prava-soft); font-size: .9375rem; color: var(--prava-text);
+}
+.prava-answer div > span { display: block; font-size: .8125rem; color: var(--prava-muted); }
+.prava-answer .material-symbols-outlined { font-size: 20px; color: var(--prava-ok); }
+.prava-answer--bad { background: var(--prava-bad-50); color: var(--prava-bad); }
+.prava-answer--bad .material-symbols-outlined { color: var(--prava-bad); }
+.prava-answer--note div { font-size: .875rem; color: var(--prava-muted); }
+.prava-answer--note .material-symbols-outlined { color: var(--prava-muted); }
+.dark .prava-answer--bad { background: rgba(186, 26, 26, .15); color: #FF8A80; }
+.prava-exam__foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .75rem; }
+@media (max-width: 640px) {
+  .prava-exam__stats { grid-template-columns: 1fr; }
+  .prava-page .prava-h1 { font-size: 1.5rem; }
+}
+
+/* ---- Savol formasi: A–D harflari, to'g'ri javob qatori ajratiladi ---- */
+.prava-qform__answers { counter-reset: prava-answer; }
+.prava-qform fieldset.module > h2, .prava-qform__answers h2 {
+  height: auto; padding: 0; margin-bottom: .75rem; background: transparent !important;
+  font-family: var(--prava-display); font-size: 1.0625rem; font-weight: 800; color: var(--prava-text);
+}
+.prava-qform fieldset.module > h2::before, .prava-qform__answers h2::before {
+  content: ""; width: 6px; height: 1.1em; margin-right: .375rem; border-radius: 3px; background: var(--prava-accent);
+}
+.prava-qform__answers tbody tr:has(input[name$="-text"]):not(.empty-form) > td:first-child::before {
+  counter-increment: prava-answer; content: counter(prava-answer, upper-alpha);
+  float: left; display: inline-flex; align-items: center; justify-content: center; width: 30px; height: 38px; margin-right: .625rem;
+  border-radius: 8px; background: var(--prava-soft); border: 1px solid var(--prava-line);
+  font-family: var(--prava-display); font-weight: 800; color: var(--prava-muted);
+}
+.prava-qform__answers tbody tr:has(input[name$="-is_correct"]:checked) > td { background: var(--prava-accent-50); }
+.prava-qform__answers tbody tr:has(input[name$="-is_correct"]:checked) > td:first-child::before {
+  background: var(--prava-accent); border-color: var(--prava-accent); color: #0C1C34;
+}
+.dark .prava-qform__answers tbody tr:has(input[name$="-is_correct"]:checked) > td { background: rgba(252, 192, 29, .08); }
 
 @media (prefers-reduced-motion: reduce) {
   .prava-btn, .prava-kpi { transition: none; }

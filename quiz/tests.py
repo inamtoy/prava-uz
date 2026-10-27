@@ -402,6 +402,25 @@ class AdminPagesTests(TestCase):
         self.client.post(reverse("admin:quiz_question_changelist"), {"action": "deactivate", "_selected_action": ids})
         self.assertFalse(Question.objects.filter(is_active=True).exists())
 
+    def test_hard_filter_and_list_head(self):
+        exam = self._fill(1, 20)  # oxirgi javob tanlangan — hammasi xato
+        resp = self.client.get(reverse("admin:quiz_question_changelist") + "?qiyin=ha")
+        self.assertEqual(resp.context["cl"].result_count, exam.total_questions)
+        self.assertContains(resp, "Qiyin savollar (&gt;50% xato)")
+        self.assertContains(resp, "Filtrlarni tozalash")
+
+    def test_exam_change_shows_mistake_analysis(self):
+        exam = self._fill(1, 20)
+        resp = self.client.get(reverse("admin:results_exam_change", args=[exam.pk]))
+        self.assertEqual(resp.context["prava_counts"]["bad"], exam.total_questions - exam.score)
+        self.assertContains(resp, "Toʻgʻri javob:")
+
+    def test_user_list_head_counts(self):
+        self._fill(1, 20)
+        resp = self.client.get(reverse("admin:accounts_user_changelist") + "?role__exact=admin")
+        self.assertEqual(resp.context["cl"].result_count, 1)
+        self.assertContains(resp, "Adminlar (1)")
+
     def test_exam_admin_is_read_only(self):
         exam = self._fill(1, 3)
         resp = self.client.post(reverse("admin:results_exam_delete", args=[exam.pk]), {"post": "yes"})

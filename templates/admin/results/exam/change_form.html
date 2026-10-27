@@ -1,0 +1,74 @@
+{% extends "admin/change_form.html" %}
+{# Stitch "Imtihon tahlili": xulosa + har savol kartasi (to'g'ri / xato / javobsiz) #}
+
+{% block field_sets %}
+{% with e=original c=prava_counts %}
+<div class="prava-exam" x-data="{ show: 'all' }">
+  <section class="prava-card prava-exam__summary">
+    <div class="prava-exam__who">
+      <span class="prava-avatar prava-avatar--lg">{{ e.user.first_name|default:e.user.username|slice:":1"|upper }}{{ e.user.last_name|slice:":1"|upper }}</span>
+      <div>
+        <h1 class="prava-h1">{{ e.user.get_full_name|default:e.user.username }} <span class="prava-chip">#{{ e.pk }}</span></h1>
+        <p class="prava-muted">@{{ e.user.username }}{% if e.user.email %} · {{ e.user.email }}{% endif %}</p>
+      </div>
+      {% if e.status == "in_progress" %}
+        <span class="prava-tag prava-tag--warn">Jarayonda</span>
+      {% elif e.is_passed is None %}
+        <span class="prava-tag prava-tag--mid">Mashq{% if e.topic %} · {{ e.topic.name }}{% endif %}</span>
+      {% elif e.is_passed %}
+        <span class="prava-tag prava-tag--ok">Oʻtdi</span>
+      {% else %}
+        <span class="prava-tag prava-tag--bad">Oʻtmadi</span>
+      {% endif %}
+    </div>
+    <div class="prava-exam__stats">
+      <div><span class="prava-label">Ball</span><strong>{{ e.score }} / {{ e.total_questions }}</strong><span class="prava-muted">{{ e.percent }}% toʻgʻri</span></div>
+      <div><span class="prava-label">Vaqt</span><strong>{{ prava_time.spent }}</strong><span class="prava-muted">{% if e.mode == "exam" %}{{ prava_time.limit }} daqiqadan{% else %}Mashq — taymersiz{% endif %}</span></div>
+      <div><span class="prava-label">Boshlangan</span><strong>{{ e.started_at|date:"d.m.Y" }}</strong><span class="prava-muted">{{ e.started_at|date:"H:i" }}{% if e.finished_at %} – {{ e.finished_at|date:"H:i" }}{% endif %}</span></div>
+    </div>
+    <nav class="prava-seg prava-seg--dark" aria-label="Savollar filtri">
+      <button type="button" :class="show === 'all' && 'is-active'" @click="show = 'all'">Barchasi ({{ prava_items|length }})</button>
+      <button type="button" :class="show === 'ok' && 'is-active'" @click="show = 'ok'">Toʻgʻri ({{ c.ok }})</button>
+      <button type="button" class="prava-seg__bad" :class="show === 'bad' && 'is-active'" @click="show = 'bad'">Xato ({{ c.bad|add:c.empty }})</button>
+    </nav>
+  </section>
+
+  <ol class="prava-items">
+    {% for row in prava_items %}
+      {% with i=row.item %}
+      <li class="prava-item prava-item--{{ row.state }}" x-show="show === 'all' || show === '{% if row.state == "ok" %}ok{% else %}bad{% endif %}'">
+        <div class="prava-item__head">
+          <span class="prava-item__no">{{ forloop.counter }}</span>
+          <span class="prava-label">{{ i.question.topic.name }}</span>
+          {% if row.state == "ok" %}<span class="prava-tag prava-tag--ok"><span class="material-symbols-outlined">check_circle</span> Toʻgʻri</span>
+          {% elif row.state == "bad" %}<span class="prava-tag prava-tag--bad"><span class="material-symbols-outlined">cancel</span> Xato javob</span>
+          {% else %}<span class="prava-tag prava-tag--warn"><span class="material-symbols-outlined">help</span> Javobsiz</span>{% endif %}
+        </div>
+        <div class="prava-item__body">
+          {% if i.question.image %}<img class="prava-item__img" src="{{ i.question.image.url }}" alt="" loading="lazy">{% endif %}
+          <p class="prava-item__q"><a href="{% url 'admin:quiz_question_change' i.question_id %}">{{ i.question.text }}</a></p>
+        </div>
+        {% if row.state == "ok" %}
+          <div class="prava-answer prava-answer--ok"><span class="material-symbols-outlined">check</span><div><span>Oʻquvchi javobi:</span>{{ i.selected_answer.text }}</div></div>
+        {% else %}
+          <div class="prava-answer prava-answer--bad"><span class="material-symbols-outlined">close</span><div><span>Oʻquvchi javobi:</span>{% if i.selected_answer %}<s>{{ i.selected_answer.text }}</s>{% else %}— javob berilmagan{% endif %}</div></div>
+          {% if row.correct %}<div class="prava-answer"><span class="material-symbols-outlined">task_alt</span><div><span>Toʻgʻri javob:</span>{{ row.correct.text }}</div></div>{% endif %}
+          {% if i.question.explanation %}<div class="prava-answer prava-answer--note"><span class="material-symbols-outlined">info</span><div><span>Izoh:</span>{{ i.question.explanation }}</div></div>{% endif %}
+        {% endif %}
+      </li>
+      {% endwith %}
+    {% empty %}
+      <li class="prava-empty">Bu imtihonda savollar yoʻq.</li>
+    {% endfor %}
+  </ol>
+
+  <div class="prava-exam__foot">
+    <a class="prava-btn prava-btn--ghost" href="{% url 'admin:results_exam_changelist' %}"><span class="material-symbols-outlined">arrow_back</span> Natijalar roʻyxati</a>
+    <a class="prava-btn prava-btn--ink" href="{% url 'admin:accounts_user_change' e.user_id %}"><span class="material-symbols-outlined">person</span> Oʻquvchi profili</a>
+  </div>
+</div>
+{% endwith %}
+{% endblock %}
+
+{% block inline_field_sets %}{% endblock %}
+{% block submit_buttons_bottom %}{% endblock %}

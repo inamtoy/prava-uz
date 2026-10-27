@@ -1,0 +1,61 @@
+{# Ro'yxat sahifasi sarlavhasi — kontekst: prava_head (config/admin_ui.py) #}
+{% with h=prava_head %}
+{% if h %}
+<div class="prava-page">
+  <header class="prava-page__head">
+    <div>
+      <h1 class="prava-h1">{{ h.title }}{% if h.count_label %} <span class="prava-chip">{{ h.count_label }}</span>{% endif %}</h1>
+      {% if h.subtitle %}<p class="prava-page__sub">{{ h.subtitle }}</p>{% endif %}
+    </div>
+    {% if h.actions %}
+      <div class="prava-dash__actions">
+        {% for a in h.actions %}
+          <a class="prava-btn prava-btn--{{ a.style|default:'ghost' }}" href="{{ a.url }}"><span class="material-symbols-outlined">{{ a.icon }}</span> {{ a.label }}</a>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  {% if h.note %}
+    <div class="prava-note"><span class="prava-icon-tile material-symbols-outlined">lightbulb</span><span>{{ h.note }}</span></div>
+  {% endif %}
+
+  {% if h.kpis %}
+    <section class="prava-kpis prava-kpis--{{ h.kpis|length }}">
+      {% for k in h.kpis %}
+        <div class="prava-kpi">
+          <div class="prava-kpi__top">
+            <span class="prava-label">{{ k.label }}</span>
+            <span class="prava-kpi__icon prava-kpi__icon--{{ k.tone|default:'soft' }} material-symbols-outlined">{{ k.icon }}</span>
+          </div>
+          <div class="prava-kpi__value">{{ k.value }}{% if k.unit %} <small>{{ k.unit }}</small>{% endif %}</div>
+          {% if k.bar is not None %}<div class="prava-bar prava-bar--accent"><i style="width: {{ k.bar }}%"></i></div>{% endif %}
+          {% if k.note %}<div class="prava-kpi__foot"><span class="prava-muted">{{ k.note }}</span></div>{% endif %}
+        </div>
+      {% endfor %}
+    </section>
+  {% endif %}
+
+  {% if h.tabs or h.pills or h.clear_url %}
+    <div class="prava-toolbar">
+      {% if h.tabs %}
+        <nav class="prava-seg" aria-label="Tez filtr">
+          {% for t in h.tabs %}
+            <a href="{{ t.url }}" class="{% if t.active %}is-active{% endif %}"{% if t.active %} aria-current="true"{% endif %}>{{ t.label }}{% if t.count is not None %} ({{ t.count }}){% endif %}</a>
+          {% endfor %}
+        </nav>
+      {% endif %}
+      {% for p in h.pills %}
+        <a href="{{ p.url }}" class="prava-pill prava-pill--{{ p.tone }}{% if p.active %} is-active{% endif %}">
+          <span class="material-symbols-outlined">{% if p.active %}check_box{% else %}check_box_outline_blank{% endif %}</span>
+          {{ p.label }}{% if p.count is not None %} <b>{{ p.count }}</b>{% endif %}
+        </a>
+      {% endfor %}
+      {% if h.clear_url %}
+        <a class="prava-toolbar__clear" href="{{ h.clear_url }}"><span class="material-symbols-outlined">restart_alt</span> Filtrlarni tozalash</a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+{% endif %}
+{% endwith %}

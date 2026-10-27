@@ -67,3 +67,12 @@
 - `DEBUG=False` da `STORAGES.staticfiles = ManifestStaticFilesStorage` (testlarda emas). Tekshirilgan: collectstatic (unfold bilan) va barcha sahifalar hashli statik bilan 200.
 - `seed_data` serverda: demo foydalanuvchi yaratilmaydi (`--demo` bilan majburlash mumkin), `--reset` taqiqlangan (imtihon tarixi o'chib ketmasin).
 - Bu Windows muhitda Linux/Docker yo'q: `nginx -t` va `systemd-analyze verify` ishga tushirilmagan — birinchi o'rnatishda serverda bajarilsin. `backup.sh` Git Bash'da lokal PostgreSQL'ga qarshi to'liq sinalgan (dump → retention → tiklash, qatorlar soni bir xil).
+
+## Admin dizayni yangilandi (2026-10-27, Stitch maketlari bo'yicha)
+- Rang: unfold `primary` — to'q siyoh `#0C1C34` (havolalar, faol menyu), sariq signal `#FCC01D` — asosiy tugmalar ("Saqlash", "Yangi ..."). Qorong'i rejimda primary sariq (`static/css/admin.css`). Sarlavhalar Manrope (maketdagi serif — shrift yuklanmay qolgan skrinshot, `code.html` da Manrope).
+- Ro'yxatlar tepasida umumiy sarlavha (`config/admin_ui.py` + `templates/admin/prava/list_head.html`): nom + son, "Yangi ..." tugmasi, KPI kartochkalar, tez filtrlar (Hammasi/Faol/Nofaol, Faqat rasmli, Izohsiz, Qiyin >50% xato), "Filtrlarni tozalash". Hamma raqamlar bazadan.
+- Sidebar: "Rasmlar" (= rasmli savollar filtri), "Adminlar" (= rol filtri) — alohida sahifa emas.
+- Mavzular: ikonka + nom + tavsif, faol savollar, to'g'ri javob %, tavsiya (15 tadan kam / qiyin mavzu). Ikonka slug bo'yicha tanlanadi (bezak); Topic modelida ikonka/rang maydoni yo'q.
+- Foydalanuvchilar: KPI (jami, 7 kunda faol, o'rtacha tayyorgarlik), eng yaxshi natija, oxirgi faollik. Telefon raqami, "Premium", bloklash — modelda yo'q, qo'yilmadi.
+- Imtihonlar: KPI (bugun/kecha, o'tish %, o'rtacha vaqt), natija tablari; imtihon sahifasi — xatolar tahlili kartalari (Barchasi/To'g'ri/Xato), inline jadval o'rniga.
+- Hali yo'q: global qidiruv, CSV import/eksport, qatordagi faol toggle, javoblarni sudrab tartiblash, savol "o'quvchi ko'rinishi" preview, qiyinlik/ball/vaqt maydonlari.

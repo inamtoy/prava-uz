@@ -6,6 +6,7 @@ from pathlib import Path
 from decouple import Csv, config
 from django.templatetags.static import static
 from django.urls import reverse_lazy
+from django.utils.text import format_lazy
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -154,17 +155,17 @@ UNFOLD = {
     "STYLES": [lambda request: static("css/admin.css")],
     "BORDER_RADIUS": "10px",
     "COLORS": {
-        # Saytdagi tokenlar: --ink-900 #0B1B33 ... --bg #F4F6FA
+        # Stitch "Asphalt & Signal": asos — asfalt kulrang-ko'k, primary — to'q siyoh (#0C1C34).
+        # Sariq signal (#FCC01D) — faqat asosiy tugmalar va urg'u uchun, static/css/admin.css da.
         "base": {
-            "50": "#F4F6FA", "100": "#EEF1F6", "200": "#E6EAF0", "300": "#CBD5E1",
-            "400": "#A9B4C6", "500": "#7D8BA3", "600": "#51627E", "700": "#3A4A66",
-            "800": "#1E3355", "900": "#132541", "950": "#0B1B33",
+            "50": "#F7F9FD", "100": "#F2F4F8", "200": "#E6E8EC", "300": "#C5C6CE",
+            "400": "#A9B0BE", "500": "#75777E", "600": "#44474D", "700": "#394761",
+            "800": "#1E2B42", "900": "#131F33", "950": "#0B1626",
         },
-        # --primary #2457F5 (600)
         "primary": {
-            "50": "#EEF2FF", "100": "#E0E7FF", "200": "#C7D3FE", "300": "#A3B6FC",
-            "400": "#6F8DF9", "500": "#4570F7", "600": "#2457F5", "700": "#1B45D1",
-            "800": "#1A3AA8", "900": "#1B3584", "950": "#142250",
+            "50": "#EEF2F8", "100": "#D6E3FF", "200": "#B8C7E6", "300": "#94A6C8",
+            "400": "#6B7FA3", "500": "#394761", "600": "#0C1C34", "700": "#081428",
+            "800": "#060F1F", "900": "#040A16", "950": "#02050C",
         },
     },
     "SIDEBAR": {
@@ -181,7 +182,11 @@ UNFOLD = {
                 "title": "Kontent",
                 "items": [
                     {"title": "Mavzular", "icon": "menu_book", "link": reverse_lazy("admin:quiz_topic_changelist")},
-                    {"title": "Savollar", "icon": "quiz", "link": reverse_lazy("admin:quiz_question_changelist")},
+                    {"title": "Savollar", "icon": "help", "link": reverse_lazy("admin:quiz_question_changelist"),
+                     "active": lambda request: request.path.startswith(str(reverse_lazy("admin:quiz_question_changelist")))
+                     and request.GET.get("rasm") != "bor"},
+                    {"title": "Rasmlar", "icon": "image", "link": format_lazy("{}?rasm=bor", reverse_lazy("admin:quiz_question_changelist")),
+                     "active": lambda request: request.GET.get("rasm") == "bor"},
                 ],
             },
             {
@@ -193,7 +198,12 @@ UNFOLD = {
             {
                 "title": "Foydalanuvchilar",
                 "items": [
-                    {"title": "Foydalanuvchilar", "icon": "group", "link": reverse_lazy("admin:accounts_user_changelist")},
+                    {"title": "Foydalanuvchilar", "icon": "group", "link": reverse_lazy("admin:accounts_user_changelist"),
+                     "active": lambda request: request.path.startswith(str(reverse_lazy("admin:accounts_user_changelist")))
+                     and request.GET.get("role__exact") != "admin"},
+                    {"title": "Adminlar", "icon": "shield_person",
+                     "link": format_lazy("{}?role__exact=admin", reverse_lazy("admin:accounts_user_changelist")),
+                     "active": lambda request: request.GET.get("role__exact") == "admin"},
                 ],
             },
             {
