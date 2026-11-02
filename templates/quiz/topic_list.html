@@ -1,13 +1,13 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Mavzular — Prava.uz{% endblock %}
+{% block title %}Biletlar — Prava.uz{% endblock %}
 {% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/quiz.css' %}">{% endblock %}
 {% block content %}
 <header class="topics-head">
   <div>
     <span class="kicker">Oʻquv moduli</span>
-    <h1 class="display topics-head__title">Mavzular</h1>
-    <p class="topics-head__lead">Mavzuni tanlang va mashq qiling: har javobdan keyin toʻgʻri yoki xato ekanini darhol koʻrasiz.</p>
+    <h1 class="display topics-head__title">Biletlar</h1>
+    <p class="topics-head__lead">Biletni tanlang va mashq qiling: har javobdan keyin toʻgʻri yoki xato ekanini darhol koʻrasiz.</p>
   </div>
   <a href="{% url 'exam_start' %}" class="btn btn-accent btn-lg topics-head__cta">
     <i class="bi bi-stopwatch" aria-hidden="true"></i> Imtihon topshirish
@@ -42,70 +42,42 @@
 </section>
 
 <div class="section-title">
-  <h2>Oʻquv boʻlimlari</h2>
-  <span class="text-muted">Jami: {{ topics|length }} ta asosiy yoʻnalish</span>
+  <h2>Biletlar</h2>
+  <span class="text-muted">Jami: {{ topics|length }} ta bilet</span>
 </div>
 
 {% if topics %}
-<div class="row g-3 g-lg-4">
+<ul class="ticket-grid" role="list">
   {% for topic in topics %}
-  {% cycle 'bi-book' 'bi-sign-stop' 'bi-stoplights' 'bi-signpost-split' 'bi-car-front' 'bi-heart-pulse' as topic_icon silent %}
-  {% cycle 't1' 't2' 't3' 't4' 't5' 't6' as topic_tone silent %}
-  <div class="col-12 col-md-6 col-lg-4">
-    <article class="card-x card-x--hover topic-card">
-      <div class="topic-card__top">
-        <span class="icon-tile icon-tile--{{ topic_tone }}"><i class="bi {{ topic_icon }}" aria-hidden="true"></i></span>
-        {% if topic.progress >= 90 %}
-          <span class="chip chip--done chip--dot">Oʻzlashtirildi</span>
-        {% elif topic.progress > 0 %}
-          <span class="chip chip--progress chip--dot">Davom etmoqda</span>
-        {% else %}
-          <span class="chip chip--new">Yangi</span>
-        {% endif %}
-      </div>
-
-      <div class="topic-card__meta">
-        <div class="progress-ring{% if topic.progress >= 90 %} progress-ring--success{% endif %}" style="--p:{{ topic.progress }}" role="img" aria-label="Oʻzlashtirish {{ topic.progress }}%">
-          <svg viewBox="0 0 36 36" aria-hidden="true">
-            <circle class="progress-ring__track" cx="18" cy="18" r="15.9155"/>
-            <circle class="progress-ring__fill" cx="18" cy="18" r="15.9155" pathLength="100"/>
-          </svg>
-          <span class="progress-ring__value">{{ topic.progress }}%</span>
-        </div>
-        <div>
-          <span class="kicker kicker--plain">{{ forloop.counter }}-BOʻLIM</span>
-          <span class="topic-card__count">{{ topic.question_count }} ta savol</span>
-        </div>
-      </div>
-
-      <h3 class="topic-card__title">{{ topic.name }}</h3>
-      {% if topic.description %}<p class="topic-card__desc">{{ topic.description }}</p>{% endif %}
-
-      <div class="topic-card__action">
-        {% if topic.question_count %}
-        <form method="post" action="{% url 'practice_start' topic.slug %}">
-          {% csrf_token %}
-          {% if topic.progress >= 90 %}
-            <button type="submit" class="btn btn-soft btn-block"><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Takrorlash</button>
-          {% elif topic.progress > 0 %}
-            <button type="submit" class="btn btn-dark btn-block">Davom ettirish <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
-          {% else %}
-            <button type="submit" class="btn btn-dark btn-block">Mashq qilish <i class="bi bi-play-fill" aria-hidden="true"></i></button>
-          {% endif %}
-        </form>
-        {% else %}
-        <button type="button" class="btn btn-block" disabled>Savollar tez orada</button>
-        {% endif %}
-      </div>
-    </article>
-  </div>
+  <li>
+    {% if topic.question_count %}
+    <form method="post" action="{% url 'practice_start' topic.slug %}">
+      {% csrf_token %}
+      <button type="submit" class="ticket{% if topic.progress >= 90 %} is-done{% elif topic.progress > 0 %} is-progress{% endif %}"
+              aria-label="{{ topic.name }}: {{ topic.question_count }} ta savol, oʻzlashtirish {{ topic.progress }}%">
+        <span class="ticket__name">{{ topic.name }}</span>
+        <span class="ticket__meta">{{ topic.question_count }} savol{% if topic.progress %} · {{ topic.progress }}%{% endif %}</span>
+        <span class="ticket__bar" aria-hidden="true"><span style="width: {{ topic.progress }}%"></span></span>
+      </button>
+    </form>
+    {% else %}
+    <span class="ticket is-empty">
+      <span class="ticket__name">{{ topic.name }}</span>
+      <span class="ticket__meta">Savollar yoʻq</span>
+    </span>
+    {% endif %}
+  </li>
   {% endfor %}
-</div>
+</ul>
+<p class="ticket-legend text-muted">
+  <span class="ticket-legend__dot is-progress"></span> Boshlangan
+  <span class="ticket-legend__dot is-done"></span> Oʻzlashtirilgan (90%+)
+</p>
 {% else %}
 <div class="empty-state">
   <span class="empty-state__icon"><i class="bi bi-journal-x" aria-hidden="true"></i></span>
-  <h3>Hozircha mavzular qoʻshilmagan</h3>
-  <p>Tez orada bu yerda oʻquv boʻlimlari paydo boʻladi.</p>
+  <h3>Hozircha biletlar qoʻshilmagan</h3>
+  <p>Tez orada bu yerda biletlar paydo boʻladi.</p>
 </div>
 {% endif %}
 
@@ -113,8 +85,8 @@
   <div class="weak-block__head">
     <span class="icon-tile icon-tile--t2"><i class="bi bi-graph-down-arrow" aria-hidden="true"></i></span>
     <div>
-      <h2 id="weak-title" class="h3">Kuchsiz mavzularingiz</h2>
-      <p class="text-muted">Bu mavzularda xatolar koʻproq. Imtihondan oldin ularni mustahkamlang.</p>
+      <h2 id="weak-title" class="h3">Kuchsiz biletlaringiz</h2>
+      <p class="text-muted">Bu biletlarda xatolar koʻproq. Imtihondan oldin ularni mustahkamlang.</p>
     </div>
   </div>
 
@@ -144,7 +116,7 @@
   {% else %}
   <div class="empty-state weak-block__empty">
     <span class="empty-state__icon"><i class="bi bi-bar-chart-line" aria-hidden="true"></i></span>
-    <p>Mashq qilganingizdan soʻng bu yerda kuchsiz mavzular chiqadi.</p>
+    <p>Mashq qilganingizdan soʻng bu yerda kuchsiz biletlar chiqadi.</p>
   </div>
   {% endif %}
 </section>

@@ -11,7 +11,7 @@
      data-start="{{ start_index }}">
 
   <header class="practice-bar">
-    <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-icon practice-bar__back" aria-label="Mavzularga qaytish" title="Mavzularga qaytish">
+    <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-icon practice-bar__back" aria-label="Biletlarga qaytish" title="Biletlarga qaytish">
       <i class="bi bi-x-lg" aria-hidden="true"></i>
     </a>
     <div class="practice-bar__info">
@@ -54,7 +54,7 @@
           <p class="practice-summary__score">Toʻgʻri javoblar: <strong id="summary-score"></strong> / {{ items|length }}</p>
           <div class="practice-summary__actions">
             <button type="submit" form="finish-form" class="btn btn-accent btn-lg">Natijani koʻrish <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
-            <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-lg"><i class="bi bi-grid" aria-hidden="true"></i> Boshqa mavzu</a>
+            <a href="{% url 'topic_list' %}" class="btn btn-ghost btn-lg"><i class="bi bi-grid" aria-hidden="true"></i> Boshqa bilet</a>
           </div>
         </div>
 

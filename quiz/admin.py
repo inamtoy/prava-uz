@@ -113,8 +113,8 @@ class TopicAdmin(PravaListMixin, ModelAdmin):
     ordering = ("order", "name")
     prepopulated_fields = {"slug": ("name",)}
     search_fields = ("name", "description")
-    list_head_title = "Mavzularni boshqarish"
-    list_head_subtitle = "Imtihon savollari boʻlingan mavzular roʻyxati, tartibi va sozlamalari."
+    list_head_title = "Biletlarni boshqarish"
+    list_head_subtitle = "Imtihon savollari boʻlingan biletlar roʻyxati, tartibi va sozlamalari."
     fieldsets = (
         (None, {"fields": ("name", "slug", "description", "order")}),
     )
@@ -132,13 +132,13 @@ class TopicAdmin(PravaListMixin, ModelAdmin):
 
     def get_list_head(self, request):
         return {
-            "count_label": f"{Topic.objects.count()} ta mavzu",
-            "actions": [{"label": "Yangi mavzu", "icon": "add", "style": "accent", "url": reverse("admin:quiz_topic_add")}],
+            "count_label": f"{Topic.objects.count()} ta bilet",
+            "actions": [{"label": "Yangi bilet", "icon": "add", "style": "accent", "url": reverse("admin:quiz_topic_add")}],
             "note": "Tartib raqamini oʻzgartirib, pastdagi «Saqlash» tugmasini bosing — "
-                    "oʻquvchilarga mavzular aynan shu tartibda koʻrsatiladi.",
+                    "oʻquvchilarga biletlar aynan shu tartibda koʻrsatiladi.",
         }
 
-    @display(description="Mavzu", ordering="name")
+    @display(description="Bilet", ordering="order")
     def topic_card(self, obj):
         desc = obj.description if len(obj.description) <= 90 else obj.description[:88] + "…"
         return format_html(
@@ -168,10 +168,10 @@ class TopicAdmin(PravaListMixin, ModelAdmin):
     @display(description="Tavsiya")
     def recommendation(self, obj):
         if obj._active_count < MIN_TOPIC_QUESTIONS:
-            return format_html('<span class="prava-tag prava-tag--warn" title="Har mavzuda kamida {} ta faol savol tavsiya etiladi">{} tadan kam savol</span>',
+            return format_html('<span class="prava-tag prava-tag--warn" title="Har biletda kamida {} ta faol savol tavsiya etiladi">{} tadan kam savol</span>',
                                MIN_TOPIC_QUESTIONS, MIN_TOPIC_QUESTIONS)
         if obj._answered and obj._correct * 100 / obj._answered < 60:
-            return format_html('<span class="prava-tag prava-tag--bad">{}</span>', "Qiyin mavzu")
+            return format_html('<span class="prava-tag prava-tag--bad">{}</span>', "Qiyin bilet")
         return format_html('<span class="prava-tag prava-tag--ok">{}</span>', "Tayyor")
 
     @display(description="")
@@ -188,7 +188,7 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
     list_filter = (("topic", RelatedDropdownFilter), "is_active", HasImageFilter, ExplanationFilter, HardFilter)
     filter_params = ("topic__id__exact", "is_active__exact", "rasm", "izoh", "qiyin")
     list_head_title = "Savollar"
-    list_head_subtitle = "Imtihon savollari bazasi, mavzular va koʻrsatkichlarni boshqarish."
+    list_head_subtitle = "Imtihon savollari bazasi, biletlar va koʻrsatkichlarni boshqarish."
     list_filter_submit = True
     list_select_related = ("topic",)
     list_per_page = 25
@@ -203,7 +203,7 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
             "description": "Xato qilgan oʻquvchiga natija sahifasida koʻrsatiladi.",
         }),
         ("Nashr parametrlari", {"fields": ("is_active", "created_at"), "classes": [SIDE]}),
-        ("Mavzu", {"fields": ("topic",), "classes": [SIDE]}),
+        ("Bilet", {"fields": ("topic",), "classes": [SIDE]}),
         ("Savol rasmi", {"fields": ("image",), "classes": [SIDE]}),
         ("Savol statistikasi", {"fields": ("question_stats",), "classes": [SIDE, "prava-stats"]}),
     )
@@ -256,7 +256,7 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
         badge = "" if obj.explanation else format_html(' <span class="prava-badge prava-badge--warn">{}</span>', "Izohsiz")
         return format_html('<span class="prava-qtext">{}</span>{}<div class="prava-muted">ID: #{}</div>', text, badge, obj.pk)
 
-    @display(description="Mavzu", ordering="topic__order")
+    @display(description="Bilet", ordering="topic__order")
     def topic_badge(self, obj):
         return topic_chip(obj.topic)
 

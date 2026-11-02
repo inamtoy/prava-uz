@@ -76,3 +76,11 @@
 - Foydalanuvchilar: KPI (jami, 7 kunda faol, o'rtacha tayyorgarlik), eng yaxshi natija, oxirgi faollik. Telefon raqami, "Premium", bloklash — modelda yo'q, qo'yilmadi.
 - Imtihonlar: KPI (bugun/kecha, o'tish %, o'rtacha vaqt), natija tablari; imtihon sahifasi — xatolar tahlili kartalari (Barchasi/To'g'ri/Xato), inline jadval o'rniga.
 - Hali yo'q: global qidiruv, CSV import/eksport, qatordagi faol toggle, javoblarni sudrab tartiblash, savol "o'quvchi ko'rinishi" preview, qiyinlik/ball/vaqt maydonlari.
+
+## Savollar bazasi: Excel fayldan, mavzu = bilet (2026-11-02)
+- Foydalanuvchi so'rovi bilan namuna ma'lumotlar (`quiz/fixtures/questions_uz.json`, 54 savol, Pillow bilan chizilgan belgilar `quiz/signs.py`) olib tashlandi. `seed_data` endi `savollar/avtotest_savollar_javoblar.xlsx` ni o'qiydi (CLAUDE.md 10-bo'limidan farq).
+- Faylda mavzu ustuni yo'q, faqat bilet raqami — foydalanuvchi qarori: **har bilet = bitta `Topic`** («N-bilet», slug `bilet-N`, `order=N`). Jadval nomi `mavzular` saqlandi; saytda va admin'da "Biletlar" deb ataladi (`verbose_name`, migratsiya `0003_topic_as_ticket`).
+- Excel kutubxonasiz o'qiladi (`quiz/xlsx_import.py`, zipfile + ElementTree) — `openpyxl` qo'shilmadi. Rasmlar varaqdagi joylashuvi (drawing anchor qatori) bo'yicha savolga bog'lanadi, nomi "Rasm fayli" ustunidan.
+- 2–4 javobli savollar bor (219 ta 2 javobli, 747 ta 3 javobli). "Izoh" ustuni — PDF haqidagi ichki eslatma, `explanation` ga yozilmaydi; izohlar keyin admin'da to'ldiriladi.
+- "Rasm PDFda yo'qolgan" — 24 ta savol nofaol (rasmsiz ma'nosiz). 95-bilet 4-savolda to'g'ri javob yo'q — import qilinmaydi.
+- Mavzular sahifasi 139 ta katta kartochka o'rniga ixcham bilet katakchalari; admin dashboard'da faqat eng past foizli 6 bilet; "kam savol" chegarasi 15 → 10.

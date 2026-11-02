@@ -181,7 +181,7 @@ UNFOLD = {
             {
                 "title": "Kontent",
                 "items": [
-                    {"title": "Mavzular", "icon": "menu_book", "link": reverse_lazy("admin:quiz_topic_changelist")},
+                    {"title": "Biletlar", "icon": "menu_book", "link": reverse_lazy("admin:quiz_topic_changelist")},
                     {"title": "Savollar", "icon": "help", "link": reverse_lazy("admin:quiz_question_changelist"),
                      "active": lambda request: request.path.startswith(str(reverse_lazy("admin:quiz_question_changelist")))
                      and request.GET.get("rasm") != "bor"},

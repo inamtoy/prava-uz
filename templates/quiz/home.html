@@ -23,7 +23,7 @@
           <a class="btn btn-outline-light btn-lg" href="{% url 'exam_start' %}"><i class="bi bi-play-circle-fill" aria-hidden="true"></i> Imtihonni sinab koʻrish</a>
         </div>
         <ul class="hero__trust">
-          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ topic_count }} ta mavzu</li>
+          <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> {{ topic_count }} ta bilet</li>
           <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Har javobga izoh</li>
           <li><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Telefonda ham qulay</li>
         </ul>
@@ -76,7 +76,7 @@
     </div>
     <div class="stats-strip__item">
       <span class="stats-strip__value">{{ topic_count }} <small>ta</small></span>
-      <span class="stats-strip__label">Mavzu</span>
+      <span class="stats-strip__label">Bilet</span>
       <span class="stats-strip__hint">Qoidalar boʻlimlari boʻyicha</span>
     </div>
     <div class="stats-strip__item">
@@ -97,15 +97,15 @@
   <div class="home-section__head home-section__head--center">
     <span class="home-pill">Bosqichma-bosqich</span>
     <h2 id="how-title">3 oddiy qadamda imtihonga tayyorlaning</h2>
-    <p>Mavzularni oʻrganing, mashq qiling va haqiqiy imtihon formatida oʻzingizni sinab koʻring.</p>
+    <p>Biletlarni oʻrganing, mashq qiling va haqiqiy imtihon formatida oʻzingizni sinab koʻring.</p>
   </div>
   <div class="row g-4">
     <div class="col-12 col-md-4">
       <article class="step-card">
         <span class="step-card__num">01</span>
-        <h3>Mavzuni tanlang</h3>
+        <h3>Biletni tanlang</h3>
         <p>Umumiy qoidalar, yoʻl belgilari, svetofor, chorrahalar va boshqa boʻlimlardan birini tanlang.</p>
-        <span class="step-card__foot"><i class="bi bi-book" aria-hidden="true"></i> {{ topic_count }} ta mavzu</span>
+        <span class="step-card__foot"><i class="bi bi-book" aria-hidden="true"></i> {{ topic_count }} ta bilet</span>
       </article>
     </div>
     <div class="col-12 col-md-4">
@@ -161,7 +161,7 @@
           <span class="icon-tile icon-tile--lg icon-tile--t1"><i class="bi bi-graph-up-arrow" aria-hidden="true"></i></span>
           <div>
             <h3>Shaxsiy statistika</h3>
-            <p>Qaysi mavzularda kuchli va qaysilarida koʻproq mashq kerakligini profilingizda koʻrasiz.</p>
+            <p>Qaysi biletlarda kuchli va qaysilarida koʻproq mashq kerakligini profilingizda koʻrasiz.</p>
           </div>
         </article>
       </div>
@@ -183,11 +183,11 @@
   <div class="cta-band">
     <div class="cta-band__text">
       <h2 id="cta-title">Bugunoq tayyorgarlikni boshlang</h2>
-      <p>Mavzular boʻyicha mashq qiling va imtihonni birinchi urinishda topshiring.</p>
+      <p>Biletlar boʻyicha mashq qiling va imtihonni birinchi urinishda topshiring.</p>
     </div>
     <div class="cta-band__actions">
       {% if user.is_authenticated %}
-        <a class="btn btn-accent btn-lg" href="{% url 'topic_list' %}">Mavzularni koʻrish</a>
+        <a class="btn btn-accent btn-lg" href="{% url 'topic_list' %}">Biletlarni koʻrish</a>
       {% else %}
         <a class="btn btn-accent btn-lg" href="{% url 'register' %}">Bepul boshlash</a>
       {% endif %}

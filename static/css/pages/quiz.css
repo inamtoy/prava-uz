@@ -65,16 +65,30 @@
   .overall-banner__rule { flex: 0 0 auto; min-width: 250px; }
 }
 
-/* ---------- Mavzu kartasi ---------- */
-.topic-card { display: flex; flex-direction: column; height: 100%; gap: 1rem; border-radius: var(--radius-lg); }
-.topic-card__top { display: flex; align-items: flex-start; justify-content: space-between; gap: .75rem; }
-.topic-card__meta { display: flex; align-items: center; gap: .875rem; }
-.topic-card__meta .kicker { display: block; }
-.topic-card__count { display: block; font-size: .9375rem; font-weight: 500; color: var(--ink-700); }
-.topic-card__title { margin: 0; font-size: 1.25rem; font-weight: 800; }
-.topic-card__desc { margin: -.5rem 0 0; color: var(--ink-500); line-height: 1.55; }
-.topic-card__action { margin-top: auto; padding-top: .25rem; }
-.topic-card__action .btn { min-height: 48px; }
+/* ---------- Biletlar katakchalari ---------- */
+.ticket-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: .625rem;
+  margin: 0; padding: 0; list-style: none;
+}
+.ticket-grid form { margin: 0; }
+.ticket {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .25rem; width: 100%; min-height: 72px;
+  padding: .75rem .875rem .625rem; text-align: left; font: inherit; color: var(--ink-900); cursor: pointer;
+  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow-sm);
+  transition: border-color .15s, transform .15s;
+}
+.ticket:hover, .ticket:focus-visible { border-color: var(--ink-700); transform: translateY(-1px); }
+.ticket__name { font-family: var(--font-display); font-weight: 800; font-size: 1rem; }
+.ticket__meta { font-size: .8125rem; color: var(--ink-500); font-variant-numeric: tabular-nums; }
+.ticket__bar { display: block; width: 100%; height: 4px; margin-top: auto; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
+.ticket__bar span { display: block; height: 100%; background: var(--accent); }
+.ticket.is-progress { border-color: var(--accent); }
+.ticket.is-done { border-color: var(--success); background: var(--success-50); }
+.ticket.is-done .ticket__bar span { background: var(--success); }
+.ticket.is-empty { cursor: default; opacity: .55; box-shadow: none; }
+.ticket-legend { display: flex; flex-wrap: wrap; align-items: center; gap: .375rem 1rem; margin: .875rem 0 0; font-size: .875rem; }
+.ticket-legend__dot { display: inline-block; width: 10px; height: 10px; margin-right: -.625rem; border-radius: 3px; border: 2px solid var(--accent); }
+.ticket-legend__dot.is-done { border-color: var(--success); background: var(--success-50); }
 
 /* ---------- Kuchsiz mavzular ---------- */
 .weak-block { margin-top: 2.5rem; border-radius: var(--radius-lg); }

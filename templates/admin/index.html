@@ -56,7 +56,7 @@
     </a>
   </section>
 
-  {# ---- Grafik + mavzular ---- #}
+  {# ---- Grafik + biletlar ---- #}
   <section class="prava-grid prava-grid--chart">
     <div class="prava-card">
       <div class="prava-card__head">
@@ -83,8 +83,8 @@
     <div class="prava-card">
       <div class="prava-card__head">
         <div>
-          <h2 class="prava-h2">Mavzular samaradorligi</h2>
-          <p class="prava-muted">Toʻgʻri javob berish foizi boʻyicha</p>
+          <h2 class="prava-h2">Eng qiyin biletlar</h2>
+          <p class="prava-muted">Toʻgʻri javob foizi eng past 6 ta bilet</p>
         </div>
       </div>
       <ul class="prava-bars">
@@ -98,7 +98,7 @@
             <span class="prava-muted">{{ t.total }} ta javob · {{ t.active }} ta faol savol</span>
           </li>
         {% empty %}
-          <li class="prava-empty">Mavzular yoʻq.</li>
+          <li class="prava-empty">Hali javoblar yoʻq.</li>
         {% endfor %}
       </ul>
     </div>
@@ -139,7 +139,7 @@
       {% if d.hardest %}
         <div class="prava-table-wrap">
           <table class="prava-table">
-            <thead><tr><th>Savol mazmuni</th><th>Mavzu</th><th>Xato %</th><th class="prava-right">Amal</th></tr></thead>
+            <thead><tr><th>Savol mazmuni</th><th>Bilet</th><th>Xato %</th><th class="prava-right">Amal</th></tr></thead>
             <tbody>
               {% for q in d.hardest %}
                 <tr>

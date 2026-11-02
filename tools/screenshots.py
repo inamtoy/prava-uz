@@ -99,7 +99,8 @@ def run_shots(browser, base, widths=WIDTHS):
         start.click()
         page.wait_for_load_state("networkidle")
         for i in range(3):
-            visible_card(page).locator(".answer-option").nth(i % 4).click()
+            options = visible_card(page).locator(".answer-option")
+            options.nth(i % options.count()).click()
             page.wait_for_timeout(250)
             page.click("#next-btn")
         shot(page, f"08-exam-{label}", full_page=False)
@@ -159,7 +160,8 @@ def run_flow(browser, base):
     for i in range(count):
         card = visible_card(page)
         with page.expect_response("**/javob/") as resp:
-            card.locator(".answer-option").nth(i % 4).click()
+            options = card.locator(".answer-option")
+            options.nth(i % options.count()).click()
         assert resp.value.ok, "javob saqlanmadi"
         if i < count - 1:
             page.click("#next-btn")

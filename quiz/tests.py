@@ -61,25 +61,41 @@ class QuestionAdminTests(TestCase):
 
 
 class SeedDataTests(TestCase):
-    def test_seed_is_idempotent_and_valid(self):
+    def test_seed_imports_excel_and_is_idempotent(self):
         import tempfile
 
         from django.core.management import call_command
         from django.db.models import Count, Q
 
         with tempfile.TemporaryDirectory() as media, self.settings(MEDIA_ROOT=media, DEBUG=True):
-            call_command("seed_data", stdout=io.StringIO())
-            call_command("seed_data", stdout=io.StringIO())
-            self.assertEqual(Topic.objects.count(), 6)
-            self.assertGreaterEqual(Question.objects.count(), 50)
+            err = io.StringIO()
+            call_command("seed_data", stdout=io.StringIO(), stderr=err)
+            call_command("seed_data", stdout=io.StringIO(), stderr=io.StringIO())
+            self.assertEqual(Topic.objects.count(), 139)
+            self.assertEqual(Topic.objects.get(slug="bilet-1").name, "1-bilet")
+            # 1382 qator, 95-bilet 4-savolda to'g'ri javob belgilanmagan — o'tkazib yuboriladi
+            self.assertEqual(Question.objects.count(), 1381)
+            self.assertIn("95-bilet, 4-savol", err.getvalue())
             counts = Question.objects.annotate(
                 n=Count("answers"), ok=Count("answers", filter=Q(answers__is_correct=True))
             )
-            self.assertFalse(counts.exclude(n=4).exists())
+            self.assertFalse(counts.filter(Q(n__lt=2) | Q(n__gt=4)).exists())
             self.assertFalse(counts.exclude(ok=1).exists())
-            self.assertGreaterEqual(Question.objects.exclude(image="").exclude(image=None).count(), 4)
+            self.assertEqual(Question.objects.exclude(image="").exclude(image=None).count(), 901)
+            # rasmi PDFda yo'qolgan savollar nofaol
+            self.assertEqual(Question.objects.filter(is_active=False).count(), 24)
+            first = Question.objects.filter(topic__slug="bilet-1").order_by("id").first()
+            self.assertEqual(first.image.name, "questions/b001_s01_0.jpeg")
+            self.assertTrue(first.answers.get(is_correct=True).text.startswith("“Nogiron”"))
             self.assertEqual(User.objects.get(username="demo").exams.count(), 3)
             self.assertTrue(User.objects.get(username="admin").is_staff)
+
+
+class UzApostropheTests(TestCase):
+    def test_apostrophes_normalized(self):
+        from quiz.xlsx_import import uz_apostrophes
+
+        self.assertEqual(uz_apostrophes("to`g'ri ta'sir bo`lgan"), "toʻgʻri taʼsir boʻlgan")
 
 
 class SeedDataProductionTests(TestCase):
@@ -90,13 +106,13 @@ class SeedDataProductionTests(TestCase):
         from django.core.management.base import CommandError
 
         with tempfile.TemporaryDirectory() as media, self.settings(MEDIA_ROOT=media, DEBUG=False):
-            call_command("seed_data", stdout=io.StringIO())
+            call_command("seed_data", stdout=io.StringIO(), stderr=io.StringIO())
             self.assertFalse(User.objects.filter(username__in=["admin", "demo"]).exists())
             self.assertGreaterEqual(Question.objects.count(), 50)
             with self.assertRaises(CommandError):
                 call_command("seed_data", "--reset", stdout=io.StringIO())
             self.assertGreaterEqual(Question.objects.count(), 50)
-            call_command("seed_data", "--demo", stdout=io.StringIO())
+            call_command("seed_data", "--demo", stdout=io.StringIO(), stderr=io.StringIO())
             self.assertTrue(User.objects.filter(username="demo").exists())
 
 

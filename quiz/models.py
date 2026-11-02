@@ -10,15 +10,15 @@ class Topic(models.Model):
     class Meta:
         db_table = "mavzular"
         ordering = ["order", "name"]
-        verbose_name = "mavzu"
-        verbose_name_plural = "mavzular"
+        verbose_name = "bilet"
+        verbose_name_plural = "biletlar"
 
     def __str__(self):
         return self.name
 
 
 class Question(models.Model):
-    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name="questions", verbose_name="mavzu")
+    topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name="questions", verbose_name="bilet")
     text = models.TextField("savol matni")
     image = models.ImageField("rasm", upload_to="questions/", blank=True, null=True)
     explanation = models.TextField("izoh", blank=True)

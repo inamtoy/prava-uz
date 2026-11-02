@@ -1,6 +1,6 @@
 # Prava.uz — haydovchilik imtihoniga tayyorgarlik
 
-Haydovchilik guvohnomasi nazariy imtihoniga tayyorlanuvchilar uchun bepul onlayn test sayti: mavzular boʻyicha mashq, 25 daqiqalik imtihon simulyatori va xatolar tahlili.
+Haydovchilik guvohnomasi nazariy imtihoniga tayyorlanuvchilar uchun bepul onlayn test sayti: biletlar boʻyicha mashq, 25 daqiqalik imtihon simulyatori va xatolar tahlili.
 
 Universitet loyihasi — TATU, Dasturiy injiniring.
 
@@ -25,17 +25,17 @@ Barcha sahifalar 1440px va 375px kenglikda: [`screenshots/`](screenshots/). Himo
 ## Imkoniyatlar (MVP)
 
 - Roʻyxatdan oʻtish, kirish (**username yoki email** bilan), chiqish
-- 6 ta mavzu, har biri boʻyicha progress (oʻzlashtirilgan savollar %)
-- **Mashq rejimi** — mavzu tanlanadi, har javobdan keyin darhol toʻgʻri/xato va izoh koʻrsatiladi
+- **1381 ta haqiqiy imtihon savoli, 139 ta bilet, 901 ta rasm** — Excel fayldan yuklanadi (`savollar/`), har bilet boʻyicha progress (oʻzlashtirilgan savollar %)
+- **Mashq rejimi** — bilet tanlanadi, har javobdan keyin darhol toʻgʻri/xato va izoh koʻrsatiladi
 - **Imtihon rejimi** — 20 ta tasodifiy savol, 25 daqiqa, 2 tagacha xato ruxsat (18/20 — oʻtdi)
   - taymer brauzerda, vaqt nazorati serverda; sahifa yangilansa ham imtihon va taymer davom etadi
   - vaqt tugasa imtihon avtomatik yakunlanadi, muddatdan keyingi javob qabul qilinmaydi
   - javob bosilgach darrov koʻrinadi: xato — qizil, toʻgʻri — yashil; birinchi javob yakuniy
   - savollar xaritasi, klaviatura (`1`–`4`, `←`/`→`), yakunlash modali
 - **Natija sahifasi** va **xatolar tahlili** (siz tanlagan javob, toʻgʻri javob, izoh, rasm)
-- **Profil va statistika** — jami/oʻtgan imtihonlar, oʻrtacha va eng yaxshi natija, natijalar dinamikasi grafigi, mavzular boʻyicha foizlar, kuchsiz mavzular
+- **Profil va statistika** — jami/oʻtgan imtihonlar, oʻrtacha va eng yaxshi natija, natijalar dinamikasi grafigi, biletlar boʻyicha foizlar, kuchsiz biletlar
 - **Yagona kirish** — `/accounts/login/` hammaga: admin → boshqaruv paneli, oʻquvchi → profil (Django admin'ning oʻz login sahifasi yoʻq)
-- **Admin panel** (django-unfold) — dashboard (KPI, 7 kunlik grafik, mavzular samaradorligi, eng koʻp xato qilinadigan savollar, kontent holati), savol + 4 ta javob + rasm, aynan bitta toʻgʻri javob tekshiriladi, bulk faollashtirish/oʻchirib qoʻyish
+- **Admin panel** (django-unfold) — dashboard (KPI, 7 kunlik grafik, eng qiyin biletlar, eng koʻp xato qilinadigan savollar, kontent holati), savol + 2–4 ta javob + rasm, aynan bitta toʻgʻri javob tekshiriladi, bulk faollashtirish/oʻchirib qoʻyish
 - Telefon ekranida (360px) toʻliq ishlaydi
 
 ## Texnologiyalar
@@ -131,7 +131,7 @@ sudo -u prava cp deploy/env.production.example .env && sudo -u prava nano .env &
 # 5. Baza, statik fayllar, savollar, admin
 sudo -u prava .venv/bin/python manage.py migrate
 sudo -u prava .venv/bin/python manage.py collectstatic --noinput
-sudo -u prava .venv/bin/python manage.py seed_data          # DEBUG=False: faqat mavzu va savollar (demo foydalanuvchisiz)
+sudo -u prava .venv/bin/python manage.py seed_data          # DEBUG=False: faqat biletlar va savollar (demo foydalanuvchisiz)
 sudo -u prava .venv/bin/python manage.py createsuperuser    # avtomatik role=admin
 sudo -u prava .venv/bin/python manage.py check --deploy
 
@@ -177,7 +177,23 @@ sudo systemctl reload prava_uz        # workerlar uzilishsiz qayta ishga tushadi
 
 > ⚠️ Bu parollar faqat lokal ishlab chiqish uchun. Serverda (`DEBUG=False`) `seed_data` na admin, na demo oʻquvchini yaratmaydi (demo kerak boʻlsa `--demo`), `--reset` esa butunlay taqiqlangan — `python manage.py createsuperuser` ishlating.
 
-`seed_data` qayta ishga tushirilsa dublikat yaratmaydi; `--reset` — mavzular, savollar va demo maʼlumotlarni oʻchirib qayta yaratadi. Savollar matni: `quiz/fixtures/questions_uz.json` (54 savol, 6 mavzu); yoʻl belgilari rasmlari Pillow bilan chiziladi (`quiz/signs.py`).
+## Savollar bazasi (Excel)
+
+Savollar `savollar/avtotest_savollar_javoblar.xlsx` faylidan yuklanadi (manba: rasmiy avtotest savollari PDF, 1382 qator). `seed_data` uni qoʻshimcha kutubxonasiz oʻqiydi (`quiz/xlsx_import.py`: `zipfile` + XML):
+
+| Excel ustuni | Saytda |
+|---|---|
+| Bilet | Bilet (`Topic`): «1-bilet» … «139-bilet», slug `bilet-N` |
+| Savol | `Question.text` |
+| Rasm (yacheykaga joylashtirilgan) | `Question.image` → `media/questions/<Rasm fayli>` |
+| A, B, C, D | `Answer` (boʻsh variantlar tashlanadi — 2–4 ta javob) |
+| Toʻgʻri javob (harf) | `Answer.is_correct` |
+| Izoh | ichki eslatma; «Rasm PDFda yoʻqolgan» boʻlsa savol **nofaol** (24 ta) |
+
+- Matndagi `` ` `` va `'` oʻzbek lotin belgilariga almashtiriladi (`oʻ`, `gʻ`, `ʼ`).
+- Toʻgʻri javobi belgilanmagan qator (95-bilet, 4-savol) oʻtkazib yuboriladi va konsolga yoziladi. Natija: **139 bilet, 1381 savol (1357 faol), 901 rasm**.
+- Boshqa fayldan yuklash: `python manage.py seed_data --file yol/fayl.xlsx` (ustunlar tartibi xuddi shunday).
+- Qayta ishga tushirilsa dublikat yaratmaydi (allaqachon savoli bor bilet oʻtkazib yuboriladi); `--reset` — biletlar, savollar, rasmlar va demo maʼlumotlarni oʻchirib qayta yuklaydi.
 
 ## Yagona login va rollar
 
@@ -201,11 +217,11 @@ Kirish sahifasi bitta — `/accounts/login/` (username yoki email + parol). Kirg
 
 Admin panel — Django admin + [django-unfold](https://github.com/unfoldadmin/django-unfold), dizayn manbasi `design/admin/` (Stitch).
 
-- **Boshqaruv paneli:** 4 KPI (jami savollar, oʻquvchilar, bugungi imtihonlar, oʻrtacha oʻtish %), oxirgi 7 kunlik imtihonlar grafigi (topshirildi / oʻtdi), mavzular boʻyicha toʻgʻri javob %, eng koʻp xato qilinadigan 5 savol (tahrirlash havolasi bilan), oxirgi imtihonlar, «Kontent holati» ogohlantirishlari (izohsiz savollar, 15 tadan kam savolli mavzular, nofaol savollar). Hammasi bazadagi real maʼlumotdan, har blok bitta soʻrov.
-- **Savollar:** rasm miniatyurasi, mavzu, variantlar soni, toʻgʻri javob % (chiziq bilan), faol/nofaol; filtrlar — mavzu, faol, rasmli, izohsiz; qidiruv; bulk: faollashtirish / oʻchirib qoʻyish.
-- **Savol formasi (2 ustun):** chapda matn, 4 ta javob varianti (aynan bitta toʻgʻri — tekshiriladi), izoh; oʻngda holat, mavzu, rasm (preview), statistika — necha marta javob berilgan, toʻgʻri %, eng koʻp tanlangan xato variant.
+- **Boshqaruv paneli:** 4 KPI (jami savollar, oʻquvchilar, bugungi imtihonlar, oʻrtacha oʻtish %), oxirgi 7 kunlik imtihonlar grafigi (topshirildi / oʻtdi), toʻgʻri javob foizi eng past 6 ta bilet, eng koʻp xato qilinadigan 5 savol (tahrirlash havolasi bilan), oxirgi imtihonlar, «Kontent holati» ogohlantirishlari (izohsiz savollar, 10 tadan kam savolli biletlar, nofaol savollar). Hammasi bazadagi real maʼlumotdan, har blok bitta soʻrov.
+- **Savollar:** rasm miniatyurasi, bilet, variantlar soni, toʻgʻri javob % (chiziq bilan), faol/nofaol; filtrlar — bilet, faol, rasmli, izohsiz; qidiruv; bulk: faollashtirish / oʻchirib qoʻyish.
+- **Savol formasi (2 ustun):** chapda matn, 2–4 ta javob varianti (aynan bitta toʻgʻri — tekshiriladi), izoh; oʻngda holat, bilet, rasm (preview), statistika — necha marta javob berilgan, toʻgʻri %, eng koʻp tanlangan xato variant.
 - **Imtihonlar:** faqat koʻrish (oʻzgartirish va oʻchirish yopiq); filtrlar — sana oraligʻi, rejim, natija, holat; ichida 20 ta savol: tanlangan javob, toʻgʻri javob, natija.
-- **Mavzular** (savollar va faol savollar soni, tartib), **foydalanuvchilar** (rol, imtihonlar soni, unfold formalari).
+- **Biletlar** (savollar va faol savollar soni, tartib), **foydalanuvchilar** (rol, imtihonlar soni, unfold formalari).
 
 Unfold'da qilib boʻlmagan joylar roʻyxati — `NOTES.md`.
 
@@ -235,7 +251,7 @@ Unfold'da qilib boʻlmagan joylar roʻyxati — `NOTES.md`.
 | Hujjatdagi modul | Django app | Vazifasi |
 |---|---|---|
 | accounts | `accounts` | Roʻyxatdan oʻtish, kirish (email yoki username), profil |
-| tests | **`quiz`** | Mavzular, savollar, mashq va imtihon ekranlari |
+| tests | **`quiz`** | Biletlar (mavzular jadvali), savollar, mashq va imtihon ekranlari |
 | results | `results` | Ball hisoblash, xatolar tahlili, statistika |
 | admin | Django admin + unfold (`*/admin.py`, `results/dashboard.py`) | Boshqaruv paneli, savol, javob, rasm, natijalar |
 
@@ -246,7 +262,7 @@ Unfold'da qilib boʻlmagan joylar roʻyxati — `NOTES.md`.
 | Jadval | Model | Asosiy maydonlar |
 |---|---|---|
 | `foydalanuvchilar` | `accounts.User` | username, email (unique), parol (PBKDF2 xesh), role (`student`/`admin`) |
-| `mavzular` | `quiz.Topic` | name, slug, description, order |
+| `mavzular` | `quiz.Topic` | name, slug, description, order — saytda **bilet** sifatida (139 ta) |
 | `savollar` | `quiz.Question` | topic → mavzular, text, image, explanation, is_active |
 | `javoblar` | `quiz.Answer` | question → savollar, text, is_correct (hujjatda `togri_mi`) |
 | `imtihonlar` | `results.Exam` | user, mode (`exam`/`practice`), topic, started_at, finished_at, duration_seconds, total_questions, score, is_passed, status |

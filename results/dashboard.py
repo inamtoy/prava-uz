@@ -19,7 +19,7 @@ WEEKDAYS = ["Dush", "Sesh", "Chor", "Pay", "Juma", "Shan", "Yak"]
 MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust",
           "sentabr", "oktabr", "noyabr", "dekabr"]
 WEEKDAYS_FULL = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"]
-MIN_TOPIC_QUESTIONS = 15
+MIN_TOPIC_QUESTIONS = 10  # bilet odatda 10 savol
 
 
 def _greeting(hour):
@@ -159,16 +159,16 @@ def _content_health(topic_stats):
     for t in small_topics[:3]:
         alerts.append({
             "tone": "info", "icon": "bolt",
-            "title": f"«{t['topic'].name}» mavzusida {t['active']} ta savol",
-            "text": f"Har bir mavzuda kamida {MIN_TOPIC_QUESTIONS} ta faol savol boʻlishi tavsiya etiladi.",
+            "title": f"«{t['topic'].name}»da {t['active']} ta savol",
+            "text": f"Har bir biletda kamida {MIN_TOPIC_QUESTIONS} ta faol savol boʻlishi tavsiya etiladi.",
             "link": reverse("admin:quiz_question_add") + f"?topic={t['topic'].pk}", "link_text": "Savol qoʻshish",
         })
     if len(small_topics) > 3:
         alerts.append({
             "tone": "info", "icon": "more_horiz",
-            "title": f"Yana {len(small_topics) - 3} ta mavzuda savollar kam",
-            "text": f"{MIN_TOPIC_QUESTIONS} tadan kam faol savolli mavzular.",
-            "link": reverse("admin:quiz_topic_changelist"), "link_text": "Mavzularni koʻrish",
+            "title": f"Yana {len(small_topics) - 3} ta biletda savollar kam",
+            "text": f"{MIN_TOPIC_QUESTIONS} tadan kam faol savolli biletlar.",
+            "link": reverse("admin:quiz_topic_changelist"), "link_text": "Biletlarni koʻrish",
         })
     if inactive:
         alerts.append({
@@ -181,7 +181,7 @@ def _content_health(topic_stats):
         alerts.append({
             "tone": "ok", "icon": "verified",
             "title": "Kontent tartibda",
-            "text": "Barcha faol savollarda izoh bor va mavzular yetarli toʻldirilgan.",
+            "text": "Barcha faol savollarda izoh bor va biletlar yetarli toʻldirilgan.",
             "link": "", "link_text": "",
         })
     return {"alerts": alerts, "issues": sum(1 for a in alerts if a["tone"] in ("warn", "info"))}
@@ -198,7 +198,8 @@ def dashboard_callback(request, context):
             "date": f"{today.day}-{MONTHS[today.month - 1]}, {today.year}-yil · {WEEKDAYS_FULL[today.weekday()]}",
             "kpi": _kpis(today),
             "chart": _week_chart(today),
-            "topics": topic_stats,
+            # 139 ta bilet sig'maydi — eng past to'g'ri javob foizli 6 tasi
+            "topics": sorted((t for t in topic_stats if t["total"]), key=lambda t: t["percent"])[:6],
             "hardest": _hardest_questions(),
             "recent": _recent_exams(),
             "health": _content_health(topic_stats),

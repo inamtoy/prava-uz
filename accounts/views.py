@@ -64,7 +64,7 @@ def register(request):
     if request.method == "POST" and form.is_valid():
         user = form.save()
         login(request, user, backend="accounts.backends.EmailOrUsernameBackend")
-        messages.success(request, f"Xush kelibsiz, {user.first_name or user.username}! Endi mavzuni tanlab mashq qilishingiz mumkin.")
+        messages.success(request, f"Xush kelibsiz, {user.first_name or user.username}! Endi biletni tanlab mashq qilishingiz mumkin.")
         return redirect("topic_list")
     return render(request, "accounts/register.html", {"form": form})
 
