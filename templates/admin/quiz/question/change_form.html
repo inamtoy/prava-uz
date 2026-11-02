@@ -2,6 +2,23 @@
 {# Stitch "Savolni tahrirlash": chapda matn + javoblar + izoh, o'ngda nashr, mavzu, rasm, statistika #}
 
 {% block field_sets %}
+  {% if prava_nav %}
+    {# Savollarni ketma-ket ko'rib chiqish: ro'yxatga qaytmasdan oldingi/keyingi savol #}
+    <div class="prava-qnav">
+      <a class="prava-qnav__where" href="{{ prava_nav.topic_url }}" title="Shu biletning barcha savollari">
+        <span class="material-symbols-outlined">menu_book</span>
+        <strong>{{ prava_nav.topic.name }}</strong>
+        <span class="prava-muted">{{ prava_nav.pos }} / {{ prava_nav.total }}-savol</span>
+      </a>
+      <div class="prava-qnav__actions">
+        {% if prava_nav.prev_url %}<a class="prava-qnav__btn" href="{{ prava_nav.prev_url }}" title="Saqlamasdan oldingi savolga oʻtish"><span class="material-symbols-outlined">chevron_left</span>Oldingi</a>{% endif %}
+        {% if prava_nav.next_url %}<a class="prava-qnav__btn" href="{{ prava_nav.next_url }}" title="Saqlamasdan keyingi savolga oʻtish">Keyingi<span class="material-symbols-outlined">chevron_right</span></a>{% endif %}
+        <button type="submit" name="_savenext" class="prava-qnav__btn prava-qnav__btn--accent" title="Saqlash va keyingi savolni ochish">
+          <span class="material-symbols-outlined">done</span>Saqlash va keyingisi
+        </button>
+      </div>
+    </div>
+  {% endif %}
   <div class="prava-qform">
     <div class="prava-qform__main">
       {% for fieldset in adminform %}

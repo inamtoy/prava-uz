@@ -357,6 +357,50 @@ class QueryCountTests(TestCase):
         self.assertTrue(all(n <= 10 for n in large.values()), large)
 
 
+class QuestionAdminNavigationTests(TestCase):
+    def setUp(self):
+        from results.tests import make_questions
+
+        self.client.force_login(User.objects.create_user("boss", "boss@example.com", "parol12345", role="admin"))
+        self.t1 = Topic.objects.create(name="1-bilet", slug="bilet-1", order=1)
+        self.t2 = Topic.objects.create(name="2-bilet", slug="bilet-2", order=2)
+        make_questions(self.t1, 2)
+        make_questions(self.t2, 2, start=100)
+        self.q = list(Question.objects.order_by("topic__order", "id"))
+
+    def change_url(self, q):
+        return reverse("admin:quiz_question_change", args=[q.pk])
+
+    def test_prev_next_links_cross_ticket_boundary(self):
+        resp = self.client.get(self.change_url(self.q[1]))  # 1-biletning oxirgi savoli
+        self.assertContains(resp, "2 / 2-savol")
+        self.assertContains(resp, f'href="{self.change_url(self.q[0])}"')
+        self.assertContains(resp, f'href="{self.change_url(self.q[2])}"')  # 2-biletning birinchisi
+
+    def test_save_and_next_redirects_to_next_question(self):
+        q = self.q[0]
+        answers = list(q.answers.all())
+        data = {
+            "topic": q.topic_id, "text": q.text, "explanation": "Yangi izoh", "is_active": "on", "_savenext": "1",
+            "answers-TOTAL_FORMS": str(len(answers)), "answers-INITIAL_FORMS": str(len(answers)),
+            "answers-MIN_NUM_FORMS": "0", "answers-MAX_NUM_FORMS": "4",
+        }
+        for i, a in enumerate(answers):
+            data[f"answers-{i}-id"] = a.pk
+            data[f"answers-{i}-question"] = q.pk
+            data[f"answers-{i}-text"] = a.text
+            if a.is_correct:
+                data[f"answers-{i}-is_correct"] = "on"
+        resp = self.client.post(self.change_url(q), data)
+        self.assertRedirects(resp, self.change_url(self.q[1]), fetch_redirect_response=False)
+        q.refresh_from_db()
+        self.assertEqual(q.explanation, "Yangi izoh")
+
+    def test_search_by_ticket_name(self):
+        resp = self.client.get(reverse("admin:quiz_question_changelist"), {"q": "2-bilet"})
+        self.assertEqual(resp.context["cl"].result_count, 2)
+
+
 class AdminPagesTests(TestCase):
     """Admin (unfold): sahifalar ochiladi, so'rovlar soni ma'lumotga bog'liq emas."""
 
@@ -387,13 +431,27 @@ class AdminPagesTests(TestCase):
         self.assertEqual(resp.status_code, 200, url)
         return len(ctx)
 
+    def _retake(self, times):
+        """Yana `times` ta o'quvchi barcha savollarga xato javob beradi (har savolga +times javob)."""
+        from results import services
+
+        for i in range(times):
+            student = User.objects.create_user(f"r{i}", f"r{i}@example.com", "Kuchli-parol-2026")
+            exam = services.start_exam(student)
+            for item in exam.items.select_related("question"):
+                services.save_answer(exam, item.question_id, item.question.answers.last().pk)
+            services.finish_exam(exam)
+
     def test_dashboard_shows_real_data(self):
-        self._fill(2, 12)
+        self._fill(1, 20)
+        # bitta javobdan "100% xato" deyilmaydi
+        self.assertEqual(self.client.get(reverse("admin:index")).context["dash"]["hardest"], [])
+        self._retake(2)
         resp = self.client.get(reverse("admin:index"))
         dash = resp.context["dash"]
-        self.assertEqual(dash["kpi"]["questions"]["total"], 24)
-        self.assertEqual(dash["kpi"]["exams"]["finished"], 1)
-        self.assertEqual(dash["chart"]["total"], 1)
+        self.assertEqual(dash["kpi"]["questions"]["total"], 20)
+        self.assertEqual(dash["kpi"]["exams"]["finished"], 3)
+        self.assertEqual(dash["chart"]["total"], 3)
         self.assertEqual(len(dash["hardest"]), 5)
         self.assertContains(resp, "Kontent holati")
 
@@ -429,6 +487,7 @@ class AdminPagesTests(TestCase):
 
     def test_hard_filter_and_list_head(self):
         exam = self._fill(1, 20)  # oxirgi javob tanlangan — hammasi xato
+        self._retake(2)  # qiyinlik kamida 3 ta javobdan keyin
         resp = self.client.get(reverse("admin:quiz_question_changelist") + "?qiyin=ha")
         self.assertEqual(resp.context["cl"].result_count, exam.total_questions)
         self.assertContains(resp, "Qiyin savollar (&gt;50% xato)")

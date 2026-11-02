@@ -20,6 +20,9 @@ MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust",
           "sentabr", "oktabr", "noyabr", "dekabr"]
 WEEKDAYS_FULL = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"]
 MIN_TOPIC_QUESTIONS = settings.TICKET_QUESTION_COUNT
+# Bitta-ikkita javobdan "100% xato" chiqmasin: qiyinlik shuncha javobdan keyin hisoblanadi
+MIN_QUESTION_ANSWERS = 3
+MIN_TOPIC_ANSWERS = 10
 
 
 def _greeting(hour):
@@ -117,7 +120,7 @@ def _hardest_questions(limit=5):
         ExamAnswer.objects.filter(exam__status__in=FINISHED, selected_answer__isnull=False)
         .values("question_id", "question__text", "question__topic__name")
         .annotate(total=Count("id"), wrong=Count("id", filter=Q(is_correct=False)))
-        .filter(wrong__gt=0)
+        .filter(wrong__gt=0, total__gte=MIN_QUESTION_ANSWERS)
         .annotate(rate=ExpressionWrapper(F("wrong") * 100.0 / F("total"), output_field=FloatField()))
         .order_by("-rate", "-wrong")[:limit]
     )
@@ -199,8 +202,10 @@ def dashboard_callback(request, context):
             "kpi": _kpis(today),
             "chart": _week_chart(today),
             # 139 ta bilet sig'maydi — eng past to'g'ri javob foizli 6 tasi
-            "topics": sorted((t for t in topic_stats if t["total"]), key=lambda t: t["percent"])[:6],
+            "topics": sorted((t for t in topic_stats if t["total"] >= MIN_TOPIC_ANSWERS), key=lambda t: t["percent"])[:6],
             "hardest": _hardest_questions(),
+            "min_topic_answers": MIN_TOPIC_ANSWERS,
+            "min_question_answers": MIN_QUESTION_ANSWERS,
             "recent": _recent_exams(),
             "health": _content_health(topic_stats),
             "links": {

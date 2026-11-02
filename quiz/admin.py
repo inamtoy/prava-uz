@@ -1,5 +1,6 @@
 from django.contrib import admin, messages
-from django.db.models import Count, F, Q
+from django.db.models import Count, F, OuterRef, Q, Subquery
+from django.http import HttpResponseRedirect
 from django.urls import reverse
 from django.utils.html import format_html
 from unfold.admin import ModelAdmin, TabularInline
@@ -7,7 +8,7 @@ from unfold.contrib.filters.admin import RelatedDropdownFilter
 from unfold.decorators import action, display
 
 from config.admin_ui import PravaListMixin, pill, tab
-from results.dashboard import MIN_TOPIC_QUESTIONS
+from results.dashboard import MIN_QUESTION_ANSWERS, MIN_TOPIC_ANSWERS, MIN_TOPIC_QUESTIONS
 from results.models import Exam, ExamAnswer
 
 from .forms import AnswerInlineFormSet
@@ -92,7 +93,7 @@ class ExplanationFilter(admin.SimpleListFilter):
 
 
 class HardFilter(admin.SimpleListFilter):
-    """Qiyin savollar: yakunlangan imtihonlarda javoblarning yarmidan ko'pi xato."""
+    """Qiyin savollar: kamida MIN_QUESTION_ANSWERS ta javobdan yarmidan ko'pi xato."""
     title = "qiyinlik"
     parameter_name = "qiyin"
 
@@ -101,15 +102,15 @@ class HardFilter(admin.SimpleListFilter):
 
     def queryset(self, request, queryset):
         if self.value() == "ha":  # QuestionAdmin.get_queryset annotatsiyalari
-            return queryset.filter(_answered__gt=0).alias(_correct2=F("_correct") * 2).filter(_correct2__lt=F("_answered"))
+            return queryset.filter(_answered__gte=MIN_QUESTION_ANSWERS).alias(_correct2=F("_correct") * 2).filter(_correct2__lt=F("_answered"))
         return queryset
 
 
 @admin.register(Topic)
 class TopicAdmin(PravaListMixin, ModelAdmin):
-    list_display = ("order", "topic_card", "question_count", "correct_rate", "recommendation", "links")
+    list_display = ("topic_card", "question_count", "correct_rate", "recommendation", "links")
     list_display_links = ("topic_card",)
-    list_editable = ("order",)
+    list_per_page = 30
     ordering = ("order", "name")
     prepopulated_fields = {"slug": ("name",)}
     search_fields = ("name", "description")
@@ -134,8 +135,6 @@ class TopicAdmin(PravaListMixin, ModelAdmin):
         return {
             "count_label": f"{Topic.objects.count()} ta bilet",
             "actions": [{"label": "Yangi bilet", "icon": "add", "style": "accent", "url": reverse("admin:quiz_topic_add")}],
-            "note": "Tartib raqamini oʻzgartirib, pastdagi «Saqlash» tugmasini bosing — "
-                    "oʻquvchilarga biletlar aynan shu tartibda koʻrsatiladi.",
         }
 
     @display(description="Bilet", ordering="order")
@@ -170,7 +169,7 @@ class TopicAdmin(PravaListMixin, ModelAdmin):
         if obj._active_count < MIN_TOPIC_QUESTIONS:
             return format_html('<span class="prava-tag prava-tag--warn" title="Har biletda kamida {} ta faol savol tavsiya etiladi">{} tadan kam savol</span>',
                                MIN_TOPIC_QUESTIONS, MIN_TOPIC_QUESTIONS)
-        if obj._answered and obj._correct * 100 / obj._answered < 60:
+        if obj._answered >= MIN_TOPIC_ANSWERS and obj._correct * 100 / obj._answered < 60:
             return format_html('<span class="prava-tag prava-tag--bad">{}</span>', "Qiyin bilet")
         return format_html('<span class="prava-tag prava-tag--ok">{}</span>', "Tayyor")
 
@@ -183,7 +182,7 @@ class TopicAdmin(PravaListMixin, ModelAdmin):
 @admin.register(Question)
 class QuestionAdmin(PravaListMixin, ModelAdmin):
     inlines = [AnswerInline]
-    list_display = ("thumbnail", "short_text", "topic_badge", "answer_count", "correct_rate", "status_badge", "created_at")
+    list_display = ("thumbnail", "short_text", "topic_badge", "correct_answer", "correct_rate", "status_badge")
     list_display_links = ("thumbnail", "short_text")
     list_filter = (("topic", RelatedDropdownFilter), "is_active", HasImageFilter, ExplanationFilter, HardFilter)
     filter_params = ("topic__id__exact", "is_active__exact", "rasm", "izoh", "qiyin")
@@ -191,8 +190,10 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
     list_head_subtitle = "Imtihon savollari bazasi, biletlar va koʻrsatkichlarni boshqarish."
     list_filter_submit = True
     list_select_related = ("topic",)
-    list_per_page = 25
-    search_fields = ("text", "explanation")
+    list_per_page = 30
+    # "12-bilet" yoki savol ID'si bilan ham qidiriladi
+    search_fields = ("text", "explanation", "=topic__name", "=id")
+    search_help_text = "Savol matni, izoh, bilet nomi (masalan «12-bilet») yoki ID"
     actions = ["activate", "deactivate"]
     readonly_fields = ("question_stats", "created_at")
     compressed_fields = False  # Stitch: yorliq maydon ustida (o'ng ustun tor)
@@ -214,7 +215,54 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
             _answers=Count("answers", distinct=True),
             _answered=Count("exam_answers", filter=answered, distinct=True),
             _correct=Count("exam_answers", filter=answered & Q(exam_answers__is_correct=True), distinct=True),
+            _correct_text=Subquery(
+                Answer.objects.filter(question=OuterRef("pk"), is_correct=True).values("text")[:1]
+            ),
         )
+
+    def formfield_for_dbfield(self, db_field, request, **kwargs):
+        field = super().formfield_for_dbfield(db_field, request, **kwargs)
+        if db_field.name in ("text", "explanation"):  # standart 10 qator — forma juda uzun edi
+            field.widget.attrs["rows"] = 3 if db_field.name == "text" else 4
+        return field
+
+    def _neighbours(self, obj):
+        """Bilet ichidagi o'rni va oldingi/keyingi savol; bilet chegarasida qo'shni biletga o'tadi."""
+        ids = list(Question.objects.filter(topic=obj.topic).order_by("id").values_list("id", flat=True))
+        pos = ids.index(obj.pk)
+        prev_id = ids[pos - 1] if pos else (
+            Question.objects.filter(topic__order__lt=obj.topic.order)
+            .order_by("-topic__order", "-id").values_list("id", flat=True).first()
+        )
+        next_id = ids[pos + 1] if pos + 1 < len(ids) else (
+            Question.objects.filter(topic__order__gt=obj.topic.order)
+            .order_by("topic__order", "id").values_list("id", flat=True).first()
+        )
+        return prev_id, next_id, pos + 1, len(ids)
+
+    def change_view(self, request, object_id, form_url="", extra_context=None):
+        obj = self.get_object(request, object_id)
+        if obj is not None:
+            prev_id, next_id, pos, total = self._neighbours(obj)
+            extra_context = {
+                **(extra_context or {}),
+                "prava_nav": {
+                    "topic": obj.topic, "pos": pos, "total": total,
+                    "prev_url": reverse("admin:quiz_question_change", args=[prev_id]) if prev_id else "",
+                    "next_url": reverse("admin:quiz_question_change", args=[next_id]) if next_id else "",
+                    "topic_url": reverse("admin:quiz_question_changelist") + f"?topic__id__exact={obj.topic_id}",
+                },
+            }
+        return super().change_view(request, object_id, form_url, extra_context)
+
+    def response_change(self, request, obj):
+        if "_savenext" in request.POST:
+            next_id = self._neighbours(obj)[1]
+            self.message_user(request, f"{obj.topic.name}: savol saqlandi.", messages.SUCCESS)
+            if next_id:
+                return HttpResponseRedirect(reverse("admin:quiz_question_change", args=[next_id]))
+            return HttpResponseRedirect(reverse("admin:quiz_question_changelist"))
+        return super().response_change(request, obj)
 
     def get_list_head(self, request):
         counts = Question.objects.aggregate(
@@ -223,7 +271,10 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
             with_image=Count("id", filter=~Q(image="") & Q(image__isnull=False)),
             no_explanation=Count("id", filter=Q(explanation="")),
         )
-        hard = answered_stats().alias(correct2=F("correct") * 2).filter(correct2__lt=F("total")).count()
+        hard = (
+            answered_stats().filter(total__gte=MIN_QUESTION_ANSWERS)
+            .alias(correct2=F("correct") * 2).filter(correct2__lt=F("total")).count()
+        )
         return {
             "count_label": f"{counts['total']} ta savol",
             "actions": [{"label": "Yangi savol", "icon": "add", "style": "accent", "url": reverse("admin:quiz_question_add")}],
@@ -260,14 +311,19 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
     def topic_badge(self, obj):
         return topic_chip(obj.topic)
 
-    @display(description="Variantlar", ordering="_answers")
-    def answer_count(self, obj):
-        return f"{obj._answers} ta javob"
+    @display(description="Toʻgʻri javob")
+    def correct_answer(self, obj):
+        text = obj._correct_text or "—"
+        text = text if len(text) <= 60 else text[:58] + "…"
+        return format_html('<span class="prava-correct">{}</span><div class="prava-muted">{} ta variant</div>', text, obj._answers)
 
     @display(description="Toʻgʻri javob %", ordering="_correct")
     def correct_rate(self, obj):
         if not obj._answered:
             return format_html('<span class="prava-muted">{}</span>', "Hali javob yoʻq")
+        if obj._answered < MIN_QUESTION_ANSWERS:
+            return format_html('<span class="prava-muted" title="Foiz {} ta javobdan keyin koʻrsatiladi">{} ta javob</span>',
+                               MIN_QUESTION_ANSWERS, obj._answered)
         percent = round(obj._correct * 100 / obj._answered)
         tone, word = rate_tone(percent)
         return format_html(

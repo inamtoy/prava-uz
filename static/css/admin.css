@@ -461,3 +461,27 @@ button[name="_save"]:hover, .prava-btn--accent:hover { background: var(--prava-a
   .prava-btn, .prava-kpi { transition: none; }
   .prava-btn:hover { transform: none; }
 }
+
+/* Savol formasi: oldingi / keyingi savol paneli */
+.prava-qnav {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem;
+  margin-bottom: 1.25rem; padding: .75rem 1rem;
+  background: var(--prava-card); border: 1px solid var(--prava-line); border-radius: var(--prava-radius);
+  box-shadow: var(--prava-shadow);
+}
+html.dark .prava-qnav { background: var(--color-base-900); }
+.prava-qnav__where { display: inline-flex; align-items: center; gap: .5rem; color: var(--prava-text); }
+.prava-qnav__where strong { font-family: var(--prava-display); font-size: 1rem; }
+.prava-qnav__actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.prava-qnav__btn {
+  display: inline-flex; align-items: center; gap: .25rem; min-height: 38px; padding: 0 .875rem;
+  font-weight: 600; font-size: .875rem; color: var(--prava-text); cursor: pointer;
+  background: var(--prava-soft); border: 1px solid var(--prava-line); border-radius: 10px;
+}
+.prava-qnav__btn:hover { border-color: var(--prava-muted); }
+.prava-qnav__btn .material-symbols-outlined { font-size: 20px; }
+.prava-qnav__btn--accent { color: var(--prava-ink); background: var(--prava-accent); border-color: var(--prava-accent); }
+.prava-qnav__btn--accent:hover { background: var(--prava-accent-hover); border-color: var(--prava-accent-hover); }
+
+/* Savollar ro'yxati: to'g'ri javob ustuni */
+.prava-correct { color: var(--prava-ok); font-weight: 600; }

@@ -219,6 +219,7 @@ Admin panel — Django admin + [django-unfold](https://github.com/unfoldadmin/dj
 
 - **Boshqaruv paneli:** 4 KPI (jami savollar, oʻquvchilar, bugungi imtihonlar, oʻrtacha oʻtish %), oxirgi 7 kunlik imtihonlar grafigi (topshirildi / oʻtdi), toʻgʻri javob foizi eng past 6 ta bilet, eng koʻp xato qilinadigan 5 savol (tahrirlash havolasi bilan), oxirgi imtihonlar, «Kontent holati» ogohlantirishlari (izohsiz savollar, 10 tadan kam savolli biletlar, nofaol savollar). Hammasi bazadagi real maʼlumotdan, har blok bitta soʻrov.
 - **Savollar:** rasm miniatyurasi, bilet, variantlar soni, toʻgʻri javob % (chiziq bilan), faol/nofaol; filtrlar — bilet, faol, rasmli, izohsiz; qidiruv; bulk: faollashtirish / oʻchirib qoʻyish.
+- **Savollarni ketma-ket tahrirlash:** formada «Oldingi / Keyingi» va «Saqlash va keyingisi» — ro'yxatga qaytmasdan bilet bo'yicha birin-ketin izoh yozish mumkin; qidiruv «12-bilet» yoki ID bilan ham ishlaydi.
 - **Savol formasi (2 ustun):** chapda matn, 2–4 ta javob varianti (aynan bitta toʻgʻri — tekshiriladi), izoh; oʻngda holat, bilet, rasm (preview), statistika — necha marta javob berilgan, toʻgʻri %, eng koʻp tanlangan xato variant.
 - **Imtihonlar:** faqat koʻrish (oʻzgartirish va oʻchirish yopiq); filtrlar — sana oraligʻi, rejim, natija, holat; ichida 20 ta savol: tanlangan javob, toʻgʻri javob, natija.
 - **Biletlar** (savollar va faol savollar soni, tartib), **foydalanuvchilar** (rol, imtihonlar soni, unfold formalari).

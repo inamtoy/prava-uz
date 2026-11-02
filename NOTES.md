@@ -86,3 +86,9 @@
 - Mavzular sahifasi katta kartochkalar o'rniga ixcham bilet katakchalari; admin dashboard'da faqat eng past foizli 6 bilet; "kam savol" chegarasi = `TICKET_QUESTION_COUNT`.
 - Mashq ekraniga imtihondagidek savollar xaritasi qo'shildi (`.q-nav .nav-num`, bosilsa o'sha savolga o'tadi; to'g'ri — yashil, xato — qizil). Telefonda savol kartasidan keyin chiqadi.
 - Bilet foizi va profildagi "Biletlar bo'yicha" / "Kuchsiz biletlar" endi **faqat mashq** javoblaridan (`topic_progress`, `user_stats`). Avval imtihon javoblari ham qo'shilardi: imtihon 20 savolni barcha biletlardan tasodifiy oladi, shuning uchun ochilmagan biletlarda ham 7–13% chiqib qolardi. Profilda faqat mashq qilingan biletlar ko'rsatiladi. Admin dashboard'dagi "Eng qiyin biletlar" barcha javoblar bo'yicha qoladi (savol qiyinligi).
+
+## Admin qulayligi (2026-11-02)
+- Savol formasi: tepada "N-bilet · k/15-savol", «Oldingi» / «Keyingi» (bilet chegarasida qo'shni biletga o'tadi) va «Saqlash va keyingisi» (`_savenext` → `response_change`) — 1357 savolga izoh yozishda ro'yxatga qaytish shart emas. Matn 3 qator, izoh 4 qator.
+- Savollar ro'yxati: sana o'rniga «To'g'ri javob» ustuni (Subquery, N+1 yo'q); qidiruv bilet nomi («12-bilet», aniq moslik) va ID bo'yicha ham; 30 tadan.
+- Biletlar ro'yxati: tartib maydoni (list_editable) olib tashlandi, 30 tadan sahifalanadi.
+- Qiyinlik shovqini: savol foizi/«Qiyin» filtri kamida 3 ta javobdan (`MIN_QUESTION_ANSWERS`), dashboard'dagi «Eng qiyin biletlar» va «Qiyin bilet» belgisi kamida 10 ta javobdan (`MIN_TOPIC_ANSWERS`). Avval bitta javob "100% xato" deb ko'rsatilardi.

@@ -98,7 +98,7 @@
             <span class="prava-muted">{{ t.total }} ta javob · {{ t.active }} ta faol savol</span>
           </li>
         {% empty %}
-          <li class="prava-empty">Hali javoblar yoʻq.</li>
+          <li class="prava-empty">Hali yetarli javob yoʻq — har biletga kamida {{ d.min_topic_answers }} ta javob kerak.</li>
         {% endfor %}
       </ul>
     </div>
@@ -158,7 +158,7 @@
           </table>
         </div>
       {% else %}
-        <div class="prava-empty"><span class="material-symbols-outlined">task_alt</span>Hali xato javoblar yoʻq.</div>
+        <div class="prava-empty"><span class="material-symbols-outlined">task_alt</span>Hali yetarli maʼlumot yoʻq — savol kamida {{ d.min_question_answers }} marta yechilgach koʻrinadi.</div>
       {% endif %}
       <div class="prava-card__foot">
         <span class="prava-muted">Jami {{ k.questions.active }} ta faol savol</span>
