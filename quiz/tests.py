@@ -71,8 +71,15 @@ class SeedDataTests(TestCase):
             err = io.StringIO()
             call_command("seed_data", stdout=io.StringIO(), stderr=err)
             call_command("seed_data", stdout=io.StringIO(), stderr=io.StringIO())
-            self.assertEqual(Topic.objects.count(), 139)
+            # 1357 faol savol 15 tadan: 90 ta to'liq bilet + 7 savolli oxirgi bilet
+            self.assertEqual(Topic.objects.count(), 91)
             self.assertEqual(Topic.objects.get(slug="bilet-1").name, "1-bilet")
+            active = list(
+                Topic.objects.annotate(n=Count("questions", filter=Q(questions__is_active=True)))
+                .order_by("order").values_list("n", flat=True)
+            )
+            self.assertEqual(active[:-1], [15] * 90)
+            self.assertEqual(active[-1], 7)
             # 1382 qator, 95-bilet 4-savolda to'g'ri javob belgilanmagan — o'tkazib yuboriladi
             self.assertEqual(Question.objects.count(), 1381)
             self.assertIn("95-bilet, 4-savol", err.getvalue())
@@ -144,6 +151,8 @@ class PracticeFlowTests(TestCase):
         # To'g'ri javob belgisi sahifada oldindan oshkor qilinmaydi
         self.assertNotContains(page, "answer-btn correct")
         self.assertNotContains(page, "is_correct")
+        # Savollar xaritasi: har savolga bitta bosiladigan raqam
+        self.assertContains(page, 'class="nav-num"', count=5)
 
         item = exam.items.select_related("question").first()
         wrong = item.question.answers.filter(is_correct=False).first()

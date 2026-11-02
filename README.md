@@ -25,8 +25,8 @@ Barcha sahifalar 1440px va 375px kenglikda: [`screenshots/`](screenshots/). Himo
 ## Imkoniyatlar (MVP)
 
 - Roʻyxatdan oʻtish, kirish (**username yoki email** bilan), chiqish
-- **1381 ta haqiqiy imtihon savoli, 139 ta bilet, 901 ta rasm** — Excel fayldan yuklanadi (`savollar/`), har bilet boʻyicha progress (oʻzlashtirilgan savollar %)
-- **Mashq rejimi** — bilet tanlanadi, har javobdan keyin darhol toʻgʻri/xato va izoh koʻrsatiladi
+- **1381 ta haqiqiy imtihon savoli, 91 ta bilet (15 tadan), 901 ta rasm** — Excel fayldan yuklanadi (`savollar/`), har bilet boʻyicha progress (oʻzlashtirilgan savollar %)
+- **Mashq rejimi** — bilet tanlanadi, har javobdan keyin darhol toʻgʻri/xato va izoh koʻrsatiladi; savollar xaritasi (raqamni bosib istalgan savolga oʻtish)
 - **Imtihon rejimi** — 20 ta tasodifiy savol, 25 daqiqa, 2 tagacha xato ruxsat (18/20 — oʻtdi)
   - taymer brauzerda, vaqt nazorati serverda; sahifa yangilansa ham imtihon va taymer davom etadi
   - vaqt tugasa imtihon avtomatik yakunlanadi, muddatdan keyingi javob qabul qilinmaydi
@@ -183,7 +183,7 @@ Savollar `savollar/avtotest_savollar_javoblar.xlsx` faylidan yuklanadi (manba: r
 
 | Excel ustuni | Saytda |
 |---|---|
-| Bilet | Bilet (`Topic`): «1-bilet» … «139-bilet», slug `bilet-N` |
+| Bilet, Savol № | Tartib: savollar fayldagi tartibda **15 tadan** biletlarga yigʻiladi (`TICKET_QUESTION_COUNT`) → `Topic` «1-bilet» … «91-bilet», slug `bilet-N` |
 | Savol | `Question.text` |
 | Rasm (yacheykaga joylashtirilgan) | `Question.image` → `media/questions/<Rasm fayli>` |
 | A, B, C, D | `Answer` (boʻsh variantlar tashlanadi — 2–4 ta javob) |
@@ -191,7 +191,7 @@ Savollar `savollar/avtotest_savollar_javoblar.xlsx` faylidan yuklanadi (manba: r
 | Izoh | ichki eslatma; «Rasm PDFda yoʻqolgan» boʻlsa savol **nofaol** (24 ta) |
 
 - Matndagi `` ` `` va `'` oʻzbek lotin belgilariga almashtiriladi (`oʻ`, `gʻ`, `ʼ`).
-- Toʻgʻri javobi belgilanmagan qator (95-bilet, 4-savol) oʻtkazib yuboriladi va konsolga yoziladi. Natija: **139 bilet, 1381 savol (1357 faol), 901 rasm**.
+- Toʻgʻri javobi belgilanmagan qator (95-bilet, 4-savol) oʻtkazib yuboriladi va konsolga yoziladi. Natija: **91 bilet, 1381 savol (1357 faol), 901 rasm**. Har biletda 15 ta faol savol (nofaollari hisobga kirmaydi), oxirgisida 7 ta.
 - Boshqa fayldan yuklash: `python manage.py seed_data --file yol/fayl.xlsx` (ustunlar tartibi xuddi shunday).
 - Qayta ishga tushirilsa dublikat yaratmaydi (allaqachon savoli bor bilet oʻtkazib yuboriladi); `--reset` — biletlar, savollar, rasmlar va demo maʼlumotlarni oʻchirib qayta yuklaydi.
 
@@ -262,7 +262,7 @@ Unfold'da qilib boʻlmagan joylar roʻyxati — `NOTES.md`.
 | Jadval | Model | Asosiy maydonlar |
 |---|---|---|
 | `foydalanuvchilar` | `accounts.User` | username, email (unique), parol (PBKDF2 xesh), role (`student`/`admin`) |
-| `mavzular` | `quiz.Topic` | name, slug, description, order — saytda **bilet** sifatida (139 ta) |
+| `mavzular` | `quiz.Topic` | name, slug, description, order — saytda **bilet** sifatida (91 ta) |
 | `savollar` | `quiz.Question` | topic → mavzular, text, image, explanation, is_active |
 | `javoblar` | `quiz.Answer` | question → savollar, text, is_correct (hujjatda `togri_mi`) |
 | `imtihonlar` | `results.Exam` | user, mode (`exam`/`practice`), topic, started_at, finished_at, duration_seconds, total_questions, score, is_passed, status |

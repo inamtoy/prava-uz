@@ -79,8 +79,9 @@
 
 ## Savollar bazasi: Excel fayldan, mavzu = bilet (2026-11-02)
 - Foydalanuvchi so'rovi bilan namuna ma'lumotlar (`quiz/fixtures/questions_uz.json`, 54 savol, Pillow bilan chizilgan belgilar `quiz/signs.py`) olib tashlandi. `seed_data` endi `savollar/avtotest_savollar_javoblar.xlsx` ni o'qiydi (CLAUDE.md 10-bo'limidan farq).
-- Faylda mavzu ustuni yo'q, faqat bilet raqami — foydalanuvchi qarori: **har bilet = bitta `Topic`** («N-bilet», slug `bilet-N`, `order=N`). Jadval nomi `mavzular` saqlandi; saytda va admin'da "Biletlar" deb ataladi (`verbose_name`, migratsiya `0003_topic_as_ticket`).
+- Faylda mavzu ustuni yo'q, faqat bilet raqami — foydalanuvchi qarori: **bilet = `Topic`** («N-bilet», slug `bilet-N`, `order=N`). Keyin foydalanuvchi so'rovi bilan biletlar **15 savollik** qilindi: fayl tartibida har 15 ta faol savol bitta bilet (`TICKET_QUESTION_COUNT`), nofaollari o'z o'rnidagi biletga qo'shiladi, lekin hisobga kirmaydi → 91 bilet, oxirgisida 7 ta. Manbadagi bilet raqami saqlanmaydi. Jadval nomi `mavzular` saqlandi; saytda va admin'da "Biletlar" deb ataladi (`verbose_name`, migratsiya `0003_topic_as_ticket`).
 - Excel kutubxonasiz o'qiladi (`quiz/xlsx_import.py`, zipfile + ElementTree) — `openpyxl` qo'shilmadi. Rasmlar varaqdagi joylashuvi (drawing anchor qatori) bo'yicha savolga bog'lanadi, nomi "Rasm fayli" ustunidan.
 - 2–4 javobli savollar bor (219 ta 2 javobli, 747 ta 3 javobli). "Izoh" ustuni — PDF haqidagi ichki eslatma, `explanation` ga yozilmaydi; izohlar keyin admin'da to'ldiriladi.
 - "Rasm PDFda yo'qolgan" — 24 ta savol nofaol (rasmsiz ma'nosiz). 95-bilet 4-savolda to'g'ri javob yo'q — import qilinmaydi.
-- Mavzular sahifasi 139 ta katta kartochka o'rniga ixcham bilet katakchalari; admin dashboard'da faqat eng past foizli 6 bilet; "kam savol" chegarasi 15 → 10.
+- Mavzular sahifasi katta kartochkalar o'rniga ixcham bilet katakchalari; admin dashboard'da faqat eng past foizli 6 bilet; "kam savol" chegarasi = `TICKET_QUESTION_COUNT`.
+- Mashq ekraniga imtihondagidek savollar xaritasi qo'shildi (`.q-nav .nav-num`, bosilsa o'sha savolga o'tadi; to'g'ri — yashil, xato — qizil). Telefonda savol kartasidan keyin chiqadi.

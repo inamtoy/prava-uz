@@ -19,7 +19,7 @@ WEEKDAYS = ["Dush", "Sesh", "Chor", "Pay", "Juma", "Shan", "Yak"]
 MONTHS = ["yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust",
           "sentabr", "oktabr", "noyabr", "dekabr"]
 WEEKDAYS_FULL = ["Dushanba", "Seshanba", "Chorshanba", "Payshanba", "Juma", "Shanba", "Yakshanba"]
-MIN_TOPIC_QUESTIONS = 10  # bilet odatda 10 savol
+MIN_TOPIC_QUESTIONS = settings.TICKET_QUESTION_COUNT
 
 
 def _greeting(hour):

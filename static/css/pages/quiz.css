@@ -210,6 +210,11 @@
 .practice-side { position: sticky; top: calc(var(--nav-h) + 1rem); display: grid; gap: 1rem; }
 .practice-side__score { display: flex; align-items: center; gap: 1rem; }
 .practice-side__score .progress-ring { --size: 72px; }
+.practice-map { margin-top: .75rem; }
+.practice-map__legend { margin-top: .875rem; }
+.q-legend .is-ok { background: var(--success); }
+.q-legend .is-bad { background: var(--danger); }
+.practice-map__legend i:not([class]) { border-color: var(--line-strong); }
 .practice-side__text { margin: .25rem 0 0; font-size: .875rem; color: var(--ink-500); }
 .key-list { margin: .75rem 0 0; padding: 0; list-style: none; display: grid; gap: .625rem; font-size: .9375rem; color: var(--ink-700); }
 .key-list li { display: flex; align-items: center; justify-content: space-between; gap: .75rem; }

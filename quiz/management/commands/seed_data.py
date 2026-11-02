@@ -1,6 +1,5 @@
 import random
 from datetime import timedelta
-from itertools import groupby
 
 from django.conf import settings
 from django.core.files.base import ContentFile
@@ -55,13 +54,12 @@ class Command(BaseCommand):
         rows = sorted((r for r in rows if not r.problems), key=lambda r: (r.ticket, r.position or 0))
 
         created_count = 0
-        for ticket, group in groupby(rows, key=lambda r: r.ticket):
+        for ticket, group in enumerate(self._tickets(rows, settings.TICKET_QUESTION_COUNT), start=1):
             topic, _ = Topic.objects.update_or_create(
                 slug=f"bilet-{ticket}", defaults={"name": f"{ticket}-bilet", "order": ticket},
             )
             if topic.questions.exists():
                 continue  # bilet avval yuklangan — qayta ishga tushirilsa dublikat yaratilmaydi
-            group = list(group)
             questions = Question.objects.bulk_create([
                 Question(
                     topic=topic, text=r.text,
@@ -81,6 +79,23 @@ class Command(BaseCommand):
         if created_count and inactive:
             self.stdout.write(self.style.WARNING(f"{inactive} ta savolning rasmi faylda yoʻq — ular nofaol qilib qoʻyildi."))
         return created_count
+
+    @staticmethod
+    def _tickets(rows, size):
+        """Fayl tartibida biletlarga bo'lish: har biletda `size` ta faol savol.
+
+        Nofaol savollar (rasmi yo'q) o'z o'rnidagi biletga qo'shiladi, lekin hisobga kirmaydi —
+        shunda mashqda har bilet aynan `size` ta savol ko'rsatadi (oxirgisi qolganicha).
+        """
+        ticket, active = [], 0
+        for row in rows:
+            ticket.append(row)
+            active += not row.image_missing
+            if active == size:
+                yield ticket
+                ticket, active = [], 0
+        if ticket:
+            yield ticket
 
     def _save_image(self, row):
         name = row.image_name or f"b{row.ticket:03d}_s{row.position:02d}.jpeg"

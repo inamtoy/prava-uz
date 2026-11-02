@@ -7,7 +7,7 @@ Maqsad: 5 daqiqada butun foydalanuvchi yoʻlini (oʻquvchi) va boshqaruv panelin
 ```bash
 # PostgreSQL ishlab turganini tekshiring (yoki .env da DB_ENGINE=sqlite)
 python manage.py migrate
-python manage.py seed_data --reset   # toza maʼlumot: 139 bilet, 1381 savol (Excel), admin + demo (3 ta imtihon)
+python manage.py seed_data --reset   # toza maʼlumot: 91 bilet × 15 savol, 1381 savol (Excel), admin + demo (3 ta imtihon)
 python manage.py test                # 76 ta test — yashil boʻlishi kerak
 python manage.py runserver
 ```
@@ -27,12 +27,12 @@ python manage.py runserver
 
 ### 0:00 – 0:30 · Bosh sahifa (mehmon)
 - `http://127.0.0.1:8000/` — «Haydovchilik imtihonini birinchi urinishda topshiring».
-- **Ayting:** statistika qatoridagi raqamlar bazadan olinadi (1357 faol savol, 139 bilet, 20 savol / 25 daqiqa, 2 tagacha xato) — soxta raqam yoʻq. Savollar — haqiqiy avtotest savollari, Excel fayldan yuklangan.
+- **Ayting:** statistika qatoridagi raqamlar bazadan olinadi (1357 faol savol, 91 bilet, 20 savol / 25 daqiqa, 2 tagacha xato) — soxta raqam yoʻq. Savollar — haqiqiy avtotest savollari, Excel fayldan yuklangan.
 
 ### 0:30 – 1:15 · Yagona kirish → mashq
 - «Kirish» → `demo` / `demo12345` → **profilga** tushadi (oʻquvchi roli).
-- «Biletlar» → 139 ta bilet katakchasi: savollar soni va oʻzlashtirish foizi; boshlangani sariq, oʻzlashtirilgani (90%+) yashil; pastda «Kuchsiz biletlaringiz».
-- Istalgan biletni bosing (masalan «1-bilet») → mashq. **Rasmli** savolga **ataylab xato** javob bering → qizil + toʻgʻri javob yashil. Keyingisiga toʻgʻri javob → «Toʻgʻri javob!».
+- «Biletlar» → 91 ta bilet katakchasi (har birida 15 savol): savollar soni va oʻzlashtirish foizi; boshlangani sariq, oʻzlashtirilgani (90%+) yashil; pastda «Kuchsiz biletlaringiz».
+- Istalgan biletni bosing (masalan «1-bilet») → mashq. **Rasmli** savolga **ataylab xato** javob bering → qizil + toʻgʻri javob yashil. Keyingisiga toʻgʻri javob → «Toʻgʻri javob!». Oʻngdagi **savollar xaritasida** raqam yashil/qizil boʻladi — istalgan raqamni bosib oʻsha savolga oʻting.
 - **Ayting:** toʻgʻri/xato serverda hisoblanadi, sahifada toʻgʻri javob oldindan yashirilgan.
 
 ### 1:15 – 2:45 · Imtihon simulyatori
@@ -65,7 +65,7 @@ python manage.py runserver
 | Savollar qayerdan? | Rasmiy avtotest savollari (PDF → Excel, 1382 qator, 139 bilet, 902 rasm). `python manage.py seed_data` Excel'ni oʻqib bazaga yozadi |
 | Excel qanday oʻqiladi? | `quiz/xlsx_import.py`: `.xlsx` — bu ZIP ichidagi XML. Standart `zipfile` + `ElementTree` bilan varaq yacheykalari va joylashtirilgan rasmlar (rasm qaysi qatorga bogʻlangani — drawing XML'dan) oʻqiladi. Qoʻshimcha kutubxona kerak emas |
 | Nechta savol yuklandi, nega 1382 emas? | 1381: 95-bilet 4-savolda manbada toʻgʻri javob belgilanmagan — import uni tashlab, konsolga yozadi. Yana 24 tasining rasmi manbada yoʻq — ular nofaol |
-| Nega «mavzu» emas, «bilet»? | Excel'da mavzu ustuni yoʻq, faqat bilet raqami. Avtomatik mavzuga ajratish xato berishi mumkin edi, shuning uchun manbadagidek biletlar. Jadval nomi hujjatdagidek `mavzular` |
+| Nega «mavzu» emas, «bilet»? | Excel'da mavzu ustuni yoʻq. Avtomatik mavzuga ajratish xato berishi mumkin edi, shuning uchun savollar fayl tartibida 15 tadan biletlarga yigʻiladi (`TICKET_QUESTION_COUNT`, sozlamada oʻzgartiriladi). Jadval nomi hujjatdagidek `mavzular` |
 | Nega baʼzi savollarda 2–3 javob? | Manbada shunday. Model 2–4 javobga ruxsat beradi, aynan bittasi toʻgʻri (admin formasida tekshiriladi) |
 | Yangi savol qanday qoʻshiladi? | Admin → «Yangi savol»: matn, bilet, rasm, 2–4 javob, izoh. Yoki Excel'ga qator qoʻshib `seed_data --file ...` |
 | Nega MySQL emas, PostgreSQL? | Muallif qarori: drayver Windows'da kompilyatsiyasiz oʻrnatiladi, `select_for_update` haqiqiy qulf beradi, DDL tranzaksiyali. Hujjatdagi 6 jadval nomi saqlangan (`db_table`). `NOTES.md` |

@@ -22,6 +22,7 @@
   const summaryRing = document.getElementById("summary-ring");
   const summaryPercent = document.getElementById("summary-percent");
   const toast = document.getElementById("practice-toast");
+  const navBtns = Array.from(root.querySelectorAll("#q-nav .nav-num"));
   let toastTimer = null;
 
   let answered = parseInt(root.dataset.answered, 10) || 0;
@@ -57,6 +58,12 @@
     if (positionEl) {
       positionEl.textContent = onSummary ? "Yakunlandi" : "Savol " + (current + 1) + " / " + total;
     }
+
+    navBtns.forEach(function (b, i) {
+      b.classList.toggle("current", i === current);
+      if (i === current) b.setAttribute("aria-current", "step");
+      else b.removeAttribute("aria-current");
+    });
 
     answeredEl.textContent = answered;
     correctEl.textContent = correct;
@@ -108,6 +115,8 @@
       answered += 1;
       if (res.body.is_correct) correct += 1;
       Q.revealAnswer(card, res.body);
+      const navBtn = navBtns[cards.indexOf(card)];
+      if (navBtn) navBtn.classList.add("answered", res.body.is_correct ? "is-ok" : "is-bad");
       if (res.body.is_correct) showToast();
       render();
     } catch (e) {
@@ -119,6 +128,11 @@
   }
 
   root.addEventListener("click", function (e) {
+    const nav = e.target.closest(".nav-num");
+    if (nav) {
+      go(parseInt(nav.dataset.goto, 10));
+      return;
+    }
     const btn = e.target.closest(".answer-option");
     if (!btn) return;
     choose(btn.closest(".question-card"), btn);

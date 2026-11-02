@@ -71,9 +71,9 @@
       </form>
     </div>
 
-    <aside class="col-12 col-lg-4 d-none d-lg-block">
+    <aside class="col-12 col-lg-4">
       <div class="practice-side">
-        <div class="card-x practice-side__score">
+        <div class="card-x practice-side__score d-none d-lg-flex">
           <div id="score-ring" class="progress-ring progress-ring--success" style="--p:{% widthratio correct_count answered_count 100 %}">
             <svg viewBox="0 0 36 36" aria-hidden="true">
               <circle class="progress-ring__track" cx="18" cy="18" r="15.9155"/>
@@ -86,13 +86,26 @@
             <p class="practice-side__text">Javob berilgan savollarning necha foizi toʻgʻri.</p>
           </div>
         </div>
-        <div class="card-x practice-side__keys">
+        <div class="card-x practice-side__keys d-none d-lg-block">
           <span class="stat-card__label">Klaviatura</span>
           <ul class="key-list">
             <li><span><kbd>1</kbd>–<kbd>4</kbd></span> Javob tanlash</li>
             <li><span><kbd>Enter</kbd> / <kbd><i class="bi bi-arrow-right" aria-label="oʻng"></i></kbd></span> Keyingi savol</li>
             <li><span><kbd><i class="bi bi-arrow-left" aria-label="chap"></i></kbd></span> Oldingi savol</li>
           </ul>
+        </div>
+        <div class="card-x practice-side__map">
+          <span class="stat-card__label">Savollar</span>
+          <nav class="q-nav practice-map" id="q-nav" aria-label="Savollar">
+            {% for item in items %}
+              <button type="button" class="nav-num{% if item.selected_answer_id %} answered {% if item.is_correct %}is-ok{% else %}is-bad{% endif %}{% endif %}" data-goto="{{ forloop.counter0 }}" aria-label="Savol {{ forloop.counter }}">{{ forloop.counter }}</button>
+            {% endfor %}
+          </nav>
+          <div class="q-legend practice-map__legend">
+            <span><i class="is-ok" aria-hidden="true"></i>Toʻgʻri</span>
+            <span><i class="is-bad" aria-hidden="true"></i>Xato</span>
+            <span><i aria-hidden="true"></i>Javob berilmagan</span>
+          </div>
         </div>
       </div>
     </aside>
