@@ -220,9 +220,21 @@ class UserStatsTests(ServiceTestBase):
         self.assertEqual(stats["passed_exams"], 1)
         self.assertEqual(stats["average_percent"], 78)  # (95 + 60) / 2 = 77.5 → 78
         self.assertEqual(stats["best_percent"], 95)
+        # imtihon savollari biletlar statistikasiga kirmaydi
+        self.assertFalse(any(t["total"] for t in stats["topics"]))
+        self.assertEqual(stats["weakest_topics"], [])
+
+    def test_topic_percentages_from_practice(self):
+        for topic, correct in ((self.topic_a, 12), (self.topic_b, 6)):
+            practice = services.start_practice(self.user, topic)
+            self.answer_all(practice, correct)
+            services.finish_exam(practice)
+        unfinished = services.start_practice(self.user, self.topic_b)  # tugallanmagan — hisobga kirmaydi
+        self.answer_all(unfinished, 0)
+        stats = services.user_stats(self.user)
         topics = {t["topic"].slug: t for t in stats["topics"]}
-        self.assertEqual(topics["a"]["percent"], 90)  # 18/20
-        self.assertEqual(topics["b"]["percent"], 65)  # 13/20
+        self.assertEqual(topics["a"]["percent"], 80)  # 12/15
+        self.assertEqual(topics["b"]["percent"], 40)  # 6/15
         self.assertEqual(stats["weakest_topics"][0]["topic"], self.topic_b)
 
     def test_in_progress_exams_ignored(self):
@@ -236,6 +248,12 @@ class UserStatsTests(ServiceTestBase):
         progress = services.topic_progress(self.user)
         self.assertEqual(progress[self.topic_a.pk], 20)  # 3/15
         self.assertEqual(progress[self.topic_b.pk], 0)
+
+    def test_topic_progress_ignores_exam_answers(self):
+        exam = services.start_exam(self.user)
+        self.answer_all(exam, 20)
+        services.finish_exam(exam)
+        self.assertFalse(any(services.topic_progress(self.user).values()))
 
 
 class ResultProfileViewTests(ServiceTestBase):

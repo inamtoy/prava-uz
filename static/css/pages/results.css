@@ -229,7 +229,7 @@
 @media (min-width: 768px) { .chart-box { height: 300px; } }
 
 /* Mavzular boʻyicha */
-.topic-progress { display: grid; gap: 1.125rem; margin: 0; padding: 0; list-style: none; }
+.topic-progress { display: grid; gap: 1.125rem; margin: 0; padding: 0 .25rem 0 0; list-style: none; max-height: 560px; overflow-y: auto; }
 .topic-progress__row { display: flex; justify-content: space-between; align-items: baseline; gap: .75rem; margin-bottom: .375rem; }
 .topic-progress__name { font-size: .9375rem; font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
 .topic-progress__warn { margin-left: .25rem; font-weight: 800; color: var(--accent-ink); }

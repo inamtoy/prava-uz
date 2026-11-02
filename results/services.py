@@ -131,8 +131,10 @@ def user_stats(user):
     exams = list(finished.filter(mode=Exam.MODE_EXAM).only("score", "total_questions", "is_passed"))
     percents = [e.percent for e in exams]
 
+    # Biletlar bo'yicha faqat mashq: imtihon savollari barcha biletlardan tasodifiy (har biletga 0–2 ta),
+    # ular hisobga olinsa ochilmagan biletlarda ham foiz chiqib qoladi
     rows = (
-        ExamAnswer.objects.filter(exam__in=finished)
+        ExamAnswer.objects.filter(exam__in=finished, exam__mode=Exam.MODE_PRACTICE, selected_answer__isnull=False)
         .values("question__topic_id")
         .annotate(total=Count("id"), correct=Count("id", filter=Q(is_correct=True)))
     )
@@ -158,14 +160,17 @@ def user_stats(user):
         "best_percent": max(percents) if percents else 0,
         "practice_count": finished.filter(mode=Exam.MODE_PRACTICE).count(),
         "topics": topics,
+        "practiced_topics": attempted,
         "weakest_topics": weakest,
     }
 
 
 def topic_progress(user):
-    """{topic_id: %} — mavzudagi faol savollardan kamida bir marta to'g'ri yechilganlari ulushi."""
+    """{topic_id: %} — biletdagi faol savollardan mashqda kamida bir marta to'g'ri yechilganlari ulushi."""
     solved = (
-        ExamAnswer.objects.filter(exam__user=user, is_correct=True, question__is_active=True)
+        ExamAnswer.objects.filter(
+            exam__user=user, exam__mode=Exam.MODE_PRACTICE, is_correct=True, question__is_active=True
+        )
         .values("question__topic_id")
         .annotate(n=Count("question_id", distinct=True))
     )

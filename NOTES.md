@@ -85,3 +85,4 @@
 - "Rasm PDFda yo'qolgan" — 24 ta savol nofaol (rasmsiz ma'nosiz). 95-bilet 4-savolda to'g'ri javob yo'q — import qilinmaydi.
 - Mavzular sahifasi katta kartochkalar o'rniga ixcham bilet katakchalari; admin dashboard'da faqat eng past foizli 6 bilet; "kam savol" chegarasi = `TICKET_QUESTION_COUNT`.
 - Mashq ekraniga imtihondagidek savollar xaritasi qo'shildi (`.q-nav .nav-num`, bosilsa o'sha savolga o'tadi; to'g'ri — yashil, xato — qizil). Telefonda savol kartasidan keyin chiqadi.
+- Bilet foizi va profildagi "Biletlar bo'yicha" / "Kuchsiz biletlar" endi **faqat mashq** javoblaridan (`topic_progress`, `user_stats`). Avval imtihon javoblari ham qo'shilardi: imtihon 20 savolni barcha biletlardan tasodifiy oladi, shuning uchun ochilmagan biletlarda ham 7–13% chiqib qolardi. Profilda faqat mashq qilingan biletlar ko'rsatiladi. Admin dashboard'dagi "Eng qiyin biletlar" barcha javoblar bo'yicha qoladi (savol qiyinligi).
