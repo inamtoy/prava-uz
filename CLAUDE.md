@@ -204,13 +204,13 @@ Mantiqni view'larga yozma — servis funksiyalarga:
 
 Layout (telefonda ham):
 - Tepada: savol raqami "7 / 20", **taymer** (MM:SS), "Yakunlash" tugmasi.
-- 20 ta raqamli tugmachadan iborat **navigatsiya paneli**: javob berilgan — ko'k, joriy — chegarali, berilmagan — kulrang.
+- 20 ta raqamli tugmachadan iborat **navigatsiya paneli** (savollar xaritasi): to'g'ri javob berilgan — **yashil**, xato — **qizil**, joriy — ko'k chegarali, berilmagan — kulrang (`.nav-num.answered.is-ok` / `.is-bad`, `.current`).
 - Savol kartasi: rasm (bo'lsa, `img-fluid`), savol matni, 4 ta javob — katta bosiladigan tugmalar (F1–F4 tarzida raqamlangan).
 - Pastda "‹ Oldingi" / "Keyingi ›".
 
 Xatti-harakat:
 - Barcha 20 savol bitta sahifada render qilinadi (har biri `<section>`, faqat joriysi ko'rinadi) — sahifalar orasida yuklanish yo'q.
-- Javob bosilganda: `fetch` POST → muvaffaqiyatli bo'lsa navigatsiyada belgilanadi. Xato bo'lsa — kichik ogohlantirish, qayta urinish.
+- Javob bosilganda: `fetch` POST → muvaffaqiyatli bo'lsa javob darrov yashil/qizil bo'ladi, to'g'ri javob yashil bilan ko'rsatiladi, izoh chiqadi va navigatsiyada katak yashil/qizil bo'ladi. Birinchi javob yakuniy — savol qayta bosilmaydi (5-bo'lim, `NOTES.md` 2026-10-20). Xato bo'lsa — kichik ogohlantirish, qayta urinish.
 - Taymer boshlang'ich qiymati serverdan keladi (`time_left_seconds` — `data-` atribut orqali), sahifa yangilansa ham to'g'ri davom etadi.
 - 5 daqiqa qolganda taymer sariq, 1 daqiqada qizil. 0 bo'lganda — avtomatik yakunlash formasi submit.
 - "Yakunlash" bosilganda javob berilmagan savollar soni ko'rsatilgan Bootstrap modal (JS `confirm()` ishlatma).
