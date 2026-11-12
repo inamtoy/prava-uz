@@ -7,6 +7,7 @@ from django.http import Http404
 from django.utils import timezone
 
 from quiz.models import Answer, Question, Topic
+from quiz.utils import question_key
 
 from .models import Exam, ExamAnswer
 
@@ -37,6 +38,24 @@ def _create_session(user, mode, questions, topic=None):
     return exam
 
 
+def _pick_exam_questions(count):
+    """Tasodifiy `count` ta faol savol; matni va rasmi bir xil savollardan faqat bittasi olinadi.
+
+    Bir xil savol bir necha biletda takrorlanadi (rasmiy biletlarda ham shunday) — ular bazada qoladi,
+    lekin bitta imtihonda ikki marta chiqmasligi kerak.
+    """
+    picked, seen = [], set()
+    for q in Question.objects.filter(is_active=True).order_by("?").iterator(chunk_size=100):
+        key = question_key(q.text, q.image)
+        if key in seen:
+            continue
+        seen.add(key)
+        picked.append(q)
+        if len(picked) == count:
+            break
+    return picked
+
+
 @transaction.atomic
 def start_exam(user):
     """Ochiq imtihon bo'lsa — uni qaytaradi (exam.resumed=True), aks holda yangisini yaratadi."""
@@ -50,10 +69,7 @@ def start_exam(user):
             current.resumed = True
             return current
 
-    questions = list(
-        Question.objects.filter(is_active=True).order_by("?")[: settings.EXAM_QUESTION_COUNT]
-    )
-    exam = _create_session(user, Exam.MODE_EXAM, questions)
+    exam = _create_session(user, Exam.MODE_EXAM, _pick_exam_questions(settings.EXAM_QUESTION_COUNT))
     exam.resumed = False
     return exam
 

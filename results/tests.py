@@ -77,6 +77,42 @@ class StartExamTests(ServiceTestBase):
         with self.assertRaises(services.ExamError):
             services.start_exam(self.user)
 
+    def test_duplicate_questions_not_repeated_in_one_exam(self):
+        """Matni (bo'sh joy va harf farqisiz) va rasmi bir xil savollardan imtihonda faqat bittasi chiqadi."""
+        Question.objects.update(is_active=False)
+        # 12 xil savol, har biri 3 nusxada (turli biletlarda, bo'sh joy / harf farqi bilan) = 36 ta faol savol
+        for i in range(12):
+            for n, (topic, text) in enumerate([
+                (self.topic_a, f"Takroriy savol {i}"),
+                (self.topic_b, f"  takroriy   SAVOL {i} "),
+                (self.topic_a, f"Takroriy savol {i}"),
+            ]):
+                q = Question.objects.create(topic=topic, text=text, image=f"questions/dup_{i}.jpeg")
+                Answer.objects.create(question=q, text="A", is_correct=True)
+                Answer.objects.create(question=q, text="B")
+        # Matni bir xil, rasmi boshqa — bu boshqa savol, ikkalasi ham chiqishi mumkin
+        for img in ("questions/x1.jpeg", "questions/x2.jpeg"):
+            q = Question.objects.create(topic=self.topic_a, text="Rasmga qarang", image=img)
+            Answer.objects.create(question=q, text="A", is_correct=True)
+
+        for _ in range(5):  # tasodifiy tanlov — bir necha marta tekshiramiz
+            Exam.objects.filter(user=self.user).delete()
+            exam = services.start_exam(self.user)
+            qs = Question.objects.filter(pk__in=exam.items.values("question_id"))
+            keys = [(" ".join(q.text.split()).lower(), q.image.name) for q in qs]
+            self.assertEqual(len(keys), len(set(keys)), "bir xil savol imtihonda ikki marta chiqdi")
+            # 12 + 2 = 14 xil savol bor — hammasi olinadi, takroriylar hisobiga 20 ga to'ldirilmaydi
+            self.assertEqual(exam.total_questions, 14)
+
+    def test_duplicates_do_not_reduce_count_when_enough_unique(self):
+        # Bazadagi 30 ta noyob savolga 15 ta nusxa qo'shilsa ham imtihon to'liq 20 ta bo'ladi
+        for q in list(Question.objects.filter(topic=self.topic_a)):
+            Question.objects.create(topic=self.topic_b, text=q.text)
+        exam = services.start_exam(self.user)
+        self.assertEqual(exam.total_questions, settings.EXAM_QUESTION_COUNT)
+        texts = list(Question.objects.filter(pk__in=exam.items.values("question_id")).values_list("text", flat=True))
+        self.assertEqual(len(texts), len(set(texts)))
+
 
 class StartPracticeTests(ServiceTestBase):
     def test_practice_uses_topic_questions(self):
