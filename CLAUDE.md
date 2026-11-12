@@ -152,10 +152,12 @@ Hujjatdagi jadvallar → Django modellari. `db_table` bilan hujjatdagi nomlarni 
 - `EXAM_QUESTION_COUNT = 20`, `EXAM_DURATION_SECONDS = 25 * 60`, `EXAM_MAX_MISTAKES = 2` — `settings.py` da konstanta.
 - **O'tish sharti:** xatolar soni ≤ 2 (ya'ni kamida 18/20). Javob berilmagan savol = xato.
 - Savollar faqat `is_active=True` lardan, tasodifiy (`order_by("?")` prototip uchun yetarli). Bazada 20 tadan kam bo'lsa — borini ol va ogohlantir.
+- Bir xil savol (normallashtirilgan matni — bo'sh joylarsiz, kichik harfda — va rasmi bir xil) bir necha biletda bo'lishi mumkin; ular bazada qoladi, lekin **bitta imtihonda faqat bittasi** tanlanadi (`quiz/utils.py: question_key`). Hisobot: `python manage.py dedupe_questions`.
 - Foydalanuvchida `in_progress` imtihon bo'lsa, "Imtihonni boshlash" yangisini yaratmaydi — **davom ettiradi**.
 - **Taymer brauzerda, vaqt nazorati serverda:** har javob saqlashda va yakunlashda server `now() > deadline` ni tekshiradi. Muddat o'tgan bo'lsa javob qabul qilinmaydi, imtihon `expired` → avtomatik yakunlanadi.
-- Imtihon davomida to'g'ri/xato **ko'rsatilmaydi**. Faqat natija sahifasida.
-- Javob o'zgartirish mumkin (yakunlanguncha).
+- Imtihon davomida ham javob bosilganda to'g'ri/xato **darrov ko'rsatiladi**: tanlangan javob yashil/qizil, to'g'ri javob yashil, `explanation` chiqadi; savollar xaritasida katak yashil/qizil bo'ladi.
+- **Birinchi javob qulflanadi** — uni o'zgartirib bo'lmaydi (`save_answer` javobi bor savolga qayta yozmaydi). Aks holda to'g'ri javobni ko'rib almashtirish mumkin bo'lardi. Mashqda ham xuddi shunday.
+- Qaror va sababi: `NOTES.md` → "Imtihonda to'g'ri/xato darrov ko'rsatiladi (2026-10-20)".
 
 ### Mashq rejimi
 - Mavzu tanlanadi → shu mavzudagi savollar (aralashtirilgan, max 20 ta, mavzuda kam bo'lsa — hammasi).
@@ -188,7 +190,7 @@ Mantiqni view'larga yozma — servis funksiyalarga:
 | `/mashq/sessiya/<id>/` | `practice` | egasi | Mashq ekrani (savollar ketma-ket, JS bilan) |
 | `/imtihon/` | `exam_start` | kirgan | Ma'lumot sahifasi (20 savol, 25 daq, 2 xato) + "Boshlash" (POST) |
 | `/imtihon/<id>/` | `exam` | egasi | Test ekrani |
-| `/api/imtihon/<id>/javob/` | `exam_answer` | egasi | POST JSON `{question_id, answer_id}` → saqlaydi. Mashqda `{is_correct, correct_answer_id, explanation}` qaytaradi, imtihonda faqat `{ok, time_left}` |
+| `/api/imtihon/<id>/javob/` | `exam_answer` | egasi | POST JSON `{question_id, answer_id}` → saqlaydi (birinchi javob yakuniy). Mashqda ham, imtihonda ham `{ok, is_correct, selected_answer_id, correct_answer_id, explanation}` qaytaradi; imtihonda qo'shimcha `time_left`. Muddat o'tgan bo'lsa `{expired, redirect}` (qarang: `NOTES.md`, 2026-10-20) |
 | `/imtihon/<id>/yakunlash/` | `exam_finish` | egasi | POST → `finish_exam` → natijaga redirect |
 | `/natija/<id>/` | `result` | egasi | Ball, o'tdi/o'tmadi, vaqt, **xatolar tahlili** (har xato savol: savol, rasm, siz tanlagan (qizil), to'g'ri (yashil), izoh) |
 | `/admin/` | — | admin | Django admin |
