@@ -92,3 +92,8 @@
 - Savollar ro'yxati: sana o'rniga «To'g'ri javob» ustuni (Subquery, N+1 yo'q); qidiruv bilet nomi («12-bilet», aniq moslik) va ID bo'yicha ham; 30 tadan.
 - Biletlar ro'yxati: tartib maydoni (list_editable) olib tashlandi, 30 tadan sahifalanadi.
 - Qiyinlik shovqini: savol foizi/«Qiyin» filtri kamida 3 ta javobdan (`MIN_QUESTION_ANSWERS`), dashboard'dagi «Eng qiyin biletlar» va «Qiyin bilet» belgisi kamida 10 ta javobdan (`MIN_TOPIC_ANSWERS`). Avval bitta javob "100% xato" deb ko'rsatilardi.
+
+## Takroriy savollar va ma'lumot tuzatishlari (2026-11-12)
+- 17 xil savol bir necha biletda takrorlanadi (matni va rasmi bir xil). Qaror: biletlarda **qoladi** (nofaol qilinmaydi); `start_exam` bitta imtihonda ulardan faqat bittasini tanlaydi (`quiz/utils.py: question_key`). `dedupe_questions` — faqat hisobot.
+- #6613 (48-bilet): C va D javoblari bir xil edi ("Notekis yoʻl."). D (Answer #21148) o'chirildi, 3 ta javob qoldi, to'g'ri — B. Hech bir imtihon javobi unga bog'lanmagan edi. O'chirishdan oldingi zaxira: `backups/prava_20261112_2253.dump`.
+- Rasmlar: bazadagilar Excel'dan olingan 160x120 kichik nusxalar. To'liq o'lchamlilarni moslash uchun `match_images` (dry-run, dHash + fayl nomi + ixtiyoriy PDF matn manifesti). #5910, #5911 da rasm savol matniga mos emas deb gumon.
