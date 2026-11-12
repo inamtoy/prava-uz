@@ -103,3 +103,4 @@
 - #5910 va #5911 (1-bilet; Excel 2/2, 2/3) **nofaol**: PDF'ning o'zida xato rasm — savollar yo'l belgisi va ko'rsatkich yozuvi haqida, rasmda esa chorrahadagi avtomobillar (xuddi shu rasmlar 110/9 va 111/4 chorraha savollarida). Manbada to'g'ri rasm yo'q — qo'lda hal qilinadi. 1-biletda 13 ta faol savol.
 - Savol rasmi endi barcha ekranlarda savol matni ustida, karta kengligida (`.qc-media img` max-height 390px); natija sahifasidagi xatolar tahlilida rasm ustuni kengaytirildi (max-height 330px). Avval kompyuterda rasm 176–240px katakka siqilgan edi.
 - Tekshiruv uchun demo foydalanuvchida 2 ta mashq va 2 ta imtihon yaratilib yakunlandi (#92–#95).
+- 1-bilet izohlari import qilindi (2026-11-13): 8 ta savol (#5900, #5901, #5902, #5906, #5908, #5909, #5912, #5914) — `import_explanations savollar/izohlar/bilet_001.json --apply`. #5903, #5904, #5905, #5907, #5913 — "tekshirish kerak", izohsiz.
