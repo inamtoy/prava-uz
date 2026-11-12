@@ -32,6 +32,7 @@ class Row:
     image_name: str
     image: bytes | None
     note: str
+    correct_text: str = ""  # K ustuni — "To'g'ri javob matni" (harfdan mustaqil manba)
     problems: list = field(default_factory=list)
 
     @property
@@ -146,6 +147,7 @@ def read_questions(path):
             image_name=(c.get("L") or "").strip(),
             image=images.get(index),
             note=(c.get("M") or "").strip(),
+            correct_text=clean(c.get("K")),
         )
         if row.ticket is None:
             row.problems.append("bilet raqami yoʻq")

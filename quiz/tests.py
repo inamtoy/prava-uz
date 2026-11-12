@@ -509,3 +509,46 @@ class AdminPagesTests(TestCase):
         exam = self._fill(1, 3)
         resp = self.client.post(reverse("admin:results_exam_delete", args=[exam.pk]), {"post": "yes"})
         self.assertEqual(resp.status_code, 403)
+
+
+class SourceMatchTests(TestCase):
+    """quiz.source_match: bazadagi savol → Excel qatori (matn + javoblar to'plami)."""
+
+    def _index(self, rows):
+        from types import SimpleNamespace
+
+        from .source_match import SourceIndex
+
+        idx = SourceIndex.__new__(SourceIndex)
+        idx.rows = [SimpleNamespace(number=i, ticket=t, position=p, text=text, answers=ans, correct=0,
+                                    correct_text=ans[0], image_name=img, note="")
+                    for i, (t, p, text, ans, img) in enumerate(rows, start=2)]
+        from collections import defaultdict
+
+        from .source_match import norm
+        idx.by_text = defaultdict(list)
+        for r in idx.rows:
+            idx.by_text[norm(r.text)].append(r)
+        idx.used = set()
+        return idx
+
+    def test_normalizes_spaces_case_and_apostrophes(self):
+        idx = self._index([(1, 1, "Toʻxtash   taʼqiqlanadimi?", ["Ha.", "Yoʻq."], "")])
+        q = Question(text="to'xtash ta`qiqlanadimi?")
+        m = idx.match(q, ["YO‘Q.", "ha."])
+        self.assertEqual(m.status, "mos")
+        self.assertEqual((m.row.ticket, m.row.position), (1, 1))
+
+    def test_same_text_different_answers_is_not_a_match(self):
+        idx = self._index([(1, 1, "Qayrilish taqiqlanadi:", ["A", "B"], "")])
+        m = idx.match(Question(text="Qayrilish taqiqlanadi:"), ["A", "C"])
+        self.assertIsNone(m.row)
+        self.assertEqual(m.status, "javoblar farq")
+
+    def test_identical_rows_are_distributed_and_image_name_wins(self):
+        idx = self._index([(1, 1, "Savol", ["A", "B"], "b001_s01_0.jpeg"),
+                           (9, 4, "Savol", ["A", "B"], "b009_s04_0.jpeg")])
+        first = idx.match(Question(text="Savol"), ["A", "B"], "b009_s04_0.jpeg")
+        second = idx.match(Question(text="Savol"), ["A", "B"])
+        self.assertEqual(first.row.image_name, "b009_s04_0.jpeg")
+        self.assertEqual(second.row.image_name, "b001_s01_0.jpeg")  # ishlatilmagan qator olinadi
