@@ -13,7 +13,7 @@
   --prava-ok: #00843D;
   --prava-ok-50: #E5F3EB;
   --prava-bad: #C8102E;
-  --prava-bad-50: #FAE7EA;
+  --prava-bad-50: #FBE8EB;
   --prava-warn: #F2A900;
   --prava-warn-ink: #7A5600;
   --prava-warn-50: #FDF4DC;
@@ -344,7 +344,7 @@ button[name="_save"]:hover, .prava-btn--accent:hover { background: var(--prava-a
 .prava-tag--2 { background: #E5F3EB; color: #00602C; }
 .prava-tag--3 { background: #ECEAF6; color: #3F3580; }
 .prava-tag--4 { background: #E3F1F3; color: #0B5560; }
-.prava-tag--5 { background: #FAE7EA; color: #9B0C23; }
+.prava-tag--5 { background: #FBE8EB; color: #9B0C23; }
 .prava-tag--ok { background: var(--prava-ok-50); color: var(--prava-ok); }
 .prava-tag--bad { background: var(--prava-bad-50); color: var(--prava-bad); }
 .prava-tag--warn, .prava-tag--mid { background: var(--prava-warn-50); color: var(--prava-warn-ink); }

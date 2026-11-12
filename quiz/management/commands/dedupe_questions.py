@@ -1,4 +1,4 @@
-﻿"""Takroriy savollarni nofaol qilish (o'chirmaydi).
+"""Takroriy savollarni nofaol qilish (o'chirmaydi).
 
 Takroriy = faol savollar, matni (bo'sh joylarsiz) va rasmi bir xil. Har guruhda bittasi qoladi:
 imtihon/mashqlarda ko'proq ishlatilgani (ExamAnswer qatorlari soni), teng bo'lsa ID'si kichigi.
