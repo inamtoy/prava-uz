@@ -305,3 +305,149 @@ msgstr "Boshqaruv paneli"
 
 msgid "Clear"
 msgstr "Oʻchirish"
+
+# --- Admin sarlavhalari, tasdiqlar va Django'ning tarjimasiz/xato satrlari (2026-11-12) ---
+
+msgid "Select %s to change"
+msgstr "Oʻzgartirish uchun %s tanlang"
+
+msgid "Select %s to view"
+msgstr "Koʻrish uchun %s tanlang"
+
+msgid "Add %s"
+msgstr "Yangi %s"
+
+msgid "Add %(name)s"
+msgstr "%(name)s qoʻshish"
+
+msgid "View %s"
+msgstr "%sni koʻrish"
+
+msgid "Delete %s"
+msgstr "%sni oʻchirish"
+
+msgid "Change history: %s"
+msgstr "Oʻzgarishlar tarixi: %s"
+
+msgid "Add another %(model)s"
+msgstr "Yana %(model)s qoʻshish"
+
+msgid "Change selected %(model)s"
+msgstr "Tanlangan %(model)sni oʻzgartirish"
+
+msgid "View selected %(model)s"
+msgstr "Tanlangan %(model)sni koʻrish"
+
+msgid "Delete selected %(model)s"
+msgstr "Tanlangan %(model)sni oʻchirish"
+
+msgid "%(total_count)s selected"
+msgstr "%(total_count)s ta tanlandi"
+
+msgid "0 of %(cnt)s selected"
+msgstr "%(cnt)s tadan 0 tasi tanlandi"
+
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr "Barcha %(module_name)sni tanlash (%(total_count)s ta)"
+
+msgid "%(full_result_count)s total"
+msgstr "jami %(full_result_count)s ta"
+
+msgid "Models in the %(name)s application"
+msgstr "%(name)s boʻlimidagi modellar"
+
+msgid "Sorting priority: %(priority_number)s"
+msgstr "Saralash tartibi: %(priority_number)s"
+
+msgid "Click to cancel"
+msgstr "Bekor qilish uchun bosing"
+
+msgid "Undo"
+msgstr "Qaytarish"
+
+msgid "No fields changed."
+msgstr "Hech qanday maydon oʻzgarmadi."
+
+msgid "Hold down “Control”, or “Command” on a Mac, to select more than one."
+msgstr "Bir nechtasini tanlash uchun “Control” (Mac’da “Command”) tugmasini bosib turing."
+
+msgid "Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? All of the following related items will be deleted:"
+msgstr "%(object_name)s “%(escaped_object)s” ni oʻchirishga ishonchingiz komilmi? Unga bogʻliq quyidagi yozuvlar ham oʻchiriladi:"
+
+msgid "Are you sure you want to delete the selected %(objects_name)s? All of the following objects and their related items will be deleted:"
+msgstr "Tanlangan %(objects_name)sni oʻchirishga ishonchingiz komilmi? Quyidagi yozuvlar va ularga bogʻliq maʼlumotlar oʻchiriladi:"
+
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would require deleting the following protected related objects:"
+msgstr "%(object_name)s “%(escaped_object)s” ni oʻchirish uchun quyidagi himoyalangan bogʻliq yozuvlarni ham oʻchirish kerak:"
+
+msgid "Deleting the %(object_name)s '%(escaped_object)s' would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "%(object_name)s “%(escaped_object)s” ni oʻchirish bogʻliq yozuvlarni ham oʻchiradi, lekin sizda quyidagi turdagi yozuvlarni oʻchirish huquqi yoʻq:"
+
+msgid "Deleting the selected %(objects_name)s would require deleting the following protected related objects:"
+msgstr "Tanlangan %(objects_name)sni oʻchirish uchun quyidagi himoyalangan bogʻliq yozuvlarni ham oʻchirish kerak:"
+
+msgid "Deleting the selected %(objects_name)s would result in deleting related objects, but your account doesn't have permission to delete the following types of objects:"
+msgstr "Tanlangan %(objects_name)sni oʻchirish bogʻliq yozuvlarni ham oʻchiradi, lekin sizda quyidagi turdagi yozuvlarni oʻchirish huquqi yoʻq:"
+
+msgid "Password change"
+msgstr "Parolni oʻzgartirish"
+
+msgid "Old password"
+msgstr "Eski parol"
+
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr "<strong>%(username)s</strong> foydalanuvchisi uchun yangi parol kiriting."
+
+msgid "You are authenticated as %(username)s, but are not authorized to access this page. Would you like to login to a different account?"
+msgstr "Siz %(username)s sifatida kirgansiz, lekin bu sahifaga kirish huquqingiz yoʻq. Boshqa hisob bilan kirasizmi?"
+
+msgid "Your password can’t be a commonly used password."
+msgstr "Parol keng tarqalgan parollardan boʻlmasligi kerak."
+
+msgid "Your password can’t be entirely numeric."
+msgstr "Parol faqat raqamlardan iborat boʻlmasligi kerak."
+
+msgid "Your password can’t be too similar to your other personal information."
+msgstr "Parol shaxsiy maʼlumotlaringizga juda oʻxshash boʻlmasligi kerak."
+
+msgid "Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only."
+msgstr "Majburiy. Koʻpi bilan 150 ta belgi: harflar, raqamlar va @/./+/-/_."
+
+msgid "Designates whether the user can log into this admin site."
+msgstr "Foydalanuvchi boshqaruv paneliga kira oladimi."
+
+msgid "date joined"
+msgstr "roʻyxatdan oʻtgan sana"
+
+msgid "active"
+msgstr "faol"
+
+msgid "name"
+msgstr "nomi"
+
+msgid "algorithm"
+msgstr "algoritm"
+
+msgid "iterations"
+msgstr "iteratsiyalar"
+
+msgid "salt"
+msgstr "tuz (salt)"
+
+msgid "hash"
+msgstr "xesh"
+
+msgid "group"
+msgstr "guruh"
+
+msgid "groups"
+msgstr "guruhlar"
+
+msgid "permission"
+msgstr "ruxsat"
+
+msgid "permissions"
+msgstr "ruxsatlar"
+
+msgid "content types"
+msgstr "tarkib turlari"
