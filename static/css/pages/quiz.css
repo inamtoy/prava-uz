@@ -1,5 +1,5 @@
 /* =====================================================================
-   Mavzular va mashq ekranlari (Stitch: prava.uz_mavzular, prava.uz_mashq_rejimi)
+   Mavzular va mashq ekranlari (prava.uz_mavzular, prava.uz_mashq_rejimi)
    Faqat main.css tokenlari ishlatiladi.
    ===================================================================== */
 
@@ -18,23 +18,19 @@
 
 /* ---------- Umumiy o'zlashtirish banneri ---------- */
 .overall-banner { display: flex; flex-direction: column; gap: 1.5rem; }
-.overall-banner::before {
-  content: ""; position: absolute; right: -80px; top: -80px; width: 280px; height: 280px;
-  border-radius: 50%; background: rgba(36, 87, 245, .18); filter: blur(48px); pointer-events: none;
-}
 .overall-banner > * { position: relative; }
 .overall-banner__main { flex: 1 1 auto; min-width: 0; }
 .overall-banner__title {
   display: flex; flex-wrap: wrap; align-items: baseline; gap: .25rem 1rem; margin-bottom: 1.25rem;
 }
-.overall-banner__value { margin: 0; font-size: clamp(1.5rem, 3.4vw, 2rem); letter-spacing: -0.025em; }
+.overall-banner__value { margin: 0; font-size: clamp(1.625rem, 3.4vw, 2.25rem); letter-spacing: 0; }
 .overall-banner__sub { color: var(--ink-300); font-size: .9375rem; font-weight: 500; }
 
 .overall-bar { position: relative; }
 .overall-bar__track { height: 12px; }
 .overall-bar__mark {
   position: absolute; left: 90%; top: -5px; bottom: -5px; width: 3px; margin-left: -1.5px;
-  background: var(--accent); border-radius: 3px; box-shadow: 0 0 0 2px var(--ink-900);
+  background: #fff; border-radius: 2px; box-shadow: 0 0 0 2px var(--primary);
 }
 .overall-bar__labels {
   position: relative; height: 1.25rem; margin-top: .625rem;
@@ -50,14 +46,14 @@
 
 .overall-banner__rule {
   display: flex; align-items: center; gap: .875rem;
-  padding: .875rem 1rem; border-radius: var(--radius);
-  background: rgba(255, 255, 255, .07); border: 1px solid rgba(255, 255, 255, .1);
+  padding: .875rem 1rem; border-radius: 4px;
+  background: rgba(255, 255, 255, .1); border: 1.5px solid rgba(255, 255, 255, .5);
 }
-.overall-banner__rule-icon { color: var(--accent); background: rgba(255, 194, 32, .16); }
+.overall-banner__rule-icon { color: var(--primary); background: #fff; }
 .overall-banner__rule strong { display: block; font-family: var(--font-display); font-size: 1.0625rem; color: #fff; }
 .overall-banner__rule-label {
-  display: block; font-family: var(--font-display); font-size: .6875rem; font-weight: 800;
-  letter-spacing: .08em; text-transform: uppercase; color: var(--accent);
+  display: block; font-family: var(--font-display); font-size: .75rem; font-weight: 600;
+  letter-spacing: .06em; text-transform: uppercase; color: rgba(255, 255, 255, .8);
 }
 .overall-banner__rule-hint { display: block; font-size: .8125rem; color: var(--ink-300); }
 @media (min-width: 992px) {
@@ -74,11 +70,11 @@
 .ticket {
   display: flex; flex-direction: column; align-items: flex-start; gap: .25rem; width: 100%; min-height: 72px;
   padding: .75rem .875rem .625rem; text-align: left; font: inherit; color: var(--ink-900); cursor: pointer;
-  background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow-sm);
-  transition: border-color .15s, transform .15s;
+  background: var(--surface); border: 1.5px solid var(--line-strong); border-radius: 6px;
+  transition: border-color .15s, background .15s;
 }
-.ticket:hover, .ticket:focus-visible { border-color: var(--ink-700); transform: translateY(-1px); }
-.ticket__name { font-family: var(--font-display); font-weight: 800; font-size: 1rem; }
+.ticket:hover, .ticket:focus-visible { border-color: var(--primary); outline: none; }
+.ticket__name { font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; }
 .ticket__meta { font-size: .8125rem; color: var(--ink-500); font-variant-numeric: tabular-nums; }
 .ticket__bar { display: block; width: 100%; height: 4px; margin-top: auto; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
 .ticket__bar span { display: block; height: 100%; background: var(--accent); }
@@ -87,7 +83,7 @@
 .ticket.is-done .ticket__bar span { background: var(--success); }
 .ticket.is-empty { cursor: default; opacity: .55; box-shadow: none; }
 .ticket-legend { display: flex; flex-wrap: wrap; align-items: center; gap: .375rem 1rem; margin: .875rem 0 0; font-size: .875rem; }
-.ticket-legend__dot { display: inline-block; width: 10px; height: 10px; margin-right: -.625rem; border-radius: 3px; border: 2px solid var(--accent); }
+.ticket-legend__dot { display: inline-block; width: 10px; height: 10px; margin-right: -.625rem; border-radius: 2px; border: 2px solid var(--primary); }
 .ticket-legend__dot.is-done { border-color: var(--success); background: var(--success-50); }
 
 /* ---------- Kuchsiz mavzular ---------- */
@@ -111,10 +107,10 @@
 .weak-card__title { margin: 0; font-size: 1.125rem; }
 .weak-card__stat {
   display: flex; flex-direction: column; gap: .375rem;
-  padding: .875rem 1rem; background: var(--surface-2); border-radius: 12px;
+  padding: .875rem 1rem; background: var(--surface-2); border-radius: 8px;
 }
 .weak-card__percent {
-  font-family: var(--font-display); font-size: 1.75rem; font-weight: 800; line-height: 1.1;
+  font-family: var(--font-display); font-size: 1.75rem; font-weight: 700; line-height: 1.1;
   letter-spacing: -0.02em; font-variant-numeric: tabular-nums;
 }
 .weak-card__hint { font-size: .875rem; color: var(--ink-500); }
@@ -130,12 +126,12 @@
   background: var(--surface); border: 1px solid var(--line);
   border-radius: var(--radius); box-shadow: var(--shadow-sm);
 }
-.practice-bar__back { flex: 0 0 auto; width: 48px; min-height: 48px; border-radius: 12px; }
+.practice-bar__back { flex: 0 0 auto; width: 48px; min-height: 48px; border-radius: 8px; }
 .practice-bar__info { flex: 1 1 auto; min-width: 0; }
 .practice-bar__row { display: flex; align-items: center; justify-content: space-between; gap: .5rem; }
 .practice-bar__pos { font-size: .875rem; font-weight: 700; color: var(--ink-900); white-space: nowrap; }
 .practice-bar__title {
-  margin: .125rem 0 .5rem; font-size: 1.0625rem; font-weight: 800; overflow-wrap: anywhere;
+  margin: .125rem 0 .5rem; font-size: 1.0625rem; font-weight: 700; overflow-wrap: anywhere;
 }
 .practice-bar__progress { height: 6px; }
 
@@ -160,19 +156,19 @@
 }
 .practice .answer-option { min-height: 60px; }
 
-/* Izoh paneli — to'q navy (Stitch "Izoh va qoida asosi") */
+/* Izoh paneli — och fon, chapda holat rangi */
 .practice .explain {
   margin-top: 1.25rem; padding: 1.125rem 1.25rem;
-  color: #E6EAF0; background: var(--ink-900);
-  border: 0; border-left: 4px solid var(--accent); border-radius: var(--radius);
+  color: var(--ink-700); background: var(--surface-2);
+  border: 0; border-left: 4px solid var(--primary); border-radius: 4px;
   font-size: 1rem; line-height: 1.6;
   animation: explain-in var(--t) var(--ease);
 }
-.practice .explain .explain__title { font-family: var(--font-display); font-size: 1.0625rem; color: #fff; margin-bottom: .25rem; }
+.practice .explain .explain__title { font-family: var(--font-display); font-size: 1.125rem; color: var(--ink-900); margin-bottom: .25rem; }
 .practice .explain--success { border-left-color: var(--success); }
-.practice .explain--success > .bi { color: #4ADE80; }
+.practice .explain--success > .bi { color: var(--success); }
 .practice .explain--danger { border-left-color: var(--danger); }
-.practice .explain--danger > .bi { color: var(--accent); }
+.practice .explain--danger > .bi { color: var(--danger); }
 @keyframes explain-in { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 
 /* Pastki navigatsiya */

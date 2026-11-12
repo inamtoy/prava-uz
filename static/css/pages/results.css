@@ -1,5 +1,5 @@
 /* =====================================================================
-   Natija, profil va xato sahifalari (Stitch: imtihon_natijasi, profil)
+   Natija, profil va xato sahifalari (imtihon_natijasi, profil)
    Faqat main.css tokenlari ishlatiladi.
    ===================================================================== */
 
@@ -17,7 +17,7 @@
   display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap;
   gap: .75rem 1rem; margin-bottom: 1.25rem;
 }
-.card-head__title { margin: 0; font-size: 1.25rem; font-weight: 800; }
+.card-head__title { margin: 0; font-size: 1.25rem; font-weight: 700; }
 @media (min-width: 768px) { .card-head__title { font-size: 1.5rem; } }
 .card-head__sub { margin: .125rem 0 0; font-size: .875rem; color: var(--ink-500); }
 
@@ -27,19 +27,19 @@
   overflow: hidden; padding: 1.75rem 1.25rem; margin-bottom: 1.25rem;
   box-shadow: var(--shadow);
 }
-.result-hero--pass { background: linear-gradient(115deg, var(--surface) 55%, var(--success-50) 100%); }
-.result-hero--fail { background: linear-gradient(115deg, var(--surface) 55%, var(--danger-50) 100%); }
-.result-hero--practice { background: linear-gradient(115deg, var(--surface) 55%, var(--primary-50) 100%); }
+.result-hero--pass { background: var(--surface); border-top: 6px solid var(--success); }
+.result-hero--fail { background: var(--surface); border-top: 6px solid var(--danger); }
+.result-hero--practice { background: var(--surface); border-top: 6px solid var(--primary); }
 .result-hero > * { position: relative; z-index: 1; }
 
 .result-hero__ring { position: relative; display: inline-grid; place-items: center; }
 .result-hero__ring .progress-ring { --size: 168px; }
 .result-hero__pct { position: absolute; top: 4px; right: -6px; font-family: var(--font-mono); box-shadow: var(--shadow-sm); }
 .result-ring__inner { display: flex; flex-direction: column; align-items: center; line-height: 1; }
-.result-ring__score { font-size: 2.75rem; letter-spacing: -0.04em; }
+.result-ring__score { font-size: 2.75rem; letter-spacing: -0.01em; }
 .result-ring__total { font-size: 1.125rem; font-weight: 700; color: var(--ink-500); letter-spacing: 0; }
 .result-ring__label {
-  margin-top: .375rem; font-size: .6875rem; font-weight: 800; letter-spacing: .1em;
+  margin-top: .375rem; font-size: .6875rem; font-weight: 700; letter-spacing: .1em;
   text-transform: uppercase; color: var(--ink-500);
 }
 
@@ -141,13 +141,13 @@
 .mistake__answer .answer-option__key { min-width: 32px; height: 32px; font-size: 1rem; }
 .mistake__label {
   display: block; margin-bottom: .125rem;
-  font-family: var(--font-display); font-size: .6875rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase;
+  font-family: var(--font-display); font-size: .6875rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase;
 }
 .answer-option.is-wrong .mistake__label { color: var(--danger-600); }
 .answer-option.is-correct .mistake__label { color: #0E6B33; }
 .mistake__unanswered {
   display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .75rem;
-  padding: .875rem 1rem; border: 2px dashed var(--line-strong); border-radius: 14px;
+  padding: .875rem 1rem; border: 2px dashed var(--line-strong); border-radius: 8px;
 }
 .mistake .explain { margin-top: 1rem; }
 
@@ -178,7 +178,7 @@
 /* ---------- Profil ---------- */
 .profile-head {
   display: flex; flex-direction: column; gap: 1.25rem; margin-bottom: 1.25rem;
-  background: linear-gradient(110deg, var(--surface) 65%, var(--accent-50) 100%);
+  background: var(--surface);
   box-shadow: var(--shadow);
 }
 .profile-head__who { display: flex; align-items: center; gap: 1rem; min-width: 0; }
@@ -202,7 +202,7 @@
 
 .profile-banner {
   display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1.25rem;
-  margin-bottom: 1.25rem; border-left: 6px solid var(--accent);
+  margin-bottom: 1.25rem;
 }
 .profile-banner__ring { --size: 112px; --stroke: 3.2; }
 .profile-banner__title { margin: .375rem 0 .375rem; font-size: clamp(1.375rem, 3vw, 1.75rem); }
@@ -232,7 +232,7 @@
 .topic-progress { display: grid; gap: 1.125rem; margin: 0; padding: 0 .25rem 0 0; list-style: none; max-height: 560px; overflow-y: auto; }
 .topic-progress__row { display: flex; justify-content: space-between; align-items: baseline; gap: .75rem; margin-bottom: .375rem; }
 .topic-progress__name { font-size: .9375rem; font-weight: 600; min-width: 0; overflow-wrap: anywhere; }
-.topic-progress__warn { margin-left: .25rem; font-weight: 800; color: var(--accent-ink); }
+.topic-progress__warn { margin-left: .25rem; font-weight: 700; color: var(--accent-ink); }
 .topic-progress__pct { flex: 0 0 auto; font-family: var(--font-mono); font-size: .875rem; font-weight: 700; }
 .topic-progress__pct.is-low { color: var(--accent-ink); }
 .topic-progress__hint { display: block; margin-top: .25rem; font-size: .75rem; color: var(--ink-500); }
@@ -241,7 +241,7 @@
 .weak-list { display: grid; gap: .625rem; margin: 0; padding: 0; list-style: none; }
 .weak-item {
   display: flex; align-items: center; justify-content: space-between; gap: .75rem;
-  padding: .875rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 12px;
+  padding: .875rem 1rem; background: var(--surface); border: 1px solid var(--line); border-radius: 8px;
 }
 .weak-item__text { display: flex; flex-direction: column; min-width: 0; }
 .weak-item__name { font-weight: 600; overflow-wrap: anywhere; }
@@ -252,7 +252,7 @@
 /* Oxirgi imtihonlar */
 .mode-dot { display: inline-block; width: 8px; height: 8px; margin-right: .375rem; border-radius: 50%; background: var(--danger); vertical-align: middle; }
 .mode-dot--practice { background: var(--accent-ink); }
-.recent-table .score { font-family: var(--font-display); font-size: 1.25rem; font-weight: 800; }
+.recent-table .score { font-family: var(--font-display); font-size: 1.25rem; font-weight: 700; }
 .recent-table__date { font-weight: 600; white-space: nowrap; }
 .recent-link {
   display: inline-flex; align-items: center; gap: .375rem; min-height: 44px; padding: 0 .25rem;
@@ -284,10 +284,10 @@
   max-width: 880px; margin: 1rem auto 2rem; padding: 2rem 1.25rem;
   background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); box-shadow: var(--shadow);
 }
-.error-page__sign { width: 120px; height: 150px; flex: 0 0 auto; filter: drop-shadow(0 8px 16px rgba(11, 27, 51, .15)); }
+.error-page__sign { width: 120px; height: 150px; flex: 0 0 auto; filter: drop-shadow(0 8px 16px rgba(20, 23, 26, .15)); }
 .error-page__code {
-  margin: .25rem 0 0; font-family: var(--font-display); font-weight: 800; line-height: 1;
-  font-size: clamp(4rem, 14vw, 6.5rem); letter-spacing: -0.05em; color: var(--ink-900);
+  margin: .25rem 0 0; font-family: var(--font-display); font-weight: 700; line-height: 1;
+  font-size: clamp(4rem, 14vw, 6.5rem); letter-spacing: -0.01em; color: var(--ink-900);
 }
 .error-page h1 { margin: .25rem 0 .75rem; }
 .error-page .lead { max-width: 480px; margin-left: auto; margin-right: auto; }
@@ -301,3 +301,6 @@
   .error-page__actions { justify-content: flex-start; }
   .error-page__actions .btn { flex: 0 0 auto; }
 }
+
+/* Yangi uslubda bezak konfetti ishlatilmaydi */
+.confetti { display: none !important; }

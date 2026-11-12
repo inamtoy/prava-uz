@@ -1,6 +1,6 @@
 /* =====================================================================
    Imtihon ekranlari: ma'lumot sahifasi (exam_start) va test ekrani (exam)
-   Manba: design/ Stitch "prava.uz_imtihon_simulyatori". Tokenlar main.css da.
+   Dizayn: "Yo'l belgisi" "prava.uz_imtihon_simulyatori". Tokenlar main.css da.
    ===================================================================== */
 
 :root { --exam-top-h: 64px; }
@@ -30,23 +30,22 @@
 @keyframes exam-live { 0%, 100% { opacity: 1; } 50% { opacity: .35; } }
 
 /* Taymer (holat klasslari .is-warning / .is-danger main.css da) */
-.exam-timer { font-size: 1.125rem; padding: .375rem .875rem; min-height: 40px; box-shadow: inset 0 1px 3px rgba(0, 0, 0, .35); }
-.exam-timer:not(.is-warning):not(.is-danger) .exam-timer__value { color: var(--accent); }
-.exam-timer__value { font-weight: 800; letter-spacing: .04em; }
+.exam-timer { font-size: 1.125rem; padding: .25rem .75rem; min-height: 40px; }
+.exam-timer__value { font-weight: 700; letter-spacing: .02em; }
 .exam-timer__suffix {
   display: none; padding-left: .5rem; margin-left: .125rem;
   font-family: var(--font-body); font-size: .75rem; font-weight: 500; letter-spacing: 0;
-  color: var(--ink-300); border-left: 1px solid var(--ink-700);
+  color: var(--ink-500); border-left: 1px solid var(--line-strong);
 }
-.exam-timer.is-warning .exam-timer__suffix { color: var(--ink-700); border-color: rgba(11, 27, 51, .25); }
+.exam-timer.is-warning .exam-timer__suffix { color: var(--ink-700); border-color: rgba(20, 23, 26, .25); }
 .exam-timer.is-danger .exam-timer__suffix { color: #fff; border-color: rgba(255, 255, 255, .35); }
 
 .exam-finish-btn {
   min-height: 44px; padding: .5rem .875rem;
   font-weight: 700; color: var(--danger);
-  background: var(--surface); border-color: rgba(229, 56, 59, .3);
+  background: var(--surface); border-color: rgba(200, 16, 46, .3);
 }
-.exam-finish-btn:hover { color: var(--danger-600); background: var(--danger-50); border-color: rgba(229, 56, 59, .45); }
+.exam-finish-btn:hover { color: var(--danger-600); background: var(--danger-50); border-color: rgba(200, 16, 46, .45); }
 .exam-finish-btn .bi { display: none; }
 
 @media (min-width: 400px) { .exam-finish-btn .bi { display: inline; } }
@@ -79,7 +78,7 @@
   padding: 0 4px; margin-bottom: .25rem;
   font-size: .8125rem; font-weight: 600; color: var(--ink-700);
 }
-.exam-map__title { display: none; margin: 0; font-size: 1rem; font-weight: 800; }
+.exam-map__title { display: none; margin: 0; font-size: 1rem; font-weight: 700; }
 .exam-map__pos strong { font-family: var(--font-mono); color: var(--ink-900); }
 .exam-map__count { color: var(--primary); font-weight: 700; }
 .exam-map__count span { font-family: var(--font-mono); }
@@ -184,7 +183,7 @@
   .exam-map__pos { display: none; }
   .exam-map__count {
     padding: .25rem .625rem; font-size: .75rem;
-    background: var(--primary-50); border: 1px solid rgba(36, 87, 245, .15); border-radius: 8px;
+    background: var(--primary-50); border: 1px solid rgba(0, 85, 164, .15); border-radius: 8px;
   }
   .exam-map__grid.q-nav {
     display: grid; grid-template-columns: repeat(5, 1fr); gap: .625rem;
@@ -211,7 +210,7 @@
   display: flex; align-items: center; justify-content: space-between; gap: 1rem;
   width: 100%; padding: .75rem 1rem;
   font-size: .9375rem; font-weight: 600; color: var(--ink-700);
-  background: var(--surface-2); border: 1px solid var(--line); border-radius: 12px;
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: 8px;
 }
 .finish-modal__time .font-mono { font-size: 1.0625rem; font-weight: 700; color: var(--ink-900); }
 .finish-modal__actions { display: grid; grid-template-columns: 1fr 1fr; gap: .75rem; width: 100%; margin-top: 1.5rem; }
@@ -229,12 +228,12 @@
 .es-stat {
   display: flex; flex-direction: column; align-items: flex-start; gap: .125rem;
   padding: .875rem .75rem;
-  background: rgba(255, 255, 255, .06); border: 1px solid rgba(255, 255, 255, .1); border-radius: 14px;
+  background: rgba(255, 255, 255, .1); border: 1.5px solid rgba(255, 255, 255, .5); border-radius: 4px;
 }
 .es-stat .bi { font-size: 1.125rem; color: var(--accent); margin-bottom: .25rem; }
 .es-stat__value {
-  font-family: var(--font-display); font-weight: 800; font-size: 2rem; line-height: 1;
-  letter-spacing: -0.03em; color: #fff; font-variant-numeric: tabular-nums;
+  font-family: var(--font-display); font-weight: 700; font-size: 2.25rem; line-height: 1;
+  letter-spacing: 0; color: #fff; font-variant-numeric: tabular-nums;
 }
 .es-stat__label { font-size: .8125rem; line-height: 1.3; color: var(--ink-300); }
 
@@ -245,7 +244,7 @@
 .es-resume {
   display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1rem;
   margin-bottom: 1rem; padding: 1rem;
-  background: var(--primary-50); border: 1px solid rgba(36, 87, 245, .2); border-radius: 14px;
+  background: var(--primary-50); border: 1px solid rgba(0, 85, 164, .2); border-radius: 8px;
   color: var(--ink-700);
 }
 .es-resume > .bi { font-size: 1.25rem; color: var(--primary); }

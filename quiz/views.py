@@ -16,9 +16,20 @@ from .models import Question, Topic
 
 
 def home(request):
+    topics = list(
+        Topic.objects.annotate(question_count=Count("questions", filter=Q(questions__is_active=True)))
+        .filter(question_count__gt=0)
+        .order_by("order", "name")
+        .only("id", "name", "slug", "order")
+    )
+    if request.user.is_authenticated:
+        progress = services.topic_progress(request.user)
+        for topic in topics:
+            topic.progress = progress.get(topic.pk, 0)
     return render(request, "quiz/home.html", {
+        "topics": topics,
         "question_count": Question.objects.filter(is_active=True).count(),
-        "topic_count": Topic.objects.count(),
+        "topic_count": len(topics),
         "exam_question_count": settings.EXAM_QUESTION_COUNT,
         "exam_minutes": settings.EXAM_DURATION_SECONDS // 60,
         "exam_max_mistakes": settings.EXAM_MAX_MISTAKES,
