@@ -17,3 +17,9 @@ db.sqlite3.bak
 backups/
 *.dump
 *.sqlite3
+
+# To'liq o'lchamli manba rasmlar (PDF), repoga tushmaydi
+savollar/rasmlar_asl/
+# match_images / compare_answer_keys hisobotlari
+match_images.csv
+answer_keys_diff.csv
