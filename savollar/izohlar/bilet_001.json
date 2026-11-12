@@ -5,22 +5,22 @@
     {
       "question_id": 5900,
       "savol": "Quyidagi belgilarning taʼsir oraligʻida qaysi avtomobil uchun toʻxtashga ruxsat beriladi.",
-      "rasm": "questions/b001_s01_0.jpeg",
+      "rasm": "questions/b001_s01_0_asl.jpeg",
       "togri_javob": "“Nogiron” taniqli belgisi boʻlgan sariq avtomobilga.",
-      "izoh": "",
-      "ishonch": "past",
-      "izohcha": "Rasm 160x120 px — belgining turi aniq koʻrinmaydi. “Nogiron” taniqli belgisi istisnosi barcha toʻxtash/toʻxtab turish belgilariga emas, faqat ayrimlariga tegishli; qaysi belgi ekanini rasmning asl nusxasidan tekshirish kerak.",
-      "holat": "tekshirish kerak"
+      "izoh": "Rasmdagi “Toʻxtash taqiqlangan” belgisi ostida nogironlar aravachasi tasviri ustidan chizilgan qoʻshimcha axborot belgisi bor: u belgining taʼsiri “Nogiron” taniqli belgisi oʻrnatilgan transport vositalariga tatbiq etilmasligini bildiradi. Shuning uchun bu joyda toʻxtashga faqat shunday belgili sariq avtomobilga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Belgi kattalashtirib tekshirildi: qizil X (to'xtash taqiqlangan), ostidagi plastinkada aravacha tasviri qizil chiziq bilan chizilgan — “Nogironlardan tashqari” ma'nosida o'qildi. Plastinka kichik, shuni bir ko'zdan kechiring.",
+      "holat": "tayyor"
     },
     {
       "question_id": 5901,
       "savol": "Yoʻnaltirgichlarning qaysilari boʻylab harakatlanishga ruxsat etiladi?",
-      "rasm": "questions/b001_s02_0.jpeg",
+      "rasm": "questions/b001_s02_0_asl.jpeg",
       "togri_javob": "Faqat A va Г yoʻnalishlari boʻylab.",
-      "izoh": "",
-      "ishonch": "past",
-      "izohcha": "Rasm 160x120 px — yoʻnalishlarni belgilovchi yoʻl belgisi koʻrinmaydi, javobni rasmdan tasdiqlab boʻlmaydi.",
-      "holat": "tekshirish kerak"
+      "izoh": "Yoʻl boshida “Toʻgʻriga harakatlanish” belgisi oʻrnatilgan. U faqat toʻgʻriga harakatlanishga ruxsat beradi, lekin yoʻl yoqasidagi hududlarga oʻngga burilishni taqiqlamaydi. Shuning uchun A (oʻngga, yoʻl yoqasidagi hududga) va Г (toʻgʻriga) yoʻnalishlar ruxsat etiladi, chapga burilish (Б va В) esa taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Belgi kattalashtirib tekshirildi: ko'k doira, oq yuqoriga strelka.",
+      "holat": "tayyor"
     },
     {
       "question_id": 5902,
@@ -35,42 +35,42 @@
     {
       "question_id": 5903,
       "savol": "Chorrahadan birinchi boʻlib oʻtadi:",
-      "rasm": "questions/b001_s04_0.jpeg",
+      "rasm": "questions/b001_s04_0_asl.jpeg",
       "togri_javob": "Yashil avtomobil.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Rasm 160x120 px — chorrahadagi belgilar va avtomobillarning yoʻnalish koʻrsatkichlari koʻrinmaydi, navbatni rasmdan tekshirib boʻlmaydi.",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Burilish ko'rsatkichlari ko'rinadi (yashil — o'ngga, qizil va sariq — chapga), lekin ko'chalar geometriyasi va mashinalarning aniq yo'nalishi bir ma'noli aniqlanmadi; navbatni ishonch bilan tushuntirib bo'lmaydi.",
       "holat": "tekshirish kerak"
     },
     {
       "question_id": 5904,
       "savol": "Harakatlanish taʼqiqlangan:",
-      "rasm": "questions/b001_s05_0.jpeg",
+      "rasm": "questions/b001_s05_0_asl.jpeg",
       "togri_javob": "Koʻk, yashil va oq avtomobillarga.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Javob regulyatorning qaysi tomonga qarab turgani va qoʻllarining holatiga bogʻliq; 160x120 px rasmda bu koʻrinmaydi.",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Regulyator to'liq rasmda ham ~15 px: qo'llari va qaysi tomonga qarab turgani ko'rinmaydi. Javob shunga bog'liq.",
       "holat": "tekshirish kerak"
     },
     {
       "question_id": 5905,
       "savol": "Qaysi transport vositasining haydovchisi chorrahadan birinchi boʻlib oʻtadi?",
-      "rasm": "questions/b001_s06_0.jpeg",
+      "rasm": "questions/b001_s06_0_asl.jpeg",
       "togri_javob": "Avtomobil va avtobus haydovchisi.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Javob svetofor va tramvay signaliga bogʻliq; 160x120 px rasmda ishoralar koʻrinmaydi.",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Tramvay svetoforida qizil + qo'shimcha seksiyada yashil strelka ko'rinadi. Agar avtomobil va avtobus asosiy yashil signal bo'yicha harakatlansa, tramvay ularga yo'l beradi (#5914 dagi kabi) — kalit shunga mos. Lekin avtomobil tarafidagi svetoforning qaysi seksiyasi yonganini rasmdan ajratib bo'lmadi. Taklif (tasdiqlasangiz): “Tramvay qoʻshimcha seksiyaning yashil strelkasi boʻyicha harakatlanmoqda, avtomobil va avtobus esa asosiy yashil signal boʻyicha. Strelka boʻyicha harakatlanayotgan haydovchi boshqa yoʻnalishlardagi transport vositalariga yoʻl berishi shart, shuning uchun avtomobil va avtobus birinchi oʻtadi.”",
       "holat": "tekshirish kerak"
     },
     {
       "question_id": 5906,
       "savol": "Shu joyda toʻxtab turishga ruxsat etiladimi?",
-      "rasm": "questions/b001_s07_0.jpeg",
+      "rasm": "questions/b001_s07_0_asl.jpeg",
       "togri_javob": "Ruxsat etiladi.",
-      "izoh": "",
-      "ishonch": "past",
-      "izohcha": "Rasm 160x120 px — joydagi belgi va chiziqlar koʻrinmaydi, toʻxtab turish ruxsatini tasdiqlab boʻlmaydi.",
-      "holat": "tekshirish kerak"
+      "izoh": "Furgon uch yoʻlli chorrahada yon yoʻlning roʻparasida turibdi, yoʻl oʻrtasida esa qoʻsh yaxlit chiziq bor. Bunday joyda chorraha yaqinida toʻxtash taqiqi tatbiq etilmaydi, taqiqlovchi belgi ham yoʻq. Shuning uchun bu yerda toʻxtab turishga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Qo'sh yaxlit chiziq kattalashtirib tekshirildi. Ko'k belgi (o'ngga strelka) yon yo'ldan chiquvchilar uchun, furgonga tegishli emas.",
+      "holat": "tayyor"
     },
     {
       "question_id": 5907,
@@ -105,22 +105,22 @@
     {
       "question_id": 5910,
       "savol": "Quyidagi belgilar harakatlanishga ruxsat beradi:",
-      "rasm": "questions/b002_s02_0.jpeg",
+      "rasm": "questions/b002_s02_0_asl.jpeg",
       "togri_javob": "Toʻgʻriga, oʻngga va qayrilishga.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Rasm savolga mos kelmaydi: savol yoʻl belgilari haqida, rasmda esa chorrahadagi avtomobillar. Rasm almashib ketgan boʻlishi mumkin — Excel manbasini tekshirish kerak.",
-      "holat": "tekshirish kerak"
+      "izohcha": "NOFAOL (2026-11-13): PDF'da xato rasm — savol yo'l belgilari haqida, rasmda chorrahadagi avtomobillar (xuddi shu rasm Excel 110/9 da). Izoh yozilmaydi.",
+      "holat": "nofaol"
     },
     {
       "question_id": 5911,
       "savol": "Quyidagi koʻrsatkich yozuvi nimani bildiradi?",
-      "rasm": "questions/b002_s03_0.jpeg",
+      "rasm": "questions/b002_s03_0_asl.jpeg",
       "togri_javob": "“Toʻxtamasdan harakatlanish taʼqiqlangan” belgisi bilan qoʻllanganda haydovchi “Toʻxtang” chzigʻiga yaqinlashayotganligi haqida ogohlantiradi.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Rasm savolga mos kelmaydi: savol koʻrsatkich yozuvi (qoʻshimcha axborot belgisi) haqida, rasmda esa chorrahadagi uchta avtomobil. Rasm almashib ketgan boʻlishi mumkin.",
-      "holat": "tekshirish kerak"
+      "izohcha": "NOFAOL (2026-11-13): PDF'da xato rasm — savol ko'rsatkich yozuvi haqida, rasmda chorrahadagi avtomobillar (xuddi shu rasm Excel 111/4 da). Izoh yozilmaydi.",
+      "holat": "nofaol"
     },
     {
       "question_id": 5912,
@@ -135,22 +135,22 @@
     {
       "question_id": 5913,
       "savol": "Qaysi transport vositasi haydovchisi toʻgʻriga harakatlanish huquqiga ega?",
-      "rasm": "questions/b002_s05_0.jpeg",
+      "rasm": "questions/b002_s05_0_asl.jpeg",
       "togri_javob": "Yengil avtomobil haydovchisi.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Javob regulyatorning holatiga bogʻliq; 160x120 px rasmda uning qaysi tomonga qarab turgani koʻrinmaydi.",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Regulyator to'liq rasmda ham juda kichik: qaysi tomonga qarab turgani va qo'llari ko'rinmaydi. Javob shunga bog'liq.",
       "holat": "tekshirish kerak"
     },
     {
       "question_id": 5914,
       "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
-      "rasm": "questions/b002_s06_0.jpeg",
+      "rasm": "questions/b002_s06_0_asl.jpeg",
       "togri_javob": "Tramvay haydovchisi.",
-      "izoh": "",
-      "ishonch": "past",
-      "izohcha": "Rasm 160x120 px — svetofor/tramvay ishoralari va yoʻl belgilari koʻrinmaydi, kim yoʻl berishini rasmdan tasdiqlab boʻlmaydi.",
-      "holat": "tekshirish kerak"
+      "izoh": "Tramvay svetoforida qizil signal bilan birga qoʻshimcha seksiyaning yashil strelkasi yongan, avtomobil esa asosiy yashil signal boʻyicha harakatlanmoqda. Qoʻshimcha seksiya strelkasi boʻyicha harakatlanayotgan haydovchi boshqa yoʻnalishlardan harakatlanayotgan transport vositalariga yoʻl berishi shart, shuning uchun tramvay yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm (520x390) bo'yicha ko'rib chiqildi (2026-11-13). Ikkala svetofor kattalashtirib tekshirildi: tramvayda qizil va yashil bir vaqtda yongan (demak yashil — qo'shimcha seksiya), avtomobilda faqat pastki yashil.",
+      "holat": "tayyor"
     }
   ]
 }
