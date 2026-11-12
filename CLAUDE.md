@@ -221,7 +221,27 @@ Mashq ekrani (`practice.html` + `practice.js`) — xuddi shu karta, lekin taymer
 
 ## 8. Dizayn (UI/UX)
 
-- Ranglar (`static/css/main.css` da CSS o'zgaruvchilari): asosiy **ko'k** `#1f6feb`, to'g'ri **yashil** `#1a7f37`, xato **qizil** `#cf222e`, fon och kulrang `#f6f8fa`.
+### Dizayn tizimi — "Yo'l belgisi"
+Yagona manba: `static/css/main.css` `:root` tokenlari (sayt) va `static/css/admin.css` + `config/settings.py` `UNFOLD["COLORS"]` (admin). Ikkalasi bir xil palitrada.
+
+| Rol | Rang | Izoh |
+|---|---|---|
+| Asosiy (primary) | `#0055A4` | axborot belgisi ko'ki; hover `#004588`, och fon `#E7EFF8` |
+| To'g'ri | `#00843D` | och fon `#E5F3EB` |
+| Xato | `#C8102E` | och fon `#FBE8EB` |
+| Ogohlantirish | `#F2A900` | **faqat** ogohlantirish ma'nosida (taymer 5 daq, o'rtacha natija, izohsiz savol) |
+| Matn / ikkinchi darajali | `#14171A` / `#5E656D` | |
+| Chiziq / fon | `#E2E4E7` / `#F3F4F5` | kartalar oq `#FFFFFF` |
+
+- **Shriftlar:** sarlavhalar va raqamlar — **Barlow** (500–700), matn — **Inter**. Manrope va JetBrains Mono ishlatilmaydi.
+- **Shakl:** burchaklar 6–10px (admin 8px), soyalar deyarli yo'q, gradient yo'q, sariq urg'u yo'q. Admin qorong'i rejimida primary ochroq ko'k (`#6FA2D6` / `#A3C4E6`).
+- **"Yo'l belgisi" uslubi:**
+  - Ko'k axborot belgisi paneli — `#0055A4` fon, oq matn va **oq ichki hoshiya** (`.card-dark`: `outline: 2px solid #fff; outline-offset: -8px`; bosh sahifadagi `.route-sign`).
+  - Raqamli shartlar **cheklov belgisi** ko'rinishida — oq doira, qalin qizil halqa, ichida Barlow raqam (`.limit-sign`: 20 savol, 25 daqiqa, 2 xato).
+  - Ikonkali plitkalar — ko'k kvadrat, oq belgi (logotip ham shunday: `static/img/logo.svg`, ko'k kvadrat + oq "P").
+- `design/` papkasidagi Stitch maketlari ("Asphalt & Signal": to'q navy + sariq) **endi ishlatilmaydi** — tarixiy manba sifatida qoldirilgan, ularga moslashtirma.
+
+### Komponentlar va oqim
 - Bootstrap komponentlari: navbar (logo "Prava.uz" + menyu: Mavzular, Imtihon, Profil, Chiqish), card, progress, badge, modal, alert.
 - Mobile-first. Javob tugmalari kamida 48px balandlik. Matn kamida 16px.
 - Foydalanuvchi yo'li: **Bosh sahifa → Kirish → Mavzular → Test ekrani → Natija → Profil**. Har sahifada keyingi qadam tugmasi aniq ko'rinsin, hech qayerda "boshi berk ko'cha" bo'lmasin.
