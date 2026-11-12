@@ -1,0 +1,156 @@
+{
+  "bilet": "2-bilet",
+  "slug": "bilet-2",
+  "savollar": [
+    {
+      "question_id": 5915,
+      "savol": "Transport vositasi orqaga harakatlanish paytida haydovchi qanday talablarni bajarishi kerak?",
+      "rasm": null,
+      "togri_javob": "Harakatning boshqa ishtirokchilariga xalaqit bermaslik. Harakat xavfsizligini taʼminlash uchun zarur boʻlsa, boshqa shaxslar yordamidan foydalanish.",
+      "izoh": "Orqaga harakatlanishda haydovchi bu manevr xavfsiz ekaniga va harakatning boshqa ishtirokchilariga xalaqit bermasligiga ishonch hosil qilishi shart. Orqani yaxshi koʻra olmasa yoki xavfsizlik uchun zarur boʻlsa, boshqa shaxslar yordamidan foydalanishi kerak — shuning uchun ikkala talab birga toʻgʻri javobda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5916,
+      "savol": "Qarama-qarshi harakat yoʻnalishi yoʻli tomon chiqish qachon taʼqiqlanadi?",
+      "rasm": null,
+      "togri_javob": "Yuqoridagi hamma holatlarda.",
+      "izoh": "Ikki tomonlama harakatli, 4 ta va undan koʻp boʻlakli yoʻllarda qarama-qarshi harakat uchun moʻljallangan tomonga chiqish taqiqlanadi. Ikkinchi variantdagi yoʻl (ikkita uzluksiz chiziq bilan ajratilgan 4 boʻlakli) ham shu toifaga kiradi, shuning uchun taqiq yuqoridagi barcha holatlarga tegishli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5917,
+      "savol": "Egri yoʻlda harakatlanayotgan avtomobil turgʻunligi quyidagi qaysi holatda taʼminlangan?",
+      "rasm": null,
+      "togri_javob": "Uzatma ulangan holatda.",
+      "izoh": "Uzatma ulanganda gʻildiraklar dvigatel bilan bogʻliq boʻladi: haydovchi tortish kuchini boshqarib turadi va dvigatel bilan tormozlay oladi. Uzatma ajratilganda (neytralda) yoki burilishda tezlik oshirilganda avtomobilning yoʻl bilan ilashishi va turgʻunligi kamayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5918,
+      "savol": "Qaysi shartlarda transport vositalaridan foydalanish taʼqiqlanadi?",
+      "rasm": null,
+      "togri_javob": "Ishchi tormoz tizimi ishlamayotgan boʻlsa.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit munozarali: savol \"foydalanish taqiqlanadi\" deydi, kalitda esa faqat \"Ishchi tormoz tizimi ishlamayotgan bo'lsa\". Biroq gidravlik tormoz yuritmasining germetikligi buzilishi (suyuqlik oqishi) va pnevmatik tizimdagi bosim nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatoriga kiradi — bu \"Hamma ko'rsatilgan holatlarda\" ni to'g'ri qiladi. Kalit, ehtimol, \"harakatlanish taqiqlanadi\" (ishchi tormoz ishlamasa, ta'mirlash joyiga ham borib bo'lmaydi) bilan adashtirilgan. 1-biletdagi #5902 da \"foydalanish taqiqlanadi\" nosozliklar ro'yxati ma'nosida ishlatilgan. Manba (PDF) kalitini tekshirish kerak; izoh yozilmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5919,
+      "savol": "Haydovchi oʻz harakat yoʻnalishidan qatʼiy nazar kimningi ixtiyotiga transport vositasidan foydalanishga imkon berishi zarur?",
+      "rasm": null,
+      "togri_javob": "Tibbiyot hodimlariga hayoti xavf ostida qolgan bemorlar uchun.",
+      "izoh": "Haydovchi hayoti xavf ostida qolgan bemorni davolash muassasasiga yetkazish uchun transport vositasini tibbiyot xodimlariga berishi shart. Yoʻldan foydalanish xizmati xodimlari bunday huquqqa ega emas.",
+      "ishonch": "yuqori",
+      "izohcha": "Savoldagi \"harakat yo'nalishidan qat'iy nazar\" sharti izohda tasdiqlanmadi (aniq ifodasini bilmayman) — izoh faqat kim huquqqa ega ekanini tushuntiradi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5920,
+      "savol": "Qaysi yoʻnalishlarda harakatlanishga ruxsat etilgan?",
+      "rasm": "questions/b003_s02_0_asl.jpeg",
+      "togri_javob": "A va Б.",
+      "izoh": "Yoʻl boshida “Toʻgʻriga harakatlanish” belgisi oʻrnatilgan. U toʻgʻriga harakatlanishga ruxsat beradi va yoʻl yoqasidagi hududlarga oʻngga burilishni taqiqlamaydi. Shuning uchun A (oʻngga, yoʻl yoqasidagi hududga) va Б (toʻgʻriga) ruxsat etiladi, В va Г yoʻnalishlari esa taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Vaziyat 1-biletdagi #5901 bilan bir xil, strelkalar boshqacha.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5921,
+      "savol": "Qaysi belgi roʻparadan harakatlanishning ustunligni bildiradi?",
+      "rasm": "questions/b003_s03_0_asl.jpeg",
+      "togri_javob": "2",
+      "izoh": "2-belgi (qizil hoshiyali doira, qora va qizil strelka) — “Roʻparadan harakatlanishning ustunligi”: tor joyda qarama-qarshi yoʻnalishdagi transport vositalariga yoʻl berish kerak. 4-belgi (koʻk kvadrat) esa aksincha — sizning roʻparadagilarga nisbatan ustunligingizni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgilar jadvali aniq ko'rinadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5922,
+      "savol": "Qaysi belgi aholi yashaydigan joylarda harakatlanish tartibini belgilaydigan talablarni bekor qilinishini koʻrsatadi?",
+      "rasm": "questions/b003_s04_0_asl.jpeg",
+      "togri_javob": "4",
+      "izoh": "4-belgi — oq fonli, ustidan chizilgan aholi punkti nomi — “Aholi punktining oxiri”: undan keyin aholi punktlarida harakatlanish tartibini belgilovchi talablar (jumladan tezlik cheklovi) bekor boʻladi. 5-belgi (koʻk fonli nom) bu talablarni oʻrnatmaydi, shuning uchun uning oxiri ham ularni bekor qilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgilar jadvali aniq ko'rinadi. 6 — avtomagistral oxiri, 3 — barcha cheklovlar oxiri, 2 — asosiy yo'l oxiri.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5923,
+      "savol": "Oʻngga burilganda shu belgi bilan belgilangan boʻlakka oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b003_s05_0_asl.jpeg",
+      "togri_javob": "Agar boʻlak harakat qismidan yotiq sidirgʻa chiziq bilan ajratilmagan boʻlsa, ruxsat etiladi.",
+      "izoh": "Bu “Yoʻnalishli transport vositalari uchun boʻlak” belgisi. Boshqa transport vositalarining bu boʻlakda harakatlanishi taqiqlanadi, lekin boʻlak harakat qismidan uzlukli chiziq bilan ajratilgan boʻlsa, oʻngga burilishda unga oʻtishga ruxsat etiladi. Yaxlit chiziq bilan ajratilgan boʻlsa, oʻtish mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5924,
+      "savol": "Transport vositalari chorrahadan quyidagi tartibda oʻtadilar:",
+      "rasm": "questions/b003_s06_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil, tramvay va avtobus.",
+      "izoh": "Avtomobil asosiy yashil signal boʻyicha harakatlanmoqda, tramvay va avtobus esa qizil signal bilan birga yongan qoʻshimcha seksiyaning yashil strelkasi boʻyicha. Strelka boʻyicha harakatlanayotganlar boshqa yoʻnalishlardagi transport vositalariga yoʻl berishi shart, shuning uchun avtomobil birinchi oʻtadi, keyin tramvay va avtobus.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Tramvay tarafidagi svetofor kattalashtirib tekshirildi: qizil va yashil bir vaqtda yongan (yashil — qo'shimcha seksiya). Vaziyat 1-biletdagi #5914 bilan bir xil.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5925,
+      "savol": "Avtomobilning qaysi gʻildiragi “sirpanib” tormozlanishga koʻproq moyil boʻladi.",
+      "rasm": null,
+      "togri_javob": "Orqa gʻildiraklar.",
+      "izoh": "Tormozlanganda avtomobil ogʻirligi oldinga koʻchadi: oldingi gʻildiraklar yoʻlga koʻproq bosiladi, orqa gʻildiraklar esa yengillashib, yoʻl bilan ilashishi kamayadi. Shuning uchun orqa gʻildiraklar sirpanib tormozlanishga koʻproq moyil boʻladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5926,
+      "savol": "Qaysi transport vositalarini qatnov qismining chetida ikki qator qoʻyish mumkin?",
+      "rasm": null,
+      "togri_javob": "Kajavasiz mototsikllar, mopedlar va velosipedlar.",
+      "izoh": "Transport vositalari qatnov qismining chetiga bir qator qilib qoʻyiladi. Kajavasiz ikki gʻildirakli transport vositalari — mototsikllar, mopedlar va velosipedlar — ikki qator qilib qoʻyilishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5927,
+      "savol": "Qoʻl jarohatlanganda kiyim qanday tartibda kiygiziladi?",
+      "rasm": null,
+      "togri_javob": "Kiyim avval jarohatlangan qoʻliga, keyin sogʻ qoʻliga kiydiriladi.",
+      "izoh": "Kiyim avval jarohatlangan qoʻlga, keyin sogʻ qoʻlga kiydiriladi — shunda jarohatlangan qoʻl kam qimirlaydi. Yechishda esa teskari tartib: avval sogʻ qoʻldan, keyin jarohatlangan qoʻldan.",
+      "ishonch": "yuqori",
+      "izohcha": "Yechish tartibi 44- va 71-biletlardagi \"kiyim qanday yechiladi\" savoli (#6557, #6980) kalitiga mos: sog' qo'ldan boshlanadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5928,
+      "savol": "Yuklar transport vositasiga shunday joylashtirilishi kerakki, u:",
+      "rasm": null,
+      "togri_javob": "Shovqin hosil qilmasligi, chang koʻtarmasligi va atrof-muhitni iflos qilmasligi kerak.",
+      "izoh": "Yuk shunday joylashtirilishi kerakki, u shovqin hosil qilmasin, chang koʻtarmasin, yoʻl va atrof-muhitni ifloslantirmasin. Yukning yukxonadan baland chiqishi alohida taqiqlanmagan (umumiy balandlik cheklovi bor), orqaga chiqib turishning ruxsat etilgan chegarasi esa 0,8 m emas.",
+      "ishonch": "yuqori",
+      "izohcha": "Orqaga chiqib turish chegarasining aniq qiymatini izohda keltirmadim — faqat 0,8 m emasligini aytdim.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5929,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b004_s01_0_asl.jpeg",
+      "togri_javob": "Yoʻlning piyodalar oʻtish joyi boʻlgan qismini.",
+      "izoh": "Bu ogohlantiruvchi “Piyodalar oʻtish joyi” belgisi: u oldinda yoʻlning piyodalar oʻtish joyi boʻlgan qismi borligini bildiradi. Trotuar yoki piyodalar yoʻlkasi uchun boshqa belgilar qoʻllanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Qizil hoshiyali uchburchak, piyoda va \"zebra\" — ogohlantiruvchi belgi.",
+      "holat": "tayyor"
+    }
+  ]
+}
