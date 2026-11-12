@@ -144,7 +144,7 @@ class ExamAdmin(PravaListMixin, ModelAdmin):
             return format_html('<span class="prava-muted">{}</span>', "—")
         return mmss(obj.elapsed_seconds)
 
-    @display(description="Natija", label={"Oʻtdi": "success", "Oʻtmadi": "danger", "Mashq": "info", "Jarayonda": "warning"})
+    @display(description="Natija", label={"Oʻtdi": "success", "Oʻtmadi": "danger", "Mashq": "primary", "Jarayonda": "warning"})
     def result_badge(self, obj):
         if obj.status == Exam.STATUS_IN_PROGRESS:
             return "Jarayonda"

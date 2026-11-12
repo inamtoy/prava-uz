@@ -79,10 +79,10 @@ def _week_chart(today):
     data = {
         "labels": [f"{WEEKDAYS[d.weekday()]} {d.day:02d}.{d.month:02d}" for d in days],
         "datasets": [
-            {"label": "Topshirildi", "data": totals, "borderColor": "#0B1B33",
-             "backgroundColor": "rgba(11, 27, 51, .08)", "fill": True, "tension": 0.2, "pointRadius": 4},
-            {"label": "Oʻtdi", "data": passed, "borderColor": "#FFC220",
-             "backgroundColor": "rgba(255, 194, 32, .18)", "fill": True, "tension": 0.2, "pointRadius": 4},
+            {"label": "Topshirildi", "data": totals, "borderColor": "#0055A4",
+             "backgroundColor": "rgba(0, 85, 164, .08)", "fill": True, "tension": 0.2, "pointRadius": 4},
+            {"label": "Oʻtdi", "data": passed, "borderColor": "#00843D",
+             "backgroundColor": "rgba(0, 132, 61, .10)", "fill": True, "tension": 0.2, "pointRadius": 4},
         ],
     }
     total = sum(totals)

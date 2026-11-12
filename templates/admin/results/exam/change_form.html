@@ -1,5 +1,5 @@
 {% extends "admin/change_form.html" %}
-{# Stitch "Imtihon tahlili": xulosa + har savol kartasi (to'g'ri / xato / javobsiz) #}
+{# Imtihon tahlili: xulosa + har savol kartasi (to'g'ri / xato / javobsiz) #}
 
 {% block field_sets %}
 {% with e=original c=prava_counts %}
@@ -14,7 +14,7 @@
       {% if e.status == "in_progress" %}
         <span class="prava-tag prava-tag--warn">Jarayonda</span>
       {% elif e.is_passed is None %}
-        <span class="prava-tag prava-tag--mid">Mashq{% if e.topic %} · {{ e.topic.name }}{% endif %}</span>
+        <span class="prava-tag prava-tag--info">Mashq{% if e.topic %} · {{ e.topic.name }}{% endif %}</span>
       {% elif e.is_passed %}
         <span class="prava-tag prava-tag--ok">Oʻtdi</span>
       {% else %}

@@ -196,7 +196,7 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
     search_help_text = "Savol matni, izoh, bilet nomi (masalan «12-bilet») yoki ID"
     actions = ["activate", "deactivate"]
     readonly_fields = ("question_stats", "created_at")
-    compressed_fields = False  # Stitch: yorliq maydon ustida (o'ng ustun tor)
+    compressed_fields = False  # yorliq maydon ustida (o'ng ustun tor)
     fieldsets = (
         ("Savol matni", {"fields": ("text",)}),
         ("Savol izohi", {
@@ -332,7 +332,7 @@ class QuestionAdmin(PravaListMixin, ModelAdmin):
             tone, obj._answered, percent, word, percent,
         )
 
-    @display(description="Holat", ordering="is_active", label={"Faol": "success", "Nofaol": "warning"})
+    @display(description="Holat", ordering="is_active", label={"Faol": "success"})
     def status_badge(self, obj):
         return "Faol" if obj.is_active else "Nofaol"
 

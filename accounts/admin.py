@@ -121,7 +121,7 @@ class UserAdmin(PravaListMixin, BaseUserAdmin, ModelAdmin):
         initials = "".join(part[:1] for part in name.split()[:2]).upper()
         return name, f"@{obj.username} · {obj.email}" if obj.email else f"@{obj.username}", initials
 
-    @display(description="Rol", ordering="role", label={"Admin": "warning", "Oʻquvchi": "info"})
+    @display(description="Rol", ordering="role", label={"Admin": "primary"})
     def role_badge(self, obj):
         return obj.get_role_display()
 

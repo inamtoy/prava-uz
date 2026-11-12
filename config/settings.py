@@ -140,7 +140,7 @@ if not DEBUG:
 
 
 # ---------------------------------------------------------------------------
-# Admin panel (django-unfold) — dizayn manbasi: design/admin/ (Stitch)
+# Admin panel (django-unfold) — saytdagi "Yo'l belgisi" dizayni (static/css/admin.css)
 # ---------------------------------------------------------------------------
 UNFOLD = {
     "SITE_TITLE": "Prava.uz boshqaruv paneli",
@@ -154,19 +154,20 @@ UNFOLD = {
     "SHOW_VIEW_ON_SITE": False,
     "DASHBOARD_CALLBACK": "results.dashboard.dashboard_callback",
     "STYLES": [lambda request: static("css/admin.css")],
-    "BORDER_RADIUS": "10px",
+    "BORDER_RADIUS": "8px",
     "COLORS": {
-        # Stitch "Asphalt & Signal": asos — asfalt kulrang-ko'k, primary — to'q siyoh (#0C1C34).
-        # Sariq signal (#FCC01D) — faqat asosiy tugmalar va urg'u uchun, static/css/admin.css da.
+        # "Yo'l belgisi" dizayn tizimi (sayt bilan bir xil, static/css/main.css :root):
+        # primary — axborot belgisi ko'ki #0055A4 (600), base — neytral kulranglar (matn #14171A).
+        # Qorong'i rejimdagi ochroq ko'k va qolgan tokenlar — static/css/admin.css da.
         "base": {
-            "50": "#F7F9FD", "100": "#F2F4F8", "200": "#E6E8EC", "300": "#C5C6CE",
-            "400": "#A9B0BE", "500": "#75777E", "600": "#44474D", "700": "#394761",
-            "800": "#1E2B42", "900": "#131F33", "950": "#0B1626",
+            "50": "#F7F8F9", "100": "#F3F4F5", "200": "#E2E4E7", "300": "#C7CBD0",
+            "400": "#A6ACB3", "500": "#7D848C", "600": "#5E656D", "700": "#454B52",
+            "800": "#30353B", "900": "#1F2327", "950": "#14171A",
         },
         "primary": {
-            "50": "#EEF2F8", "100": "#D6E3FF", "200": "#B8C7E6", "300": "#94A6C8",
-            "400": "#6B7FA3", "500": "#394761", "600": "#0C1C34", "700": "#081428",
-            "800": "#060F1F", "900": "#040A16", "950": "#02050C",
+            "50": "#E7EFF8", "100": "#CFE0F1", "200": "#A3C4E6", "300": "#6FA2D6",
+            "400": "#3A7FC3", "500": "#0B63B3", "600": "#0055A4", "700": "#004588",
+            "800": "#00376C", "900": "#002A52", "950": "#001B36",
         },
     },
     "SIDEBAR": {
