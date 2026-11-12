@@ -97,3 +97,9 @@
 - 17 xil savol bir necha biletda takrorlanadi (matni va rasmi bir xil). Qaror: biletlarda **qoladi** (nofaol qilinmaydi); `start_exam` bitta imtihonda ulardan faqat bittasini tanlaydi (`quiz/utils.py: question_key`). `dedupe_questions` — faqat hisobot.
 - #6613 (48-bilet): C va D javoblari bir xil edi ("Notekis yoʻl."). D (Answer #21148) o'chirildi, 3 ta javob qoldi, to'g'ri — B. Hech bir imtihon javobi unga bog'lanmagan edi. O'chirishdan oldingi zaxira: `backups/prava_20261112_2253.dump`.
 - Rasmlar: bazadagilar Excel'dan olingan 160x120 kichik nusxalar. To'liq o'lchamlilarni moslash uchun `match_images` (dry-run, dHash + fayl nomi + ixtiyoriy PDF matn manifesti). #5910, #5911 da rasm savol matniga mos emas deb gumon.
+
+## Rasmlar to'liq o'lchamga o'tkazildi (2026-11-13)
+- 901 ta savol rasmi Excel'dagi 160x120 kichik nusxadan PDF'dagi to'liq o'lchamli rasmga (asosan 520x390) almashtirildi: `python manage.py match_images --apply`. Moslash: savol matni + javoblar to'plami → manba Excel qatori → "Rasm fayli" → dHash tekshiruvi; 901/901 "aniq". Yangi fayllar `media/questions/<eski_nom>_asl.jpeg`, eski kichik nusxalar o'chirilmagan. Manba rasmlar `savollar/rasmlar_asl/` (gitignore). Almashtirishdan oldingi zaxira: `backups/prava_20261113_0006.dump`.
+- #5910 va #5911 (1-bilet; Excel 2/2, 2/3) **nofaol**: PDF'ning o'zida xato rasm — savollar yo'l belgisi va ko'rsatkich yozuvi haqida, rasmda esa chorrahadagi avtomobillar (xuddi shu rasmlar 110/9 va 111/4 chorraha savollarida). Manbada to'g'ri rasm yo'q — qo'lda hal qilinadi. 1-biletda 13 ta faol savol.
+- Savol rasmi endi barcha ekranlarda savol matni ustida, karta kengligida (`.qc-media img` max-height 390px); natija sahifasidagi xatolar tahlilida rasm ustuni kengaytirildi (max-height 330px). Avval kompyuterda rasm 176–240px katakka siqilgan edi.
+- Tekshiruv uchun demo foydalanuvchida 2 ta mashq va 2 ta imtihon yaratilib yakunlandi (#92–#95).

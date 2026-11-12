@@ -141,19 +141,7 @@
 .practice-card { border-radius: var(--radius-lg); }
 @media (min-width: 768px) { .practice-card { padding: 2rem; } }
 
-/* Savol kartasi: planshet/desktopda rasm chapda, matn o'ngda (Stitch) */
-@media (min-width: 768px) {
-  .practice .question-card:has(.qc-media) {
-    display: grid; grid-template-columns: 240px minmax(0, 1fr); column-gap: 1.75rem;
-    grid-template-areas: "media meta" "media text" "list list" "explain explain";
-    grid-template-rows: auto 1fr auto auto;
-  }
-  .practice .question-card:has(.qc-media) .qc-meta { grid-area: meta; align-self: end; }
-  .practice .question-card:has(.qc-media) .qc-media { grid-area: media; margin-bottom: 1.5rem !important; min-height: 220px; }
-  .practice .question-card:has(.qc-media) .qc-text { grid-area: text; }
-  .practice .question-card:has(.qc-media) .answer-list { grid-area: list; }
-  .practice .question-card:has(.qc-media) .explanation { grid-area: explain; }
-}
+/* Savol kartasi: rasm har doim savol matni ustida, karta kengligida (to'liq o'lchamli rasmlar) */
 .practice .answer-option { min-height: 60px; }
 
 /* Izoh paneli — och fon, chapda holat rangi */

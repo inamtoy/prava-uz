@@ -145,15 +145,7 @@
 @media (min-width: 768px) {
   .exam-card { padding: 1.75rem 2rem; }
   .exam-keys { display: inline-flex; }
-  /* Rasm chapda, savol matni o'ngda */
-  .exam .question-card:has(> .qc-media) {
-    display: grid; grid-template-columns: 208px minmax(0, 1fr); column-gap: 1.5rem; align-items: start;
-  }
-  .exam .question-card:has(> .qc-media) > .qc-meta,
-  .exam .question-card:has(> .qc-media) > .answer-list { grid-column: 1 / -1; }
-  .exam .question-card:has(> .qc-media) > .qc-media { width: 208px; height: 208px; min-height: 0; margin-bottom: 1.5rem !important; }
-  .exam .question-card:has(> .qc-media) > .qc-media img { max-height: 176px; }
-  .exam .question-card:has(> .qc-media) > .qc-text { align-self: center; }
+  /* Rasm savol matni ustida, karta kengligida (to'liq o'lchamli rasmlar — belgilar o'qilishi uchun) */
   .exam .answer-option { min-height: 64px; padding: .875rem 1.125rem; }
 }
 
