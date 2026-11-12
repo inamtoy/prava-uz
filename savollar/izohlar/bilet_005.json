@@ -1,0 +1,156 @@
+{
+  "bilet": "5-bilet",
+  "slug": "bilet-5",
+  "savollar": [
+    {
+      "question_id": 5960,
+      "savol": "Qaysi javobda ruxsat etilgan harakatlanish yoʻnalishlari toʻgʻri koʻrsatilgan.",
+      "rasm": "questions/b007_s02_0_asl.jpeg",
+      "togri_javob": "А va Б",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. GUMON: rasm savolga mos emas — savol A, Б, В yo'nalishlari haqida, rasmda esa harflar ham, yo'nalish strelkalari ham yo'q (chorrahada avtobus, tramvay va avtomobil). PDF'dagi xato rasm bo'lishi mumkin (#5910/#5911 kabi) — tekshiring.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5961,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b007_s03_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobillar va mototsikllarni toʻxtab turishga qoʻyish joyi va qoʻyish usuli.",
+      "izoh": "“Toʻxtab turish joyi” belgisi ostidagi qoʻshimcha axborot belgisi transport vositasini trotuar chetiga qanday qoʻyish usulini koʻrsatadi. Bunday usulda faqat yengil avtomobillar va mototsikllarni toʻxtab turishga qoʻyish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5962,
+      "savol": "Belgilangan yoʻnalish boʻyicha harakat qilayotgan belgilangan yoʻnalishli transport vositalarining haydovchilari piyodalar oʻtish joyidan tashqarida oq tayoq bilan ishora berayotgan koʻzi ojizlarni oʻtkazib yuborishlari kerakmi?",
+      "rasm": null,
+      "togri_javob": "Barcha hollarda oʻtkazib yuborishlari kerak.",
+      "izoh": "Oq tayoq bilan ishora berayotgan koʻzi ojiz piyodani haydovchi har qanday holatda oʻtkazib yuborishi shart. Bu talab belgilangan yoʻnalish boʻyicha harakatlanayotgan transport vositalari haydovchilariga ham tegishli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5963,
+      "savol": "Transport vositalari chorrahadan quyidagi tartibda oʻtadilar:",
+      "rasm": "questions/b007_s05_0_asl.jpeg",
+      "togri_javob": "Mototsikl, tramvay va avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Asosiy yo'l yo'nalishini ko'rsatuvchi plastinkalar bor, lekin ularning shakli va tramvayning qaysi yo'lda ekanini ishonch bilan o'qiy olmadim; javob shunga bog'liq.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5964,
+      "savol": "Xarakatlanish ruxsat etilgan:",
+      "rasm": "questions/b007_s06_0_asl.jpeg",
+      "togri_javob": "Mototsiklga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Regulyator kichik: qo'llarining holati va qaysi tomonga qarab turgani bilan har bir avtomobilning qaysi tomondan kelayotganini ishonch bilan bog'lab bo'lmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5965,
+      "savol": "Qaysi yoʻnalishda harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b007_s07_0_asl.jpeg",
+      "togri_javob": "Faqat chapga.",
+      "izoh": "“Kirish taqiqlangan” belgisi chapga burilish joyidan keyin oʻrnatilgan, shuning uchun u toʻgʻriga va oʻngga yoʻnalishlarga taʼsir qiladi. Chapga burilish belgigacha bajariladi, shuning uchun faqat chapga harakatlanishga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5966,
+      "savol": "Agar transport vositasi oʻlchamlari kattaligidan yoki boshqa sabablarga koʻra chetki holatda burilishni bajara olmagan boʻlsa, bu qoidadan chetka chiqqan holda burilishga yoʻl qoʻyiladimi?",
+      "rasm": null,
+      "togri_javob": "Yoʻl qoʻyiladi, agar bu boshqa transport vositalariga halaqit bermasa. Haydovchi harakat xavfsizligini taʼminlash uchun zarur boʻlgan holda boshqa shaxslarning yordamidan foydalanishi kerak.",
+      "izoh": "Agar transport vositasi oʻlchamlari yoki boshqa sabablarga koʻra burilishni chetki holatdan bajara olmasa, bu qoidadan chetga chiqishga yoʻl qoʻyiladi — faqat boshqa transport vositalariga xalaqit bermasa. Xavfsizlik uchun zarur boʻlsa, haydovchi boshqa shaxslar yordamidan foydalanishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5967,
+      "savol": "Qattiq ulagich ulanganda transport vositalari orasidagi masofa qancha boʻlishi kerak.",
+      "rasm": null,
+      "togri_javob": "4 m.",
+      "izoh": "Qattiq ulagich bilan shatakka olinganda transport vositalari orasidagi masofa 4 m dan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5968,
+      "savol": "Velosipedlarga trotuarda harakatlanishga ruxsat etiladimi?",
+      "rasm": null,
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Trotuar piyodalar harakati uchun moʻljallangan, shuning uchun velosipedlarda trotuarda harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5969,
+      "savol": "Shatakka olingan avtomobilda odamlarni tashishga ruxsat etiladimi?",
+      "rasm": null,
+      "togri_javob": "Yengil avtomobilda ruxsat etiladi.",
+      "izoh": "Egiluvchan yoki qattiq ulagich bilan shatakka olinganda shatakdagi yengil avtomobilda odamlar boʻlishiga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5970,
+      "savol": "Bu joyda quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b008_s02_0_asl.jpeg",
+      "togri_javob": "Ruxsat beriladi.",
+      "izoh": "“Yuk avtomobillariga quvib oʻtish taqiqlangan” belgisi ostidagi “300 m” plastinkasi taqiq zonasi 300 m oldinda boshlanishini bildiradi. Bundan tashqari bu belgi yengil avtomobilga tegishli emas. Shuning uchun bu joyda quvib oʻtishga ruxsat beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgi va plastinka aniq ko'rinadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5971,
+      "savol": "Qaysi belgi T-simon chorrahada harakatlanish yoʻnalishini koʻrsatadi.",
+      "rasm": "questions/b008_s03_0_asl.jpeg",
+      "togri_javob": "2.",
+      "izoh": "2-belgi (qizil fonda oq strelkalar) — “Burilish yoʻnalishi”: T-simon chorrahada harakatlanish yoʻnalishlarini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgilar jadvali aniq ko'rinadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5972,
+      "savol": "Siz oldida transport vositasi toʻxtab turgan tartibga solinmaydigan piyodalar oʻtish joyiga yaqinlashib kelayapsiz.Siz bajarishingiz kerak:",
+      "rasm": null,
+      "togri_javob": "Harakatni davom ettirish, lekin toʻxtab turgan transport vositasi oldida piyodalar yoʻqligiga ishonch hosil qilgan holda.",
+      "izoh": "Tartibga solinmaydigan piyodalar oʻtish joyi oldida toʻxtagan transport vositasi piyodalarni toʻsib qoʻyishi mumkin. Shuning uchun uning yonidan oʻtayotgan haydovchi harakatni faqat toʻxtab turgan transport vositasi oldida piyodalar yoʻqligiga ishonch hosil qilgach davom ettiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5973,
+      "savol": "Qaysi transport vositalariga harakatlanish uchun ruxsat beriladi?",
+      "rasm": "questions/b008_s05_0_asl.jpeg",
+      "togri_javob": "Yashil, koʻk va qizil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Regulyator kichik: qo'llarining holati va qaysi tomonga qarab turgani bilan har bir avtomobilning qaysi tomondan kelayotganini ishonch bilan bog'lab bo'lmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5974,
+      "savol": "Transport vositalari chorrahadan quyidagi tartibda oʻtadilar:",
+      "rasm": "questions/b008_s06_0_asl.jpeg",
+      "togri_javob": "Tramvay, avtobus va yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Chorraha tartibga solinmagan ko'rinadi; javob qaysi yo'l asosiy ekani va avtomobillarning yo'nalishiga bog'liq, rasmda belgilar va burilish ko'rsatkichlari aniq ko'rinmaydi.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

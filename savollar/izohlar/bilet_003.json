@@ -1,0 +1,156 @@
+{
+  "bilet": "3-bilet",
+  "slug": "bilet-3",
+  "savollar": [
+    {
+      "question_id": 5930,
+      "savol": "Qaysi transport vositalariga toʻxtab turishga ruxsat etilgan?",
+      "rasm": "questions/b004_s02_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil va mototsiklga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgi — \"To'xtab turish taqiqlangan\" (bitta diagonal). Ostidagi qo'shimcha plastinkadagi tasvir kattalashtirilganda ham aniq o'qilmaydi; agar u yuk avtomobili bo'lsa, kalit mos (belgi faqat yuk avtomobillariga tegishli).",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5931,
+      "savol": "Bu yoʻl belgisi ogohlantiradi:",
+      "rasm": "questions/b004_s03_0_asl.jpeg",
+      "togri_javob": "Shlagbaum bilan jihozlanmagan bir izli temir yoʻl kesishmasi borligidan.",
+      "izoh": "Qizil hoshiyali yakka “X” shaklidagi belgi — “Bir izli temir yoʻl” belgisi. U shlagbaum bilan jihozlanmagan bir izli temir yoʻl kesishmasi borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5932,
+      "savol": "Koʻk avtomobil chorrahadan nechanchi boʻlib oʻtadi?",
+      "rasm": "questions/b004_s04_0_asl.jpeg",
+      "togri_javob": "Birinchi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Svetofor ishlayapti (yashil), shuning uchun ustunlik belgilari amal qilmaydi; javob avtomobillarning harakat yo'nalishiga bog'liq, lekin burilish ko'rsatkichlari ko'rinmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5933,
+      "savol": "Qaysi transport vositasiga harakatlanishga ruxsat etilgan?",
+      "rasm": "questions/b004_s05_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobilga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Regulyator kichik: qo'llarining holati va qaysi tomonga qarab turgani bilan har bir avtomobilning qaysi tomondan kelayotganini ishonch bilan bog'lab bo'lmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5934,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b004_s06_0_asl.jpeg",
+      "togri_javob": "Avtomobil haydovchisi.",
+      "izoh": "Avtomobil svetoforida qizil signal bilan birga qoʻshimcha seksiyaning yashil strelkasi yongan, mototsikl esa asosiy yashil signal boʻyicha harakatlanmoqda. Qoʻshimcha seksiya strelkasi boʻyicha harakatlanayotgan haydovchi boshqa yoʻnalishlardan harakatlanayotgan transport vositalariga yoʻl berishi shart, shuning uchun avtomobil yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Svetofor kattalashtirib tekshirildi: qizil va yashil bir vaqtda yongan.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5935,
+      "savol": "Harakat ikki tomonlama boʻlgan, uch boʻlakli yoʻlda siz oʻngga burilishingiz zarur. Ushbu manyovrni siz qaysi boʻlakda amalga oshirasiz?",
+      "rasm": null,
+      "togri_javob": "Oʻng boʻlakdan.",
+      "izoh": "Oʻngga burilishdan oldin haydovchi qatnov qismining shu yoʻnalishdagi eng chetki oʻng holatini egallashi shart. Shuning uchun uch boʻlakli yoʻlda ham oʻngga oʻng boʻlakdan buriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5936,
+      "savol": "Qaysi joylarda transport vositalariga qatnov qismining chetida burchak ostida toʻxtab turishga ruxsat etiladi?",
+      "rasm": null,
+      "togri_javob": "Yoʻlning qatnov qismi kengaygan joylarda boshqa yoʻl harakati qatnashchilariga halaqit bermaslik sharti bilan.",
+      "izoh": "Transport vositalarini qatnov qismi chetiga burchak ostida qoʻyishga faqat qatnov qismining shakli bunga imkon beradigan joylarda — u mahalliy kengaygan joylarda — boshqa harakat qatnashchilariga xalaqit bermaslik sharti bilan ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5937,
+      "savol": "Suyak singanda qotirib bogʻlash uchun nimadan shina sifatida foydalanish eng qulay?",
+      "rasm": null,
+      "togri_javob": "Taxta boʻlagi.",
+      "izoh": "Shina singan suyakni qimirlatmay ushlab turishi uchun qattiq boʻlishi kerak. Taxta boʻlagi qattiq va toʻgʻri, shuning uchun shina sifatida undan foydalanish eng qulay.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5938,
+      "savol": "Kunning qorongʻi vaqtida suniy yoritilmagan yoʻllarda yoki yetarli koʻrinmaslik sharotida yonmaydigan orqa gabarit chiroqlari bilan toʻxtab turish yoki taʼmirlash joyiga borishga ruxsat beriladimi?",
+      "rasm": null,
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Kunning qorongʻi vaqtida yoritilmagan yoʻlda yoki yetarli koʻrinmaslik sharoitida orqa gabarit chiroqlari yonmasa, transport vositasi orqadan kelayotganlarga koʻrinmaydi. Shuning uchun bunday holatda harakatlanish, jumladan toʻxtab turish yoki taʼmirlash joyiga borish ham taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5939,
+      "savol": "Sanab oʻtilgan hollarning qaysi birida haydovchi oʻzining transport vositasini militsiya hodimi ixtiyoriga berishi shart?",
+      "rasm": null,
+      "togri_javob": "Kechiktirib boʻlmaydigan xizmat vazifalarini bajarish zarurati tugʻilgan hollarda.",
+      "izoh": "Haydovchi transport vositasini militsiya xodimiga faqat kechiktirib boʻlmaydigan xizmat vazifalarini bajarish zarurati tugʻilgan hollarda berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5940,
+      "savol": "Qaysi transport vositasining haydovchisi oldin harakatlanish huquqiga ega?",
+      "rasm": "questions/b005_s02_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili haydovchisi.",
+      "izoh": "Koʻprikka kirishda avtobus oldida “Roʻparadan harakatlanishning ustunligi” belgisi (qizil hoshiyali doira), yuk avtomobili tomonida esa “Roʻparadagi harakatga nisbatan ustunlik” belgisi (koʻk kvadrat) oʻrnatilgan. Shuning uchun tor koʻprikdan yuk avtomobili birinchi oʻtadi, avtobus esa unga yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5941,
+      "savol": "Qaysi belgi transport vositalarining belgida koʻrsatilgandan kam oraliq masofada harakatlanishini taʼqiqlaydi.",
+      "rasm": "questions/b005_s03_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (ikki avtomobil va “70 m”) — “Eng kam oraliq masofani cheklash” belgisi: u transport vositalarining belgida koʻrsatilgandan kam oraliq masofada harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgilar jadvali aniq ko'rinadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5942,
+      "savol": "Ushbu sharoitda avtobusning chorrahaga kirishiga ruxsat etiladimi?",
+      "rasm": "questions/b005_s04_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Chorrahadan keyin tirbandlik bor: oldinda sariq avtobus va yuk avtomobili turibdi. Ruxsat beruvchi signal yongan boʻlsa ham, tirbandlik haydovchini chorrahada toʻxtashga majbur qiladigan boʻlsa, chorrahaga kirish taqiqlanadi — u kesib oʻtuvchi yoʻnalishdagi harakatga toʻsqinlik qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5943,
+      "savol": "Koʻrsatilgan sharoitda qaysi boʻlakdan oʻngga burilish kerak?",
+      "rasm": "questions/b005_s05_0_asl.jpeg",
+      "togri_javob": "Faqat “A” chizigʻi bilan belgilangan oʻng chekkadagi boʻlakdan.",
+      "izoh": "Oʻng chekkadagi “A” harfi bilan belgilangan boʻlak — yoʻnalishli transport vositalari boʻlagi; u qatnov qismidan uzlukli chiziq bilan ajratilgan. Oʻngga burilish eng chetki oʻng holatdan bajarilishi kerak, shuning uchun burilishdan oldin shu boʻlakka oʻtiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Bo'lakni ajratuvchi chiziq rasmda uzlukli ko'rinadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5944,
+      "savol": "Tartibga soluvchining bu ishorasi quyidagini bildiradi:",
+      "rasm": "questions/b005_s06_0_asl.jpeg",
+      "togri_javob": "Koʻk, qizil, yashil avtomobillarga harakatlanishga ruxsat beriladi. Sariq, oq avtomobillarga taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Regulyator kichik: qo'llarining holati va qaysi tomonga qarab turgani bilan har bir avtomobilning qaysi tomondan kelayotganini ishonch bilan bog'lab bo'lmadi.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

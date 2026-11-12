@@ -1,0 +1,156 @@
+{
+  "bilet": "4-bilet",
+  "slug": "bilet-4",
+  "savollar": [
+    {
+      "question_id": 5945,
+      "savol": "Aholi yashaydigan joylardan tashqarida yenbgil avtomobillarning qanday eng katta tezlik bilan harakatlanishiga ruxsat beriladi.",
+      "rasm": null,
+      "togri_javob": "100 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Tezlik qiymati (100 km/soat) faqat kalitdan olingan — O'zbekiston YHQ dagi aniq qiymatni tasdiqlay olmayman. Taklif (tasdiqlasangiz): “Aholi punktlaridan tashqarida yengil avtomobillarga 100 km/soatgacha tezlik bilan harakatlanishga ruxsat etiladi.”",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5946,
+      "savol": "Chorrahada aylanma harakatlanish tashkil qilingan. Siz yaqinlashib kelayotgan chorrahaning qatnov qismi ikkita harakat boʻlagiga ega. Chorrahaga kirishda burilish uchun siz qaysi boʻlakni egallashingiz lozim.",
+      "rasm": null,
+      "togri_javob": "Oʻng yoki chap boʻlakni.",
+      "izoh": "Odatda burilishdan oldin qatnov qismidagi tegishli chetki holatni egallash kerak, lekin aylanma harakat tashkil etilgan chorrahaga kirishda bu talab qoʻllanmaydi. Shuning uchun ikki boʻlakli yoʻlda bunday chorrahaga oʻng yoki chap boʻlakdan kirish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5947,
+      "savol": "Siz balandlikda svetoforning ruxsat beruvchi ishorasini kutib toʻxtadingiz. Bunda avtomobilni joyida tutib turishning eng yaxshi usuli:",
+      "rasm": null,
+      "togri_javob": "Toʻxtab turish tormozi bilan.",
+      "izoh": "Balandlikda toʻxtaganda avtomobilni toʻxtab turish tormozi ishonchli ushlab turadi: haydovchining oyogʻi boʻshaydi va harakatni boshlashda avtomobil orqaga ketib qolmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5948,
+      "savol": "Qaysi hollarda velosipedchilarga qatnov qismining oʻng chekkasidan chiqishga yoʻl qoʻyiladi.",
+      "rasm": null,
+      "togri_javob": "Ruxsat etilgan hollarda chapga burilish yoki orqaga qaytish uchun.",
+      "izoh": "Velosipedchilar qatnov qismining oʻng chekkasida harakatlanadi. Undan chiqishga faqat ruxsat etilgan hollarda chapga burilish yoki orqaga qaytish uchun yoʻl qoʻyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5949,
+      "savol": "Piyodalarga yoʻlni piyodalar oʻtish joyidan tashqarida kesib oʻtishga ruxsat etiladimi?",
+      "rasm": null,
+      "togri_javob": "Yoʻlni qatnov qismi chetiga toʻgʻri burchak ostida, uning ikkala tomoni yaxshi koʻrinib turadigan, koʻrinish masofasida oʻtish joyi yoki chorraha boʻlmasa, ajratuvchi boʻlaksiz va toʻsiqsiz yoʻllarda kesib oʻtishga ruxsat etiladi.",
+      "izoh": "Koʻrinish masofasida piyodalar oʻtish joyi yoki chorraha boʻlmasa, piyoda yoʻlni uning ikkala tomoni yaxshi koʻrinadigan joyda, qatnov qismi chetiga toʻgʻri burchak ostida kesib oʻtishi mumkin — faqat ajratuvchi boʻlak va toʻsiq boʻlmagan yoʻllarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5950,
+      "savol": "Shu joyda chapga qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b006_s02_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Yo'l chetidagi ko'k belgi kattalashtirilganda ham o'qilmaydi; javob yo'l o'rtasidagi chiziq turi va shu belgiga bog'liq.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5951,
+      "savol": "Ushbu belgilar aholi yashaydigan joylarda xavfli yoʻl qismi boshlanishidan qancha masofa oldin oʻrnatiladi.",
+      "rasm": "questions/b006_s03_0_asl.jpeg",
+      "togri_javob": "50-100 m.",
+      "izoh": "Aholi punktlarida ogohlantiruvchi belgilar xavfli yoʻl qismi boshlanishidan 50–100 m oldin oʻrnatiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Belgilar jadvali aniq ko'rinadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5952,
+      "savol": "Avtomagistralda shatakka olishga ruxsat beriladimi?",
+      "rasm": null,
+      "togri_javob": "Istalgan usulda ruxsat etilgan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit (\"Istalgan usulda ruxsat etilgan\") tasdiqlanmadi: avtomagistralda shatakka olish bo'yicha O'zbekiston YHQ dagi aniq qoidani bilmayman. Kalitni rasmiy manbadan tekshirish tavsiya etiladi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5953,
+      "savol": "Belgilangan yoʻnalish boʻylab ketayotgan avtobus haydovchisi ushbu sharoitda yoʻl berishi kerakmi?",
+      "rasm": "questions/b006_s05_0_asl.jpeg",
+      "togri_javob": "Kerak.",
+      "izoh": "Teng ahamiyatli yoʻllar chorrahasida tramvay harakat yoʻnalishidan qatʼi nazar relsiz transport vositalariga nisbatan ustunlikka ega. Belgilangan yoʻnalishdagi avtobus bunday ustunlikka ega emas, shuning uchun u tramvayga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5954,
+      "savol": "Qaysi transport vositalariga oʻngga burilishga ruxsat etiladi.",
+      "rasm": "questions/b006_s06_0_asl.jpeg",
+      "togri_javob": "Qizil, koʻk va yashil avtomobillarga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Regulyator kichik: qo'llarining holati va qaysi tomonga qarab turgani bilan har bir avtomobilning qaysi tomondan kelayotganini ishonch bilan bog'lab bo'lmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5955,
+      "savol": "Tirkamali yengil avtomobillarga yoʻlning shunday yoʻl belgisi oʻrnatilgan qismida qanday eng katta tezlik bilan harakatlanishga ruxsat etiladi.",
+      "rasm": "questions/b006_s07_0_asl.jpeg",
+      "togri_javob": "80 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Ko'k fonli \"Chimboy\" belgisi aholi punkti tartibini o'rnatmaydi, shuning uchun aholi punktidan tashqaridagi tezlik chegaralari amal qiladi — bu qismi aniq. Lekin tirkamali yengil avtomobil uchun aniq qiymat (80 km/soat) faqat kalitdan olingan, O'zbekiston YHQ da tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5956,
+      "savol": "Qaysi holda qoidalar ogohlantirish ishorasini berishni talab qilmaydi?",
+      "rasm": null,
+      "togri_javob": "“Xavfli burilish” belgisi bilan belgilangan yoʻlning egri burilish joyi oldidan.",
+      "izoh": "Ogohlantirish ishorasi harakatni boshlash, qator oʻzgartirish, burilish, qayrilish va toʻxtashdan oldin beriladi. Yoʻlning egri joyidan yoʻl boʻylab oʻtish bunday manevr emas, shuning uchun “Xavfli burilish” belgisi boʻlsa ham ishora berish talab qilinmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5957,
+      "savol": "Bu yoʻl belgisi nimani bildiradi?",
+      "rasm": "questions/b006_s09_0_asl.jpeg",
+      "togri_javob": "Umumiy haqiqiy vazni (yoʻlovchilar va yuk vaznini qoʻshgan holda) belgida koʻrsatilgandan ortiq boʻlgan transport vositalari, shu jumladan tirkamali transport vositalarining harakat qilishi taʼqiqlanadi.",
+      "izoh": "Doira ichida “7 t” yozilgan belgi — “Massa cheklovi”: u haqiqiy umumiy massasi (yoʻlovchilar va yuk bilan) belgida koʻrsatilgandan ortiq boʻlgan transport vositalari, shu jumladan tirkamali tarkiblarning harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5958,
+      "savol": "M2; M3 toifali avtotransport vositalari shina protektorlari naqshlarining qoldiq balandligi kamida qancha boʻlishi kerak.",
+      "rasm": null,
+      "togri_javob": "2 mm.",
+      "izoh": "M2 va M3 toifali transport vositalari (avtobuslar) shinalari protektor naqshining qoldiq balandligi kamida 2 mm boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "Qiymat kalit bilan bir xil va nosozliklar ro'yxatidagi avtobuslar uchun talabga mos.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5959,
+      "savol": "Qaysi javobda yoʻlovchilar uchun chiqish va tushish maydonchasi boʻlmagan sharoitdagi joylar toʻliq koʻrsatilgan.",
+      "rasm": null,
+      "togri_javob": "Trotuarda yoki yoʻl yoqasi tomonidan.",
+      "izoh": "Yoʻlovchilar chiqish-tushish maydonchasi boʻlmagan joyda transport vositasiga trotuar yoki yoʻl yoqasi tomonidan chiqib-tushishi kerak — bu tomon qatnov qismidagi harakatdan xavfsiz.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
