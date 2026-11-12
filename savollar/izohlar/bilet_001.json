@@ -1,0 +1,156 @@
+{
+  "bilet": "1-bilet",
+  "slug": "bilet-1",
+  "savollar": [
+    {
+      "question_id": 5900,
+      "savol": "Quyidagi belgilarning taʼsir oraligʻida qaysi avtomobil uchun toʻxtashga ruxsat beriladi.",
+      "rasm": "questions/b001_s01_0.jpeg",
+      "togri_javob": "“Nogiron” taniqli belgisi boʻlgan sariq avtomobilga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm 160x120 px — belgining turi aniq koʻrinmaydi. “Nogiron” taniqli belgisi istisnosi barcha toʻxtash/toʻxtab turish belgilariga emas, faqat ayrimlariga tegishli; qaysi belgi ekanini rasmning asl nusxasidan tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5901,
+      "savol": "Yoʻnaltirgichlarning qaysilari boʻylab harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b001_s02_0.jpeg",
+      "togri_javob": "Faqat A va Г yoʻnalishlari boʻylab.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm 160x120 px — yoʻnalishlarni belgilovchi yoʻl belgisi koʻrinmaydi, javobni rasmdan tasdiqlab boʻlmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5902,
+      "savol": "Tibbiyot qutichasi va oʻt oʻchirgich boʻlmagan qanday transport vositalaridan foydalanish taʼqiqlanadi?",
+      "rasm": null,
+      "togri_javob": "Yuqorida koʻrsatilgan barcha toifalar",
+      "izoh": "Tibbiyot qutichasi va oʻt oʻchirgich boʻlmasa, transport vositasidan foydalanish taqiqlanadi. Bu talab faqat bitta toifaga emas, savolda sanab oʻtilgan barcha toifalarga (M1, M2, M3, N1, N2, N3) tegishli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5903,
+      "savol": "Chorrahadan birinchi boʻlib oʻtadi:",
+      "rasm": "questions/b001_s04_0.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm 160x120 px — chorrahadagi belgilar va avtomobillarning yoʻnalish koʻrsatkichlari koʻrinmaydi, navbatni rasmdan tekshirib boʻlmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5904,
+      "savol": "Harakatlanish taʼqiqlangan:",
+      "rasm": "questions/b001_s05_0.jpeg",
+      "togri_javob": "Koʻk, yashil va oq avtomobillarga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob regulyatorning qaysi tomonga qarab turgani va qoʻllarining holatiga bogʻliq; 160x120 px rasmda bu koʻrinmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5905,
+      "savol": "Qaysi transport vositasining haydovchisi chorrahadan birinchi boʻlib oʻtadi?",
+      "rasm": "questions/b001_s06_0.jpeg",
+      "togri_javob": "Avtomobil va avtobus haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob svetofor va tramvay signaliga bogʻliq; 160x120 px rasmda ishoralar koʻrinmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5906,
+      "savol": "Shu joyda toʻxtab turishga ruxsat etiladimi?",
+      "rasm": "questions/b001_s07_0.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm 160x120 px — joydagi belgi va chiziqlar koʻrinmaydi, toʻxtab turish ruxsatini tasdiqlab boʻlmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5907,
+      "savol": "Haydovchi harakatlanishni boshlashdan oldin qanday harakatni amalga oshirishi kerak?",
+      "rasm": null,
+      "togri_javob": "Harakatlanish boshlanishi xavfsiz boʻlishiga va harakatning boshqa ishtirokchilariga xalaqit bermasligiga ishonch hosil qilishi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalitdagi javob munozarali: transport vositasining sozligini tekshirish va burilish koʻrsatkichi bilan ishora berish ham haydovchining majburiyati. Taklif (ma'qullasangiz): “Harakatni boshlashdan oldin haydovchi bu xavfsiz ekaniga va harakatning boshqa ishtirokchilariga xalaqit bermasligiga ishonch hosil qilishi shart — bu har qanday harakat boshlanishiga tegishli umumiy talab. Ishora berish va texnik holatni tekshirish ham talab qilinadi, lekin ular savolda soʻralgan asosiy talab emas.”",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5908,
+      "savol": "Umurtqasining koʻkrak qismi shikastlangan kishi transportda qanday tashiladi?",
+      "rasm": null,
+      "togri_javob": "Qattiq taxtada orqasi bilan yotgan holda.",
+      "izoh": "Umurtqa shikastlanganda uni egilishdan saqlash kerak. Shuning uchun jabrlanuvchi qattiq, tekis yuzada (taxtada) orqasi bilan yotqizilgan holda tashiladi; yumshoq toʻshama umurtqani egib, shikastni ogʻirlashtirishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5909,
+      "savol": "Sargʻish rangli miltillovchi chiroq yoqilgan holatda harakatlanish uchun imtiyoz beradimi?",
+      "rasm": null,
+      "togri_javob": "Yoʻq.",
+      "izoh": "Sariq (toʻq sariq) miltillovchi chiroq harakatda imtiyoz bermaydi: u faqat boshqa ishtirokchilarni xavf haqida ogohlantiradi. Imtiyozni koʻk (koʻk-qizil) miltillovchi chiroq va maxsus tovush signali birga yoqilganda beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5910,
+      "savol": "Quyidagi belgilar harakatlanishga ruxsat beradi:",
+      "rasm": "questions/b002_s02_0.jpeg",
+      "togri_javob": "Toʻgʻriga, oʻngga va qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm savolga mos kelmaydi: savol yoʻl belgilari haqida, rasmda esa chorrahadagi avtomobillar. Rasm almashib ketgan boʻlishi mumkin — Excel manbasini tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5911,
+      "savol": "Quyidagi koʻrsatkich yozuvi nimani bildiradi?",
+      "rasm": "questions/b002_s03_0.jpeg",
+      "togri_javob": "“Toʻxtamasdan harakatlanish taʼqiqlangan” belgisi bilan qoʻllanganda haydovchi “Toʻxtang” chzigʻiga yaqinlashayotganligi haqida ogohlantiradi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm savolga mos kelmaydi: savol koʻrsatkich yozuvi (qoʻshimcha axborot belgisi) haqida, rasmda esa chorrahadagi uchta avtomobil. Rasm almashib ketgan boʻlishi mumkin.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5912,
+      "savol": "Avtomagistralda taʼqiqlanadi:",
+      "rasm": null,
+      "togri_javob": "Yuqoridagi barcha holatlar.",
+      "izoh": "Avtomagistralda qayrilib olish va ajratuvchi boʻlakning texnologik uzilish joylariga kirish, orqaga harakatlanish, shuningdek “Toʻxtab turish joyi” yoki “Dam olish joyi” belgilari boʻlgan maxsus maydonchalardan tashqarida toʻxtash taqiqlanadi. Shuning uchun toʻgʻri javob — barcha holatlar.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5913,
+      "savol": "Qaysi transport vositasi haydovchisi toʻgʻriga harakatlanish huquqiga ega?",
+      "rasm": "questions/b002_s05_0.jpeg",
+      "togri_javob": "Yengil avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob regulyatorning holatiga bogʻliq; 160x120 px rasmda uning qaysi tomonga qarab turgani koʻrinmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5914,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b002_s06_0.jpeg",
+      "togri_javob": "Tramvay haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasm 160x120 px — svetofor/tramvay ishoralari va yoʻl belgilari koʻrinmaydi, kim yoʻl berishini rasmdan tasdiqlab boʻlmaydi.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}
