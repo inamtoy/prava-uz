@@ -29,7 +29,7 @@
       "togri_javob": "Yuqorida koʻrsatilgan barcha toifalar",
       "izoh": "Tibbiyot qutichasi va oʻt oʻchirgich boʻlmasa, transport vositasidan foydalanish taqiqlanadi. Bu talab faqat bitta toifaga emas, savolda sanab oʻtilgan barcha toifalarga (M1, M2, M3, N1, N2, N3) tegishli.",
       "ishonch": "yuqori",
-      "izohcha": "",
+      "izohcha": "Toifalar ro'yxati (M1, M2, M3, N1, N2, N3) javob variantlaridagi toifalar bilan aynan mos — tekshirildi (2026-11-13).",
       "holat": "tayyor"
     },
     {
@@ -77,10 +77,10 @@
       "savol": "Haydovchi harakatlanishni boshlashdan oldin qanday harakatni amalga oshirishi kerak?",
       "rasm": null,
       "togri_javob": "Harakatlanish boshlanishi xavfsiz boʻlishiga va harakatning boshqa ishtirokchilariga xalaqit bermasligiga ishonch hosil qilishi kerak.",
-      "izoh": "",
-      "ishonch": "past",
-      "izohcha": "Kalitdagi javob munozarali: transport vositasining sozligini tekshirish va burilish koʻrsatkichi bilan ishora berish ham haydovchining majburiyati. Taklif (ma'qullasangiz): “Harakatni boshlashdan oldin haydovchi bu xavfsiz ekaniga va harakatning boshqa ishtirokchilariga xalaqit bermasligiga ishonch hosil qilishi shart — bu har qanday harakat boshlanishiga tegishli umumiy talab. Ishora berish va texnik holatni tekshirish ham talab qilinadi, lekin ular savolda soʻralgan asosiy talab emas.”",
-      "holat": "tekshirish kerak"
+      "izoh": "Harakatni boshlashdan oldin haydovchi bu xavfsiz ekaniga va harakatning boshqa ishtirokchilariga xalaqit bermasligiga ishonch hosil qilishi shart — bu har qanday harakat boshlanishiga tegishli umumiy talab. Ishora berish va texnik holatni tekshirish ham talab qilinadi, lekin ular savolda soʻralgan asosiy talab emas.",
+      "ishonch": "yuqori",
+      "izohcha": "Foydalanuvchi tasdiqladi (2026-11-13).",
+      "holat": "tayyor"
     },
     {
       "question_id": 5908,

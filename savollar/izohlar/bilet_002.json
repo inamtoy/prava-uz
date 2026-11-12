@@ -39,7 +39,7 @@
       "togri_javob": "Ishchi tormoz tizimi ishlamayotgan boʻlsa.",
       "izoh": "",
       "ishonch": "past",
-      "izohcha": "Kalit munozarali: savol \"foydalanish taqiqlanadi\" deydi, kalitda esa faqat \"Ishchi tormoz tizimi ishlamayotgan bo'lsa\". Biroq gidravlik tormoz yuritmasining germetikligi buzilishi (suyuqlik oqishi) va pnevmatik tizimdagi bosim nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatoriga kiradi — bu \"Hamma ko'rsatilgan holatlarda\" ni to'g'ri qiladi. Kalit, ehtimol, \"harakatlanish taqiqlanadi\" (ishchi tormoz ishlamasa, ta'mirlash joyiga ham borib bo'lmaydi) bilan adashtirilgan. 1-biletdagi #5902 da \"foydalanish taqiqlanadi\" nosozliklar ro'yxati ma'nosida ishlatilgan. Manba (PDF) kalitini tekshirish kerak; izoh yozilmadi.",
+      "izohcha": "Kalit munozarali: savol \"foydalanish taqiqlanadi\" deydi, kalitda esa faqat \"Ishchi tormoz tizimi ishlamayotgan bo'lsa\". Biroq gidravlik tormoz yuritmasining germetikligi buzilishi (suyuqlik oqishi) va pnevmatik tizimdagi bosim nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatoriga kiradi — bu \"Hamma ko'rsatilgan holatlarda\" ni to'g'ri qiladi. Kalit, ehtimol, \"harakatlanish taqiqlanadi\" (ishchi tormoz ishlamasa, ta'mirlash joyiga ham borib bo'lmaydi) bilan adashtirilgan. 1-biletdagi #5902 da \"foydalanish taqiqlanadi\" nosozliklar ro'yxati ma'nosida ishlatilgan. Manba (PDF) kalitini tekshirish kerak; izoh yozilmadi. Kalit o'zgartirilmaydi — foydalanuvchi rasmiy manbadan tekshiradi (NOTES.md: \"Kaliti tekshirilishi kerak\").",
       "holat": "tekshirish kerak"
     },
     {
@@ -137,9 +137,9 @@
       "savol": "Yuklar transport vositasiga shunday joylashtirilishi kerakki, u:",
       "rasm": null,
       "togri_javob": "Shovqin hosil qilmasligi, chang koʻtarmasligi va atrof-muhitni iflos qilmasligi kerak.",
-      "izoh": "Yuk shunday joylashtirilishi kerakki, u shovqin hosil qilmasin, chang koʻtarmasin, yoʻl va atrof-muhitni ifloslantirmasin. Yukning yukxonadan baland chiqishi alohida taqiqlanmagan (umumiy balandlik cheklovi bor), orqaga chiqib turishning ruxsat etilgan chegarasi esa 0,8 m emas.",
+      "izoh": "Yuk shunday joylashtirilishi kerakki, u shovqin hosil qilmasin, chang koʻtarmasin, yoʻl va atrof-muhitni ifloslantirmasin.",
       "ishonch": "yuqori",
-      "izohcha": "Orqaga chiqib turish chegarasining aniq qiymatini izohda keltirmadim — faqat 0,8 m emasligini aytdim.",
+      "izohcha": "Ikkinchi jumla (noto'g'ri variantlar haqida) olib tashlandi (2026-11-13).",
       "holat": "tayyor"
     },
     {
@@ -147,9 +147,9 @@
       "savol": "Bu yoʻl belgisi bildiradi:",
       "rasm": "questions/b004_s01_0_asl.jpeg",
       "togri_javob": "Yoʻlning piyodalar oʻtish joyi boʻlgan qismini.",
-      "izoh": "Bu ogohlantiruvchi “Piyodalar oʻtish joyi” belgisi: u oldinda yoʻlning piyodalar oʻtish joyi boʻlgan qismi borligini bildiradi. Trotuar yoki piyodalar yoʻlkasi uchun boshqa belgilar qoʻllanadi.",
+      "izoh": "Bu ogohlantiruvchi “Piyodalar oʻtish joyi” belgisi: u oldinda yoʻlning piyodalar oʻtish joyi boʻlgan qismi borligini bildiradi.",
       "ishonch": "yuqori",
-      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Qizil hoshiyali uchburchak, piyoda va \"zebra\" — ogohlantiruvchi belgi.",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Qizil hoshiyali uchburchak, piyoda va \"zebra\" — ogohlantiruvchi belgi. Noto'g'ri variant haqidagi jumla olib tashlandi.",
       "holat": "tayyor"
     }
   ]

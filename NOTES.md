@@ -104,3 +104,10 @@
 - Savol rasmi endi barcha ekranlarda savol matni ustida, karta kengligida (`.qc-media img` max-height 390px); natija sahifasidagi xatolar tahlilida rasm ustuni kengaytirildi (max-height 330px). Avval kompyuterda rasm 176–240px katakka siqilgan edi.
 - Tekshiruv uchun demo foydalanuvchida 2 ta mashq va 2 ta imtihon yaratilib yakunlandi (#92–#95).
 - 1-bilet izohlari import qilindi (2026-11-13): 8 ta savol (#5900, #5901, #5902, #5906, #5908, #5909, #5912, #5914) — `import_explanations savollar/izohlar/bilet_001.json --apply`. #5903, #5904, #5905, #5907, #5913 — "tekshirish kerak", izohsiz.
+
+## Kaliti tekshirilishi kerak (rasmiy manbadan)
+Bazadagi kalit manba Excel/PDF'ga mos, lekin mazmunan shubhali. Kalitni rasmiy manbadan tekshirmasdan O'ZGARTIRMA; tekshirilgach shu yerga natija yoziladi.
+
+| Savol | Bilet | Kalit (bazada) | Shubha |
+|---|---|---|---|
+| #5918 | 2-bilet | "Ishchi tormoz tizimi ishlamayotgan boʻlsa" | Savol "foydalanish taqiqlanadi" deydi; tormoz suyuqligi oqishi va pnevmatik tizim bosimi nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatorida — "Hamma koʻrsatilgan holatlarda" toʻgʻriroq koʻrinadi. Ehtimol "harakatlanish taqiqlanadi" bilan adashtirilgan. Izoh yozilmagan. |
