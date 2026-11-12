@@ -104,6 +104,34 @@ python manage.py loaddata backup.json
 python manage.py sqlsequencereset accounts quiz results auth | python manage.py dbshell
 ```
 
+## Zaxira va tiklash
+
+**Zaxira (Windows).** `tools\backup.ps1` ulanish maʼlumotlarini `.env` dan oʻqiydi, `pg_dump -F c` bilan
+`backups\prava_YYYYMMDD_HHMM.dump` yaratadi va oxirgi 14 ta nusxani saqlab, eskilarini oʻchiradi.
+Parol faqat `PGPASSWORD` orqali beriladi, ekranga chiqmaydi. `pg_dump.exe` avtomatik topiladi
+(`PATH` yoki `C:\Program Files\PostgreSQL\*\bin`). `backups\` papkasi gitga tushmaydi.
+
+```powershell
+powershell -ExecutionPolicy Bypass -File tools\backup.ps1            # 14 ta nusxa saqlanadi
+powershell -ExecutionPolicy Bypass -File tools\backup.ps1 -Keep 30   # 30 ta
+
+# Har kuni 03:00 da (Task Scheduler)
+schtasks /Create /SC DAILY /ST 03:00 /TN "PravaUzBackup" /TR "powershell -ExecutionPolicy Bypass -File D:\projects\pravauz\tools\backup.ps1"
+```
+
+**Tiklash.** `--clean --if-exists` bazadagi mavjud jadvallarni oʻchirib, zaxiradagilarini yozadi —
+ishga tushirishdan oldin joriy holatdan yangi zaxira oling.
+
+```powershell
+$env:PGPASSWORD = "<parol>"
+& "C:\Program Files\PostgreSQL\18\bin\pg_restore.exe" -h localhost -U prava -d prava_uz `
+  --clean --if-exists --no-owner backups\prava_20261112_2253.dump
+Remove-Item Env:PGPASSWORD
+```
+
+Zaxira ichini koʻrish (bazaga tegmaydi): `pg_restore --list backups\prava_....dump`.
+Linux serverda kunlik zaxira — `deploy/backup.sh` (pastda).
+
 ## Serverga oʻrnatish (Ubuntu VPS)
 
 Fayllar: [`deploy/`](deploy/) — `nginx.conf`, `gunicorn.service` (systemd), `backup.sh` (kunlik `pg_dump` + media), `prava_uz.cron`, `env.production.example`. Yoʻllar: kod `/srv/prava_uz`, tizim foydalanuvchisi `prava`, socket `/run/prava_uz/gunicorn.sock`.

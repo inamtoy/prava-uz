@@ -12,3 +12,8 @@ media/questions/*
 .vscode/
 backup.json
 db.sqlite3.bak
+
+# Zaxira nusxalari va dump fayllar
+backups/
+*.dump
+*.sqlite3
