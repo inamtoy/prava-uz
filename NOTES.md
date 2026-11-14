@@ -121,3 +121,12 @@ Bazadagi kalit manba Excel/PDF'ga mos, lekin mazmunan shubhali. Kalitni rasmiy m
 - #5990 va #5991 (7-bilet) ham **nofaol**: #5990 — savol o'rgatish hududi belgisi haqida, rasmda belgisiz chorraha; #5991 — savol 1–5 raqamli belgilar haqida, rasmda 15 t yuk avtomobili va 5t belgisi. Zaxira: `backups/prava_20261114_2215.dump`. 7-biletda 13 ta faol savol.
 - Barcha 897 ta faol rasmli savol tekshirildi (2026-11-14): yuqoridagi 4 tasidan boshqa aniq nomuvofiqlik yo'q — Excel bog'lanishida tizimli xato emas. Shubhali (lekin qoldirilgan): #6031 (rasm #6032 bilan bir xil), #6206, #7018.
 - Imtihon sahifasidagi savollar xaritasi izohi "Javob berilgan — ko'k" o'rniga "To'g'ri — yashil / Xato — qizil" (xarita kataklari 2026-10-20 dan beri shunday).
+
+## Mobil ilova — Flutter (2026-11-14)
+- Foydalanuvchi qarori: mobil ilova (CLAUDE.md da "keyinga qoladi" edi) boshlandi. Yondashuv — **Flutter** (Android + iOS), faqat internet bilan (offline rejim yo'q). PWA va React Native ham taklif qilingan edi.
+- Ilova `mobile/` papkasida (`flutter create --org uz.prava`, paket `prava_uz`). Kutubxonalar: `http`, `shared_preferences` (token), `google_fonts` (Barlow + Inter — sayt bilan bir xil "Yo'l belgisi" dizayni).
+- Backend: yangi `api` app, `/api/v1/` — **djangorestframework** qo'shildi (CLAUDE.md 0.6 dagi ro'yxatdan tashqari). Sababi: mobil klient uchun token autentifikatsiya (`rest_framework.authtoken`), sessiya/CSRF'siz; JSON javoblar, throttling (login/ro'yxat: 30/daqiqa). Mantiq o'sha `results/services.py` — API faqat JSON qatlami.
+- To'g'ri javob (`correct_answer_id`, `is_correct`, izoh) faqat savolga javob berilgandan keyin qaytariladi — saytdagi qoida bilan bir xil. Begona sessiya → 404, muddat o'tgan imtihonga javob → 409 `{expired: true}`.
+- Server manzili: `--dart-define=API_BASE=...`, sukut bo'yicha `http://10.0.2.2:8000/api/v1` (Android emulyatoridan kompyuterdagi runserver). Shuning uchun `.env`/`.env.example` da `ALLOWED_HOSTS` ga `10.0.2.2` qo'shildi. Debug build'da cleartext HTTP ruxsat (`android/app/src/debug/AndroidManifest.xml`), release'da yo'q — production HTTPS.
+- Flutter SDK `C:\srclutter` (3.35.3), PATH'da emas.
+

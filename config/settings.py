@@ -27,6 +27,9 @@ INSTALLED_APPS = [
     "accounts",
     "quiz",
     "results",
+    "rest_framework",
+    "rest_framework.authtoken",
+    "api",
 ]
 
 MIDDLEWARE = [
@@ -216,4 +219,12 @@ UNFOLD = {
             },
         ],
     },
+}
+
+# Mobil ilova (Flutter) API — /api/v1/. Token autentifikatsiya, sessiya/CSRF ishlatilmaydi.
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": ["rest_framework.authentication.TokenAuthentication"],
+    "DEFAULT_PERMISSION_CLASSES": ["rest_framework.permissions.IsAuthenticated"],
+    "DEFAULT_RENDERER_CLASSES": ["rest_framework.renderers.JSONRenderer"],
+    "DEFAULT_THROTTLE_RATES": {"anon": "30/min"},
 }

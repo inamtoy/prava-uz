@@ -10,6 +10,7 @@ urlpatterns = [
     path("admin/login/", admin_login_redirect, name="admin_login_redirect"),
     path("admin/", admin.site.urls),
     path("accounts/", include("accounts.urls")),
+    path("api/v1/", include("api.urls")),
     path("", include("results.urls")),
     path("", include("quiz.urls")),
 ]

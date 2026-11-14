@@ -329,11 +329,15 @@ python tools/screenshots.py           # screenshots/ ga 1440px va 375px suratlar
 
 Skript `sinov…` nomli test foydalanuvchilar yaratadi va demo uchun ochiq imtihon qoldiradi — keyin `python manage.py seed_data --reset`.
 
+## Mobil ilova (Flutter)
+
+`mobile/` papkasida — Android va iOS uchun Flutter ilova (mashq, imtihon taymer bilan, natija, profil). Server bilan `/api/v1/` (Django REST Framework, token autentifikatsiya) orqali ishlaydi. Ishga tushirish va API ro'yxati — [`mobile/README.md`](mobile/README.md).
+
 ## Keyingi rejalar
 
 Texnik reja (kontent admin guruhi, CSV import, admin'dagi qolgan joylar) — `NOTES.md` → «Keyingi versiya». Mahsulot boʻyicha:
 
-- Mobil ilova
+- Mobil ilova: offline mashq, Play Market / App Store'ga chiqarish
 - Rus tili
 - Reyting jadvali
 - Toʻlov va premium imkoniyatlar
