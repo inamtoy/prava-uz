@@ -111,3 +111,4 @@ Bazadagi kalit manba Excel/PDF'ga mos, lekin mazmunan shubhali. Kalitni rasmiy m
 | Savol | Bilet | Kalit (bazada) | Shubha |
 |---|---|---|---|
 | #5918 | 2-bilet | "Ishchi tormoz tizimi ishlamayotgan boʻlsa" | Savol "foydalanish taqiqlanadi" deydi; tormoz suyuqligi oqishi va pnevmatik tizim bosimi nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatorida — "Hamma koʻrsatilgan holatlarda" toʻgʻriroq koʻrinadi. Ehtimol "harakatlanish taqiqlanadi" bilan adashtirilgan. Izoh yozilmagan. |
+| #5952 | 4-bilet | "Istalgan usulda ruxsat etilgan" | Savol: avtomagistralda shatakka olishga ruxsat beriladimi? Odatda avtomagistralda shatakka olish taqiqlanadi — kalit shubhali. Izoh yozilmagan. |
