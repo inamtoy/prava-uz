@@ -1,0 +1,156 @@
+{
+  "bilet": "8-bilet",
+  "slug": "bilet-8",
+  "savollar": [
+    {
+      "question_id": 6005,
+      "savol": "Transport vositasi qachon faqat oʻng chetki boʻlakda harakatlanishi kerak?",
+      "rasm": "",
+      "togri_javob": "Transport vositasi texnikaviy sabablarga koʻra 40 km/s dan ortiq tezlikda yura olmasa.",
+      "izoh": "Texnik sabablarga koʻra 40 km/soatdan ortiq tezlikda yura olmaydigan transport vositasi boshqalarga xalaqit bermasligi uchun faqat oʻng chetki boʻlakda harakatlanishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6006,
+      "savol": "Ogohlantirish ishorasini berish haydovchiga birinchi harakatlanish huquqini beradimi?",
+      "rasm": "",
+      "togri_javob": "Bermaydi.",
+      "izoh": "Ogohlantirish ishorasi haydovchiga hech qanday ustunlik bermaydi va uni ehtiyot choralarini koʻrishdan ozod qilmaydi: manyovr faqat xavfsiz boʻlsa va boshqalarga xalaqit bermasa bajariladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6007,
+      "savol": "Qoidalarga koʻra shatakka olish vaqtida bir- biriga ulangan transport vositalari tarkibining qanday umumiy uzunligiga yoʻl qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "24 m.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Shatakka olishda tarkibning ruxsat etilgan umumiy uzunligi (24 m) faqat kalitdan — O'zbekiston YHQ dagi aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6008,
+      "savol": "Qoida boʻyicha necha yoshdan boshlab yengil avtomobilni boshqarishga ruxsat beriladi?",
+      "rasm": "",
+      "togri_javob": "18 yoshdan.",
+      "izoh": "Yengil avtomobil (B toifa) boshqarishga 18 yoshdan ruxsat beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6009,
+      "savol": "Qaysi hollarda bir yoʻnalishda harakatlanish uchun uchtadan kam boʻlagi boʻlgan yoʻlda toʻxtab turish taʼqiqlanadi.",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda.",
+      "izoh": "Bir yoʻnalishda uchtadan kam boʻlagi boʻlgan yoʻlda koʻpriklar, estakadalar, osma yoʻllarda va ularning ostida toʻxtab turilsa, harakat uchun qolgan joy juda torayib qoladi. Shuning uchun sanab oʻtilgan barcha joylarda toʻxtab turish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6010,
+      "savol": "Haydovchi tormozlanishda boshlangan avtomobilning sirpanib ketishini toʻxtatish uchun bajarishi kerak:",
+      "rasm": "",
+      "togri_javob": "Boshlangan tormozlanishni bas qilishi.",
+      "izoh": "Tormozlanishda gʻildiraklar qulflanib qolsa, avtomobil boshqaruvga boʻysunmay sirpanadi. Sirpanishni toʻxtatish uchun tormozlanishni bas qilish kerak — shunda gʻildiraklar yana aylanib, yoʻl bilan tishlashadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6011,
+      "savol": "Haydovchiga transport vositalarining toʻxtab turish joylari chegarasini bildiradigan uzluksiz chiziqni kesib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b012_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Rasmda to'xtab turish joylari chegarasini bildiruvchi yaxlit chiziqlar. Bunday chiziqni to'xtab turish joyiga kirish/chiqish uchun kesib o'tishga ruxsat berilishi mumkin — kalit (\"Ta'qiqlanadi\") shubhali, rasmiy matndan tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6012,
+      "savol": "Yopiq shlagbaum oldida turgan transport vositalarini aylanib oʻtishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Qarama-qarshi harakatlanish boʻlagiga chiqmasdan mumkin.",
+      "izoh": "Yopiq shlagbaum oldida turgan transport vositalarini qarama-qarshi harakat boʻlagiga chiqib aylanib oʻtish taqiqlanadi. Qarama-qarshi boʻlakka chiqmasdan aylanib oʻtish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6013,
+      "savol": "Chorrahadan uchinchi boʻlib oʻtadi:",
+      "rasm": "questions/b012_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Yashil avtomobil tomonida \"Asosiy yo'l\" belgisi asosiy yo'l yo'nalishi plastinkasi bilan, ko'k avtomobil oldida STOP belgisi ko'rinadi; plastinkadagi yo'nalish va avtomobillarning burilish yo'nalishlari aniq o'qilmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6014,
+      "savol": "Haydovchi piyodalarga qachon yoʻl berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda.",
+      "izoh": "Hovli, yonilgʻi quyish shoxobchasi yoki toʻxtab turish joyi kabi yondosh hududdan yoʻlga chiqayotgan haydovchi piyodalarga va transport vositalariga yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6015,
+      "savol": "Koʻrsatilgan holda yengil avtomobilga toʻxtab turishga ruxsat beriladimi?",
+      "rasm": "questions/b012_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Koʻk avtomobil yoʻl chetida turibdi, qizil avtomobil esa uning yonida, ikkinchi qatorda toʻxtagan. Qatnov qismida ikkinchi qatorda toʻxtab turish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Qizil avtomobil ko'k avtomobil yonida, yo'l chetidan ikkinchi qatorda turibdi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6016,
+      "savol": "Yuk tashish taʼqiqlanadi, agar:",
+      "rasm": "",
+      "togri_javob": "Tashilayotgan yuk vazni shu transport vositasi uchun ishlab chiqargan korxona belgilagan kattalikdan ortiq boʻlsa.",
+      "izoh": "Tashilayotgan yuk vazni ishlab chiqaruvchi shu transport vositasi uchun belgilagan kattalikdan ortiq boʻlsa, yuk tashish taqiqlanadi — bunday ortiqcha yuk tormoz va boshqaruvni xavfli qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "Boshqa variantlardagi chiqib turish (0,4 m, 1 m) taqiq emas — bunday yuk maxsus belgilanadi.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6017,
+      "savol": "Avtomobil yon tomonga sirpanib ketishi nima sababdan roʻy berishi mumkin?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Yon tomonga sirpanish gʻildiraklarning yoʻl bilan tishlashishi yoʻqolganda boshlanadi: bunga keskin burilish, keskin tezlik olish va keskin tormozlanish — har biri sabab boʻlishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6018,
+      "savol": "N2; N3 toifadagi avtotransport vositalarining boshqaruv qurilmasida qanday eng katta umumiy lyuft yigʻindisiga yoʻl qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "25 gradus.",
+      "izoh": "N2 va N3 toifali (yuk) avtotransport vositalarining rul boshqaruvida umumiy lyuft yigʻindisi 25° dan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "Nosozliklar ro'yxati: M1 — 10° (#5998 bilan mos), yuk avtomobillari — 25°. Shubha bo'lsa \"past\" ga o'tkazing.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6019,
+      "savol": "Chorrahani ikkinchi boʻlib kesib oʻtadi:",
+      "rasm": "questions/b013_s01_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Tartibga solinmagan teng ahamiyatli chorraha; qizil va yashil avtomobillarda burilish chiroqlari yongan, lekin qaysi tomonga ekani rasm o'lchamida aniq emas.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}
