@@ -479,7 +479,6 @@ h5, .h5, h6, .h6 { font-size: 1rem; font-weight: 700; }
 .q-legend { display: flex; flex-wrap: wrap; gap: .75rem 1rem; font-size: .8125rem; color: var(--ink-500); }
 .q-legend span { display: inline-flex; align-items: center; gap: .375rem; }
 .q-legend i { display: inline-block; width: 12px; height: 12px; border-radius: 4px; background: var(--surface-2); border: 2px solid transparent; }
-.q-legend .is-answered { background: var(--primary); }
 .q-legend .is-current { background: var(--surface); border-color: var(--primary); }
 
 /* ---------- 13. Formalar ---------- */

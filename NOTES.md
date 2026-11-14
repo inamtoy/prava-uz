@@ -112,3 +112,7 @@ Bazadagi kalit manba Excel/PDF'ga mos, lekin mazmunan shubhali. Kalitni rasmiy m
 |---|---|---|---|
 | #5918 | 2-bilet | "Ishchi tormoz tizimi ishlamayotgan boʻlsa" | Savol "foydalanish taqiqlanadi" deydi; tormoz suyuqligi oqishi va pnevmatik tizim bosimi nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatorida — "Hamma koʻrsatilgan holatlarda" toʻgʻriroq koʻrinadi. Ehtimol "harakatlanish taqiqlanadi" bilan adashtirilgan. Izoh yozilmagan. |
 | #5952 | 4-bilet | "Istalgan usulda ruxsat etilgan" | Savol: avtomagistralda shatakka olishga ruxsat beriladimi? Odatda avtomagistralda shatakka olish taqiqlanadi — kalit shubhali. Izoh yozilmagan. |
+
+## Rasmi mos kelmaydigan savollar nofaol qilindi (2026-11-14)
+- #5960 (5-bilet, rasm `b007_s02_0_asl.jpeg`) va #5980 (6-bilet, `b009_s02_0_asl.jpeg`) — **nofaol**: savol matnidagi narsalar rasmda yo'q (#5960: A/Б/В yo'nalishlari so'raladi, rasmda harf ham strelka ham yo'q; #5980: qizil va ko'k avtomobil so'raladi, rasmda avtobus, yuk avtomobili va mototsikl). #5910/#5911 kabi PDF xatosi deb hisoblandi; to'g'ri rasm topilsa qayta faollashtiriladi. Faqat bazada o'zgartirildi (seed qayta ishga tushirilsa qo'lda takrorlash kerak). Zaxira: `backups/prava_20261114_2104.dump`. 5- va 6-biletlarda endi 14 tadan faol savol.
+- Imtihon sahifasidagi savollar xaritasi izohi "Javob berilgan — ko'k" o'rniga "To'g'ri — yashil / Xato — qizil" (xarita kataklari 2026-10-20 dan beri shunday).
