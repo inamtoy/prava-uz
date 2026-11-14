@@ -1,0 +1,156 @@
+{
+  "bilet": "6-bilet",
+  "slug": "bilet-6",
+  "savollar": [
+    {
+      "question_id": 5975,
+      "savol": "Quvib oʻtish taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Hamma sanab oʻtilgan hollarda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Har bir javob variantidagi istisno YHQ dagi chorrahada quvib o'tish istisnolariga o'xshaydi, lekin 1-variant (\"qarama-qarshi yo'nalishga chiqib\") ifodasini rasmiy matn bilan tasdiqlay olmayman; kalitning mantig'i (\"hamma hollarda\") ham ifoda jihatdan noaniq.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5976,
+      "savol": "Kunduzgi vaqtda yaqinni yorituvchi fara chirogʻini yoqish ogohlantirish ishorasi boʻladimi?",
+      "rasm": "",
+      "togri_javob": "Boʻlmaydi.",
+      "izoh": "Ogohlantirish ishorasi fara chiroqlarini qisqa vaqt oʻchirib-yoqish (miltillatish) bilan beriladi. Kunduzi yaqinni yorituvchi farani doimiy yoqib yurish ogohlantirish ishorasi hisoblanmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5977,
+      "savol": "Agar gʻildiraklardagi tortish kuchi yoʻl bilan tishlashish kuchidan ortiq boʻlsa:",
+      "rasm": "",
+      "togri_javob": "Yetakchi gʻildiraklar oʻrnidan jilmay aylanadi.",
+      "izoh": "Tortish kuchi gʻildirakning yoʻl bilan tishlashish kuchidan katta boʻlsa, gʻildirak yoʻlga tayanib itara olmaydi va sirpanib, joyida aylanadi (buksovka).",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5978,
+      "savol": "Qanday hollarda transport vositalarining tasarruf qilish ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "M1; M2; M3; 1 sinf toifali avtotransport vositalarining oldingi oʻqiga 1 sinfda taʼmirlangan shinalar qoʻyilgan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qaysi toifalarning oldingi o'qiga qaysi sinfda ta'mirlangan shina qo'yish taqiqlanishini (nosozliklar ro'yxati) aniq bilmayman — kalitni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5979,
+      "savol": "Koʻrsatilgan yoʻnalishlar boʻyicha qaysi transport vositalariga harakatlanishga ruxsat beriladi?",
+      "rasm": "questions/b009_s01_0_asl.jpeg",
+      "togri_javob": "Tramvay va avtomobil haydovchisiga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Svetoforda qizil signal va qo'shimcha seksiyaning yashil strelkasi yongan, lekin strelka yo'nalishi va savoldagi \"ko'rsatilgan yo'nalishlar\" rasmda aniq emas (yo'nalish strelkalari chizilmagan). Tramvay uchun alohida signal ko'rinmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5980,
+      "savol": "Avtomobillarga qaysi yoʻnalishda harakatlanishga ruxsat beriladi?",
+      "rasm": "questions/b009_s02_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobilga toʻgʻriga, koʻkiga chapga va qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. GUMON: rasm savolga mos emas — savol qizil va ko'k avtomobil haqida, rasmda esa yashil avtobus, ko'k yuk avtomobili va mototsikl. #5960 kabi PDF xatosi bo'lishi mumkin — tekshiring.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5981,
+      "savol": "Ushbu holatda quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b009_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Bo'laklarni ajratuvchi chiziqlar yaxlit ko'rinadi — agar shunday bo'lsa, quvib o'tish yaxlit chiziqni kesib o'tishni talab qiladi va taqiqlanadi (kalitga mos). Chiziq turini rasm o'lchamida 100% tasdiqlay olmadim.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5982,
+      "savol": "Ushbu svetofor harakatlanishni tartibga solish uchun qoʻllanadi:",
+      "rasm": "questions/b009_s04_0_asl.jpeg",
+      "togri_javob": "Qatnov qismidagi harakatlanish yoʻnalishi qarama-qarshi tomonga oʻzgaradigan boʻlaklar boʻyicha.",
+      "izoh": "Qizil “X” va yashil pastga strelkali svetofor — reversiv svetofor. U harakat yoʻnalishi qarama-qarshi tomonga oʻzgarishi mumkin boʻlgan (reversiv) boʻlaklardagi harakatni tartibga soladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5983,
+      "savol": "Transport vositalari chorrahadan quyidagi tartibda oʻtadilar:",
+      "rasm": "questions/b009_s05_0_asl.jpeg",
+      "togri_javob": "Tramvay; qizil; yashil; koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Rasmda \"Yo'l bering\" belgilari va chiziqlari ko'k avtomobil tomonida ko'rinadi, lekin asosiy yo'l yo'nalishi (qo'shimcha plastinka) va har bir transportning yo'nalishi aniq emas — tartibni ishonch bilan tushuntira olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5984,
+      "savol": "Koʻrsatilgan avtosisternalardan qaysi biri burilishda agʻdarilib ketishga turgʻunroq?",
+      "rasm": "questions/b009_s06_0_asl.jpeg",
+      "togri_javob": "Suyuqlik bilan batamom toʻldirilgani.",
+      "izoh": "Toʻliq toʻldirilmagan sisternada suyuqlik burilishda bir tomonga chayqaladi va ogʻirlik markazini siljitadi, bu agʻdarilish xavfini oshiradi. Batamom toʻldirilgan sisternada suyuqlik chayqalmaydi, shuning uchun u turgʻunroq.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5985,
+      "savol": "Shunday yoʻl belgisi boʻlgan yoʻl qismlarida ruxsat etilgan toʻla vazni 3,5 t dan oshmaydigan yuk avtomobillariga qanday eng katta tezlik bilan harakat qilishga ruxsat etiladi.",
+      "rasm": "questions/b009_s07_0_asl.jpeg",
+      "togri_javob": "100 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Ko'k fonli \"Yangibozor\" belgisi aholi punkti tartibini o'rnatmaydi, demak aholi punktidan tashqaridagi chegaralar amal qiladi. Lekin 3,5 t gacha yuk avtomobili uchun aniq qiymat (100 km/soat) faqat kalitdan — YHQ da tasdiqlay olmayman (#5955 bilan bir xil holat).",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5986,
+      "savol": "Toʻxtagan transport vositasi bilan yotiq sidirgʻa chiziq orasidagi masofa qancha boʻlganida toʻxtash taʼqiqlanadi?",
+      "rasm": "questions/b009_s08_0_asl.jpeg",
+      "togri_javob": "2,5 m.",
+      "izoh": "Yotiq sidirgʻa (yaxlit) chiziq bilan toʻxtagan transport vositasi orasidagi masofa 3 m dan kam boʻlgan joyda toʻxtash taqiqlanadi. Variantlardan faqat 2,5 m shu shartga toʻgʻri keladi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. 3 m qoidasi kalitdagi variantlar bilan mos (faqat 2,5 m < 3 m). Agar 3 m qiymatiga shubha bo'lsa — \"past\" ga o'tkazing.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5987,
+      "savol": "Harakat tezligi ikki marta oshganda, tormozlanish yoʻli necha marta ortadi?",
+      "rasm": "",
+      "togri_javob": "Toʻrt marta.",
+      "izoh": "Tormozlanish yoʻli tezlikning kvadratiga proporsional. Tezlik 2 marta oshsa, tormozlanish yoʻli 2² = 4 marta ortadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5988,
+      "savol": "Bir tirkamali avtopoyezdning qanday eng katta uzunligida Davlat YHX xizmatining ruxsatisiz harakatlanishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "20 m.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Bir tirkamali avtopoyezd uchun ruxsatsiz eng katta uzunlik (20 m) faqat kalitdan — O'zbekiston YHQ dagi aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5989,
+      "savol": "Qizil avtomobilning haydovchisi, yalt-yalt etuvchi chiroq-mayoqcha va maxsus tovushli ishora yoqilgan transport vositasi yaqinlashib kelayotganda nima qilishi kerak?",
+      "rasm": "questions/b010_s01_0_asl.jpeg",
+      "togri_javob": "Yoʻl berishi.",
+      "izoh": "Yalt-yalt etuvchi koʻk chiroq-mayoqcha va maxsus tovushli ishorasi yoqilgan transport vositasi yaqinlashganda boshqa haydovchilar unga yoʻl berishi va toʻsiqsiz oʻtishini taʼminlashi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    }
+  ]
+}
