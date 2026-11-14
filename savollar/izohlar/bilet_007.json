@@ -1,0 +1,156 @@
+{
+  "bilet": "7-bilet",
+  "slug": "bilet-7",
+  "savollar": [
+    {
+      "question_id": 5990,
+      "savol": "Mazkur belgi bilan belgilangan hududda qanday cheklanishlar kiritilgan?",
+      "rasm": "questions/b010_s02_0_asl.jpeg",
+      "togri_javob": "Transport vositalarini boshqarishni oʻrgatish.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. GUMON: rasm savolga mos emas — savol hududni belgilovchi yo'l belgisi haqida (kalit: \"Transport vositalarini boshqarishni o'rgatish\"), rasmda esa belgisiz chorraha va uchta avtomobil. #5960/#5980 kabi PDF xatosi bo'lishi mumkin — tekshiring.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5991,
+      "savol": "Qaysi belgi teng ahamiyatli yoʻllar chorrahasiga yaqinlashib kelayotganlik haqida ogohlantiradi?",
+      "rasm": "questions/b010_s03_0_asl.jpeg",
+      "togri_javob": "5.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. GUMON: rasm savolga mos emas — savol 1–5 raqamli belgilar jadvali haqida, rasmda esa \"15 t\" yuk avtomobili va \"5t\" massa cheklovi belgisi. #5960/#5980 kabi PDF xatosi bo'lishi mumkin — tekshiring.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5992,
+      "savol": "Svetoforning taʼqiqlovchi ishorasida va shlagbaum ochiq boʻlganda haydovchi nima qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Toʻxtash chizigʻi oldida, “Toʻxtamasdan harakatlanish taʼqiqlangan” belgisi oldida, agar ular yoʻq boʻlsa shlagbaumgacha 5 metrdan yaqin masofada toʻxtash.",
+      "izoh": "Temir yoʻl kesishmasida svetoforning taqiqlovchi ishorasi yongan boʻlsa, shlagbaum ochiq boʻlsa ham harakatlanish taqiqlanadi. Haydovchi toʻxtash chizigʻi yoki “Toʻxtamasdan harakatlanish taqiqlangan” belgisi oldida, ular boʻlmasa — shlagbaumdan kamida 5 m masofada toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5993,
+      "savol": "Chorrahadan ikkinchi boʻlib oʻtadi:",
+      "rasm": "questions/b010_s05_0_asl.jpeg",
+      "togri_javob": "Tramvay.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Ko'k avtomobil tomonida \"Asosiy yo'l\" belgisi, o'ngdagi yo'lda \"Yo'l bering\" belgisi ko'rinadi; tramvay va qizil avtomobil qaysi yo'lda va qayoqqa ketayotgani aniq emas — tartibni ishonch bilan tushuntira olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5994,
+      "savol": "Qanday hollarda haydovchisi boʻlmagan transport vositalarini shatakka olish mumkin?",
+      "rasm": "",
+      "togri_javob": "Qattiq ulagichning tuzilishi shatakka olingan transport vositalarini shatakka olgan transport vositalarining izidan harakatlanishini taʼminlaganda.",
+      "izoh": "Haydovchisi boʻlmagan transport vositasini faqat qattiq ulagich bilan va faqat ulagich tuzilishi uni shatakka olgan transport vositasining izidan yurishini taʼminlagan holda shatakka olish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5995,
+      "savol": "Bu yerda quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b010_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Rasmda “Xavfli burilish” belgisi oʻrnatilgan, yoʻl burilib ketgani uchun oldinni koʻrish cheklangan. Cheklangan koʻrinishli burilishlarda quvib oʻtish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5996,
+      "savol": "Qaysi ishoralar ogohlantiruvchi hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha ishoralar.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "ZIDDIYAT: bu savol kaliti kunduzi yaqinni yorituvchi farani yoqishni ogohlantirish ishorasi deb hisoblaydi (\"Sanab o'tilgan barcha ishoralar\"), #5976 kaliti esa \"Bo'lmaydi\" deydi. Ikkalasi bir vaqtda to'g'ri bo'lolmaydi — rasmiy YHQ matnidan tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 5997,
+      "savol": "Boshqarishni oʻrgatishdagi transport vositasi qanday jihozlangan boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha jihozlar va belgilar bilan.",
+      "izoh": "Boshqarishni oʻrgatishdagi transport vositasi taniqlik belgisi, oʻrgatuvchi uchun ulagich va tormozning qoʻshimcha tepkilari hamda orqani koʻrsatuvchi qoʻshimcha koʻzgu bilan jihozlangan boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5998,
+      "savol": "Sanab oʻtilgan shartlarning qaysilarida transport vositasidan foydalanish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda.",
+      "izoh": "Pnevmatik tormoz yuritmasi manometrining ishlamasligi, mototsikl boshqaruv dempferining buzuqligi va M1 toifali transport vositasida rul lyufti yigʻindisining 10° dan oshishi — bularning har biri transport vositasidan foydalanish taqiqlanadigan nosozliklar qatoriga kiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "Nosozliklar ro'yxatidagi qiymatlar (M1 uchun 10°) kalit bilan mos.",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 5999,
+      "savol": "Avtomobil qaysi yoʻnalishlarda harakatlanishi mumkin?",
+      "rasm": "questions/b011_s01_0_asl.jpeg",
+      "togri_javob": "Barcha yoʻnalishlar boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Rasm kichik (350x260). Tartibga soluvchi bir qo'lini yon tomonga cho'zgan, svetoforda qizil va yashil ko'rinadi; qaysi tomoni bilan avtomobilga qarab turganini ishonch bilan aniqlay olmadim. Tartibga soluvchi ishorasi svetofordan ustun turishi aniq.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6000,
+      "savol": "Bu belgi nimani bildiradi?",
+      "rasm": "questions/b011_s02_0_asl.jpeg",
+      "togri_javob": "Haydovchi roʻparadan harakatlanayotgan transport vositasiga yoʻl berishi kerak.",
+      "izoh": "Qizil hoshiyali doira ichida qora (oʻzining) va qizil (roʻparadagi) strelkalar — “Roʻparadan harakatlanishning ustunligi” belgisi. U yoʻlning tor qismida haydovchi roʻparadan kelayotgan transport vositalariga yoʻl berishi kerakligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6001,
+      "savol": "Haydovchiga koʻrsatilgan yoʻnalish boʻyicha harakatlanib, manyvrlar bajarishga ruxsat berilganmi?",
+      "rasm": "questions/b011_s03_0_asl.jpeg",
+      "togri_javob": "Ikkovi boʻyicha ham ruxsat etilgan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. A va Б manyovrlari uzlukli chiziqni kesib o'tadi, lekin chiziqlarning har bir joydagi turi va Б dagi qayrilishning to'liq yo'li rasm o'lchamida aniq emas.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6002,
+      "savol": "Ushbu svetofor harakatlanishni taʼqiqlaydi:",
+      "rasm": "questions/b011_s04_0_asl.jpeg",
+      "togri_javob": "Faqat chapga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. Svetofor sxematik chizilgan (bitta qora seksiya, strelkasiz); qaysi seksiya qaysi yo'nalishni bildirishini rasmdan aniqlay olmadim.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6003,
+      "savol": "Qizil avtomobil:",
+      "rasm": "questions/b011_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobilga nisbatan ustunlikka ega, chunki asosiy yoʻldan ketayapti.",
+      "izoh": "Koʻk avtomobil oldida “Aylanma harakat” belgisi bilan birga “Yoʻl bering” belgisi oʻrnatilgan, shuning uchun aylanma yoʻl unga nisbatan asosiy yoʻl hisoblanadi. Qizil avtomobil asosiy yoʻlda boʻlgani uchun ustunlikka ega; aylanma harakatning oʻzi ustunlik bermaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "To'liq o'lchamli rasm bo'yicha ko'rib chiqildi. ",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6004,
+      "savol": "Yetarli koʻrinmaslik sharoitida yoʻlning yoritilmagan qismida toʻxtagan yoki toʻxtab turgan mexanik transport vositasining haydovchisi bajarishi kerak:",
+      "rasm": "",
+      "togri_javob": "Gabarit chiroqlarini yoqishi.",
+      "izoh": "Kunning qorongʻi vaqtida yoʻlning yoritilmagan qismida yoki yetarli koʻrinmaslik sharoitida toʻxtaganda yoxud toʻxtab turganda transport vositasida gabarit chiroqlari yoqilgan boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

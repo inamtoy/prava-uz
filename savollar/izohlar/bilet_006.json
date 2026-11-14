@@ -17,10 +17,10 @@
       "savol": "Kunduzgi vaqtda yaqinni yorituvchi fara chirogʻini yoqish ogohlantirish ishorasi boʻladimi?",
       "rasm": "",
       "togri_javob": "Boʻlmaydi.",
-      "izoh": "Ogohlantirish ishorasi fara chiroqlarini qisqa vaqt oʻchirib-yoqish (miltillatish) bilan beriladi. Kunduzi yaqinni yorituvchi farani doimiy yoqib yurish ogohlantirish ishorasi hisoblanmaydi.",
-      "ishonch": "yuqori",
-      "izohcha": "",
-      "holat": "tayyor"
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Import qilingan, keyin olib tashlandi (2026-11-14): #5996 kaliti kunduzi yaqin farani yoqishni ogohlantirish ishorasi deb hisoblaydi — ziddiyat, NOTES 'Kaliti tekshirilishi kerak'. Avvalgi izoh: Ogohlantirish ishorasi fara chiroqlarini qisqa vaqt oʻchirib-yoqish (miltillatish) bilan beriladi. Kunduzi yaqinni yorituvchi farani doimiy yoqib yurish ogohlantirish ishorasi hisoblanmaydi.",
+      "holat": "tekshirish kerak"
     },
     {
       "question_id": 5977,
