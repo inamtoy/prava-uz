@@ -1,0 +1,156 @@
+{
+  "bilet": "32-bilet",
+  "slug": "bilet-32",
+  "savollar": [
+    {
+      "question_id": 6365,
+      "savol": "Koʻk avtomobil haydovchisiga quvib oʻtish ruxsat etiladimi?",
+      "rasm": "questions/b047_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Oldindagi qizil avtomobil yoʻl ishlari sababli toʻsiqni aylanib oʻtmoqda. Oldinda harakatlanayotgan transport vositasi quvib oʻtayotgan yoki toʻsiqni aylanib oʻtayotgan boʻlsa, uni quvib oʻtish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6366,
+      "savol": "Quyidagi qaysi suratda haydovchi avtomobilni qoidaga hilof ravishda toʻxtab turishga qoʻygan?",
+      "rasm": "questions/b047_s08_0_asl.jpeg",
+      "togri_javob": "Chap va oʻrtadagi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Uchala rasmdagi avtomobilning yoʻlga nisbatan holatini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6367,
+      "savol": "Sirpanchiq yoʻlda yurgizgich bilan tormozlashni qoʻllash orqa uzatmali avtomobil uchun:",
+      "rasm": "",
+      "togri_javob": "Avtomobil turgʻunligini oshiradi.",
+      "izoh": "Sirpanchiq yoʻlda dvigatel bilan tormozlash orqa yetakchi gʻildiraklarni silliq sekinlashtiradi va ularning blokirovka boʻlishiga yoʻl qoʻymaydi. Shuning uchun avtomobilning turgʻunligi oshadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6368,
+      "savol": "Davlat YHX xizmati ruxsatisiz transport vositasining yuk bilan yoki yuksiz harakatlanishiga qanday yuqori maksimal kenglikda yoʻl qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "2,55 m.",
+      "izoh": "Yuk bilan yoki yuksiz kengligi 2,55 metrdan oshmaydigan transport vositasi Davlat YHX xizmatining ruxsatisiz harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6369,
+      "savol": "Kоʼk avtomobi chorrahani kesib oʻtadi:",
+      "rasm": "questions/b048_s01_0_asl.jpeg",
+      "togri_javob": "Uchinchi boʻlib ayni vaqtda qizil bilan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6370,
+      "savol": "Qaysi belgi toʻxtamasdan oʻtishni taʼqiqlaydi?",
+      "rasm": "questions/b048_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi — «Bojxona»: u bojxona punkti oldida toʻxtamasdan oʻtishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6371,
+      "savol": "Ushbu tik yoʻl chizigʻi nimani bildiradi?",
+      "rasm": "questions/b048_s03_0_asl.jpeg",
+      "togri_javob": "Xavfli yoʻl qismlarida bordyurlarni belgilaydi.",
+      "izoh": "Bu tik yoʻl chizigʻi (qora va oq boʻlaklar) yoʻlning xavfli qismlaridagi bordyurlarni belgilaydi, shunda ular haydovchiga yaxshi koʻrinadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6372,
+      "savol": "Haydovchi oq hassa bilan ishora berayotgan koʻzi ojiz piyodalarni oʻtkazib yuborishi kerakmi?",
+      "rasm": "",
+      "togri_javob": "Barcha hollarda oʻtkazib yuborishi kerak, shu jumladan, piyodalar oʻtish joylardan tashqarida ham.",
+      "izoh": "Oq hassa bilan ishora berayotgan koʻzi ojiz piyodani haydovchi barcha hollarda, jumladan piyodalar oʻtish joyidan tashqarida ham oʻtkazib yuborishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6373,
+      "savol": "Qaysi rasmda haydovchi toʻgʻri burilmoqda?",
+      "rasm": "questions/b048_s05_0_asl.jpeg",
+      "togri_javob": "Chapdagi rasmda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining ishoralarini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6374,
+      "savol": "Qaysi avtomobil toʻgʻri toʻxtab turishga toʻgʻri qoʻyilgan?",
+      "rasm": "questions/b048_s06_0_asl.jpeg",
+      "togri_javob": "Har ikkisi notoʻgʻri qoʻyilgan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobillarning toʻxtab turish qoidasini qaysi jihatdan buzgani rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6375,
+      "savol": "Agar qatnov qismining kengligi chetki chap boʻlakdan qayrilish uchun yetarli boʻlmasa, qoidalar qayrilishni qatnov qismining oʻng chekkasi yoki yoʻlning oʻng yoqasidan amalga oshirishga yoʻl qoʻyadimi?",
+      "rasm": "",
+      "togri_javob": "Yoʻl qoʻyiladi. Bunda qayrilayotgan haydovchi yoʻlakay va qarama-qarshi kelayotgan transport vositalarini oʻtkazib yuborishi kerak.",
+      "izoh": "Qatnov qismi chetki chap boʻlakdan qayrilib olish uchun yetarli kenglikda boʻlmasa, qayrilishni qatnov qismining oʻng chekkasidan yoki yoʻl yoqasidan bajarish mumkin. Bunda haydovchi yoʻlakay va qarama-qarshi kelayotgan transport vositalarini oʻtkazib yuborishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6376,
+      "savol": "Aholi punktlarida relssiz transport vositalariga, agar bir yoʻnalishda uch va undan ortiq harakatlanish boʻlagi boʻlganda qaysi boʻlakdan harakatlanishga ruxsat etiladi? Ruxsat etilgan tola vazni 3,5 tonnadan ortiq boʻlgan yuk avtomobillari hisobga kirmaydi.",
+      "rasm": "",
+      "togri_javob": "Chapki chekkadan tashqari har qanday boʻlak boʻyicha. Unga faqat boshqa boʻlaklarda harakat serqatnov boʻlganda. shuningdek, chapga burilish, orqaga qayrilish va birtomonlama harakat tashkil qilingan yoʻlda toʻxtash uchun oʻtishga ruxsat etiladi.",
+      "izoh": "Aholi punktlarida bir yoʻnalishda uch va undan ortiq boʻlak boʻlsa, relssiz transport vositalari chetki chapdan tashqari istalgan boʻlakdan harakatlanishi mumkin. Chetki chap boʻlakka faqat serqatnov harakatda, chapga burilish, qayrilib olish yoki bir tomonlama yoʻlda toʻxtash uchun oʻtiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6377,
+      "savol": "Svetoforning bir vaqtda yoqilgan qizil va sariq ishoralari nimani bildiradi?",
+      "rasm": "questions/b048_s09_0_asl.jpeg",
+      "togri_javob": "Harakatni taʼqiqlaydi va tezda yashil ishora yoqilishi haqida ogohlantiradi.",
+      "izoh": "Bir vaqtda yongan qizil va sariq ishoralar harakatni taqiqlaydi va tez orada yashil ishora yonishi haqida ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6378,
+      "savol": "Avtomobilga oʻrnatilgan bu taniqlik belgi nimani bildiradi?",
+      "rasm": "questions/b048_s10_0_asl.jpeg",
+      "togri_javob": "Avtomobil shifokor haydovchiga tegishli ekanini.",
+      "izoh": "Koʻk toʻrtburchak ichidagi oq doirada qizil xoch tasvirlangan taniqlik belgisi avtomobil shifokor haydovchiga tegishli ekanini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6379,
+      "savol": "Bu yerda avtomobil toʻxtashiga ruxsat berilganmi?",
+      "rasm": "questions/b049_s01_0_asl.jpeg",
+      "togri_javob": "Ruxsat berilgan.",
+      "izoh": "Belgi faqat toʻxtab turishni taqiqlaydi. Yoʻlovchini tushirish uchun qisqa toʻxtash esa ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

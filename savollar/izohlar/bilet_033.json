@@ -1,0 +1,156 @@
+{
+  "bilet": "33-bilet",
+  "slug": "bilet-33",
+  "savollar": [
+    {
+      "question_id": 6380,
+      "savol": "Bu belgi qaysi transport vositalariga tegishli emas?",
+      "rasm": "questions/b049_s02_0_asl.jpeg",
+      "togri_javob": "Belgi taʼsirida joylashgan korxonalarga xizmat etayotgan transport vositasiga.",
+      "izoh": "«Harakatlanish taqiqlanadi» belgisi belgi taʼsiri hududida joylashgan korxonalarga xizmat koʻrsatayotgan transport vositalariga tatbiq etilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6381,
+      "savol": "Qaysi transport vositalari yoʻlovchilarni tushirish uchun notoʻgʻri toʻxtagan?",
+      "rasm": "questions/b049_s03_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "Qizil avtomobil uzluksiz sariq chiziq boʻylab toʻxtagan — bu chiziq toʻxtashni taqiqlaydi. Uzuq sariq chiziq esa faqat toʻxtab turishni taqiqlaydi, shuning uchun mototsikl yoʻlovchi tushirish uchun toʻgʻri toʻxtagan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6382,
+      "savol": "Bu yoʻl belgisi nimani bildiradi?",
+      "rasm": "questions/b049_s04_0_asl.jpeg",
+      "togri_javob": "Shlagbaum bilan jihozlanmagan ikki va undan koʻp izli temir yoʻl kesishmasini.",
+      "izoh": "Ikki karra «Andreyev xochi» koʻrinishidagi belgi shlagbaum bilan jihozlanmagan ikki va undan koʻp izli temir yoʻl kesishmasini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6383,
+      "savol": "Harakatlanish taʼqiqlangan:",
+      "rasm": "questions/b049_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk-sariq avtomobilga – chapga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6384,
+      "savol": "Tormozlanish boʻlagi boʻlgan yoʻlda qaysi transport vositasi undan chiqish qoidasini buzdi?",
+      "rasm": "questions/b049_s06_0_asl.jpeg",
+      "togri_javob": "Sariq avtomobil.",
+      "izoh": "Tormozlanish boʻlagi boʻlsa, yoʻldan chiqayotgan haydovchi oldin shu boʻlakka oʻtib, tezlikni unda kamaytirishi kerak. Sariq avtomobil tormozlanish boʻlagidan foydalanmay, toʻgʻridan-toʻgʻri asosiy boʻlakdan burilgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6385,
+      "savol": "Koʻrsatilgan belgilardan qaysi biri avtomagistrallarga oʻrnatiladi?",
+      "rasm": "questions/b049_s07_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomagistrallarda odatda yashil fonli belgilar (3-belgi) oʻrnatiladi, kalit esa 4-belgini koʻrsatadi — rasm yoki kalitni tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6386,
+      "savol": "Haydovchining oʻzi aniqlay oladigan harakatlanish uchun toʻsqinlik yoki xavf tugʻilganda qanday choralar koʻrishi kerak?",
+      "rasm": "",
+      "togri_javob": "Tezlikni transport vositasi toʻxtagunicha kamaytirishi yoki toʻsiqni aylanib oʻtishning boshqa harakat qatnashchilari uchun xavfsiz choralarni koʻrishi.",
+      "izoh": "Haydovchi harakat uchun toʻsqinlik yoki xavfni sezganda tezlikni transport vositasi toʻxtagunicha kamaytirishi yoki toʻsiqni boshqalar uchun xavfsiz tarzda aylanib oʻtishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6387,
+      "savol": "Jabrlanuvchining yurak faoliyati yoki nafas olishi toʻxtaganda, unga qanday ketma-ketlikda birinchi yordam koʻrsatish zarur?",
+      "rasm": "",
+      "togri_javob": "Nafas yoʻllarini boʻshatish, sunʼiy nafas oldirish va yurakni ustidan , massaj qilish.",
+      "izoh": "Jonlantirish nafas yoʻllarini boʻshatishdan boshlanadi — aks holda sunʼiy nafas foyda bermaydi. Soʻng sunʼiy nafas oldiriladi va yurak ustidan massaj qilinadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6388,
+      "savol": "Sanab oʻtilgan shartlardan qay birida avtomobillar, va avtopoezdlardan foydalanish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Gidravlik tormoz tizimining zichligi buzilganda.",
+      "izoh": "Gidravlik tormoz tizimining zichligi buzilsa, tormoz suyuqligi oqib, tormozlar ishlamay qolishi mumkin. Shuning uchun bunday transport vositasidan foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6389,
+      "savol": "Qaysi belgi agar yuk avtomobilining tirkamasi bilan birga ruxsat etilgan toʻliq vazni 7 tonnaga teng boʻlsa, tirkamali avtomobillarning harakatlanishini taʼqiqlaydi?",
+      "rasm": "questions/b050_s01_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi tirkamali yuk avtomobillarining harakatlanishini ularning vaznidan qatʼi nazar taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6390,
+      "savol": "Belgilardan qay biri ajratuvchi boʻlagi boʻlgan yoʻlning harakat uchun yopiq qatnov qismini aylanib oʻtish yoʻnalishini koʻrsatadi?",
+      "rasm": "questions/b050_s02_0_asl.jpeg",
+      "togri_javob": "5.",
+      "izoh": "5-belgi (sariq fonda) ajratuvchi boʻlagi boʻlgan yoʻlning harakat uchun yopiq qatnov qismini aylanib oʻtish yoʻnalishini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6391,
+      "savol": "Yoʻl chizigʻi bilan ajratilgan bekat maydonchasidan harakatlanish uchun foydalanishga ruxsat etiladimi?",
+      "rasm": "questions/b050_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Yoʻl chizigʻi bilan ajratilgan bekat maydonchasi yoʻlovchilar uchun moʻljallangan, shuning uchun undan transport vositalarining harakatlanishi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6392,
+      "savol": "Chorrahani transport vositalari quyidagi tartibda kesib oʻtadilar?",
+      "rasm": "questions/b050_s04_0_asl.jpeg",
+      "togri_javob": "Hamma bir vaqtda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6393,
+      "savol": "Harakatlanish ruxsat etilgan:",
+      "rasm": "questions/b050_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobilga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6394,
+      "savol": "Mazkur vaziyatda qizil avtomobilga quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b050_s06_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Qizil avtomobil asosiy yoʻlda harakatlanmoqda. Chorrahada quvib oʻtish faqat tartibga solinmagan chorrahada ikkinchi darajali yoʻlda harakatlanganda taqiqlanadi, shuning uchun bu yerda quvib oʻtishga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

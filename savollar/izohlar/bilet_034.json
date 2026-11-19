@@ -1,0 +1,156 @@
+{
+  "bilet": "34-bilet",
+  "slug": "bilet-34",
+  "savollar": [
+    {
+      "question_id": 6395,
+      "savol": "Haydovchi aholi punktidan tashqarida harakat qoidalarini buzmoqdami?",
+      "rasm": "questions/b050_s07_0_asl.jpeg",
+      "togri_javob": "Ha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobil qaysi qoidani buzayotgani (chiziqqa nisbatan holati) rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6396,
+      "savol": "Transport vositalarining temir yoʻl kesishmasiga qancha masofadan yaqinroqda toʻxtab turishlari taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "50 m.",
+      "izoh": "Temir yoʻl kesishmasiga 50 metrdan yaqinda toʻxtab turish taqiqlanadi, chunki toʻxtab turgan transport vositasi kesishmaga yaqinlashayotgan haydovchilarning koʻrinishini toʻsadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6397,
+      "savol": "Agar jonlantirishni (reanimatsiyani) 2 kishi bir vaqtda olib borganda, yurakni bilvosita massaj qilish va sunʼiy nafas oldirish qanday bajariladi?",
+      "rasm": "",
+      "togri_javob": "Ikki marta havo puflanadi, soʻng yurak sohasi 30 marta bosiladi va hokazo.",
+      "izoh": "Jonlantirishni ikki kishi olib borganda ikki marta sunʼiy nafas oldiriladi, soʻng koʻkrak qafasi (yurak sohasi) 30 marta bosiladi va bu davom ettiriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6398,
+      "savol": "Tashiladigan yuk vaznini va oʻqlar boʻyicha tushadigan ogʻirlikni taqsimlashni kim tartibga solib turadi?",
+      "rasm": "",
+      "togri_javob": "Mazkur transport vositasini tayyorlovchi - korxona.",
+      "izoh": "Tashiladigan yuk vazni va uning oʻqlar boʻyicha taqsimlanishini transport vositasini tayyorlovchi korxona belgilaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6399,
+      "savol": "Belgilangan yoʻnalishli transport vositalariga qaysilar kiradi?",
+      "rasm": "",
+      "togri_javob": "Belgilangan yoʻnalish boʻyicha harakatlanadigan avtobus, trolleybus, tramvay va yoʻnalishli taksilar.",
+      "izoh": "Yoʻnalishli transport vositalari — belgilangan yoʻnalish boʻyicha harakatlanadigan avtobus, trolleybus, tramvay va yoʻnalishli taksilar.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6400,
+      "savol": "Qaysi belgi chapga burilishga ruxsat etadi?",
+      "rasm": "questions/b051_s02_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi faqat qayrilib olishni taqiqlaydi, chapga burilishga esa ruxsat beradi. 1, 2 va 4-belgilar chapga burilishga ruxsat bermaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6401,
+      "savol": "Bu belgi oʻrnatilgan yoʻlda avtobuslarga harakatlanish ruxsat etiladimi?",
+      "rasm": "questions/b051_s03_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "«Avtomobillar uchun yoʻl» belgisi bu yoʻlda faqat avtomobillar, avtobuslar va mototsikllar harakatlanishi mumkinligini bildiradi, shuning uchun avtobuslarga harakatlanish ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6402,
+      "savol": "Chorrahani oxirgi boʻlib kesib oʻtadi:",
+      "rasm": "questions/b051_s04_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6403,
+      "savol": "Qaysi transport vositalariga harakatlanish ruxsat etiladi?",
+      "rasm": "questions/b051_s05_0_asl.jpeg",
+      "togri_javob": "Sariq va qizil avtomobilga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6404,
+      "savol": "Yoʻlovchilarni tushirish uchun qaysi transport vositalari toʻgʻri toʻxtadi?",
+      "rasm": "questions/b051_s06_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Piyodalar oʻtish joyiga nisbatan toʻxtash masofasi haqidagi talabni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6405,
+      "savol": "Bunday yoʻl belgisi bilan belgilangan yoʻl qismlarida ruxsat etilgan toʻla vazni 3,5 tonnadan ortiq boʻlgan yuk avtomobillarining qanday yuqori tezlik bilan harakatlanishiga ruxsat etiladi?",
+      "rasm": "questions/b051_s07_0_asl.jpeg",
+      "togri_javob": "80 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Bunday yoʻlda yuk avtomobili uchun ruxsat etilgan tezlik (80 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6406,
+      "savol": "Koʻk avtomobi haydovchisi nima qilishi kerak?",
+      "rasm": "questions/b051_s08_0_asl.jpeg",
+      "togri_javob": "Tezlikni kamaytirishi, sariq, avtomobilga quvib oʻtishni tugallashiga imkon berishi, song esa chapga burilishi.",
+      "izoh": "Sariq avtomobil koʻk avtomobilni quvib oʻtmoqda. Quvib oʻtilayotgan haydovchi bunga toʻsqinlik qilmasligi kerak, shuning uchun koʻk avtomobil tezlikni kamaytirib, sariq avtomobilga quvib oʻtishni tugallashga imkon beradi va shundan keyin chapga buriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6407,
+      "savol": "«Gazel» yuk avtomobilining yuk bilan balandligi yoʻl sathiidan 3,8 metr boʻlsa, uni tashish mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat beriladi.",
+      "izoh": "Yuk bilan balandligi 4 metrdan oshmaydigan transport vositasi ruxsatsiz harakatlanishi mumkin. 3,8 metr bu chegaradan kam, shuning uchun tashish ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6408,
+      "savol": "Agar pnevmatik uzatmaning zichligi buzilib, kompressor ishlamay turganda boshqaruv asboblarining erkin holatida havo bosimining 30 daqiqada qancha MPa-ga pasayishiga sabab boʻlsa, tormoz tizimi nosoz hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "0,05.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Pnevmatik tizimdagi bosim pasayishi meʼyori (MPa va vaqt) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6409,
+      "savol": "Avtomobil harakatlanayotganda kutilmaganda shinasi yorilib ketsa, haydovchi nima qilishi zarur?",
+      "rasm": "",
+      "togri_javob": "Rulni ushlab turish, toʻgʻri chiziqda harakatni saqlash, tezlikni kamaytirish va toʻxtatish.",
+      "izoh": "Shina yorilganda avtomobil yon tomonga tortib ketadi. Haydovchi rulni mahkam ushlab, toʻgʻri chiziqda harakatni saqlashi, tezlikni asta kamaytirib toʻxtashi kerak. Keskin tormozlash avtomobilni boshqaruvdan chiqarib yuborishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
