@@ -1,0 +1,156 @@
+{
+  "bilet": "10-bilet",
+  "slug": "bilet-10",
+  "savollar": [
+    {
+      "question_id": 6035,
+      "savol": "Transport vositasining bitta oʻqiga har xil naqshli shinalarni oʻrnatishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Bir oʻqqa har xil naqshli shinalar oʻrnatish taqiqlanadi: ular yoʻl bilan har xil ilashadi, tormozlashda va burilishda avtomobil yon tomonga tortib ketishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6036,
+      "savol": "Quvib oʻtishda faralarning uzoqni yorituvchi chiroqlaridan ogohlantiruvchi ishora sifatida foydalanish mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Mumkin, agar u boshqa haydovchilarning koʻzini qamashtirmasa, jumladan, orqani koʻrish koʻzgusi orqali ham.",
+      "izoh": "Quvib oʻtishdan oldin ogohlantirish uchun faralarning uzoqni yorituvchi chiroqlarini qisqa yoqish mumkin. Lekin bu boshqa haydovchilarning, jumladan, oldindagi haydovchining orqani koʻrish koʻzgusi orqali koʻzini qamashtirmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6037,
+      "savol": "Shatakka olish taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Yon kajavasi yoʻq mototsikllar bilan.",
+      "izoh": "Yon kajavasi boʻlmagan mototsikl bilan shatakka olish taqiqlanadi: bunday mototsikl turgʻun emas va shatakdagi yukni xavfsiz tortib bora olmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6038,
+      "savol": "Quyidagi qaysi belgilar “Ogohlantiruvchi belgilar” qatoriga kiradi?",
+      "rasm": "questions/b014_s10_0_asl.jpeg",
+      "togri_javob": "Hammasi Ogohlantiruvchi belgilar hisoblanadi.",
+      "izoh": "Rasmdagi barcha belgilar, jumladan 3-belgi — burilish yoʻnalishini koʻrsatuvchi yoʻl-yoʻl belgi — ogohlantiruvchi belgilar guruhiga kiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6039,
+      "savol": "Chorraha oldida bu belgi oʻrnatilgan boʻlsa, haydovchi qanday yoʻl tutishi kerak?",
+      "rasm": "questions/b015_s01_0_asl.jpeg",
+      "togri_javob": "Kesishadigan yoʻl boʻylab harakatlanayotgan transport vositalariga yoʻl berish uchun, toʻxtash chizigʻida toʻxtab, u yoʻq boʻlsa kesib oʻtiladigan qatnov qismining chetida toʻxtashi.",
+      "izoh": "«Toʻxtamasdan harakatlanish taqiqlanadi» (STOP) belgisi oldida haydovchi kesishadigan yoʻlda transport boʻlmasa ham albatta toʻxtashi shart: toʻxtash chizigʻi oldida, u boʻlmasa kesib oʻtiladigan qatnov qismining chetida. Soʻng kesishadigan yoʻldagi transport vositalariga yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6040,
+      "savol": "Qaysi yoʻnalishda harakatlanish taʼqiqlanadi?",
+      "rasm": "questions/b015_s02_0_asl.jpeg",
+      "togri_javob": "Oʻngga ikkinchi yoʻlga.",
+      "izoh": "Ikkinchi yoʻl oldida «Oʻngga burilish taqiqlanadi» belgisi oʻrnatilgan, shuning uchun aylanma harakatlanish joyidan ikkinchi yoʻlga oʻngga burilish taqiqlanadi. Birinchi yoʻlga burilish cheklanmagan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6041,
+      "savol": "Yotiq chiziqning uzluksiz sariq chizigʻi nimani bildiradi?",
+      "rasm": "questions/b015_s03_0_asl.jpeg",
+      "togri_javob": "Transport vositalarining toʻxtash taʼqiqlangan joyni.",
+      "izoh": "Qatnov qismi chetidagi uzluksiz sariq chiziq transport vositalarining toʻxtashi taqiqlangan joyni bildiradi. Toʻxtash taqiqlangan joyda toʻxtab turish ham mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6042,
+      "savol": "Harakatlanishga ruxsat berilgan:",
+      "rasm": "questions/b015_s04_0_asl.jpeg",
+      "togri_javob": "Oʻngga birinchi va ikkinchi yoʻllarga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining qoʻl holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6043,
+      "savol": "Transport vositalari chorrahadan qanday tartibda oʻtadilar?",
+      "rasm": "questions/b015_s05_0_asl.jpeg",
+      "togri_javob": "Qizil; koʻk sariq bilan bir vaqtda; yashil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6044,
+      "savol": "Haydovchi manyovrni bajarishda burilish koʻrsatkichlari bilan yorugʻlik ishorasini har doim berishi kerakmi?",
+      "rasm": "",
+      "togri_javob": "Kerak emas, agar harakatlanishning boshqa qatnashchilarini chalgʻitish mumkin boʻlsa.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit gʻalati ifodalangan («kerak emas, agar chalgʻitish mumkin boʻlsa») — qoidadagi aniq matnni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6045,
+      "savol": "Suratlarning qaysi birida quvib oʻtish koʻrsatilgan?",
+      "rasm": "questions/b015_s07_0_asl.jpeg",
+      "togri_javob": "А va Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Ikki boʻlakli yoʻlda (А) quvib oʻtish tushunchasi qoidalar tahririga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6046,
+      "savol": "Haydovchi oʻz joyidan ketishi yoki transport vositasini qoldirishi mumkin, agar:",
+      "rasm": "",
+      "togri_javob": "U transport vositasining oʻz-oʻzidan harakatlanishi yoki undan haydovchi yoʻq vaqtda foydalanishga yoʻl qoʻymaydigan zaruriy choralarni koʻrgan boʻlsa.",
+      "izoh": "Haydovchi oʻz joyini tark etishidan oldin transport vositasining oʻz-oʻzidan harakatlanib ketishi va undan ruxsatsiz foydalanishning oldini oladigan barcha zarur choralarni koʻrishi shart. Faqat dvigatelni oʻchirish yoki faqat tormozni tortish bunga kafolat bermaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6047,
+      "savol": "Son suyagining pastki uchdan bir qismi singanda jarohatlangan odamni transportda tashish uchun taxtakash qanday qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "Ikkita taxtakash oyoqning ichki va tashqi tomonidan qoʻyiladi. Bittasini oyoq toʻpigʻidan qoʻltirosti chuqurigacha, ikkinchisi toʻpiqdan chovgacha.",
+      "izoh": "Son suyagi singanda ikkita taxtakash qoʻyiladi: tashqi tomondan toʻpiqdan qoʻltiq ostigacha, ichki tomondan toʻpiqdan chovgacha. Shunda tizza va tos-son boʻgʻimlari harakatsiz boʻladi va siniq boʻlaklari siljimaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6048,
+      "savol": "M toifadagi avtotransport vositalari tormoz tizimi necha foizli qiyalikda harakatsiz holatini saqlab tura olmasa harakatlanish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "25%.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qiyalik foizi (25%) faqat kalitdan — YHQ dagi aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6049,
+      "savol": "Qisman ortish usuli bilan avtomobilni shatakka olishda yoʻlovchilar qayerda boʻlishlari mumkin?",
+      "rasm": "",
+      "togri_javob": "Shatakka oluvchi avtomobilning kabinasida.",
+      "izoh": "Qisman ortish usulida shatakka olishda shatakka olinayotgan avtomobil kabinasi va kuzovida, shuningdek shatakka oluvchi avtomobil kuzovida odamlar boʻlishi taqiqlanadi. Yoʻlovchilar faqat shatakka oluvchi avtomobil kabinasida boʻlishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

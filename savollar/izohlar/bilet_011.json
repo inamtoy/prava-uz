@@ -1,0 +1,156 @@
+{
+  "bilet": "11-bilet",
+  "slug": "bilet-11",
+  "savollar": [
+    {
+      "question_id": 6050,
+      "savol": "Qaysi javobda ruxsat berilgan harakat yoʻnalishi toʻgʻri koʻrsatilgan?",
+      "rasm": "questions/b016_s02_0_asl.jpeg",
+      "togri_javob": "Faqat toʻgʻriga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgilarni aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6051,
+      "savol": "“Toʻxtash taʼqiqlangan” belgisi bilan birga toʻsiqning usti boʻylab uzluksiz sariq chiziq chizilgan joyda yoʻlovchilarni tushirishga ruxsat beriladimi?",
+      "rasm": "questions/b016_s03_0_asl.jpeg",
+      "togri_javob": "Faqat belgilangan yoʻnalishdagi transport vositalariga ruxsat beriladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Bekat boʻlmagan joyda yoʻnalishli transportga yoʻlovchi tushirish ruxsati — aniq qoidani tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6052,
+      "savol": "Temir yoʻl izlarini qayerda kesib oʻtishga ruxsat beriladi?",
+      "rasm": "",
+      "togri_javob": "Kesib oʻtish uchun belgilab qoʻyilgan joylarda.",
+      "izoh": "Temir yoʻl izlarini faqat buning uchun belgilangan joylarda — temir yoʻl kesishmalarida kesib oʻtish mumkin. Boshqa joylarda kesib oʻtish poyezd bilan toʻqnashish xavfini keltirib chiqaradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6053,
+      "savol": "Chorrahadan ikkinchi boʻlib oʻtadi:",
+      "rasm": "questions/b016_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil sariq bilan bir vaqtda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6054,
+      "savol": "Qaysi holda avtomobilning agʻanab ketishiga qarshi turgʻunligi ortadi?",
+      "rasm": "questions/b016_s06_0_asl.jpeg",
+      "togri_javob": "Ogʻirlik markazi pastda joylashganda.",
+      "izoh": "Ogʻirlik markazi qanchalik past boʻlsa, avtomobil agʻanab ketishga shunchalik turgʻun boʻladi. Shuning uchun ogʻir yuklarni pastga, yengillarini ustiga joylash kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6055,
+      "savol": "Hamma boʻlaklar band boʻlgan serqatnov harakatlanish vaqtida qayrilib olishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Istalgan paytta ruxsat beriladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit («istalgan paytta ruxsat beriladi») gʻalati — qoidadagi aniq talabni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6056,
+      "savol": "Haydovchi qayta tizilishdan va harakatlanish yoʻnalishini oʻzgartirishidan oldin nima qilishi zarur.",
+      "rasm": "",
+      "togri_javob": "Ushbu manyovr xavfsiz boʻlishiga va harakatlanishning boshqa qatnashchilariga halaqit bermasligiga ishonch hosil qilishi.",
+      "izoh": "Qayta tizilish va harakat yoʻnalishini oʻzgartirishdan oldin haydovchi manyovr xavfsiz boʻlishiga va boshqa harakat qatnashchilariga xalaqit bermasligiga ishonch hosil qilishi shart. Burilish ishorasi berish bu majburiyatdan ozod qilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6057,
+      "savol": "Tos suyagi singanda birinchi yordam qanday koʻrsatiladi?",
+      "rasm": "",
+      "togri_javob": "Shikastlanganni qattiq tekis yuzaga yotqizish, bukilgan va ikki tomonga kerilgan tizzalarning boʻgʻinlari ostiga gʻoʻla shaklida oʻrab qoʻyish.",
+      "izoh": "Tos suyagi singanda shikastlanuvchi qattiq tekis yuzaga chalqancha yotqiziladi, tizzalari bukilib, ikki tomonga keriladi va ostiga gʻoʻla shaklida oʻralgan narsa qoʻyiladi («baqa holati»). Bu holatda siniq boʻlaklari kam siljiydi va ogʻriq kamayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6058,
+      "savol": "Sanab oʻtilgan sharoitlarning qaysi birlarida transport vositasidan foydalanish taʼqiqlanadi.",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan hamma sharoitlarda.",
+      "izoh": "Sanab oʻtilgan barcha nosozliklar transport vositasidan foydalanish taqiqlanadigan nosozliklar qatoriga kiradi: ishlamaydigan oyna tozalagich koʻrinishni yomonlashtiradi, buzilgan chiqarish tizimi zaharli gazlarni chiqaradi, tuzilishida koʻzda tutilgan himoya buferi yoʻqligi esa toʻqnashuvda xavfni oshiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6059,
+      "savol": "Qaysi belgi yoʻl qismida maxsus avtomatlashtirilgan foto va video qayd etish texnika vositalari oʻrnatilganligi haqida axborot beradi?",
+      "rasm": "questions/b017_s01_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (fotoapparat tasviri) yoʻl qismida foto va video qayd etuvchi maxsus avtomatlashtirilgan texnika vositalari oʻrnatilganligi haqida axborot beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6060,
+      "savol": "Qaysi yoʻnalishda harakatlanish taʼqiqlanadi?",
+      "rasm": "questions/b017_s02_0_asl.jpeg",
+      "togri_javob": "Chapga va oʻngga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi ostidagi qoʻshimcha axborot belgisini rasmdan aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6061,
+      "savol": "Qaysi belgi oʻlcham uzunligi belgida koʻrsatilgandan uzun boʻlgan transport vositalarining harakatlanishini taʼqiqlaydi?",
+      "rasm": "questions/b017_s03_0_asl.jpeg",
+      "togri_javob": "2.",
+      "izoh": "2-belgi (yuk avtomobili tasviri va «10 m» yozuvi) umumiy uzunligi belgida koʻrsatilgandan ortiq boʻlgan transport vositalarining harakatlanishini taqiqlaydi. 1 va 4-belgilar balandlik va kenglikni cheklaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6062,
+      "savol": "Suratdagi tasvirlangan holatda haydovchi nima qilishi lozim?",
+      "rasm": "questions/b017_s04_0_asl.jpeg",
+      "togri_javob": "Bekatda (yoʻl oʻrtasida) turgan bir xil yoʻnalishdagi tramvayga borayotgan yoki undan kelayotgan piyodalarga yoʻl berish.",
+      "izoh": "Yoʻl oʻrtasidagi bekatda turgan tramvayga borayotgan yoki undan kelayotgan piyodalar qatnov qismini kesib oʻtadi, shuning uchun haydovchi ularga yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6063,
+      "savol": "Chorrahadan ikkinchi boʻlib oʻtadi:",
+      "rasm": "questions/b017_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6064,
+      "savol": "Kunning qorongʻi vaqtida yoʻlning yoritilgan qismida harakatlanayotgan mexanik transport vositasida qaysi chiroqlar yoqilgan boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "Faralarning yaqinni yorituvchi chiroqlari.",
+      "izoh": "Kunning qorongʻi vaqtida yoʻlning yoritilgan qismida ham faralarning yaqinni yorituvchi chiroqlari yoqilishi kerak. Uzoqni yorituvchi chiroqlar boshqa haydovchilarning koʻzini qamashtiradi, gabarit chiroqlari esa transport vositasini yetarlicha koʻrsatmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

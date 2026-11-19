@@ -1,0 +1,156 @@
+{
+  "bilet": "9-bilet",
+  "slug": "bilet-9",
+  "savollar": [
+    {
+      "question_id": 6020,
+      "savol": "Qaysi transport vositalarining haydovchilari qoidani buzib toʻxtadilar.",
+      "rasm": "questions/b013_s02_0_asl.jpeg",
+      "togri_javob": "А va Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdan Б va В avtomobillari toʻxtashining farqi (qaysi qoida buzilgani) aniq koʻrinmaydi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6021,
+      "savol": "Qaysi belgi kesib oʻtilayotgan yoʻldan harakatlanayotgan transport vositalariga yoʻl berishni yuklaydi.",
+      "rasm": "questions/b013_s03_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi — «Yoʻl bering» belgisi: u haydovchidan kesib oʻtilayotgan yoʻl boʻylab harakatlanayotgan transport vositalariga yoʻl berishni talab qiladi. 5-belgi esa qarama-qarshi yoʻnalishdan kelayotgan transportga yoʻl berishni bildiradi, 1, 2 va 4-belgilar faqat ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6022,
+      "savol": "Temir yoʻl kesishmasida umumiy tovushli xatar ishorasi boʻlib, u qanday tartibda ogohlantiradi?",
+      "rasm": "",
+      "togri_javob": "Bitta uzun va uchta qisqa signal orqali.",
+      "izoh": "Umumiy xatar ishorasi bitta uzun va uchta qisqa tovush ishorasidan iborat. Masalan, transport vositasi temir yoʻl kesishmasida majburan toʻxtab qolganda poyezd yaqinlashayotgan boʻlsa, haydovchi shu ishorani beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6023,
+      "savol": "Qaysi javobda chorrahadan oʻtish tartibi toʻgʻri koʻrsatilgan?",
+      "rasm": "questions/b013_s05_0_asl.jpeg",
+      "togri_javob": "Velosiped, avtobus, avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi transport vositalarining yoʻnalishlariga bogʻliq, rasmdan ularni aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6024,
+      "savol": "Haydovchi orqa gʻildiraklari yetakchi boʻlgan avtomobilni orqa oʻqi sirpanib ketishi boshlanganida toʻxtatish uchun nima qilishi kerak.",
+      "rasm": "questions/b013_s06_0_asl.jpeg",
+      "togri_javob": "Rulni sirpanish boshlanayotgan tomonga burish.",
+      "izoh": "Orqa oʻq sirpanib keta boshlaganda rulni sirpanish tomoniga burish kerak — shunda avtomobil toʻgʻrilanadi. Tormoz tepkisini bosish gʻildiraklarning ilashuvini yanada kamaytirib, sirpanishni kuchaytiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6025,
+      "savol": "Ushbu holatda quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b013_s07_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmda transport vositalari temir yoʻl kesishmasidan oʻtib boʻlgani koʻrinadi, lekin quvib oʻtish ruxsat etilishining aniq sababini tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6026,
+      "savol": "Haydovchi aholi yashaydigan joydan tashqaridagi yoʻlda quvib oʻtilayotgan haydovchining eʼtiborini jalb etish uchun faralar chiroqlarini oʻchirib yoqish va tovush ishorasi berishi toʻgʻrimi?",
+      "rasm": "",
+      "togri_javob": "Toʻgʻri.",
+      "izoh": "Aholi yashaydigan joydan tashqarida quvib oʻtilayotgan haydovchini ogohlantirish uchun tovush ishorasi berish va faralarni oʻchirib-yoqish (yorugʻlik ishorasi) mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6027,
+      "savol": "Shikastlangan kishining oʻmrov suyagi singanda nima qilish kerak?",
+      "rasm": "",
+      "togri_javob": "Paxta yoki bint oʻramasini qoʻltiq sohasiga qoʻyib tirsagidan bukilgan qoʻlini gavdasiga qoʻshib bint bilan bogʻlash kerak.",
+      "izoh": "Oʻmrov suyagi singanda qoʻltiq ostiga paxta yoki bint oʻramasi qoʻyilib, tirsagidan bukilgan qoʻl gavdaga bogʻlanadi. Bu yelka va qoʻlni qimirlatmay, siniq boʻlaklarini harakatsiz ushlab turadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6028,
+      "savol": "Yengil avtomobilda tumanga qarshi faralarning nechtasini oʻrnatishga ruxsat beriladi?",
+      "rasm": "",
+      "togri_javob": "Ikkita.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Tumanga qarshi faralar soni (ikkita) faqat kalitdan — YHQ dagi aniq talabni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6029,
+      "savol": "Sonning yumshoq toʻqimalari lat yeganda birinchi tibbiy yordam qanday koʻrsatiladi?",
+      "rasm": "",
+      "togri_javob": "Lat yegan joyni qattiq bogʻlash, 15-20 daqiqa muz solingan xalta qoʻyish. Oyoqni yuqoriga koʻratish, tinch qoʻyish.",
+      "izoh": "Lat yeyishda shish va qon quyilishini kamaytirish uchun lat yegan joy qattiq bogʻlanadi va 15–20 daqiqa sovuq (muz solingan xalta) qoʻyiladi. Oyoq yuqoriroq koʻtarib, tinch holatda qoldiriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6030,
+      "savol": "Agar yoʻl boshlanishida ushbu belgi turgan boʻlsa qatnov qismining chap chetidagi boʻlakka oʻtish mumkinmi?",
+      "rasm": "questions/b014_s02_0_asl.jpeg",
+      "togri_javob": "Hech qanday holatda mumkin emas.",
+      "izoh": "Belgi yoʻlda yoʻnalishli transport vositalari umumiy oqimga qarama-qarshi yoʻnalishda harakatlanadigan alohida boʻlak borligini bildiradi. Boshqa transport vositalarining bu boʻlakka chiqishi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6031,
+      "savol": "Qarama-qarshi yoʻnalishdagi transportlar oqimi ikkita sidirgʻa chiziqlar bilan ajratilgan yoʻl nechta harakatlanish boʻlagiga ega?",
+      "rasm": "questions/b014_s03_0_asl.jpeg",
+      "togri_javob": "Toʻrtta va undan koʻp boʻlakka.",
+      "izoh": "Qarama-qarshi yoʻnalishdagi transport oqimlarini ajratuvchi qoʻsh sidirgʻa chiziq toʻrt va undan koʻp harakatlanish boʻlagi boʻlgan yoʻllarda qoʻllaniladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6032,
+      "savol": "Qaysi transport vositalariga harakatlanish uchun ruxsat beriladi?",
+      "rasm": "questions/b014_s04_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobilga va mototsiklga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining qoʻl holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6033,
+      "savol": "Avtomobillar chorrahadan quyidagi tartibda oʻtadilar:",
+      "rasm": "questions/b014_s05_0_asl.jpeg",
+      "togri_javob": "Yashil keyin esa qizil va koʻk bir vaqtda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6034,
+      "savol": "Sirpanchiq yoʻlda orqa yetakchi avtomobil uchun tormozlanishning qaysi usuli xavfsiz toʻxtashni taʼminlaydi?",
+      "rasm": "questions/b014_s06_0_asl.jpeg",
+      "togri_javob": "Ulagichni uzmasdan tormoz tepkisini koʻp marta uzuq-uzuq bosish va qoʻyib yuborish.",
+      "izoh": "Sirpanchiq yoʻlda tormoz tepkisini uzuq-uzuq bosib qoʻyib yuborish gʻildiraklarning toʻxtab qolishi (blokirovka) va sirpanib ketishining oldini oladi. Ulagich uzilmagani uchun dvigatel ham tormozlashga yordam beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

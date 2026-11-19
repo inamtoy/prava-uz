@@ -1,0 +1,156 @@
+{
+  "bilet": "12-bilet",
+  "slug": "bilet-12",
+  "savollar": [
+    {
+      "question_id": 6065,
+      "savol": "Chorraha qismida kesib oʻtilayotganda nisbatan asosiy boʻlgan yoʻlda transport vositalarini quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat beriladi.",
+      "izoh": "Chorrahada quvib oʻtish tartibga solinmaydigan chorrahada ikkinchi darajali yoʻlda harakatlanganda taqiqlanadi. Asosiy yoʻlda harakatlanganda chorrahada quvib oʻtishga ruxsat beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6066,
+      "savol": "Qaysi javobda shatakka olingan transport vositasidagi yoritish asboblarini yoqish holati toʻgʻri koʻrsatilgan?",
+      "rasm": "",
+      "togri_javob": "Falokat yorugʻlik ishoralari, u buzuq boʻlganda yoki boʻlmagan hollarda uning orqa tomoniga falokat sababli toʻxtash belgisi oʻrnatilishi kerak.",
+      "izoh": "Shatakka olingan transport vositasida falokat yorugʻlik ishorasi yoqiladi. U ishlamasa yoki boʻlmasa, shatakka olingan transport vositasining orqasiga falokat sababli toʻxtash belgisi mahkamlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6067,
+      "savol": "Quyidagi 3.27 “Toʻxtash taʼqiqlangan” belgisining amal qilish chegarasi qayerda tugaydi?",
+      "rasm": "questions/b017_s09_0_asl.jpeg",
+      "togri_javob": "Yoʻlning yotiq sariq chizigʻi oxirida.",
+      "izoh": "«Toʻxtash taqiqlangan» belgisi bilan birga qatnov qismi chetida uzluksiz sariq chiziq chizilgan boʻlsa, taqiq sariq chiziq tugagan joyda tugaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6068,
+      "savol": "Yengil avtomobillarning shinalarida qolgan iz naqshining chuqurligi qanchadan kam boʻlmasligi kerak?",
+      "rasm": "",
+      "togri_javob": "1,6 mm.",
+      "izoh": "Yengil avtomobillar shinalarida protektor naqshining qoldiq chuqurligi kamida 1,6 mm boʻlishi kerak. Undan kam boʻlsa shinaning yoʻl bilan ilashishi, ayniqsa hoʻl yoʻlda, keskin kamayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6069,
+      "savol": "Agar tuproq yoʻlda bevosita chorraha oldida toʻshamali (qoplamali) yoʻl qismi boʻlsa, bu uni ahamiyati jihatidan kesib oʻtilayotgan yoʻl bilan teng qiladimi?",
+      "rasm": "",
+      "togri_javob": "Yoʻq.",
+      "izoh": "Tuproq yoʻlning chorraha oldidagi qoplamali kichik qismi uni qoplamali yoʻl bilan teng ahamiyatli qilmaydi: qoplamali yoʻl tuproq yoʻlga nisbatan asosiy boʻlib qolaveradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6070,
+      "savol": "Taʼqiqlovchi belgi yoʻlning haydovchi toʻxtagan qismiga taʼsir qiladimi?",
+      "rasm": "questions/b018_s02_0_asl.jpeg",
+      "togri_javob": "Taʼsir qiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgilar va toʻxtagan joyning chorrahaga nisbatan holati aniq koʻrinmaydi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6071,
+      "savol": "Aholi yashaydigan joylardan tashqarida qaysi belgilar takrorlanadi?",
+      "rasm": "questions/b018_s03_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "4-belgi ham ogohlantiruvchi belgi, kalit esa faqat 3-belgini koʻrsatadi — takrorlanadigan belgilar roʻyxatini tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6072,
+      "savol": "Yoʻlning oʻrtasida joylashgan bekatda toʻxtagan yoʻnalishli tramvay yonidan oʻtayotganda haydovchi nima qilishi kerak.",
+      "rasm": "",
+      "togri_javob": "Toʻxtab turgan tramvayga ketayotgan yoki undan tushayotgan yoʻlovchilarga yoʻl berishi kerak.",
+      "izoh": "Yoʻl oʻrtasidagi bekatda turgan tramvayga borayotgan yoki undan tushib kelayotgan yoʻlovchilar qatnov qismini kesib oʻtadi, shuning uchun haydovchi ularga yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6073,
+      "savol": "Chorrahadan oxirgi boʻlib oʻtadi:",
+      "rasm": "questions/b018_s05_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6074,
+      "savol": "Kunning qorongʻi vaqtida yoʻlning yoritilgan qismida harakatlanayotgan mexanik transport vositasida qaysi chiroqlar yoqilgan boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "Yaqinni va uzoqni yorituvchi faralar.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "#6064 da xuddi shu savolning kaliti «faqat yaqinni yorituvchi», bu yerda «yaqinni va uzoqni yorituvchi» — kalitlar zid, tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6075,
+      "savol": "Qayrilib olish taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Piyodalar oʻtish joylari, tonnellar, koʻpriklar, osma yoʻllar, estakadalar va ularning osti, temir yoʻl kesishmalarida koʻrinish yoki manyovr uchun joy cheklangan. Shuning uchun sanab oʻtilgan barcha joylarda qayrilib olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6076,
+      "savol": "Yashil avtomobil haydovchisi:",
+      "rasm": "questions/b018_s08_0_asl.jpeg",
+      "togri_javob": "Bir xil yoʻnalishda toʻgʻriga ketayotgan koʻk avtomobilga yoʻl berishi kerak.",
+      "izoh": "Qayta tizilayotgan haydovchi boʻlakni oʻzgartirmasdan bir xil yoʻnalishda harakatlanayotgan transport vositalariga yoʻl berishi shart. Burilish ishorasini yoqish unga ustunlik bermaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6077,
+      "savol": "Qattiq yoki egiluvchan ulagich yordamida shatakka olinganda, yuk avtomobilining yukxonasida odamlarni tashishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat shatakka olgan avtomobil yukxonasida ruxsat beriladi.",
+      "izoh": "Qattiq yoki egiluvchan ulagich bilan shatakka olinganda shatakka olinayotgan yuk avtomobilining kuzovida odam tashish taqiqlanadi. Shatakka oluvchi avtomobil kuzovida esa odam tashish qoidalariga rioya qilgan holda tashish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6078,
+      "savol": "Transport vositalaridan qanday sharoitlarda foydalanishga ruxsat beriladi?",
+      "rasm": "",
+      "togri_javob": "N2; N3 toifadagi transport vositalari shinalari protektori naqshning qoldiq balandligi 1,6 mm ni tashkil etadi.",
+      "izoh": "Kord koʻrinib qolgan shikastli shinalardan va M1 toifali avtomobilning old oʻqida taʼmirlangan shinalardan foydalanish taqiqlanadi. N2 va N3 toifali yuk avtomobillari uchun 1,6 mm qoldiq chuqurlik ruxsat etilgan chegaradan kam emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6079,
+      "savol": "Yoʻl-transport hodisasiga daxldor boʻlgan, haydovchilar birinchi navbatda bajarishlari shart:",
+      "rasm": "",
+      "togri_javob": "Darhol toʻxtash va hodisa sodir boʻlgan joyda qolish, falokat majburiy toʻxtash yoritgichini yoqish va falokat sababli toʻxtash belgisini oʻrnatish.",
+      "izoh": "Yoʻl-transport hodisasiga daxldor haydovchi birinchi navbatda darhol toʻxtashi, hodisa joyida qolishi, falokat yorugʻlik ishorasini yoqishi va falokat sababli toʻxtash belgisini oʻrnatishi shart. Bu boshqa haydovchilarni ogohlantirib, takroriy hodisaning oldini oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

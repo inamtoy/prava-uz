@@ -1,0 +1,156 @@
+{
+  "bilet": "13-bilet",
+  "slug": "bilet-13",
+  "savollar": [
+    {
+      "question_id": 6080,
+      "savol": "Belgi ostidagi qoʻshimcha axborot belgisi nimani, bildiradi?",
+      "rasm": "questions/b019_s02_0_asl.jpeg",
+      "togri_javob": "Yoʻlning xavfli burilishlari boʻlgan qatnov uzunligini.",
+      "izoh": "Ikki uchida strelkasi boʻlgan «100 m» qoʻshimcha axborot belgisi asosiy belgining taʼsir zonasi uzunligini bildiradi: xavfli burilishlar boʻlgan yoʻl qismi 100 metrga choʻziladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6081,
+      "savol": "Qaysi belgi «Toʻsiqni chapdan chetlab oʻtish» deb ataladi?",
+      "rasm": "questions/b019_s03_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (pastga-chapga yoʻnalgan strelka) — «Toʻsiqni chapdan chetlab oʻtish» belgisi. 1-belgi chapga harakatlanishni, 4 va 5-belgilar esa boshqa axborotni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6082,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl, berishi kerak?",
+      "rasm": "questions/b019_s04_0_asl.jpeg",
+      "togri_javob": "Avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Velosiped va avtomobil yoʻnalishlarini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6083,
+      "savol": "Chorrahadan birinchi boʻlib oʻtadi:",
+      "rasm": "questions/b019_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6084,
+      "savol": "Ishchi tormozi toʻsatdan ishlamay qolganda avtomobilni qanday toʻxtatish kerak?",
+      "rasm": "questions/b019_s06_0_asl.jpeg",
+      "togri_javob": "Eng past uzatmaga oʻtish, toʻxtab turish tormozi bilan tormozlash. Zarur boʻlganda biron-bir toʻsiqdan foydalanish.",
+      "izoh": "Ishchi tormoz ishlamay qolganda past uzatmaga oʻtib dvigatel bilan tormozlanadi va toʻxtab turish tormozidan foydalaniladi. Zarur boʻlsa, toʻxtash uchun xavfsiz toʻsiqdan (masalan, yoʻl chetidan) foydalaniladi. Ulagichni ajratish dvigatel bilan tormozlash imkonini yoʻqotadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6085,
+      "savol": "Qayrilish taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Piyodalar oʻtish joylarida.",
+      "izoh": "Piyodalar oʻtish joylarida qayrilib olish taqiqlanadi, chunki bu manyovr piyodalar uchun xavf tugʻdiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6086,
+      "savol": "Shatakka olingan mexanik transport vositasida qaysi tashqi yoritish chiroqlari yoqilgan boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "Falokat yorugʻlik ishoralari.",
+      "izoh": "Shatakka olingan mexanik transport vositasida falokat yorugʻlik ishorasi yoqilgan boʻlishi kerak — u boshqa haydovchilarni bu transport vositasi oʻzi harakatlana olmasligi haqida ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6087,
+      "savol": "Qon oqishini toʻxtatuvchi jgut qoʻl-oyoqlarni qayeridan bogʻlanadi?",
+      "rasm": "",
+      "togri_javob": "Yaradan 10 -15 sm yuqoriga.",
+      "izoh": "Arterial qon yurak tomondan keladi, shuning uchun jgut yaradan yuqoriroqqa (yurakka yaqinroq tomonga) bogʻlanadi. Yaraning oʻziga yoki undan pastga bogʻlangan jgut qon oqishini toʻxtatmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6088,
+      "savol": "Mototsikl shinalari naqshining qoldiq chuqurligi qanchadan kam boʻlmasligi kerak?",
+      "rasm": "",
+      "togri_javob": "0,8 mm.",
+      "izoh": "Mototsikl shinalarida protektor naqshining qoldiq chuqurligi kamida 0,8 mm boʻlishi kerak. Undan kam boʻlsa shinaning yoʻl bilan ilashishi keskin kamayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6089,
+      "savol": "Qaysi transport vositasining haydovchisi birinchi navbatda harakatlanish ustunligiga ega?",
+      "rasm": "questions/b020_s01_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Ustunlik chorrahadagi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6090,
+      "savol": "Bu belgilarning qaysi biri «Bir tomonlama harakatlanish yoʻliga chiqish»ni bildiradi?",
+      "rasm": "questions/b020_s02_0_asl.jpeg",
+      "togri_javob": "Birinchi va beshinchi.",
+      "izoh": "1 va 5-belgilar (toʻgʻri toʻrtburchak ichida bir tomonga yoʻnalgan strelka) — «Bir tomonlama harakatlanish yoʻliga chiqish» belgilari. 2-belgi bir tomonlama harakatlanish yoʻlining boshlanishini, 4-belgi esa oʻngga harakatlanishni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6091,
+      "savol": "Qaysi yoʻnalishlarda harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b020_s03_0_asl.jpeg",
+      "togri_javob": "А, Б va В yoʻnalishlarida.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmda chorrahadagi belgilar va chiziqlar toʻliq koʻrinmaydi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6092,
+      "savol": "Quyidagi hollarning qaysi birida temir yoʻl kesishmasiga kirish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Svetoforning taqiqlovchi ishorasi yonganda shlagbaum ochiq turgan holatda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Izoh yozilmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6093,
+      "savol": "Avtomobillar chorrahadan quyidagi tartibda oʻtadi:",
+      "rasm": "questions/b020_s05_0_asl.jpeg",
+      "togri_javob": "Uchchalasi bir vaqtda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6094,
+      "savol": "Yoʻlovchilarning va mahkamlanmagan yukning shiddat bilan oldinga surilib ketishiga nima sabab boʻlishi mumkin?",
+      "rasm": "questions/b020_s06_0_asl.jpeg",
+      "togri_javob": "Faqat keskin tormozlash.",
+      "izoh": "Keskin tormozlaganda avtomobil sekinlashadi, ichidagi yoʻlovchilar va mahkamlanmagan yuk esa inersiya bilan oldinga harakatini davom ettiradi. Shuning uchun ular shiddat bilan oldinga suriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
