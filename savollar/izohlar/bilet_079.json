@@ -1,0 +1,156 @@
+{
+  "bilet": "79-bilet",
+  "slug": "bilet-79",
+  "savollar": [
+    {
+      "question_id": 7094,
+      "savol": "Tormoz tizimiga ega boʻlmagan tirkama bilan harakatlanayotganda yengil avtomobilni tormoz yoʻli qanday oʻzgaradi?",
+      "rasm": "",
+      "togri_javob": "Tormoz yoʻli uzayadi.",
+      "izoh": "Tormozsiz tirkama inersiya bilan avtomobilni oldinga itaradi, shuning uchun avtomobilning tormoz yoʻli uzayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7095,
+      "savol": "Qattiq yoki egiluvchan ulagichda shatakka olgan yuk avtomobilining kuzovida odam tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi",
+      "izoh": "Qattiq yoki egiluvchan ulagich bilan shatakka olayotgan yuk avtomobilining kuzovida odam tashish qoidalariga rioya qilgan holda odam tashish mumkin. Bu shatakka olinayotgan yuk avtomobilining kuzovida taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7096,
+      "savol": "Chorrahaga kirishda Siz:",
+      "rasm": "questions/b120_s10_0_asl.jpeg",
+      "togri_javob": "Har ikkisiga ham yoʻl berishingiz kerak",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7097,
+      "savol": "90 km/soat tezlikda harakatlanayotgan transport vositasi 1 sekundda qancha masofani bosib oʻtadi?",
+      "rasm": "",
+      "togri_javob": "25 m",
+      "izoh": "90 km/soat = 90 000 metr / 3600 sekund = 25 metr/sekund. Demak, transport vositasi 1 sekundda 25 metr yoʻl bosadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7098,
+      "savol": "Ushbu holatda Sizga temir yoʻl kesishmasiga chiqishga ruxsat etiladimi?",
+      "rasm": "questions/b121_s02_0_asl.jpeg",
+      "togri_javob": "Taqiqlanadi",
+      "izoh": "Kesishmadan keyin tirbandlik boʻlib (yuk avtomobili turibdi), haydovchi kesishmada toʻxtab qolishga majbur boʻlishi mumkin. Bunday holatda temir yoʻl kesishmasiga chiqish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7099,
+      "savol": "Transport vositasi qiyalikda joyidan qoʻzgʻalishda toʻxtab turish tormoz dastagini qay vaqtda tushirishni boshlash kerak?",
+      "rasm": "",
+      "togri_javob": "Harakatni boshlash bilan bir vaqtda",
+      "izoh": "Qiyalikda joyidan qoʻzgʻalishda toʻxtab turish tormozi harakatni boshlash bilan bir vaqtda tushiriladi — shunda avtomobil orqaga sirpanib ketmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7100,
+      "savol": "Avtomobilning ABS tizimi burilishida sirpanish va yonga siljishni oldini oladimi?",
+      "rasm": "",
+      "togri_javob": "Avtomobilni sirpanish va yonga siljish ehtimolining oldini olmaydi",
+      "izoh": "ABS faqat tormozlashda gʻildiraklarning blokirovka boʻlishiga yoʻl qoʻymaydi. U burilishda sirpanish va yonga siljishning oldini olmaydi — buning uchun tezlikni oldindan kamaytirish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7101,
+      "savol": "Koʻrsatilgan qaysi joyda siz avtomobilni qoidaga binoan toʻxtatishingiz mumkin?",
+      "rasm": "questions/b121_s05_0_asl.jpeg",
+      "togri_javob": "Faqat B",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7102,
+      "savol": "Shatakka olingan avtomobilni falokat yorugʻlik ishoralari nosoz boʻlganda transport vositasi qanday belgilanishi kerak?",
+      "rasm": "",
+      "togri_javob": "Shatakka olingan transport vositasi orqa tomoniga falokat sababli toʻxtash belgisini oʻrnatish",
+      "izoh": "Shatakka olinayotgan transport vositasida falokat yorugʻlik ishorasi nosoz boʻlsa, uning orqa tomoniga falokat sababli toʻxtash belgisi oʻrnatiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7103,
+      "savol": "Siz chapga burilmoqchisiz, kimga yoʻl berishingiz kerak?",
+      "rasm": "questions/b121_s07_0_asl.jpeg",
+      "togri_javob": "Har ikki transport vositasiga",
+      "izoh": "Siz «Yoʻl bering» belgisi oldidasiz, avtobus va yuk avtomobili esa asosiy yoʻlda harakatlanmoqda. Shuning uchun chapga burilishda har ikki transport vositasiga yoʻl berishingiz kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7104,
+      "savol": "Chorrahaning koʻrsatilgan joyida Sizga toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b121_s08_0_asl.jpeg",
+      "togri_javob": "Taqiqlanadi",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7105,
+      "savol": "Siz roʻparadan yaqinlashayotgan yuk avtomobiliga yoʻl berishingiz kerakmi?",
+      "rasm": "questions/b121_s09_0_asl.jpeg",
+      "togri_javob": "Yoʻq",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7106,
+      "savol": "Yengil avtomobilning orqa oynasiga parda yoki jalyuzilar oʻrnatish mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi, agarda ikki tomonda orqani koʻrsatuvchi koʻzgusi boʻlsa",
+      "izoh": "Ikki tomonda orqani koʻrsatuvchi tashqi koʻzgular boʻlsa, yengil avtomobilning orqa oynasiga parda yoki jalyuzi oʻrnatish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7107,
+      "savol": "Nosoz transport vositasini shatakka olgan yengil avtomobil salonida odam tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi",
+      "izoh": "Nosoz transport vositasini shatakka olayotgan yengil avtomobil salonida odamlarni tashish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7108,
+      "savol": "Yonlama oraliq masofani tanlashda tezlikning dahli bormi?",
+      "rasm": "",
+      "togri_javob": "Tezlik oshganda yonlama oraliq masofani oshirish kerak",
+      "izoh": "Tezlik oshgan sari yonlama oraliq masofani ham oshirish kerak — yuqori tezlikda rulning kichik xatosi ham katta siljishga olib keladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

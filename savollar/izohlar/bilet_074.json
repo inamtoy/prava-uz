@@ -1,0 +1,156 @@
+{
+  "bilet": "74-bilet",
+  "slug": "bilet-74",
+  "savollar": [
+    {
+      "question_id": 7019,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b113_s02_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7020,
+      "savol": "Toʻxtash va toʻxtab turish taqiqlangan:",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda",
+      "izoh": "Xavfli burilishlarda, koʻrinish 100 metrdan kam boʻlgan qavariq joylarda, shuningdek bir yoʻnalishda uchtadan kam boʻlagi boʻlgan koʻpriklar, estakadalar va osma yoʻllarda toʻxtash va toʻxtab turish taqiqlanadi — sanab oʻtilgan barcha hollarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7021,
+      "savol": "Togʻ yoʻllarining tik qiyaliklaridan tushishda gʻildiratishdan foydalanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taqiqlanadi.",
+      "izoh": "Togʻ yoʻlining tik qiyaligidan uzatma ajratilgan holda (gʻildiratib) tushish taqiqlanadi: dvigatel tormozlashga yordam bermaydi, tormozlar qizib ketishi va ishdan chiqishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7022,
+      "savol": "Belgi ostidagi koʻrsatkich nimani koʻrsatadi?",
+      "rasm": "questions/b113_s05_0_asl.jpeg",
+      "togri_javob": "Belgidan yoʻlning tor qismigacha boʻlgan masofani",
+      "izoh": "Belgi ostidagi «300 m» qoʻshimcha belgisi belgidan yoʻlning cheklangan (tor) qismigacha boʻlgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7023,
+      "savol": "Chorrahani ikkinchi boʻlib kesib oʻtadi:",
+      "rasm": "questions/b113_s06_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7024,
+      "savol": "Qaysi transport vositasining haydovchisi quvib oʻtishni toʻgʻri bajarmoqda?",
+      "rasm": "questions/b113_s07_0_asl.jpeg",
+      "togri_javob": "Yashil(yuk) avtomobil haydovchisi",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7025,
+      "savol": "Qishloq xoʻjalik ishlari olib boriladigan dalada yuk avtomobili va traktorning harakat trayektoriyasi kesishsa. Kim yoʻl berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Oʻng tomonidan transport vositasi yaqinlashayotgan haydovchi",
+      "izoh": "Dalada yoʻl yoʻq, shuning uchun ustunlik belgilar bilan belgilanmagan. Bunday holatda harakat yoʻnalishlari kesishganda oʻng tomondan yaqinlashayotgan transport vositasiga yoʻl beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7026,
+      "savol": "Transport vositalarining harakatlanishni davom ettirishni qoidalar qanday hollarda taqiqlaydi?",
+      "rasm": "",
+      "togri_javob": "Tormoz tizimi, rul boshqaruvi ishlamayotgan, ulagich moslamasi nosoz boʻlsa (avtopoyezd tarkibida).",
+      "izoh": "Tormoz tizimi yoki rul boshqaruvi ishlamasa, avtopoezd tarkibida ulagich moslamasi nosoz boʻlsa, transport vositasini xavfsiz boshqarib boʻlmaydi. Shuning uchun bu hollarda harakatni davom ettirish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7027,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b113_s10_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobil haydovchisi",
+      "izoh": "Traktor tomonida «Roʻparadagi harakatlanishga nisbatan imtiyoz» belgisi oʻrnatilgan, toʻsiq esa yuk avtomobili boʻlagida. Shuning uchun yoʻlning tor qismida yuk avtomobili haydovchisi traktorga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7028,
+      "savol": "Ushbu yoʻl nechta harakatlanish tasmasiga ega?",
+      "rasm": "questions/b114_s01_0_asl.jpeg",
+      "togri_javob": "Ikkita harakatlanish tasmasiga",
+      "izoh": "Uzuq chiziq qatnov qismini ikkita harakatlanish boʻlagiga (tasmasiga) ajratadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7029,
+      "savol": "Siz chorrahada toʻgʻriga oʻtmoqchisiz. Ushbu vaziyatda Sizning harakatingiz?",
+      "rasm": "questions/b114_s02_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil yoʻl berayotganiga ishonch xosil qilib chorrahadan birinchi oʻtish",
+      "izoh": "Teng ahamiyatli yoʻllar chorrahasida chapga burilayotgan haydovchi qarama-qarshi yoʻnalishdan toʻgʻriga harakatlanayotgan transport vositasiga yoʻl berishi kerak. Siz toʻgʻriga harakatlanayotganingiz uchun qizil avtomobil sizga yoʻl berayotganiga ishonch hosil qilib, birinchi oʻtasiz.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7030,
+      "savol": "Ushbu koʻrsatilgan holatda motosikl haydovchisi Sizga yoʻl berishi kerakmi?",
+      "rasm": "questions/b114_s03_0_asl.jpeg",
+      "togri_javob": "Ha",
+      "izoh": "Avtomagistralga chiqayotgan haydovchi magistral boʻylab harakatlanayotgan transport vositalariga yoʻl berishi kerak. Shuning uchun mototsikl haydovchisi sizga yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7031,
+      "savol": "Svetoforning yashil miltillovchi ishorasi nimani bildiradi?",
+      "rasm": "",
+      "togri_javob": "Harakatga ruxsat beradi va tez orada taqiqlovchi ishora yonishi toʻgʻrisida axborot beradi",
+      "izoh": "Yashil miltillovchi ishora harakatga ruxsat beradi va tez orada taqiqlovchi ishora yonishi haqida ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7032,
+      "savol": "Haydovchi ushbu joyda avtomobilni toʻxtab turish uchun qoʻyishiga ruxsat etiladimi?",
+      "rasm": "questions/b114_s05_0_asl.jpeg",
+      "togri_javob": "Yoʻq",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7033,
+      "savol": "Sanab oʻtilgan qaysi hollarda egiluvchan ulagichda shatakka olish taqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Yoʻl yaxmalak, sirpanchiq boʻlgan xollarda",
+      "izoh": "Yaxmalak va sirpanchiq yoʻlda egiluvchan ulagich bilan shatakka olish taqiqlanadi: tormozlanganda shatakka olinayotgan avtomobil sirpanib, oldindagisiga urilishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

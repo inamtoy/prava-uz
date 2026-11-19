@@ -1,0 +1,156 @@
+{
+  "bilet": "80-bilet",
+  "slug": "bilet-80",
+  "savollar": [
+    {
+      "question_id": 7109,
+      "savol": "Piyodalar toʻxtab turgan avtobus va trolleybusning qaysi tomonidan yoʻlni kesib oʻtishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Orqa tomonidan",
+      "izoh": "Piyodalar toʻxtab turgan avtobus yoki trolleybusni orqa tomonidan aylanib oʻtishi kerak — oldidan chiqqan piyodani qoʻshni boʻlakdagi haydovchi koʻrmay qolishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7110,
+      "savol": "Ushbu holatda Siz bajarishingiz lozim:",
+      "rasm": "questions/b122_s04_0_asl.jpeg",
+      "togri_javob": "Toʻxtash chizigʻi oldida toʻxtash",
+      "izoh": "«Toʻxtamasdan harakatlanish taqiqlanadi» belgisi va toʻxtash chizigʻi boʻlsa, haydovchi toʻxtash chizigʻi oldida toʻxtashi kerak — boshqa transport boʻlmasa ham.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7111,
+      "savol": "Koʻrsatilgan joyda yengil avtomobilda Sizga toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b122_s05_0_asl.jpeg",
+      "togri_javob": "Yoʻq",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7112,
+      "savol": "Yoʻlning qanday qismida harakatlanganda kuchli yonlama shamol xavfi ortadi?",
+      "rasm": "",
+      "togri_javob": "Yoʻlning yopiq qismidan ochik qismiga chiqishda",
+      "izoh": "Yoʻlning yopiq qismidan (oʻrmon, binolar orasidan) ochiq qismiga chiqishda kuchli yonlama shamol toʻsatdan taʼsir qiladi va avtomobilni yon tomonga surib yuborishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7113,
+      "savol": "Uzoq davom etadigan keng ravon yoʻlda avtomobilni yuqori tezlikda boshqarganda haydovchiga tezlik qanday qabul qilinadi?",
+      "rasm": "",
+      "togri_javob": "Aslidagidan sekin harakatlanayotganga uxshaydi",
+      "izoh": "Uzoq davom etadigan keng ravon yoʻlda haydovchi tezlikka koʻnikib qoladi va u aslidagidan sekinroq tuyuladi. Shuning uchun spidometrni tez-tez tekshirish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7114,
+      "savol": "Cheklangan koʻrinish sharoitida orqaga harakatlanishda harakat xavfsizligini taʼminlash uchun:",
+      "rasm": "",
+      "togri_javob": "Boshqa shaxslar yordamidan foydalanish",
+      "izoh": "Cheklangan koʻrinish sharoitida orqaga harakatlanishda boshqa shaxslar yordamidan foydalanish kerak — ular haydovchiga orqadagi vaziyatni koʻrsatib turadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7115,
+      "savol": "Kunning yorugʻ vaqtida aholi punktlaridan tashqarida Siz quvib oʻtayotgan transport vositasi haydovchisining eʼtiborini qanday jalb qilasiz?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha usul bilan va ularni birgalikda qoʻllash bilan",
+      "izoh": "Kunduzi aholi punktidan tashqarida quvib oʻtilayotgan haydovchining eʼtiborini tovush ishorasi bilan ham, faralarni qisqa yoqib-oʻchirish bilan ham, ularni birga qoʻllab ham jalb qilish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7116,
+      "savol": "Ushbu vaziyatda quvib oʻtishdan soʻng Siz oʻrta boʻlakda qolishingiz mumkinmi?",
+      "rasm": "questions/b122_s10_0_asl.jpeg",
+      "togri_javob": "Yoʻq",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7117,
+      "savol": "Yoqilgʻi bilan taʼminlash tepkisini keskin tezlikni oshirish uchun bosayotganda, avtomobil sirpanishni boshlasa haydovchi qanday harakat qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Tepkiga taʼsir etuvchi kuchni kamaytirish",
+      "izoh": "Keskin tezlanishda avtomobil sirpana boshlasa, yetakchi gʻildiraklar shataksirab aylanmoqda. Yoqilgʻi tepkisiga bosimni kamaytirish kerak — shunda gʻildiraklar yoʻl bilan ilashuvni tiklaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7118,
+      "savol": "Toʻxtab turish qoidasini kim buzdi?",
+      "rasm": "questions/b123_s02_0_asl.jpeg",
+      "togri_javob": "Faqat B",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7119,
+      "savol": "Quruq ob-havo sharoitida asfalt –beton qoplamali yoʻlda harakatlanayotgan haydovchi yomgʻir tomchilab qolganda nima qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Tezlikni kamaytirish va ehtiyot boʻlishi kerak",
+      "izoh": "Yomgʻir tomchilay boshlaganda asfalt yuzasidagi chang va moy suv bilan aralashib, yoʻl ayniqsa sirpanchiq boʻladi. Shuning uchun tezlikni kamaytirib, ehtiyot boʻlish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7120,
+      "savol": "Burilish koʻrsatkichi bilan berilayotgan ogohlantiruvchi ishora qachon toʻxtatilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Manevr bajargandan soʻng darhol",
+      "izoh": "Burilish koʻrsatkichi bilan berilayotgan ishora manyovr tugagandan keyin darhol toʻxtatilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7121,
+      "savol": "Qaysi yoʻl belgilari qayrilib olishga ruxsat beradi?",
+      "rasm": "questions/b123_s05_0_asl.jpeg",
+      "togri_javob": "Barchasi",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7122,
+      "savol": "Yoʻnalishli transport vositasi bekatidan tashqarida yoʻl chetidan qoʻzgʻalayotgan yoʻnalishli transport vositasiga yoʻl berishingiz kerakmi?",
+      "rasm": "questions/b123_s06_0_asl.jpeg",
+      "togri_javob": "Yoʻq",
+      "izoh": "Boshqa haydovchilar yoʻnalishli transport vositasiga faqat aholi punktida u belgilangan bekatdan harakatni boshlayotganda yoʻl berishi shart. Bekatdan tashqarida bu talab amal qilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7123,
+      "savol": "Tormoz tizimi ishlamaydigan avtomobilni vazni sizning avtomobilingiz vaznini yarmidan ortiq boʻlsa, uni shatakka olishingizga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taqiqlanadi",
+      "izoh": "Tormoz tizimi ishlamaydigan avtomobilni shatakka olish uchun shatakka oluvchining haqiqiy vazni shatakka olinayotganning vaznidan kamida ikki barobar koʻp boʻlishi kerak. Shatakka olinayotgan avtomobil sizning avtomobilingiz vaznining yarmidan ogʻir boʻlsa, bu taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

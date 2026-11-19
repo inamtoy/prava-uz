@@ -1,0 +1,156 @@
+{
+  "bilet": "75-bilet",
+  "slug": "bilet-75",
+  "savollar": [
+    {
+      "question_id": 7034,
+      "savol": "Qaysi hollarda yoʻlning harakatlanish boʻlagini ajratuvchi uzuq-uzuq chiziqni bosib oʻtishingiz mumkin?",
+      "rasm": "",
+      "togri_javob": "Faqat qayta tizilishda",
+      "izoh": "Boʻlaklarni ajratuvchi uzuq-uzuq chiziqni faqat qayta tizilishda kesib oʻtish mumkin — chiziqlar bilan ajratilgan yoʻlda transport vositalari qatʼiy boʻlaklar boʻyicha harakatlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7035,
+      "savol": "Yoʻlda “TOʻXTASH”, yozuvi koʻrinishdagi yoʻl chizigʻi nimani bildiradi?",
+      "rasm": "",
+      "togri_javob": "Toʻxtash chizigʻi va “Toʻxtamasdan harakatlanish taqiqlanadi” yoʻl belgisi oʻrnatilgan chorrahaga yaqinlashayotganligini bildiradi",
+      "izoh": "Qatnov qismidagi «TOʻXTASH» yozuvi oldinda toʻxtash chizigʻi va «Toʻxtamasdan harakatlanish taqiqlanadi» belgisi oʻrnatilgan chorraha borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7036,
+      "savol": "Ushbu belgilardan qaysi biri bir tomonlama harakat tashkil qilingan yoʻlning boshida oʻrnatiladi?",
+      "rasm": "questions/b114_s09_0_asl.jpeg",
+      "togri_javob": "Faqat b",
+      "izoh": "b-belgi (koʻk toʻrtburchakdagi katta yuqoriga strelka) — «Bir tomonlama harakatlanish yoʻli»: u bir tomonlama harakat tashkil qilingan yoʻlning boshida oʻrnatiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7037,
+      "savol": "Siz chorrahada chapga burilmoqchisiz. Ushbu vaziyatda Siz kimga yoʻl berasiz?",
+      "rasm": "questions/b114_s10_0_asl.jpeg",
+      "togri_javob": "Hech biriga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7038,
+      "savol": "Qaysi haydovchi toʻxtab turish qoidalarini buzdi?",
+      "rasm": "questions/b115_s01_0_asl.jpeg",
+      "togri_javob": "Trotuarda toʻxtab turgan avtomobil haydovchisi",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7039,
+      "savol": "Sanab oʻtilgan qaysi holatda transport vositasidan foydalanishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Old qismida — oq yoki sariq rangli tumanga qarshi faralar oʻrnatilgan boʻlsa",
+      "izoh": "Transport vositasining old qismiga oq yoki sariq rangli tumanga qarshi faralar oʻrnatish ruxsat etiladi. Ifloslangan yoritgichlar va nur yoʻnalishi buzilgan faralar bilan esa foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7040,
+      "savol": "Yuk avtomobili haydovchisi toʻxtab turish qoidasini buzdimi?",
+      "rasm": "questions/b115_s03_0_asl.jpeg",
+      "togri_javob": "Buzdi",
+      "izoh": "Toʻxtab turish joyi belgisi ostidagi qoʻshimcha belgi yengil avtomobillarni trotuarga qisman chiqarib qoʻyish usulini koʻrsatadi. Bunday toʻxtab turish faqat yengil avtomobillar va mototsikllarga ruxsat etiladi, shuning uchun yuk avtomobili haydovchisi qoidani buzgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7041,
+      "savol": "Transport vositalari qattiq ulagichda shatakka olinganda shatakka olgan va shatakka olingan transport vositalari orasidagi masofa qancha boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "4 metrdan oshmasligi",
+      "izoh": "Qattiq ulagich bilan shatakka olinganda transport vositalari orasidagi masofa 4 metrdan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7042,
+      "savol": "Yoʻlning sirpanchiq qismida rul chambaragini keskin burganda hosil boʻladigan sirpanishning oldini olish uchun haydovchi qanday ehtiyot choralarini koʻrishi kerak?",
+      "rasm": "",
+      "togri_javob": "Rul chambaragini zudlik bilan sirpanayotgan tomonga burish va tezda avtomobilni harakat yoʻnalishini toʻgʻirlab olish",
+      "izoh": "Avtomobil sirpana boshlaganda rulni zudlik bilan sirpanish tomoniga burib, harakat yoʻnalishini toʻgʻrilash kerak. Tormozlash yoki ilashmani uzish sirpanishni kuchaytirishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7043,
+      "savol": "Koʻrsatilgan qaysi belgilar Sizga yashash manzilingizga avtomobilda oʻtishga ruxsat beradi?",
+      "rasm": "questions/b115_s06_0_asl.jpeg",
+      "togri_javob": "Faqat a va c",
+      "izoh": "«Harakatlanish taqiqlanadi» (a) va «Mexanik transport vositalarining harakatlanishi taqiqlanadi» (c) belgilari belgilangan hududda yashovchi yoki ishlovchi fuqarolarga tegishli transport vositalariga tatbiq etilmaydi. «Kirish taqiqlanadi» (b) belgisi esa kirishni barcha uchun taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7044,
+      "savol": "Qanday hollarda aholi punktlarida tovush moslamalaridan foydalanishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Yoʻl-transport hodisasining oldini olish uchun",
+      "izoh": "Aholi punktlarida tovush ishorasidan faqat yoʻl-transport hodisasining oldini olish uchun foydalanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7045,
+      "savol": "Turar joy dahalarida qanday harakatlar taqiqlangan?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda",
+      "izoh": "Turar joy dahalarida dvigatel ishlab turgan holda toʻxtab turish va oʻquv mashgʻulotlari oʻtkazish taqiqlanadi — sanab oʻtilgan barcha hollarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7046,
+      "savol": "Chorrahaga kirganingizda tartibga soluvchi qoʻlini yuqoriga koʻtardi, Sizga harakatlanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi",
+      "izoh": "Tartibga soluvchi qoʻlini yuqoriga koʻtargan paytda chorrahaga kirib boʻlgan haydovchi harakatni davom ettirishi va chorrahadan chiqib ketishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7047,
+      "savol": "Koʻrsatilgan yoʻl belgilaridan qaysi biri faqat yoʻl qoplamasi nam boʻlganda taʼsir etadi?",
+      "rasm": "questions/b115_s10_0_asl.jpeg",
+      "togri_javob": "Faqat a",
+      "izoh": "50 km/soat cheklovi belgisi ostidagi yomgʻir tasvirli qoʻshimcha belgi bu cheklov faqat yoʻl qoplamasi nam boʻlganda amal qilishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7048,
+      "savol": "Tumanga qarshi chiroqlar va orqa tumanga qarshi chiroqlar birga yoqilishi mumkin:",
+      "rasm": "",
+      "togri_javob": "Yetarlicha koʻrinmaslik sharoitida",
+      "izoh": "Old va orqa tumanga qarshi chiroqlar yetarlicha koʻrinmaydigan sharoitda (tuman, qor, kuchli yomgʻir) birga yoqilishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

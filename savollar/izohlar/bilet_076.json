@@ -1,0 +1,156 @@
+{
+  "bilet": "76-bilet",
+  "slug": "bilet-76",
+  "savollar": [
+    {
+      "question_id": 7049,
+      "savol": "Haydovchi chapga burilishda qaysi yoʻnalish boʻyicha qoidani buzmoqda?",
+      "rasm": "questions/b116_s02_0_asl.jpeg",
+      "togri_javob": "Koʻrsatilgan barcha yoʻnalish boʻyicha",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7050,
+      "savol": "Koʻrsatilgan belgilardan qaysi biri yoʻlning koʻrinish masofasi cheklangan joylarida majburan toʻxtagan transport vositalarini belgilash uchun qoʻllaniladi?",
+      "rasm": "questions/b116_s03_0_asl.jpeg",
+      "togri_javob": "a",
+      "izoh": "a-belgi (qizil hoshiyali boʻsh uchburchak) — falokat sababli toʻxtash belgisi. U majburan toʻxtagan transport vositasini, ayniqsa koʻrinish cheklangan joylarda, boshqa haydovchilarga bildirish uchun qoʻyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7051,
+      "savol": "Haydovchiga transport vositasini boshqarish vaqtida telefondan foydalanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Qoʻlni ishlatmasdan texnik vositalardan foydalanib gaplashishga ruxsat etiladi",
+      "izoh": "Transport vositasini boshqarish vaqtida telefondan faqat qoʻlni ishlatmasdan, texnik vositalar (garnitura, karnay) orqali gaplashish uchun foydalanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7052,
+      "savol": "Yoʻl harakati qoidalari boʻyicha “yonlama oraliq masofa” ni koʻrsating:",
+      "rasm": "questions/b116_s05_0_asl.jpeg",
+      "togri_javob": "A va C",
+      "izoh": "Yonlama oraliq masofa — yon tomondagi transport vositasigacha boʻlgan masofa (A va C). Oldindagi transport vositasigacha boʻlgan masofa (B) esa oraliq masofa deyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7053,
+      "savol": "Koʻrsatilgan qaysi belgi reversiv harakat boshlanishi haqida axborot beradi?",
+      "rasm": "questions/b116_s06_0_asl.jpeg",
+      "togri_javob": "c",
+      "izoh": "c-belgi (yuqoriga va pastga yoʻnalgan strelka) — «Reversiv harakatlanish»: u reversiv harakat boshlanishi haqida axborot beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7054,
+      "savol": "Ushbu yoʻl belgisi chorrahaga yaqinlashayotganlik toʻgʻrisida ogohlantiradi, bunda Siz:",
+      "rasm": "questions/b116_s07_0_asl.jpeg",
+      "togri_javob": "Faqatgina oʻng tomondan yaqinlashib kelayotgan transport vositalariga yoʻl berishingiz kerak",
+      "izoh": "Belgi teng ahamiyatli yoʻllar chorrahasiga yaqinlashilayotganini bildiradi. Bunday chorrahada faqat oʻng tomondan yaqinlashayotgan transport vositalariga yoʻl berish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7055,
+      "savol": "Agar avtomobil antiblokirovkali (ABS) tormoz tizimi bilan jihozlangan boʻlsa keskin tormoz berishni qanday amalga oshirishi kerak?",
+      "rasm": "",
+      "togri_javob": "Tormoz tepkisini oxirigacha bosish va avtomobilni toʻliq toʻxtaguncha tepkini qoʻyib yubormaslik.",
+      "izoh": "ABS bilan jihozlangan avtomobilda keskin tormozlashda tormoz tepkisini oxirigacha bosib, avtomobil toʻliq toʻxtaguncha qoʻyib yubormaslik kerak — gʻildiraklarning blokirovka boʻlishiga tizimning oʻzi yoʻl qoʻymaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7056,
+      "savol": "Shatakka olib harakatlanishingiz mumkin:",
+      "rasm": "questions/b116_s09_0_asl.jpeg",
+      "togri_javob": "Faqat A yoʻnalishda",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7057,
+      "savol": "Ushbu koʻrsatilgan vaziyatda Sizga hovliga orqa bilan kirib qayrilib olishga ruxsat beriladimi?",
+      "rasm": "questions/b116_s10_0_asl.jpeg",
+      "togri_javob": "Ruxsat beriladi agarda bunda harakatning boshqa ishtirokchilariga halaqit berilmasa.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7058,
+      "savol": "Kunning yorugʻ vaqtida aholi punktlarida quvib oʻtilayotgan transport vositasi haydovchisining eʼtiborini jalb qilish uchun mumkin:",
+      "rasm": "",
+      "togri_javob": "Faqat yaqinni yorituvchi chiroqni uzoqni yorituvchi chiroqqa qisqa muddat orasida oʻtkazish bilan ishora berish",
+      "izoh": "Kunduzi aholi punktlarida quvib oʻtilayotgan haydovchining eʼtiborini jalb qilish uchun faqat yaqinni yorituvchi chiroqni qisqa muddatga uzoqni yorituvchiga oʻtkazish mumkin — aholi punktida tovush ishorasi faqat hodisaning oldini olish uchun beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7059,
+      "savol": "Sizga ruxsat etilgan toʻla vazni 3,5 tonnadan ortiq yuk avtomobilida harakatlanish:",
+      "rasm": "questions/b117_s02_0_asl.jpeg",
+      "togri_javob": "Faqat toʻgʻriga",
+      "izoh": "«Toʻgʻriga harakatlanish» belgisi ostidagi yuk avtomobili tasvirli qoʻshimcha belgi bu talab yuk avtomobillariga tatbiq etilishini bildiradi. Shuning uchun toʻla vazni 3,5 tonnadan ortiq yuk avtomobili faqat toʻgʻriga harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7060,
+      "savol": "108 km/s tezlikda harakatlanayotgan transport vositasi 1 sekundda qancha masofani bosib oʻtadi?",
+      "rasm": "",
+      "togri_javob": "30 m",
+      "izoh": "108 km/soat = 108 000 metr / 3600 sekund = 30 metr/sekund. Demak, transport vositasi 1 sekundda 30 metr yoʻl bosadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7061,
+      "savol": "Qaysi hollarda transport vositasidan foydalanish taqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Tovush signallari ishlamaydi",
+      "izoh": "Tovush signali ishlamasa, haydovchi xavf tugʻilganda boshqalarni ogohlantira olmaydi. Shuning uchun bunday transport vositasidan foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7062,
+      "savol": "Ushbu belgi axborot beradi:",
+      "rasm": "questions/b117_s05_0_asl.jpeg",
+      "togri_javob": "Reversiv harakatlanish yoʻliga chiqish haqida",
+      "izoh": "Gorizontal ikki tomonga yoʻnalgan strelkali koʻk belgi reversiv harakatlanish yoʻliga chiqishni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7063,
+      "savol": "Ushbu yoʻl chizigʻi Sizga qanday manevr bajarishni taqiqlamaydi?",
+      "rasm": "questions/b117_s06_0_asl.jpeg",
+      "togri_javob": "Barcha manevrlarni",
+      "izoh": "Uzuq-uzuq chiziqni har ikki tomondan kesib oʻtish mumkin, shuning uchun u quvib oʻtish, aylanib oʻtish va qayrilib olishni taqiqlamaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

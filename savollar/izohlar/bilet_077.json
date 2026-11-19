@@ -1,0 +1,156 @@
+{
+  "bilet": "77-bilet",
+  "slug": "bilet-77",
+  "savollar": [
+    {
+      "question_id": 7064,
+      "savol": "72 km/soat tezlikda harakatlanayotgan transport vositasi 1 sekundda qancha masofani bosib oʻtadi?",
+      "rasm": "",
+      "togri_javob": "20 m",
+      "izoh": "72 km/soat = 72 000 metr / 3600 sekund = 20 metr/sekund. Demak, transport vositasi 1 sekundda 20 metr yoʻl bosadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7065,
+      "savol": "Svetofor (ishoralari) qaysi guruh yoʻl belgilarini bekor qiladi (miltilovchi sariq ishoradan tashqari)?",
+      "rasm": "",
+      "togri_javob": "Imtiyoz belgilari",
+      "izoh": "Svetofor ishlab turganda (sariq miltillovchi ishoradan tashqari) chorrahadagi imtiyoz belgilari amal qilmaydi — ustunlikni svetofor ishoralari belgilaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7066,
+      "savol": "Qaysi yoʻnalishda harakatlanishni davom ettirishingiz mumkin?",
+      "rasm": "questions/b117_s09_0_asl.jpeg",
+      "togri_javob": "Oʻngga, chapga va orqaga qayrilib olishga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7067,
+      "savol": "Piyodalar turar joy dahasida qayerda harakatlanishlari mumkin?",
+      "rasm": "",
+      "togri_javob": "Trotuarda, hamda qatnov qismida",
+      "izoh": "Turar joy dahasida piyodalar trotuarda ham, qatnov qismida ham harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7068,
+      "savol": "Kunning yorugʻ vaqtida quyidagi hollarda yaqinni yorituvchi chiroqlar yoqilishi kerak:",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda",
+      "izoh": "Kunduzi yoʻlovchi tashiyotgan avtobus va yoʻnalishli transport vositalarida, xavfli, katta oʻlchamli va ogʻir vaznli yuk tashishda, shuningdek mototsikl va mopedlarda yaqinni yorituvchi chiroqlar yoqilishi kerak — ular boshqalarga yaxshiroq koʻrinadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7069,
+      "savol": "Yoʻl transport hodisasiga daxldor haydovchilar birinchi navbatda nima qilishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Transport vositasini darhol toʻxtatishi, avariya ishoralarini yoqishi va avariya sababli toʻxtash belgisini oʻrnatishi",
+      "izoh": "Yoʻl-transport hodisasiga daxldor haydovchi birinchi navbatda transport vositasini darhol toʻxtatishi, falokat yorugʻlik ishorasini yoqishi va falokat sababli toʻxtash belgisini oʻrnatishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7070,
+      "savol": "Siz yengil avtomobildan qaysi jihozlar mavjud boʻlmaganda foydalanishingiz mumkin?",
+      "rasm": "",
+      "togri_javob": "Gʻildirab ketishga qarshi moslama",
+      "izoh": "Yengil avtomobilda oʻt oʻchirgich, falokat sababli toʻxtash belgisi va tibbiy quticha boʻlishi shart. Gʻildirab ketishga qarshi moslama (tirgak) esa yengil avtomobil uchun majburiy emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7071,
+      "savol": "Qanday alomatlar charchash belgilari hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "Uyquchanlik, boʻshashish, diqqatning susayishi",
+      "izoh": "Charchoq belgilari — uyquchanlik, boʻshashish va diqqatning susayishi. Bunday holatda haydovchi toʻxtab dam olishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7072,
+      "savol": "Chorrahadagi uzuq –uzuq chiziqlar nimani bildiradi?",
+      "rasm": "questions/b118_s06_0_asl.jpeg",
+      "togri_javob": "Chorrahada harakatlanish boʻlagini chegarasini",
+      "izoh": "Chorrahadagi uzuq-uzuq chiziqlar chorrahada harakatlanish boʻlaklarining chegarasini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7073,
+      "savol": "Ushbu yoʻlda Sizga yoʻl belgisidan keyin qaysi boʻlaklarda harakatlanishga ruxsat beriladi?",
+      "rasm": "questions/b118_s07_0_asl.jpeg",
+      "togri_javob": "Oʻng boʻlakdan",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7074,
+      "savol": "Qaysi yoʻl belgilari chapga burilishni taqiqlaydi?",
+      "rasm": "questions/b118_s08_0_asl.jpeg",
+      "togri_javob": "Faqat a va d",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7075,
+      "savol": "Qaysi transport vositasining haydovchisi qoidani buzib burilmoqda?",
+      "rasm": "questions/b118_s09_0_asl.jpeg",
+      "togri_javob": "Ikkisi ham buzmoqda",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7076,
+      "savol": "Quvib oʻtishni bajarayotganda chapga burilishni koʻrsatuvchi chiroqni qachon oʻchirishingiz kerak?",
+      "rasm": "",
+      "togri_javob": "Manyovrni tugallagach, darhol",
+      "izoh": "Burilish koʻrsatkichi manyovr tugallangach darhol oʻchirilishi kerak — aks holda u boshqa haydovchilarni chalgʻitadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7077,
+      "savol": "Koʻrsatilgan yoʻl belgilaridan qaysilari Siz yoʻlning tor qismida yoʻl berishingizni talab qiladi?",
+      "rasm": "questions/b119_s01_0_asl.jpeg",
+      "togri_javob": "a va c",
+      "izoh": "a-belgi (tik nishablik) bilan belgilangan joyda pastga tushayotgan haydovchi koʻtarilayotganga yoʻl beradi. c-belgi («Roʻparada harakatlanishning ustunligi») esa yoʻlning tor qismida roʻparadan kelayotganga yoʻl berishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7078,
+      "savol": "Qaysi qoʻshimcha axborot belgilari birga qoʻllanilganda belgilarning taʼsir oraligʻini koʻrsatadi?",
+      "rasm": "questions/b119_s02_0_asl.jpeg",
+      "togri_javob": "b va c",
+      "izoh": "Ikki strelkali «100 m» (b) va yuqoriga strelkali «10 m» (c) qoʻshimcha belgilari belgilarning taʼsir oraligʻini koʻrsatadi. «300 m» (a) esa belgigacha boʻlgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
