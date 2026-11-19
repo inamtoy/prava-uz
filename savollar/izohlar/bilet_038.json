@@ -1,0 +1,156 @@
+{
+  "bilet": "38-bilet",
+  "slug": "bilet-38",
+  "savollar": [
+    {
+      "question_id": 6455,
+      "savol": "Bu joyda toʻxtashga ruxsat etilganmi?",
+      "rasm": "questions/b056_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "Avtomobil qatnov qismi chetidagi uzluksiz sariq chiziq boʻylab turibdi. Bu chiziq toʻxtash taqiqlangan joyni bildiradi, shuning uchun bu yerda toʻxtash mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6456,
+      "savol": "Aholi punktidan tashqarida transport vositalarining uzoq toʻxtab turishi (dam olish, tunash va hokazo)ga qayerda ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Toʻxtab turish maydonchalarida yoki yoʻldan tashqarida.",
+      "izoh": "Aholi punktidan tashqarida dam olish, tunash va shunga oʻxshash uzoq toʻxtab turish uchun maxsus toʻxtab turish maydonchalaridan yoki yoʻldan tashqaridagi joydan foydalanish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6457,
+      "savol": "Shatakka olish qanday hollarda taʼqiqlangan?",
+      "rasm": "",
+      "togri_javob": "Sirpanchiqda egiluvchan ulagichda.",
+      "izoh": "Sirpanchiq (yaxmalak) yoʻlda egiluvchan ulagich bilan shatakka olish taqiqlanadi: tormozlanganda shatakka olinayotgan avtomobil sirpanib, oldindagisiga urilishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6458,
+      "savol": "Ushbu yotiq chiziqlardan qaysi biri belgilangan yoʻnalishdagi transport vositalari uchun toʻxtashga ruxsat beradi?",
+      "rasm": "questions/b056_s10_0_asl.jpeg",
+      "togri_javob": "А, Б, В.",
+      "izoh": "Yoʻnalishli transport vositalari uchun bu chiziqlarning birortasi toʻxtashni taqiqlamaydi: uzuq sariq chiziq faqat toʻxtab turishni taqiqlaydi, zigzag chiziq ularning toʻxtash joyini bildiradi, uzluksiz sariq chiziq bilan belgilangan toʻxtash taqiqi esa ularga tatbiq etilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6459,
+      "savol": "Qaysi yoʻl asosiy yoʻl hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "Tuproqli yoʻlga nisbatan qoplamali yoʻl yoki tegishli belgilar bilan belgilangan yoʻl.",
+      "izoh": "Asosiy yoʻl — tuproqli yoʻlga nisbatan qoplamali yoʻl yoki tegishli belgilar bilan asosiy deb belgilangan yoʻl. Yoʻlning davom etishi yoki boʻlaklar soni uni asosiy qilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6460,
+      "savol": "Qaysi qoʻshimcha axborot belgisi transport vositalarini toʻxtab turish joyiga qoʻyish usulini koʻrsatadi?",
+      "rasm": "questions/b057_s02_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-qoʻshimcha belgi (avtomobil qisman yoʻlka ustida) transport vositasini toʻxtab turish joyiga qoʻyish usulini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6461,
+      "savol": "Yotiq uzluksiz sariq chiziq «Toʻxtash taʼqiqlangan» belgisi bilan birga toʻxtashga ruxsat etadi:",
+      "rasm": "questions/b057_s03_0_asl.jpeg",
+      "togri_javob": "Faqat belgilangan yoʻnalishdagi transport vositalariga.",
+      "izoh": "«Toʻxtash taqiqlangan» belgisi bilan birga qoʻllangan uzluksiz sariq chiziq faqat yoʻnalishli transport vositalariga toʻxtashga ruxsat beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6462,
+      "savol": "Sekin yurar transport vositalarining temir yoʻl kesishmasi orqali harakatlanishiga faqat temir yoʻl distansiyasi boshligʻining ruxsati bilan harakat tezligi quyidagidan kam boʻlganda yoʻl qoʻyiladi:",
+      "rasm": "",
+      "togri_javob": "8 km/s.",
+      "izoh": "Tezligi 8 km/soatdan kam boʻlgan sekin yurar transport vositalari temir yoʻl kesishmasidan faqat temir yoʻl distansiyasi boshligʻining ruxsati bilan oʻtishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6463,
+      "savol": "Qizil avtomobil haydovchisi:",
+      "rasm": "questions/b057_s05_0_asl.jpeg",
+      "togri_javob": "Yoʻl berishi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qizil avtomobilning yoʻnalishi va svetofor ishorasini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6464,
+      "savol": "Bu belgi bilan belgilangan yoʻl qismlarida ajratuvchi boʻlakning uzilish joyida qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b057_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "«Avtomagistral» belgisi bilan belgilangan yoʻlda ajratuvchi boʻlakning uzilish joylarida qayrilib olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6465,
+      "savol": "Transport vositalarining trotuar va piyodalar yoʻlkasi boʻylab harakatlanishiga yoʻl qoʻyiladimi?",
+      "rasm": "",
+      "togri_javob": "Bevosita shu trotuar yoki yoʻlkalarda joylashgan savdo yoki boshqa korxonalarga xizmat koʻrsatishda yoʻl qoʻyiladi.",
+      "izoh": "Transport vositalari trotuar va piyodalar yoʻlkasida faqat bevosita shu yerda joylashgan savdo yoki boshqa korxonalarga xizmat koʻrsatish uchun harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6466,
+      "savol": "Bunday yoʻl belgisi bilan belgilangan yoʻl qismlarida shaharlararo qatnaydigan avtobuslarning qanday eng yuqori tezlikda harakatlanishiga ruxsat etiladi?",
+      "rasm": "questions/b057_s08_0_asl.jpeg",
+      "togri_javob": "90 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Shaharlararo avtobus uchun ruxsat etilgan tezlik (90 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6467,
+      "savol": "Mototsikllarni shatakka olishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Yon kajavali mototsikllarni shatakka olishga ruxsat etiladi.",
+      "izoh": "Faqat yon kajavali mototsikllarni shatakka olish mumkin. Yon kajavasi boʻlmagan mototsikl turgʻun emas, shuning uchun uni shatakka olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6468,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b057_s10_0_asl.jpeg",
+      "togri_javob": "Oxiri berk koʻchaga olib boradigan yoʻlni.",
+      "izoh": "Belgi oxiri berk koʻchaga — tupikka olib boradigan yoʻlni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6469,
+      "savol": "Shatakka olingan yengil avtomobilda yoʻlovchilarni tashish mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Egiluvchi va qattiq ulagichda ruxsat etiladi.",
+      "izoh": "Egiluvchan yoki qattiq ulagich bilan shatakka olinayotgan yengil avtomobilda yoʻlovchilarni tashish mumkin. Bu faqat qisman ortish usulida taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

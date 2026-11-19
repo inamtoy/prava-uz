@@ -1,0 +1,156 @@
+{
+  "bilet": "40-bilet",
+  "slug": "bilet-40",
+  "savollar": [
+    {
+      "question_id": 6485,
+      "savol": "Mexanik transport vositasi shatakka olinganda, egiluvchan ulagich qanday belgilanishi kerak?",
+      "rasm": "",
+      "togri_javob": "Qizil va oq rangli chiziqlar tushirilgan, yorugʻlik qaytaradigan yuzali, bayroqchalar yoki taxtachalar bilan.",
+      "izoh": "Shatakka olishda egiluvchan ulagich boshqalarga koʻrinishi uchun qizil va oq chiziqli, yorugʻlik qaytaradigan bayroqchalar yoki taxtachalar bilan belgilanishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6486,
+      "savol": "Qayerda transport vositalarining toʻxtashi va toʻxtab turishi taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Koʻpriklarda, estakadalarda va osma yoʻllarda, uchtadan kam harakatlanish boʻlagi boʻlganda.",
+      "izoh": "Bir yoʻnalishda uchtadan kam harakatlanish boʻlagi boʻlgan koʻpriklarda, estakadalarda va osma yoʻllarda toʻxtash va toʻxtab turish taqiqlanadi — toʻxtagan transport vositasi harakatni toʻsib qoʻyadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6487,
+      "savol": "Tormoz tizimi ishlamayotgan transport vositasini shatakka olish mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Agar shatakka olgan transport vositasining haqiqiy vazni shatakka olinuvchi transport vaznidan ikki barobar ortiq boʻlsa, qattiq ulagich bilan.",
+      "izoh": "Tormoz tizimi ishlamaydigan transport vositasini qattiq ulagich bilan shatakka olish mumkin, agar shatakka oluvchining haqiqiy vazni shatakka olinayotganning haqiqiy vaznidan kamida ikki barobar koʻp boʻlsa. Shunda shatakka oluvchi ikkalasini ham tormozlay oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6488,
+      "savol": "Mexanik transport vositalaridan foydalanish qanday shartlarda taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Davlat davriy texnik koʻrigidan belgilangan tartibda oʻtmaganda.",
+      "izoh": "Davlat davriy texnik koʻrigidan belgilangan tartibda oʻtmagan mexanik transport vositasidan foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6489,
+      "savol": "Qora avtomobil chorrahani nechinchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b060_s01_0_asl.jpeg",
+      "togri_javob": "Ikkinchi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi maxsus avtomobil, belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6490,
+      "savol": "Harakat qaysi yoʻnalishda ruxsat etilgan?",
+      "rasm": "questions/b060_s02_0_asl.jpeg",
+      "togri_javob": "Toʻgʻriga, oʻngga va chapga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobil ostidagi belgini va qayrilish taqiqi sababini rasmdan aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6491,
+      "savol": "Bu belgida qaysi avtomobilga harakatlanishga ruxsat etilgan?",
+      "rasm": "questions/b060_s03_0_asl.jpeg",
+      "togri_javob": "Haqiqiy vazni 12 t boʻlgan uch oʻqli yuk avtomobiliga.",
+      "izoh": "Belgi oʻqqa tushadigan haqiqiy yuklama 5 tonnadan ortiq boʻlgan transport vositalarining harakatlanishini taqiqlaydi. 12 tonnalik uch oʻqli avtomobilda har bir oʻqqa taxminan 4 tonna tushadi, ikki oʻqlisida esa 6 tonna — shuning uchun faqat uch oʻqli avtomobil harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6492,
+      "savol": "Chorrahani ikkinchi boʻlib kim kesib oʻtadi?",
+      "rasm": "questions/b060_s04_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6493,
+      "savol": "Svetoforning qizil va sariq yoritgichlaridagi yoʻnaltirgichlar izi nima haqda axborot beradi?",
+      "rasm": "questions/b060_s05_0_asl.jpeg",
+      "togri_javob": "Svetoforning yashil yoritgichi yoqilganda harakatlanishning ruxsat etilgan yoʻnalishlari haqida.",
+      "izoh": "Svetoforning qizil va sariq yoritgichlaridagi strelkalar izi yashil yoritgich yonganda qaysi yoʻnalishlarda harakatlanish mumkinligini oldindan bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6494,
+      "savol": "Yuk avtomobili kuzovida yoʻlovchilar tashishda ularning soni qanday belgilanadi?",
+      "rasm": "",
+      "togri_javob": "Jihozlangan oʻrindiqlarning soni bilan.",
+      "izoh": "Yuk avtomobili kuzovida tashiladigan yoʻlovchilar soni jihozlangan oʻrindiqlar sonidan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6495,
+      "savol": "Qaysi avtomobilning haydovchisi toʻxtab turish qoidalarini buzmadi?",
+      "rasm": "questions/b060_s07_0_asl.jpeg",
+      "togri_javob": "Hech kim buzmadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgi va avtomobillarning joylashuvini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6496,
+      "savol": "Avtobuslarda bolalar guruhini tashkiliy ravishda tashishda qanday hollarda kunning yorugʻ vaqtida yaqinni yorituvchi fara chiroqlari yoqib qoʻyilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Tashish amalga oshirilayotganda barcha hollarda.",
+      "izoh": "Avtobusda bolalar guruhini tashkiliy tashishda kunduzi ham barcha hollarda yaqinni yorituvchi faralar yoqiladi — bu avtobusni boshqalarga yaxshiroq koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6497,
+      "savol": "Qishda boldirga qon toʻxtatadigan jgutni qancha muddatga qoʻyish mumkin?",
+      "rasm": "",
+      "togri_javob": "1 soatdan koʻp boʻlmagan.",
+      "izoh": "Qishda sovuq taʼsirida toʻqimalar tezroq zararlanadi, shuning uchun jgut 1 soatdan koʻp qoʻyilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6498,
+      "savol": "М2; М3 toifadagi avtotransport vositalarining shina protektori naqshlarining balandligi quyidagilardan kam boʻlmasligi kerak:",
+      "rasm": "",
+      "togri_javob": "2,0 mm.",
+      "izoh": "M2 va M3 toifali avtotransport vositalari (avtobuslar) shinalarida protektor naqshining qoldiq balandligi kamida 2,0 mm boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6499,
+      "savol": "Yoʻlda harakatlanishni «tartibga solish» uchun vakolatli shaxsda oʻzi bilan boʻlishi kerak:",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan belgilari.",
+      "izoh": "Harakatni tartibga soluvchi vakolatli shaxsda tegishli guvohnoma va taniqlik belgisi (qoʻl bogʻichi), jezl va qizil chiroqli (yorugʻlik qaytargichli) gardish yoki bayroqcha boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

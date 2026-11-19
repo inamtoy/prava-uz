@@ -1,0 +1,156 @@
+{
+  "bilet": "39-bilet",
+  "slug": "bilet-39",
+  "savollar": [
+    {
+      "question_id": 6470,
+      "savol": "Quyidagi belgi ostidagi qoʻshimcha axborot belgisi haydovchiga nima haqida xabar beradi?",
+      "rasm": "questions/b058_s02_0_asl.jpeg",
+      "togri_javob": "Yurgizgichni oʻchirish sharti bilan toʻxtab turish.",
+      "izoh": "«Toʻxtab turish joyi» belgisi ostidagi qoʻshimcha belgi bu joyda faqat dvigatelni oʻchirgan holda toʻxtab turish mumkinligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6471,
+      "savol": "Mazkur yotiq chiziq nimani anglatadi?",
+      "rasm": "questions/b058_s03_0_asl.jpeg",
+      "togri_javob": "Reversiv harakatlanish boʻlagining chegarasini.",
+      "izoh": "Qoʻsh uzuq chiziq reversiv harakatlanish boʻlagining chegarasini bildiradi — bu boʻlakda harakat yoʻnalishi svetofor bilan oʻzgartiriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6472,
+      "savol": "Chorrahani ikkinchi bolib kim kesib oʻtadi?",
+      "rasm": "questions/b058_s04_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil ayni vaqtda koʻk bilan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6473,
+      "savol": "Chorrahani birinchi bolib kesib oʻtadi:",
+      "rasm": "questions/b058_s05_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi svetofor ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6474,
+      "savol": "Temiryoʻl kesishmasidan oʻtishda haydovchi nimaga amal qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan talablarga.",
+      "izoh": "Temir yoʻl kesishmasidan oʻtishda haydovchi shlagbaum holati va svetofor ishorasiga, yoʻl belgilari va chiziqlariga, shuningdek kesishma navbatchisining koʻrsatmalariga amal qilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6475,
+      "savol": "Haydovchi quvib oʻtishni boshlashdan oldin nimaga ishonch hosil qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Shu boʻlak boʻyicha oldinda harakatlanayotgan transport vositasi haydovchisi chapga burilish (qayta tizilish) haqida ishora bermaganiga.",
+      "izoh": "Quvib oʻtishni boshlashdan oldin haydovchi oldindagi transport vositasi haydovchisi chapga burilish yoki qayta tizilish haqida ishora bermaganiga ishonch hosil qilishi kerak — aks holda ular toʻqnashishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6476,
+      "savol": "Uzunasiga ketgan sidirgʻa chizigʻi bilan toʻxtagan transport vositalari oʻrtasidagi masofa quyidagidan kam boʻlgan joylarda transport vositasining toʻxtashi va toʻxtab turishi taʼqiqlanadi.",
+      "rasm": "",
+      "togri_javob": "3,0 m.",
+      "izoh": "Uzunasiga ketgan sidirgʻa chiziq bilan toʻxtagan transport vositasi orasidagi masofa 3 metrdan kam boʻlsa, toʻxtash va toʻxtab turish taqiqlanadi — boshqa transport vositalari chiziqni kesib oʻtmasdan aylanib oʻta olmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6477,
+      "savol": "Benzin bugʻidan zaharlanishning alomatlari qanday?",
+      "rasm": "",
+      "togri_javob": "Mastga oʻxshab harakatlanadi, bosh aylanadi, ogʻriydi, koʻngil ayniydi, qayt qiladi, mushaklari tortishadi.",
+      "izoh": "Benzin bugʻidan zaharlangan odam mastga oʻxshab harakatlanadi, uning boshi aylanadi va ogʻriydi, koʻngli ayniydi, qayt qiladi, mushaklari tortishadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6478,
+      "savol": "Yuk avtomobilining yukxonasida 8 nafardan koʻp odamlarni tashish qaysi haydovchilarga ruxsat beriladi?",
+      "rasm": "",
+      "togri_javob": "«D» va «С» toifadagi transport vositalarini boshqarish huquqiga ega boʻlgan va shu toifadagi transport vositalaridan birini 3 yildan ortiq boshqargan haydovchilarga.",
+      "izoh": "Yuk avtomobilining kuzovida 8 nafardan koʻp odamni «D» va «C» toifadagi transport vositalarini boshqarish huquqiga ega va shu toifadagi transport vositasini 3 yildan ortiq boshqargan haydovchi tashishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6479,
+      "savol": "«Yetarli koʻnnmaslik» deganda nima tushuniladi?",
+      "rasm": "",
+      "togri_javob": "Tuman tushganda. yomgʻir, qor yogʻayotganda va hokazo sharoitlarda, shuningdek, kunning gʻira-shira vaqtida yoʻlning koʻrinishi 300 metrdan kam boʻlishi.",
+      "izoh": "Yetarli koʻrinmaslik — tuman, yomgʻir, qor va shunga oʻxshash sharoitlarda, shuningdek gʻira-shira vaqtda yoʻlning koʻrinishi 300 metrdan kam boʻlishi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6480,
+      "savol": "Yoʻnaltirgichlar bilan belgilangan yoʻnalishlarning qaysi biridan harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b059_s02_0_asl.jpeg",
+      "togri_javob": "A va B.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Yoʻnaltirgichlar va belgining har bir yoʻnalishga taʼsirini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6481,
+      "savol": "Sariq uzuq-uzuq yotiq chiziq qaysi yoʻl belgisi bilan qoʻllanilishi mumkin?",
+      "rasm": "questions/b059_s03_0_asl.jpeg",
+      "togri_javob": "«Toʻxtab turish taʼqiqlangan».",
+      "izoh": "Sariq uzuq-uzuq chiziq «Toʻxtab turish taqiqlanadi» belgisi bilan qoʻllaniladi va toʻxtab turish taqiqlangan joyni bildiradi. Toʻxtash esa bu yerda ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6482,
+      "savol": "Kesishma orqali harakatlanish hollarida haydovchi «Toʻxtash chizigʻi», 2.5 «Toʻxtamasdan harakatlanish taʼqiqlangan» yoʻl belgisi yoki svetofor boʻlmaganda, oʻtib ketayotgan poezdni oʻtkazib yuborishga qoida boʻyicha shlagbaumgacha kamida qancha masofa qolganda toʻxtash kerak?",
+      "rasm": "questions/b059_s04_0_asl.jpeg",
+      "togri_javob": "5 m.",
+      "izoh": "«Toʻxtash» chizigʻi, «Toʻxtamasdan harakatlanish taqiqlanadi» belgisi yoki svetofor boʻlmasa, poyezdni oʻtkazib yuborish uchun haydovchi shlagbaumdan kamida 5 metr masofada toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6483,
+      "savol": "Svetoforning ushbu ishorasida qaysi transport vositalariga harakatlanishga ruxsat etilgan?",
+      "rasm": "",
+      "togri_javob": "Yengil va yuk avtomobillariga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Savolda svetofor rasmi koʻrsatilmagan — rasmsiz izoh yozib boʻlmaydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6484,
+      "savol": "Ogʻir vaznli va katta oʻlchamli yuklarni tashiyotgan transport vositalarining aholi punktlaridan tashqarida qanday tezlik bilan harakatlanishiga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Tashish shartlari bilan kelishilganda Davlat YHX xizmati ruxsat etganidan oshirmasdan.",
+      "izoh": "Ogʻir vaznli va katta oʻlchamli yuk tashiyotgan transport vositalarining tezligi tashish shartlarini kelishishda Davlat YHX xizmati ruxsat etgan tezlikdan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

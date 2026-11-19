@@ -1,0 +1,156 @@
+{
+  "bilet": "37-bilet",
+  "slug": "bilet-37",
+  "savollar": [
+    {
+      "question_id": 6440,
+      "savol": "Qaysi belgi shlagbaumli temir yoʻl kesishmasiga yaqinlashganlik haqida ogohlantiradi?",
+      "rasm": "questions/b055_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi (panjara tasviri) shlagbaumli temir yoʻl kesishmasiga yaqinlashilayotganligi haqida ogohlantiradi. 1-belgi esa shlagbaumsiz temir yoʻl kesishmasini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6441,
+      "savol": "Bu belgida yuk avtomobillaridan qaysi biriga harakatlanishni davom ettirishga ruxsat etiladi?",
+      "rasm": "questions/b055_s03_0_asl.jpeg",
+      "togri_javob": "Yukxonasida odamlar boʻlgan maxsus moslashtirilgan yuk avtomobillarga.",
+      "izoh": "«Yuk avtomobillarining harakatlanishi taqiqlanadi» belgisi odam tashishga maxsus moslashtirilgan yuk avtomobillariga tatbiq etilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6442,
+      "savol": "Zanjirli boʻlgan qishloq xoʻjalik, yoʻl qurilishi va boshqa mexanik transport vositalariga temir yoʻl kesishmasidan oʻtishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Mexanik transport vositalariga yuklab olib oʻtish ruxsat etiladi.",
+      "izoh": "Zanjirli mexanik transport vositalari temir yoʻl kesishmasi qoplamasi va relslarni shikastlashi mumkin. Shuning uchun ular kesishmadan faqat boshqa transport vositasiga yuklab olib oʻtkaziladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6443,
+      "savol": "Harakatlanish qaysi yoʻnalishda ruxsat etilgan?",
+      "rasm": "questions/b055_s05_0_asl.jpeg",
+      "togri_javob": "Oʻngga birinchi yoʻnalishga.",
+      "izoh": "Asosiy svetoforda qizil, qoʻshimcha seksiyada esa oʻngga yashil strelka yonib turibdi. U faqat oʻngga — birinchi yoʻlga burilishga ruxsat beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6444,
+      "savol": "Chorrahani oxiri kesib oʻtadi:",
+      "rasm": "questions/b055_s06_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6445,
+      "savol": "Bu yoʻl belgisi:",
+      "rasm": "questions/b055_s07_0_asl.jpeg",
+      "togri_javob": "Traktorlarva oʻzi yurar mashinalarning harakatlanishi taʼqiqlanadi.",
+      "izoh": "Traktor tasvirli belgi traktorlar va oʻziyurar mashinalarning harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6446,
+      "savol": "Transport vositalari chorrahadan quyidagi tartibda oʻtadilar:",
+      "rasm": "questions/b055_s08_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil, tramvay, qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6447,
+      "savol": "Egiluvchan ulagichda shatakka olganda transport vositalari orasidagi masofa qanday boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "4-6 m.",
+      "izoh": "Egiluvchan ulagich bilan shatakka olganda transport vositalari orasidagi masofa 4–6 metr boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6448,
+      "savol": "Qanday nosozlik boʻlganda, transport vositalarining harakatlanishni davom ettirishi taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Yomgʻir yoki qor yogʻayotgan vaqtda haydovchi tomonidagi oyna tozalagich ishlamaydi.",
+      "izoh": "Yomgʻir yoki qor yogʻayotganda haydovchi tomonidagi oyna tozalagich ishlamasa, haydovchi yoʻlni koʻrmaydi. Shuning uchun bu holda harakatni davom ettirish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6449,
+      "savol": "Yonilgʻi quyish joyidan yoʻlga chiqish chorraha hisoblanadimi?",
+      "rasm": "",
+      "togri_javob": "Hisoblanmaydi.",
+      "izoh": "Yonilgʻi quyish shoxobchasi kabi yondosh hududlardan yoʻlga chiqish joyi chorraha hisoblanmaydi. Bunday joydan chiqayotgan haydovchi yoʻldagi transport vositalari va piyodalarga yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6450,
+      "savol": "Qaysi belgi “Mehmonxona\" ni bildiradi?",
+      "rasm": "questions/b056_s02_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (karavot tasviri) «Mehmonxona» ni bildiradi. 1-belgi tibbiy yordam punktini, 2-belgi ovqatlanish joyini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6451,
+      "savol": "Belgilarning taʼsiri qaysi transport vositalariga tatbiq etiladi?",
+      "rasm": "questions/b056_s03_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobillarga va ruxsat etilgan tola vazni 3,5 tonnadan kam yoki teng boʻlgan yuk avtomobillariga.",
+      "izoh": "Belgi ostidagi yengil avtomobil tasvirli qoʻshimcha belgi asosiy belgi yengil avtomobillarga va ruxsat etilgan toʻla vazni 3,5 tonnadan oshmaydigan yuk avtomobillariga tatbiq etilishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6452,
+      "savol": "Chorrahani oxirgi boʻlib kim kesib oʻtadi?",
+      "rasm": "questions/b056_s04_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6453,
+      "savol": "Qizil avtomobil chorrahani kesib oʻtadi:",
+      "rasm": "questions/b056_s05_0_asl.jpeg",
+      "togri_javob": "Birinchi boʻlib.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi svetofor va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6454,
+      "savol": "Shaharlararo qatnaydigan avtobusning haydovchisiga aholi punktlaridan tashqarida tezlikni 80 km/ soatdan oshirishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Shaharlararo qatnaydigan avtobuslarga aholi punktlaridan tashqarida 80 km/soatdan yuqori tezlikda harakatlanishga ruxsat etiladi — ular uchun belgilangan eng katta tezlik bundan yuqori.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

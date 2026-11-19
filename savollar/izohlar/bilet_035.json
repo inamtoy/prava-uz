@@ -1,0 +1,156 @@
+{
+  "bilet": "35-bilet",
+  "slug": "bilet-35",
+  "savollar": [
+    {
+      "question_id": 6410,
+      "savol": "Belgilardan qaysi biri bevosita yoʻlning xavfli qismi oldiga oʻrnatiladi?",
+      "rasm": "questions/b052_s02_0_asl.jpeg",
+      "togri_javob": "5.",
+      "izoh": "5-belgi («Andreyev xochi») bevosita temir yoʻl kesishmasi oldiga oʻrnatiladi. 1–3-belgilar xavfli joydan oldinroq qoʻyiladi, 4-belgi esa kesishmaga yaqinlashish koʻrsatkichi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6411,
+      "savol": "Bu yoʻl belgisi bilan belgilangan yoʻl qismida Yengil avtomobilni shatakka olishga ruxsat etiladimi?",
+      "rasm": "questions/b052_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Bu belgi oʻrnatilgan yoʻl qismida tirkamali yuk avtomobillarining harakatlanishi va har qanday mexanik transport vositasini, jumladan yengil avtomobilni shatakka olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6412,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadi:",
+      "rasm": "questions/b052_s04_0_asl.jpeg",
+      "togri_javob": "1-tramvay ayni vaqtda yashil avtomobil bilan; qizil avtomobil; 2-tramvay va koʻk avtomobil bir vaqtda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6413,
+      "savol": "Transport vositalariga qaysi yoʻnalish boʻyicha harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b052_s05_0_asl.jpeg",
+      "togri_javob": "Tramvayga chapga, avtomobilga chapga va teskari yoʻnalishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6414,
+      "savol": "Qaysi avtomobil haydovchisiga toʻxtashga ruxsat etilgan?",
+      "rasm": "questions/b052_s06_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobilning haydovchisiga, agar bir yoʻnalishda harakatlanish uchun uchta va undan koʻp boʻlak boʻlsa.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Koʻprik ostida yuk avtomobilining toʻxtashi haqidagi kalitni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6415,
+      "savol": "Qayrilish taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Loaqal bir yoʻnalishda yoʻlning 100 metrdan kamroq qismi koʻringanda.",
+      "izoh": "Loaqal bir yoʻnalishda yoʻlning koʻrinishi 100 metrdan kam boʻlsa, qayrilib olish taqiqlanadi — qarshi kelayotgan transport vositasini oʻz vaqtida koʻrib boʻlmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6416,
+      "savol": "Harakat tezligi 40 km/soatdan oshmaydigan transport vositasiga qatnov qismining chap boʻlagiga chiqishga qachon ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Tezligi 40 km/soatdan oshmaydigan transport vositasi chap boʻlakka quvib oʻtish, oʻzib ketish, aylanib oʻtish, shuningdek burilish yoki qayrilib olish oldidan qayta tizilish uchun chiqishi mumkin — sanab oʻtilgan barcha hollarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6417,
+      "savol": "Kim oʻquv yurtlarida boshqarishni oʻrgatish huquqiga ega?",
+      "rasm": "",
+      "togri_javob": "5 yil haydovchilik ishlagan davriga ega boʻlgan 1-va 2-toifa haydovchilar.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Oʻquv yurtlarida boshqarishni oʻrgatish huquqi haqidagi kalitni (toifa va staj) tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6418,
+      "savol": "Yuk transport vositasining oʻlchamlaridan chiqib tursa, kunning qorongʻi vaqtida va yetarli koʻrinmaydigan sharoitda qanday belgilanadi?",
+      "rasm": "",
+      "togri_javob": "Oldiga oq, orqasiga qizil, yon tomoni zargʻaldoq rang yorugʻlik qaytargich moslamalar yoki fonarlar bilan.",
+      "izoh": "Kunning qorongʻi vaqtida va yetarli koʻrinmaydigan sharoitda transport vositasi oʻlchamidan chiqib turgan yuk oldidan oq, orqasidan qizil, yon tomonidan toʻq sariq rangli yorugʻlik qaytargichlar yoki chiroqlar bilan belgilanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6419,
+      "savol": "\"Ruxsat etilgan toʻla vazn\" nima?",
+      "rasm": "",
+      "togri_javob": "Ishlab chiqaruvchi korxona tomonidan belgilangan, aslahalangan transport vositasining haydovchi, yoʻlovchi, yuk bilan birga ruxsat etilgan eng yuqori vazni (miqdori).",
+      "izoh": "Ruxsat etilgan toʻla vazn — ishlab chiqaruvchi belgilagan, jihozlangan transport vositasining haydovchi, yoʻlovchilar va yuk bilan birga eng yuqori ruxsat etilgan vazni.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6420,
+      "savol": "Bu belgida harakatlanish ruxsat etiladi?",
+      "rasm": "questions/b053_s02_0_asl.jpeg",
+      "togri_javob": "Barcha transport vositalarining haydovchilariga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgini aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6421,
+      "savol": "Avtomagistralda qatnov qismining chetini bildiruvchi sidirgʻa oq chiziqni bosib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b053_s03_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Qatnov qismi chetini bildiruvchi sidirgʻa chiziqni kesib oʻtish mumkin, masalan yoʻl yoqasida toʻxtash uchun. Avtomagistralda ham bu qoida amal qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6422,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar?",
+      "rasm": "questions/b053_s04_0_asl.jpeg",
+      "togri_javob": "1- va 2- tramvaylar ayni vaqtda sariq avtomobil bilan, yashil, koʻk, qizil avtomobillar.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6423,
+      "savol": "Harakatlanishga ruxsat etilgan barcha transport vositalari qaysi javobda koʻrsatilgan?",
+      "rasm": "questions/b053_s05_0_asl.jpeg",
+      "togri_javob": "Barcha transport vositalari.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor seksiyalarining ishoralarini rasmdan aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6424,
+      "savol": "Aholi punktlarida maʼlum harakat tezligiga rioya etayotgan yirik oʻlchamli transport vositasining haydovchisi qanday yoʻl tutishi kerak?",
+      "rasm": "questions/b053_s06_0_asl.jpeg",
+      "togri_javob": "Harakatni davom ettirishi kerak.",
+      "izoh": "Orqada toʻplanib qolgan transport vositalarini oʻtkazib yuborish talabi aholi punktlaridan tashqarida qoʻllaniladi. Aholi punktida belgilangan tezlikka rioya qilayotgan yirik oʻlchamli transport vositasi harakatni davom ettiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

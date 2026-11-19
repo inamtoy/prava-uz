@@ -1,0 +1,156 @@
+{
+  "bilet": "36-bilet",
+  "slug": "bilet-36",
+  "savollar": [
+    {
+      "question_id": 6425,
+      "savol": "Mazkur vaziyatda quvib oʻtishga ruxsat etilganmi?",
+      "rasm": "questions/b053_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "Temir yoʻl kesishmalarida va ularga 100 metrdan yaqinda quvib oʻtish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6426,
+      "savol": "Siz chapga burilishga yoki qayrilishga qaror qildingiz. Orqani koʻrsatadigan koʻzguga qarab bildingizki, ortingizdagi haydovchi Sizni quvib oʻtmoqchi. Sizning bundan keyingi harakatingiz?",
+      "rasm": "",
+      "togri_javob": "Sizning ortingizdan kelayotgan haydovchi Sizni quvib oʻtib ketgandan soʻnggina burilishning chap koʻrsatkichini yoqish.",
+      "izoh": "Orqadagi haydovchi quvib oʻtishni boshlagan boʻlsa, unga toʻsqinlik qilish mumkin emas. Shuning uchun u quvib oʻtib ketgandan keyingina chapga burilish koʻrsatkichini yoqib, manyovrni boshlash kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6427,
+      "savol": "Oʻng va chap gʻildiraklarining shinalari turlicha siyqalangan avtomobilda tormoz berish, qanday xavfli oqibatlarga olib kelishi mumkin?",
+      "rasm": "",
+      "togri_javob": "Avtomobilning agʻdarilib ketishi mumkin darajada sirpanib ketishiga.",
+      "izoh": "Oʻng va chap gʻildirak shinalari turlicha siyqalangan boʻlsa, ular yoʻl bilan har xil ilashadi. Tormozlanganda avtomobil bir tomonga tortib, agʻdarilib ketishi mumkin darajada sirpanib ketishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6428,
+      "savol": "Yoʻlovchi tashishga moʻljallanmagan yuk avtomobilida yukni kuzatib boruvchi yoki qabul qilib oluvchi shaxslarning tashilishiga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Agar bort balandligidan pastda joylashgan qulay oʻrindiq boʻlsa ruxsat beriladi.",
+      "izoh": "Yoʻlovchi tashishga moʻljallanmagan yuk avtomobilida yukni kuzatib boruvchi yoki qabul qilib oluvchi shaxslarni bort balandligidan pastda joylashgan qulay oʻrindiq boʻlsa tashish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6429,
+      "savol": "Quvib oʻtish nima?",
+      "rasm": "",
+      "togri_javob": "Egallagan harakatlanish boʻlagidan chiqib oldinda ketayotgan transport vositasidan oʻzib ketish.",
+      "izoh": "Quvib oʻtish — egallab turgan harakatlanish boʻlagidan chiqib, oldinda ketayotgan transport vositasidan oʻzib ketish.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6430,
+      "savol": "Qaysi belgi yoʻlning bir tomonlamali harakatlanish yoʻl qismini koʻrsatadi?",
+      "rasm": "questions/b054_s02_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (koʻk toʻrtburchak ichida yuqoriga strelka) — «Bir tomonlama harakatlanish yoʻli»: u bir tomonlama harakatlanadigan yoʻl qismini koʻrsatadi. 5-belgi esa faqat toʻgʻriga harakatlanishni buyuradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6431,
+      "savol": "Haydovchi, agar uning transport vositasi 40 km/soatga teng yoki undan ortiq tezlik bilan balandlikka chiqa olmasa, nima chora koʻrishi kerak?",
+      "rasm": "questions/b054_s03_0_asl.jpeg",
+      "togri_javob": "Qoʻshimcha boʻlakka qayta tizilishi.",
+      "izoh": "Belgi koʻtarilishda qoʻshimcha boʻlak boshlanishini bildiradi. 40 km/soat va undan yuqori tezlikda harakatlana olmaydigan transport vositasi qoʻshimcha boʻlakka qayta tizilishi kerak, shunda asosiy boʻlakdagi harakatga xalaqit bermaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6432,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b054_s04_0_asl.jpeg",
+      "togri_javob": "Yashil; koʻk ayni vaqtda qizil, soʻng sariq.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6433,
+      "savol": "Qaysi rasmda haydovchi oʻngga toʻgʻri burilyapti?",
+      "rasm": "questions/b054_s05_0_asl.jpeg",
+      "togri_javob": "1",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi svetofor ishoralari va manyovrlarni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6434,
+      "savol": "Qaysi transport vositasining haydovchisi toʻxtash qoidasini buzdi?",
+      "rasm": "questions/b054_s06_0_asl.jpeg",
+      "togri_javob": "Faqat mototsikl haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Toʻxtash qoidasini kim buzgani rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6435,
+      "savol": "Qizil avtomobil haydovchisiga tramvay yoʻli boʻyicha harakatlanishga ruxsat etiladimi?",
+      "rasm": "questions/b054_s07_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Bir yoʻnalishdagi tramvay yoʻli qatnov qismi bilan bir sathda chap tomonda joylashgan boʻlsa va boshqa boʻlaklar band boʻlsa, tramvayga xalaqit bermasdan tramvay yoʻli boʻylab harakatlanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6436,
+      "savol": "Chiziqlar bilan boʻlaklarga ajratilgan yoʻlning qatnov qismida transport vositalarining harakatlanishi qanday amalga oshirilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Qatʼiy boʻlaklar boʻyicha, uzuq-uzuq chiziqni kesib oʻtishga faqat qayta tizilishda ruxsat etiladi.",
+      "izoh": "Chiziqlar bilan boʻlaklarga ajratilgan qatnov qismida transport vositalari qatʼiy boʻlaklar boʻyicha harakatlanadi. Uzuq-uzuq chiziqni faqat qayta tizilishda kesib oʻtish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6437,
+      "savol": "Boldir suyagi oʻrtasidan singanda transportda tashish uchun taxtakach yoki uning oʻrnini oʻtovchi narsa qanday qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "Tovon tagidan to son oʻrtasigacha oyoqning ichki va tashqi tomonidan ikkita shina qoʻyish kerak. Singan joyni, tizza va boldir-oyoq kafti boʻgʻinlarini qimirlatmaslik lozim.",
+      "izoh": "Boldir suyagi singanda tovon tagidan son oʻrtasigacha oyoqning ichki va tashqi tomonidan ikkita shina qoʻyiladi. Shunda singan joy, tizza va boldir-oyoq kafti boʻgʻinlari qimirlamaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6438,
+      "savol": "Qanday shartlarda transport vositalaridan foydalanish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Faralar yoritishi buzilganda, yoritgichlar va yorugʻlik qaytargichlar ifloslanganda yoki ularga mos kelmaydigan lampalar qoʻyilganda transport vositasi boshqalarga yaxshi koʻrinmaydi va yoʻlni yomon yoritadi. Shuning uchun sanab oʻtilgan barcha hollarda foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6439,
+      "savol": "Mazkur belgi nima haqida axborot beradi?",
+      "rasm": "questions/b055_s01_0_asl.jpeg",
+      "togri_javob": "Trolleybus yoki avtobus toʻxtash joylarini bildiradi.",
+      "izoh": "Belgi trolleybus yoki avtobus toʻxtash joyini bildiradi. Bu joyda boshqa transport vositalarining toʻxtashi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
