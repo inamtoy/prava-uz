@@ -1,0 +1,156 @@
+{
+  "bilet": "54-bilet",
+  "slug": "bilet-54",
+  "savollar": [
+    {
+      "question_id": 6695,
+      "savol": "Ushbu avtomobil quvib oʻtishni toʻgʻri bajardimi?",
+      "rasm": "questions/b080_s07_0_asl.jpeg",
+      "togri_javob": "Yoʻq.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi quvib oʻtish manyovrini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6696,
+      "savol": "Bu yoʻl belgisi:",
+      "rasm": "questions/b080_s08_0_asl.jpeg",
+      "togri_javob": "40 km/s tezlikdan oshirishni taʼqiqlaydi.",
+      "izoh": "Qizil hoshiyali doiradagi «40» — «Eng yuqori tezlik cheklangan» belgisi: 40 km/soatdan yuqori tezlikda harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6697,
+      "savol": "Tik balandlikda aylanib oʻtishni bajarmoqchisiz. Siz:",
+      "rasm": "questions/b080_s09_0_asl.jpeg",
+      "togri_javob": "Ustunlikka egasiz.",
+      "izoh": "Tik qiyalikda toʻsiq boʻlsa, pastga tushayotgan haydovchi yuqoriga koʻtarilayotgan transport vositasiga yoʻl berishi kerak. Siz balandlikka koʻtarilayotganingiz uchun toʻsiqni aylanib oʻtishda ustunlik sizda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6698,
+      "savol": "Ushbu yoʻlda qanday maksimal tezlikka ruxsat etiladi?",
+      "rasm": "questions/b080_s10_0_asl.jpeg",
+      "togri_javob": "90 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "«70 km/soat cheklovining oxiri» belgisidan keyin ruxsat etilgan tezlik (90 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6699,
+      "savol": "Ushbu vaziyatda oʻngga burilish uchun siz:",
+      "rasm": "questions/b081_s01_0_asl.jpeg",
+      "togri_javob": "Faqatgina avtobusga yoʻl berishingiz kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Oʻngga burilishda kimga yoʻl berish kerakligini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6700,
+      "savol": "Birinchi boʻlib qaysi avtomobil harakatlanadi?",
+      "rasm": "questions/b081_s02_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor ishoralari va yoʻnalishlarni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6701,
+      "savol": "Ushbu vaziyatda yuk avtomobilini quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b081_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Quvib oʻtish taqiqining sababi rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6702,
+      "savol": "Ushbu vaziyatda yashil avtomobil nima qilishi kerak?",
+      "rasm": "questions/b081_s04_0_asl.jpeg",
+      "togri_javob": "Sekinlashishi lozim boʻlsa toʻxtashi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit asosiy yoʻldagi yashil avtomobil sekinlashishi kerak deydi — rasm va kalitni tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6703,
+      "savol": "Ushbu vaziyatda ogohlantiruvchi belgi transport vositasidan qancha masofa uzoqlikda turishi kerak?",
+      "rasm": "questions/b081_s05_0_asl.jpeg",
+      "togri_javob": "30 m dan koʻp.",
+      "izoh": "Aholi punktidan tashqarida falokat sababli toʻxtash belgisi transport vositasidan kamida 30 metr masofada qoʻyilishi kerak — boshqa haydovchilar oldindan ogohlanishi uchun.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6704,
+      "savol": "Qaysi avtomobil yoʻl berishi kerak?",
+      "rasm": "questions/b081_s06_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor va belgilar ishtirokidagi ustunlikni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6705,
+      "savol": "Qaysi avtotransport vositasi haydovchisi toʻxtab turish qoidalarini buzdi?",
+      "rasm": "questions/b081_s07_0_asl.jpeg",
+      "togri_javob": "Faqat yuk avtomobili haydovchisi.",
+      "izoh": "Toʻxtab turish joyi belgisi ostidagi qoʻshimcha belgi transport vositalarini qanday qoʻyish kerakligini koʻrsatadi. Yuk avtomobili unga mos turmagan, shuning uchun qoidani faqat yuk avtomobili haydovchisi buzgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6706,
+      "savol": "Ushbu vaziyatda siz chapga burilmoqchisiz? Qaysi transport vositalariga yoʻl berishingiz kerak?",
+      "rasm": "questions/b081_s08_0_asl.jpeg",
+      "togri_javob": "Hamma transport vositalariga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chapga burilishda kimga yoʻl berish kerakligini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6707,
+      "savol": "Ushbu aylanma harakatda qaysi transport vositalariga yoʻl berish kerak?",
+      "rasm": "questions/b081_s09_0_asl.jpeg",
+      "togri_javob": "Barcha transport vositalariga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Aylanma harakatlanish joyida kimga yoʻl berish kerakligini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6708,
+      "savol": "Qaysi avtotransport vositasiga qayrilish taʼqiqlanadi?",
+      "rasm": "questions/b081_s10_0_asl.jpeg",
+      "togri_javob": "Faqat oq avtomobilga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qayrilish taqiqining sababi rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6709,
+      "savol": "Bu vaziyatda yuk avtomobilini quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b082_s01_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Quvib oʻtish taqiqining sababi rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

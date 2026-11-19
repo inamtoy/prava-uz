@@ -1,0 +1,156 @@
+{
+  "bilet": "55-bilet",
+  "slug": "bilet-55",
+  "savollar": [
+    {
+      "question_id": 6710,
+      "savol": "Koʻrsatilgan holatda imtiyoz qaysi avtomobilda boʻladi?",
+      "rasm": "questions/b082_s02_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi boʻlaklar va yoʻnalishlarni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6711,
+      "savol": "Tartibga soluvchining ushbu ishorasida qaysi tarafga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b082_s03_0_asl.jpeg",
+      "togri_javob": "Toʻgʻriga, chapga va qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6712,
+      "savol": "Ushbu yoʻllar ksishmasida imtiyoz qaysi haydovchida boʻladi?",
+      "rasm": "questions/b082_s04_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobilida.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Yoʻllar kesishmasidagi ustunlikni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6713,
+      "savol": "Bu belgi oʻrnatilganda haydovchi qaysi chiziqda toʻxtashi lozim?",
+      "rasm": "questions/b082_s05_0_asl.jpeg",
+      "togri_javob": "A.",
+      "izoh": "«Toʻxtamasdan harakatlanish taqiqlanadi» belgisi oʻrnatilgan, lekin toʻxtash chizigʻi boʻlmasa, haydovchi kesib oʻtiladigan qatnov qismi chetida toʻxtashi kerak — bu A chiziq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6714,
+      "savol": "Tirkamali avtomobil haydovchisi:",
+      "rasm": "questions/b082_s06_0_asl.jpeg",
+      "togri_javob": "Tramvayga yoʻl berishi lozim.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Tramvay va boshqa transport vositalarining yoʻnalishini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6715,
+      "savol": "Ushbu chorrahadan chapga burilishda qaysi transport vositalariga yoʻl berish kerak?",
+      "rasm": "questions/b082_s07_0_asl.jpeg",
+      "togri_javob": "Hech biriga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chapga burilishda kimga yoʻl berish kerakligini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6716,
+      "savol": "Koʻrsatilgan manyovrni qaysi avtomobil birinchi amalga oshirishi lozim?",
+      "rasm": "questions/b082_s08_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Asosiy yoʻl yoʻnalishi va manyovrlarni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6717,
+      "savol": "Ushbu vaziyatda kim yoʻl berishi kerak?",
+      "rasm": "questions/b082_s09_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Ustunlikni belgilaydigan belgilarni rasmdan aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6718,
+      "savol": "Ushbu holatda avtobusni quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b082_s10_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtobusni quvib oʻtish taqiqining sababi rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6719,
+      "savol": "Ushbu yoʻnalish boʻylab harakatlanishga ruxsat etiladimi?",
+      "rasm": "questions/b083_s01_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgi va yoʻnalishni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6720,
+      "savol": "Yengil avtomobilga ushbu manyovrni bajarishga ruxsat etiladimi?",
+      "rasm": "questions/b083_s02_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi manyovrni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6721,
+      "savol": "Qaysi avtotransport vositasi harakat boʻlagini oʻzgartirayotgan boshqa avtomobilga yoʻl berishi kerak?",
+      "rasm": "questions/b083_s03_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Boʻlak oʻzgartirishdagi ustunlikni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6722,
+      "savol": "Ushbu avtotransport hodisasida kim aybdor?",
+      "rasm": "questions/b083_s04_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Yoʻl-transport hodisasida aybdorni rasmdan aniq aniqlab boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6723,
+      "savol": "Qaysi biri toʻxtab turish joyida notoʻgʻri qoldirilgan?",
+      "rasm": "questions/b083_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Toʻxtab turish joyi belgisi va qoʻshimcha belgini rasmdan aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6724,
+      "savol": "Ushbu yoʻlda yengil avtomobilga qanday maksimal tezlikda harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b083_s06_0_asl.jpeg",
+      "togri_javob": "110 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomagistralda yengil avtomobil uchun eng yuqori tezlik (110 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

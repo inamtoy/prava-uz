@@ -1,0 +1,156 @@
+{
+  "bilet": "53-bilet",
+  "slug": "bilet-53",
+  "savollar": [
+    {
+      "question_id": 6680,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b079_s02_0_asl.jpeg",
+      "togri_javob": "Harakatlanish toʻgʻriga.",
+      "izoh": "Koʻk doiradagi yuqoriga strelka — «Toʻgʻriga harakatlanish» buyuruvchi belgisi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6681,
+      "savol": "Bu yoʻl belgisi oʻrnatilganda haydovchi:",
+      "rasm": "questions/b079_s03_0_asl.jpeg",
+      "togri_javob": "Faqatgina toʻgʻriga yurishi mumkin.",
+      "izoh": "«Toʻgʻriga harakatlanish» belgisi faqat toʻgʻriga yurishga ruxsat beradi — burilish va qayrilib olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6682,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b079_s04_0_asl.jpeg",
+      "togri_javob": "Harakatlanishlanish faqat oʻng tomonga.",
+      "izoh": "Koʻk doiradagi oʻngga strelka — «Oʻngga harakatlanish» belgisi: harakat faqat oʻng tomonga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6683,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b079_s05_0_asl.jpeg",
+      "togri_javob": "Harakatlanish chapga va orqaga.",
+      "izoh": "«Chapga harakatlanish» belgisi chapga burilishga, shuningdek qayrilib olishga ham ruxsat beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6684,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b079_s06_0_asl.jpeg",
+      "togri_javob": "Harakatlanish oʻngga va toʻgʻriga.",
+      "izoh": "Ikki strelkali belgi — «Toʻgʻriga yoki oʻngga harakatlanish»: harakat faqat shu ikki yoʻnalishda ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6685,
+      "savol": "Qaysi avtomobil yoʻl berishi kerak?",
+      "rasm": "questions/b079_s07_0_asl.jpeg",
+      "togri_javob": "Qizil.",
+      "izoh": "Qizil avtomobil oldida «Yoʻl bering» va «Aylanma harakatlanish» belgilari bor. Shuning uchun u aylanma harakatlanish joyida harakatlanayotgan sariq avtomobilga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6686,
+      "savol": "Qaysi haydovchi toʻxtash qoidalarini buzdi?",
+      "rasm": "questions/b079_s08_0_asl.jpeg",
+      "togri_javob": "Ikkalasi ham qoidani buzdi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobil va mototsiklning toʻxtash joyi qaysi qoidani buzayotganini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6687,
+      "savol": "Koʻrsatilgan belgi oldida toʻxtaganda eng kam oraliq qancha boʻlishi kerak?",
+      "rasm": "questions/b079_s09_0_asl.jpeg",
+      "togri_javob": "Kamida 15 metr.",
+      "izoh": "Yoʻnalishli transport vositalarining toʻxtash joyi belgisidan 15 metrdan yaqinda toʻxtash taqiqlanadi — bu joy avtobuslar uchun boʻsh qolishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6688,
+      "savol": "Qaysi avtotransport vositasi yoʻl berishi kerak?",
+      "rasm": "questions/b079_s10_0_asl.jpeg",
+      "togri_javob": "Avtobus.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor, belgi va transport vositalarining yoʻnalishini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6689,
+      "savol": "Qaysi haydovchi qoidani buzmoqda?",
+      "rasm": "questions/b080_s01_0_asl.jpeg",
+      "togri_javob": "Hech kim qoidani buzmadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomagistraldagi ikki gʻildirakli transport vositasining turi (mototsikl yoki moped) rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6690,
+      "savol": "Toʻla vazni 3,5 tonnadan ogʻir yuk avtomobillari ushbu yoʻldaga eng maksimal tezligi qancha boʻlishi kerak?",
+      "rasm": "questions/b080_s02_0_asl.jpeg",
+      "togri_javob": "50 km/s.",
+      "izoh": "Belgi ostidagi yuk avtomobili tasvirli qoʻshimcha belgi 50 km/soat cheklovi faqat yuk avtomobillariga taalluqli ekanini bildiradi. Shuning uchun toʻla vazni 3,5 tonnadan ogʻir yuk avtomobili bu yoʻlda 50 km/soatdan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6691,
+      "savol": "Ushbu chorrahada yengil avtomobil nechanchi boʻlib harakatlanadi?",
+      "rasm": "questions/b080_s03_0_asl.jpeg",
+      "togri_javob": "Ikkinchi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Maxsus transport vositalari va belgilar ishtirokidagi chorrahadan oʻtish tartibini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6692,
+      "savol": "Yengil avtomobil qilayotgan manyovr qanday nomlanadi.",
+      "rasm": "questions/b080_s04_0_asl.jpeg",
+      "togri_javob": "Harakatlanish boʻlagini oʻzgartirish.",
+      "izoh": "Yengil avtomobil bir boʻlakdan qoʻshni boʻlakka oʻtmoqda — bu harakatlanish boʻlagini oʻzgartirish (qayta tizilish). Quvib oʻtishda esa avtomobil qarama-qarshi yoʻnalish boʻlagiga chiqadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6693,
+      "savol": "Ushbu holatda haydovchi qayerda toʻxtashi kerak?",
+      "rasm": "questions/b080_s05_0_asl.jpeg",
+      "togri_javob": "Toʻxtamasdan harakatlanishni taʼqiqlovchi belgidan oldin.",
+      "izoh": "Temir yoʻl kesishmasi oldida «Toʻxtamasdan harakatlanish taqiqlanadi» (STOP) belgisi oʻrnatilgan, shuning uchun haydovchi shu belgi oldida toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6694,
+      "savol": "Qaysi avtomobil yoʻl berishi kerak?",
+      "rasm": "questions/b080_s06_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi va transport vositalarining yoʻnalishini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}
