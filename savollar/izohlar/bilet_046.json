@@ -1,0 +1,156 @@
+{
+  "bilet": "46-bilet",
+  "slug": "bilet-46",
+  "savollar": [
+    {
+      "question_id": 6575,
+      "savol": "Agar haydovchi transport vositasining eshigini ochishga va undan chiqishga qaror qilsa, unga nima taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Turgan transport vositasining eshigini ochish, agar bu harakatlanishning boshqa ishtirokchilariga halaqit bersa va xavf tugʻdirsa taʼqiqlanadi.",
+      "izoh": "Turgan transport vositasining eshigini ochish, agar bu boshqa harakat qatnashchilariga xalaqit bersa yoki xavf tugʻdirsa, taqiqlanadi. Eshikni ochishdan oldin haydovchi orqadan transport yoki velosipedchi kelmayotganiga ishonch hosil qilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6576,
+      "savol": "Sanab oʻtilgan qaysi joylarda transport vositalarining toʻxtashi va toʻxtab turishi taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Barcha koʻrsatilgan joylarda.",
+      "izoh": "Darvozadan chiqish joylarida, tramvay yoʻllarida va tramvay harakatiga toʻsqinlik qiladigan darajada ularga yaqin joyda toʻxtash va toʻxtab turish taqiqlanadi — sanab oʻtilgan barcha joylarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6577,
+      "savol": "Tik uzun qiyaliklarda ajratilgan uzatma bilan avtomobilni uzoq tormozlashning qanday xavfi bor?",
+      "rasm": "",
+      "togri_javob": "Tormoz qiziydi va ishdan chiqadi.",
+      "izoh": "Uzun tik qiyalikda uzatma ajratilgan holda uzoq tormozlansa, dvigatel tormozlashga yordam bermaydi va butun yuk tormozlarga tushadi. Tormozlar qizib ketadi va ishdan chiqishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6578,
+      "savol": "Bolalarni tashishda transport vositasi qaysi taniqlik belgisi bilan belgilanadi?",
+      "rasm": "questions/b068_s10_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (sariq kvadratda bolalar tasviri, qizil hoshiya) — bolalarni tashiyotgan transport vositasining taniqlik belgisi. 1-belgi esa yoʻldagi «Bolalar» ogohlantiruvchi belgisi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6579,
+      "savol": "Toʻxtash va toʻxtab turish quyidagi joylarda taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha joylarda.",
+      "izoh": "Temir yoʻl kesishmalarida, piyodalar oʻtish joylarida va ularga 5 metrdan kam qolganda, shuningdek transport vositasi piyodalar harakatiga xalaqit beradigan joylarda toʻxtash va toʻxtab turish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6580,
+      "savol": "Qaysi transport vositasining haydovchisi toʻxtab turish qoidasini buzdi?",
+      "rasm": "questions/b069_s02_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili haydovchisi.",
+      "izoh": "«Toʻxtab turish taqiqlanadi» belgisi ostidagi qoʻshimcha belgi taqiq faqat yuk avtomobillariga tatbiq etilishini bildiradi. Shuning uchun qoidani faqat yuk avtomobili haydovchisi buzgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6581,
+      "savol": "Koʻrsatilgan yoʻl belgisi qaysi transport vositalariga harakatlanishni taʼqiqlaydi?",
+      "rasm": "questions/b069_s03_0_asl.jpeg",
+      "togri_javob": "Barcha mexanik transport vositalariga.",
+      "izoh": "Qizil hoshiyali doira ichida avtomobil tasviri — «Mexanik transport vositalarining harakatlanishi taqiqlanadi» belgisi. U barcha mexanik transport vositalariga harakatlanishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6582,
+      "savol": "Chorrahani ikkinchi boʻlib kim kesib oʻtadi?",
+      "rasm": "questions/b069_s04_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil, ayni vaqtda sariq bilan birga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6583,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadi:",
+      "rasm": "questions/b069_s05_0_asl.jpeg",
+      "togri_javob": "Tramvay, yengil avtomobil, avtobus.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6584,
+      "savol": "Egiluvchan ulagichda shatakka olinganda qanday yuqori tezlik bilan harakatlanishga ruxsat etilgan?",
+      "rasm": "",
+      "togri_javob": "50 km/s.",
+      "izoh": "Egiluvchan ulagich bilan shatakka olinganda tezlik 50 km/soatdan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6585,
+      "savol": "Qaysi rasmda haydovchi chapga burilish haqida ogohlantirish ishorasini bermoqda?",
+      "rasm": "questions/b069_s07_0_asl.jpeg",
+      "togri_javob": "1",
+      "izoh": "Chapga burilish ishorasi chap qoʻlni yon tomonga gorizontal uzatish bilan beriladi — bu 1-rasmda koʻrsatilgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6586,
+      "savol": "Qayrilish quyidagi hollarda taʼqiqlanadi:",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Piyodalar oʻtish joylarida, tonnellarda, koʻpriklarda, osma yoʻllarda, estakadalarda va ularning ostida, temir yoʻl kesishmalarida va yoʻl loaqal bir yoʻnalishda 100 metrdan kam koʻrinadigan joylarda qayrilib olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6587,
+      "savol": "Qornidan yopiq jarohat olgan jabrlanuvchi qanday tashiladi?",
+      "rasm": "",
+      "togri_javob": "Yotqizilgan holatda, lat yegan joyiga sovuq narsa (muz, malham) qoʻyiladi.",
+      "izoh": "Qornidan yopiq jarohat olgan jabrlanuvchi yotqizilgan holatda tashiladi, lat yegan joyga sovuq narsa (muz) qoʻyiladi. Issiq grelka ichki qon ketishini kuchaytirishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6588,
+      "savol": "Spidometr jihozlari tamgʻalanmagan transport vositalaridan foydalanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat xususiy egalariga tegishli transport vositalarga hamda mototsikllar va mopedlarga ruxsat etiladi.",
+      "izoh": "Spidometri tamgʻalanmagan transport vositasidan faqat xususiy egalarga tegishli transport vositalari, shuningdek mototsikl va mopedlar foydalanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6589,
+      "savol": "Qaysi transport vositasining haydovchisi quvib oʻtishni toʻgʻri bajarmoqda?",
+      "rasm": "questions/b070_s01_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi quvib oʻtish manyovrlarini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

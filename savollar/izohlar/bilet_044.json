@@ -1,0 +1,156 @@
+{
+  "bilet": "44-bilet",
+  "slug": "bilet-44",
+  "savollar": [
+    {
+      "question_id": 6545,
+      "savol": "Bu joyda avtobusni quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b065_s07_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Temir yoʻl kesishmasigacha qolgan masofani (100 metrdan koʻp yoki kam) rasmdan aniq aniqlab boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6546,
+      "savol": "Falokat yorugʻlik ishoralari yoqilishi kerak:",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Falokat yorugʻlik ishorasi sanab oʻtilgan barcha hollarda yoqiladi: toʻxtash taqiqlangan joyda majburiy toʻxtaganda, yoʻl-transport hodisasida va qorongʻida gabarit chiroqlari nosoz boʻlib toʻxtaganda — boshqa haydovchilarni ogohlantirish uchun.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6547,
+      "savol": "«Reaksiya vaqti» tushunchasi nimani bildiradi?",
+      "rasm": "",
+      "togri_javob": "Haydovchi xavfni koʻrgan paytdan aniq harakatlarni boshlaguncha oʻtilgan vaqt.",
+      "izoh": "Reaksiya vaqti — haydovchi xavfni koʻrgan paytdan aniq harakatlarni (masalan, tormozlashni) boshlaguncha oʻtgan vaqt.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6548,
+      "savol": "N2; N3; 03; 04 ; М2; М3 toifadagi avtotransport vositalarining (mikroavtobuslardan tashqari) orqa devorida yozilishi kerak:",
+      "rasm": "",
+      "togri_javob": "Yaxshi koʻrinadigan raqam belgisi.",
+      "izoh": "N2, N3, O3, O4, M2 va M3 toifali transport vositalarining (mikroavtobuslardan tashqari) orqa devoriga davlat raqami yaxshi koʻrinadigan qilib yozilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6549,
+      "savol": "Agar yoʻl-transport hodisasi natijasida hech kim jabrlanmasa, moddiy zarar esa ahamiyatsiz boʻlsa, haydovchilarning oʻzlari hodisa roʻy bergan joyni tark etib, eng yaqin DYHXX yoki Ichki ishlar organlari idorasiga hodisani qayd qilish uchun bora oladilarmi?",
+      "rasm": "",
+      "togri_javob": "Hodisa chizmasini chizibva uni imzolab, bora oladilar.",
+      "izoh": "Yoʻl-transport hodisasida hech kim jabrlanmagan va moddiy zarar ahamiyatsiz boʻlsa, haydovchilar hodisa chizmasini chizib, uni imzolab, hodisani qayd qilish uchun eng yaqin DYHXX yoki ichki ishlar idorasiga borishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6550,
+      "savol": "Qaysi transport vositalarining haydovchilari toʻxtab turish qoidasini buzdilar?",
+      "rasm": "questions/b066_s02_0_asl.jpeg",
+      "togri_javob": "Б, В va Г.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi ostidagi qoʻshimcha belgi va har bir transport vositasining joylashuvini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6551,
+      "savol": "Qaysi transport vositalariga bu belgi oʻrnatilgan yoʻl boʻylab harakatlanishga ruxsat etilgan?",
+      "rasm": "questions/b066_s03_0_asl.jpeg",
+      "togri_javob": "Avtomobillarga, avtobuslarga va mototsikllarga.",
+      "izoh": "«Avtomobillar uchun yoʻl» belgisi bu yoʻlda faqat avtomobillar, avtobuslar va mototsikllar harakatlanishi mumkinligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6552,
+      "savol": "Chorrahani birinchi boʻlib kim kesib oʻtadi?",
+      "rasm": "questions/b066_s04_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6553,
+      "savol": "Mazkur svetoforning qizil yoritgichida harakat taʼqiqlanadi:",
+      "rasm": "questions/b066_s05_0_asl.jpeg",
+      "togri_javob": "Svetofor qaysi boʻlak ustiga joylashtirilgan boʻlsa, oʻsha boʻlak boʻyicha.",
+      "izoh": "Bu reversiv svetofor. Uning qizil «X» ishorasi svetofor qaysi boʻlak ustida joylashgan boʻlsa, oʻsha boʻlak boʻyicha harakatni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6554,
+      "savol": "Agar tegishli belgilar bilan belgilangan qiyaliklarda yuzma-yuz kelayotgan transportlarning oʻtib ketishi qiyin boʻlsa, yoʻl berish zarur:",
+      "rasm": "questions/b066_s06_0_asl.jpeg",
+      "togri_javob": "Balandlikka harakatlanayotgan transport vositasiga.",
+      "izoh": "Tik qiyalik belgilari bilan belgilangan yoʻl qismida qarshi kelayotgan transport vositalari bir-birini aylanib oʻtishi qiyin boʻlsa, pastga tushayotgan haydovchi balandlikka koʻtarilayotgan transport vositasiga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6555,
+      "savol": "Yoʻlning bu qismida quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b066_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi chiziqning turi va quvib oʻtish taqiqining sababini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6556,
+      "savol": "Harakat tezligini tanlashda haydovchiga nima taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan ikkala harakatni amalga oshirish taʼqiqlanadi.",
+      "izoh": "Haydovchiga transport vositasiga oʻrnatilgan taniqlik belgisida koʻrsatilgan tezlikdan oshirish ham, xavfsizlik talab qilmagan holda keskin tormozlash ham taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6557,
+      "savol": "Qoʻl jarohatlanganda jabrlanuvchining koʻylagi, kiyimi qanday yechilsa toʻgʻri boʻladi?",
+      "rasm": "",
+      "togri_javob": "Kiyim-boshni yechishni sogʻ qoʻldan boshlash, soʻng kasal qoʻlni boʻshatish.",
+      "izoh": "Qoʻl jarohatlanganda kiyimni yechishni sogʻ qoʻldan boshlash, soʻng jarohatlangan qoʻlni ehtiyotkorlik bilan boʻshatish kerak — shunda jarohatlangan qoʻl kamroq qimirlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6558,
+      "savol": "Mopedlarni shatakka olishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Mopedlarni shatakka olish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6559,
+      "savol": "Trotuaryoki piyodalar yoʻlkasi boʻlmaganda, piyodalar velosiped yoʻlkasi boʻylab harakat qila oladilarmi?",
+      "rasm": "",
+      "togri_javob": "Harakat qila oladilar.",
+      "izoh": "Trotuar yoki piyodalar yoʻlkasi boʻlmasa, piyodalar velosiped yoʻlkasi boʻylab harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

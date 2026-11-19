@@ -1,0 +1,156 @@
+{
+  "bilet": "41-bilet",
+  "slug": "bilet-41",
+  "savollar": [
+    {
+      "question_id": 6500,
+      "savol": "Qaysi belgi qayrilishga ruxsat etadi?",
+      "rasm": "questions/b061_s02_0_asl.jpeg",
+      "togri_javob": "2.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "4-belgi (boʻlaklar boʻyicha harakatlanish yoʻnalishi) ham qayrilish strelkasini koʻrsatadi, kalit esa faqat 2-belgini koʻrsatadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6501,
+      "savol": "Agar avtomobilning balandligi (yuki bilan yoki yuksiz) belgida koʻrsatilganidan ortiq boʻlsa,haydovchi:",
+      "rasm": "questions/b061_s03_0_asl.jpeg",
+      "togri_javob": "Boshqa yoʻnalish boʻyicha yoʻl qismini aylanib oʻtishi kerak.",
+      "izoh": "Transport vositasining balandligi belgida koʻrsatilganidan ortiq boʻlsa, u bu yoʻl qismidan oʻta olmaydi. Haydovchi boshqa yoʻnalish boʻyicha aylanib oʻtishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6502,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b061_s04_0_asl.jpeg",
+      "togri_javob": "Yashil, koʻk, qizil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6503,
+      "savol": "Harakatlanishda ustunlikka ega:",
+      "rasm": "questions/b061_s05_0_asl.jpeg",
+      "togri_javob": "Chorrahada qayrilishni tugallayotgan Yengil avtomobilning haydovchisi.",
+      "izoh": "Svetoforning ruxsat etuvchi ishorasi yonganda haydovchi chorrahada harakatni tugallayotgan transport vositalariga yoʻl berishi kerak. Shuning uchun qayrilishni tugallayotgan yengil avtomobil ustunlikka ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6504,
+      "savol": "Yoʻl belgilari va chiziqlarning maʼnolari bir-birini inkor etganda haydovchi qaysi biriga rioya etishi kerak?",
+      "rasm": "",
+      "togri_javob": "Yoʻl belgilariga.",
+      "izoh": "Yoʻl belgilari va yoʻl chiziqlarining maʼnolari bir-biriga zid boʻlsa, haydovchi yoʻl belgilariga amal qilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6505,
+      "savol": "Qaysi transport vositasining haydovchisi quvib oʻtishni toʻgʻri bajaryapti?",
+      "rasm": "questions/b061_s07_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobilining haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi quvib oʻtish manyovrlarini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6506,
+      "savol": "Sunʼiy yoritilgan tonellarda harakatlanayotganda qoidalar haydovchiga qanday majburiyat yuklaydi:",
+      "rasm": "",
+      "togri_javob": "Faralarning yaqinni yorituvchi chiroqlarini yoqishni.",
+      "izoh": "Sunʼiy yoritilgan tonnelda ham faralarning yaqinni yorituvchi chiroqlari yoqilishi kerak — ular transport vositasini boshqalarga koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6507,
+      "savol": "Avtomobil haydovchisi sirpanib ketishning xavfli oqibatlari oldini olish uchun quyidagi amalni bajarishga majbur:",
+      "rasm": "",
+      "togri_javob": "Boshlangan tormoz berishni toʻxtatishga.",
+      "izoh": "Avtomobil sirpana boshlaganda tormozlashni toʻxtatish kerak: tormozlangan gʻildiraklar yoʻl bilan yanada yomon ilashadi va sirpanish kuchayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6508,
+      "savol": "Qaysi belgi yoʻl boshi yoki oxirigacha boʻlgan masofani bildiradi?",
+      "rasm": "questions/b061_s10_0_asl.jpeg",
+      "togri_javob": "1",
+      "izoh": "1-belgi — «Kilometr belgisi»: u yoʻl boshi yoki oxirigacha boʻlgan masofani (kilometrda) bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6509,
+      "savol": "Yoʻl burilishlarida avtomobilning markazdan qochirma kuchi qanday hollarda oshadi?",
+      "rasm": "",
+      "togri_javob": "Harakat tezligi ortishi bilan.",
+      "izoh": "Burilishda markazdan qochirma kuch tezlik ortishi bilan keskin oshadi. Burilish radiusi kattalashganda esa bu kuch kamayadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6510,
+      "savol": "Belgilardan qaysi birining belgilangan, yoʻnalishdagi transport vositalariga daxli yoʻq?",
+      "rasm": "questions/b062_s02_0_asl.jpeg",
+      "togri_javob": "5.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qaysi belgi yoʻnalishli transport vositalariga taalluqli emasligi haqidagi kalitni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6511,
+      "savol": "Bu joyda qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b062_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Qarama-qarshi yoʻnalishdagi oqimlarni ajratuvchi qoʻsh sidirgʻa chiziqni kesib oʻtish taqiqlanadi, shuning uchun bu joyda qayrilib olish mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6512,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadi:",
+      "rasm": "questions/b062_s04_0_asl.jpeg",
+      "togri_javob": "Qizil; koʻk; yashil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6513,
+      "savol": "Qizil avtomobilning haydovchisiga shu vaziyatda piyodalar oʻtish joyi orqali harakatlanishni davom, ettirishga ruxsat etiladimi?",
+      "rasm": "questions/b062_s05_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Piyodalar oʻtish joyi oldida qoʻshni boʻlakdagi transport vositasi toʻxtagan yoki sekinlashgan boʻlsa, haydovchi ham toʻxtashi kerak. U piyodalar yoʻqligiga ishonch hosil qilgandan keyingina harakatni davom ettirishi mumkin — toʻxtagan avtomobil piyodalarni toʻsib turgan boʻlishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6514,
+      "savol": "Tartibga soluvchining hushtak ishorasi xizmat qiladi:",
+      "rasm": "",
+      "togri_javob": "Harakat ishtirokchilarining eʼtiborini jalb etish uchun.",
+      "izoh": "Tartibga soluvchining hushtak ishorasi harakat qatnashchilarining eʼtiborini jalb etish uchun beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

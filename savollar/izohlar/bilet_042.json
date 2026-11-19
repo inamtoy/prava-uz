@@ -1,0 +1,156 @@
+{
+  "bilet": "42-bilet",
+  "slug": "bilet-42",
+  "savollar": [
+    {
+      "question_id": 6515,
+      "savol": "Sanab oʻtilgan joylardan qaysi birida transport vositalarining toʻxtashi va toʻxtab turishi taʼqiqlanmaydi?",
+      "rasm": "",
+      "togri_javob": "Barcha koʻrsatilgan joylarda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kesishma chetidan 15 metr masofada toʻxtash haqidagi talabni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6516,
+      "savol": "Quvib oʻtilayotgan transport vositasining haydovchisiga nima taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Harakat tezligini oshirish yoki boshqa xatti-harakatlar bilan quvib oʻtishga toʻsqinlik qilish.",
+      "izoh": "Quvib oʻtilayotgan haydovchi tezlikni oshirish yoki boshqa harakatlar bilan quvib oʻtishga toʻsqinlik qilmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6517,
+      "savol": "Koʻkrak qafasining koʻp qismi jarohatlanganda uni qayerdan boshlab bint bilan bogʻlash kerak?",
+      "rasm": "",
+      "togri_javob": "Koʻkrak qafasining quyi qismidan.",
+      "izoh": "Koʻkrak qafasi keng jarohatlanganda bint koʻkrak qafasining quyi qismidan boshlab yuqoriga qarab oʻraladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6518,
+      "savol": "Sanab oʻtilgan hollardan qaysi birida transport vositalaridan foydalanishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "M1 toifadagi avtotransport vositalarining oldingi oʻqiga birinchi toifada taʼmirlangan shinalar oʻrnatilgan.",
+      "izoh": "M1 toifali avtomobilning old oʻqiga birinchi toifada taʼmirlangan shinalar oʻrnatish ruxsat etiladi. Oʻlchami yoki bosimi rusumga mos kelmaydigan shinalar va bitta oʻqqa diagonal va radial shinalarni birga oʻrnatish esa taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6519,
+      "savol": "Reaksiya va diqqatni pasaytiruvchi dori-darmonlar taʼsirida boʻlgan haydovchiga transport vositalarini boshqarishiga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Reaksiya va diqqatni pasaytiruvchi dori-darmonlar taʼsirida boʻlgan haydovchiga transport vositasini boshqarish taqiqlanadi — u xavfga oʻz vaqtida javob bera olmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6520,
+      "savol": "Bu belgida koʻk fon bilan ajratilgan aholi punkti nimani bildiradi?",
+      "rasm": "questions/b063_s02_0_asl.jpeg",
+      "togri_javob": "Bu manzil shu aholi punktidan tashqarida joylashganini va u manzilga avtomagistral boʻlmagan, boshqa yoʻl orqali borilishni.",
+      "izoh": "Yoʻnalish koʻrsatkichida aholi punkti nomi koʻk fon bilan ajratilgan boʻlsa, bu manzilga avtomagistral boʻlmagan boshqa yoʻl orqali borilishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6521,
+      "savol": "Quyidagi chiziq nimani bildiradi?",
+      "rasm": "questions/b063_s03_0_asl.jpeg",
+      "togri_javob": "Velosiped yoʻlkasi yoʻlni kesib oʻtuvchi joyi.",
+      "izoh": "Qatnov qismini kesib oʻtuvchi kvadratchali chiziq velosiped yoʻlkasi yoʻlni kesib oʻtadigan joyni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6522,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar.",
+      "rasm": "questions/b063_s04_0_asl.jpeg",
+      "togri_javob": "Yashil, qizil va ayni vaqtda u bilan birga koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6523,
+      "savol": "Koʻrsatilgan vaziyatda oʻngga burilar ekan, haydovchi qanday yoʻl tutishi kerak?",
+      "rasm": "questions/b063_s05_0_asl.jpeg",
+      "togri_javob": "Qatnov qismidan oʻtuvchi piyodalarni oʻtkazib yuborishi.",
+      "izoh": "Oʻngga burilayotgan haydovchi u burilayotgan yoʻlning qatnov qismini kesib oʻtayotgan piyodalarga yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6524,
+      "savol": "Agar transport vositisida «Tezlik cheklangan» taniqlik belgisi oʻrnatilgan boʻlsa, bu transport vositasining haydovchisiga:",
+      "rasm": "",
+      "togri_javob": "Belgida koʻrsatilgan tezlikdan oshirish taʼqiqlanadi.",
+      "izoh": "«Tezlik cheklangan» taniqlik belgisi oʻrnatilgan transport vositasi belgida koʻrsatilgan tezlikdan oshmasligi kerak — yoʻl belgisi yuqoriroq tezlikka ruxsat bergan boʻlsa ham.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6525,
+      "savol": "Aholi punktlarida «Falokat sababli toʻxtash» belgisi yoki miltillovchi qizil chiroq mexanik transport vositasidan (yon kajavasiz mototsikldan tashqari) kamida qanday masofada qoʻyilishi kerak?",
+      "rasm": "",
+      "togri_javob": "15 m.",
+      "izoh": "Aholi punktlarida «Falokat sababli toʻxtash» belgisi yoki miltillovchi qizil chiroq transport vositasidan kamida 15 metr masofada qoʻyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6526,
+      "savol": "Aholi punktlaridan tashqarida yoʻlning qatnov qismida haydovchilar transport vositalarini qayerda harakatlantirishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Iloji boricha qatnov qismining oʻng chetiga yaqinroq joyda.",
+      "izoh": "Aholi punktlaridan tashqarida haydovchilar transport vositasini iloji boricha qatnov qismining oʻng chetiga yaqinroq joyda harakatlantirishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6527,
+      "savol": "Quvib oʻtish qaysi hollarda taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Temiryoʻl kesishmalarida va ulargacha 100 metrdan kam masofa qolganda.",
+      "izoh": "Temir yoʻl kesishmalarida va ularga 100 metrdan kam masofa qolganda quvib oʻtish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6528,
+      "savol": "Transport vositasining bir oʻqiga izlari har xil naqshli shinalar oʻrnatishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Bir oʻqqa har xil naqshli shinalar oʻrnatish taqiqlanadi: ular yoʻl bilan har xil ilashadi va tormozlashda avtomobil yon tomonga tortib ketishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6529,
+      "savol": "Qaysi rasmda haydovchi yoʻlovchilarini tushirish uchun oʻz avtomobilini toʻgʻri toʻxtatdi?",
+      "rasm": "questions/b064_s01_0_asl.jpeg",
+      "togri_javob": "Chapdagi rasmda.",
+      "izoh": "Qatnov qismlari kesishmasidan 5 metrdan yaqinda va piyodalar oʻtish joyida toʻxtash taqiqlanadi. Chapdagi rasmda avtomobil kesishmadan 5 metr masofada toʻxtagan, oʻngdagisi esa piyodalar oʻtish joyida turibdi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

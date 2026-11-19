@@ -1,0 +1,156 @@
+{
+  "bilet": "43-bilet",
+  "slug": "bilet-43",
+  "savollar": [
+    {
+      "question_id": 6530,
+      "savol": "Qaysi rasmda harakatlanishning toʻgʻri yoʻnalishi koʻrsatilgan?",
+      "rasm": "questions/b064_s02_0_asl.jpeg",
+      "togri_javob": "Ikkinchida.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi belgi va harakat yoʻnalishlarini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6531,
+      "savol": "Mazkur chiziq nimani bildiradi?",
+      "rasm": "questions/b064_s03_0_asl.jpeg",
+      "togri_javob": "Velosiped yoʻlkasining qatnov qismini kesib oʻtadigan joyni.",
+      "izoh": "Kvadratchalardan iborat bu chiziq velosiped yoʻlkasi qatnov qismini kesib oʻtadigan joyni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6532,
+      "savol": "Qizil avtomobil chorrahani nechanchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b064_s04_0_asl.jpeg",
+      "togri_javob": "Ikkinchi boʻlib.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6533,
+      "savol": "Svetoforning qaysi ishorasida avtomobil haydovchisi qayrilishni tugallashi mumkin?",
+      "rasm": "questions/b064_s05_0_asl.jpeg",
+      "togri_javob": "Yashilda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetoforlarning joylashuvi va qayrilish tartibini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6534,
+      "savol": "Sanab oʻtilgan hollarning qay birida qatnov qismining oʻng chetidan yoki yoʻlning oʻng yoqasidan qayrilishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Chorrahalardan tashqarida, agar qatnov qismining kengligi chetki chap holatdan qayrilish uchun yetarli boʻlmasa.",
+      "izoh": "Chorrahalardan tashqarida qatnov qismining kengligi chetki chap holatdan qayrilish uchun yetarli boʻlmasa, qayrilishni qatnov qismining oʻng chetidan yoki yoʻl yoqasidan bajarish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6535,
+      "savol": "Transport vositasi texnik tavsifnomasida, koʻrsatilgan yuqori tezlikdan oshirishi mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Oshirilishi mumkin emas.",
+      "izoh": "Transport vositasi texnik tavsifnomasida koʻrsatilgan eng yuqori tezlikdan oshmasligi kerak — undan yuqori tezlikda uning xavfsizligi taʼminlanmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6536,
+      "savol": "Avtomagistrallarda transport vositalarining atayin toʻxtashi qaysi joylarda ruxsat etilgan?",
+      "rasm": "",
+      "togri_javob": "Toʻxtab turish uchun «Toʻxtab turish joyi» yoki «Dam olish joyi» belgilari bilan belgilangan maxsus maydonchalarda.",
+      "izoh": "Avtomagistralda atayin toʻxtash faqat «Toʻxtab turish joyi» yoki «Dam olish joyi» belgilari bilan belgilangan maxsus maydonchalarda ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6537,
+      "savol": "Avtopoezdning belgisi qanday holda yoqilgan boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "Avtopoezd harakat qilganda, shuningdek, qorongʻi vaqtda toʻxtaganda va toʻxtab turganida.",
+      "izoh": "Avtopoezd taniqlik belgisi u harakatlanganda, shuningdek qorongʻi vaqtda toʻxtaganda va toʻxtab turganida yoqilgan boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6538,
+      "savol": "Ikkinchi daraja taʼmirlash yoʻli bilan tiklangan shinalarni M1 toifadagi avtotranspor vositalariga oʻrnatishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat orqa oʻqiga ruxsat etiladi.",
+      "izoh": "Ikkinchi darajada taʼmirlangan shinalarni M1 toifali avtomobilga faqat orqa oʻqqa oʻrnatish mumkin. Old oʻqda ular boshqaruvchanlikka xavf tugʻdiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6539,
+      "savol": "Koʻk avtomobil chorrahani nechanchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b065_s01_0_asl.jpeg",
+      "togri_javob": "Toʻrtinchi boʻlib.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6540,
+      "savol": "Qaysi belgi «Bir tomonlama harakatlanish yoʻlining oxiri» deb ataladi?",
+      "rasm": "questions/b065_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi (qizil chiziq bilan kesilgan bir tomonga strelka) — «Bir tomonlama harakatlanish yoʻlining oxiri».",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6541,
+      "savol": "Bu yoʻl belgisi nimani bildiradi?",
+      "rasm": "questions/b065_s03_0_asl.jpeg",
+      "togri_javob": "Ruxsat etilgan toʻla vazni 3,5 tonnadan ortiq boʻlgan yuk avtomobillarida barcha transport vositalarini quvib oʻtish taʼqiqlanadi, soatiga 40 kilometrdan kam tezlikda harakatlanayotgan transport vositasi, traktor, ot-arava. velosiped bundan mustasno.",
+      "izoh": "Bu belgi ruxsat etilgan toʻla vazni 3,5 tonnadan ortiq yuk avtomobillariga quvib oʻtishni taqiqlaydi. 40 km/soatdan kam tezlikda harakatlanayotgan transport vositalari, traktor, ot-arava va velosipedni quvib oʻtish bundan mustasno.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6542,
+      "savol": "Chorrahani ikkinchi boʻlib kim kesib oʻtadi?",
+      "rasm": "questions/b065_s04_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6543,
+      "savol": "Bu chorrahada chapga burilishga ruxsat etiladimi?",
+      "rasm": "questions/b065_s05_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgi va svetofor ishorasini aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6544,
+      "savol": "Transport vositalarining tezligi texnik tavsifnomasiga yoki holatiga koʻra 40 km/soatdan kam boʻlganda avtomagistral boʻylab harakatlanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Tezligi texnik tavsifnomasi yoki holatiga koʻra 40 km/soatdan kam boʻlgan transport vositalarining avtomagistralda harakatlanishi taqiqlanadi — ular tez harakatlanayotgan oqimga xavf tugʻdiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

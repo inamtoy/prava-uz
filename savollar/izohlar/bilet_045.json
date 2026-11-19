@@ -1,0 +1,156 @@
+{
+  "bilet": "45-bilet",
+  "slug": "bilet-45",
+  "savollar": [
+    {
+      "question_id": 6560,
+      "savol": "Bunday avtopoezdning koʻprikdan oʻtishiga ruxsat etiladimi?",
+      "rasm": "questions/b067_s02_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Koʻprik oldidagi belgi haqiqiy massasi 5 tonnadan ortiq transport vositalarining harakatlanishini taqiqlaydi. Avtopoezdning umumiy massasi (5 t + 4 t) 5 tonnadan ortiq, shuning uchun uning koʻprikdan oʻtishi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6561,
+      "savol": "Qaysi belgi bilan xavfli yoʻlning uzunligi koʻrsatiladi?",
+      "rasm": "questions/b067_s03_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-qoʻshimcha axborot belgisi (ikki strelkali «100 m») xavfli yoʻl qismining uzunligini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6562,
+      "savol": "Chorrahani qizil avtomobil nechanchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b067_s04_0_asl.jpeg",
+      "togri_javob": "Ikkinchi boʻlib, ayni vaqtda koʻk bilan birga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6563,
+      "savol": "Mazkur svetofor quyidagi transport vositalari harakatini tartibga solish uchun qoʻllaniladi:",
+      "rasm": "questions/b067_s05_0_asl.jpeg",
+      "togri_javob": "Tramvaylarga, shuningdek, alohida boʻlakdan yuradigan belgilangan yoʻnalishdagi boshqa transport vositalarini harakatini tartibga soladi.",
+      "izoh": "«T» shaklida joylashgan oq-oy rang yoritgichli svetofor tramvaylar, shuningdek alohida boʻlakdan yuradigan boshqa yoʻnalishli transport vositalarining harakatini tartibga soladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6564,
+      "savol": "Qanday hollarda Qoidalar bilan tumanga qarshi orqa chiroqlarni qoʻllashga ruxsat etilgan?",
+      "rasm": "",
+      "togri_javob": "Yetarlicha kоʼrinmaydigan sharoitda.",
+      "izoh": "Orqa tumanga qarshi chiroqlar faqat yetarli koʻrinmaydigan sharoitda yoqiladi — boshqa paytda ular orqadagi haydovchilarning koʻzini qamashtiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6565,
+      "savol": "Yuk avtomobili haydovchisi rasmda koʻrsatilgan holatda maxsus tovush ishorasini eshitib yoki yalt-yalt etuvchi chiroq-mayoqchani nima qilishi kerak?",
+      "rasm": "questions/b067_s07_0_asl.jpeg",
+      "togri_javob": "Haydovchi maxsus tovushli ishoralarini yoqqan holda yaqinlashib kelayotgan transport vositalariga yoʻl berishlari, zarur boʻlgan hollarda ularniing toʻsiqsiz oʻtib ketishlari uchun oʻzlarini yoʻlning oʻng tomoniga olib toʻxtashlari shart.",
+      "izoh": "Maxsus tovush ishorasi va yaltiroq mayoqchasi yoqilgan transport vositasi yaqinlashganda haydovchilar unga yoʻl berishi, zarur boʻlsa uning toʻsiqsiz oʻtishi uchun yoʻlning oʻng tomoniga olib toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6566,
+      "savol": "Qatnov qismiga bevosita tutashgan trotuar chetida unga toʻla yoki qisman chiqish bilan toʻxtab turishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat yengil avtomobillarga va mototsikllarga shu shart bilan ruxsat etiladiki, bu piyodalarning harakatiga halal bermasa.",
+      "izoh": "Qatnov qismiga bevosita tutashgan trotuar chetida unga toʻliq yoki qisman chiqib toʻxtab turish faqat yengil avtomobillar va mototsikllarga, piyodalar harakatiga xalaqit bermasa, ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6567,
+      "savol": "Ishqalanish koeﬃtsientiga shinalarni siyqalanib ketgan protektori qanday taʼsir qiladi?",
+      "rasm": "",
+      "togri_javob": "Ishqalanish koeﬃtsienti kamayadi.",
+      "izoh": "Protektor siyqalanganda shinaning yoʻl bilan ishqalanish koeffitsienti kamayadi — ayniqsa hoʻl yoʻlda tormoz yoʻli uzayadi va sirpanish xavfi oshadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6568,
+      "savol": "Qanday hollarda transport vositasidan foydalanish ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Gazli taʼminlash tizimi bilan jihozlangan avtobus va avtomobil gaz ballonlarining tashqi tomonida koʻrsatilgan texnik koʻrsatgichlar (parametrlar) texnik pasportdagi maʼlumotlarga (koʻrsatkichlarga) mos kelsa oxirgi va rejalashtirilgan tekshirishlarning sanasi boʻlsa.",
+      "izoh": "Gaz ballonlarining tashqi tomonidagi texnik koʻrsatkichlar texnik pasportdagi maʼlumotlarga mos boʻlsa va oxirgi hamda rejalashtirilgan tekshiruv sanalari koʻrsatilgan boʻlsa, bunday transport vositasidan foydalanish ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6569,
+      "savol": "Piyodalar yoʻlning harakat qismining chetidan qanday yurishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Yoʻl harakat qismining chetidan transport vositalarining harakatlanish yoʻnalishiga qarshi.",
+      "izoh": "Qatnov qismi chetidan yurgan piyodalar transport vositalarining harakatlanish yoʻnalishiga qarshi yurishi kerak — shunda ular qarshidan kelayotgan transportni koʻrib turadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6570,
+      "savol": "Bu belgilar nimani bildiradi?",
+      "rasm": "questions/b068_s02_0_asl.jpeg",
+      "togri_javob": "«Nogiron» taniqlik belgisi boʻlgan motokajava va avtomobillar uchun 30 metrli hududdagi toʻxtab turish joyini.",
+      "izoh": "Belgilar «Nogiron» taniqlik belgisi oʻrnatilgan motokajava va avtomobillar uchun 30 metrli hududdagi toʻxtab turish joyini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6571,
+      "savol": "Koʻrsatilgan belgilardan qaysi biri orqaga harakatlanishni taʼqiqlaydi?",
+      "rasm": "questions/b068_s03_0_asl.jpeg",
+      "togri_javob": "1",
+      "izoh": "1-belgi «Avtomagistral»: bu belgi bilan belgilangan yoʻlda orqaga harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6572,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadi:",
+      "rasm": "questions/b068_s04_0_asl.jpeg",
+      "togri_javob": "Qizil chorrahaga chiqadi va koʻkni oʻtkazib yuborish uchun toʻxtaydi; yashil; koʻk, va qizil burilishni tugallaydi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6573,
+      "savol": "Oʻtish navbati qaysi javobda toʻgʻri koʻrsatilgan?",
+      "rasm": "questions/b068_s05_0_asl.jpeg",
+      "togri_javob": "Mototsikl, avtobus, yuk avtomobili.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6574,
+      "savol": "Yengil avtomobilning oldingi oʻrindigʻida bolalarni ushlab turuvchi maxsus qurilma oʻrnatilmagan boʻlsa, ularni tashish qaysi yoshdan ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "12 yosh.",
+      "izoh": "Bolalarni ushlab turuvchi maxsus qurilma boʻlmasa, yengil avtomobilning oldingi oʻrindigʻida 12 yoshdan boshlab tashish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
