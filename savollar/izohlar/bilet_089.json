@@ -1,0 +1,156 @@
+{
+  "bilet": "89-bilet",
+  "slug": "bilet-89",
+  "savollar": [
+    {
+      "question_id": 7244,
+      "savol": "Qaysi rasmda ajratuvchi mintaqa koʻrsatilgan?",
+      "rasm": "questions/b136_s02_0_asl.jpeg",
+      "togri_javob": "Hech qaysi rasmda ajratuvchi mintaqa yoʻq",
+      "izoh": "Ajratuvchi mintaqa — koʻtarilgan yoki maysazor, toʻsiq bilan ajratilgan yoʻl qismi. Ikkala rasmda qatnov qismi faqat chiziqlar bilan ajratilgan, shuning uchun ularda ajratuvchi mintaqa yoʻq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7245,
+      "savol": "Turar joy dahalarida qanday eng katta tezlikda harakatlanishga ruxsat etiladi:",
+      "rasm": "",
+      "togri_javob": "20 km/s",
+      "izoh": "Turar joy dahalarida tezlik 20 km/soatdan oshmasligi kerak — u yerda piyodalar qatnov qismida ham harakatlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7246,
+      "savol": "Ushbu qoʻshimcha axborot yoʻl belgisi:",
+      "rasm": "questions/b136_s04_0_asl.jpeg",
+      "togri_javob": "Obʼyektgacha boʻlgan masofani bildiradi",
+      "izoh": "Strelkali «300 m» qoʻshimcha belgisi koʻrsatilgan obyektgacha (toʻxtab turish joyigacha) boʻlgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7247,
+      "savol": "Ushbu qoʻshimcha axborot yoʻl belgisi bildiradi:",
+      "rasm": "questions/b136_s05_0_asl.jpeg",
+      "togri_javob": "Belgi taʼsiri oraligʻida toʻxtagan transport vositalari majburiy evakuatsiya qilinishini koʻrsatadi",
+      "izoh": "Evakuator tasvirli qoʻshimcha belgi belgi taʼsiri hududida toʻxtagan transport vositalari majburiy evakuatsiya qilinishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7248,
+      "savol": "Rasmda koʻrsatilgan chorraha- ...",
+      "rasm": "questions/b136_s06_0_asl.jpeg",
+      "togri_javob": "Tartibga solinmagan, teng ahamiyatga ega boʻlmagan yoʻllar kesishgan chorraha",
+      "izoh": "Chorrahada «Asosiy yoʻl» va «Yoʻl bering» belgilari oʻrnatilgan, svetofor va tartibga soluvchi yoʻq. Demak, bu tartibga solinmagan, teng ahamiyatli boʻlmagan yoʻllar chorrahasi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7249,
+      "savol": "Yoʻnalishli boʻlmagan transport vositalari “A” xarfi bilan belgilangan oʻng boʻlakda qaysi holatlarda harakatlanishlari mumkin?",
+      "rasm": "questions/b136_s07_0_asl.jpeg",
+      "togri_javob": "Yuqoridagi barcha xolatlarda agarda yoʻnalishli transport vositalariga xalaqit bermasa",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7250,
+      "savol": "Koʻk avtomobil chorrahani kesib oʻtadi:",
+      "rasm": "questions/b136_s08_0_asl.jpeg",
+      "togri_javob": "Oxirgi boʻlib",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7251,
+      "savol": "Ushbu yoʻl belgisi qanday maqsadda qoʻllaniladi?",
+      "rasm": "questions/b137_s01_0_asl.jpeg",
+      "togri_javob": "Majburiy tarzda tezlikni kamaytirish uchun",
+      "izoh": "Sunʼiy notekislik belgisi haydovchini oldinda tezlikni kamaytiruvchi doʻnglik borligidan ogohlantiradi — u yerda tezlikni majburan kamaytirish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7252,
+      "savol": "Yoʻlning xavfli burilishlarida oldingi uzatmali avtomobilning orqa oʻqi yon tomonga sirpanganda siz qanday harakat qilasiz?",
+      "rasm": "",
+      "togri_javob": "Gaz pedalini ohista bosib avtomobilni rul chambaragini toʻgʻrilab avtomobilni sirpanishdan olib chiqib ketasiz",
+      "izoh": "Oldingi gʻildirakli avtomobilda orqa oʻq sirpanganda yoqilgʻi tepkisini ohista bosib, rulni harakat yoʻnalishiga toʻgʻrilash kerak — yetakchi old gʻildiraklar avtomobilni sirpanishdan tortib chiqaradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7253,
+      "savol": "Rasmda koʻrsatilgan chorraha- ...",
+      "rasm": "questions/b137_s03_0_asl.jpeg",
+      "togri_javob": "Tartibga solingan chorraha",
+      "izoh": "Chorrahada harakatni tartibga soluvchi boshqaryapti, shuning uchun u tartibga solingan chorraha hisoblanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7254,
+      "savol": "Qaysi yoʻl belgilari yoʻlning tor qismida haydovchiga ustunlik beradi?",
+      "rasm": "questions/b137_s04_0_asl.jpeg",
+      "togri_javob": "b va d",
+      "izoh": "b-belgi (tik koʻtarilish) — tor joyda koʻtarilayotgan haydovchi ustunlikka ega, chunki pastga tushayotgan unga yoʻl beradi. d-belgi («Roʻparadagi harakatlanishga nisbatan imtiyoz») ham yoʻlning tor qismida ustunlik beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7255,
+      "savol": "Avtomobil haydovchisi qayrilib olmoqchi:",
+      "rasm": "questions/b137_s05_0_asl.jpeg",
+      "togri_javob": "Tramvayga yoʻl berib qayrilib oladi",
+      "izoh": "Tartibga soluvchining ishorasi bilan harakatlanishga ruxsat berilganda chapga burilayotgan yoki qayrilib olayotgan haydovchi tramvayga yoʻl berishi kerak — tramvay relssiz transport vositalariga nisbatan ustunlikka ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7256,
+      "savol": "Qaysi belgi yoʻlning kichik radiusli burilish joyiga yaqinlashayotganlik haqida ogohlantiradi?",
+      "rasm": "questions/b137_s06_0_asl.jpeg",
+      "togri_javob": "e",
+      "izoh": "Bitta egilgan chiziqli e-belgi — «Xavfli burilish»: u kichik radiusli burilishga yaqinlashilayotganidan ogohlantiradi. c-belgi esa bir necha xavfli burilishni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7257,
+      "savol": "Qaysi belgilar axborot-ishora belgilari hisoblanadi?",
+      "rasm": "questions/b137_s07_0_asl.jpeg",
+      "togri_javob": "b va c",
+      "izoh": "«Toʻxtab turish joyi» (b) va foto-video qayd etish (c) belgilari axborot-ishora belgilariga kiradi. a va d-belgilar esa servis belgilari.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7258,
+      "savol": "Yoʻl toʻsigʻiga chizilgan tik chiziq nimani bildiradi?",
+      "rasm": "questions/b137_s08_0_asl.jpeg",
+      "togri_javob": "Yoʻlning kichik radiusli burilish, tik nishablik va boshqa xavfli joylarda yoʻl toʻsiqlarining yon yuzalarini bildiradi",
+      "izoh": "Yoʻl toʻsigʻidagi qora-oq chiziq kichik radiusli burilish, tik nishablik va boshqa xavfli joylardagi yoʻl toʻsiqlarining yon yuzalarini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

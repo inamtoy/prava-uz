@@ -1,0 +1,76 @@
+{
+  "bilet": "91-bilet",
+  "slug": "bilet-91",
+  "savollar": [
+    {
+      "question_id": 7274,
+      "savol": "M toifadagi avtotransport vositalari bu:",
+      "rasm": "",
+      "togri_javob": "Kamida toʻrt gʻildirakka ega boʻlgan va yoʻlovchilarni tashish uchun foydalaniladigan mexanik transport vositalari.",
+      "izoh": "M toifasi — kamida toʻrt gʻildirakli va yoʻlovchilarni tashish uchun foydalaniladigan mexanik transport vositalari.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7275,
+      "savol": "Chapga burilayotgan sariq avtomobil haydovchisi qaysi boʻlaklarni egallashi kerak?",
+      "rasm": "questions/b139_s05_0_asl.jpeg",
+      "togri_javob": "Istalgan boʻlakni",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7276,
+      "savol": "Chorrahani oxirgi boʻlib qaysi transport vositasi kesib oʻtadi?",
+      "rasm": "questions/b139_s06_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7277,
+      "savol": "Haydovchi yoʻlning relssiz transport vositalari harakatlanadigan boʻlaklar sonini belgilaydigan chiziqlar yoki yoʻl belgilari boʻlmasa, boʻlaklar sonini qanday aniqlashi kerak?",
+      "rasm": "",
+      "togri_javob": "Qatnov qismining kengligini, transport vositalari orasidagi zarur yonlama oraliq masofani va ularning gabarit oʻlchamlarini hisobga olgan holda oʻzi aniqlaydi.",
+      "izoh": "Boʻlaklar sonini belgilovchi chiziqlar va belgilar boʻlmasa, haydovchi qatnov qismi kengligi, transport vositalarining oʻlchamlari va ular orasidagi zarur yonlama oraliqni hisobga olib, boʻlaklar sonini oʻzi aniqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7278,
+      "savol": "Qaysi rasmdagi avtomobil haydovchisi yuk tashish qoidasini buzayapti?",
+      "rasm": "questions/b139_s08_0_asl.jpeg",
+      "togri_javob": "A",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7279,
+      "savol": "Ushbu yoʻl belgisi qanday nomlanadi?",
+      "rasm": "questions/b139_s09_0_asl.jpeg",
+      "togri_javob": "Xavfli yuk tashayotgan transport vositasining harakatlanishi taqiqlangan",
+      "izoh": "Toʻq sariq toʻrtburchakli yuk avtomobili tasvirli belgi — «Xavfli yuk tashiyotgan transport vositalarining harakatlanishi taqiqlanadi».",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7280,
+      "savol": "Balandlikda yoʻl chetida toʻsiq mavjud boʻlganda toʻxtagan avtomobilni joyidan gʻildirab ketishini oldini olish uchun oldingi gʻildiraklarni burib qoʻyish usuli qaysi javobda toʻgʻri koʻrsatilgan:",
+      "rasm": "questions/b139_s10_0_asl.jpeg",
+      "togri_javob": "A va С",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

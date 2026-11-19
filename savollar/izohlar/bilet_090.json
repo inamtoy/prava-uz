@@ -1,0 +1,156 @@
+{
+  "bilet": "90-bilet",
+  "slug": "bilet-90",
+  "savollar": [
+    {
+      "question_id": 7259,
+      "savol": "Motosikl haydovchisi qoʻlini yuqoriga koʻtarib nima haqida axborot berayapti?",
+      "rasm": "questions/b137_s09_0_asl.jpeg",
+      "togri_javob": "Toʻxtash haqida",
+      "izoh": "Qoʻlni yuqoriga koʻtarish toʻxtash (tormozlash) haqidagi ogohlantiruvchi ishora hisoblanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7260,
+      "savol": "Avtomobilning antiblokirovka tizimi (ABS) burilishda sirpanish va yonga siljishni oldini oladimi?",
+      "rasm": "",
+      "togri_javob": "Avtomobilning sirpanish va yonga tomonga sirpanishini oldini olmaydi.",
+      "izoh": "ABS faqat tormozlashda gʻildiraklarning blokirovka boʻlishiga yoʻl qoʻymaydi. U burilishda sirpanish va yonga siljishning oldini olmaydi — buning uchun tezlikni oldindan kamaytirish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7261,
+      "savol": "Ushbu yoʻl belgisi:",
+      "rasm": "questions/b138_s01_0_asl.jpeg",
+      "togri_javob": "Oldinda boshqariladigan toʻsuvchi qurilma borligini bildiradi",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7262,
+      "savol": "Chorrahadan oxirgi boʻlib qaysi transport vositasi kesib oʻtadi?",
+      "rasm": "questions/b138_s02_0_asl.jpeg",
+      "togri_javob": "Oq avtomobil, sariq bilan bir vaqtda",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7263,
+      "savol": "Haydovchi oʻzidan oldinda harakatlanayotgan transport vositasi bilan qancha oraliq masofa saqlab harakatlanishi kerak?",
+      "rasm": "",
+      "togri_javob": "Haydovchi oʻzidan oldinda harakatlanayotgan transport vositasi keskin tormoz berganida toʻqnashib ketmaslik kafolatini beradigan darajadagi oraliq masofani saqlashi kerak",
+      "izoh": "Haydovchi oldindagi transport vositasi keskin tormozlaganda u bilan toʻqnashmaslikka kafolat beradigan oraliq masofani saqlashi kerak. Bu masofa tezlik, yoʻl va ob-havo sharoitiga bogʻliq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7264,
+      "savol": "Qaysi javobda orqaga harakatlanish taqiqlangan joylar koʻrsatilgan?",
+      "rasm": "",
+      "togri_javob": "Barcha javoblar toʻgʻri",
+      "izoh": "Orqaga harakatlanish chorrahalarda, piyodalar oʻtish joylarida va tonnellarda taqiqlanadi — barcha javoblar toʻgʻri.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7265,
+      "savol": "Chap tomondagi yondosh hududdan foydalanib qayrilib olishning koʻrsatilgan qaysi usuli harakat xavfsizligini taʼminlaydi?",
+      "rasm": "questions/b138_s05_0_asl.jpeg",
+      "togri_javob": "Faqat oʻng tomondagi rasmda",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7266,
+      "savol": "Yengil avtomobil burilishda agʻdarilib ketishga qarshi turgʻunroq:",
+      "rasm": "",
+      "togri_javob": "Yoʻlovchisiz va yuksiz",
+      "izoh": "Yuksiz va yoʻlovchilarsiz yengil avtomobilning ogʻirlik markazi eng past boʻladi, shuning uchun burilishda u agʻdarilishga turgʻunroq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7267,
+      "savol": "Shatakka olingan avtobusda odam tashishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Taqiqlanadi",
+      "izoh": "Shatakka olinayotgan avtobusda odam tashish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7268,
+      "savol": "Piyodalar toʻxtab turgan avtobus va trolleybusning qaysi tomonidan yoʻlni kesib oʻtishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Orqa tomonidan",
+      "izoh": "Piyodalar toʻxtab turgan avtobus yoki trolleybusni orqa tomonidan aylanib oʻtishi kerak — oldidan chiqqan piyodani qoʻshni boʻlakdagi haydovchi koʻrmay qolishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7269,
+      "savol": "Qaysi transport vositasiga harakatlanish taqiqlangan?",
+      "rasm": "questions/b138_s09_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobiliga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7270,
+      "savol": "108 km/s tezlikda harakatlanayotgan transport vositasi 1 sekundda qancha masofani bosib oʻtadi?",
+      "rasm": "",
+      "togri_javob": "30 м",
+      "izoh": "108 km/soat = 108 000 metr / 3600 sekund = 30 metr/sekund. Demak, transport vositasi 1 sekundda 30 metr yoʻl bosadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7271,
+      "savol": "Oʻng tomondagi yondosh hududdan foydalanib qayrilib olishning koʻrsatilgan qaysi usuli harakat xavfsizligini taʼminlaydi.",
+      "rasm": "questions/b139_s01_0_asl.jpeg",
+      "togri_javob": "Faqat chap tomondagi suratda",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7272,
+      "savol": "Yoʻlning qatnov qismi:",
+      "rasm": "",
+      "togri_javob": "Yoʻlning relssiz transport vositalari harakati uchun moʻljallangan qismi",
+      "izoh": "Qatnov qismi — yoʻlning relssiz transport vositalari harakati uchun moʻljallangan qismi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7273,
+      "savol": "Koʻrsatilgan qaysi belgilar chapga burilishni taqiqlaydi?",
+      "rasm": "questions/b139_s03_0_asl.jpeg",
+      "togri_javob": "a va c",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}
