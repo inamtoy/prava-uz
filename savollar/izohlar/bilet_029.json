@@ -1,0 +1,156 @@
+{
+  "bilet": "29-bilet",
+  "slug": "bilet-29",
+  "savollar": [
+    {
+      "question_id": 6320,
+      "savol": "Qaysi belgi kesishadigan yoʻl boʻylab harakat qilayotgan transport vositalariga yoʻl berish majburiyatini yuklaydi?",
+      "rasm": "questions/b043_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi — «Yoʻl bering» belgisi: u haydovchiga kesishadigan yoʻl boʻylab harakatlanayotgan transport vositalariga yoʻl berish majburiyatini yuklaydi. 3-belgi esa roʻparadan kelayotganlarga yoʻl berishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6321,
+      "savol": "Transport vositasining haydovchisi oldida «Toʻxtash chizigʻi» chizilgan va svetoforning yashil yoritgichi yoniq boʻlgan chorrahaga yaqinlashayotib nima qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Toʻxtamasdan chorraha orqali harakatni davom ettirishi.",
+      "izoh": "Svetoforning yashil ishorasi harakatlanishga ruxsat beradi, shuning uchun «Toʻxtash chizigʻi»da toʻxtash shart emas — haydovchi chorrahadan toʻxtamasdan oʻtadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6322,
+      "savol": "Qaysi transport vositasi haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b043_s04_0_asl.jpeg",
+      "togri_javob": "Mototsikl haydovchisi.",
+      "izoh": "Mototsikl haydovchisi oldida «Yoʻl bering» belgisi va «ajdar tishlari» chizigʻi bor, avtomobil esa aylanma harakatlanish joyida asosiy yoʻlda harakatlanmoqda. Shuning uchun mototsikl haydovchisi yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6323,
+      "savol": "Bunday vaziyatda haydovchi nima qilishi kerak?",
+      "rasm": "questions/b043_s05_0_asl.jpeg",
+      "togri_javob": "Qatnov qismidan oʻtayotgan bolalarga yoʻl berishi.",
+      "izoh": "Bolalarni tashiyotgan avtobus yonida bolalar qatnov qismini kesib oʻtmoqda. Haydovchi ularga yoʻl berishi shart — bolalar piyodalar oʻtish joyidan oʻtmayotgan boʻlsa ham.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6324,
+      "savol": "Qaysi transport vositasining haydovchisi aylanma harakatli kesishmaga toʻgʻri kiradi?",
+      "rasm": "questions/b043_s06_0_asl.jpeg",
+      "togri_javob": "Ikkala haydovchi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Aylanma harakatlanish joyiga ikki boʻlakdan kirish qoidasini tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6325,
+      "savol": "Avtobus haydovchisiga yoʻlovchilarni tushirish uchun toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b043_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtobusning toʻxtash taqiqi sababi (yoʻl kengligi va joylashuv) rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6326,
+      "savol": "Siz quvib oʻtish uchun chiqdingiz va bexosdan roʻparadan kelayotgan avtomobilni koʻrib qoldingiz. Agar Siz quvib oʻtishni tugallay olishingizga ishonchingiz boʻlmasa, Siz:",
+      "rasm": "",
+      "togri_javob": "Tezlikni kamaytirishingiz va avval egallagan boʻlagingizga qaytishingiz kerak.",
+      "izoh": "Quvib oʻtishni xavfsiz tugatishga ishonch boʻlmasa, tezlikni kamaytirib, avval egallagan boʻlakka qaytish kerak. Tezlikni oshirib quvib oʻtishni davom ettirish qarshi kelayotgan avtomobil bilan toʻqnashuvga olib kelishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6327,
+      "savol": "Manyovr vaqtida haydovchi har doim ogohlantiruvchi ishora berishi kerakmi?",
+      "rasm": "",
+      "togri_javob": "Faqat u harakatning boshqa ishtirokchilarini chalgʻitmagan hollarda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit gʻalati ifodalangan («faqat chalgʻitmagan hollarda») — qoidadagi aniq matnni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6328,
+      "savol": "Ishlamayotgan boshqaruv ruli bilan toʻxtab turish yoki taʼmirlash joyiga borishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Boshqaruv ruli ishlamasa, transport vositasini xavfsiz boshqarib boʻlmaydi. Shuning uchun u bilan toʻxtab turish yoki taʼmirlash joyiga mustaqil harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6329,
+      "savol": "Aholi punktidan tashqarida yuk avtomobil yukxonasida odamlarni tashishda qanday eng yuqori tezlikda harakatlanishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "60 km/s.",
+      "izoh": "Yuk avtomobilining kuzovida odam tashiyotganda 60 km/soatdan ortiq tezlikda harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6330,
+      "savol": "Bu belgiga koʻra qaysi yuk avtomobili harakatni davom ettirishi mumkin?",
+      "rasm": "questions/b044_s02_0_asl.jpeg",
+      "togri_javob": "Ruxsat etilgan tola vazni 8 tonnadan ortiq boʻlmagan avtomobil.",
+      "izoh": "Belgidagi «8 t» ruxsat etilgan toʻla vaznni bildiradi: ruxsat etilgan toʻla vazni 8 tonnadan ortiq boʻlgan yuk avtomobillarining harakatlanishi taqiqlanadi. Toʻla vazni 8 tonnadan oshmaydigan avtomobil harakatni davom ettirishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6331,
+      "savol": "Bu yotiq chiziq nimani bildiradi?",
+      "rasm": "questions/b044_s03_0_asl.jpeg",
+      "togri_javob": "Velosiped yoʻlkasi qatnov qismini kesib oʻtadigan joyni.",
+      "izoh": "Kvadratchalardan iborat bu chiziq velosiped yoʻlkasi qatnov qismini kesib oʻtadigan joyni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6332,
+      "savol": "Ruxsat etilgan toʻla vazni 3,5 tonnadan kam boʻlgan yuk avtomobili haydovchisiga avtomagistrallarda nima taʼqiqlangan?",
+      "rasm": "",
+      "togri_javob": "Orqa bilan harakatlanish.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Izoh yozilmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6333,
+      "savol": "Yoʻlovchilarni tushirish uchun bu belgi oʻrnatilgan boʻlakda toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b044_s05_0_asl.jpeg",
+      "togri_javob": "Agar boʻlak qatnov qismining oʻng chetida joylashgan va u yotiq uzluksiz chizigʻi bilan qatnov qismidan ajratilmagan boʻlsa ruxsat etiladi.",
+      "izoh": "Yoʻnalishli transport vositalari boʻlagi qatnov qismining oʻng chetida joylashgan va uzluksiz chiziq bilan ajratilmagan boʻlsa, boshqa transport vositalari yoʻlovchilarni tushirish uchun unda toʻxtashi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6334,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b044_s06_0_asl.jpeg",
+      "togri_javob": "Yuktashuvchi avtomobil haydovchisi.",
+      "izoh": "Tik nishab belgisi bilan belgilangan yoʻl qismida toʻsiq boʻlsa, pastga tushayotgan transport vositasi haydovchisi yuqoriga koʻtarilayotganga yoʻl berishi kerak. Shuning uchun yuk tashuvchi avtomobil haydovchisi yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

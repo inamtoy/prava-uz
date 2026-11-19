@@ -1,0 +1,156 @@
+{
+  "bilet": "31-bilet",
+  "slug": "bilet-31",
+  "savollar": [
+    {
+      "question_id": 6350,
+      "savol": "Yoʻnaltirgichlar bilan koʻrsatilgan qaysi yoʻnalishlarda harakat ruxsat etilgan?",
+      "rasm": "questions/b046_s02_0_asl.jpeg",
+      "togri_javob": "A.",
+      "izoh": "«Qayrilib olish joyi» belgisi shu joyda qayrilib olishga ruxsat beradi, chapga burilishni esa taqiqlaydi. Shuning uchun faqat A yoʻnalishida (qayrilib olish) harakatlanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6351,
+      "savol": "Bu yoʻl chizigʻi nimani bildiradi?",
+      "rasm": "questions/b046_s03_0_asl.jpeg",
+      "togri_javob": "Faqat belgilangan yoʻnalishdagi transport vositalari harakatlanishi uchun moʻljallangan boʻlakni bildiradi.",
+      "izoh": "Qatnov qismidagi «A» harfi faqat yoʻnalishli transport vositalari harakatlanishi uchun ajratilgan boʻlakni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6352,
+      "savol": "Chorrahani ikkinchi boʻlib kim kesib oʻtadi?",
+      "rasm": "questions/b046_s04_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6353,
+      "savol": "Mototsiklning haydovchisi qanday holda chapga toʻgʻri burildi?",
+      "rasm": "questions/b046_s05_0_asl.jpeg",
+      "togri_javob": "Toʻxtadi va tartibga soluvchining ruxsat etuvchi ishorasida toʻxtamay chapga burildi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining ishoralarini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6354,
+      "savol": "Koʻk avtomobilga qaysi yoʻnalishda harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b046_s06_0_asl.jpeg",
+      "togri_javob": "Chap va orqa yoʻnalishda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Koʻk avtomobil turgan boʻlakning harakat yoʻnalishlarini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6355,
+      "savol": "Qayta tizilish oldidan ogohlantiruvchi ishora qachon berilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Manyovrni bajarishni boshlamasidan avvalroq.",
+      "izoh": "Qayta tizilish haqidagi ogohlantiruvchi ishora manyovrni boshlashdan avvalroq berilishi kerak, shunda boshqa haydovchilar uni oldindan koʻrib, harakatini moslashtira oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6356,
+      "savol": "Burilish vaqtida qatnov qismining kesishmasidan chiqishda transport vositasi qayerda boʻlmasligi kerak?",
+      "rasm": "",
+      "togri_javob": "Qarama-qarshi harakat tomonida.",
+      "izoh": "Burilishdan keyin qatnov qismlari kesishmasidan chiqishda transport vositasi qarama-qarshi harakat tomoniga chiqib qolmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6357,
+      "savol": "Yoʻlning chapga burilishiga yaqinlashganingizda, u oʻylaganingizdan koʻra ancha keskinroq burilish boʻlib chiqsa, Siz:",
+      "rasm": "",
+      "togri_javob": "Harakat tezligini kamaytirishingiz kerak.",
+      "izoh": "Burilish kutilganidan keskinroq boʻlsa, tezlikni kamaytirish kerak. Tezlikni oshirish yoki burilishni katta tezlikda oʻtish avtomobilni yoʻldan chiqarib yuborishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6358,
+      "savol": "Furgon yukxonasida odamlarni tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Agar ularning tuzilishi odamlarni tashishga moslashtirilgan boʻlsa, ruxsat etiladi.",
+      "izoh": "Furgon yukxonasida odamlarni faqat uning tuzilishi odam tashishga moslashtirilgan boʻlsa tashish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6359,
+      "savol": "Harakatni boshlashdan avval shaharlararo avtobus haydovchilari nima qilishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Yoʻlovchilarga halokat boʻlganda chiqish joylaridan foydalanish haqida tushuntirish.",
+      "izoh": "Shaharlararo avtobus haydovchisi harakatni boshlashdan oldin yoʻlovchilarga falokat paytida chiqish joylaridan qanday foydalanishni tushuntirishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6360,
+      "savol": "Chorrahada harakatlanishning majburiy yoʻnalishini qaysi belgi koʻrsatadi?",
+      "rasm": "questions/b047_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi (koʻk doira ichida chapga strelka) chorrahada majburiy harakat yoʻnalishini — faqat chapga harakatlanishni koʻrsatadi. 5-belgi esa toʻsiqni chetlab oʻtish tomonini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6361,
+      "savol": "Bu yoʻl chizigʻi nimani bildiradi?",
+      "rasm": "questions/b047_s03_0_asl.jpeg",
+      "togri_javob": "Yoʻl inshootlarining harakatdagi transport vositalariga xavf tugʻdiradigan tik boʻlaklarini.",
+      "izoh": "Tik qora va oq yoʻl-yoʻl chiziqlar yoʻl inshootlarining (koʻprik tayanchlari va shunga oʻxshash) harakatdagi transport vositalariga xavf tugʻdiradigan tik qismlarini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6362,
+      "savol": "Transport vositalari haydovchilari avtobus yoki trolleybusga yol berishlari kerak:",
+      "rasm": "",
+      "togri_javob": "Aholi punktlarida, agar u belgilangan toʻxtash joyidan (bekatlardan) harakatni boshlasa.",
+      "izoh": "Aholi punktlarida belgilangan toʻxtash joyidan (bekatdan) harakatni boshlayotgan avtobus yoki trolleybusga boshqa transport vositalari haydovchilari yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6363,
+      "savol": "Harakatlanishga ruxsat etilgan barcha transport vositalari qaysi javobda toʻgʻri koʻrsatilgan?",
+      "rasm": "questions/b047_s05_0_asl.jpeg",
+      "togri_javob": "Avtomobillar va mototsikl.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6364,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b047_s06_0_asl.jpeg",
+      "togri_javob": "Avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor ishoralari va yoʻnalishlarni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

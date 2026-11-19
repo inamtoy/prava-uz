@@ -1,0 +1,156 @@
+{
+  "bilet": "27-bilet",
+  "slug": "bilet-27",
+  "savollar": [
+    {
+      "question_id": 6290,
+      "savol": "Qaysi belgi roʻparadan harakatlanayotgan transport vositalariga yoʻl berishni talab qiladi?",
+      "rasm": "questions/b040_s02_0_asl.jpeg",
+      "togri_javob": "2.",
+      "izoh": "2-belgi — «Qarama-qarshi harakatlanishning ustunligi»: u yoʻlning tor qismida roʻparadan harakatlanayotgan transport vositalariga yoʻl berishni talab qiladi. 5-belgi esa aksincha, roʻparadan kelayotganlarga nisbatan ustunlik beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6291,
+      "savol": "Yotiq chiziqlarning sidirgʻa chizigʻini bosib oʻtishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat shunday holda ruxsat etiladiki, agar chiziq yoʻl qatnov qismining chetlarini bildirsa.",
+      "izoh": "Sidirgʻa chiziqni bosib oʻtish taqiqlanadi. Faqat qatnov qismining chetini bildiruvchi sidirgʻa chiziqni, masalan yoʻl yoqasida toʻxtash uchun, kesib oʻtish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6292,
+      "savol": "Koʻrsatilgan vaziyatda haydovchi qanday yoʻl tutishi kerak?",
+      "rasm": "questions/b040_s04_0_asl.jpeg",
+      "togri_javob": "Piyodalarga mazkur yoʻnalishning qatnov qismidan butunlay oʻtib olishlariga imkon berishi.",
+      "izoh": "Burilayotgan haydovchi u burilayotgan yoʻlning qatnov qismini kesib oʻtayotgan piyodalarga yoʻl berishi shart. Asosiy yoʻlda harakatlanish bu majburiyatdan ozod qilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6293,
+      "savol": "Qizil avtomobil chorrahani nechinchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b040_s05_0_asl.jpeg",
+      "togri_javob": "Oxirgi boʻlib.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi svetofor ishorasi va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6294,
+      "savol": "Agar piyodalar oʻtish joyida tirbandlik vujudga kelib, haydovchini piyodalar oʻtish joyida toʻxtashga majbur qilsa, haydovchi majbur:",
+      "rasm": "",
+      "togri_javob": "Toʻxtashga va piyodalar oʻtish joyiga oʻtmaslikka, chunki bu piyodalarning harakati uchun toʻsqinlik qiladi.",
+      "izoh": "Piyodalar oʻtish joyidan keyin tirbandlik boʻlib, haydovchi oʻtish joyida toʻxtashga majbur boʻlsa, u oʻtish joyiga kirmasligi kerak — aks holda piyodalarning yoʻlini toʻsib qoʻyadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6295,
+      "savol": "Bu joyda quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b040_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Quvib oʻtish taqiqining sababi (koʻtarilish oxiri yoki boshqa) rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6296,
+      "savol": "Navbatchining haydovchiga qaratilgan qaysi holati temiryoʻl kesishmasi orqali harakatlanishni taʼqiqlovchi ishora hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "Koʻkragini yoki orqasini oʻgirib, tayoqchani (qizil bayroqni) boshidan yuqori koʻtarib turishi yoki qoʻllarini yoniga uzatib turishi.",
+      "izoh": "Temir yoʻl kesishmasi navbatchisi haydovchiga koʻkragi yoki orqasi bilan turib, tayoqchani (qizil bayroqni) boshidan yuqori koʻtarsa yoki qoʻllarini yon tomonga uzatsa — bu harakatni taqiqlovchi ishora.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6297,
+      "savol": "Chuqur kechuvdan oʻtgach, haydovchi nima qilishi shart?",
+      "rasm": "",
+      "togri_javob": "Qisqa masofa oraligʻida tezlanish olib tormoz tepkisini bir necha bor bosib tormoz mexanizmi friksion ust qoplamalarini quritishi.",
+      "izoh": "Chuqur kechuvdan oʻtgandan keyin tormoz qoplamalari hoʻl boʻlib, yomon ishlaydi. Shuning uchun qisqa masofada tormoz tepkisini bir necha bor bosib, ularni quritish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6298,
+      "savol": "Transport vositasi ushbu taniqlik belgisi bilan belgilanadi:",
+      "rasm": "questions/b040_s10_0_asl.jpeg",
+      "togri_javob": "Xavfli yuklar tashiyotgan.",
+      "izoh": "Toʻq sariq rangli taniqlik belgisi transport vositasi xavfli yuk tashiyotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6299,
+      "savol": "Qaysi avtomobil toʻxtash qoidasini buzdi?",
+      "rasm": "questions/b041_s01_0_asl.jpeg",
+      "togri_javob": "Har ikkisi buzdi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi ostidagi qoʻshimcha belgi va avtomobillarning toʻxtagan joyini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6300,
+      "savol": "Koʻrsatilgan belgilardan qay biri ilgari kiritilgan barcha cheklashlarni bekor qiladi?",
+      "rasm": "questions/b041_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-belgi — «Barcha cheklashlarning amal qilish hududi oxiri»: u ilgari kiritilgan barcha cheklashlarni birdaniga bekor qiladi. 1, 2 va 3-belgilar faqat bittadan cheklashni bekor qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6301,
+      "savol": "Haydovchi qaysi rasmda qoidalar talablarini buzmay turib manyovr qildi?",
+      "rasm": "questions/b041_s03_0_asl.jpeg",
+      "togri_javob": "1",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi belgilar va manyovrlarni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6302,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b041_s04_0_asl.jpeg",
+      "togri_javob": "Tramvay, avtomobil va avtobus bir vaqtda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6303,
+      "savol": "Agar yoʻl boʻlagi sidirgʻa chiziq bilan ajratilib, belgi bilan belgilangan boʻlsa, avtobus haydovchisining boʻlak boʻylab harakatlanishiga ruxsat etiladimi?",
+      "rasm": "questions/b041_s05_0_asl.jpeg",
+      "togri_javob": "Agar avtobus belgilangan yoʻnalish boʻyicha harakatlanayotgan boʻlsa ruxsat etiladi.",
+      "izoh": "Bu belgi yoʻnalishli transport vositalari uchun ajratilgan boʻlakni bildiradi. Bunday boʻlakda avtobus faqat belgilangan yoʻnalish boʻyicha harakatlanayotgan boʻlsa harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6304,
+      "savol": "Koʻkrak qafasi shikastlangan yaradorni kerakli, joyga qanday eltish kerak?",
+      "rasm": "",
+      "togri_javob": "Yaralangan yoni bilan yotgan yoki yarim oʻtirgan holda.",
+      "izoh": "Koʻkrak qafasi shikastlangan jabrlanuvchini yarim oʻtirgan holatda yoki yaralangan yoni bilan yotqizib tashish kerak. Bunda sogʻ tomondagi oʻpka erkin nafas oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

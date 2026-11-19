@@ -1,0 +1,156 @@
+{
+  "bilet": "28-bilet",
+  "slug": "bilet-28",
+  "savollar": [
+    {
+      "question_id": 6305,
+      "savol": "Yoʻl belgilari va yoʻl chiziqlari boʻlmagan yoʻllarda, relssiz transport vositalarining harakatlanishi uchun boʻlaklar soni qanday aniqlanadi?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan usullar bilan.",
+      "izoh": "Boʻlaklar soni yoʻl chiziqlari, «Boʻlaklar boʻyicha harakatlanish yoʻnalishi» belgilari bilan, ular boʻlmasa haydovchining oʻzi tomonidan qatnov qismi kengligi, transport vositalari oʻlchamlari va zarur yon oraliqni hisobga olib aniqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6306,
+      "savol": "Avtopoezdni shu vaziyatda, agar u 40 km/soatdan kam tezlik bilan harakat qilayotgan boʻlsa, quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b041_s08_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Belgi oldinda teng ahamiyatli yoʻllar chorrahasi borligini bildiradi. Tartibga solinmagan chorrahada asosiy boʻlmagan yoʻlda quvib oʻtish taqiqlanadi — quvib oʻtilayotgan avtopoezdning tezligidan qatʼi nazar.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6307,
+      "savol": "Ikki tomonlama harakatli yoʻlda uchta boʻlak bor, Siz oʻnga burilishingiz zarur. Siz ushbu manyovrni qaysi boʻlakdan amalga oshirasiz?",
+      "rasm": "",
+      "togri_javob": "Oʻng boʻlakdan.",
+      "izoh": "Oʻngga burilish qatnov qismining chetki oʻng boʻlagidan bajariladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6308,
+      "savol": "Qish vaqtida orqa yetakchi koʻprikli avtomobilda chuqur boʻlib qolgan gʻildirak izidan qanday chiqish mumkin?",
+      "rasm": "",
+      "togri_javob": "Uncha katta boʻlmagan tezlikda birinchi galda boshqaruv rulini chiqish tomonning qarama qarshi tomoniga, keyin esa chiqish tomoniga shiddat bilan burish kerak.",
+      "izoh": "Chuqur izdan chiqish uchun kichik tezlikda avval rulni chiqish tomoniga qarama-qarshi tomonga, keyin esa chiqish tomoniga keskin burish kerak — shunda gʻildiraklar iz chetiga chiqib oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6309,
+      "savol": "Kunning qorongʻi vaqtida va yetarlicha koʻrinmaydigan sharoitlarda yoʻlda qoldirilgan yoʻl mashinalari, qurilish materiallari, qurilma va hokazolar bildirilishi kerak:",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan alomatlar bilan.",
+      "izoh": "Qorongʻida va yetarli koʻrinmaydigan sharoitda yoʻlda qoldirilgan mashinalar, materiallar va qurilmalar barcha sanab oʻtilgan vositalar bilan: yoʻl belgilari, yoʻnaltiruvchi va oʻrovchi moslamalar, qizil yoki sariq chiroqlar bilan belgilanishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6310,
+      "savol": "Haydovchi qanday holda bu belgining talablarini toʻgʻri bajaradi?",
+      "rasm": "questions/b042_s02_0_asl.jpeg",
+      "togri_javob": "Kesishadigan yoʻl boʻylab harakat qilayotgan transport vositalariga yoʻl beradi.",
+      "izoh": "«Yoʻl bering» belgisi kesishadigan yoʻl boʻylab harakatlanayotgan barcha transport vositalariga — nafaqat mexanik, balki velosiped va boshqalarga ham — yoʻl berishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6311,
+      "savol": "Oq chiziq bilan belgilangan orolchaga kirishga ruxsat etiladimi?",
+      "rasm": "questions/b042_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Oq chiziq bilan belgilangan yoʻnaltiruvchi orolchaga kirish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6312,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b042_s04_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Yuk avtomobili va yengil avtomobil yoʻnalishlarini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6313,
+      "savol": "Harakatlanish kimga ruxsat etilgan?",
+      "rasm": "questions/b042_s05_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili va mototsiklga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Javob tartibga soluvchining holatini rasmdan aniq oʻqishga bogʻliq — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6314,
+      "savol": "Qaysi transport vositasining haydovchisi qayrilishni toʻgʻri bajarmoqda?",
+      "rasm": "questions/b042_s06_0_asl.jpeg",
+      "togri_javob": "Har ikki haydovchi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qayrilib olish manyovrlarini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6315,
+      "savol": "Avtomobil haydovchisi uni boshqa transport vositalari quvib oʻtayotganda qanday harakat qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Harakat tezligini oshirish yoki boshqa hatti-harakatlar bilan quvib oʻtishga toʻsqinlik qilmasligi.",
+      "izoh": "Quvib oʻtilayotgan haydovchi tezlikni oshirish yoki boshqa harakatlar bilan quvib oʻtishga toʻsqinlik qilmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6316,
+      "savol": "Qoʻl bilan beriladigan ogohlantiruvchi ishora Qoidalarga muvofiq qachon tugallanishi mumkin?",
+      "rasm": "",
+      "togri_javob": "Manyovrni bevosita bajarishdan oldin.",
+      "izoh": "Qoʻl bilan beriladigan ogohlantiruvchi ishora manyovrni bevosita bajarishdan oldin tugatilishi mumkin — haydovchi manyovr paytida rulni ikki qoʻllab boshqarishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6317,
+      "savol": "Jarohatdan xushsizlanganda birinchi tibbiy yordamni qanday koʻrsatish kerak?",
+      "rasm": "",
+      "togri_javob": "Mutloq tinch qoʻyish. Boshni tushirish, oyoqlarni koʻtarish, badanni isitish. Qaynoq ichimlik (choy va shu kabilar) berish. Bogʻlangan jgutni shifokorsiz yechmaslik va boʻshatmaslik.",
+      "izoh": "Jarohatdan xushsizlanganda (shokda) jabrlanuvchini mutlaq tinch qoʻyish, boshini pastroq, oyoqlarini balandroq qilish, badanini isitish va qaynoq ichimlik berish kerak. Bogʻlangan jgutni shifokorsiz yechish yoki boʻshatish mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6318,
+      "savol": "Koʻrsatilgan belgilardan qaysi biri avtopoezdni bildirish uchun oʻrnatiladi?",
+      "rasm": "questions/b042_s10_0_asl.jpeg",
+      "togri_javob": "Har ikki belgi.",
+      "izoh": "Avtopoezd taniqlik belgisi sifatida kabina tomida sariq uchburchak yoki uchta toʻq sariq chiroq oʻrnatiladi — ikkala variant ham toʻgʻri.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6319,
+      "savol": "Bu joyda quvib oʻtishga ruxsat etilganmi?",
+      "rasm": "questions/b043_s01_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Temir yoʻl kesishmalarida va ularga 100 metrdan yaqinda quvib oʻtish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "bilet": "26-bilet",
+  "slug": "bilet-26",
+  "savollar": [
+    {
+      "question_id": 6275,
+      "savol": "Shunday yoʻl belgisi bilan belgilangan yoʻl qismlarida shaharlararo boʻlmagan avtobuslarning qanday yuqori tezlik bilan harakatlanishiga ruxsat etiladi?",
+      "rasm": "questions/b038_s07_0_asl.jpeg",
+      "togri_javob": "80 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Shaharlararo boʻlmagan avtobus uchun ruxsat etilgan tezlik (80 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6276,
+      "savol": "Qaysi transport vositalarining haydovchilari toʻxtab turish qoidasini buzdilar?",
+      "rasm": "questions/b038_s08_0_asl.jpeg",
+      "togri_javob": "Har ikki haydovchi.",
+      "izoh": "Yengil avtomobil «Toʻxtab turish taqiqlanadi» belgisi amal qiladigan joyda turibdi. Bir tomonlama harakatli yoʻlning chap tomonida esa ruxsat etilgan toʻla vazni 3,5 tonnadan ortiq yuk avtomobili faqat yuk ortish yoki tushirish uchun toʻxtashi mumkin, toʻxtab turishi mumkin emas. Shuning uchun ikkala haydovchi qoidani buzgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6277,
+      "savol": "Sirpanchiq yoʻlda harakatlanayotganda karbyuratorning drossel zaslonkasini birdaniga ochish xavfi nimadan iborat?",
+      "rasm": "",
+      "togri_javob": "Avtomobilning yonga sirpanishi vujudga kelishi mumkin.",
+      "izoh": "Sirpanchiq yoʻlda drossel zaslonkasini birdaniga ochish yetakchi gʻildiraklarning shataksirab aylanishiga olib keladi. Ilashuv yoʻqolgani uchun avtomobil yonga sirpanib ketishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6278,
+      "savol": "Qaysi hollarda avtomobillar ushbu taniqlik belgilari bilan belgilanadi?",
+      "rasm": "questions/b038_s10_0_asl.jpeg",
+      "togri_javob": "Kar-soqov yoki kar haydovchilar boshqarayotganda.",
+      "izoh": "Sariq doira ichidagi uchta qora nuqtali taniqlik belgisi transport vositasini kar-soqov yoki kar haydovchi boshqarayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6279,
+      "savol": "Piyodalar oʻtish joyidan tashqarida yoʻlning qatnov qismidan ajratuvchi boʻlak boʻlganda piyodalarning oʻtishlariga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Izoh yozilmadi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6280,
+      "savol": "Ushbu belgi quyida sanab oʻtilgan yuk avtomobillarining qaysilariga harakatni davom ettirishni taʼqiqlamaydi?",
+      "rasm": "questions/b039_s02_0_asl.jpeg",
+      "togri_javob": "Yukxonasiga qiya oq chiziq tortilgan yuk avtomobillariga.",
+      "izoh": "«Yuk avtomobillarining harakatlanishi taqiqlanadi» belgisi yukxonasining yon tomoniga qiya oq chiziq tortilgan yuk avtomobillariga taalluqli emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6281,
+      "savol": "Reversiv svetoforlar boʻlmaganda yoki ular oʻchirib qoʻyilganda ikkitali uzuq-uzuq chiziqni kesib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b039_s03_0_asl.jpeg",
+      "togri_javob": "Agar u haydovchining oʻng tomonida boʻlsa, ruxsat etiladi.",
+      "izoh": "Reversiv svetoforlar boʻlmasa yoki oʻchirilgan boʻlsa, reversiv boʻlak chegarasini bildiruvchi qoʻsh uzuq chiziqni u haydovchining oʻng tomonida boʻlgandagina kesib oʻtish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6282,
+      "savol": "Qaysi transport vositasi haydovchisi birinchi boʻlib harakatlanish huquqiga ega?",
+      "rasm": "questions/b039_s04_0_asl.jpeg",
+      "togri_javob": "Velosiped haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadagi belgilar va yoʻnalishlarni rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6283,
+      "savol": "Svetoforning bu ishorasida qaysi transport vositasining harakatlanishiga ruxsat etilgan?",
+      "rasm": "questions/b039_s05_0_asl.jpeg",
+      "togri_javob": "Sariq va qizil avtomobillarga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor ishorasini rasmdan aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6284,
+      "savol": "Aholi punktlarida avtobus yoki trolleybus haydovchisi harakatni bekatdan boshlaydi?",
+      "rasm": "",
+      "togri_javob": "Unga yoʻl berilganligiga ishonch hosil qilgach harakatni boshlashi kerak.",
+      "izoh": "Aholi punktida bekatdan harakatni boshlayotgan avtobus yoki trolleybusga boshqa haydovchilar yoʻl berishi kerak. Lekin avtobus haydovchisi harakatni faqat unga yoʻl berilganiga ishonch hosil qilgandan keyin boshlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6285,
+      "savol": "Qaysi transport vositasi haydovchisi toʻxtab turish qoidasini buzdi?",
+      "rasm": "questions/b039_s07_0_asl.jpeg",
+      "togri_javob": "Har ikki haydovchi buzdi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Har bir avtomobilning belgiga nisbatan joylashuvini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6286,
+      "savol": "Koʻrsatilgan vaziyatda qizil avtomobil haydovchisi qanday yoʻl tutishi kerak?",
+      "rasm": "questions/b039_s08_0_asl.jpeg",
+      "togri_javob": "Hovlidan chiqishda piyodani va transport vositalarini oʻtkazib yuborishi.",
+      "izoh": "Hovlidan chiqayotgan haydovchi piyodalarga va yoʻlda harakatlanayotgan transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6287,
+      "savol": "Sirpanchiq yoʻlda tormozlardan qanday foydalanish kerak?",
+      "rasm": "",
+      "togri_javob": "Ulagichni ajratmay turib sekin tormoz berishi va boshqaruv rulining keskin burishga yoʻl qoʻymasligi.",
+      "izoh": "Sirpanchiq yoʻlda ulagichni ajratmasdan, sekin va bir tekis tormozlash kerak, rulni esa keskin burmaslik kerak. Keskin harakatlar gʻildiraklarning ilashuvini yoʻqotib, avtomobilni sirpantirib yuboradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6288,
+      "savol": "Transport vositalari ushbu taniqlik belgilari bilan belgilanadi:",
+      "rasm": "questions/b039_s10_0_asl.jpeg",
+      "togri_javob": "Nogiron boshqarayotgan.",
+      "izoh": "Sariq kvadrat ichidagi nogironlar aravachasi tasviri «Nogiron» taniqlik belgisi boʻlib, transport vositasini nogiron boshqarayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6289,
+      "savol": "Koʻk avtomobil chorrahani nechinchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b040_s01_0_asl.jpeg",
+      "togri_javob": "Oxirgi boʻlib.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "bilet": "30-bilet",
+  "slug": "bilet-30",
+  "savollar": [
+    {
+      "question_id": 6335,
+      "savol": "Chorrahani kesib oʻtish navbatini koʻrsating:",
+      "rasm": "questions/b044_s07_0_asl.jpeg",
+      "togri_javob": "Qizil ayni vaqtda yashil bilan, koʻk.",
+      "izoh": "Koʻk avtomobil oldida «Toʻxtamasdan harakatlanish taqiqlanadi» belgisi bor, shuning uchun u asosiy yoʻldagi transport vositalarini oʻtkazib yuborishi kerak. Qizil va yashil avtomobillar asosiy yoʻlda qarama-qarshi yoʻnalishda harakatlanib, yoʻllari kesishmagani uchun bir vaqtda oʻtadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6336,
+      "savol": "Qayta tizilishda haydovchi boshqa transport vositalariga yoʻl berishi kerakmi?",
+      "rasm": "",
+      "togri_javob": "Kerak, agar transport vositasi qoʻshni boʻlak boʻyicha yoʻlakay harakat qilsa.",
+      "izoh": "Qayta tizilayotgan haydovchi qoʻshni boʻlak boʻylab bir yoʻnalishda harakatlanayotgan transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6337,
+      "savol": "Yoqilgʻi tashuvchi yuk avtomobili haydovchisi nima qilishi kerak?",
+      "rasm": "questions/b044_s09_0_asl.jpeg",
+      "togri_javob": "Toʻxtab, orqasida toʻplangan transport vositalarini oʻtkazib yuborishi.",
+      "izoh": "Aholi punktidan tashqarida quvib oʻtish qiyin boʻlgan joyda katta oʻlchamli yoki sekin harakatlanayotgan transport vositasi haydovchisi orqasida toʻplanib qolgan transport vositalarini oʻtkazib yuborish uchun imkon qadar oʻngga olishi, zarur boʻlsa toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6338,
+      "savol": "Mazkur taniqlik belgisi nimani bildiradi?",
+      "rasm": "questions/b044_s10_0_asl.jpeg",
+      "togri_javob": "Mexanik transport vositasida tishli turmaklangan (shiplar) shinalar oʻrnatilganini.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgi «T» shaklida koʻrinadi, kalit esa uni tishli (shipli) shinalar taniqlik belgisi deydi — rasm va kalitni tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6339,
+      "savol": "Roʻparadan kelayotgan avtomobil haydovchisi qanday yol tutishi kerak?",
+      "rasm": "questions/b045_s01_0_asl.jpeg",
+      "togri_javob": "Yalt-yalt etuvchi chiroq mayoqchasi yoqilgan avtomobiliga xalaqit bermasdan harakatni davom ettirishi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qarama-qarshi yoʻnalishdagi maxsus transport vositasiga nisbatan haydovchining aniq majburiyatini tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6340,
+      "savol": "Avtomobilning qaysi yoʻnalishda harakatlanishiga ruxsat etiladi?",
+      "rasm": "questions/b045_s02_0_asl.jpeg",
+      "togri_javob": "Barcha yoʻnalishlarda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgini aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6341,
+      "savol": "Bu yoʻl belgisi nimani bildiradi?",
+      "rasm": "questions/b045_s03_0_asl.jpeg",
+      "togri_javob": "Yoʻl (marshrut) raqamini koʻrsatadi.",
+      "izoh": "Koʻk toʻrtburchak ichidagi «M-39» kabi yozuv yoʻlning (marshrutning) raqamini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6342,
+      "savol": "Avtomagistralda ajratuvchi boʻlakning uzilishlariga kirishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Avtomagistralda ajratuvchi boʻlakning uzilishlariga kirish taqiqlanadi — u yerdan qayrilib olish yuqori tezlikdagi oqim uchun juda xavfli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6343,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b045_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil, tramvay ayni vaqtda yashil avtomobil bilan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi svetofor ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6344,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻlda tezlanish boʻlagi boʻlganda unga chiqish qoidasini buzdi?",
+      "rasm": "questions/b045_s06_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil haydovchisi.",
+      "izoh": "Tezlanish boʻlagi boʻlsa, yoʻlga chiqayotgan haydovchi avval shu boʻlak boʻylab harakatlanib, keyin asosiy boʻlakdagi transport vositalariga yoʻl berib qayta tizilishi kerak. Yashil avtomobil tezlanish boʻlagidan foydalanmay, toʻgʻridan-toʻgʻri asosiy boʻlakka chiqqan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6345,
+      "savol": "Uch boʻlakli boʻlgan ikki tomonlama harakat tashkil qilingan yoʻllarda roʻparadagi harakat uchun moʻljallangan chetki chap boʻlakka oʻtishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Uch boʻlakli ikki tomonlama harakatli yoʻlda chetki chap boʻlak qarama-qarshi yoʻnalishdagi harakat uchun moʻljallangan, shuning uchun unga chiqish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6346,
+      "savol": "Haydovchi toʻxtash oldidan ogohlantiruvchi ishora berishi qachon majburiy hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "Barcha hollarda.",
+      "izoh": "Toʻxtashdan oldin ogohlantiruvchi ishora barcha hollarda berilishi kerak — boshqa harakat qatnashchilari haydovchining niyatini oldindan bilishi uchun.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6347,
+      "savol": "Toʻxtash qoidasini buzgan hamma haydovchilar qaysi javobda koʻrsatilgan?",
+      "rasm": "questions/b045_s09_0_asl.jpeg",
+      "togri_javob": "Barcha transport vositalarining haydovchilari.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi va qoʻshimcha belgining har bir transport vositasiga taʼsirini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6348,
+      "savol": "Agar transport vositasi ishchi tormozining samaradorligi Qoidalar talabiga javob bermasa, u holda Siz majbursiz:",
+      "rasm": "",
+      "togri_javob": "Nosozlikni oʻsha joyda bartaraf etishga, agar buning iloji boʻlmasa, zarur ehtiyoj choralariga rioya qilgan holda toʻxtab turish yoki taʼmirlash joyiga olib borishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Ishchi tormoz nosoz boʻlganda harakatni davom ettirish mumkinligi haqidagi kalitni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6349,
+      "savol": "Haydovchi yoʻl-transport hodisasida shikastlangan transport vositasini shatakka olish uchun yuk avtomobilini Ichki ishlarxodimi ixtiyoriga qanday holda berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Har qanday holda. fuqarolarga tegishli transport vositalaridan tashqari.",
+      "izoh": "Haydovchi Ichki ishlar xodimining talabiga binoan yoʻl-transport hodisasida shikastlangan transport vositasini shatakka olish uchun avtomobilini berishi kerak. Fuqarolarga tegishli transport vositalari bundan mustasno.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
