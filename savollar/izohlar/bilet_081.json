@@ -1,0 +1,156 @@
+{
+  "bilet": "81-bilet",
+  "slug": "bilet-81",
+  "savollar": [
+    {
+      "question_id": 7124,
+      "savol": "Ushbu yoʻl belgisi taʼsir oraligʻida Sizga odam tushirish (chiqarish) yoki yuk ortish (tushirish) ruxsat etiladimi?",
+      "rasm": "questions/b123_s08_0_asl.jpeg",
+      "togri_javob": "Ha",
+      "izoh": "«Toʻxtab turish taqiqlanadi» belgisi faqat toʻxtab turishni taqiqlaydi. Odam tushirish (chiqarish) yoki yuk ortish (tushirish) uchun qisqa toʻxtash ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7125,
+      "savol": "Yengil avtomobilda qaysi yoʻnalishlarda harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b123_s09_0_asl.jpeg",
+      "togri_javob": "Istalgan yoʻnalishda",
+      "izoh": "«Toʻgʻriga harakatlanish» belgisi ostidagi yuk avtomobili tasvirli qoʻshimcha belgi bu talab faqat yuk avtomobillariga tatbiq etilishini bildiradi. Yengil avtomobil istalgan yoʻnalishda harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7126,
+      "savol": "Aholi punktlariga tegishli yoʻl harakati qoidalari qayerdan boshlanadi?",
+      "rasm": "",
+      "togri_javob": "Aholi punkti nomini koʻrsatuvchi oq rangli 5.22 yoʻl belgisidan boshlab",
+      "izoh": "Aholi punktlariga tegishli talablar aholi punkti nomi yozilgan oq fonli 5.22 belgisidan boshlanadi. Koʻk fonli belgi esa bu talablar amal qilmasligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7127,
+      "savol": "Piyodalar oʻtish joyi – bu ...",
+      "rasm": "",
+      "togri_javob": "Yoʻl qatnov qismining piyodalar kesib oʻtishi uchun moʻljallangan, 5.16.1, 5.16.2 yoʻl belgilari va 1.14.1-1.14.3 yoʻl chiziqlari bilan ajratilgan boʻlagi.",
+      "izoh": "Piyodalar oʻtish joyi — qatnov qismining piyodalar kesib oʻtishi uchun moʻljallangan, tegishli yoʻl belgilari va yoʻl chiziqlari bilan ajratilgan boʻlagi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7128,
+      "savol": "Avtomobilni qanday boshqarish usuli yonilgʻi sarfini tejaydi?",
+      "rasm": "",
+      "togri_javob": "Ohista (ravon ) tezlanish va ohista sekinlashish bilan",
+      "izoh": "Ohista tezlanish va ohista sekinlashish yoqilgʻini tejaydi: keskin tezlanishda dvigatel ortiqcha yoqilgʻi sarflaydi, keskin tormozlashda esa toʻplangan tezlik behuda yoʻqotiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7129,
+      "savol": "Yoʻl-transport hodisasi bu",
+      "rasm": "",
+      "togri_javob": "Transport vositasining yoʻlda harakatlanishi jarayonida roʻy bergan, fuqarolarning halok boʻlishiga yoki sogʻligʻiga zarar yetishiga, transport vositalari, inshootlar, yuklarning shikastlanishi yoxud boshqa moddiy zarar yetishiga sabab boʻlgan hodisa",
+      "izoh": "Yoʻl-transport hodisasi — transport vositasi harakati jarayonida roʻy bergan va odamlarning halok boʻlishi, sogʻligʻiga zarar yetishi yoki transport vositalari, inshootlar, yuklarning shikastlanishiga sabab boʻlgan hodisa.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7130,
+      "savol": "Harakatlanishga ruxsat berilgan:",
+      "rasm": "questions/b124_s04_0_asl.jpeg",
+      "togri_javob": "Qizil va sariq avtomobilga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7131,
+      "savol": "Moped haydovchilariga ruxsat beriladi:",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan holatlarga",
+      "izoh": "Moped haydovchilari yoʻlning chetki oʻng boʻlagida bir qator boʻlib harakatlanishi, piyodalarga xalaqit bermasa yoʻl yoqasidan ham harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7132,
+      "savol": "Ushbu yotiq chiziq nimani bildiradi?",
+      "rasm": "questions/b124_s06_0_asl.jpeg",
+      "togri_javob": "Sunʼiy yoʻl notekisligini",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7133,
+      "savol": "Quyidagi belgilardan qaysi biri haydovchini boshqa xavf-xatarlar toʻgʻrisida ogohlantiradi?",
+      "rasm": "questions/b124_s07_0_asl.jpeg",
+      "togri_javob": "c",
+      "izoh": "Undov belgisi tasvirlangan c-belgi — «Boshqa xavflar»: u boshqa belgilar bilan koʻrsatilmagan xavfdan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7134,
+      "savol": "Ushbu belgi ...",
+      "rasm": "questions/b124_s08_0_asl.jpeg",
+      "togri_javob": "Oldinda transport vositalarining tirbandligi haqida ogohlantiradi.",
+      "izoh": "Bir-birining ketidan turgan avtomobillar tasvirli ogohlantiruvchi belgi oldinda transport vositalari tirbandligi borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7135,
+      "savol": "Siz chorrahada chapga burilishda qaysi transport vositasiga yoʻl berishingiz lozim?",
+      "rasm": "questions/b124_s09_0_asl.jpeg",
+      "togri_javob": "Hech biriga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7136,
+      "savol": "Svetoforning qizil yoki sariq ishorasi bilan bir vaqtda yongan qoʻshimcha tarmoqning yoʻnaltirgichli yashil ishorasi yoʻnalishida harakatlanayotgan transport vositasining haydovchisi kimga yoʻl berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Boshqa yoʻnalishlarda harakatlanayotgan transport vositalariga yoʻl berishi kerak",
+      "izoh": "Svetoforning qoʻshimcha seksiyasidagi yashil strelka boʻyicha harakatlanayotgan haydovchi boshqa yoʻnalishlardan harakatlanayotgan transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7137,
+      "savol": "Gʻildiraklarni yoʻl bilan ilashishi yoʻqolganda (kuchli yomgʻir, sel yoki suv toshgan yoʻl qismlari) haydovchi:",
+      "rasm": "",
+      "togri_javob": "Dvigatel bilan tormozlash orqali tezlikni kamaytirishi lozim",
+      "izoh": "Gʻildiraklarning yoʻl bilan ilashuvi yoʻqolganda tezlikni dvigatel bilan tormozlash orqali kamaytirish kerak. Keskin tormozlash gʻildiraklarni blokirovka qilib, avtomobilni sirpantirib yuboradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7138,
+      "savol": "Ushbu koʻrsatilgan yoʻl nechta qatnov qismiga ega?",
+      "rasm": "questions/b125_s02_0_asl.jpeg",
+      "togri_javob": "Ikkita",
+      "izoh": "Yashil ajratuvchi boʻlak yoʻlni ikkita qatnov qismiga ajratadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

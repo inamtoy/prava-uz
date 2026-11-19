@@ -1,0 +1,156 @@
+{
+  "bilet": "88-bilet",
+  "slug": "bilet-88",
+  "savollar": [
+    {
+      "question_id": 7229,
+      "savol": "Ushbu vaziyatda siz oʻngdagi boʻlakda harakatlanayotib sizning boʻlagingizga qayta tizilmoqchi boʻlgan transport vositasiga yoʻl berishingiz kerakmi?",
+      "rasm": "questions/b134_s06_0_asl.jpeg",
+      "togri_javob": "Kerak emas",
+      "izoh": "Bir yoʻnalishda harakatlanayotgan transport vositalari bir vaqtda qayta tizilayotganda chap tomondagi haydovchi oʻng tomondagiga yoʻl berishi kerak. Siz oʻng boʻlakdasiz, shuning uchun sizning boʻlagingizga oʻtmoqchi boʻlgan transport vositasi sizga yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7230,
+      "savol": "Bu joyda yoʻlovchilarni chiqarish yoki tushirish maqsadida toʻxtash mumkinmi?",
+      "rasm": "questions/b134_s07_0_asl.jpeg",
+      "togri_javob": "Ha",
+      "izoh": "«Toʻxtab turish taqiqlanadi» belgisi toʻxtashni taqiqlamaydi, shuning uchun yoʻlovchilarni chiqarish yoki tushirish uchun toʻxtash mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7231,
+      "savol": "Qanday hollarda sizga 50 km/s dan yuqori tezlikda harakatlanish taqiqlangan?",
+      "rasm": "questions/b134_s08_0_asl.jpeg",
+      "togri_javob": "Faqat qatnov qismi nam boʻlsa",
+      "izoh": "«50» belgisi ostidagi yomgʻir tasvirli qoʻshimcha belgi bu cheklov faqat qatnov qismi nam boʻlganda amal qilishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7232,
+      "savol": "Qaysi belgi toʻsiqni oʻng yoki chap tomonidan chetlab oʻtishga ruxsat etilishini bildiradi?",
+      "rasm": "questions/b134_s09_0_asl.jpeg",
+      "togri_javob": "e",
+      "izoh": "Ikki tomonga egilgan strelkali e-belgi — «Toʻsiqni oʻng yoki chap tomondan chetlab oʻtish».",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7233,
+      "savol": "“Imtiyoz” atamasiga tegishli tarifni koʻrsating.",
+      "rasm": "",
+      "togri_javob": "Moʻljallangan yoʻnalishda boshqa yoʻl harakati qatnashchilariga nisbatan oldin harakatlanish huquqi.",
+      "izoh": "Imtiyoz (ustunlik) — moʻljallangan yoʻnalishda boshqa yoʻl harakati qatnashchilariga nisbatan birinchi boʻlib harakatlanish huquqi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7234,
+      "savol": "Miltillovchi sariq ishorali svetofor:",
+      "rasm": "",
+      "togri_javob": "Tartibga solinmagan chorraha yoki piyodalar oʻtish joyi borligidan xabardor qiladi",
+      "izoh": "Miltillovchi sariq ishorali svetofor tartibga solinmagan chorraha yoki piyodalar oʻtish joyi borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7235,
+      "savol": "Bu vaziyatda siz oʻngga burilayotib, Siz:",
+      "rasm": "questions/b135_s02_0_asl.jpeg",
+      "togri_javob": "Harakat yoʻnalishi boʻyicha va burilayotgan koʻchani kesib oʻtayotgan piyodalarga hamda borshqa transport vositlariga yoʻl berasiz",
+      "izoh": "Qoʻshimcha seksiyadagi yashil strelka boʻyicha oʻngga burilayotgan haydovchi burilayotgan koʻchani kesib oʻtayotgan piyodalarga va boshqa yoʻnalishlardan harakatlanayotgan transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7236,
+      "savol": "Qaysi belgi ikkinchi darajali yoʻl bilan kesishuvni bildiradi?",
+      "rasm": "questions/b135_s03_0_asl.jpeg",
+      "togri_javob": "a",
+      "izoh": "a-belgi — «Ikkinchi darajali yoʻl bilan kesishuv»: qalin chiziq haydovchi harakatlanayotgan asosiy yoʻlni, ingichka chiziq kesib oʻtuvchi ikkinchi darajali yoʻlni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7237,
+      "savol": "N1 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yigʻindisiga yoʻl qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "20о",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7238,
+      "savol": "Yuk avtomobili haydovchisiga qaysi yoʻnalishda harakatlanishga ruxsat beriladi?",
+      "rasm": "questions/b135_s05_0_asl.jpeg",
+      "togri_javob": "Toʻgʻriga va oʻngga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7239,
+      "savol": "Ushbu yoʻl nechta qatnov qismiga ega?",
+      "rasm": "questions/b135_s06_0_asl.jpeg",
+      "togri_javob": "1 ta",
+      "izoh": "Qatnov qismi oʻrtasidagi qoʻsh sidirgʻa chiziq qarama-qarshi oqimlarni ajratadi, lekin yoʻlni alohida qatnov qismlariga boʻlmaydi. Shuning uchun bu yoʻl bitta qatnov qismiga ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7240,
+      "savol": "Qaysi belgi yoʻlning koʻrsatilgan yoʻnalishida oxiri berk koʻchaligini bildiradi?",
+      "rasm": "questions/b135_s07_0_asl.jpeg",
+      "togri_javob": "d",
+      "izoh": "Koʻk toʻrtburchakdagi d-belgi — «Oxiri berk koʻcha»: u koʻrsatilgan yoʻnalishda yoʻlning oxiri berk ekanini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7241,
+      "savol": "Ushbu svetafor qaysi yoʻnalishida harakatlanishga ruxsat beradi?",
+      "rasm": "questions/b135_s08_0_asl.jpeg",
+      "togri_javob": "Toʻgʻriga va oʻnga",
+      "izoh": "Tramvay svetoforida yuqori qatordagi yoritgichlar yoʻnalishni (chap, toʻgʻri, oʻng), pastki yoritgich esa ruxsatni bildiradi. Oʻrta va oʻng yoritgichlar pastki yoritgich bilan birga yonganda toʻgʻriga va oʻngga harakatlanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7242,
+      "savol": "Qaysi transport vositalariga harakatlanishga ruxsat berilgan?",
+      "rasm": "questions/b135_s09_0_asl.jpeg",
+      "togri_javob": "Motosiklga oʻnga, yengil avtomobilga toʻgʻriga va oʻnga",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7243,
+      "savol": "Qaysi rasmda ikkita qatnov qismiga ega boʻlgan yoʻl koʻrsatilgan?",
+      "rasm": "questions/b135_s10_0_asl.jpeg",
+      "togri_javob": "Hech qaysi rasmda",
+      "izoh": "Chiziqlar, jumladan qoʻsh sidirgʻa chiziq, yoʻlni alohida qatnov qismlariga ajratmaydi — buning uchun ajratuvchi mintaqa kerak. Shuning uchun ikkala rasmdagi yoʻl ham bitta qatnov qismiga ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

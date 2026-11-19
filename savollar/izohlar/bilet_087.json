@@ -1,0 +1,156 @@
+{
+  "bilet": "87-bilet",
+  "slug": "bilet-87",
+  "savollar": [
+    {
+      "question_id": 7214,
+      "savol": "Ushbu chorrahada avtobus haydovchisi kimga yoʻl berishi kerak?",
+      "rasm": "questions/b132_s10_0_asl.jpeg",
+      "togri_javob": "Oq avtomobilga",
+      "izoh": "Oq avtomobil asosiy yoʻlda harakatlanmoqda — belgi ostidagi qoʻshimcha belgi asosiy yoʻl yoʻnalishini koʻrsatadi. Avtobus ikkinchi darajali yoʻldan chiqayotgani uchun oq avtomobilga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7215,
+      "savol": "“Aholi punkti” atamasi nimani bildiradi?",
+      "rasm": "",
+      "togri_javob": "Kirish va chiqish yoʻllari 5.22 — 5.25 belgilari bilan belgilangan hududni",
+      "izoh": "Aholi punkti — kirish va chiqish yoʻllari 5.22–5.25 belgilari bilan belgilangan hudud.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7216,
+      "savol": "Ushbu belgilardan qaysi biri oldinda yoʻl qoplamasi ustida sunʼiy notekislik borligi haqida ogohlantiradi?",
+      "rasm": "questions/b133_s02_0_asl.jpeg",
+      "togri_javob": "В",
+      "izoh": "Doʻnglik tasvirli b-belgi oldinda yoʻl qoplamasida sunʼiy notekislik borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7217,
+      "savol": "Qaysi belgi haydovchi kesib oʻtilayotgan yoʻldan harakatlanayotgan transport vositalariga yoʻl berish lozimligini bildiradi?",
+      "rasm": "questions/b133_s03_0_asl.jpeg",
+      "togri_javob": "b va d",
+      "izoh": "«Toʻxtamasdan harakatlanish taqiqlanadi» (b) va «Yoʻl bering» (d) belgilari haydovchidan kesib oʻtilayotgan yoʻldagi transport vositalariga yoʻl berishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7218,
+      "savol": "Shokning belgilari qanday?",
+      "rasm": "",
+      "togri_javob": "Yuqoridagi barcha holatlar",
+      "izoh": "Shok belgilari — kuchli terlash, hushning noaniqligi yoki behush holat, ogʻiz qurishi, chanqash va nafasning tezlashuvi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7219,
+      "savol": "Ushbu koʻrsatilgan holatda kim yoʻl berishi kerak?",
+      "rasm": "questions/b133_s05_0_asl.jpeg",
+      "togri_javob": "Motosikl haydovchisi",
+      "izoh": "Avtomagistralga chiqayotgan haydovchi magistral boʻylab harakatlanayotgan transport vositalariga yoʻl berishi kerak. Shuning uchun mototsikl haydovchisi yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7220,
+      "savol": "Ajratuvchi mintaqa - ...",
+      "rasm": "",
+      "togri_javob": "Yoʻlning yonma-yon joylashgan qatnov qismlarini ajratuvchi, transport vositalari harakatlanishi yoki toʻxtashi uchun moʻljallanmagan, yoʻl sathidan koʻtarilgan yoki maysazor, ariq, maxsus toʻsiqlar bilan ajratilgan baland qismi",
+      "izoh": "Ajratuvchi mintaqa — yonma-yon joylashgan qatnov qismlarini ajratuvchi, transport harakati yoki toʻxtashi uchun moʻljallanmagan yoʻl qismi (koʻtarilgan, maysazor, ariq yoki toʻsiq bilan ajratilgan).",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7221,
+      "savol": "Yoʻl harakati xavfsizligini taʼminlash –",
+      "rasm": "",
+      "togri_javob": "Yoʻl-transport hodisalarining kelib chiqish sabablarini oldini olishga, ularning ogʻir oqibatlarini kamaytirishga qaratilgan faoliyat.",
+      "izoh": "Yoʻl harakati xavfsizligini taʼminlash — yoʻl-transport hodisalarining kelib chiqish sabablarining oldini olishga va ularning ogʻir oqibatlarini kamaytirishga qaratilgan faoliyat.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7222,
+      "savol": "Tik nishabliklarda dvigatel bilan tormozlashda qiyalikka nisbatan qanday uzatma tanlanadi?",
+      "rasm": "",
+      "togri_javob": "Nishablik qancha qiya boʻlsa uzatma pogʻonasi shuncha past tanlanadi",
+      "izoh": "Nishablik qancha tik boʻlsa, dvigatel bilan tormozlash uchun shuncha past uzatma tanlanadi — past uzatmada dvigatel kuchliroq tormozlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7223,
+      "savol": "Tumanga qarshi old chiroqlarni qorongʻi vaqtda, yoʻlning yoritilmagan qismlarida uzoqni yoki yaqinni yorituvchi chiroqlar bilan birga qoʻllash mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Mumkin",
+      "izoh": "Kunning qorongʻi vaqtida yoʻlning yoritilmagan qismida old tumanga qarshi chiroqlarni yaqinni yoki uzoqni yorituvchi chiroqlar bilan birga qoʻllash mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7224,
+      "savol": "Ushbu vaziyatda siz:",
+      "rasm": "questions/b134_s01_0_asl.jpeg",
+      "togri_javob": "Belgi oldida toʻxtashingiz va svetoforning ruxsat beruvchi ishorasini kutishingiz kerak",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7225,
+      "savol": "Toʻxtash qoidasini qaysi transport haydovchisi buzdi?",
+      "rasm": "questions/b134_s02_0_asl.jpeg",
+      "togri_javob": "Faqat qizil avtomobil haydovchisi",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7226,
+      "savol": "Oq avtomobil chorrahani nechinchi boʻlib kesib oʻtadi?",
+      "rasm": "questions/b134_s03_0_asl.jpeg",
+      "togri_javob": "Oxirgi boʻlib",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7227,
+      "savol": "Ushbu yoʻl belgisi qaysi transport vositalarining harakatlanishini taqiqlaydi?",
+      "rasm": "questions/b134_s04_0_asl.jpeg",
+      "togri_javob": "Xavfli yuk tashiyotgan transport vositalarining harakatlanishini",
+      "izoh": "Toʻq sariq toʻrtburchakli yuk avtomobili tasvirli belgi xavfli yuk tashiyotgan transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7228,
+      "savol": "Sanab oʻtilgan qaysi hollarda egiluvchan ulagichda shatakka olish taqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Faqat sirpanchiqda",
+      "izoh": "Sirpanchiq yoʻlda egiluvchan ulagich bilan shatakka olish taqiqlanadi: tormozlanganda shatakka olinayotgan avtomobil sirpanib, oldindagisiga urilishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

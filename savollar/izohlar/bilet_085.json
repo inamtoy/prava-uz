@@ -1,0 +1,156 @@
+{
+  "bilet": "85-bilet",
+  "slug": "bilet-85",
+  "savollar": [
+    {
+      "question_id": 7184,
+      "savol": "“Imtiyoz” atamasiga tegishli tarifni koʻrsating",
+      "rasm": "",
+      "togri_javob": "Moʻljallangan yoʻnalishda boshqa yoʻl harakati qatnashchilariga nisbatan oldin harakatlanish huquqi.",
+      "izoh": "Imtiyoz (ustunlik) — moʻljallangan yoʻnalishda boshqa yoʻl harakati qatnashchilariga nisbatan birinchi boʻlib harakatlanish huquqi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7185,
+      "savol": "Ushbu holatda oq avtomobil kimga yoʻl berishi lozim?",
+      "rasm": "questions/b130_s01_0_asl.jpeg",
+      "togri_javob": "Xech kimga.",
+      "izoh": "Oq avtomobil asosiy yoʻlda harakatlanmoqda — belgi ostidagi qoʻshimcha belgi asosiy yoʻl shu yoʻnalishda davom etishini koʻrsatadi. Shuning uchun u hech kimga yoʻl bermaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7186,
+      "savol": "Ushbu belgilardan qaysi biri haydovchini yoʻlning notekisligi haqida ogohlantiradi?",
+      "rasm": "questions/b130_s02_0_asl.jpeg",
+      "togri_javob": "c",
+      "izoh": "Toʻlqinsimon chiziqli c-belgi — «Notekis yoʻl»: u yoʻl qoplamasidagi notekisliklardan ogohlantiradi. b-belgi esa sunʼiy notekislikni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7187,
+      "savol": "Yengil avtomobilga qaysi yoʻnalishlarda harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b130_s03_0_asl.jpeg",
+      "togri_javob": "Istalgan yoʻnalishda",
+      "izoh": "«Toʻgʻriga harakatlanish» belgisi ostidagi yuk avtomobili tasvirli qoʻshimcha belgi bu talab faqat yuk avtomobillariga tatbiq etilishini bildiradi. Yengil avtomobil istalgan yoʻnalishda harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7188,
+      "savol": "Mexanik transport vositasi – bu ...",
+      "rasm": "",
+      "togri_javob": "Dvigatel bilan harakatga keltiriladigan transport vositasi. Bu atama barcha traktor va oʻziyurar moslamalarga ham taalluqlidir.",
+      "izoh": "Mexanik transport vositasi — dvigatel bilan harakatga keltiriladigan transport vositasi. Bu atama traktorlar va oʻziyurar mashinalarga ham taalluqli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7189,
+      "savol": "Tezlik ortishi bilan haydovchining koʻrish maydoni qanday oʻzgaradi?",
+      "rasm": "",
+      "togri_javob": "Torayadi",
+      "izoh": "Tezlik ortgan sari haydovchining koʻrish maydoni torayadi — u yon tomondagi narsalarni kamroq payqaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7190,
+      "savol": "Tormozlanish yoʻli deb nimaga aytiladi?",
+      "rasm": "",
+      "togri_javob": "Haydovchi tormoz tepkisini bosgandan to avtomobil toʻliq toʻxtaguncha bosib oʻtilgan masofa",
+      "izoh": "Tormozlanish yoʻli — tormoz tepkisi bosilgan paytdan avtomobil toʻliq toʻxtaguncha bosib oʻtilgan masofa.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7191,
+      "savol": "Qorin boʻshligʻi jarohatlangan odamga ovqat, suv, dori - darmon berish mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Yoʻq",
+      "izoh": "Qorin boʻshligʻi jarohatlangan odamga ovqat, suv va dori berish mumkin emas — bu ichki aʼzolar shikastlangan boʻlsa, ahvolni ogʻirlashtiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7192,
+      "savol": "Aholi punktlaridan tashqarida tirkamali yuk avtomobillari qanday yuqori tezlik bilan harakatlanishi mumkin?",
+      "rasm": "",
+      "togri_javob": "70 km/s",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7193,
+      "savol": "Ushbu belgi nimani bildiradi?",
+      "rasm": "questions/b130_s09_0_asl.jpeg",
+      "togri_javob": "Sunʼiy yoʻl notekisligini",
+      "izoh": "Doʻnglik tasvirli ogohlantiruvchi belgi oldinda sunʼiy notekislik (tezlikni kamaytiruvchi doʻnglik) borligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7194,
+      "savol": "Yoʻl harakati qoidalariga koʻra yoʻl belgilari necha guruhga boʻlinadi?",
+      "rasm": "",
+      "togri_javob": "7 ta",
+      "izoh": "Yoʻl belgilari 7 ta guruhga boʻlinadi: ogohlantiruvchi, imtiyoz, taqiqlovchi, buyuruvchi, axborot-ishora, servis belgilari va qoʻshimcha axborot belgilari.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7195,
+      "savol": "Qaysi yoʻl belgilari yoʻlning tor qismida haydovchiga ustunlik beradi?",
+      "rasm": "questions/b131_s01_0_asl.jpeg",
+      "togri_javob": "Faqat d",
+      "izoh": "d-belgi («Roʻparadagi harakatlanishga nisbatan imtiyoz») yoʻlning tor qismida haydovchiga ustunlik beradi. c-belgi esa aksincha, roʻparadan kelayotganga yoʻl berishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7196,
+      "savol": "Yoʻlning xavfli burilishlarida oldingi uzatmali avtomobilning orqa oʻqi yon tomonga sirpanganda siz qanday harakat qilasiz?",
+      "rasm": "",
+      "togri_javob": "Gaz pedalini ohista bosib avtomobilni rul chambaragini toʻgʻrilab avtomobilni sirpanishdan olib chiqib ketasiz",
+      "izoh": "Oldingi gʻildirakli avtomobilda orqa oʻq sirpanganda yoqilgʻi tepkisini ohista bosib, rulni harakat yoʻnalishiga toʻgʻrilash kerak — yetakchi old gʻildiraklar avtomobilni sirpanishdan tortib chiqaradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7197,
+      "savol": "Ushbu chorrahada haydovchiga orqaga harakatlanib koʻrsatilgan manyovrni bajarishga ruxsat etiladimi?",
+      "rasm": "questions/b131_s03_0_asl.jpeg",
+      "togri_javob": "Taqiqlanadi",
+      "izoh": "Chorrahalarda orqaga harakatlanish taqiqlanadi, shuning uchun koʻrsatilgan manyovrni orqaga yurib bajarish mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7198,
+      "savol": "Ushbu yoʻl belgisi nimani bildiradi?",
+      "rasm": "questions/b131_s04_0_asl.jpeg",
+      "togri_javob": "Xavfli yuk tashiyotgan transport vositalari harakatini taqiqlaydi",
+      "izoh": "Toʻq sariq toʻrtburchakli yuk avtomobili tasvirli belgi xavfli yuk tashiyotgan transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

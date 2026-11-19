@@ -67,10 +67,10 @@
       "savol": "Yuk avtomobili haydovchisi toʻxtab turish qoidasini buzdimi?",
       "rasm": "questions/b115_s03_0_asl.jpeg",
       "togri_javob": "Buzdi",
-      "izoh": "Toʻxtab turish joyi belgisi ostidagi qoʻshimcha belgi yengil avtomobillarni trotuarga qisman chiqarib qoʻyish usulini koʻrsatadi. Bunday toʻxtab turish faqat yengil avtomobillar va mototsikllarga ruxsat etiladi, shuning uchun yuk avtomobili haydovchisi qoidani buzgan.",
-      "ishonch": "yuqori",
-      "izohcha": "",
-      "holat": "tayyor"
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit #7210 ga zid: #7210 qoʻshimcha belgini barcha transport vositalari uchun deydi, #7118 da ham yuk avtomobili buzmagan — tekshirish kerak.",
+      "holat": "tekshirish kerak"
     },
     {
       "question_id": 7041,

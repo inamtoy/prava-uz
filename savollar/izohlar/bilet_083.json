@@ -1,0 +1,156 @@
+{
+  "bilet": "83-bilet",
+  "slug": "bilet-83",
+  "savollar": [
+    {
+      "question_id": 7154,
+      "savol": "Ushbu belgi qaysi turdagi transport vositalarining toʻxtamasdan oʻtishlarini taqiqlaydi?",
+      "rasm": "questions/b126_s09_0_asl.jpeg",
+      "togri_javob": "Barcha turdagi transport vositalarining",
+      "izoh": "«Bojxona» belgisi bojxona punkti oldida barcha turdagi transport vositalariga toʻxtamasdan oʻtishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7155,
+      "savol": "Quvib oʻtishga taalluqli belgilarni koʻrsating?",
+      "rasm": "questions/b126_s10_0_asl.jpeg",
+      "togri_javob": "a va c",
+      "izoh": "a-belgi («Quvib oʻtish taqiqlanadi») va c-belgi («Yuk avtomobillariga quvib oʻtish taqiqlanadi») quvib oʻtishga taalluqli. b-belgi esa tirbandlikdan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7156,
+      "savol": "Hayvonlarni yoʻldan haydab oʻtishga qoidaga koʻra ruxsat etiladi:",
+      "rasm": "",
+      "togri_javob": "Kunning yorugʻ vaqtida",
+      "izoh": "Hayvonlarni yoʻldan faqat kunning yorugʻ vaqtida haydab oʻtish mumkin — qorongʻida ular haydovchilarga koʻrinmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7157,
+      "savol": "Chorrahadan tashqaridagi tartibga solinmagan velosiped yoʻlkasi bilan yoʻl kesishmasida kim yoʻl berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Velosiped yoʻlkasidan harakatlanyotgan velosiped va moped haydovchilari",
+      "izoh": "Velosiped yoʻlkasi chorrahadan tashqarida tartibga solinmagan joyda yoʻl bilan kesishganda velosiped va moped haydovchilari yoʻldagi transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7158,
+      "savol": "Qaysi belgilar yuk avtomobillarida quvib oʻtish taqiqlangan hududning oxirini bildiradi?",
+      "rasm": "questions/b127_s03_0_asl.jpeg",
+      "togri_javob": "a,b,c",
+      "izoh": "Uchala belgi ham yuk avtomobillari uchun quvib oʻtish taqiqining oxirini bildiradi: a — quvib oʻtish taqiqining oxiri, b — yuk avtomobillariga quvib oʻtish taqiqining oxiri, c — barcha cheklashlarning oxiri.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7159,
+      "savol": "Qaysi belgi toʻxtash chizigʻi oldida, u boʻlmaganda, kesib oʻtiladigan qatnov qismining chetida toʻxtamasdan harakatlanishni taqiqlaydi?",
+      "rasm": "questions/b127_s04_0_asl.jpeg",
+      "togri_javob": "b",
+      "izoh": "Sakkizburchak «STOP» belgisi (b) — «Toʻxtamasdan harakatlanish taqiqlanadi»: haydovchi toʻxtash chizigʻi oldida, u boʻlmasa kesib oʻtiladigan qatnov qismi chetida toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7160,
+      "savol": "Yoʻl harakati xavfsizligini taʼminlash –",
+      "rasm": "",
+      "togri_javob": "Yoʻl-transport hodisalarining kelib chiqish sabablarini oldini olishga, ularning ogʻir oqibatlarini kamaytirishga qaratilgan faoliyat.",
+      "izoh": "Yoʻl harakati xavfsizligini taʼminlash — yoʻl-transport hodisalarining kelib chiqish sabablarining oldini olishga va ularning ogʻir oqibatlarini kamaytirishga qaratilgan faoliyat.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7161,
+      "savol": "Svetoforning miltillovchi sariq ishorasi nima haqida ogohlantiradi?",
+      "rasm": "",
+      "togri_javob": "Barcha javoblar toʻgʻri",
+      "izoh": "Miltillovchi sariq ishora harakatlanishga ruxsat beradi va chorraha tartibga solinmaganligi haqida ogohlantiradi — bunda haydovchilar belgilar va ustunlik qoidalariga amal qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7162,
+      "savol": "Bosh miya jarohatlanishining quyidagi alomatlar bilan xarakterlanadi:",
+      "rasm": "",
+      "togri_javob": "Yuqoridagi barcha holatlar",
+      "izoh": "Bosh miya jarohatlanishi bir necha soniyadan bir necha soatgacha hushdan ketish, qayt qilish va amneziya (xotiraning yoʻqolishi) bilan xarakterlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7163,
+      "savol": "Transport vositalarini qatnov qismining kengaytirilmagan joylarida qanday tartibda toʻxtash va toʻxtab turishiga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Parallel ravishda",
+      "izoh": "Qatnov qismining kengaytirilmagan joylarida transport vositalari qatnov qismi chetiga parallel ravishda toʻxtashi va toʻxtab turishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7164,
+      "savol": "Tik nishabliklarda dvigatel bilan tormozlashda qiyalikka nisbatan qanday uzatma tanlanadi?",
+      "rasm": "",
+      "togri_javob": "Nishablik qancha qiya boʻlsa uzatma pogʻonasi shuncha past tanlanadi",
+      "izoh": "Nishablik qancha tik boʻlsa, dvigatel bilan tormozlash uchun shuncha past uzatma tanlanadi — past uzatmada dvigatel kuchliroq tormozlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7165,
+      "savol": "Ushbu holatda qaysi transport vositasi yoʻl berishi kerak?",
+      "rasm": "questions/b127_s10_0_asl.jpeg",
+      "togri_javob": "Avtobus",
+      "izoh": "Boshqa haydovchilar yoʻnalishli transport vositasiga faqat aholi punktida u belgilangan bekatdan harakatni boshlayotganda yoʻl berishi shart. Bekatdan tashqarida qoʻzgʻalayotgan avtobus haydovchisi oʻzi yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7166,
+      "savol": "Quyidagi izoh qaysi atamaga tegishli?Texnik nuqson, tashilayotgan yuk, haydovchi va yoʻlovchining holati, yoʻldagi biror toʻsiq tufayli xavf yuzaga kelganda yoxud ob-xavo sharoitiga bogʻliq holda transport vositasi harakatini toʻxtatish.",
+      "rasm": "",
+      "togri_javob": "Majburiy toʻxtash",
+      "izoh": "Texnik nuqson, yuk, haydovchi yoki yoʻlovchining holati, yoʻldagi toʻsiq yoki ob-havo sharoiti tufayli harakatni toʻxtatish majburiy toʻxtash deyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7167,
+      "savol": "Sekinlashish boʻlagi boʻlgan yoʻllarda burilmoqchi boʻlgan haydovchi qachon tezlikni kamaytirishi lozim?",
+      "rasm": "",
+      "togri_javob": "Sekinlashish boʻlagiga oʻtgach",
+      "izoh": "Sekinlashish boʻlagi boʻlsa, haydovchi avval shu boʻlakka oʻtib, tezlikni unda kamaytirishi kerak — asosiy boʻlakda sekinlashish orqadagilarga xalaqit beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7168,
+      "savol": "Koʻrsatilgan qaysi belgi yoʻlning oʻta sirpanchiq boʻlgan qismini bildiradi?",
+      "rasm": "questions/b128_s03_0_asl.jpeg",
+      "togri_javob": "Faqat c",
+      "izoh": "Sirpanayotgan avtomobil tasvirli c-belgi — «Sirpanchiq yoʻl»: u oʻta sirpanchiq yoʻl qismidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "bilet": "84-bilet",
+  "slug": "bilet-84",
+  "savollar": [
+    {
+      "question_id": 7169,
+      "savol": "Arterial qon ketish alomatlarini koʻrsating:",
+      "rasm": "",
+      "togri_javob": "Qon tomirlaridan pushti rangli qon kuchli pulsatsiya bilan otilib chiqadi",
+      "izoh": "Arterial qon ketishda pushti (och qizil) rangli qon pulsatsiya bilan otilib chiqadi — arteriyalarda qon yurakdan yuqori bosim bilan keladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7170,
+      "savol": "Chap qoʻlni yonga choʻzish yoki oʻng qoʻlni tirsakdan toʻgʻri burchak ostida bukib, yuqoriga koʻtarish ishorasi nimani bildiradi?",
+      "rasm": "",
+      "togri_javob": "Chapga burilishni yoki qayrilib olishni",
+      "izoh": "Chap qoʻlni yonga choʻzish yoki oʻng qoʻlni tirsakdan toʻgʻri burchak ostida bukib yuqoriga koʻtarish chapga burilish yoki qayrilib olish ishorasi hisoblanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7171,
+      "savol": "Qaysi belgi svetoforning (tartibga soluvchining) taqiqlovchi ishorasida transport vositalari toʻxtaydigan joyni bildiradi?",
+      "rasm": "questions/b128_s06_0_asl.jpeg",
+      "togri_javob": "c",
+      "izoh": "«STOP» yozuvli toʻrtburchak c-belgi — «Toʻxtash chizigʻi»: u svetoforning yoki tartibga soluvchining taqiqlovchi ishorasida transport vositalari toʻxtaydigan joyni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7172,
+      "savol": "Ushbu holatda qaysi transport vositasi yoʻl berishi kerak?",
+      "rasm": "questions/b128_s07_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7173,
+      "savol": "Qaysi belgi falokatli holatlar uchun kirish yoʻlini bildiradi?",
+      "rasm": "questions/b128_s08_0_asl.jpeg",
+      "togri_javob": "b",
+      "izoh": "Koʻk toʻrtburchakdagi b-belgi falokatli holatlar uchun kirish yoʻlini bildiradi — tormozi ishlamay qolgan transport vositasini toʻxtatish uchun moʻljallangan maxsus boʻlak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7174,
+      "savol": "Qattiq ulagichda shatakka olingan avtobusda yoki trolleybusda odam tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taqiqlanadi",
+      "izoh": "Qattiq yoki egiluvchan ulagich bilan shatakka olinayotgan avtobus yoki trolleybusda odam tashish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7175,
+      "savol": "Yengil avtomobil tirkamasi burilishda qanday trayektoriya boʻyicha harakatlanadi?",
+      "rasm": "",
+      "togri_javob": "Burilish markaziga nisbatan avtomobil trayektoriyasidan ichkarida",
+      "izoh": "Burilishda tirkama gʻildiraklari tortuvchi avtomobil gʻildiraklaridan kichikroq radius boʻylab — burilish markaziga yaqinroqdan, avtomobil trayektoriyasidan ichkaridan oʻtadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7176,
+      "savol": "Agar biror-bir toʻsiq sababli qarama –qarshi yoʻnalishlarda harakatlanish qiyin boʻlsa kim yoʻl berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Toʻsiq oʻz tomonida boʻlgan haydovchi",
+      "izoh": "Toʻsiq tufayli qarama-qarshi yoʻnalishda harakatlanish qiyin boʻlsa, toʻsiq oʻz tomonida boʻlgan haydovchi yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7177,
+      "savol": "Tumanga qarshi chiroqlarni qorongʻi vaqtda yoʻlning yoritilmagan qismlarida uzoqni yorituvchi chiroqlar bilan birga qoʻlllash mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Ha",
+      "izoh": "Kunning qorongʻi vaqtida yoʻlning yoritilmagan qismida tumanga qarshi chiroqlarni uzoqni yorituvchi chiroqlar bilan birga qoʻllash mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7178,
+      "savol": "Venoz qon ketish alomatlarini koʻrsating:",
+      "rasm": "",
+      "togri_javob": "Qon tomirlaridan toʻq qizil rangdagi qon sizib oqib chiqadi",
+      "izoh": "Venoz qon ketishda toʻq qizil rangli qon bir tekis sizib oqib chiqadi — venalarda qon past bosim bilan yurakka qaytadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7179,
+      "savol": "Ushbu belgilardan qaysi biri bir yoki bir necha boʻlaklarda harakatlanish yoʻnalishi qarama-qarshi tomonga oʻzgarishi mumkin boʻlgan yoʻl qismining boshlanishini bildiradi?",
+      "rasm": "questions/b129_s05_0_asl.jpeg",
+      "togri_javob": "с",
+      "izoh": "Yuqoriga va pastga yoʻnalgan strelkali c-belgi — «Reversiv harakatlanish»: u boʻlaklardagi harakat yoʻnalishi qarama-qarshisiga oʻzgarishi mumkin boʻlgan yoʻl qismining boshlanishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7180,
+      "savol": "Gʻildiraklarni yoʻl bilan ilashishi yoʻqolganda (kuchli yomgʻir, sel yoki suv toshgan yoʻl qismlari) haydovchi:",
+      "rasm": "",
+      "togri_javob": "Dvigatel bilan tormozlash orqali tezlikni kamaytirishi lozim",
+      "izoh": "Gʻildiraklarning yoʻl bilan ilashuvi yoʻqolganda tezlikni dvigatel bilan tormozlash orqali kamaytirish kerak. Keskin tormozlash gʻildiraklarni blokirovka qilib, avtomobilni sirpantirib yuboradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7181,
+      "savol": "Turar joy dahalaridan chiqishda haydovchilar:",
+      "rasm": "",
+      "togri_javob": "Boshqa harakat qatnashchilariga yoʻl berishi kerak.",
+      "izoh": "Turar joy dahasidan chiqayotgan haydovchi boshqa harakat qatnashchilariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7182,
+      "savol": "Qaysi belgi temir yoʻl kesishmasini toʻsuvchi moslama bilan jihozlanganligi haqida ogohlantiradi?",
+      "rasm": "questions/b129_s08_0_asl.jpeg",
+      "togri_javob": "с",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7183,
+      "savol": "Chorrahada qaysi avtomobil yoʻl berishi lozim?",
+      "rasm": "questions/b129_s09_0_asl.jpeg",
+      "togri_javob": "Sariq avtomobil",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

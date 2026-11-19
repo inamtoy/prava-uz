@@ -1,0 +1,156 @@
+{
+  "bilet": "82-bilet",
+  "slug": "bilet-82",
+  "savollar": [
+    {
+      "question_id": 7139,
+      "savol": "Yoʻlning qiyaliklarida qisqa muddatga toʻxtagan mexanik uzatmali avtomobilni joyidan tusatdan qoʻzgʻalib ketishini oldini olish uchun:",
+      "rasm": "",
+      "togri_javob": "Toʻxtab turish tormozidan foydalanish lozim",
+      "izoh": "Qiyalikda qisqa muddatga toʻxtaganda avtomobilning oʻz-oʻzidan qoʻzgʻalib ketmasligi uchun toʻxtab turish tormozidan foydalanish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7140,
+      "savol": "Koʻrsatilgan yoʻl belgilaridan qaysi biri taqiqlovchi belgilar kiritgan barcha cheklovlarni bekor qiladi?",
+      "rasm": "questions/b125_s04_0_asl.jpeg",
+      "togri_javob": "Faqat c",
+      "izoh": "c-belgi — «Barcha cheklashlarning amal qilish hududi oxiri»: u taqiqlovchi belgilar kiritgan barcha cheklovlarni bekor qiladi. a va b-belgilar faqat bittadan cheklovni bekor qiladi, d esa asosiy yoʻlning oxirini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7141,
+      "savol": "Ushbu belgilardan qaysi biri haydovchining shu joydagi yashash yoki ishlash joyiga yetib borishiga monelik qilmaydi?",
+      "rasm": "questions/b125_s05_0_asl.jpeg",
+      "togri_javob": "с",
+      "izoh": "«Harakatlanish taqiqlanadi» (c) belgisi shu hududda yashovchi yoki ishlovchi fuqarolarga tegishli transport vositalariga tatbiq etilmaydi. «Kirish taqiqlanadi» (a) va «Xavf» (b) belgilari esa bunday istisnoga ega emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7142,
+      "savol": "Qaysi belgi yoʻlning tor qismlarida roʻparadan kelayotgan transport vositasiga yoʻl berish lozimligini bildiradi?",
+      "rasm": "questions/b125_s06_0_asl.jpeg",
+      "togri_javob": "a",
+      "izoh": "a-belgi — «Roʻparada harakatlanishning ustunligi»: yoʻlning tor qismida roʻparadan kelayotgan transport vositasiga yoʻl berish kerakligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7143,
+      "savol": "Qaysi rasmdagi yoʻl ajratuvchi mintaqaga ega?",
+      "rasm": "questions/b125_s07_0_asl.jpeg",
+      "togri_javob": "Yuqoridagi rasmda",
+      "izoh": "Ajratuvchi mintaqa — qatnov qismlarini ajratib turuvchi va transport harakati uchun moʻljallanmagan yoʻl qismi. Yuqoridagi rasmda qatnov qismlari daraxtli ajratuvchi mintaqa bilan ajratilgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7144,
+      "savol": "Bosh miya jarohatlanishining asosiy alomatlari:",
+      "rasm": "",
+      "togri_javob": "Yuqoridagi barcha holatlar",
+      "izoh": "Bosh miya jarohatlanishining asosiy alomatlari — bir necha soniyadan bir necha soatgacha hushdan ketish, qayt qilish va amneziya (xotiraning yoʻqolishi).",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7145,
+      "savol": "Piyodalar yoʻlkasi – bu ...",
+      "rasm": "",
+      "togri_javob": "Yoʻlning piyodalar harakatlanishi uchun moʻljallangan va transport vositalari harakati taqiqlangan qismi.",
+      "izoh": "Piyodalar yoʻlkasi — yoʻlning piyodalar harakatlanishi uchun moʻljallangan va transport vositalari harakati taqiqlangan qismi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7146,
+      "savol": "Toʻxtab turish tormoz tizimi N toifadagi avtotransport vositalarini aslahalangan holatda qanday qiyalikda harakatsiz holatda ushlab tura olmasa foydalanish taqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "31 foizdan kam boʻlmagan",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7147,
+      "savol": "Ushbu chorrahada kim yoʻl beradi?",
+      "rasm": "questions/b126_s01_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7148,
+      "savol": "Qaysi belgi velosiped yoʻlkasini koʻrsatadi?",
+      "rasm": "questions/b126_s02_0_asl.jpeg",
+      "togri_javob": "c",
+      "izoh": "Koʻk doiradagi velosiped tasvirli c-belgi — «Velosiped yoʻlkasi». a-belgi velosiped yoʻlkasi bilan kesishuvdan ogohlantiradi, b-belgi esa velosipedda harakatlanishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7149,
+      "savol": "Avtomobillarning bir qator boʻlib harakatlanishi uchun yetarlicha keng boʻlgan, yoʻl chiziqlari bilan belgilangan yoki belgilanmagan yoʻl qatnov qismining har qanday boʻylama boʻlagi nima deb ataladi?",
+      "rasm": "",
+      "togri_javob": "Harakatlanish tasmasi",
+      "izoh": "Avtomobillarning bir qator boʻlib harakatlanishi uchun yetarli kenglikdagi qatnov qismining har qanday boʻylama boʻlagi harakatlanish tasmasi (boʻlagi) deyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7150,
+      "savol": "Xavfsiz oraliq masofani koʻrsating.",
+      "rasm": "questions/b126_s04_0_asl.jpeg",
+      "togri_javob": "B",
+      "izoh": "Oraliq masofa — bir boʻlakda oldinda harakatlanayotgan transport vositasigacha boʻlgan masofa (B). A va C esa yonlama oraliq masofalar.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7151,
+      "savol": "Qaysi belgi xavfli yuk tashiyotgan transport vositalarining harakatlanishini taqiqlaydi?",
+      "rasm": "questions/b126_s05_0_asl.jpeg",
+      "togri_javob": "c",
+      "izoh": "Toʻq sariq toʻrtburchakli yuk avtomobili tasvirli c-belgi xavfli yuk tashiyotgan transport vositalarining harakatlanishini taqiqlaydi. a-belgi esa portlovchi va tez alangalanuvchi yuk tashiyotganlarga taalluqli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7152,
+      "savol": "Chorraha –bu ...",
+      "rasm": "",
+      "togri_javob": "Yoʻllarning oʻzaro bir sathda kesishadigan, tutashadigan va ayriladigan joyi.",
+      "izoh": "Chorraha — yoʻllarning oʻzaro bir sathda kesishadigan, tutashadigan yoki ayriladigan joyi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7153,
+      "savol": "Agar haydovchi keskin tormoz bermasdan harakatini toʻxtata olmasa, svetoforning yashil ishorasidan keyin yongan sariq ishorasida harakatni davom ettirishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi",
+      "izoh": "Yashil ishoradan keyin sariq ishora yonganda, keskin tormozlamasdan toʻxtay olmaydigan haydovchi harakatni davom ettirishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

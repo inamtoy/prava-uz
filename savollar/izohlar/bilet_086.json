@@ -1,0 +1,156 @@
+{
+  "bilet": "86-bilet",
+  "slug": "bilet-86",
+  "savollar": [
+    {
+      "question_id": 7199,
+      "savol": "Bosh miya jarohatlanganda, miya chayqalganda yoki boʻyin qismi jarohatlanganda birinchi yordam koʻrsatish:",
+      "rasm": "",
+      "togri_javob": "Jarohatlangan odamni qattiq va tekis zambilga solib, boʻyin qismi tagiga qattiq yostiqcha qoʻyib, qoʻzgʻatmasdan, mahkam bogʻlab shifoxonaga yuboriladi.",
+      "izoh": "Bosh miya yoki boʻyin jarohatlanganda jabrlanuvchi qattiq va tekis zambilga yotqiziladi, boʻyni ostiga qattiq yostiqcha qoʻyiladi, qimirlamaydigan qilib mahkamlanib shifoxonaga yuboriladi — boʻyin umurtqalari siljisa, ogʻir asorat qoldirishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7200,
+      "savol": "Ushbu tik chiziq nimani bildiradi?",
+      "rasm": "questions/b131_s06_0_asl.jpeg",
+      "togri_javob": "Yoʻlning kichik radiusli burilish, tik nishablik va boshqa xavfli joylarda yoʻl toʻsiqlarining yon yuzalarini bildiradi",
+      "izoh": "Bu tik yoʻl chizigʻi kichik radiusli burilishlar, tik nishabliklar va boshqa xavfli joylardagi yoʻl toʻsiqlarining yon yuzalarini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7201,
+      "savol": "Haydovchining oʻrtacha reaksiya vaqti deb qabul qilingan:",
+      "rasm": "",
+      "togri_javob": "Taxminan 1 sekund",
+      "izoh": "Haydovchining oʻrtacha reaksiya vaqti taxminan 1 sekund deb qabul qilingan — shu vaqt ichida avtomobil tormozlashsiz yoʻl bosadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7202,
+      "savol": "Ushbu yoʻl belgisi qanday maqsadda qoʻllaniladi?",
+      "rasm": "questions/b131_s08_0_asl.jpeg",
+      "togri_javob": "Toʻxtamasdan oʻtishni taqiqlaydi",
+      "izoh": "«Bojxona» belgisi bojxona punkti oldida toʻxtamasdan oʻtishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7203,
+      "savol": "Yondosh hudud bu - ...?",
+      "rasm": "",
+      "togri_javob": "Bevosita yoʻlga tutashgan va transport vositalari oʻtib ketishi uchun moʻljallanmagan hudud (hovlilar, turar joy dahalari, avtomobil toʻxtab turish joylari, yonilgʻi quyish shoxobchalari, korxona va shunga oʻxshashlar).",
+      "izoh": "Yondosh hudud — bevosita yoʻlga tutashgan va transport vositalari oʻtib ketishi uchun moʻljallanmagan hudud: hovlilar, turar joy dahalari, toʻxtab turish joylari, yonilgʻi quyish shoxobchalari va shunga oʻxshashlar.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7204,
+      "savol": "M3 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yigʻindisiga yoʻl qoʻyiladi:",
+      "rasm": "",
+      "togri_javob": "20°",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7205,
+      "savol": "Qaysi rasmda ajratuvchi mintaqasi bor boʻlgan yoʻl koʻrsatilgan?",
+      "rasm": "questions/b132_s01_0_asl.jpeg",
+      "togri_javob": "Tepadagi",
+      "izoh": "Tepadagi rasmda qatnov qismlari daraxtli ajratuvchi mintaqa bilan ajratilgan. Pastdagi rasmda esa ular faqat chiziq bilan ajratilgan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7206,
+      "savol": "Agar avtomobilning oʻng gʻildiraklari nam qoplamali yoʻl yoqasiga chiqib qolsa, tavsiya etiladi:",
+      "rasm": "",
+      "togri_javob": "Avtomobilni tormozlamasdan yoʻlning qatnov qismiga oxista ravon burish.",
+      "izoh": "Oʻng gʻildiraklar nam yoʻl yoqasiga chiqib qolsa, tormozlamasdan, ohista va ravon burib qatnov qismiga qaytish kerak. Nam yoʻl yoqasida tormozlash avtomobilni sirpantirib yuborishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7207,
+      "savol": "Kunning qorongʻi vaqtida harakatlanayotgan transport vositasining haydovchisi tezlikni tanlashda qanday eng asosiy hal qiluvchi omilni eʼtiborga olishi kerak?",
+      "rasm": "",
+      "togri_javob": "Koʻrinish sharoitini",
+      "izoh": "Kunning qorongʻi vaqtida tezlikni tanlashda koʻrinish sharoiti hal qiluvchi omil: haydovchi faralar yoritib turgan masofa ichida toʻxtay olishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7208,
+      "savol": "Muskul va paylarning ezilishi hamda choʻzilishi alomatlari qanday?",
+      "rasm": "",
+      "togri_javob": "Jarohatlangan joyda shish paydo boʻladi, ogʻriq seziladi, baʼzan shu joyda mayda kapillyar qon tomirlari yorilib, qon quyilishi natijasida koʻkarish paydo boʻladi.",
+      "izoh": "Muskul va paylar ezilganda yoki choʻzilganda jarohatlangan joyda shish va ogʻriq paydo boʻladi, baʼzan mayda qon tomirlari yorilib, koʻkarish hosil boʻladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7209,
+      "savol": "M2 toifadagi avtotransport vositalarining boshqaruv qurilmasidagi qanday eng katta lyuft yigʻindisiga yoʻl quyiladi:",
+      "rasm": "",
+      "togri_javob": "20°",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 7210,
+      "savol": "Ushbu qoʻshimcha axborot yoʻl belgisi bildiradi:",
+      "rasm": "questions/b132_s06_0_asl.jpeg",
+      "togri_javob": "Barcha turdagi transport vositalarining toʻxtab turish uchun yoʻlning qatnov qismida, trotuar yoniga qoʻyish usulini",
+      "izoh": "Toʻxtab turish joyi belgisi ostidagi qoʻshimcha belgi transport vositalarini toʻxtab turish uchun qatnov qismida trotuar yoniga qoʻyish usulini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7211,
+      "savol": "Turar joy dahalarida qanday eng katta tezlikda harakatlanishga ruxsat etiladi:",
+      "rasm": "",
+      "togri_javob": "20 km/s",
+      "izoh": "Turar joy dahalarida tezlik 20 km/soatdan oshmasligi kerak — u yerda piyodalar qatnov qismida ham harakatlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7212,
+      "savol": "Chapga burilayotgan haydovchi kesishayotgan yoʻlning qatnov qismidan oʻtayotgan piyodalarga yoʻl berishi kerakmi?",
+      "rasm": "",
+      "togri_javob": "Ha, barcha hollarda oʻtkazishi kerak",
+      "izoh": "Chapga burilayotgan haydovchi u burilayotgan yoʻlning qatnov qismini kesib oʻtayotgan piyodalarga barcha hollarda yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 7213,
+      "savol": "Aylanma harakatlanish chorrahasida:",
+      "rasm": "",
+      "togri_javob": "Harakatlanayotgan transport vositalari aylanaga kirib kelayotgan transport vositalariga nisbatan ustunlikka (imtiyozga) ega",
+      "izoh": "Aylanma harakatlanish chorrahasida aylanada harakatlanayotgan transport vositalari aylanaga kirib kelayotganlarga nisbatan ustunlikka ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
