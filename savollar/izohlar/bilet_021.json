@@ -1,0 +1,156 @@
+{
+  "bilet": "21-bilet",
+  "slug": "bilet-21",
+  "savollar": [
+    {
+      "question_id": 6200,
+      "savol": "Qaysi belgi yoʻlning xavfli burilishiga yaqinlashayotganlik haqida ogohlantiradi?",
+      "rasm": "questions/b031_s02_0_asl.jpeg",
+      "togri_javob": "2.",
+      "izoh": "2-belgi «Xavfli burilish» belgisi boʻlib, yoʻlning xavfli burilishiga yaqinlashilayotganligi haqida ogohlantiradi. 1-belgi yoʻl torayishini, 3-belgi bir necha xavfli burilishni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6201,
+      "savol": "Qaysi yoʻldan harakatlanishga ruxsat etilgan?",
+      "rasm": "questions/b031_s03_0_asl.jpeg",
+      "togri_javob": "A va В.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi B yoʻnalishi va yoʻl qismining holatini aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6202,
+      "savol": "Avtomagistralda boshqarishni oʻrganish:",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "Avtomagistralda transport yuqori tezlikda harakatlanadi, shuning uchun u yerda boshqarishni oʻrgatish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6203,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b031_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk; qizil; yashil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6204,
+      "savol": "Mazkur shartda shatakka olishni amalga oshirishning yoʻl qoʻyilgan eng yuqori tezligi qanday?",
+      "rasm": "questions/b031_s06_0_asl.jpeg",
+      "togri_javob": "50 km/s.",
+      "izoh": "Shatakka olishda tezlik 50 km/soatdan oshmasligi kerak, belgi undan yuqori tezlikka ruxsat bergan boʻlsa ham. Shatakka olinayotgan avtomobilni yuqori tezlikda boshqarish va tormozlash qiyin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6205,
+      "savol": "Yoʻl yoqasi mavjud boʻlganda haydovchi transport vositasini qayerda toʻxtatishi kerak?",
+      "rasm": "",
+      "togri_javob": "Mumkin qadar oʻngroqda, yoʻl yoqasi ustida.",
+      "izoh": "Yoʻl yoqasi boʻlsa, haydovchi transport vositasini mumkin qadar oʻngroqda, yoʻl yoqasi ustida toʻxtatishi kerak — shunda qatnov qismi harakat uchun boʻsh qoladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6206,
+      "savol": "Yengil avtomobil haydovchisi qanday qoidalarni buzdi?",
+      "rasm": "questions/b031_s08_0_asl.jpeg",
+      "togri_javob": "Toʻxtash va toʻxtab turish qoidalarini.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Toʻxtash va toʻxtab turish qoidalari qaysi jihatdan buzilgani rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6207,
+      "savol": "N2; N3; 03; 04 toifadagi avtotransport vositalari shina protektori naqshlarining qoldiq balandligi eng kamida qancha boʻlishi kerak?",
+      "rasm": "",
+      "togri_javob": "1 mm.",
+      "izoh": "N2, N3, O3, O4 toifali avtotransport vositalari shinalarida protektor naqshining qoldiq balandligi kamida 1 mm boʻlishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6208,
+      "savol": "Mexanik transport vositalari va uning tirkamalarining egalari texnik holatidan qatʼi nazar, xarid qilgan (olgan) paytdan boshlab qancha muddat mobaynida DYHX xizmatida roʻyxatdan oʻtkazishlari kerak?",
+      "rasm": "",
+      "togri_javob": "10 kun.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Roʻyxatdan oʻtkazish muddati (10 kun) faqat kalitdan — amaldagi talabni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6209,
+      "savol": "Quruq yoʻlda darhol toʻxtash uchun nima qilish lozim?",
+      "rasm": "",
+      "togri_javob": "Tormoz pedalini ulagichni ajratmasdan bosish.",
+      "izoh": "Quruq yoʻlda darhol toʻxtash uchun tormoz tepkisini ulagichni ajratmasdan bosish kerak: dvigatel ham tormozlashga yordam beradi va avtomobil turgʻunroq boʻladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6210,
+      "savol": "Bu belgi nimani bildiradi?",
+      "rasm": "questions/b032_s02_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobillari, traktorlar, oʻziyurar mashinalar uchun, agar chorrahada yoʻnalishlardan birida harakatlanish taʼqiqlangan boʻlsa, tavsiya etiladigan harakat yoʻnalishini.",
+      "izoh": "Bu belgi chorrahada yoʻnalishlardan birida harakatlanish taqiqlangan boʻlsa, yuk avtomobillari, traktorlar va oʻziyurar mashinalar uchun tavsiya etiladigan harakat yoʻnalishini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6211,
+      "savol": "Bu yoʻl belgisi oldinda nima borligidan ogohlantiradi:",
+      "rasm": "questions/b032_s03_0_asl.jpeg",
+      "togri_javob": "Yoʻl anhor yoqasiga yoki biror-bir suv havzasining qirgʻogʻiga chiqiladigan joyi borligidan.",
+      "izoh": "Belgi yoʻl anhor yoqasiga yoki suv havzasining qirgʻogʻiga chiqadigan joyga yaqinlashilayotganligi haqida ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6212,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b032_s04_0_asl.jpeg",
+      "togri_javob": "Qizil chorrahaga kiradi va koʻk avtomobilni oʻtkazib yuborish uchun toʻxtaydi va ayni vaqtda yashil avtomobil chorrahani kesib oʻtadi; koʻk; qizil burilishni tugallaydi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6213,
+      "savol": "Chorrahadan uchinchi boʻlib kim oʻtadi?",
+      "rasm": "questions/b032_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6214,
+      "savol": "Yengil avtomobil haydovchilarining qaysi biri aholi punktlarida harakatlanish qoidalarini buzmoqda?",
+      "rasm": "questions/b032_s06_0_asl.jpeg",
+      "togri_javob": "Ikkalasi ham buzmayapti .",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmda avtomobillar qaysi qoidaga nisbatan baholanayotgani aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

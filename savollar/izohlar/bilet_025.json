@@ -1,0 +1,156 @@
+{
+  "bilet": "25-bilet",
+  "slug": "bilet-25",
+  "savollar": [
+    {
+      "question_id": 6260,
+      "savol": "Bu belgi oʻrnatilgan yoʻlda kajavali mototsiklni shatakka olishga ruxsat etiladimi?",
+      "rasm": "questions/b037_s02_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Bu belgi tirkamali yuk avtomobillarining harakatlanishini taqiqlaydi, shuningdek u amal qiladigan hududda har qanday mexanik transport vositasini, jumladan kajavali mototsiklni shatakka olish ham taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6261,
+      "savol": "Bu yotiq chiziq nimani bildiradi?",
+      "rasm": "questions/b037_s03_0_asl.jpeg",
+      "togri_javob": "Kesib oʻtiladigan yoʻl boʻylab harakatlanayotgan transport vositasiga yoʻl berar ekan, haydovchi zarur holda qayerda toʻxtashi kerak boʻlgan joyni.",
+      "izoh": "Uchburchaklar qatoridan iborat chiziq («ajdar tishlari») haydovchi kesib oʻtiladigan yoʻldagi transport vositalariga yoʻl berish uchun zarur boʻlsa qayerda toʻxtashi kerakligini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6262,
+      "savol": "Qaysi joylarda orqa bilan harakatlanish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Avtomagistrallarda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Orqa bilan harakatlanish boshqa joylarda ham (masalan, qayrilib olish taqiqlangan joylarda) taqiqlanishi mumkin — kalitni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6263,
+      "savol": "Tramvay haydovchisi harakatlanayotganida svetoforning ushbu ishorasiga muvofiq boshqa yoʻnalishlardan harakatlanayotgan transport vositalariga yoʻl berishi kerakmi?",
+      "rasm": "questions/b037_s05_0_asl.jpeg",
+      "togri_javob": "Kerak.",
+      "izoh": "Svetofor qoʻshimcha seksiyasining yashil strelkasi boʻyicha harakatlanayotgan haydovchi, jumladan tramvay haydovchisi, boshqa yoʻnalishlardan harakatlanayotgan transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6264,
+      "savol": "Transport vositalariga sidirgʻa oq chiziq bilan ajratilgan va «Belgilangan yoʻnalishdagi transport vositalari uchun moʻljallangan boʻlak» yoʻl belgisi bilan belgilangan yoʻlning oʻng boʻlagida toʻxtab turishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Sidirgʻa chiziq bilan ajratilgan va maxsus belgi bilan belgilangan yoʻnalishli transport vositalari boʻlagida boshqa transport vositalarining toʻxtab turishi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6265,
+      "savol": "Bunday yoʻl belgisi oʻrnatilgan yoʻl qismlarida mototsikllarga qanday yuqori tezlik bilan harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b037_s07_0_asl.jpeg",
+      "togri_javob": "80 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Mototsikl uchun ruxsat etilgan eng katta tezlik (80 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6266,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b037_s08_0_asl.jpeg",
+      "togri_javob": "Har ikki avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Tramvay va yuk avtomobili yoʻnalishlarini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6267,
+      "savol": "Serqatnov harakatda transport vositasini keskin tormozlash:",
+      "rasm": "",
+      "togri_javob": "Orqadan kelayotganlarning urilib ketishini keltirib chiqarishi mumkin.",
+      "izoh": "Serqatnov harakatda keskin tormozlansa, orqadan kelayotgan haydovchi oʻz vaqtida toʻxtay olmasligi va urilib ketishi mumkin. Shuning uchun xavfsiz oraliq masofa saqlanadi va tezlik oldindan, bir tekis kamaytiriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6268,
+      "savol": "Qanday holatlarda tashilayotgan yuk ishora taxtachalari yoki bayroqchalar bilan kunning qorongʻi vaqtida, yetarli koʻrinmaydigan sharoitlarda esa yorugʻlik qaytargich yoki chiroqlar bilan belgilanadi?",
+      "rasm": "",
+      "togri_javob": "Yuk transport vositasining oʻlchamidan oldinda yoki orqada 1 metrdan koʻp chiqib qolganda.",
+      "izoh": "Yuk transport vositasi oʻlchamidan oldinda yoki orqada 1 metrdan koʻp chiqib tursa, u kunduzi ishora taxtachalari yoki bayroqchalar, qorongʻida va yetarli koʻrinmaydigan sharoitda esa yorugʻlik qaytargichlar yoki chiroqlar bilan belgilanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6269,
+      "savol": "Qatnov qismi tomonidan yoʻlovchilarning tushishi va chiqishiga qaysi hollarda ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Trotuar tomondan yoki yoʻl yoqasidan iloji boʻlmasa shu shart bilanki, bu hol xavf-xatarsiz boʻlsa va boshqa harakat qatnashchilariga xalaqit bermasa.",
+      "izoh": "Yoʻlovchilar trotuar yoki yoʻl yoqasi tomondan tushishi va chiqishi kerak. Qatnov qismi tomondan esa faqat buning iloji boʻlmasa, xavfsiz boʻlsa va boshqa harakat qatnashchilariga xalaqit bermasa ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6270,
+      "savol": "Yuk avtomobilining qaysi yoʻnalishda harakatlanishiga ruxsat etiladi?",
+      "rasm": "questions/b038_s02_0_asl.jpeg",
+      "togri_javob": "Oʻngga, chapga va qayrilib olishga.",
+      "izoh": "Toʻgʻridagi yoʻlda yuk avtomobillarining harakatlanishini taqiqlovchi belgi oʻrnatilgan, oʻngdagi belgi esa yuk avtomobillari uchun tavsiya etiladigan yoʻnalishni koʻrsatadi. Shuning uchun yuk avtomobili oʻngga, chapga burilishi va qayrilib olishi mumkin, faqat toʻgʻriga yurishi mumkin emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6271,
+      "savol": "Bu yotiq chiziq bildiradi:",
+      "rasm": "questions/b038_s03_0_asl.jpeg",
+      "togri_javob": "Chorrahada boʻlaklar boʻylab ruxsat etilgan harakat yoʻnalishlarini koʻrsatadi.",
+      "izoh": "Boʻlakdagi strelkalar chorrahada shu boʻlakdan qaysi yoʻnalishlarda harakatlanish mumkinligini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6272,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar?",
+      "rasm": "questions/b038_s04_0_asl.jpeg",
+      "togri_javob": "Velosiped, avtobus, yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6273,
+      "savol": "Rasmda koʻrsatilgan holatda qizil avtomobilning haydovchisi qanday yoʻl tutishi kerak?",
+      "rasm": "questions/b038_s05_0_asl.jpeg",
+      "togri_javob": "Oʻngga burilish ishorasini yoqishi va oʻngga burilishi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor ishorasi va boʻlakning harakat yoʻnalishini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6274,
+      "savol": "Temir yoʻl kesishmasi oldida toʻxtagandan keyin harakatni boshlashdan oldin haydovchi:",
+      "rasm": "",
+      "togri_javob": "Yaqinlashib kelayotgan poezdning yoʻqligiga ishonch hosil qilishi kerak.",
+      "izoh": "Temir yoʻl kesishmasi oldida toʻxtagandan keyin haydovchi harakatni boshlashdan oldin yaqinlashib kelayotgan poyezd yoʻqligiga ishonch hosil qilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

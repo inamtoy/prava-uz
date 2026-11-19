@@ -1,0 +1,156 @@
+{
+  "bilet": "22-bilet",
+  "slug": "bilet-22",
+  "savollar": [
+    {
+      "question_id": 6215,
+      "savol": "Haydovchi harakat tezligini tanlashda nimani hisobga olishi kerak?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan omillarni.",
+      "izoh": "Haydovchi tezlikni tanlashda harakatning serqatnovligi, transport vositasi va yukning xususiyati va holati, yoʻl va ob-havo sharoitini — barcha omillarni hisobga olishi kerak, shunda u transport vositasini doimo nazorat qila oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6216,
+      "savol": "Avtomobil haydovchisi quvib oʻtishni qaysi yoʻnalish boʻyicha toʻgʻri bajaradi?",
+      "rasm": "questions/b032_s08_0_asl.jpeg",
+      "togri_javob": "«Б» yoʻnalishi boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Quvib oʻtishning toʻgʻri yoʻnalishi rasmdagi vaziyatga bogʻliq, aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6217,
+      "savol": "Haydovchi avtopoezd harakatining eng keng boʻlagini aniqlashda nimani hisobga olishi kerak?",
+      "rasm": "",
+      "togri_javob": "Kengligi boʻyicha transport vositasining oʻlchamlarini, shuningdek, tirkamaning chayqalishini hamda uning burilish markaziga siljishini.",
+      "izoh": "Avtopoezd harakatlanadigan boʻlak kengligini aniqlashda uning oʻlchamlari bilan birga tirkamaning chayqalishi va burilishda markazga siljishi ham hisobga olinadi — tirkama tortuvchi avtomobildan kengroq joy egallashi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6218,
+      "savol": "Yengil avtomobillarning oldingi oʻrindigʻida bolalarni tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "12 yosh va undan katta boʻlgan bolalarni tashishga ruxsat etiladi.",
+      "izoh": "Yengil avtomobilning oldingi oʻrindigʻida 12 yosh va undan katta bolalarni tashishga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6219,
+      "savol": "Yoʻlovchilarga haydovchi transport vositasini boshqarayotganda, uni chalgʻitishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Yoʻlovchilarning harakat paytida haydovchini chalgʻitishi taqiqlanadi, chunki chalgʻigan haydovchi yoʻldagi xavfni oʻz vaqtida sezmasligi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6220,
+      "savol": "Qaysi transport vositalariga ushbu belgining amal qilishi tatbiq etilmaydi?",
+      "rasm": "questions/b033_s02_0_asl.jpeg",
+      "togri_javob": "Ikkinchi va uchinchi javoblarda koʻrsatilgan transport vositalariga.",
+      "izoh": "«Toʻxtab turish taqiqlanadi» belgisi taksometri yoqilgan taksilarga va «Nogiron» taniqlik belgisi oʻrnatilgan, nogiron boshqarayotgan avtomobilga tatbiq etilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6221,
+      "savol": "Haydovchilardan qay biri yoʻlovchilarni tushirish uchun toʻgʻri toʻxtadi?",
+      "rasm": "questions/b033_s03_0_asl.jpeg",
+      "togri_javob": "Mototsikl va koʻk avtomobil haydovchilari.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi chiziqlar va transport vositalari toʻxtagan joylarni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6222,
+      "savol": "Enli uzuq-uzuq chiziq koʻrinishidagi yotiq chiziq nimani bildiradi?",
+      "rasm": "questions/b033_s04_0_asl.jpeg",
+      "togri_javob": "Tezlanish yoki sekinlanish boʻlagi bilan qatnov qismi asosiy boʻlagi oʻrtasidagi chegarani.",
+      "izoh": "Enli uzuq-uzuq chiziq tezlanish yoki sekinlanish boʻlagi bilan qatnov qismining asosiy boʻlagi oʻrtasidagi chegarani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6223,
+      "savol": "Qaysi transport vositasining haydovchisi birinchi navbatda harakatlanish huquqiga ega?",
+      "rasm": "questions/b033_s05_0_asl.jpeg",
+      "togri_javob": "Avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobil va mototsikl yoʻnalishlarini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6224,
+      "savol": "Bunday vaziyatda qizil avtomobilning haydovchisiga quvib oʻtish ruxsat etiladimi?",
+      "rasm": "questions/b033_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlandi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Quvib oʻtish taqiqining sababi rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6225,
+      "savol": "Siz reversiv harakatli yoʻlga burilmoqchisiz. Burilishdan keyin Siz qaysi boʻlak boʻylab harakatlanish huquqiga egasiz?",
+      "rasm": "",
+      "togri_javob": "Chetki oʻng boʻlak boʻylab faqat reversiv svetofor yoki boshqa boʻlaklar boʻyicha ham harakatlanishga ruxsat etadigan «Boʻlaklar boʻyicha harakatlanish yoʻnalishi» belgisidan oʻtgandan soʻng qayta tizilishga ruxsat etiladi.",
+      "izoh": "Reversiv harakatli yoʻlga burilgandan keyin chetki oʻng boʻlakda harakatlanish kerak. Boshqa boʻlaklarga faqat reversiv svetofor yoki «Boʻlaklar boʻyicha harakatlanish yoʻnalishi» belgisi ruxsat bergandan keyin qayta tizilish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6226,
+      "savol": "Qanday hollarda toʻxtab turish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Transport vositalarining harakatlanishiga imkon qoldirmaydigan kirishga yoki chiqishga va piyodalarning harakatiga xalaqit beradigan joylarda.",
+      "izoh": "Transport vositalarining kirishi yoki chiqishiga imkon qoldirmaydigan va piyodalar harakatiga xalaqit beradigan joylarda toʻxtab turish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6227,
+      "savol": "Haydovchi avtopoezdni tormozlashning qaysi qoidalariga rioya qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Oldindan tezlikni kamaytirib, ulagichni ajratmay, birtekis tormozlash.",
+      "izoh": "Avtopoezdni oldindan tezlikni kamaytirib, ulagichni ajratmasdan, bir tekis tormozlash kerak. Keskin tormozlash tirkamaning surilib, avtopoezdning «buklanib» qolishiga olib kelishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6228,
+      "savol": "Yon kajavasi boʻlmagan mototsiklda bolalarni tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "12 yoshdan katta bolalarga ruxsat etiladi.",
+      "izoh": "Yon kajavasi boʻlmagan mototsiklda 12 yoshdan katta bolalarni tashishga ruxsat etiladi. Kichik bola orqa oʻrindiqda oʻzini ishonchli ushlab tura olmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6229,
+      "savol": "Bu yotiq chiziq nimani anglatadi?",
+      "rasm": "questions/b034_s01_0_asl.jpeg",
+      "togri_javob": "Transport vositalari oqimi qoʻshiladigan joylardagi yoʻnaltiruvchi orolchani.",
+      "izoh": "Bu chiziq transport vositalari oqimlari qoʻshiladigan joydagi yoʻnaltiruvchi orolchani bildiradi. Bunday orolchaga kirish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

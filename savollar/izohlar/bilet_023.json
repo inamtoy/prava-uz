@@ -1,0 +1,156 @@
+{
+  "bilet": "23-bilet",
+  "slug": "bilet-23",
+  "savollar": [
+    {
+      "question_id": 6230,
+      "savol": "Chorrahada qaysi yoʻnalishlarda harakat qilish ruxsat etiladi?",
+      "rasm": "questions/b034_s02_0_asl.jpeg",
+      "togri_javob": "Faqat «Г» va «Е».",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi oʻng boʻlakdan toʻgʻriga ham ruxsat beradi (Д yoʻnalishi), kalit esa faqat Г va Е ni koʻrsatadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6231,
+      "savol": "Qatnov qismi oʻng boʻlagi boʻylab harakatlanishga qaysi transport vositasiga ruxsat etilgan?",
+      "rasm": "questions/b034_s03_0_asl.jpeg",
+      "togri_javob": "Faqat belgilangan yoʻnalishdagi transport vositalariga.",
+      "izoh": "Qatnov qismidagi «A» harfi yoʻnalishli transport vositalari uchun ajratilgan boʻlakni bildiradi. Bu boʻlakda faqat yoʻnalishli transport vositalari harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6232,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar?",
+      "rasm": "questions/b034_s04_0_asl.jpeg",
+      "togri_javob": "Tramvay va yashil avtomobil, sariq avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6233,
+      "savol": "Qaysi transport vositasining haydovchisiga belgida koʻrsatilgan tezlik bilan harakatlanishga ruxsat berilgan?",
+      "rasm": "questions/b034_s05_0_asl.jpeg",
+      "togri_javob": "Faqat mikroavtobus haydovchisiga.",
+      "izoh": "Kuzovida odam tashiyotgan yuk avtomobili 60 km/soatdan ortiq tezlikda harakatlanmasligi kerak, belgi 80 km/soatga ruxsat bergan boʻlsa ham. Shuning uchun belgida koʻrsatilgan tezlikda faqat mikroavtobus harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6234,
+      "savol": "Rulda oʻrganuvchi boʻlsa, ushbu transport vositasiga qaysi tomonga harakatlanishga ruxsat beriladi?",
+      "rasm": "questions/b034_s06_0_asl.jpeg",
+      "togri_javob": "Oʻngga, chapga va qayrilish.",
+      "izoh": "Toʻgʻridagi yoʻlga «Turar joy zonasi» belgisi oʻrnatilgan, turar joy zonasida esa boshqarishni oʻrgatish taqiqlanadi. Shuning uchun oʻrganuvchi boshqarayotgan avtomobil oʻngga, chapga burilishi yoki qayrilib olishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6235,
+      "savol": "Chorrahani kesib oʻtishda tramvay yoʻli boʻylab harakatlanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Boshqa boʻlaklarda harakat serqatnov boʻlganda, aylanib oʻtishda, ilgarilab ketishda, yoʻl-yoʻlakay yoʻnalishdagi tramvay yoʻllari boʻylab quvib oʻtishga ruxsat etiladi. Bunda tramvayga halal bermaslik kerak.",
+      "izoh": "Chorrahada yoʻl-yoʻlakay yoʻnalishdagi tramvay yoʻli boʻylab faqat boshqa boʻlaklar band boʻlganda, aylanib oʻtish, ilgarilab ketish yoki quvib oʻtish uchun harakatlanish mumkin. Bunda tramvayga xalaqit berilmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6236,
+      "savol": "Yuk avtomobillarining avtomagistrallarda ikkinchi boʻlakdan nariroqda harakatlanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi, ruxsat etilgan toʻla vazni 3,5 tonnadan oshib ketmasa.",
+      "izoh": "Avtomagistralda ruxsat etilgan toʻla vazni 3,5 tonnadan ortiq yuk avtomobillariga ikkinchi boʻlakdan nariga chiqish taqiqlanadi. Toʻla vazni 3,5 tonnadan oshmaydigan yuk avtomobillari uchun bu cheklov yoʻq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6237,
+      "savol": "Qattiq charchoq boshlanishining asosiy tashqi alomatlari qanday?",
+      "rasm": "",
+      "togri_javob": "Kоʼz sanchib ogʻriydi, yuz terisi oqaradi, uyqu bosadi.",
+      "izoh": "Qattiq charchoq boshlanganini koʻzning sanchib ogʻrishi, yuz terisining oqarishi va uyqu bosishidan bilish mumkin. Bunday holatda haydovchi toʻxtab dam olishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6238,
+      "savol": "Tashilayotgan yuk DYHX xizmatining ruxsatisiz transport vositasi oʻlchamlarining orqa nuqtasidan eng katta miqdorda qanday chiqib turishi mumkin?",
+      "rasm": "",
+      "togri_javob": "2,0 m.",
+      "izoh": "Yuk transport vositasi oʻlchamining orqa nuqtasidan 2 metrdan ortiq chiqib tursa, uni tashish uchun Davlat YHX xizmatining ruxsati kerak. 2 metrgacha chiqib turgan yukni ruxsatsiz tashish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6239,
+      "savol": "Transport vositalaridan foydalanish va texnik holatiga javobgar mansabdor shaxslarning majburiyatlari:",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilganlarni bajarishga.",
+      "izoh": "Transport vositalaridan foydalanish va ularning texnik holatiga javobgar mansabdor shaxslar sanab oʻtilgan barcha talablarni bajarishi shart: tibbiy koʻrikdan oʻtmagan haydovchini, nosoz yoki roʻyxatdan oʻtmagan transport vositasini yoʻlga chiqarmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6240,
+      "savol": "Belgi va uning ostidagi qoʻshimcha axborot belgisi nima haqida ogohlantiradi?",
+      "rasm": "questions/b035_s02_0_asl.jpeg",
+      "togri_javob": "Yoʻl yoqasida taʼmirlash ishlari olib borilayotganligi munosabati bilan unga chiqish xavfli.",
+      "izoh": "«Yoʻl ishlari» belgisi ostidagi qoʻshimcha axborot belgisi taʼmirlash ishlari yoʻl yoqasida olib borilayotganini bildiradi. Shuning uchun yoʻl yoqasiga chiqish xavfli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6241,
+      "savol": "Наr bir chiziq uzunligi ular orasidagi masofadan uch barobar katta boʻlgan uzuq-uzuq chiziq nimani bildiradi?",
+      "rasm": "questions/b035_s03_0_asl.jpeg",
+      "togri_javob": "Roʻparadan kelayotgan yoki shu yoʻnalishda harakatlanayotgan transport oqimini ajratib turgan sidirgʻa chiziqqa yaqinlashganlikni.",
+      "izoh": "Chiziqlari oraliqlaridan uch barobar uzun boʻlgan uzuq-uzuq chiziq qarama-qarshi yoki bir yoʻnalishdagi oqimlarni ajratuvchi sidirgʻa chiziqqa yaqinlashilayotganligi haqida ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6242,
+      "savol": "Yoʻl oʻrtasidagi toʻxtash joyida toʻxtagan shu yoʻnalishdagi tramvayga yaqinlashib qolgan haydovchi nima qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Yoʻl oʻrtasidagi toʻxtash joyida turgan shu yoʻnalishdagi tramvayga kelayotgan yoki undan uzoqlashayotgan piyodalarga yoʻl berishi.",
+      "izoh": "Yoʻl oʻrtasidagi toʻxtash joyida turgan tramvayga borayotgan yoki undan kelayotgan piyodalar qatnov qismini kesib oʻtadi, shuning uchun haydovchi ularga yoʻl berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6243,
+      "savol": "Qaysi transport vositasining haydovchisi harakatlanishda imtiyozga ega?",
+      "rasm": "questions/b035_s05_0_asl.jpeg",
+      "togri_javob": "Tramvay haydovchisi.",
+      "izoh": "Bir xil ruxsat etuvchi ishorada va teng ahamiyatli yoʻllar chorrahasida tramvay relssiz transport vositalariga nisbatan harakatlanishda imtiyozga ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6244,
+      "savol": "Transport vositasining haydovchisi, agar svetoforning ruxsat etuvchi chirogʻi yoqilsa-yu, harakat yoʻnalishining qatnov qismidan oʻtishga ulgurmagan piyodalar boʻlsa, nima qilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Mazkur yoʻnalishning qatnov qismidan piyodalarning oʻtib olishiga imkon berishi.",
+      "izoh": "Svetoforning ruxsat etuvchi ishorasi yongan boʻlsa ham, haydovchi qatnov qismidan oʻtishga ulgurmagan piyodalarga oʻtib olishga imkon berishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

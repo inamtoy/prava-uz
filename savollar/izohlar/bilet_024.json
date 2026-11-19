@@ -1,0 +1,156 @@
+{
+  "bilet": "24-bilet",
+  "slug": "bilet-24",
+  "savollar": [
+    {
+      "question_id": 6245,
+      "savol": "Aholi punktlarida ruxsat etilgan toʻla vazni 3,5 tonnadan ziyod avtomobillarning harakatlanishiga qaysi boʻlakdan ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Istalgan boʻlakdan, biroq, agar relssiz transport vositalarining harakati uchun bir yoʻnalishda uchta va undan ortiq boʻlak boʻlsa, u holda chetki chap boʻlakka faqat chapga burilish, orqaga qayrilish uchun oʻtishga va tushirish yoki ortish uchun bir tomonlama harakatga ruxsat etilgan koʻchalarda toʻxtashga.",
+      "izoh": "Aholi punktlarida toʻla vazni 3,5 tonnadan ziyod avtomobillar istalgan boʻlakdan harakatlanishi mumkin. Lekin bir yoʻnalishda uchta va undan ortiq boʻlak boʻlsa, chetki chap boʻlakka faqat chapga burilish, qayrilib olish yoki bir tomonlama harakatli koʻchada yuk ortish-tushirish uchun toʻxtashga oʻtish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6246,
+      "savol": "Agar barcha transport vositalari 80 km/soat tezlik bilan harakat qilsa, haydovchilardan qay biri qoidalar talablarini buzadi?",
+      "rasm": "questions/b035_s08_0_asl.jpeg",
+      "togri_javob": "Hech kim buzmadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Har bir transport vositasi uchun ruxsat etilgan tezlik yoʻl turiga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6247,
+      "savol": "Tormoz yoʻli deganda nima tushuniladi?",
+      "rasm": "",
+      "togri_javob": "Tormoz tepkisi bosilgan vaqtdan boshlab avtomobilning toʻliq toʻxtagungacha bosib oʻtgan masofa.",
+      "izoh": "Tormoz yoʻli — tormoz tepkisi bosilgan paytdan avtomobil toʻliq toʻxtaguncha bosib oʻtilgan masofa. Xavf sezilgan paytdan boshlab hisoblanadigan masofa esa toʻxtash yoʻli deyiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6248,
+      "savol": "Davlat YHX xizmatining ruxsatisiz transport vositasining yuk bilan yoki yuksiz qanday yuqori oʻlchamdagi balandlik bilan harakatlanishiga yoʻl qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "4,0 m.",
+      "izoh": "Yuk bilan yoki yuksiz balandligi 4 metrdan oshmaydigan transport vositasi ruxsatsiz harakatlanishi mumkin. Undan baland transport vositasi uchun Davlat YHX xizmatining ruxsati kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6249,
+      "savol": "Piyoda yalt-yalt etuvchi mayoqcha va maxsus tovushli ishoralarni yoqib kelayotgan transport vositasi yaqinlashib qolganda qanday yoʻl tutishi kerak?",
+      "rasm": "",
+      "togri_javob": "Qatnov qismidan oʻtmasligi.",
+      "izoh": "Yaltiroq mayoqcha va maxsus tovush ishorasi yoqilgan transport vositasi yaqinlashganda piyoda qatnov qismiga chiqmasligi kerak — bu transport vositasi toʻxtamasligi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6250,
+      "savol": "Belgilarning qaysi biri ogohlantiruvchi belgilar bilan qayd etilgan xavfli yoʻl qismining uzunligini koʻrsatadi?",
+      "rasm": "questions/b036_s02_0_asl.jpeg",
+      "togri_javob": "4.",
+      "izoh": "4-qoʻshimcha axborot belgisi (ikki strelkali «100 m») ogohlantiruvchi belgi bilan belgilangan xavfli yoʻl qismining uzunligini koʻrsatadi. 2-belgi esa xavfli joygacha boʻlgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6251,
+      "savol": "Bu yoʻl chizigʻi quyidagi maqsadni:",
+      "rasm": "questions/b036_s03_0_asl.jpeg",
+      "togri_javob": "Belgilangan yoʻnalishdagi transport vositalarining toʻxtash va taksining toʻxtab turish joyini bildiradi.",
+      "izoh": "Sariq zigzag chiziq yoʻnalishli transport vositalarining toʻxtash joyini va taksining toʻxtab turish joyini bildiradi. Boshqa transport vositalarining bu yerda toʻxtashi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6252,
+      "savol": "Haydovchilardan qay biri birinchi boʻlib harakatlanish uchun imtiyozga ega?",
+      "rasm": "questions/b036_s04_0_asl.jpeg",
+      "togri_javob": "Avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobil va mototsikl yoʻnalishlarini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6253,
+      "savol": "Navbat bilan yalt-yalt etib turuvchi ikkita qizil yoritgichlar quyidagi maʼnoga ega:",
+      "rasm": "questions/b036_s05_0_asl.jpeg",
+      "togri_javob": "Harakatni taʼqiqlaydi.",
+      "izoh": "Navbat bilan yonib-oʻchadigan ikkita qizil chiroq harakatni taqiqlaydi. Bunday svetoforlar temir yoʻl kesishmalari, koʻtarma koʻpriklar va shunga oʻxshash joylarda oʻrnatiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6254,
+      "savol": "Shlagbaumni oʻzboshimchalik bilan ochish yoki aylanib oʻtishga ruxsat beriladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Shlagbaumni oʻzboshimchalik bilan ochish yoki uni aylanib oʻtish har qanday holatda taqiqlanadi, svetofor oʻchgan boʻlsa ham.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6255,
+      "savol": "Siz uchta boʻlagi boʻlgan ikki tomonlama harakatli yoʻl boʻylab ketayapsiz, oʻrta boʻlakka oʻtishga qanday holda ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan hollarda.",
+      "izoh": "Uch boʻlakli ikki tomonlama harakatli yoʻlda oʻrta boʻlakka quvib oʻtish, aylanib oʻtish, chapga burilish yoki qayrilib olish uchun chiqish mumkin — sanab oʻtilgan barcha hollarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6256,
+      "savol": "Avtomobilning taniqlik belgisi boʻlganda, yoʻlning mazkur qismida qanday yuqori tezlik bilan harakatlanishiga ruxsat etiladi?",
+      "rasm": "questions/b036_s08_0_asl.jpeg",
+      "togri_javob": "70 km/s.",
+      "izoh": "Avtomobilga oʻrnatilgan «Tezlik cheklovi» taniqlik belgisi bunday transport vositasi belgida koʻrsatilgan tezlikdan oshmasligi kerakligini bildiradi. Yoʻl belgisi 90 km/soatga ruxsat bergan boʻlsa ham, bu avtomobil 70 km/soatdan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6257,
+      "savol": "Bosh miya va kalla suyagi oʻrtacha holatda jarohatlangan jabrlanuvchini transporting qaysi turida tashish kerak?",
+      "rasm": "",
+      "togri_javob": "Faqat tez tibbiy yordam mashinasida.",
+      "izoh": "Bosh miya va kalla suyagi jarohatlangan jabrlanuvchini tashishda tibbiy kuzatuv va maxsus jihozlar kerak. Shuning uchun uni faqat tez tibbiy yordam mashinasida tashish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6258,
+      "savol": "Quyidagi holatda haydovchi piyodalarga yoʻl berishi lozimmi?",
+      "rasm": "questions/b036_s10_0_asl.jpeg",
+      "togri_javob": "Ha.",
+      "izoh": "Belgi turar joy zonasini bildiradi. Turar joy zonasida piyodalar qatnov qismida ham harakatlanishi mumkin va ular transport vositalariga nisbatan ustunlikka ega, shuning uchun haydovchi ularga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6259,
+      "savol": "«Avtomagistral» belgisi bilan belgilangan yoʻlda piyodalarning harakatlanishiga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "«Avtomagistral» belgisi bilan belgilangan yoʻlda piyodalarning harakatlanishi taqiqlanadi, chunki u yerda transport yuqori tezlikda harakatlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

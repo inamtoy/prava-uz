@@ -1,0 +1,156 @@
+{
+  "bilet": "20-bilet",
+  "slug": "bilet-20",
+  "savollar": [
+    {
+      "question_id": 6185,
+      "savol": "Agar Siz oldinda harakatlanayotgan avtomobilni quvib oʻtishga chiqsangiz, koʻrsatilgan hollarning qaysi birida tovush ishorasi berish maqsadga muvofiq?",
+      "rasm": "",
+      "togri_javob": "Quvib oʻtilayotgan avtomobil haydovchisi chapga burilish koʻrsatkichini yoqqanda.",
+      "izoh": "Quvib oʻtilayotgan haydovchi chapga burilish koʻrsatkichini yoqsa, u quvib oʻtayotgan avtomobil yoʻliga chiqishi mumkin. Tovush ishorasi uni quvib oʻtish boshlanganidan ogohlantiradi va toʻqnashuvning oldini oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6186,
+      "savol": "Koʻrsatilgan joyda toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b029_s08_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Rasmda toʻxtashni taqiqlovchi belgi yoki chiziq yoʻq, avtomobil yoʻl yoqasida, qatnov qismining oʻng chetida toʻxtagan. Shuning uchun bu joyda toʻxtashga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6187,
+      "savol": "Yengil avtomobil haydovchisi yoʻl berishi kerakmi?",
+      "rasm": "questions/b029_s09_0_asl.jpeg",
+      "togri_javob": "Ha.",
+      "izoh": "Belgi turar joy zonasining tugashini bildiradi. Turar joy zonasidan chiqayotgan haydovchi boshqa yoʻl harakati qatnashchilariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6188,
+      "savol": "Odamlarni tashishga moslashtirilmagan yuk avtomobili yukxonasida odam tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat yukni olish uchun borayotgan yoki kuzatib boruvchi shaxslarga shu shart bilanki, ular bortlaridan pastda joylashgan oʻtiradigan joy bilan taʼminlangan boʻlsalar ruxsat etiladi.",
+      "izoh": "Odam tashishga moslashtirilmagan yuk avtomobili kuzovida faqat yukni olish uchun borayotgan yoki uni kuzatib boruvchi shaxslar tashilishi mumkin, ular kuzov bortidan pastda joylashgan oʻrindiq bilan taʼminlangan boʻlishi shart.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6189,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b030_s01_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobilning haydovchisi.",
+      "izoh": "Yaltiroq mayoqchasi va maxsus tovush ishorasi yoqilgan tez yordam avtomobili harakatda ustunlikka ega. Yengil avtomobil haydovchisi, svetofor ishorasidan qatʼi nazar, unga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6190,
+      "savol": "Ushbu belgi qaysi transport vositalarini quvib oʻtishni taʼqiqlaydi?",
+      "rasm": "questions/b030_s02_0_asl.jpeg",
+      "togri_javob": "Hammasini, 40 km/soatdan kam tezlikda yakka harakat qilayotganlardan tashqari.",
+      "izoh": "«Quvib oʻtish taqiqlanadi» belgisi 40 km/soatdan kam tezlikda yakka harakatlanayotgan transport vositalaridan tashqari barcha transport vositalarini quvib oʻtishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6191,
+      "savol": "Bu yoʻl chizigi nimani bildiradi?",
+      "rasm": "questions/b030_s03_0_asl.jpeg",
+      "togri_javob": "Qatnov qismining torayishiga yoki qarama-qarshi yoʻnalishdan kelayotgan transport oqimini ajratuvchi 1.1 yoki 1.11 chizigʻiga yaqinlashayotganini.",
+      "izoh": "Qatnov qismidagi egilgan strelka qatnov qismi torayishiga yoki qarama-qarshi yoʻnalishdagi oqimlarni ajratuvchi 1.1 yoki 1.11 chizigʻiga yaqinlashilayotganini bildiradi va qayta tizilish kerak boʻlgan tomonni koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6192,
+      "savol": "Chorrahani uchinchi bolib kesib oʻtadi.",
+      "rasm": "questions/b030_s04_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6193,
+      "savol": "Koʻrsatilgan yoʻnalishlar boʻyicha qaysi transport vositalariga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b030_s05_0_asl.jpeg",
+      "togri_javob": "Tramvay va avtomobil haydovchisiga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Svetofor qoʻshimcha seksiyasi va transport vositalarining yoʻnalishini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6194,
+      "savol": "Qanday holda markazdan qochirma kuch burilishda kamayadi?",
+      "rasm": "questions/b030_s06_0_asl.jpeg",
+      "togri_javob": "Harakat tezligi pasayganda.",
+      "izoh": "Markazdan qochirma kuch tezlikning kvadratiga bogʻliq, shuning uchun tezlik pasayganda u keskin kamayadi. Burilish radiusi kamayganda esa bu kuch ortadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6195,
+      "savol": "Kim yoʻl berishi kerak?",
+      "rasm": "questions/b030_s07_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobil haydovchisi.",
+      "izoh": "Tik nishab belgisi bilan belgilangan yoʻl qismida toʻsiq boʻlsa, pastga tushayotgan transport vositasi haydovchisi yuqoriga koʻtarilayotganga yoʻl berishi kerak. Shuning uchun yuk avtomobili haydovchisi yoʻl beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6196,
+      "savol": "Bu joyda yengil avtomobilning toʻxtab turishiga ruxsat berilganmi?",
+      "rasm": "questions/b030_s08_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "Belgi bu joyda toʻxtab turishni taqiqlaydi. Bundan tashqari koʻpriklar, osma yoʻllar va estakadalar ostida ham toʻxtab turish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6197,
+      "savol": "Burilishda harakat qilganda avtopoezdning tirkamasi siljiydimi?",
+      "rasm": "",
+      "togri_javob": "Burilish markaziga siljiydi.",
+      "izoh": "Burilishda avtopoezd tirkamasining gʻildiraklari tortuvchi avtomobil gʻildiraklaridan kichikroq radius boʻylab — burilish markaziga yaqinroqdan oʻtadi. Shuning uchun haydovchi burilishda tirkamaning ichki tomonga siljishini hisobga olishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6198,
+      "savol": "Taʼqiqlovchi belgi tagiga oʻrnatilgan qoʻshimcha axborot belgisi nima maqsadda qoʻyilgan?",
+      "rasm": "questions/b030_s10_0_asl.jpeg",
+      "togri_javob": "Belgidan uning amal qilish hududigacha boʻlgan orqaliqni aniqlash uchun.",
+      "izoh": "Masofa koʻrsatilgan qoʻshimcha axborot belgisi («300 m») belgidan uning amal qilish hududi boshlanadigan joygacha boʻlgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6199,
+      "savol": "Ushbu belgilar amal qiladigan hududda “Nogiron” taniqlik belgisi bilan belgilangan avtomobilga toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b031_s01_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Belgi ostidagi chizib tashlangan nogironlar aravachasi tasvirli qoʻshimcha belgi taqiq «Nogiron» taniqlik belgisi oʻrnatilgan transport vositalariga tatbiq etilmasligini bildiradi. Shuning uchun bunday avtomobilga toʻxtashga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
