@@ -1,0 +1,156 @@
+{
+  "bilet": "58-bilet",
+  "slug": "bilet-58",
+  "savollar": [
+    {
+      "question_id": 6759,
+      "savol": "Qaysi biri birinchi oʻtadi?",
+      "rasm": "questions/b087_s01_0_asl.jpeg",
+      "togri_javob": "Yonilgʻi tashuvchi yuk avtomobili.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6760,
+      "savol": "Qaysi avtomobilga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b087_s02_0_asl.jpeg",
+      "togri_javob": "Ikkalasiga ham ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6761,
+      "savol": "Ushbu chorrahada avtobus nechanchi boʻlib harakat qiladi?",
+      "rasm": "questions/b087_s03_0_asl.jpeg",
+      "togri_javob": "Ikkinchi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6762,
+      "savol": "Ushbu holat aholi yashash joyida boʻlsa quvib oʻtish mumkinmi?",
+      "rasm": "questions/b087_s04_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Temir yoʻl kesishmalarida va ularga 100 metrdan yaqinda quvib oʻtish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6763,
+      "savol": "Yoʻl harakati qoidalarini qaysi biri buzmoqda.",
+      "rasm": "questions/b087_s05_0_asl.jpeg",
+      "togri_javob": "Ikkalasi ham qoidani buzmadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6764,
+      "savol": "Qaysi biri birinchi harakatlanadi?",
+      "rasm": "questions/b087_s06_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6765,
+      "savol": "Qaysi traektoriya boʻylab burilishni amalga oshirish lozim?",
+      "rasm": "questions/b087_s07_0_asl.jpeg",
+      "togri_javob": "Faqat А.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6766,
+      "savol": "Qaysi biri birinchi harakatlanadi?",
+      "rasm": "questions/b087_s08_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6767,
+      "savol": "Qaysi avtomobil birinchi harakatlanadi?",
+      "rasm": "questions/b087_s09_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6768,
+      "savol": "Qaysi haydovchi burilishni toʻgʻri bajarmoqda?",
+      "rasm": "questions/b087_s10_0_asl.jpeg",
+      "togri_javob": "Ikkalasi ham qoidani buzmoqda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6769,
+      "savol": "Ushbu vaziyatda ogohlantiruvchi uchburchak qancha masofaga joylashtirilishi kerak?",
+      "rasm": "questions/b088_s01_0_asl.jpeg",
+      "togri_javob": "15 metr masofada.",
+      "izoh": "Aholi punktida falokat sababli toʻxtash belgisi transport vositasidan kamida 15 metr masofada qoʻyilishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6770,
+      "savol": "Bu yerda koʻk avtomobilga yoʻl berish kerakmi?",
+      "rasm": "questions/b088_s02_0_asl.jpeg",
+      "togri_javob": "Kerak emas.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6771,
+      "savol": "Qaysi traektoriya boʻylab qayrilish lozim.",
+      "rasm": "questions/b088_s03_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6772,
+      "savol": "Koʻrsatilgan yoʻnalishda toʻxtash mumkinmi?",
+      "rasm": "questions/b088_s04_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6773,
+      "savol": "Qaysi avtomobil toʻxtab turish qoidalarini buzdi?",
+      "rasm": "questions/b088_s05_0_asl.jpeg",
+      "togri_javob": "Faqat А.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

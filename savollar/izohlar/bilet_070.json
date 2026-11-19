@@ -1,0 +1,156 @@
+{
+  "bilet": "70-bilet",
+  "slug": "bilet-70",
+  "savollar": [
+    {
+      "question_id": 6959,
+      "savol": "Ushbu holatda poyezd relsidan qancha masofa uzoqlikda toʻxtash kerak?",
+      "rasm": "questions/b107_s02_0_asl.jpeg",
+      "togri_javob": "15 m.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Shlagbaumsiz temir yoʻl kesishmasi oldida toʻxtash masofasi (15 m) faqat kalitdan — qoidadagi aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6960,
+      "savol": "Ushbu aylanma harakatda siz:",
+      "rasm": "questions/b107_s03_0_asl.jpeg",
+      "togri_javob": "Birinchi harakatlanasiz.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6961,
+      "savol": "Yoʻlning bu qismida toʻxtab turishga ruxsat etiladimi?",
+      "rasm": "questions/b107_s04_0_asl.jpeg",
+      "togri_javob": "Har ikkalasiga taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6962,
+      "savol": "Yashil mototsiklchining qoʻl ishorasi bildiradi:",
+      "rasm": "questions/b107_s05_0_asl.jpeg",
+      "togri_javob": "Oʻngga burilishni.",
+      "izoh": "Chap qoʻlni tirsakdan yuqoriga bukib koʻtarish oʻngga burilish ishorasi hisoblanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6963,
+      "savol": "Harakatni davom ettirish uchun qaysi transport vositalariga yoʻl berish kerak?",
+      "rasm": "questions/b107_s06_0_asl.jpeg",
+      "togri_javob": "Hammasiga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6964,
+      "savol": "Koʻrsatilgan qaysi yoʻnalish boʻyicha harakatni davom ettirsa bu burilish toʻgʻri bajarilgan hisoblanadi?",
+      "rasm": "questions/b107_s07_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "Oʻngga burilgandan keyin transport vositasi qatnov qismining chetki oʻng boʻlagida boʻlishi kerak — bu B yoʻnalish.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6965,
+      "savol": "Ushbu holatda qaysi tomonga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b107_s08_0_asl.jpeg",
+      "togri_javob": "Faqat chapga va orqaga qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6966,
+      "savol": "Qaysi belgi toʻxtamasdan harakatlanishni taʼqiqlaydi?",
+      "rasm": "questions/b107_s09_0_asl.jpeg",
+      "togri_javob": "Faqat Б va B.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6967,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b107_s10_0_asl.jpeg",
+      "togri_javob": "Reversiv harakatlanish yoʻliga chiqish.",
+      "izoh": "Ikki tomonga yoʻnalgan strelkali koʻk belgi reversiv harakatlanish yoʻliga chiqishni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6968,
+      "savol": "Toʻla vazni 3,5 tonnadan kam boʻlgan avtotransport vostalariga ushbu chorrahada harakatlanishga ruxsat etiladi:",
+      "rasm": "questions/b108_s01_0_asl.jpeg",
+      "togri_javob": "Barcha yoʻnalishlar boʻyicha.",
+      "izoh": "Belgi ostidagi yuk avtomobili tasvirli qoʻshimcha belgi «Toʻgʻriga harakatlanish» talabi faqat yuk avtomobillariga tatbiq etilishini bildiradi. Toʻla vazni 3,5 tonnadan kam transport vositalari barcha yoʻnalishlarda harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6969,
+      "savol": "Koʻrsatilgan qaysi yoʻnalish boʻyicha qayrilishga ruxsat etiladi?",
+      "rasm": "questions/b108_s02_0_asl.jpeg",
+      "togri_javob": "Faqat A yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6970,
+      "savol": "Qaysi haydovchi yoʻlovchi olish uchun toʻgʻri toʻxtadi?",
+      "rasm": "questions/b108_s03_0_asl.jpeg",
+      "togri_javob": "Faqat A.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6971,
+      "savol": "Qaysi belgi reversiv harakatni boshlanshini bildiradi?",
+      "rasm": "questions/b108_s04_0_asl.jpeg",
+      "togri_javob": "B.",
+      "izoh": "B-belgi (yuqoriga va pastga yoʻnalgan strelka) — «Reversiv harakatlanish»: u reversiv harakatlanish boshlanishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6972,
+      "savol": "Qaysi avtomashina haydovchisi mashinani notoʻgʻri qoldirgan?",
+      "rasm": "questions/b108_s05_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6973,
+      "savol": "Ushbu Yoʻl transport hodisasida kim aybdor?",
+      "rasm": "questions/b108_s06_0_asl.jpeg",
+      "togri_javob": "Qizil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}
