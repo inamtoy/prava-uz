@@ -1,0 +1,156 @@
+{
+  "bilet": "67-bilet",
+  "slug": "bilet-67",
+  "savollar": [
+    {
+      "question_id": 6906,
+      "savol": "Qaysi transport vositasiga toʻgʻriga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b101_s09_0_asl.jpeg",
+      "togri_javob": "Faqat yuk avtomobiliga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6907,
+      "savol": "Qaysi belgi faqat belgilangan boʻlakda koʻrsatilgan tezlikdan oshirmaslikni buyuradi?",
+      "rasm": "questions/b101_s10_0_asl.jpeg",
+      "togri_javob": "Faqat A.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6908,
+      "savol": "Siz oʻngga burilmoqchisiz. Ushbu vaziyatda siz:",
+      "rasm": "questions/b102_s01_0_asl.jpeg",
+      "togri_javob": "Birinchi harakatlanasiz.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6909,
+      "savol": "Ushbu yoʻnalish boʻyicha qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b102_s02_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6910,
+      "savol": "Qaysi yoʻnalish boʻyicha burilishga ruxsat etiladi?",
+      "rasm": "questions/b102_s03_0_asl.jpeg",
+      "togri_javob": "Faqat A.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6911,
+      "savol": "Qaysi belgi bir tomonlama harakatlanish yoʻlini bildiradi?",
+      "rasm": "questions/b102_s04_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6912,
+      "savol": "Harakatni qaysi yoʻnalish boʻyicha davom ettirishga ruxsat etiladi?",
+      "rasm": "questions/b102_s05_0_asl.jpeg",
+      "togri_javob": "Chapga va orqaga qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6913,
+      "savol": "Reversiv harakatni tartibga soluvchi svetofor oʻchirilgan paytta bu boʻlakdan quvib oʻtishni amalga oshirish mumkinmi?",
+      "rasm": "questions/b102_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6914,
+      "savol": "Ushbu joyda yoʻlovchi olishga ruxsat etiladimi?",
+      "rasm": "questions/b102_s07_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6915,
+      "savol": "Oʻngga burilayotganda siz yoʻl berishingiz kerak:",
+      "rasm": "questions/b102_s08_0_asl.jpeg",
+      "togri_javob": "Piyoda va velosipedchiga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6916,
+      "savol": "Ushbu koʻrsatilgan joyda yoʻlovchi olish uchun toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b102_s09_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6917,
+      "savol": "Siz bu chorrahadan oʻngga qayrilmoqchisiz. Qaysi tramvayga yoʻl berishingiz kerak?",
+      "rasm": "questions/b102_s10_0_asl.jpeg",
+      "togri_javob": "Har ikkalasigayam yoʻl berish kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6918,
+      "savol": "Ushbu holatda qanday harakatlanish lozim?",
+      "rasm": "questions/b103_s01_0_asl.jpeg",
+      "togri_javob": "Harakat taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6919,
+      "savol": "“A” harfi shaklidagi yotiq chiziq bildiradi:",
+      "rasm": "questions/b103_s02_0_asl.jpeg",
+      "togri_javob": "Barcha avtobuslar uchun maxsus harakat boʻlagi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6920,
+      "savol": "Qaysi belgi qayrilish uchun ruxsat beradi?",
+      "rasm": "questions/b103_s03_0_asl.jpeg",
+      "togri_javob": "Hammasi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

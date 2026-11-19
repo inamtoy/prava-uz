@@ -1,0 +1,156 @@
+{
+  "bilet": "59-bilet",
+  "slug": "bilet-59",
+  "savollar": [
+    {
+      "question_id": 6774,
+      "savol": "Ushbu vaziyatda kim yoʻl harakati qoidalarini buzmoqda?",
+      "rasm": "questions/b088_s06_0_asl.jpeg",
+      "togri_javob": "Qizil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6775,
+      "savol": "Bu joyda yoʻlovchi olish va tushirishga ruxsat etiladimi?",
+      "rasm": "questions/b088_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Tonnelda toʻxtash taqiqlanadi, shuning uchun bu yerda yoʻlovchi olish yoki tushirish uchun ham toʻxtab boʻlmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6776,
+      "savol": "Bu joyda quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b088_s08_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6777,
+      "savol": "Chap taraf chetki boʻlakdan qaysi tomon (lar) ga harakat qilish mumkin?",
+      "rasm": "questions/b088_s09_0_asl.jpeg",
+      "togri_javob": "Chapga va qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6778,
+      "savol": "Agar traktorlarning tezligi 20 km/s boʻlsa, ushbu koʻrsatilgan yoʻnalish boʻylab quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b088_s10_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6779,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b089_s01_0_asl.jpeg",
+      "togri_javob": "Shlagbaumli temiryoʻl kesishmasi.",
+      "izoh": "Panjara tasvirli ogohlantiruvchi belgi shlagbaumli temir yoʻl kesishmasiga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6780,
+      "savol": "Qaysi biri “Yoʻl harakati qoidalari” ni buzmoqda?",
+      "rasm": "questions/b089_s02_0_asl.jpeg",
+      "togri_javob": "Ikkalasi ham qoidani buzmoqda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6781,
+      "savol": "Ushbu yoʻl transport hodisasida qaysi biri aybdor?",
+      "rasm": "questions/b089_s03_0_asl.jpeg",
+      "togri_javob": "Oq avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6782,
+      "savol": "Ushbu vaziyatda:",
+      "rasm": "questions/b089_s04_0_asl.jpeg",
+      "togri_javob": "Chap tomondagi avtomashinaga yoʻl berish kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6783,
+      "savol": "Qaysi mashina qizil avtomobilning chapga burilishi uchun yoʻl berishi kerak?",
+      "rasm": "questions/b089_s05_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6784,
+      "savol": "Bu joyda quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b089_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6785,
+      "savol": "Ushbu vaziyatda birinchi harakatlanish qaysi avtomobilga beriladi?",
+      "rasm": "questions/b089_s07_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobiliga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6786,
+      "savol": "Avtomoshina oʻngga burilishi uchun qaysi yoʻnalish boʻylab harakatlanishi kerak.",
+      "rasm": "questions/b089_s08_0_asl.jpeg",
+      "togri_javob": "Faqat А.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6787,
+      "savol": "“Tez yordam” avtomashinasi orqaga harakatlanmoqchi. Ushbu vaziyatda qaysi haydovchi yoʻl berishi kerak?",
+      "rasm": "questions/b089_s09_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6788,
+      "savol": "Ushbu koʻprikda imtiyoz qaysi haydovchiga beriladi?",
+      "rasm": "questions/b089_s10_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili.",
+      "izoh": "Koʻprik oldida yengil avtomobil tomonda «Roʻparada harakatlanishning ustunligi» belgisi oʻrnatilgan. Shuning uchun koʻprikning tor qismida yuk avtomobili ustunlikka ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

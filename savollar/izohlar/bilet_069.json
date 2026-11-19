@@ -1,0 +1,156 @@
+{
+  "bilet": "69-bilet",
+  "slug": "bilet-69",
+  "savollar": [
+    {
+      "question_id": 6936,
+      "savol": "Quyidagi belgilardan qaysi biri Kempingni bildiradi?",
+      "rasm": "questions/b104_s09_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6937,
+      "savol": "Aholi yashash joylarida ushbu belgi qancha masofaga oʻrnatilishi kerak?",
+      "rasm": "questions/b104_s10_0_asl.jpeg",
+      "togri_javob": "50-100 m.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6938,
+      "savol": "Qaysi yoʻl belgisi asosiy yoʻlni bildiradi?",
+      "rasm": "questions/b105_s01_0_asl.jpeg",
+      "togri_javob": "1 va 2.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6939,
+      "savol": "Ushbu koʻrsatilgan yoʻnalish boʻyicha burilishga ruxsat etiladimi?",
+      "rasm": "questions/b105_s02_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6940,
+      "savol": "Quyidagi qaysi belgi qayrilishlar oraligʻini bildiradi?",
+      "rasm": "questions/b105_s03_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6941,
+      "savol": "Qaysi rasmdagi avtomoshina yoʻlning xavfli burilish qismida toʻgʻri harakatlanmoqda?",
+      "rasm": "questions/b105_s04_0_asl.jpeg",
+      "togri_javob": "Chap rasmdagi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6942,
+      "savol": "Siz toʻgriga harakatlanmoqchisiz. Qaysi avtotransport vositalariga yoʻl berishingiz kerak?",
+      "rasm": "questions/b105_s05_0_asl.jpeg",
+      "togri_javob": "Tramvay va yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6943,
+      "savol": "Yoʻlning ushbu qismida qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b105_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6948,
+      "savol": "Toʻgʻriga harakatlanish:",
+      "rasm": "questions/b106_s01_0_asl.jpeg",
+      "togri_javob": "Ishchi kunlarida taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6949,
+      "savol": "Qaysi belgi ikki tomonlama harakatlanish yoʻlini bildiradi?",
+      "rasm": "questions/b106_s02_0_asl.jpeg",
+      "togri_javob": "Faqat A.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6950,
+      "savol": "Ushbu vaziyatda qaysi tomonga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b106_s03_0_asl.jpeg",
+      "togri_javob": "Faqat oʻngga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6951,
+      "savol": "Qaysi rasmda chorraha tasvirlangan?",
+      "rasm": "questions/b106_s04_0_asl.jpeg",
+      "togri_javob": "Faqat chapdagida.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6952,
+      "savol": "Ushbu vaziyatda yengil avtomobil haydovchisi qanday imtiyozlarga ega?",
+      "rasm": "questions/b106_s05_0_asl.jpeg",
+      "togri_javob": "Yuqoridagi har ikkala harakatga ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6953,
+      "savol": "Koʻrsatilgan tasvirda qaysi haydovchilar Yoʻl harakati qoidalarini buzmoqdalar?",
+      "rasm": "questions/b106_s06_0_asl.jpeg",
+      "togri_javob": "Barchasi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6958,
+      "savol": "Qaysi belgi yoʻl boshlangandan beri necha kilometr masofa bosib oʻtilganligini koʻrsatadi.",
+      "rasm": "questions/b107_s01_0_asl.jpeg",
+      "togri_javob": "Faqat В.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

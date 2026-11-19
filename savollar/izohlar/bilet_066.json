@@ -1,0 +1,156 @@
+{
+  "bilet": "66-bilet",
+  "slug": "bilet-66",
+  "savollar": [
+    {
+      "question_id": 6891,
+      "savol": "Qaysi yoʻnalish boʻyicha qayrilishni amalga oshirish lozim.",
+      "rasm": "questions/b100_s04_0_asl.jpeg",
+      "togri_javob": "Har ikkala yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6892,
+      "savol": "Tartibga soluvchining ushbu ishorasida qanday harakatlanish lozim?",
+      "rasm": "questions/b100_s05_0_asl.jpeg",
+      "togri_javob": "Harakatlanish taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6893,
+      "savol": "Koʻrsatilgan qaysi belgi chapga qayrilishni taʼqiqlaydi?",
+      "rasm": "questions/b100_s06_0_asl.jpeg",
+      "togri_javob": "Faqat A va B.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6894,
+      "savol": "Koʻrsatilgan belgi bildiradi:",
+      "rasm": "questions/b100_s07_0_asl.jpeg",
+      "togri_javob": "Ushbu boʻlakda eng kam tezlik 40 km/s boʻlishi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6895,
+      "savol": "Qaysi oʻrinlarda toʻxtashga ruxsat etiladi?",
+      "rasm": "questions/b100_s08_0_asl.jpeg",
+      "togri_javob": "А va В.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6896,
+      "savol": "Bu joyda qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b100_s09_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi qachonki yoʻlning koʻrinadigan qismi 100 m dan ziyod boʻlsa.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6897,
+      "savol": "Tartibga soluvchining ushbu ishorasida qaysi tomonga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b100_s10_0_asl.jpeg",
+      "togri_javob": "Istalgan yoʻnalishda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6898,
+      "savol": "Tik balandlikka chiqishda yoki tushishda avtomobilning old gʻildiragini qaysi usulda qoldirish xavfsizlik jihatdan toʻgʻri?",
+      "rasm": "questions/b101_s01_0_asl.jpeg",
+      "togri_javob": "A va Г.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6899,
+      "savol": "Ushbu holatda qaysi yoʻnalishlarga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b101_s02_0_asl.jpeg",
+      "togri_javob": "Toʻgʻriga, chapga va qayrilishga tuxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6900,
+      "savol": "Agar siz asosiy yoʻl yoʻnalishi boʻyicha burilishni amalga oshirayotgan boʻlsangiz burilish haqida ogohlantiruvchi chiroqlarni yoqishingiz kerakmi?",
+      "rasm": "questions/b101_s03_0_asl.jpeg",
+      "togri_javob": "Barcha hollarda yoqish kerak.",
+      "izoh": "Asosiy yoʻl yoʻnalishi boʻyicha burilish ham burilish manyovri hisoblanadi, shuning uchun burilish koʻrsatkichini barcha hollarda yoqish kerak — boshqa haydovchilar va piyodalar niyatingizni bilishi uchun.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6901,
+      "savol": "Ushbu vaziyatda harakatlanishga ruxsat etiladi:",
+      "rasm": "questions/b101_s04_0_asl.jpeg",
+      "togri_javob": "Toʻgʻriga yoki qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6902,
+      "savol": "Qaysi belgi roʻparada harakatlanayotgan avtomobilga yoʻl berish majburiyatini yuklaydi?",
+      "rasm": "questions/b101_s05_0_asl.jpeg",
+      "togri_javob": "А va В.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6903,
+      "savol": "Ushbu vaziyatda mototsiklni quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b101_s06_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi qachonki roʻparada avtomobil boʻlmasa.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6904,
+      "savol": "Qaysi yoʻnalish boʻyicha qayrilishni amalga oshirish kerak?",
+      "rasm": "questions/b101_s07_0_asl.jpeg",
+      "togri_javob": "Faqat Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6905,
+      "savol": "Ushbu vaziyatda asosiy yoʻl bilan burilishni amalga oshirish davomida burilish haqidagi ogohlantiruvchi chiroqni yoqish shartmi?",
+      "rasm": "questions/b101_s08_0_asl.jpeg",
+      "togri_javob": "Shart.",
+      "izoh": "Asosiy yoʻl boʻylab burilganda ham burilish koʻrsatkichini yoqish shart — bu manyovr boshqa harakat qatnashchilari uchun ogohlantirishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

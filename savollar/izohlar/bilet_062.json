@@ -1,0 +1,156 @@
+{
+  "bilet": "62-bilet",
+  "slug": "bilet-62",
+  "savollar": [
+    {
+      "question_id": 6823,
+      "savol": "Qaysi avtomobil yoʻl berishi kerak?",
+      "rasm": "questions/b093_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6824,
+      "savol": "Ushbu belgilardan qaysi biri oʻrnatilganda qarama-qarshi yoʻnalishda harakatlanayotgan haydovchiga yoʻl berish lozim.",
+      "rasm": "questions/b093_s06_0_asl.jpeg",
+      "togri_javob": "Faqat В.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6825,
+      "savol": "Qaysi transport vositasiga toʻgʻriga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b093_s07_0_asl.jpeg",
+      "togri_javob": "Faqat yuk avtomobiliga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6826,
+      "savol": "Yengil avtomobilga ushbu manyovrni bajarishga ruxsat etiladimi?",
+      "rasm": "questions/b093_s08_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6827,
+      "savol": "Yengil avtomobil quvib oʻtishni qaysi yoʻnalish boʻyicha bajarishi lozim?",
+      "rasm": "questions/b093_s09_0_asl.jpeg",
+      "togri_javob": "Faqat A.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6828,
+      "savol": "Qizil avtomobilga chap taraf chekka boʻlakdan quvib oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b093_s10_0_asl.jpeg",
+      "togri_javob": "Ruxsat beriladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6829,
+      "savol": "Haydovchiga qaysi yoʻnalish boʻyicha harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b094_s01_0_asl.jpeg",
+      "togri_javob": "Faqat А yoki Б.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6830,
+      "savol": "Ushbu harakatlanish boʻlagida yengil avtomobil qancha tezlikda harakatlanishi kerak?",
+      "rasm": "questions/b094_s02_0_asl.jpeg",
+      "togri_javob": "50 km/s dan koʻp va 90 km/s dan oshmagan tezlikda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6831,
+      "savol": "Ushbu vaziyatda qaysi tarafga harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b094_s03_0_asl.jpeg",
+      "togri_javob": "Faqat chapga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6832,
+      "savol": "Quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b094_s04_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6833,
+      "savol": "Koʻrsatilgan yoʻnalishda quvib oʻtishga ruxsat etiladimi?",
+      "rasm": "questions/b094_s05_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6834,
+      "savol": "Ushbu vaziyatda:",
+      "rasm": "questions/b094_s06_0_asl.jpeg",
+      "togri_javob": "Birinchi harakatlanish kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6835,
+      "savol": "Qaysi traektoriya boʻylab oʻngga burilish lozim.",
+      "rasm": "questions/b094_s07_0_asl.jpeg",
+      "togri_javob": "Faqat А.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6836,
+      "savol": "Bu vaziyatda yengil avtomobil:",
+      "rasm": "questions/b094_s08_0_asl.jpeg",
+      "togri_javob": "Oʻng boʻlakka oʻtib yoʻl berishi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6837,
+      "savol": "Mototsikl bilan bir vaqtda koʻprikni ustidan oʻtishga ruxsat beriladimi?",
+      "rasm": "questions/b094_s09_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

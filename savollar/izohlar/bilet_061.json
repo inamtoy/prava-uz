@@ -1,0 +1,156 @@
+{
+  "bilet": "61-bilet",
+  "slug": "bilet-61",
+  "savollar": [
+    {
+      "question_id": 6804,
+      "savol": "Ushbu holatda avtomagistralda haydovchiga toʻxtab turishga ruxsat etiladimi?",
+      "rasm": "questions/b091_s06_0_asl.jpeg",
+      "togri_javob": "Majburiy toʻxtashni amalga oshirganlik haqida ogohlantiruvchi belgini qoʻysagina ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6809,
+      "savol": "Oʻngga burilayotgan yengil avtomobil haydovchisi:",
+      "rasm": "questions/b092_s01_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobiliga yoʻl berishi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6810,
+      "savol": "Ushbu holatda qaysi haydovchi yoʻl berishi kerak?",
+      "rasm": "questions/b092_s02_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6811,
+      "savol": "Qaysi yoʻnalish boʻylab harakatlanish mumkin?",
+      "rasm": "questions/b092_s03_0_asl.jpeg",
+      "togri_javob": "А va Б yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6812,
+      "savol": "Ushbu holatda yoʻl berish kerak:",
+      "rasm": "questions/b092_s04_0_asl.jpeg",
+      "togri_javob": "Qarama-qarshi yoʻnalishdagi avtomobilga va piyodalarga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6813,
+      "savol": "Qaysi avtotransport vositasi harakatlanishda ustunlikka ega?",
+      "rasm": "questions/b092_s05_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6814,
+      "savol": "Ushbu yotiq chiziq mavjud boʻlganda qaysi harakatlarni amalga oshirib boʻlmaydi?",
+      "rasm": "questions/b092_s06_0_asl.jpeg",
+      "togri_javob": "Sanab oʻtilgan harakatlarning barchasi mumkin.",
+      "izoh": "Rasmdagi yoʻlda faqat uzuq-uzuq chiziq bor. Uni har ikki tomondan kesib oʻtish mumkin, shuning uchun u quvib oʻtish, aylanib oʻtish va qayrilib olishni taqiqlamaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6815,
+      "savol": "Qaysi haydovchi tramvayga yoʻl berishi kerak?",
+      "rasm": "questions/b092_s07_0_asl.jpeg",
+      "togri_javob": "Ikkala haydovchi ham.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6816,
+      "savol": "Qaysi yoʻnalish boʻyicha harakatlanishga ruxsat etiladi.",
+      "rasm": "questions/b092_s08_0_asl.jpeg",
+      "togri_javob": "Istalgan yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6817,
+      "savol": "Ushbu vaziyatda tuproqli yoʻlga qayrilishga ruxsat etiladimi?",
+      "rasm": "questions/b092_s09_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6818,
+      "savol": "Bu joyda maksimal harakatlanish tezligi qancha?",
+      "rasm": "questions/b092_s10_0_asl.jpeg",
+      "togri_javob": "20 km/s.",
+      "izoh": "Belgi turar joy dahasining boshlanishini bildiradi. Turar joy dahasida tezlik 20 km/soatdan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6819,
+      "savol": "Qaysi traektoriya boʻylab qayrilishga ruxsat etiladi.",
+      "rasm": "questions/b093_s01_0_asl.jpeg",
+      "togri_javob": "Faqat А.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6820,
+      "savol": "Ushbu burilishni amalga oshirish uchun qaysi avtotransport vositalariga yoʻl berish kerak?",
+      "rasm": "questions/b093_s02_0_asl.jpeg",
+      "togri_javob": "Hech biriga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6821,
+      "savol": "Koʻrsatilgan qaysi joyga toʻxtashga ruxsat etiladi.",
+      "rasm": "questions/b093_s03_0_asl.jpeg",
+      "togri_javob": "Faqat В.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6822,
+      "savol": "Qaysi haydovchi toʻgʻri toʻxtamoqda?",
+      "rasm": "questions/b093_s04_0_asl.jpeg",
+      "togri_javob": "Ikkalasi ham notoʻgʻri toʻxtadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

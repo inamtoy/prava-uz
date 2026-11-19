@@ -1,0 +1,156 @@
+{
+  "bilet": "60-bilet",
+  "slug": "bilet-60",
+  "savollar": [
+    {
+      "question_id": 6789,
+      "savol": "Birinchi kim oʻtadi?",
+      "rasm": "questions/b090_s01_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6790,
+      "savol": "Burilayotgan yuk avtomobiliga yoʻl berish kerakmi?",
+      "rasm": "questions/b090_s02_0_asl.jpeg",
+      "togri_javob": "Yoʻq yoʻl berilmaydi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6791,
+      "savol": "Qaysi avtomobil chorrahadan birinchi oʻtadi?",
+      "rasm": "questions/b090_s03_0_asl.jpeg",
+      "togri_javob": "Yashil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6792,
+      "savol": "Qaysi yoʻnalish boʻyicha harakatlanishga ruxsat etiladi.",
+      "rasm": "questions/b090_s04_0_asl.jpeg",
+      "togri_javob": "Б yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6793,
+      "savol": "Ushbu holatda qaysi avtomobil yoʻl berishi kerak?",
+      "rasm": "questions/b090_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6794,
+      "savol": "Ushbu holatda qaysi avtomobil haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b090_s06_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobil haydovchisi.",
+      "izoh": "Belgi oldinda yoʻlning oʻngdan torayishini bildiradi. Yuk avtomobilining boʻlagi tugayotgani uchun u chap boʻlakka qayta tizilishda shu boʻlakda harakatlanayotgan yengil avtomobilga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6795,
+      "savol": "Ushbu vaziyatda chapga burilmoqchisiz, siz :",
+      "rasm": "questions/b090_s07_0_asl.jpeg",
+      "togri_javob": "Faqat mototsikl haydovchisiga yoʻl beriladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6796,
+      "savol": "Ushbu holatda qizil avtomobil piyodani oʻtkazib yuborishi kerakmi?",
+      "rasm": "questions/b090_s08_0_asl.jpeg",
+      "togri_javob": "Oʻtkazib yuborishi shart.",
+      "izoh": "Piyoda tartibga solinmagan piyodalar oʻtish joyida qatnov qismini kesib oʻtishni boshlagan. Haydovchi unga yoʻl berishi shart — piyoda uzoqda boʻlsa ham.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6797,
+      "savol": "Ushbu yoʻl transport hodisasida kim aybdor?",
+      "rasm": "questions/b090_s09_0_asl.jpeg",
+      "togri_javob": "Tramvay haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6798,
+      "savol": "Oʻngga burilishingiz kerak buning uchun Siz bajarishingiz lozim:",
+      "rasm": "questions/b090_s10_0_asl.jpeg",
+      "togri_javob": "Avtomobilga yoʻl berishi kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6799,
+      "savol": "Yoʻl harakati qoidalariga koʻra yengil avtomobilga ushbu yoʻnalish boʻyicha harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b091_s01_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6800,
+      "savol": "Yengil avtomobilga ushbu traektoriya boʻylab harakatlanishga ruxsat beriladimi?",
+      "rasm": "questions/b091_s02_0_asl.jpeg",
+      "togri_javob": "Ruxsat beriladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6801,
+      "savol": "Koʻprik ustida yoʻlovchi olish yoki tushirish uchun toʻxtash mumkinmi?",
+      "rasm": "questions/b091_s03_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "Koʻpriklarda (bir yoʻnalishda uchtadan kam boʻlak boʻlganda) toʻxtash taqiqlanadi, shuning uchun bu yerda yoʻlovchi olish yoki tushirish uchun ham toʻxtab boʻlmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6802,
+      "savol": "Qaysi avtomobil toʻxtab turish qoidalarini buzmoqda?",
+      "rasm": "questions/b091_s04_0_asl.jpeg",
+      "togri_javob": "Har ikkalasi ham qoidani buzyapti.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6803,
+      "savol": "Ushbu vaziyatda yuk mashinasiga yoʻl berish kerakmi?",
+      "rasm": "questions/b091_s05_0_asl.jpeg",
+      "togri_javob": "Kerak emas.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

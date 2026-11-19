@@ -1,0 +1,156 @@
+{
+  "bilet": "68-bilet",
+  "slug": "bilet-68",
+  "savollar": [
+    {
+      "question_id": 6921,
+      "savol": "Siz ushbu chorrahada harakatlana olasiz:",
+      "rasm": "questions/b103_s04_0_asl.jpeg",
+      "togri_javob": "Faqat toʻgʻriga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6922,
+      "savol": "Ushbu chorrahada chapga qayrilmoqchisiz.Siz:",
+      "rasm": "questions/b103_s05_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobilga yoʻl berish kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6923,
+      "savol": "Ushbu koʻrsatilgan manyovrni bajarishga ruxsat etiladimi?",
+      "rasm": "questions/b103_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6924,
+      "savol": "Yoʻl yoʻnalishini chapga koʻrsatayotgan ushbu yotiq chiziq:",
+      "rasm": "questions/b103_s07_0_asl.jpeg",
+      "togri_javob": "Chapga burilishga va qayrilishga ruxsat beradi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6925,
+      "savol": "Qaysi belgi chapga burilishga ruxsat etadi?",
+      "rasm": "questions/b103_s08_0_asl.jpeg",
+      "togri_javob": "Hammasi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6926,
+      "savol": "Koʻrsatilgan qaysi yoʻnalishlar boʻyicha harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b103_s09_0_asl.jpeg",
+      "togri_javob": "A va B yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6927,
+      "savol": "Qaysi avtomobillar toʻxtashni notoʻgʻri amalga oshirgan?",
+      "rasm": "questions/b103_s10_0_asl.jpeg",
+      "togri_javob": "A va B avtmobillar.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6928,
+      "savol": "Ushbu holatda siz bajarishingiz lozim:",
+      "rasm": "questions/b104_s01_0_asl.jpeg",
+      "togri_javob": "Tramvayga yoʻl berish kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6929,
+      "savol": "Ushbu manyovrni amalga oshirish uchun qaysi ogohlantiruvchi burilish chiroqlarini yoqish kerak?",
+      "rasm": "questions/b104_s02_0_asl.jpeg",
+      "togri_javob": "Harakat boshlanishida oʻngni, trotuar yonidan esa chapni yoqish kerak.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6930,
+      "savol": "Tartibga soluvchining ushbu ishorasida qaysi yoʻnalishlar boʻyicha harakatlanishga ruxsat etiladi?",
+      "rasm": "questions/b104_s03_0_asl.jpeg",
+      "togri_javob": "Faqat A.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6931,
+      "savol": "Ushbu vaziyatda reversiv harakatlanish boʻlagiga chiqishga ruxsat etidimi?",
+      "rasm": "questions/b104_s04_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6932,
+      "savol": "Burilishni koʻrsatilgan qaysi yoʻnalish boʻyicha amalga oshirish lozim.",
+      "rasm": "questions/b104_s05_0_asl.jpeg",
+      "togri_javob": "Istalgan yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6933,
+      "savol": "Toʻsiqni qaysi yoʻnalish boʻyicha aylanib oʻtish kerak?",
+      "rasm": "questions/b104_s06_0_asl.jpeg",
+      "togri_javob": "Faqat A yoʻnalish boʻyicha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6934,
+      "savol": "Ushbu holatda qaysi avtomobillarga yoʻl berish lozim.",
+      "rasm": "questions/b104_s07_0_asl.jpeg",
+      "togri_javob": "Barcha transport vositalariga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6935,
+      "savol": "Ushbu holatda harakatlanishga ruxsat etiladi:",
+      "rasm": "questions/b104_s08_0_asl.jpeg",
+      "togri_javob": "Chapga va qayrilishga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Vaziyatli savol: rasmdan javobni ishonchli tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}
