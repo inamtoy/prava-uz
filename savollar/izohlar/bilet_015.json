@@ -1,0 +1,156 @@
+{
+  "bilet": "15-bilet",
+  "slug": "bilet-15",
+  "savollar": [
+    {
+      "question_id": 6110,
+      "savol": "Ruxsat etilgan harakatlanish yoʻnalishini koʻrsating:",
+      "rasm": "questions/b022_s02_0_asl.jpeg",
+      "togri_javob": "A va B.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgilar va yoʻnalishlarni aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6111,
+      "savol": "Qaysi belgi oyning juft kunlarida toʻxtab turishni taqiqlaydi?",
+      "rasm": "questions/b022_s03_0_asl.jpeg",
+      "togri_javob": "5.",
+      "izoh": "5-belgi (ikkita tik chiziq) oyning juft kunlarida toʻxtab turishni taqiqlaydi. 4-belgi (bitta chiziq) esa toq kunlarda taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6112,
+      "savol": "Bu yoʻl belgisi:",
+      "rasm": "questions/b022_s04_0_asl.jpeg",
+      "togri_javob": "Faqat belgida koʻrsatilgan yoki yuqori tezlikda harakatlanishga ruxsat beradi.",
+      "izoh": "Koʻk doira ichidagi raqam — «Eng kam tezlik cheklovi» belgisi. U faqat belgida koʻrsatilgan yoki undan yuqori tezlikda harakatlanishga ruxsat beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6113,
+      "savol": "Chorrahani oxirgi boʻlib kesib oʻtadi:",
+      "rasm": "questions/b022_s05_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6114,
+      "savol": "Haydovchi koʻzi qamashgan taqdirda quyidagilarni, bajarishi shart:",
+      "rasm": "",
+      "togri_javob": "Falokat yorugʻlik ishoralarini yoqishi va harakat boʻlagini oʻzgartirmagan holda tezlikni kamaytirishi va toʻxtashi.",
+      "izoh": "Koʻzi qamashgan haydovchi yoʻlni koʻrmaydi, shuning uchun falokat yorugʻlik ishorasini yoqib, boʻlakni oʻzgartirmasdan tezlikni kamaytirishi va toʻxtashi kerak. Boʻlakni oʻzgartirish koʻrinmay turgan boshqa transport bilan toʻqnashuvga olib kelishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6115,
+      "savol": "Toʻxtash yoʻli deb nimaga aytiladi?",
+      "rasm": "",
+      "togri_javob": "Avtomobilda xavfning haydovchiga maʼlum boʻlgan paytidan boshlab toʻla toʻxtashga qadar oʻtilgan masofa.",
+      "izoh": "Toʻxtash yoʻli — haydovchi xavfni sezgan paytdan avtomobil toʻla toʻxtaguncha bosib oʻtilgan masofa. U haydovchining reaksiya vaqtida oʻtilgan yoʻl va tormozlanish yoʻlidan iborat.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6116,
+      "savol": "Transport vositalarida sunʼiy yoritilgan tonnelda harakatlanayotganda qanday yoritish asboblari yoqilishi kerak?",
+      "rasm": "",
+      "togri_javob": "Faraning yaqinni yorituvchi chiroqlari.",
+      "izoh": "Sunʼiy yoritilgan tonnelda ham faralarning yaqinni yorituvchi chiroqlari yoqiladi: ular transport vositasini boshqalarga koʻrsatadi va qarshi haydovchilarning koʻzini qamashtirmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6117,
+      "savol": "Avtomobilda tibbiyot qutichasini qayerda saqlash lozim?",
+      "rasm": "",
+      "togri_javob": "Tayyorlovchi korxona tomonidan belgilangan joylarda berk holatda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Tibbiyot qutichasini saqlash joyi haqidagi aniq talabni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6118,
+      "savol": "Yuk tirkamasida odam tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Yuk tirkamasida odam tashish taqiqlanadi: unda odamlar uchun xavfsiz oʻrindiq va himoya yoʻq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6119,
+      "savol": "Kim «Yoʻl harakati qatnashchisi» hisoblanadi?",
+      "rasm": "",
+      "togri_javob": "Yoʻl harakati jarayonida transport haydovchisi, yoʻlovchisi yoki piyoda tariqasida bevosita ishtirok etayotgan shaxs.",
+      "izoh": "Yoʻl harakati qatnashchisi — harakat jarayonida haydovchi, yoʻlovchi yoki piyoda sifatida bevosita ishtirok etayotgan shaxs. Yoʻlda ish bajarayotgan, lekin harakatda qatnashmayotgan shaxs bunga kirmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6120,
+      "savol": "Avtomobil harakatining barcha ruxsat etilgan,yoʻnalishlari qaysi javobda toʻgʻri koʻrsatilgan?",
+      "rasm": "questions/b023_s02_0_asl.jpeg",
+      "togri_javob": "Barcha yoʻnalishlarda.",
+      "izoh": "Belgi faqat mototsikllarning harakatlanishini taqiqlaydi. Yengil avtomobilga u taalluqli emas, shuning uchun u barcha yoʻnalishlarda harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6121,
+      "savol": "Rasmda koʻrsatilgan holatda yoʻlovchilarni,tushirish uchun toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b023_s03_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Yoʻnalishli transport vositalari boʻlagida yoʻlovchi tushirish uchun toʻxtash qoidasini tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6122,
+      "savol": "Haydovchilardan qaysi biri toʻxtashga majbur?",
+      "rasm": "questions/b023_s04_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Piyodalar qaysi transport yoʻnalishini kesib oʻtayotganini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6123,
+      "savol": "Qaysi avtomobil chorrahadan oxirgi boʻlib oʻtadi?",
+      "rasm": "questions/b023_s05_0_asl.jpeg",
+      "togri_javob": "Qizil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6124,
+      "savol": "Koʻrsatilgan avtomobillarning qaysi biri agʻdarilishga qarshi turgʻunroq?",
+      "rasm": "questions/b023_s06_0_asl.jpeg",
+      "togri_javob": "Boʻsh yuk avtomobili.",
+      "izoh": "Boʻsh yuk avtomobilining ogʻirlik markazi past, shuning uchun u agʻdarilishga eng turgʻun. Avtokranning ogʻirlik markazi baland, tik turgan yoʻlovchilar esa avtobusning ogʻirlik markazini yuqoriga koʻtaradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

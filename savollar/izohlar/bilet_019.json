@@ -1,0 +1,156 @@
+{
+  "bilet": "19-bilet",
+  "slug": "bilet-19",
+  "savollar": [
+    {
+      "question_id": 6170,
+      "savol": "Qaysi belgi «Velosiped yoʻlkasi bilan kesishuv»ni bildiradi?",
+      "rasm": "questions/b028_s02_0_asl.jpeg",
+      "togri_javob": "2.",
+      "izoh": "2-belgi (qizil hoshiyali uchburchak ichida velosiped) — ogohlantiruvchi «Velosiped yoʻlkasi bilan kesishuv» belgisi. 1-belgi velosiped yoʻlkasini bildiradi, 3-belgi esa velosipedda harakatlanishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6171,
+      "savol": "Bu chiziq qaysi yoʻl belgisi bilan qoʻllaniladi?",
+      "rasm": "questions/b028_s03_0_asl.jpeg",
+      "togri_javob": "«Yoʻl bering» belgisi bilan.",
+      "izoh": "Uchburchaklar qatoridan iborat chiziq («ajdar tishlari») «Yoʻl bering» belgisi bilan qoʻllaniladi va zarur boʻlsa haydovchi toʻxtashi kerak boʻlgan joyni koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6172,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b028_s04_0_asl.jpeg",
+      "togri_javob": "Koʻk yashil bilan, sariq.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6173,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b028_s05_0_asl.jpeg",
+      "togri_javob": "Yashil, koʻk ayni vaqtda qizil bilan, sariq.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6174,
+      "savol": "Haydovchi yaqinlashib kelayotgan poezdni oʻtkazib yuborishi uchun «Toʻxtash» yotiq chizigʻi yoki «Toʻxtamasdan harakatlanish taʼqiqlangan» belgisidan qanday masofada toʻxtashi kerak?",
+      "rasm": "",
+      "togri_javob": "Bevosita «Toʻxtash» yotiq chizigʻi yoki belgi oldida.",
+      "izoh": "Poyezdni oʻtkazib yuborish uchun haydovchi bevosita «Toʻxtash» chizigʻi yoki «Toʻxtamasdan harakatlanish taqiqlanadi» belgisi oldida toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6175,
+      "savol": "Mototsikl haydovchisi Qoidalarni buzyaptimi?",
+      "rasm": "questions/b028_s07_0_asl.jpeg",
+      "togri_javob": "Ha.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmda mototsikl haydovchisi qaysi qoidani buzayotgani aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6176,
+      "savol": "Qanday hollarda aholi punktidan tashqarida Yengil avtomobil haydovchisiga soatiga 90 km.dan yuqori tezlikda harakatlanish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Aholi punktidan tashqarida yengil avtomobilga 90 km/soatdan yuqori tezlikda harakatlanish sanab oʻtilgan barcha hollarda taqiqlanadi: tezlikni cheklovchi belgi boʻlsa, avtomobil tirkama bilan harakatlansa yoki boshqa transport vositasini shatakka olsa — bu hollarda ruxsat etilgan tezlik pastroq.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6177,
+      "savol": "Egiluvchan yoki qattiq ulagichda shatakka olingan mexanik transport vositasida odamlar tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Yuk avtomobili kabinasida va Yengil avtomobilda ruxsat etiladi.",
+      "izoh": "Egiluvchan yoki qattiq ulagichda shatakka olinayotgan avtobus, trolleybus va yuk avtomobili kuzovida odam tashish taqiqlanadi. Yuk avtomobili kabinasida va yengil avtomobilda esa odamlar boʻlishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6178,
+      "savol": "Agar transport vositasining tuzilishida koʻzda tutilgan orqani koʻrsatadigan koʻzgular boʻlmasa, avtomobildan foydalanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Tuzilishida koʻzda tutilgan orqani koʻrish koʻzgulari boʻlmasa, haydovchi orqa va yon tomondagi vaziyatni koʻrmaydi. Shuning uchun bunday transport vositasidan foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6179,
+      "savol": "Piyodalar oʻtish joyi boʻlmaganda piyodalarga yoʻl qatnov qismining qaysi joyidan kesib oʻtishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan joylardan.",
+      "izoh": "Piyodalar oʻtish joyi boʻlmasa, piyodalar chorrahalarda yoʻlka yoki yoʻl yoqasi chiziqlari boʻylab, chorrahadan tashqarida esa qatnov qismini toʻgʻri burchak ostida, har ikki tomon yaxshi koʻrinadigan joydan kesib oʻtishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6180,
+      "savol": "Qaysi belgi 50 km/soatdan kam tezlikda harakatlanishni taʼqiqlaydi?",
+      "rasm": "questions/b029_s02_0_asl.jpeg",
+      "togri_javob": "3.",
+      "izoh": "3-belgi (koʻk doira ichida «50») — «Eng kam tezlik cheklovi»: u 50 km/soatdan kam tezlikda harakatlanishni taqiqlaydi. 1-belgi esa aksincha, eng katta tezlikni cheklaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6181,
+      "savol": "Toʻxtashni taʼqiqlovchi joylarni bildiruvchi sidirgʻa sariq chiziq qayerda chiziladi?",
+      "rasm": "questions/b029_s03_0_asl.jpeg",
+      "togri_javob": "Harakatlanish qatnov qismi chetida yoki bordyur ustidan chiziladi.",
+      "izoh": "Toʻxtash taqiqlangan joylarni bildiruvchi uzluksiz sariq chiziq qatnov qismining chetiga yoki yoʻlka toʻsigʻi (bordyur) ustiga chiziladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6182,
+      "savol": "Avtomagistrallarda toʻxtashga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Toʻxtash «Toʻxtash joyi» yoki «Dam olish joyi» belgisi qoʻyilgan maxsus maydonchalarda ruxsat etiladi.",
+      "izoh": "Avtomagistralda toʻxtash xavfli, chunki unda transport yuqori tezlikda harakatlanadi. Shuning uchun toʻxtash faqat «Toʻxtash joyi» yoki «Dam olish joyi» belgisi oʻrnatilgan maxsus maydonchalarda ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6183,
+      "savol": "Transport vositalari chorrahani qanday tartibda kesib oʻtadilar?",
+      "rasm": "questions/b029_s05_0_asl.jpeg",
+      "togri_javob": "2-tramvay ; koʻk avtomobil; 1-tramvay; qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6184,
+      "savol": "Projektor-faradan foydalanishga ruxsat etiladi:",
+      "rasm": "",
+      "togri_javob": "Faqat aholi punktlaridan tashqarida roʻparadan kelayotgan transport vositalari boʻlmaganda.",
+      "izoh": "Projektor-fara juda kuchli yoritadi va boshqa haydovchilarning koʻzini qamashtiradi. Shuning uchun undan faqat aholi punktlaridan tashqarida, roʻparadan transport vositalari kelmayotganda foydalanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "bilet": "14-bilet",
+  "slug": "bilet-14",
+  "savollar": [
+    {
+      "question_id": 6095,
+      "savol": "Kunduzgi vaqtda transporting old yoki orqa tomoniga 1 metrdan ortiq chiqib turgan yuk qanday belgilanadi?",
+      "rasm": "",
+      "togri_javob": "Diagonali boʻyicha qizil va oq chiziqlari boʻlgan taxtacha yoki bayroqchalar bilan.",
+      "izoh": "Transport vositasining old yoki orqa tomonidan 1 metrdan ortiq chiqib turgan yuk boshqa haydovchilarga yaxshi koʻrinishi uchun kunduzi diagonal boʻyicha qizil va oq chiziqli taxtacha yoki bayroqchalar bilan belgilanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6096,
+      "savol": "Bu yotiq chiziq quyidagi vazifani bajaradi?",
+      "rasm": "questions/b020_s08_0_asl.jpeg",
+      "togri_javob": "Piyodalar oʻtish joyini bildiradi, chiziq yoʻnaltirgichlari piyodalar harakatlanish yoʻnalishini koʻrsatadi.",
+      "izoh": "Rasmdagi chiziq — piyodalar oʻtish joyi. Undagi strelkalar (yoʻnaltirgichlar) piyodalarga qaysi tomondan harakatlanish kerakligini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6097,
+      "savol": "Sirpanchiq yoʻlda karbyuratorning drossel zaslonkasini keskin ochish qanday xavfli oqibatlarga olib kelishi mumkin?",
+      "rasm": "",
+      "togri_javob": "Avtomobilning yonga sirpanib ketishiga.",
+      "izoh": "Sirpanchiq yoʻlda drossel zaslonkasini keskin ochish yetakchi gʻildiraklarning shataksirab aylanishiga olib keladi. Ilashuv yoʻqolgani uchun avtomobil yon tomonga sirpanib ketishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6098,
+      "savol": "Yuk avtomobilining yukxonasida qancha miqdorda odamlarni tashishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Tashilayotgan odamlar soni, oʻtirish uchun jihozlangan оʼrindiqlar miqdoridan ortiq boʻlmasligi kerak.",
+      "izoh": "Yuk avtomobilining kuzovida tashiladigan odamlar soni oʻtirish uchun jihozlangan oʻrindiqlar sonidan oshmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6099,
+      "savol": "Yaltirovchi koʻk mayoqcha va unga qoʻshimcha maxsus tovushli ishorasi yoqilgan transport vositasi sizga yaqinlashib kelmoqda. Siz shunday transport vositasiga qarshi harakatlanayotgan boʻlsangiz, nima qilishingiz lozim?",
+      "rasm": "",
+      "togri_javob": "Mayoqcha ishorasi yoqilgan transport vositasiga halaqit bermasdan yoʻl chetidan harakatlanish .",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qarama-qarshi yoʻnalishdagi maxsus transport vositasiga nisbatan haydovchining aniq majburiyatini tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6100,
+      "savol": "Koʻrsatilgan belgi ostidagi qoʻshimcha axborot belgisi qanday maqsadda oʻrnatilgan?",
+      "rasm": "questions/b021_s02_0_asl.jpeg",
+      "togri_javob": "Belgining amal qilish hududida foto va video moslamalardan foydalanish taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Kalit shubhali: qoʻshimcha axborot belgisi (fotoapparat) odatda yoʻl qismida foto va video qayd etish olib borilishini bildiradi, kalit esa «foydalanish taqiqlanadi» deydi.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6101,
+      "savol": "Yoʻnaltirgichlar bilan koʻrsatilgan yoʻnalishlarning I qaysi biridan harakat qilish mumkin?",
+      "rasm": "questions/b021_s03_0_asl.jpeg",
+      "togri_javob": "Faqat toʻgʻriga.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtomobil qaysi boʻlakda ekanini va yoʻnaltirgichlar maʼnosini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6102,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda, kesib oʻtadilar:",
+      "rasm": "questions/b021_s04_0_asl.jpeg",
+      "togri_javob": "Mototsikl, avtomobil, tramvay.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6103,
+      "savol": "Chorrahani ikkinchi bolib kesib oʻtadi.",
+      "rasm": "questions/b021_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6104,
+      "savol": "Yoʻlning yoritilmagan qismlarida qorongʻi vaqtda , toʻxtaganda gabarit chiroqlari nosoz boʻlsa:",
+      "rasm": "",
+      "togri_javob": "Transport vositasini yoʻldan tashqariga chiqarish, agar buning iloji boʻlmasa mazkur qoidalar talablariga binoan uni belgilash lozim.",
+      "izoh": "Kunning qorongʻi vaqtida yoʻlning yoritilmagan qismida gabarit chiroqlari ishlamaydigan transport vositasi boshqalarga koʻrinmaydi. Shuning uchun uni yoʻldan tashqariga olib chiqish, buning iloji boʻlmasa qoidalarga muvofiq belgilash (falokat yorugʻlik ishorasi, falokat sababli toʻxtash belgisi) kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6105,
+      "savol": "Bu joyda toʻxtash mumkinmi?",
+      "rasm": "questions/b021_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Toʻxtash taqiqining sababi (tramvay bekati yoki boshqa) rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6106,
+      "savol": "Harakatlanish mumkin boʻlgan yoʻnalish qaysi rasmda koʻrsatilgan?",
+      "rasm": "questions/b021_s08_0_asl.jpeg",
+      "togri_javob": "Oʻngdagi rasmda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi belgilarni aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6107,
+      "savol": "Orqa tomondagi tumanga qarshi chiroqlar quyidagi hollarda qoʻllanishi mumkin:",
+      "rasm": "",
+      "togri_javob": "Faqat yetarli kоʼrinmaydigan sharoitlarda.",
+      "izoh": "Orqa tumanga qarshi chiroq juda yorqin, shuning uchun u faqat yetarli koʻrinmaydigan sharoitda (tuman, qor, kuchli yomgʻir) yoqiladi. Boshqa paytda u orqadagi haydovchilarning koʻzini qamashtiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6108,
+      "savol": "Qoʻshaloq shinalar orasiga begona jismlar tiqilib qolganda transport vositalaridan foydalanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Qoʻshaloq shinalar orasiga tiqilib qolgan begona jism shinalarni shikastlaydi va harakatda otilib chiqib, boshqalarga xavf tugʻdirishi mumkin. Shuning uchun bunday transport vositasidan foydalanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6109,
+      "savol": "Sariq avtobusning haydovchisiga chorrahaga chiqishga ruxsat etiladimi?",
+      "rasm": "questions/b022_s01_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadagi tirbandlik va avtobus yoʻnalishini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

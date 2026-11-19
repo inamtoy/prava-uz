@@ -1,0 +1,156 @@
+{
+  "bilet": "18-bilet",
+  "slug": "bilet-18",
+  "savollar": [
+    {
+      "question_id": 6155,
+      "savol": "Quvib oʻtishni boshlashdan oldin haydovchi shunga ishonch hosil qilishi kerakki:",
+      "rasm": "",
+      "togri_javob": "Barcha koʻrsatilgan harakatlarni bajara olishiga.",
+      "izoh": "Quvib oʻtishni boshlashdan oldin haydovchi uchala shartga ishonch hosil qilishi kerak: orqadan kelayotgan haydovchi quvib oʻtishni boshlamagan, oldindagi haydovchi chapga burilish ishorasini bermagan va quvib oʻtgandan keyin oʻz boʻlagiga xalaqit bermasdan qaytish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6156,
+      "savol": "Majburiy toʻxtagan haydovchi qanday choralar koʻrishi kerak?",
+      "rasm": "",
+      "togri_javob": "Falokat yorugʻlik ishoralarini yoqishi, agar u yoʻq yoki nosoz boʻlsa, falokat sababli toʻxtash belgisini aholi punktlarida transport vositasidan 15 metrdan, ulardan tashqarida esa, 30 metrdan kam boʻlmagan masofada oʻrnatishi kerak .",
+      "izoh": "Majburiy toʻxtagan haydovchi falokat yorugʻlik ishorasini yoqishi kerak. U yoʻq yoki nosoz boʻlsa, falokat sababli toʻxtash belgisi aholi punktida transport vositasidan kamida 15 metr, undan tashqarida kamida 30 metr masofada oʻrnatiladi — boshqa haydovchilar oldindan ogohlanishi uchun.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6157,
+      "savol": "Avtomobilning qaysi gʻildiraklari «sirpanib» tormozlanishga koʻproq moyil boʻladi?",
+      "rasm": "",
+      "togri_javob": "Orqa gʻildiraklar.",
+      "izoh": "Tormozlanganda avtomobilning ogʻirligi oldinga koʻchadi, orqa gʻildiraklar yoʻlga kamroq bosiladi. Shuning uchun orqa gʻildiraklar sirpanib tormozlanishga koʻproq moyil boʻladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6158,
+      "savol": "Sanab oʻtilgan qaysi hollarda transport vositasidan foydalanish mumkin?",
+      "rasm": "",
+      "togri_javob": "Ishlab chiqarilishi toʻxtatilgan Yengil avtomobillarga boshqa turdagi va rusmdagi transport vositalarining tashqi yoritgichlari oʻrnatilgan.",
+      "izoh": "Ishlab chiqarilishi toʻxtatilgan yengil avtomobillarga boshqa rusumdagi tashqi yoritgichlarni oʻrnatishga ruxsat etiladi. Faralar nuri yoʻnalishining buzilishi va yoritgichlarning belgilangan tartibda ishlamasligi esa foydalanish taqiqlanadigan nosozliklardir.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6159,
+      "savol": "Transport vositalari ixtiyoriga berilgan vakolatnomasi boʻlgan shaxs oʻzining ishtirokida transport vositasini boshqa shaxsga boshqarishni topshirishi mumkinmi?",
+      "rasm": "",
+      "togri_javob": "Bu shaxsda mazkur toifali transport vositasini boshqarishga ruxsat beruvchi haydovchilik guvohnomasi boʻlgan taqdirda transport vositalari egalarining fuqarolik javobgarligini majburiy sugʻurta qilish boʻyicha sugʻurta polisida ismi shariA. koʻrsatilgan boʻlsa yoki majburiy sugʻurta qilish boʻyicha shartnoma ushbu transport vositasidan cheklanmagan shaxslarning foydalanishini hisobga olgan holda tuzilgan boʻlsa.",
+      "izoh": "Transport vositasini boshqa shaxsga topshirish mumkin, agar u shaxsda shu toifali haydovchilik guvohnomasi boʻlsa va u majburiy sugʻurta polisida koʻrsatilgan boʻlsa (yoki polis cheklanmagan shaxslar uchun tuzilgan boʻlsa).",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6160,
+      "savol": "Agar yoʻlda bu belgi oʻrnatilgan boʻlsa, avtomobilni shatakka olishga ruxsat etiladimi?",
+      "rasm": "questions/b027_s02_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Bu belgi tirkamali yuk avtomobillarining harakatlanishini taqiqlaydi, shuningdek u amal qiladigan hududda mexanik transport vositalarini shatakka olish ham taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6161,
+      "savol": "Bu «Toʻxtash» yotiq chizigʻi qaysi yoʻl belgisi bilan qoʻllaniladi?",
+      "rasm": "questions/b027_s03_0_asl.jpeg",
+      "togri_javob": "«Toʻxtamasdan harakatlanish taʼqiqlangan» belgisi bilan.",
+      "izoh": "«Toʻxtash» chizigʻi «Toʻxtamasdan harakatlanish taqiqlanadi» belgisi bilan birga qoʻllanib, haydovchi qayerda albatta toʻxtashi kerakligini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6162,
+      "savol": "Avtomobil haydovchisi harakatining tartibi qaysi, javobda toʻgʻri koʻrsatilgan?",
+      "rasm": "questions/b027_s04_0_asl.jpeg",
+      "togri_javob": "Tramvay va mototsiklni oʻtkazib chorrahadan qayrilib oldi.",
+      "izoh": "Chapga burilishda va qayrilib olishda haydovchi bir yoʻnalishda harakatlanayotgan tramvayga va qarama-qarshi yoʻnalishdan kelayotgan transport vositalariga yoʻl berishi kerak. Shuning uchun avtomobil tramvay va mototsiklni oʻtkazib, keyin qayrilib oladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6163,
+      "savol": "Avtomobillar chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b027_s05_0_asl.jpeg",
+      "togri_javob": "Sariq avtomobil chorrahaga kirib keladi va koʻkni oʻtkazib yuborish uchun toʻxtaydi; yashil; koʻk qizil bilan bir vaqtda; sariq.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6164,
+      "savol": "Haydovchi boshqa haydovchilarning koʻzini qamashtirishi mumkin boʻlgan uzoqni yorituvchi chiroqni yaqinni yorituvchiga qachon almashtirishi kerak?",
+      "rasm": "",
+      "togri_javob": "Roʻparadagi transport vositasiga 150 m. qolganda, shuningdek, koʻproq masofada ham, agar roʻparadagi transport vositasining haydovchisi faralar chirogʻini oʻchirib yoqib shuni zarur deb koʻrsatsa",
+      "izoh": "Roʻparadagi transport vositasiga kamida 150 metr qolganda uzoqni yorituvchi chiroq yaqinni yorituvchiga almashtiriladi. Agar qarshi haydovchi faralarini oʻchirib-yoqib buni soʻrasa, undan ham uzoqroq masofada almashtirish kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6165,
+      "savol": "Aholi punktidan tashqarida tirkamali Yengil avtomobil haydovchisiga eng katta tezlikni soatiga necha kilometrdan oshirmasdan harakatlanishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "80 km/s.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Tirkamali yengil avtomobil uchun aholi punktidan tashqaridagi eng katta tezlik (80 km/soat) faqat kalitdan — aniq qiymatni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6166,
+      "savol": "Bu joyda avtomobilning toʻxtab turishiga ruxsat etiladimi?",
+      "rasm": "questions/b027_s08_0_asl.jpeg",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgini aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6167,
+      "savol": "5 foizli yod eritmasi (yod nastoykasi) nima uchun qoʻllaniladi?",
+      "rasm": "",
+      "togri_javob": "Yara atrofidagi terini ishlash uchun.",
+      "izoh": "Yod eritmasi faqat yara atrofidagi terini zararsizlantirish uchun ishlatiladi. Yaraning oʻziga surtilsa, toʻqimalarni kuydiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6168,
+      "savol": "Bolalarni tashkiliy tashishda qanday talablar qoʻyiladi?",
+      "rasm": "",
+      "togri_javob": "Barcha sanab oʻtilgan talablar.",
+      "izoh": "Bolalar guruhini tashkiliy tashishda ikkala talab ham bajarilishi kerak: transport vositasida katta yoshli kuzatuvchi boʻladi va uning oldi va orqasiga «Bolalar guruhini tashish» taniqlik belgisi oʻrnatiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6169,
+      "savol": "Koʻk avtomobil chorrahani kesib oʻtadi:",
+      "rasm": "questions/b028_s01_0_asl.jpeg",
+      "togri_javob": "Uchinchi boʻlib.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    }
+  ]
+}

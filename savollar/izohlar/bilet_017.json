@@ -1,0 +1,156 @@
+{
+  "bilet": "17-bilet",
+  "slug": "bilet-17",
+  "savollar": [
+    {
+      "question_id": 6140,
+      "savol": "Bu belgi avtomobilning harakatlanishiga ruxsat etadi:",
+      "rasm": "questions/b025_s02_0_asl.jpeg",
+      "togri_javob": "A va B.",
+      "izoh": "Rasmdagi «Qayrilib olish joyi» belgisi shu joyda qayrilib olishga ruxsat beradi, chapga burilish esa taqiqlanadi. Shuning uchun A (qayrilib olish) va В (toʻgʻriga) yoʻnalishlarida harakatlanish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6141,
+      "savol": "Bu yotiq chiziqlardan qaysi biri belgilangan yoʻnalishdagi transport vositalarining toʻxtash joyini bildiradi?",
+      "rasm": "questions/b025_s03_0_asl.jpeg",
+      "togri_javob": "Б.",
+      "izoh": "Sariq zigzag chiziq (Б) yoʻnalishli transport vositalarining toʻxtash joyini bildiradi. Bu joyda boshqa transport vositalarining toʻxtashi taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6142,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b025_s04_0_asl.jpeg",
+      "togri_javob": "Avtobus haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Avtobus va mototsikl yoʻnalishlarini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6143,
+      "savol": "Chorrahani ikkinchi bolib kesib oʻtadi.",
+      "rasm": "questions/b025_s05_0_asl.jpeg",
+      "togri_javob": "Yashil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6144,
+      "savol": "Tumanga qarshi faralardan qaysi hollarda foydalanish mumkin?",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Shatakka olishda tumanga qarshi faralardan foydalanish haqidagi aniq talabni tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6145,
+      "savol": "Yuk avtomobil haydovchisiga bu joyda toʻxtashga ruxsat etiladimi?",
+      "rasm": "questions/b025_s07_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmdagi belgini aniq oʻqib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6146,
+      "savol": "Koʻrsatilgan vaziyatda Yengil avtomobil haydovchisiga quvib oʻtish ruxsat etiladimi?",
+      "rasm": "questions/b025_s08_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlangan.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Quvib oʻtish taqiqining sababi rasmdan aniq emas — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6147,
+      "savol": "Yoʻl quruq boʻlganda gʻildirak aylanmay sirpanib tormozlanish tormoz yoʻliga qanday taʼsir etadi?",
+      "rasm": "",
+      "togri_javob": "Tormoz yoʻli ortadi.",
+      "izoh": "Gʻildirak aylanmay sirpanganda u yoʻl bilan aylanayotgan gʻildirakka nisbatan yomonroq ilashadi. Shuning uchun quruq yoʻlda ham tormoz yoʻli ortadi, avtomobilni boshqarish esa qiyinlashadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6148,
+      "savol": "Yonilgʻi tizimi zich (germetik) emasligi maʼlum boʻlganda haydovchi nimalarni bajarishi shart?",
+      "rasm": "",
+      "togri_javob": "Nosozlikni bartaraf etish tadbirlarini koʻrishi, agar burning imkoni boʻlmasa, zarur ehtiyot choralariga rioya qilgan holda toʻxtab turish yoki taʼmirlash joyiga olib borish.",
+      "izoh": "Yoqilgʻi tizimi zich emasligi harakatni darhol toʻxtatishni talab qiladigan nosozliklar qatoriga kirmaydi. Haydovchi uni joyida bartaraf etishga harakat qiladi, iloji boʻlmasa ehtiyot choralariga rioya qilib toʻxtab turish yoki taʼmirlash joyiga boradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6149,
+      "savol": "Yaxmalak boʻlganda shatakka olishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Faqat qattiq ulagichda ruxsat etiladi.",
+      "izoh": "Yaxmalakda egiluvchan ulagich bilan shatakka olish taqiqlanadi: tormozlanganda shatakka olinayotgan avtomobil sirpanib, oldindagisiga urilishi mumkin. Qattiq ulagich avtomobillar orasidagi masofani doimiy ushlab turadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6150,
+      "savol": "Ushbu belgi amal qilgan hududda avtobus haydovchisi quvib oʻtishi mumkinmi?",
+      "rasm": "questions/b026_s02_0_asl.jpeg",
+      "togri_javob": "Quvib oʻtish qoidalariga rioya qilib barcha hollarda mumkin.",
+      "izoh": "Bu belgi faqat yuk avtomobillariga quvib oʻtishni taqiqlaydi. Avtobusga u taalluqli emas, shuning uchun avtobus haydovchisi quvib oʻtish qoidalariga rioya qilib quvib oʻtishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6151,
+      "savol": "Reversiv harakatlanish amalga oshiriladigan harakat boʻlaklari chegaralarini belgilash uchun bu yotiq chiziqlarning qay biridan foydalaniladi?",
+      "rasm": "questions/b026_s03_0_asl.jpeg",
+      "togri_javob": "2-chiziq.",
+      "izoh": "Reversiv harakatlanish boʻlaklarining chegaralari qoʻsh uzuq chiziq (2-chiziq) bilan belgilanadi. Bu boʻlaklarda harakat yoʻnalishi qarama-qarshisiga oʻzgartirilishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6152,
+      "savol": "Xizmat vazifasini bajarayotganda shlagbaumni oʻzboshimchalik bilan ochishga yoki uni aylanib i oʻtishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Shlagbaumni oʻzboshimchalik bilan ochish yoki uni aylanib oʻtish har qanday holatda taqiqlanadi: shlagbaum yopiq boʻlsa, kesishmadan oʻtish xavfli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6153,
+      "savol": "Chorrahani ikkinchi bolib kesib oʻtadi.",
+      "rasm": "questions/b026_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi burilish ishoralari va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6154,
+      "savol": "Oraliq masofa deb nimaga aytiladi?",
+      "rasm": "questions/b026_s06_0_asl.jpeg",
+      "togri_javob": "A masofa.",
+      "izoh": "Oraliq masofa — bir boʻlakda oldinda harakatlanayotgan transport vositasigacha boʻlgan masofa (A). Yon tomondagi transport vositasigacha boʻlgan masofa (Б) yon oraliq hisoblanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

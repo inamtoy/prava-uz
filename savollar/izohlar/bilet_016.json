@@ -1,0 +1,156 @@
+{
+  "bilet": "16-bilet",
+  "slug": "bilet-16",
+  "savollar": [
+    {
+      "question_id": 6125,
+      "savol": "Haydovchi quyidagi holatda oʻng tomondan quvib, oʻtishi mumkinmi?",
+      "rasm": "questions/b023_s07_0_asl.jpeg",
+      "togri_javob": "Ha.",
+      "izoh": "Oldindagi transport vositasi chapga burilish ishorasini berib, chapga burilayotgan (qayrilayotgan) boʻlsa, uni oʻng tomondan quvib oʻtishga ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6126,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl, berishi lozim?",
+      "rasm": "questions/b023_s08_0_asl.jpeg",
+      "togri_javob": "Yengil avtomobil haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Qaysi transport vositasining boʻlagida toʻsiq borligini rasmdan aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6127,
+      "savol": "Boshqaruv qurilmasi nosoz mexanik transport vositasi shatakka olinishi kerak:",
+      "rasm": "",
+      "togri_javob": "Qisman ortish usuli bilan.",
+      "izoh": "Boshqaruv qurilmasi (rul) nosoz boʻlsa, shatakka olinayotgan avtomobilni boshqarib boʻlmaydi. Shuning uchun uni faqat qisman ortish usulida, yaʼni old gʻildiraklarini koʻtarib shatakka olish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6128,
+      "savol": "12 yoshga yetmagan bolalarni yuk avtomobili kabinasida tashishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Ruxsat etiladi.",
+      "izoh": "Yuk avtomobilining kabinasida bolalarni tashishga ruxsat etiladi — kabina yoʻlovchilar uchun moʻljallangan va oʻrindiqlar bilan jihozlangan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6129,
+      "savol": "Qaysi rasmda piyodalar qoidani buzmay harakatlanmoqda?",
+      "rasm": "questions/b024_s01_0_asl.jpeg",
+      "togri_javob": "Ikkala rasmda.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmlardagi piyodalarning qayerda (yoʻlka, yoʻl yoqasi, qatnov qismi) yurganini aniq ajratib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6130,
+      "savol": "Bu belgi nimani bildiradi?",
+      "rasm": "questions/b024_s02_0_asl.jpeg",
+      "togri_javob": "Boshqa qatnov qismiga qayta tizilishning dastlabki koʻrsatkichi.",
+      "izoh": "Belgi boshqa qatnov qismiga qayta tizilishning dastlabki koʻrsatkichi: oldinda qatnov qismi yopiq boʻlib, transport vositalari ajratuvchi boʻlak orqali boshqa qatnov qismiga oʻtishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6131,
+      "savol": "Qatnov qismidagi bunday yoʻnaltirgichlar nimani, bildiradi?",
+      "rasm": "questions/b024_s03_0_asl.jpeg",
+      "togri_javob": "Qatnov qismi torayishiga yaqinlashayotganligi haqida ogohlantiradi.",
+      "izoh": "Qatnov qismidagi egilgan strelkalar qatnov qismi torayishiga yoki boʻlaklar sonining kamayishiga yaqinlashayotganligi haqida ogohlantiradi va qaysi tomonga qayta tizilish kerakligini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6132,
+      "savol": "Quyidagilar poezdni toʻxtatish ishorasi boʻlib, xizmat qiladi:",
+      "rasm": "",
+      "togri_javob": "Qoʻlni (kunduzi - bir parcha yorqin mato yoki aniq koʻrinadigan bir narsa bilan, tunda - mashʼala yoki chiroq bilan) gir aylantirish.",
+      "izoh": "Poyezdni toʻxtatish ishorasi — qoʻlni gir aylantirish: kunduzi qoʻlda yorqin mato yoki yaxshi koʻrinadigan narsa, tunda — mashʼala yoki chiroq bilan.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6133,
+      "savol": "Transport vositalari chorrahani quyidagi tartibda kesib oʻtadilar:",
+      "rasm": "questions/b024_s05_0_asl.jpeg",
+      "togri_javob": "Koʻk, yashil, qizil avtomobillar.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6134,
+      "savol": "Harakatda imtiyozga ega boʻladi:",
+      "rasm": "questions/b024_s06_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil, chunki oʻzaro qayta tizilishda u oʻng tomonda boʻlgani uchun.",
+      "izoh": "Bir yoʻnalishda harakatlanayotgan transport vositalari bir vaqtda qayta tizilayotganda chap tomondagi haydovchi oʻng tomondagiga yoʻl berishi kerak. Qizil avtomobil oʻng tomonda boʻlgani uchun ustunlikka ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6135,
+      "savol": "Birinchi boʻlib chorrahani kesib oʻtadi:",
+      "rasm": "questions/b024_s07_0_asl.jpeg",
+      "togri_javob": "Koʻk avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6136,
+      "savol": "Belgilangan yoʻnalishdagi transport vositalari yoki taksilarning toʻxtab turish maydonchalaridan, ular boʻlmagan hollarda, toʻxtash koʻrsatkichlaridan toʻxtash va toʻxtab turish taʼqiqlanadi?",
+      "rasm": "",
+      "togri_javob": "15 m.",
+      "izoh": "Yoʻnalishli transport vositalari yoki taksilarning toʻxtab turish maydonchalaridan, ular boʻlmasa toʻxtash koʻrsatkichidan 15 metrdan yaqinda toʻxtash va toʻxtab turish taqiqlanadi. Bu joy yoʻlovchilarni chiqarish va tushirish uchun boʻsh qolishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6137,
+      "savol": "Toliqish haydovchining diqqati va eʼtiboriga qanday taʼsir qiladi?",
+      "rasm": "",
+      "togri_javob": "Haydovchining diqqat va eʼtibori pasayadi.",
+      "izoh": "Toliqqan haydovchining diqqati va eʼtibori pasayadi, xavfga reaksiyasi sekinlashadi. Shuning uchun charchagan holda transport vositasini boshqarish xavfli.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6138,
+      "savol": "Velosiped yoʻlkasi yoʻl bilan kesishgan joylarda velosiped va moped haydovchilari qanday hollarda transport vositalariga yoʻl berishlari kerak?",
+      "rasm": "",
+      "togri_javob": "Chorrahadan tashqarida tartibga solinmagan kesishmada barcha hollarda.",
+      "izoh": "Velosiped yoʻlkasi chorrahadan tashqarida tartibga solinmagan joyda yoʻl bilan kesishganda velosiped va moped haydovchilari yoʻlda harakatlanayotgan transport vositalariga barcha hollarda yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6139,
+      "savol": "Jihozlangan bekatlari boʻlmagan tramvay toʻxtash joylarida unga chiqish uchun qachon qatnov qismiga chiqishga ruxsat etiladi?",
+      "rasm": "",
+      "togri_javob": "Tramvay toʻla toʻxtagandan soʻng.",
+      "izoh": "Jihozlangan bekati boʻlmagan joyda tramvayga chiqish uchun qatnov qismiga faqat tramvay toʻla toʻxtagandan keyin chiqish mumkin. Oldinroq chiqish piyodani harakatlanayotgan transport xavfi ostida qoldiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
