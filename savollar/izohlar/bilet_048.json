@@ -1,0 +1,156 @@
+{
+  "bilet": "48-bilet",
+  "slug": "bilet-48",
+  "savollar": [
+    {
+      "question_id": 6605,
+      "savol": "Ushbu belgi aholi yashash joylarida temir yoʻl kesishmasidan qancha masofa oldinga oʻrnatiladi?",
+      "rasm": "questions/b071_s07_0_asl.jpeg",
+      "togri_javob": "150-300 m.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Uch chiziqli yaqinlashish koʻrsatkichining aholi punktidagi oʻrnatish masofasi (150–300 m) faqat kalitdan — aholi punktlarida bu masofa odatda qisqaroq, tasdiqlay olmayman.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6606,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b071_s08_0_asl.jpeg",
+      "togri_javob": "Tramvay yoʻli bilan kesishuv.",
+      "izoh": "Tramvay tasvirli ogohlantiruvchi belgi tramvay yoʻli bilan kesishuvga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6607,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b071_s09_0_asl.jpeg",
+      "togri_javob": "Teng ahamiyatli yoʻllar kesishuvi.",
+      "izoh": "Qiya xoch tasvirli ogohlantiruvchi belgi teng ahamiyatli yoʻllar kesishuvini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6608,
+      "savol": "Ushbu belgi oʻrnatilgan chorrahada:",
+      "rasm": "questions/b071_s10_0_asl.jpeg",
+      "togri_javob": "Oʻng tomondan kelayotgan transport vositasiga yoʻl beriladi.",
+      "izoh": "Teng ahamiyatli yoʻllar chorrahasida haydovchi oʻng tomondan kelayotgan transport vositasiga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6609,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b072_s01_0_asl.jpeg",
+      "togri_javob": "Aylanma harakat bilan kesishuv.",
+      "izoh": "Aylana strelkali ogohlantiruvchi belgi aylanma harakatlanish joyi bilan kesishuvga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6610,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b072_s02_0_asl.jpeg",
+      "togri_javob": "Svetofor tartibga soladi.",
+      "izoh": "Svetofor tasvirli ogohlantiruvchi belgi oldinda harakat svetofor bilan tartibga solinadigan chorraha yoki boshqa joy borligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6611,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b072_s03_0_asl.jpeg",
+      "togri_javob": "Koʻtarma koʻprik.",
+      "izoh": "Belgi oldinda koʻtarma koʻprik borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6612,
+      "savol": "Bu yoʻl belgisi nimalardan ogohlantiradi?",
+      "rasm": "questions/b072_s04_0_asl.jpeg",
+      "togri_javob": "Sohilga chiqish.",
+      "izoh": "Belgi yoʻl sohilga — anhor yoki suv havzasining qirgʻogʻiga chiqadigan joyga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6613,
+      "savol": "Ushbu belgi nimani bildiradi:",
+      "rasm": "questions/b072_s05_0_asl.jpeg",
+      "togri_javob": "Xavfli burilish.",
+      "izoh": "Bitta egilgan chiziqli belgi — «Xavfli burilish»: u koʻrinishi cheklangan kichik radiusli burilishdan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6614,
+      "savol": "Ushbu belgi nimani bildiradi:",
+      "rasm": "questions/b072_s06_0_asl.jpeg",
+      "togri_javob": "Yoʻlning chapga burilishini.",
+      "izoh": "Belgidagi chiziq chapga egilgan, demak yoʻl oldinda chapga buriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6615,
+      "savol": "Ushbu belgi nimani bildiradi:",
+      "rasm": "questions/b072_s07_0_asl.jpeg",
+      "togri_javob": "Birinchi xavfli burilish oʻngga.",
+      "izoh": "Belgi bir necha xavfli burilish boʻlgan yoʻl qismini bildiradi. Chiziq avval oʻngga egilgani birinchi xavfli burilish oʻngga ekanini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6616,
+      "savol": "Ushbu belgi nimani bildiradi:",
+      "rasm": "questions/b072_s08_0_asl.jpeg",
+      "togri_javob": "Tik nishablik.",
+      "izoh": "Belgidagi qiyalik pastga tushadi, foiz esa nishablik tikligini bildiradi — bu «Tik nishablik» belgisi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6617,
+      "savol": "Ushbu belgi nimani bildiradi:",
+      "rasm": "questions/b072_s09_0_asl.jpeg",
+      "togri_javob": "Tik balandlik.",
+      "izoh": "Belgidagi qiyalik yuqoriga koʻtariladi — bu «Tik balandlik» (tik koʻtarilish) belgisi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6618,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b072_s10_0_asl.jpeg",
+      "togri_javob": "Sirpanchiq yoʻl.",
+      "izoh": "Sirpanayotgan avtomobil tasvirli belgi oldinda sirpanchiq yoʻl qismi borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6619,
+      "savol": "Ushbu yoʻl belgisi oʻrnatilgan joyda haydovchi:",
+      "rasm": "questions/b073_s01_0_asl.jpeg",
+      "togri_javob": "Tezlikni kamaytirishi, keskin toʻxtamasligi va burilmasligi lozim.",
+      "izoh": "Sirpanchiq yoʻlda gʻildiraklarning ilashuvi kam, shuning uchun haydovchi tezlikni oldindan kamaytirishi, keskin toʻxtamasligi va rulni keskin burmasligi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

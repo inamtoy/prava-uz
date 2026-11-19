@@ -1,0 +1,156 @@
+{
+  "bilet": "51-bilet",
+  "slug": "bilet-51",
+  "savollar": [
+    {
+      "question_id": 6650,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b076_s02_0_asl.jpeg",
+      "togri_javob": "Harakatlanish taʼqiqlangan.",
+      "izoh": "Ichi oq, qizil hoshiyali doira — «Harakatlanish taqiqlanadi» belgisi. U barcha transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6651,
+      "savol": "Ushbu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b076_s03_0_asl.jpeg",
+      "togri_javob": "Barcha javoblar toʻgʻri.",
+      "izoh": "«Mexanik transport vositalarining harakatlanishi taqiqlanadi» belgisi mexanik transport vositalariga harakatni taqiqlaydi. Ot-arava va velosipedlar, shuningdek belgilangan yoʻnalishli transport vositalari bu yoʻlda harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6652,
+      "savol": "Ushbu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b076_s04_0_asl.jpeg",
+      "togri_javob": "Toʻla vazni 8 tonnadan ogʻir barcha transport vositalarining harakati taʼqiqlanadi.",
+      "izoh": "Raqamli yuk avtomobili tasvirli belgi ruxsat etilgan toʻla vazni belgida koʻrsatilgandan (8 t) ortiq boʻlgan transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6653,
+      "savol": "Ushbu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b076_s05_0_asl.jpeg",
+      "togri_javob": "Faqat mototsikllar harakati taʼqiqlanadi.",
+      "izoh": "Mototsikl tasvirli belgi faqat mototsikllarning harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6654,
+      "savol": "Ushbu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b076_s06_0_asl.jpeg",
+      "togri_javob": "Ikkala javob ham toʻgʻri.",
+      "izoh": "Traktor tasvirli belgi traktorlar va oʻziyurar mashina va mexanizmlarning harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6655,
+      "savol": "Ushbu yoʻl belgisini oʻrnatilishidan maqsad nima?",
+      "rasm": "questions/b076_s07_0_asl.jpeg",
+      "togri_javob": "Yoʻllardagi transport vositalari tezligini oshirish.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi oʻrnatilishining maqsadi haqidagi kalitni (tezlikni oshirish) tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6656,
+      "savol": "Ushbu belgi oʻrnatilgan yoʻllarda:",
+      "rasm": "questions/b076_s08_0_asl.jpeg",
+      "togri_javob": "Tirkama bilan harakatlanish taʼqiqlanadi.",
+      "izoh": "Tirkama tasvirli belgi tirkama bilan harakatlanishni taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6657,
+      "savol": "Ushbu belgi oʻrnatilganda:",
+      "rasm": "questions/b076_s09_0_asl.jpeg",
+      "togri_javob": "Barcha javob toʻgʻri.",
+      "izoh": "Ot-arava tasvirli belgi ot-aravalar, yuk tortuvchi hayvonlar harakatlanishini va mol podasini haydab oʻtishni taqiqlaydi — barcha javoblar toʻgʻri.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6658,
+      "savol": "Ushbu yoʻl belgisini oʻrnatilishidan maqsad nima?",
+      "rasm": "questions/b076_s10_0_asl.jpeg",
+      "togri_javob": "Mexanik transport vositalari harakatini yengillashtirish.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Belgi oʻrnatilishining maqsadi haqidagi kalitni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6659,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b077_s01_0_asl.jpeg",
+      "togri_javob": "Piyodalar harakatlanishi taʼqiqlangan.",
+      "izoh": "Chizib tashlangan piyoda tasvirli belgi bu yoʻl qismida piyodalarning harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6660,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b077_s02_0_asl.jpeg",
+      "togri_javob": "Umumiy cheklangan vazn.",
+      "izoh": "Doira ichidagi «7 t» — «Massasi cheklangan»: u haqiqiy massasi belgida koʻrsatilgandan ortiq boʻlgan transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6661,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b077_s03_0_asl.jpeg",
+      "togri_javob": "Oʻqqa tushadigan cheklangan ogʻirlik.",
+      "izoh": "Oʻq tasviri ustidagi «6 t» — «Oʻqqa tushadigan yuklama cheklangan»: u istalgan oʻqqa tushadigan haqiqiy yuklama belgida koʻrsatilgandan ortiq boʻlgan transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6662,
+      "savol": "Uchta oʻqdan iborat, umumiy vazni 17 tonna boʻlgan yuk avtomobili ushbu belgi oʻrnatilganda harakatlana oladimi?",
+      "rasm": "questions/b077_s04_0_asl.jpeg",
+      "togri_javob": "Harakatlanishi mumkin.",
+      "izoh": "Belgi oʻqqa tushadigan yuklamani 6 tonna bilan cheklaydi. Umumiy vazni 17 tonna boʻlgan uch oʻqli avtomobilda har bir oʻqqa taxminan 5,7 tonna tushadi, shuning uchun u harakatlanishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6663,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b077_s05_0_asl.jpeg",
+      "togri_javob": "Cheklangan balandlik.",
+      "izoh": "Yuqoridan va pastdan uchburchak bilan koʻrsatilgan «3,5 m» — «Balandligi cheklangan» belgisi. U balandligi (yuk bilan) koʻrsatilgandan ortiq transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6664,
+      "savol": "Ortilgan yukning balandligi 2,5 metr, yuk mashinasi bilan qoʻshib hisoblaganda esa umumiy balandlik 3,6 metrni tashkil etdi. Ushbu yuk avtomobiliga bu belgi oʻrnatilgan joyda harakatlanishga ruxsat etiladimi?",
+      "rasm": "questions/b077_s06_0_asl.jpeg",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Belgi balandligi 3,5 metrdan ortiq transport vositalarining harakatlanishini taqiqlaydi. Yuk avtomobilining yuk bilan umumiy balandligi 3,6 metr, shuning uchun unga harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

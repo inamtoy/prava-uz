@@ -1,0 +1,156 @@
+{
+  "bilet": "47-bilet",
+  "slug": "bilet-47",
+  "savollar": [
+    {
+      "question_id": 6590,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b070_s02_0_asl.jpeg",
+      "togri_javob": "Avtobus haydovchisi.",
+      "izoh": "Koʻprik oldida traktor tomonda «Qarama-qarshi harakatlanishga nisbatan ustunlik» belgisi oʻrnatilgan. Shuning uchun toʻsiq boʻlgan tor joyda avtobus haydovchisi traktorga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6591,
+      "savol": "Belgi ostidagi qoʻshimcha axborot belgisi nimani anglatadi?",
+      "rasm": "questions/b070_s03_0_asl.jpeg",
+      "togri_javob": "Belgidan yoʻlning tor qismigacha boʻlgan masofani.",
+      "izoh": "Belgi ostidagi «300 m» qoʻshimcha belgisi belgidan yoʻlning cheklangan (tor) qismigacha boʻlgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6592,
+      "savol": "Chorrahani ikkinchi bolib kim kesib oʻtadi?",
+      "rasm": "questions/b070_s04_0_asl.jpeg",
+      "togri_javob": "Qizil avtomobil.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Chorrahadan oʻtish tartibi belgilar va yoʻnalishlarga bogʻliq, rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6593,
+      "savol": "Qaysi transport vositasining haydovchisi yoʻl berishi kerak?",
+      "rasm": "questions/b070_s05_0_asl.jpeg",
+      "togri_javob": "Yuk avtomobili haydovchisi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Yuk avtomobili va mototsikl yoʻnalishlarini rasmdan aniq tahlil qilib boʻlmadi — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6594,
+      "savol": "Mazkur tik chiziq nimani anglatadi?",
+      "rasm": "questions/b070_s06_0_asl.jpeg",
+      "togri_javob": "Boshqa joylardagi toʻsiqlarning yon yuzalarini bildiradi.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "Rasmda kichik radiusli burilishdagi toʻsiq koʻrinadi, kalit esa «boshqa joylardagi toʻsiqlar» deydi — #7018 dagi kabi kalitni tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6595,
+      "savol": "Toʻxtash va toʻxtab turish quyidagi hollarda taʼqiqlangan:",
+      "rasm": "",
+      "togri_javob": "Sanab oʻtilgan barcha hollarda.",
+      "izoh": "Xavfli burilishlarda, koʻrinish 100 metrdan kam boʻlgan qavariq joylarda, shuningdek bir yoʻnalishda uchtadan kam boʻlagi boʻlgan koʻpriklar, estakadalar va osma yoʻllarda toʻxtash va toʻxtab turish taqiqlanadi — sanab oʻtilgan barcha hollarda.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6596,
+      "savol": "Qishloq xoʻjalik ishlari olib boriladigan dalada yuk avtomobili va traktorning harakat traektoriyasi kesishadi. Kim yoʻl berishi kerak?",
+      "rasm": "",
+      "togri_javob": "Oʻng tomonidan yaqinlashayotgan transport vositasi haydovchisiga.",
+      "izoh": "Dalada yoʻl yoʻq, shuning uchun ustunlik belgilar bilan belgilanmagan. Bunday holatda harakat yoʻnalishlari kesishganda oʻng tomondan yaqinlashayotgan transport vositasiga yoʻl beriladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6597,
+      "savol": "Togʻ yoʻllarining tik qiyaliklaridan tushishda gʻildiratishdan foydalanishga ruxsat etiladimi?",
+      "rasm": "",
+      "togri_javob": "Taʼqiqlanadi.",
+      "izoh": "Togʻ yoʻlining tik qiyaligidan uzatma ajratilgan holda (gʻildiratib) tushish taqiqlanadi: dvigatel tormozlashga yordam bermaydi, tormozlar qizib ketishi va ishdan chiqishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6598,
+      "savol": "Qoidalar transport vositalarining harakatlanishni davom ettirishni qanday hollarda taʼqiqlaydi?",
+      "rasm": "",
+      "togri_javob": "Ulagich moslamasi nosoz boʻlsa (avtopoezd tarkibida).",
+      "izoh": "Avtopoezd tarkibida ulagich moslamasi nosoz boʻlsa, tirkama ajralib ketishi mumkin. Shuning uchun bunday holda harakatni davom ettirish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6599,
+      "savol": "Bu belgi nimani bildiradi?",
+      "rasm": "questions/b071_s01_0_asl.jpeg",
+      "togri_javob": "Shlagbaumli temir yoʻl kesishmasi.",
+      "izoh": "Panjara tasvirli ogohlantiruvchi belgi shlagbaumli temir yoʻl kesishmasiga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6600,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b071_s02_0_asl.jpeg",
+      "togri_javob": "Shlagbaumsiz temir yoʻl kesishmasi.",
+      "izoh": "Parovoz tasvirli ogohlantiruvchi belgi shlagbaumsiz temir yoʻl kesishmasiga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6601,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b071_s03_0_asl.jpeg",
+      "togri_javob": "Bir izli temir yoʻl kesishmasi.",
+      "izoh": "Bitta «Andreyev xochi» bir izli temir yoʻl kesishmasini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6602,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b071_s04_0_asl.jpeg",
+      "togri_javob": "Koʻp izli temir yoʻl kesishmasi.",
+      "izoh": "Ostida qoʻshimcha burchakli «Andreyev xochi» koʻp izli (ikki va undan koʻp izli) temir yoʻl kesishmasini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6603,
+      "savol": "Bu yoʻl belgisi nimalardan ogohlantiradi?",
+      "rasm": "questions/b071_s05_0_asl.jpeg",
+      "togri_javob": "Koʻp izli shlagbaumsiz temir yoʻl kesishmasidan.",
+      "izoh": "Ostida qoʻshimcha burchakli «Andreyev xochi» shlagbaumsiz koʻp izli temir yoʻl kesishmasidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6604,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b071_s06_0_asl.jpeg",
+      "togri_javob": "Temir yoʻl kesishmasiga yaqinlashuv.",
+      "izoh": "Qiya qizil chiziqli toʻrtburchak belgi — temir yoʻl kesishmasiga yaqinlashish koʻrsatkichi. Chiziqlar soni kesishmagacha qolgan masofani bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

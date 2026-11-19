@@ -1,0 +1,156 @@
+{
+  "bilet": "52-bilet",
+  "slug": "bilet-52",
+  "savollar": [
+    {
+      "question_id": 6665,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b077_s07_0_asl.jpeg",
+      "togri_javob": "Cheklangan kenglik.",
+      "izoh": "Yon tomonlardan uchburchak bilan koʻrsatilgan «2,7 m» — «Kengligi cheklangan» belgisi. U kengligi (yuk bilan) koʻrsatilgandan ortiq transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6666,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b077_s08_0_asl.jpeg",
+      "togri_javob": "Cheklangan uzunlik.",
+      "izoh": "Yuk avtomobili tasviri va «10 m» yozuvli belgi — «Uzunligi cheklangan»: u umumiy uzunligi (yuk bilan) koʻrsatilgandan ortiq transport vositalarining harakatlanishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6667,
+      "savol": "Bu belgi oʻrnatilganda:",
+      "rasm": "questions/b077_s09_0_asl.jpeg",
+      "togri_javob": "Belgilangan yoʻnalishli transport vositalaridan tashqari barcha avtomobillarni oʻngga burilishini taʼqiqlaydi.",
+      "izoh": "«Oʻngga burilish taqiqlanadi» belgisi barcha transport vositalariga oʻngga burilishni taqiqlaydi, faqat belgilangan yoʻnalishli transport vositalari bundan mustasno.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6668,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b077_s10_0_asl.jpeg",
+      "togri_javob": "Oʻngga burilish taʼqiqlanadi.",
+      "izoh": "Chizib tashlangan oʻngga strelkali belgi — «Oʻngga burilish taqiqlanadi».",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6669,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b078_s01_0_asl.jpeg",
+      "togri_javob": "Chapga burilish taʼqiqlanadi.",
+      "izoh": "Chizib tashlangan chapga strelkali belgi — «Chapga burilish taqiqlanadi».",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6670,
+      "savol": "Bu belgi oʻrnatilganda haydovchi:",
+      "rasm": "questions/b078_s02_0_asl.jpeg",
+      "togri_javob": "Oʻngga, toʻgʻriga va qayrilishga ruxsat etiladi.",
+      "izoh": "«Chapga burilish taqiqlanadi» belgisi qayrilib olishni taqiqlamaydi. Shuning uchun haydovchi oʻngga, toʻgʻriga yurishi va qayrilib olishi mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6671,
+      "savol": "Bu belgi oʻrnatilganda haydovchi:",
+      "rasm": "questions/b078_s03_0_asl.jpeg",
+      "togri_javob": "Oʻngga, chapga va toʻgʻriga harakatlana oladi.",
+      "izoh": "«Qayrilib olish taqiqlanadi» belgisi faqat qayrilib olishni taqiqlaydi. Oʻngga, chapga burilish va toʻgʻriga harakatlanish ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6672,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b078_s04_0_asl.jpeg",
+      "togri_javob": "Quvib oʻtish taʼqiqlanadi.",
+      "izoh": "Qizil va qora avtomobil tasvirli belgi — «Quvib oʻtish taqiqlanadi».",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6673,
+      "savol": "Ushbu belgi oʻrnatilgan yoʻlda yengil avtomobil haydovchisi 35 km/soat tezlikda ketayotgan yuk avtomobilini quvib oʻta oladimi?",
+      "rasm": "questions/b078_s05_0_asl.jpeg",
+      "togri_javob": "Ruxsat beriladi.",
+      "izoh": "«Quvib oʻtish taqiqlanadi» belgisi 40 km/soatdan kam tezlikda yakka harakatlanayotgan transport vositalarini quvib oʻtishni taqiqlamaydi. Yuk avtomobili 35 km/soat tezlikda ketayotgani uchun uni quvib oʻtish mumkin.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6674,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b078_s06_0_asl.jpeg",
+      "togri_javob": "Yuqori tezlik cheklangan.",
+      "izoh": "Qizil hoshiyali doiradagi raqam — «Eng yuqori tezlik cheklangan»: belgida koʻrsatilgandan (50 km/soat) yuqori tezlikda harakatlanish taqiqlanadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6675,
+      "savol": "Bu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b078_s07_0_asl.jpeg",
+      "togri_javob": "Faqatgina yoʻl transport hodisasini oldini olish uchungina tovush moslamalaridan foydalanishga ruxsat beradi.",
+      "izoh": "«Tovush ishorasi berish taqiqlanadi» belgisi tovush ishorasidan faqat yoʻl-transport hodisasining oldini olish uchun foydalanishga ruxsat beradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6676,
+      "savol": "Bu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b078_s08_0_asl.jpeg",
+      "togri_javob": "Belgilangan yoʻnalishli transport vositalariga toʻxtash imkonini beradi.",
+      "izoh": "«Toʻxtash taqiqlanadi» belgisi belgilangan yoʻnalishli transport vositalariga toʻxtash imkonini beradi — ularga bu taqiq tatbiq etilmaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6677,
+      "savol": "Bu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b078_s09_0_asl.jpeg",
+      "togri_javob": "C va B javoblar toʻgʻri.",
+      "izoh": "",
+      "ishonch": "past",
+      "izohcha": "«Toʻxtab turish taqiqlanadi» belgisining istisnolari (nogiron haydovchilar, yuk ortish) haqidagi kalitni tasdiqlay olmayman — tekshirish kerak.",
+      "holat": "tekshirish kerak"
+    },
+    {
+      "question_id": 6678,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b078_s10_0_asl.jpeg",
+      "togri_javob": "Oyning toq kunlarida toʻxtab turish taʼqiqlanadi.",
+      "izoh": "Bitta vertikal chiziqli belgi oyning toq kunlarida toʻxtab turishni taqiqlaydi. Toʻxtash esa ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6679,
+      "savol": "Bu belgi bildiradi:",
+      "rasm": "questions/b079_s01_0_asl.jpeg",
+      "togri_javob": "Oyning juft kunlarida toʻxtab turish taʼqiqlanadi.",
+      "izoh": "Ikkita vertikal chiziqli belgi oyning juft kunlarida toʻxtab turishni taqiqlaydi. Toʻxtash esa ruxsat etiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

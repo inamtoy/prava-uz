@@ -1,0 +1,156 @@
+{
+  "bilet": "49-bilet",
+  "slug": "bilet-49",
+  "savollar": [
+    {
+      "question_id": 6620,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b073_s02_0_asl.jpeg",
+      "togri_javob": "Notekis yoʻl.",
+      "izoh": "Toʻlqinsimon chiziqli belgi oldinda notekis yoʻl qismi (doʻngliklar, chuqurliklar) borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6621,
+      "savol": "Ushbu belgi oʻrnatilgan joyda haydovchi tezlikni keskin oshirsa yoki keskin toʻxtasa oqibatda:",
+      "rasm": "questions/b073_s03_0_asl.jpeg",
+      "togri_javob": "Avtomobil turgʻunligini yoʻqotadi va agʻdarilishga moyilligi ortadi.",
+      "izoh": "Notekis yoʻlda keskin tezlanish yoki keskin toʻxtash avtomobilni chayqaltiradi, u turgʻunligini yoʻqotadi va agʻdarilishga moyilligi ortadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6622,
+      "savol": "Bu yoʻl belgisi nimadan ogohlantiradi:",
+      "rasm": "questions/b073_s04_0_asl.jpeg",
+      "togri_javob": "Tosh otilishi xavfi mavjudligidan.",
+      "izoh": "Gʻildirak ostidan tosh otilib chiqayotgan tasvirli belgi shagʻal otilishi xavfi borligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6623,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b073_s05_0_asl.jpeg",
+      "togri_javob": "Yoʻlning ikki tomonlama torayishi.",
+      "izoh": "Ikki tomondan torayayotgan chiziqli belgi yoʻlning ikki tomonlama torayishidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6624,
+      "savol": "Ushbu yoʻl belgisi nimadan ogohlantiradi?",
+      "rasm": "questions/b073_s06_0_asl.jpeg",
+      "togri_javob": "Yoʻlning oʻngdan torayishi.",
+      "izoh": "Oʻng chizigʻi ichkariga egilgan belgi yoʻlning oʻngdan torayishidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6625,
+      "savol": "Ushbu yoʻl belgisi nimadan ogohlantiradi?",
+      "rasm": "questions/b073_s07_0_asl.jpeg",
+      "togri_javob": "Yoʻlning chapdan torayishi.",
+      "izoh": "Chap chizigʻi ichkariga egilgan belgi yoʻlning chapdan torayishidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6626,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b073_s08_0_asl.jpeg",
+      "togri_javob": "Ikki tomonlama harakatlanish.",
+      "izoh": "Qarama-qarshi yoʻnalgan ikki strelkali ogohlantiruvchi belgi oldinda ikki tomonlama harakatli yoʻl qismi boshlanishini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6627,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b073_s09_0_asl.jpeg",
+      "togri_javob": "Yoʻl piyodalar oʻtish joyi boʻlgan qismi.",
+      "izoh": "Yoʻlak ustida yurayotgan odam tasvirli ogohlantiruvchi belgi oldinda piyodalar oʻtish joyi borligini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6628,
+      "savol": "Ushbu yoʻl belgisi:",
+      "rasm": "questions/b073_s10_0_asl.jpeg",
+      "togri_javob": "Yoʻlning bu qismida bolalar yoʻlga chiqib qolishi mumkinligidan ogohlantiradi.",
+      "izoh": "«Bolalar» belgisi yoʻlning bolalar muassasalari yaqinidagi qismida bolalar yoʻlga chiqib qolishi mumkinligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6629,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b074_s01_0_asl.jpeg",
+      "togri_javob": "Velosiped yoʻlkasi bilan kesishuv yaqinlashayotganligini.",
+      "izoh": "Velosiped tasvirli ogohlantiruvchi belgi velosiped yoʻlkasi bilan kesishuv yaqinlashayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6630,
+      "savol": "Ushbu belgi oʻrnatilganda birinchi harakatlanish imtiyozi kimga beriladi?",
+      "rasm": "questions/b074_s02_0_asl.jpeg",
+      "togri_javob": "Avtomobil haydovchisiga.",
+      "izoh": "Velosiped yoʻlkasi chorrahadan tashqarida yoʻl bilan kesishganda velosiped haydovchilari yoʻlda harakatlanayotgan transport vositalariga yoʻl berishi kerak. Shuning uchun avtomobil haydovchisi ustunlikka ega.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6631,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b074_s03_0_asl.jpeg",
+      "togri_javob": "Taʼmirlash ishlari olib borilayotganligini.",
+      "izoh": "Kurak bilan ishlayotgan odam tasvirli belgi oldinda taʼmirlash ishlari olib borilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6632,
+      "savol": "Ushbu yoʻl belgisi ogohlantiradi:",
+      "rasm": "questions/b074_s04_0_asl.jpeg",
+      "togri_javob": "Yoʻlga mol – qoʻy podasi chiqib qolishi mumkinligidan.",
+      "izoh": "Sigir tasvirli belgi yoʻlga mol-qoʻy podasi chiqib qolishi mumkinligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6633,
+      "savol": "Ushbu yoʻl belgisi ogohlantiradi:",
+      "rasm": "questions/b074_s05_0_asl.jpeg",
+      "togri_javob": "Yoʻlga yovvoyi hayvonlar chiqib qolishi mumkinligidan.",
+      "izoh": "Bugʻu tasvirli belgi yoʻlga yovvoyi hayvonlar chiqib qolishi mumkinligidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6634,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b074_s06_0_asl.jpeg",
+      "togri_javob": "Toshlar tushishi.",
+      "izoh": "Qiyalikdan tosh dumalayotgan tasvirli belgi toshlar tushishi (koʻchki) xavfi bor yoʻl qismidan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}

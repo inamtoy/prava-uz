@@ -1,0 +1,156 @@
+{
+  "bilet": "50-bilet",
+  "slug": "bilet-50",
+  "savollar": [
+    {
+      "question_id": 6635,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b074_s07_0_asl.jpeg",
+      "togri_javob": "Yonlama shamol mavjudligidan ogohlantiradi.",
+      "izoh": "Shamol yoʻnalishini koʻrsatuvchi yoʻl-yoʻl xalta («shamol paypogʻi») tasvirli belgi kuchli yonlama shamol boʻlishi mumkin boʻlgan joydan ogohlantiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6636,
+      "savol": "Bu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b074_s08_0_asl.jpeg",
+      "togri_javob": "Peshtoqi koʻrinishi cheklangan va yoritilmagan tonnelga yaqinlashuvni.",
+      "izoh": "Tonnel tasvirli ogohlantiruvchi belgi sunʼiy yoritilmagan yoki kirish qismi (peshtoqi) yaxshi koʻrinmaydigan tonnelga yaqinlashilayotganini bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6637,
+      "savol": "Ushbu yoʻl belgisining nomi nima?",
+      "rasm": "questions/b074_s09_0_asl.jpeg",
+      "togri_javob": "Burilishning yoʻnalishi.",
+      "izoh": "Bir yoki uch qizil-oq strelkali belgi — «Burilishning yoʻnalishi»: u kichik radiusli burilishda harakat yoʻnalishini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6638,
+      "savol": "Ushbu yoʻl belgisining nomi nima?",
+      "rasm": "questions/b074_s10_0_asl.jpeg",
+      "togri_javob": "Burilish yoʻnalishlari.",
+      "izoh": "Ikki tomonga yoʻnalgan strelkali belgi — «Burilish yoʻnalishlari»: u T shaklidagi chorraha yoki yoʻl ayrilishida harakatni chapga va oʻngga yoʻnaltiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6639,
+      "savol": "Ushbu yoʻl belgisining nomi nima?",
+      "rasm": "questions/b075_s01_0_asl.jpeg",
+      "togri_javob": "Ikkinchi darajali yoʻl bilan kesishuv.",
+      "izoh": "Qalin vertikal chiziq bilan ingichka koʻndalang chiziq kesishgan belgi — «Ikkinchi darajali yoʻl bilan kesishuv». Qalin chiziq haydovchi harakatlanayotgan asosiy yoʻlni bildiradi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6640,
+      "savol": "Ushbu yoʻl belgisining nomi nima?",
+      "rasm": "questions/b075_s02_0_asl.jpeg",
+      "togri_javob": "Ikkinchi darajali yoʻlning tutashuvi.",
+      "izoh": "Asosiy yoʻlga bir tomondan ingichka chiziq tutashgan belgi — «Ikkinchi darajali yoʻlning tutashuvi». Bu yerda ikkinchi darajali yoʻl asosiy yoʻlga tutashadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6641,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b075_s03_0_asl.jpeg",
+      "togri_javob": "Yoʻl bering.",
+      "izoh": "Uchi pastga qaragan teskari uchburchak — «Yoʻl bering» belgisi. U haydovchidan kesib oʻtilayotgan yoʻldagi transport vositalariga yoʻl berishni talab qiladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6642,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b075_s04_0_asl.jpeg",
+      "togri_javob": "Toʻxtamasdan harakatlanish taʼqiqlangan.",
+      "izoh": "Sakkizburchak «STOP» belgisi — «Toʻxtamasdan harakatlanish taqiqlanadi». Haydovchi toʻxtash chizigʻi oldida, u boʻlmasa kesib oʻtiladigan qatnov qismi chetida albatta toʻxtashi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6643,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b075_s05_0_asl.jpeg",
+      "togri_javob": "Roʻparada harakatlanishning ustunligi.",
+      "izoh": "Qizil hoshiyali doiradagi qarama-qarshi strelkalar — «Roʻparada harakatlanishning ustunligi»: haydovchi yoʻlning tor qismida roʻparadan kelayotgan transport vositalariga yoʻl berishi kerak.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6644,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b075_s06_0_asl.jpeg",
+      "togri_javob": "Roʻparadagi harakatlanishga nisbatan imtiyoz.",
+      "izoh": "Koʻk toʻrtburchakdagi qarama-qarshi strelkalar (oq strelka kattaroq) — «Roʻparadagi harakatlanishga nisbatan imtiyoz»: yoʻlning tor qismida haydovchi birinchi boʻlib oʻtadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6645,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b075_s07_0_asl.jpeg",
+      "togri_javob": "Asosiy yoʻlning boshlanishi.",
+      "izoh": "Sariq romb — «Asosiy yoʻl» belgisi. U asosiy yoʻlning boshlanishini bildiradi va bu yoʻlda haydovchi tartibga solinmagan chorrahalarda ustunlikka ega boʻladi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6646,
+      "savol": "Ushbu imtiyoz belgisi qaysi qoʻshimcha belgi bilan qoʻllanilishi mumkin?",
+      "rasm": "questions/b075_s08_0_asl.jpeg",
+      "togri_javob": "7.13.",
+      "izoh": "«Asosiy yoʻl» belgisi 7.13 «Asosiy yoʻlning yoʻnalishi» qoʻshimcha belgisi bilan qoʻllanilishi mumkin — u chorrahada asosiy yoʻl qaysi tomonga burilishini koʻrsatadi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6647,
+      "savol": "Ushbu belgi bildiradi:",
+      "rasm": "questions/b075_s09_0_asl.jpeg",
+      "togri_javob": "Asosiy yoʻlning oxiri.",
+      "izoh": "Qora chiziqlar bilan kesilgan sariq romb — «Asosiy yoʻlning oxiri». Bundan keyin haydovchi asosiy yoʻldagi ustunlikka ega emas.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6648,
+      "savol": "Ushbu yoʻl belgisi bildiradi:",
+      "rasm": "questions/b075_s10_0_asl.jpeg",
+      "togri_javob": "Kirish taʼqiqlangan.",
+      "izoh": "Qizil doira ichida oq toʻrtburchak — «Kirish taqiqlanadi» belgisi. U bu yoʻnalishda barcha transport vositalarining kirishini taqiqlaydi.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    },
+    {
+      "question_id": 6649,
+      "savol": "Ushbu yoʻl belgisi oʻrnatilganda:",
+      "rasm": "questions/b076_s01_0_asl.jpeg",
+      "togri_javob": "Belgilangan yoʻnalishli transport vositalaridan tashqari barcha transport vositalariga kirish taʼqiqlanadi.",
+      "izoh": "«Kirish taqiqlanadi» belgisi barcha transport vositalarining kirishini taqiqlaydi, faqat belgilangan yoʻnalishli transport vositalari bundan mustasno.",
+      "ishonch": "yuqori",
+      "izohcha": "",
+      "holat": "tayyor"
+    }
+  ]
+}
