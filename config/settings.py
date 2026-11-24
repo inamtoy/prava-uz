@@ -124,6 +124,7 @@ EXAM_DURATION_SECONDS = 25 * 60
 EXAM_MAX_MISTAKES = 2
 TICKET_QUESTION_COUNT = 15  # seed_data: Excel savollari 15 tadan biletlarga bo'linadi
 PRACTICE_QUESTION_COUNT = 20
+MISTAKES_CLEAR_STREAK = 2  # "Xatolarim": savol ketma-ket shuncha marta to'g'ri yechilsa ro'yxatdan chiqadi
 
 if not DEBUG:
     SECURE_SSL_REDIRECT = config("SECURE_SSL_REDIRECT", default=True, cast=bool)

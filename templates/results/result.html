@@ -67,7 +67,7 @@
       <h1 id="result-title" class="result-hero__title">Bu safar oʻta olmadingiz</h1>
       <p class="result-hero__text">Oʻtish uchun kamida 18 ta toʻgʻri javob kerak — xatolar ustida ishlang va qayta urinib koʻring. Quyida har bir xato savol izohi bilan berilgan.</p>
     {% else %}
-      <h1 id="result-title" class="result-hero__title">Mashq natijasi{% if exam.topic %} — {{ exam.topic.name }}{% endif %}</h1>
+      <h1 id="result-title" class="result-hero__title">{% if exam.mode == "mistakes" %}Xatolar ustida ishlash{% else %}Mashq natijasi{% if exam.topic %} — {{ exam.topic.name }}{% endif %}{% endif %}</h1>
       <p class="result-hero__text">{{ exam.total_questions }} ta savoldan {{ exam.score }} tasiga toʻgʻri javob berdingiz. Xato qilingan savollarni quyida koʻrib chiqing va biletni mustahkamlang.</p>
     {% endif %}
 
@@ -89,6 +89,14 @@
           {% csrf_token %}
           <button type="submit" class="btn btn-accent btn-lg btn-block"><i class="bi bi-arrow-repeat" aria-hidden="true"></i> Yana mashq</button>
         </form>
+      {% endif %}
+      {% if mistakes_left %}
+        <form method="post" action="{% url 'mistakes_start' %}">
+          {% csrf_token %}
+          <button type="submit" class="btn {% if exam.topic %}btn-soft{% else %}btn-accent btn-lg{% endif %} btn-block"><i class="bi bi-bullseye" aria-hidden="true"></i> Xatolarim ({{ mistakes_left }} ta)</button>
+        </form>
+      {% elif exam.mode == "mistakes" %}
+        <p class="result-hero__note"><i class="bi bi-check2-all" aria-hidden="true"></i> Barcha xatolar tuzatildi!</p>
       {% endif %}
       <a href="{% url 'topic_list' %}" class="btn btn-soft btn-block"><i class="bi bi-grid" aria-hidden="true"></i> Biletlar</a>
       {% if mistakes %}<a href="#xatolar" class="btn btn-link"><i class="bi bi-list-check" aria-hidden="true"></i> Xatolar tahlili ({{ mistakes|length }} ta)</a>{% endif %}

@@ -3,6 +3,7 @@ from datetime import timedelta
 from django.conf import settings
 from django.http import Http404
 from django.test import TestCase
+from django.urls import reverse
 from django.utils import timezone
 
 from accounts.models import User
@@ -325,3 +326,143 @@ class ResultProfileViewTests(ServiceTestBase):
         resp = self.client.get("/accounts/profile/")
         self.assertEqual([e.pk for e in resp.context["recent_exams"]], [mine.pk])
         self.assertEqual(resp.context["stats"]["total_exams"], 1)
+
+
+class MistakesAndDailyTests(ServiceTestBase):
+    """"Xatolarim" ro'yxati, xatolar mashqi, kunlik maqsad va seriya."""
+
+    def _answer(self, exam, question, correct):
+        answers = question.answers.all()
+        answer = answers.get(is_correct=True) if correct else answers.filter(is_correct=False).first()
+        return services.save_answer(exam, question.pk, answer.pk)
+
+    def _session_with(self, questions, correct):
+        exam = services._create_session(self.user, Exam.MODE_PRACTICE, questions, topic=self.topic_a)
+        for q in questions:
+            self._answer(exam, q, correct)
+        return exam
+
+    def test_wrong_answer_goes_to_mistakes_and_two_correct_clear_it(self):
+        q1, q2 = self.topic_a.questions.order_by("pk")[:2]
+        self._session_with([q1, q2], correct=False)
+        self.assertEqual(set(services.mistake_question_ids(self.user)), {q1.pk, q2.pk})
+
+        self._session_with([q1], correct=True)
+        self.assertIn(q1.pk, services.mistake_question_ids(self.user))  # 1 marta yetmaydi
+        self._session_with([q1], correct=True)
+        self.assertEqual(services.mistake_question_ids(self.user), [q2.pk])
+
+    def test_new_mistake_resets_streak(self):
+        q = self.topic_a.questions.first()
+        self._session_with([q], correct=False)
+        self._session_with([q], correct=True)
+        self._session_with([q], correct=False)
+        self._session_with([q], correct=True)
+        self.assertEqual(services.mistake_question_ids(self.user), [q.pk])
+
+    def test_correct_first_time_is_not_a_mistake_and_unanswered_ignored(self):
+        exam = services.start_exam(self.user)
+        item = exam.items.select_related("question").first()
+        self._answer(exam, item.question, correct=True)
+        services.finish_exam(exam)  # qolgan 19 ta javobsiz — "Xatolarim"ga tushmaydi
+        self.assertEqual(services.mistake_question_ids(self.user), [])
+
+    def test_mistakes_are_per_user_and_active_only(self):
+        q1, q2 = self.topic_a.questions.order_by("pk")[:2]
+        self._session_with([q1, q2], correct=False)
+        self.assertEqual(services.mistake_question_ids(self.other), [])
+        Question.objects.filter(pk=q2.pk).update(is_active=False)
+        self.assertEqual(services.mistake_question_ids(self.user), [q1.pk])
+
+    def test_start_mistakes(self):
+        with self.assertRaises(services.ExamError):
+            services.start_mistakes(self.user)
+        wrong = list(self.topic_a.questions.order_by("pk")[:3])
+        self._session_with(wrong, correct=False)
+        exam = services.start_mistakes(self.user)
+        self.assertEqual(exam.mode, Exam.MODE_MISTAKES)
+        self.assertIsNone(exam.topic)
+        self.assertEqual(set(exam.items.values_list("question_id", flat=True)), {q.pk for q in wrong})
+        finished = services.finish_exam(exam)
+        self.assertIsNone(finished.is_passed)
+
+    def test_daily_progress_and_streak(self):
+        self.user.daily_goal = 10
+        self.user.save()
+        today = timezone.localdate()
+        d = services.daily_progress(self.user)
+        self.assertEqual((d["today"], d["goal"], d["streak"], d["reached"]), (0, 10, 0, False))
+        self.assertEqual(len(d["week"]), 7)
+        self.assertTrue(d["week"][-1]["is_today"])
+
+        questions = list(self.topic_a.questions.order_by("pk")[:12])
+        exam = self._session_with(questions, correct=True)
+        items = list(exam.items.order_by("order"))
+        now = timezone.now()
+        # 10 ta — kecha, 2 ta — bugun
+        for it in items[:10]:
+            ExamAnswer.objects.filter(pk=it.pk).update(answered_at=now - timedelta(days=1))
+        d = services.daily_progress(self.user)
+        self.assertEqual(d["today"], 2)
+        self.assertEqual(d["left"], 8)
+        self.assertEqual(d["streak"], 1)  # bugun hali tugamagan — kechagi seriya saqlanadi
+        self.assertTrue(d["week"][-2]["reached"])
+
+        more = list(self.topic_b.questions.order_by("pk")[:8])
+        self._session_with(more, correct=False)
+        d = services.daily_progress(self.user)
+        self.assertEqual((d["today"], d["reached"], d["streak"], d["percent"]), (10, True, 2, 100))
+
+        # Kecha maqsad bajarilmagan bo'lsa seriya uziladi
+        ExamAnswer.objects.filter(pk=items[0].pk).update(answered_at=now - timedelta(days=3))
+        d = services.daily_progress(self.user, today=today)
+        self.assertEqual(d["streak"], 1)
+
+    def test_current_session(self):
+        self.assertIsNone(services.current_session(self.user))
+        empty = services.start_practice(self.user, self.topic_a)
+        self.assertIsNone(services.current_session(self.user))  # javobsiz mashq taklif qilinmaydi
+        q = empty.items.first().question
+        self._answer(empty, q, correct=True)
+        cur = services.current_session(self.user)
+        self.assertEqual((cur.pk, cur.answered_count), (empty.pk, 1))
+        exam = services.start_exam(self.user)
+        self.assertEqual(services.current_session(self.user).pk, exam.pk)
+
+
+class HomeDashboardViewTests(ServiceTestBase):
+    def setUp(self):
+        self.client.force_login(self.user)
+
+    def test_home_shows_today_panel_and_mistakes(self):
+        q = self.topic_a.questions.first()
+        exam = services._create_session(self.user, Exam.MODE_PRACTICE, [q], topic=self.topic_a)
+        services.save_answer(exam, q.pk, q.answers.filter(is_correct=False).first().pk)
+        services.finish_exam(exam)
+        resp = self.client.get(reverse("home"))
+        self.assertContains(resp, "Kunlik maqsad")
+        self.assertContains(resp, "Xatolar ustida ishlash")
+        self.assertContains(resp, "<strong>1</strong> ta savol", html=False)
+
+    def test_mistakes_start_flow(self):
+        resp = self.client.post(reverse("mistakes_start"))
+        self.assertRedirects(resp, reverse("home"))  # xato yo'q — xabar bilan qaytadi
+        q = self.topic_a.questions.first()
+        exam = services._create_session(self.user, Exam.MODE_PRACTICE, [q], topic=self.topic_a)
+        services.save_answer(exam, q.pk, q.answers.filter(is_correct=False).first().pk)
+        resp = self.client.post(reverse("mistakes_start"))
+        session = Exam.objects.get(mode=Exam.MODE_MISTAKES)
+        self.assertRedirects(resp, reverse("practice", args=[session.pk]))
+        page = self.client.get(reverse("practice", args=[session.pk]))
+        self.assertContains(page, "Xatolar ustida ishlash")
+        services.save_answer(session, q.pk, q.answers.get(is_correct=True).pk)
+        self.client.post(reverse("exam_finish", args=[session.pk]))
+        self.assertEqual(self.client.get(reverse("result", args=[session.pk])).status_code, 200)
+
+    def test_set_daily_goal(self):
+        self.client.post(reverse("set_daily_goal"), {"daily_goal": "30"})
+        self.user.refresh_from_db()
+        self.assertEqual(self.user.daily_goal, 30)
+        self.client.post(reverse("set_daily_goal"), {"daily_goal": "7"})
+        self.user.refresh_from_db()
+        self.assertEqual(self.user.daily_goal, 30)

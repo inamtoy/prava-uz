@@ -180,7 +180,7 @@
               <span class="prava-avatar">{{ e.user.first_name|default:e.user.username|slice:":1"|upper }}</span>
               <span class="prava-feed__who">
                 <strong>{{ e.user.get_full_name|default:e.user.username }}</strong>
-                <span class="prava-muted">{% if e.mode == "practice" %}Mashq · {{ e.topic.name }}{% else %}Imtihon{% endif %} · {{ e.finished_at|timesince }} oldin</span>
+                <span class="prava-muted">{{ e.get_mode_display }}{% if e.topic %} · {{ e.topic.name }}{% endif %} · {{ e.finished_at|timesince }} oldin</span>
               </span>
               <span class="prava-feed__score">{{ e.score }}/{{ e.total_questions }}</span>
               {% if e.is_passed is None %}<span class="prava-chip">Mashq</span>{% elif e.is_passed %}<span class="prava-chip prava-chip--ok">Oʻtdi</span>{% else %}<span class="prava-chip prava-chip--danger">Oʻtmadi</span>{% endif %}

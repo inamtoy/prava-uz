@@ -25,4 +25,5 @@ def result(request, pk):
         "answered_count": sum(1 for i in items if i.selected_answer_id),
         "unanswered_count": sum(1 for i in items if not i.selected_answer_id),
         "wrong_count": sum(1 for i in items if i.selected_answer_id and not i.is_correct),
+        "mistakes_left": 0 if exam.is_exam else len(services.mistake_question_ids(request.user)),
     })

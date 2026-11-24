@@ -15,7 +15,21 @@ def user_data(user):
         "username": user.username,
         "first_name": user.first_name,
         "email": user.email,
+        "daily_goal": user.daily_goal,
     }
+
+
+def daily_data(d):
+    return {**d, "week": [{**w, "date": w["date"].isoformat()} for w in d["week"]]}
+
+
+def current_data(exam):
+    data = exam_summary(exam)
+    data.update({
+        "answered_count": exam.answered_count,
+        "time_left": exam.time_left_seconds if exam.is_exam else None,
+    })
+    return data
 
 
 def topic_data(topic, progress=0):

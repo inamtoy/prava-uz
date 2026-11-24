@@ -38,8 +38,23 @@
   }
 
   // Javobdan keyin: tanlangan xato — qizil, to'g'ri javob — yashil, izoh chiqadi
+  const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Telefonda qisqa titrash (qo'llab-quvvatlansa): to'g'ri — bitta yengil, xato — ikki marta
+  function buzz(ok) {
+    if (reduceMotion || !navigator.vibrate) return;
+    try { navigator.vibrate(ok ? 18 : [40, 60, 40]); } catch (e) { /* ruxsat yo'q */ }
+  }
+
   function revealAnswer(card, data) {
     card.dataset.answered = "1";
+    buzz(data.is_correct);
+    if (!data.is_correct && !reduceMotion) {
+      card.classList.remove("is-shake");
+      void card.offsetWidth; // animatsiyani qayta ishga tushirish
+      card.classList.add("is-shake");
+      card.addEventListener("animationend", function () { card.classList.remove("is-shake"); }, { once: true });
+    }
     card.querySelectorAll(".answer-option").forEach(function (btn) {
       const id = parseInt(btn.dataset.answerId, 10);
       btn.disabled = true;

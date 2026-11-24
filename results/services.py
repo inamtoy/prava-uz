@@ -1,8 +1,12 @@
 """Imtihon va mashq mantiqi. View'lar faqat shu funksiyalarni chaqiradi."""
 
+import random
+from datetime import timedelta
+
 from django.conf import settings
 from django.db import transaction
 from django.db.models import Count, Q
+from django.db.models.functions import TruncDate
 from django.http import Http404
 from django.utils import timezone
 
@@ -84,6 +88,139 @@ def start_practice(user, topic):
     return _create_session(user, Exam.MODE_PRACTICE, questions, topic=topic)
 
 
+def mistake_question_ids(user):
+    """"Xatolarim": foydalanuvchi xato javob bergan va keyin ketma-ket MISTAKES_CLEAR_STREAK marta
+    to'g'ri yechmagan faol savollar — eng oxirgi xato birinchi.
+
+    Barcha rejimlar hisobga olinadi (imtihon ham). Javob berilmagan savol bu yerda xato emas.
+    """
+    rows = (
+        ExamAnswer.objects.filter(exam__user=user, answered_at__isnull=False, question__is_active=True)
+        .order_by("answered_at", "id")
+        .values_list("question_id", "is_correct", "answered_at")
+    )
+    need = settings.MISTAKES_CLEAR_STREAK
+    state = {}  # question_id -> [ketma-ket to'g'ri, oxirgi xato vaqti]
+    for qid, ok, at in rows:
+        if not ok:
+            state[qid] = [0, at]
+        elif qid in state:
+            state[qid][0] += 1
+            if state[qid][0] >= need:
+                del state[qid]
+    return [qid for qid, _ in sorted(state.items(), key=lambda kv: kv[1][1], reverse=True)]
+
+
+@transaction.atomic
+def start_mistakes(user):
+    """Xato qilingan savollardan mashq (eng oxirgi xatolardan, ko'pi bilan PRACTICE_QUESTION_COUNT ta)."""
+    ids = mistake_question_ids(user)
+    if not ids:
+        raise ExamError("Hozircha xatolaringiz yoʻq — biletlar boʻyicha mashq qiling.")
+    by_id = Question.objects.in_bulk(ids)
+    picked, seen = [], set()
+    for qid in ids:
+        q = by_id[qid]
+        key = question_key(q.text, q.image)
+        if key in seen:
+            continue
+        seen.add(key)
+        picked.append(q)
+        if len(picked) == settings.PRACTICE_QUESTION_COUNT:
+            break
+    random.shuffle(picked)
+    return _create_session(user, Exam.MODE_MISTAKES, picked)
+
+
+WEEKDAYS_UZ = ["Du", "Se", "Ch", "Pa", "Ju", "Sh", "Ya"]
+STREAK_LOOKBACK_DAYS = 400
+
+
+def daily_progress(user, today=None):
+    """Kunlik maqsad va seriya. Kun — Toshkent vaqti bo'yicha; hisob — javob berilgan savollar soni.
+
+    Seriya: maqsad bajarilgan ketma-ket kunlar. Bugun hali bajarilmagan bo'lsa seriya kechagidan
+    hisoblanadi (kun oxirigacha uzilmaydi).
+    """
+    today = today or timezone.localdate()
+    rows = (
+        ExamAnswer.objects.filter(
+            exam__user=user,
+            answered_at__isnull=False,
+            answered_at__date__gte=today - timedelta(days=STREAK_LOOKBACK_DAYS),
+        )
+        .annotate(day=TruncDate("answered_at"))
+        .values("day")
+        .annotate(n=Count("id"))
+    )
+    counts = {r["day"]: r["n"] for r in rows}
+    goal = user.daily_goal or 20
+
+    def reached(day):
+        return counts.get(day, 0) >= goal
+
+    streak = 0
+    day = today if reached(today) else today - timedelta(days=1)
+    while reached(day):
+        streak += 1
+        day -= timedelta(days=1)
+
+    done = counts.get(today, 0)
+    week = []
+    for i in range(6, -1, -1):
+        d = today - timedelta(days=i)
+        week.append({
+            "date": d,
+            "label": WEEKDAYS_UZ[d.weekday()],
+            "count": counts.get(d, 0),
+            "reached": reached(d),
+            "is_today": i == 0,
+        })
+    return {
+        "goal": goal,
+        "today": done,
+        "percent": min(100, round(done * 100 / goal)),
+        "reached": done >= goal,
+        "left": max(0, goal - done),
+        "streak": streak,
+        "week": week,
+    }
+
+
+def current_session(user):
+    """Eng oxirgi tugallanmagan sessiya (imtihon yoki mashq) — "Davom ettirish" uchun. Muddati o'tgan imtihon yopiladi."""
+    sessions = (
+        Exam.objects.filter(user=user, status=Exam.STATUS_IN_PROGRESS)
+        .select_related("topic")
+        .annotate(answered=Count("items", filter=Q(items__selected_answer__isnull=False)))
+        .order_by("-started_at")[:5]
+    )
+    for exam in sessions:
+        if expire_if_needed(exam):
+            continue
+        answered = exam.answered
+        # Bitta ham javob berilmagan mashq — tasodifan ochilgan; davom ettirishga taklif qilinmaydi
+        if not exam.is_exam and answered == 0:
+            continue
+        exam.answered_count = answered
+        exam.minutes_left = (exam.time_left_seconds or 0) // 60
+        return exam
+    return None
+
+
+def overall_progress(user, total=None):
+    """Mashqda kamida bir marta to'g'ri yechilgan faol savollar ulushi. `total` — faol savollar soni (ma'lum bo'lsa)."""
+    if total is None:
+        total = Question.objects.filter(is_active=True).count()
+    solved = (
+        ExamAnswer.objects.filter(
+            exam__user=user, exam__mode__in=Exam.PRACTICE_MODES, is_correct=True, question__is_active=True
+        )
+        .values("question_id").distinct().count()
+    )
+    return {"total": total, "solved": solved, "percent": round(solved * 100 / total) if total else 0}
+
+
 def expire_if_needed(exam):
     """Muddat o'tgan ochiq imtihonni yakunlaydi. Yakunlangan bo'lsa True qaytaradi."""
     if exam.is_in_progress and exam.is_expired:
@@ -150,7 +287,7 @@ def user_stats(user):
     # Biletlar bo'yicha faqat mashq: imtihon savollari barcha biletlardan tasodifiy (har biletga 0–2 ta),
     # ular hisobga olinsa ochilmagan biletlarda ham foiz chiqib qoladi
     rows = (
-        ExamAnswer.objects.filter(exam__in=finished, exam__mode=Exam.MODE_PRACTICE, selected_answer__isnull=False)
+        ExamAnswer.objects.filter(exam__in=finished, exam__mode__in=Exam.PRACTICE_MODES, selected_answer__isnull=False)
         .values("question__topic_id")
         .annotate(total=Count("id"), correct=Count("id", filter=Q(is_correct=True)))
     )
@@ -174,7 +311,7 @@ def user_stats(user):
         "passed_exams": sum(1 for e in exams if e.is_passed),
         "average_percent": round(sum(percents) / len(percents)) if percents else 0,
         "best_percent": max(percents) if percents else 0,
-        "practice_count": finished.filter(mode=Exam.MODE_PRACTICE).count(),
+        "practice_count": finished.filter(mode__in=Exam.PRACTICE_MODES).count(),
         "topics": topics,
         "practiced_topics": attempted,
         "weakest_topics": weakest,
@@ -185,7 +322,7 @@ def topic_progress(user):
     """{topic_id: %} — biletdagi faol savollardan mashqda kamida bir marta to'g'ri yechilganlari ulushi."""
     solved = (
         ExamAnswer.objects.filter(
-            exam__user=user, exam__mode=Exam.MODE_PRACTICE, is_correct=True, question__is_active=True
+            exam__user=user, exam__mode__in=Exam.PRACTICE_MODES, is_correct=True, question__is_active=True
         )
         .values("question__topic_id")
         .annotate(n=Count("question_id", distinct=True))

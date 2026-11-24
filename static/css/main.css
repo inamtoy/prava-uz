@@ -411,6 +411,21 @@ h5, .h5, h6, .h6 { font-size: 1rem; font-weight: 700; }
 .answer-option.is-wrong .answer-option__key { background: var(--danger); color: #fff; }
 .answer-option.is-wrong .answer-option__mark--bad { display: inline; color: var(--danger); }
 .answer-option.is-dimmed { opacity: .55; }
+/* Javob animatsiyasi: to'g'ri — "chaqnash", xato — karta silkinadi (common.js revealAnswer) */
+.answer-option.is-correct.is-selected { animation: answer-pop 420ms var(--ease); }
+.answer-option.is-correct:not(.is-selected) { animation: answer-glow 900ms var(--ease); }
+.question-card.is-shake { animation: card-shake 420ms var(--ease); }
+@keyframes answer-pop {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(0, 132, 61, .45); }
+  45% { transform: scale(1.025); }
+  100% { transform: scale(1); box-shadow: 0 0 0 12px rgba(0, 132, 61, 0); }
+}
+@keyframes answer-glow { 0%, 100% { box-shadow: none; } 40% { box-shadow: 0 0 0 4px rgba(0, 132, 61, .25); } }
+@keyframes card-shake {
+  0%, 100% { transform: none; }
+  20% { transform: translateX(-8px); } 40% { transform: translateX(7px); }
+  60% { transform: translateX(-5px); } 80% { transform: translateX(3px); }
+}
 .answer-option.is-saving { opacity: .7; }
 .answer-option:disabled { cursor: default; }
 .answer-option:disabled:not(.is-correct):not(.is-wrong):not(.is-selected) { opacity: .55; }

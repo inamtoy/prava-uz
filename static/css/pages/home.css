@@ -82,3 +82,80 @@
 .ticket.is-done { background: var(--primary); border-color: var(--primary); color: #fff; }
 .ticket.is-done .ticket__bar { display: none; }
 .ticket.is-done:hover { background: var(--primary-600); color: #fff; }
+
+/* 0. Bugun — kunlik maqsad, seriya, xatolar (faqat kirgan foydalanuvchi) */
+.today { margin-bottom: 2.5rem; }
+.today-resume {
+  display: flex; align-items: center; gap: .875rem; margin-bottom: 1rem;
+  padding: .875rem 1.125rem; color: #fff; text-decoration: none;
+  background: var(--primary); border-radius: 8px;
+  outline: 2px solid #fff; outline-offset: -6px;
+  transition: background var(--t-fast) var(--ease);
+}
+.today-resume:hover, .today-resume:focus-visible { background: var(--primary-600); color: #fff; }
+.today-resume__icon {
+  flex: 0 0 auto; display: grid; place-items: center; width: 40px; height: 40px;
+  background: #fff; color: var(--primary); border-radius: 4px; font-size: 1.5rem;
+}
+.today-resume__text { flex: 1 1 auto; min-width: 0; display: flex; flex-direction: column; }
+.today-resume__title { font-family: var(--font-display); font-weight: 700; font-size: 1.25rem; line-height: 1.2; }
+.today-resume__meta { font-size: .875rem; color: rgba(255, 255, 255, .85); overflow-wrap: anywhere; }
+
+.today-grid { display: grid; gap: 1rem; }
+@media (min-width: 768px) { .today-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1200px) { .today-grid { grid-template-columns: 1.15fr 1fr 1fr; } }
+.today-card { display: flex; gap: 1rem; min-width: 0; }
+
+.today-goal { align-items: center; }
+.today-goal .progress-ring { --size: 104px; --stroke: 3.2; }
+.today-goal__value { display: flex; flex-direction: column; align-items: center; justify-content: center; line-height: 1; }
+.today-goal__value strong { font-size: 1.75rem; }
+.today-goal__value small { font-size: .875rem; font-weight: 600; color: var(--ink-500); margin-top: .125rem; }
+.today-goal__body { min-width: 0; }
+.today-goal__text { margin: .25rem 0 .5rem; color: var(--ink-700); }
+.today-goal__edit summary { cursor: pointer; font-size: .875rem; color: var(--primary); list-style: none; }
+.today-goal__edit summary::-webkit-details-marker { display: none; }
+.today-goal__edit summary::after { content: " ›"; }
+.today-goal__edit[open] summary::after { content: " ‹"; }
+.today-goal__choices { display: flex; flex-wrap: wrap; gap: .375rem; margin-top: .5rem; }
+.today-goal__choices .chip { cursor: pointer; min-width: 44px; min-height: 36px; justify-content: center; font-family: var(--font-display); font-weight: 700; }
+.today-goal.is-done .progress-ring__fill { animation: goal-done 900ms var(--ease); }
+@keyframes goal-done { 0% { stroke-width: var(--stroke); } 40% { stroke-width: 5; } 100% { stroke-width: var(--stroke); } }
+
+.today-streak { flex-direction: column; justify-content: space-between; }
+.today-streak__head { display: flex; align-items: center; gap: .875rem; }
+.today-streak__flame {
+  display: grid; place-items: center; width: 52px; height: 52px; flex: 0 0 auto;
+  font-size: 1.75rem; color: var(--ink-300); background: var(--surface-2); border-radius: 50%;
+}
+.today-streak__flame.is-on { color: #fff; background: var(--danger); }
+.today-streak__flame.is-on i { display: inline-block; animation: flame 1.6s ease-in-out infinite; transform-origin: 50% 90%; }
+@keyframes flame { 0%, 100% { transform: scale(1) rotate(0); } 50% { transform: scale(1.08) rotate(-3deg); } }
+.today-streak__value { margin: 0; color: var(--ink-700); }
+.today-streak__value strong { font-family: var(--font-display); font-size: 1.75rem; color: var(--ink-900); margin-right: .25rem; }
+
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: .25rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.week__day { display: flex; flex-direction: column; align-items: center; gap: .25rem; }
+.week__dot {
+  display: grid; place-items: center; width: 100%; max-width: 34px; aspect-ratio: 1;
+  border-radius: 6px; background: var(--surface-2); border: 1.5px solid var(--line); color: #fff; font-size: .9rem;
+}
+.week__day.is-part .week__dot { background: var(--primary-50); border-color: var(--primary-50); }
+.week__day.is-done .week__dot { background: var(--success); border-color: var(--success); }
+.week__day.is-today .week__dot { border-color: var(--primary); border-width: 2px; }
+.week__label { font-size: .75rem; color: var(--ink-500); }
+.week__day.is-today .week__label { color: var(--primary); font-weight: 700; }
+
+.today-mistakes { align-items: flex-start; }
+.today-mistakes__icon { color: #fff; background: var(--danger); }
+.today-mistakes__body { flex: 1 1 auto; min-width: 0; }
+.today-mistakes__text { margin: .25rem 0 .75rem; color: var(--ink-700); }
+.today-mistakes__text strong { font-family: var(--font-display); font-size: 1.25rem; color: var(--ink-900); }
+
+.today-overall { display: grid; gap: .375rem; margin-top: 1rem; font-size: .9375rem; color: var(--ink-700); }
+.today-overall strong { font-family: var(--font-display); color: var(--ink-900); }
+.today-overall__meta { font-size: .8125rem; color: var(--ink-500); }
+
+@media (prefers-reduced-motion: reduce) {
+  .today-streak__flame.is-on i, .today-goal.is-done .progress-ring__fill { animation: none; }
+}

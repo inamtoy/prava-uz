@@ -107,7 +107,43 @@ def topics(request):
     return Response([s.topic_data(t, progress.get(t.pk, 0)) for t in qs])
 
 
+@api_view(["POST"])
+def daily_goal(request):
+    try:
+        goal = int(request.data.get("daily_goal"))
+    except (TypeError, ValueError):
+        goal = None
+    if goal not in dict(request.user.DAILY_GOAL_CHOICES):
+        return _error("Kunlik maqsad notoʻgʻri.")
+    request.user.daily_goal = goal
+    request.user.save(update_fields=["daily_goal"])
+    return Response({"ok": True, "daily": s.daily_data(services.daily_progress(request.user))})
+
+
+@api_view(["GET"])
+def home(request):
+    """Bosh ekran: kunlik maqsad va seriya, xatolar soni, davom ettiriladigan sessiya, umumiy progress."""
+    user = request.user
+    current = services.current_session(user)
+    return Response({
+        "daily": s.daily_data(services.daily_progress(user)),
+        "goal_choices": [v for v, _ in user.DAILY_GOAL_CHOICES],
+        "mistakes_count": len(services.mistake_question_ids(user)),
+        "current": s.current_data(current) if current else None,
+        "overall": services.overall_progress(user),
+    })
+
+
 # ---------- Mashq va imtihon ----------
+
+@api_view(["POST"])
+def mistakes_start(request):
+    try:
+        exam = services.start_mistakes(request.user)
+    except services.ExamError as e:
+        return _error(str(e))
+    return Response(s.session_data(request, exam, _items(exam)), status=status.HTTP_201_CREATED)
+
 
 @api_view(["POST"])
 def practice_start(request, slug):

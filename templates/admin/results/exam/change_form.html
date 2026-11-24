@@ -14,7 +14,7 @@
       {% if e.status == "in_progress" %}
         <span class="prava-tag prava-tag--warn">Jarayonda</span>
       {% elif e.is_passed is None %}
-        <span class="prava-tag prava-tag--info">Mashq{% if e.topic %} · {{ e.topic.name }}{% endif %}</span>
+        <span class="prava-tag prava-tag--info">{{ e.get_mode_display }}{% if e.topic %} · {{ e.topic.name }}{% endif %}</span>
       {% elif e.is_passed %}
         <span class="prava-tag prava-tag--ok">Oʻtdi</span>
       {% else %}

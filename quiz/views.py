@@ -22,13 +22,23 @@ def home(request):
         .order_by("order", "name")
         .only("id", "name", "slug", "order")
     )
+    question_count = Question.objects.filter(is_active=True).count()
+    dashboard = None
     if request.user.is_authenticated:
         progress = services.topic_progress(request.user)
         for topic in topics:
             topic.progress = progress.get(topic.pk, 0)
+        dashboard = {
+            "daily": services.daily_progress(request.user),
+            "mistakes_count": len(services.mistake_question_ids(request.user)),
+            "current": services.current_session(request.user),
+            "overall": services.overall_progress(request.user, total=question_count),
+            "goal_choices": request.user.DAILY_GOAL_CHOICES,
+        }
     return render(request, "quiz/home.html", {
+        "dashboard": dashboard,
         "topics": topics,
-        "question_count": Question.objects.filter(is_active=True).count(),
+        "question_count": question_count,
         "topic_count": len(topics),
         "exam_question_count": settings.EXAM_QUESTION_COUNT,
         "exam_minutes": settings.EXAM_DURATION_SECONDS // 60,
@@ -68,19 +78,47 @@ def practice_start(request, slug):
     return redirect("practice", pk=exam.pk)
 
 
+@login_required
+@require_POST
+def mistakes_start(request):
+    try:
+        exam = services.start_mistakes(request.user)
+    except services.ExamError as e:
+        messages.info(request, str(e))
+        return redirect("home")
+    return redirect("practice", pk=exam.pk)
+
+
+@login_required
+@require_POST
+def set_daily_goal(request):
+    try:
+        goal = int(request.POST.get("daily_goal", ""))
+    except ValueError:
+        goal = None
+    if goal not in dict(request.user.DAILY_GOAL_CHOICES):
+        messages.warning(request, "Kunlik maqsad notoʻgʻri.")
+    else:
+        request.user.daily_goal = goal
+        request.user.save(update_fields=["daily_goal"])
+        messages.success(request, f"Kunlik maqsad: {goal} ta savol.")
+    return redirect("home")
+
+
 def _session_items(exam):
     return exam.items.select_related("question").prefetch_related("question__answers")
 
 
 @login_required
 def practice(request, pk):
-    exam = get_object_or_404(Exam.objects.select_related("topic"), pk=pk, user=request.user, mode=Exam.MODE_PRACTICE)
+    exam = get_object_or_404(Exam.objects.select_related("topic"), pk=pk, user=request.user, mode__in=Exam.PRACTICE_MODES)
     if not exam.is_in_progress:
         return redirect("result", pk=exam.pk)
     items = list(_session_items(exam))
     answered = sum(1 for i in items if i.selected_answer_id)
     return render(request, "quiz/practice.html", {
         "exam": exam,
+        "title": exam.topic.name if exam.topic_id else exam.get_mode_display(),
         "items": items,
         "answered_count": answered,
         "correct_count": sum(1 for i in items if i.is_correct),

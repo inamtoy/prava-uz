@@ -15,6 +15,8 @@ class User(AbstractUser):
 
     email = models.EmailField("email", unique=True)
     role = models.CharField("rol", max_length=20, choices=ROLE_CHOICES, default=ROLE_STUDENT)
+    DAILY_GOAL_CHOICES = [(10, "10 ta savol"), (20, "20 ta savol"), (30, "30 ta savol"), (50, "50 ta savol")]
+    daily_goal = models.PositiveSmallIntegerField("kunlik maqsad", choices=DAILY_GOAL_CHOICES, default=20)
 
     objects = UserManager()
 

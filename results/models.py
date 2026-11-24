@@ -8,7 +8,10 @@ from django.utils import timezone
 class Exam(models.Model):
     MODE_EXAM = "exam"
     MODE_PRACTICE = "practice"
-    MODE_CHOICES = [(MODE_EXAM, "Imtihon"), (MODE_PRACTICE, "Mashq")]
+    MODE_MISTAKES = "mistakes"
+    MODE_CHOICES = [(MODE_EXAM, "Imtihon"), (MODE_PRACTICE, "Mashq"), (MODE_MISTAKES, "Xatolar ustida ishlash")]
+    # Taymersiz, "o'tdi/o'tmadi"siz rejimlar — mashq ekrani va bilet progressi uchun
+    PRACTICE_MODES = (MODE_PRACTICE, MODE_MISTAKES)
 
     STATUS_IN_PROGRESS = "in_progress"
     STATUS_FINISHED = "finished"

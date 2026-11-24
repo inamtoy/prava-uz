@@ -7,6 +7,91 @@
 <div class="container-x home">
   {% include "partials/messages.html" %}
 
+  {% if dashboard %}
+    {% with d=dashboard.daily cur=dashboard.current %}
+    {# 0. Bugungi holat: kunlik maqsad, seriya, xatolar, davom ettirish #}
+    <section class="today" aria-labelledby="today-title">
+      <h2 id="today-title" class="visually-hidden">Bugun</h2>
+
+      {% if cur %}
+        <a class="today-resume" href="{% if cur.is_exam %}{% url 'exam' cur.pk %}{% else %}{% url 'practice' cur.pk %}{% endif %}">
+          <span class="today-resume__icon"><i class="bi bi-play-fill" aria-hidden="true"></i></span>
+          <span class="today-resume__text">
+            <span class="today-resume__title">Davom ettirish</span>
+            <span class="today-resume__meta">{% if cur.is_exam %}Imtihon · {{ cur.minutes_left }} daqiqa qoldi{% else %}{% if cur.topic %}{{ cur.topic.name }}{% else %}{{ cur.get_mode_display }}{% endif %}{% endif %} · {{ cur.answered_count }} / {{ cur.total_questions }} javob</span>
+          </span>
+          <i class="bi bi-arrow-right" aria-hidden="true"></i>
+        </a>
+      {% endif %}
+
+      <div class="today-grid">
+        <div class="card-x today-card today-goal{% if d.reached %} is-done{% endif %}">
+          <div class="progress-ring progress-ring--lg{% if d.reached %} progress-ring--success{% endif %}" style="--p:{{ d.percent }}">
+            <svg viewBox="0 0 36 36" aria-hidden="true">
+              <circle class="progress-ring__track" cx="18" cy="18" r="15.9155"/>
+              <circle class="progress-ring__fill" cx="18" cy="18" r="15.9155" pathLength="100"/>
+            </svg>
+            <span class="progress-ring__value today-goal__value"><strong>{{ d.today }}</strong><small>/ {{ d.goal }}</small></span>
+          </div>
+          <div class="today-goal__body">
+            <span class="stat-card__label">Kunlik maqsad</span>
+            <p class="today-goal__text">{% if d.reached %}<i class="bi bi-check-circle-fill text-success" aria-hidden="true"></i> Bugungi maqsad bajarildi!{% elif d.today %}Yana <strong>{{ d.left }}</strong> ta savol qoldi{% else %}Bugun hali savol yechilmadi{% endif %}</p>
+            <details class="today-goal__edit">
+              <summary>Maqsadni oʻzgartirish</summary>
+              <form method="post" action="{% url 'set_daily_goal' %}" class="today-goal__choices">
+                {% csrf_token %}
+                {% for value, label in dashboard.goal_choices %}
+                  <button type="submit" name="daily_goal" value="{{ value }}" class="chip{% if value == d.goal %} chip--accent{% endif %}"{% if value == d.goal %} aria-pressed="true"{% endif %}>{{ value }}</button>
+                {% endfor %}
+              </form>
+            </details>
+          </div>
+        </div>
+
+        <div class="card-x today-card today-streak">
+          <div class="today-streak__head">
+            <span class="today-streak__flame{% if d.streak %} is-on{% endif %}" aria-hidden="true"><i class="bi bi-fire"></i></span>
+            <div>
+              <span class="stat-card__label">Seriya</span>
+              <p class="today-streak__value"><strong>{{ d.streak }}</strong> kun ketma-ket</p>
+            </div>
+          </div>
+          <ol class="week" aria-label="Oxirgi 7 kun">
+            {% for w in d.week %}
+              <li class="week__day{% if w.reached %} is-done{% elif w.count %} is-part{% endif %}{% if w.is_today %} is-today{% endif %}" title="{{ w.date|date:'d.m' }}: {{ w.count }} ta savol">
+                <span class="week__dot">{% if w.reached %}<i class="bi bi-check-lg" aria-hidden="true"></i>{% endif %}</span>
+                <span class="week__label">{{ w.label }}</span>
+              </li>
+            {% endfor %}
+          </ol>
+        </div>
+
+        <div class="card-x today-card today-mistakes">
+          <span class="icon-tile{% if dashboard.mistakes_count %} today-mistakes__icon{% else %} icon-tile--t4{% endif %}"><i class="bi bi-{% if dashboard.mistakes_count %}bullseye{% else %}check2-all{% endif %}" aria-hidden="true"></i></span>
+          <div class="today-mistakes__body">
+            <span class="stat-card__label">Xatolarim</span>
+            {% if dashboard.mistakes_count %}
+              <p class="today-mistakes__text"><strong>{{ dashboard.mistakes_count }}</strong> ta savol. Har birini 2 marta ketma-ket toʻgʻri yeching — roʻyxatdan chiqadi.</p>
+              <form method="post" action="{% url 'mistakes_start' %}">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-accent btn-block">Xatolar ustida ishlash <i class="bi bi-arrow-right" aria-hidden="true"></i></button>
+              </form>
+            {% else %}
+              <p class="today-mistakes__text">Hozircha xato yoʻq. Biletlarni yechganingizda xato qilingan savollar shu yerga yigʻiladi.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+      <div class="today-overall">
+        <span>Umumiy tayyorgarlik: <strong>{{ dashboard.overall.percent }}%</strong></span>
+        <div class="bar bar--thin" aria-hidden="true"><div class="bar__fill" style="width: {{ dashboard.overall.percent }}%"></div></div>
+        <span class="today-overall__meta">{{ dashboard.overall.solved }} / {{ dashboard.overall.total }} savol mashqda toʻgʻri yechilgan</span>
+      </div>
+    </section>
+    {% endwith %}
+  {% endif %}
+
   {# 1. Kirish: sarlavha + yo'nalish ko'rsatkichi #}
   <section class="home-top" aria-labelledby="home-title">
     <div class="home-top__text">

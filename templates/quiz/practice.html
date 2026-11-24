@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
-{% block title %}Mashq: {{ exam.topic.name }} — Prava.uz{% endblock %}
+{% block title %}Mashq: {{ title }} — Prava.uz{% endblock %}
 {% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/quiz.css' %}">{% endblock %}
 {% block content %}
 <div id="practice" class="practice"
@@ -19,7 +19,7 @@
         <span class="kicker">Mashq jarayoni</span>
         <span class="practice-bar__pos tabular" id="practice-position">Savol {{ start_index|add:1 }} / {{ items|length }}</span>
       </div>
-      <h1 class="practice-bar__title">{{ exam.topic.name }}</h1>
+      <h1 class="practice-bar__title">{{ title }}</h1>
       <div class="bar bar--thin practice-bar__progress" aria-hidden="true">
         <div id="practice-progress" class="bar__fill bar__fill--accent" style="width: 0%"></div>
       </div>
@@ -49,7 +49,7 @@
             </svg>
             <span class="progress-ring__value" id="summary-percent">0%</span>
           </div>
-          <span class="kicker">{{ exam.topic.name }}</span>
+          <span class="kicker">{{ title }}</span>
           <h2 class="practice-summary__title">Mashq tugadi!</h2>
           <p class="practice-summary__score">Toʻgʻri javoblar: <strong id="summary-score"></strong> / {{ items|length }}</p>
           <div class="practice-summary__actions">

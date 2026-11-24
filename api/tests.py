@@ -187,3 +187,51 @@ class SessionApiTests(ApiTestBase):
         self.assertEqual(st["practice_count"], 1)
         self.assertEqual(st["practiced_topics"][0]["percent"], 100)
         self.assertEqual(self.client.get("/api/v1/topics/").json()[0]["progress"], round(10 * 100 / 15))
+
+
+class HomeApiTests(ApiTestBase):
+    def test_home_requires_auth(self):
+        self.assertEqual(self.client.get("/api/v1/home/").status_code, 401)
+
+    def test_home_and_mistakes_flow(self):
+        self.auth()
+        r = self.client.get("/api/v1/home/")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.data["mistakes_count"], 0)
+        self.assertIsNone(r.data["current"])
+        self.assertEqual(r.data["daily"]["goal"], 20)
+        self.assertEqual(len(r.data["daily"]["week"]), 7)
+        self.assertEqual(r.data["goal_choices"], [10, 20, 30, 50])
+
+        self.assertEqual(self.client.post("/api/v1/mistakes/").status_code, 400)
+
+        practice = self.client.post(f"/api/v1/topics/{self.topic.slug}/practice/").data
+        item = practice["items"][0]
+        wrong = next(a for a in item["answers"] if not self._is_correct(a["id"]))
+        self.client.post(f"/api/v1/sessions/{practice['id']}/answer/",
+                         {"question_id": item["question_id"], "answer_id": wrong["id"]}, format="json")
+
+        r = self.client.get("/api/v1/home/")
+        self.assertEqual(r.data["mistakes_count"], 1)
+        self.assertEqual(r.data["daily"]["today"], 1)
+        self.assertEqual(r.data["current"]["id"], practice["id"])
+        self.assertEqual(r.data["current"]["answered_count"], 1)
+
+        m = self.client.post("/api/v1/mistakes/")
+        self.assertEqual(m.status_code, 201)
+        self.assertEqual(m.data["mode"], "mistakes")
+        self.assertEqual([i["question_id"] for i in m.data["items"]], [item["question_id"]])
+        self.assertNotIn("correct_answer_id", m.data["items"][0])
+
+    def test_daily_goal(self):
+        self.auth()
+        r = self.client.post("/api/v1/me/goal/", {"daily_goal": 50}, format="json")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual(r.data["daily"]["goal"], 50)
+        self.assertEqual(self.client.get("/api/v1/me/").data["daily_goal"], 50)
+        self.assertEqual(self.client.post("/api/v1/me/goal/", {"daily_goal": 3}, format="json").status_code, 400)
+
+    @staticmethod
+    def _is_correct(answer_id):
+        from quiz.models import Answer
+        return Answer.objects.get(pk=answer_id).is_correct
