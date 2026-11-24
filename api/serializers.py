@@ -16,6 +16,7 @@ def user_data(user):
         "first_name": user.first_name,
         "email": user.email,
         "daily_goal": user.daily_goal,
+        "show_in_leaderboard": user.show_in_leaderboard,
     }
 
 

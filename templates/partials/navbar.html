@@ -9,6 +9,7 @@
         <li><a class="site-nav__link{% if url_name == 'topic_list' or url_name == 'practice' %} is-active{% endif %}" href="{% url 'topic_list' %}"{% if url_name == 'topic_list' %} aria-current="page"{% endif %}>Biletlar</a></li>
         <li><a class="site-nav__link{% if url_name == 'exam_start' or url_name == 'exam' or url_name == 'result' %} is-active{% endif %}" href="{% url 'exam_start' %}"{% if url_name == 'exam_start' %} aria-current="page"{% endif %}>Imtihon</a></li>
         {% if user.is_authenticated %}
+          <li><a class="site-nav__link{% if url_name == 'leaderboard' %} is-active{% endif %}" href="{% url 'leaderboard' %}"{% if url_name == 'leaderboard' %} aria-current="page"{% endif %}>Reyting</a></li>
           <li><a class="site-nav__link{% if url_name == 'profile' %} is-active{% endif %}" href="{% url 'profile' %}"{% if url_name == 'profile' %} aria-current="page"{% endif %}>Profil</a></li>
         {% endif %}
       </ul>
@@ -25,6 +26,7 @@
             <li class="dropdown-header"><strong>{{ user.get_full_name|default:user.username }}</strong><span>{{ user.email }}</span></li>
             <li><a class="dropdown-item" href="{% url 'profile' %}"><i class="bi bi-person"></i> Profil va statistika</a></li>
             <li><a class="dropdown-item" href="{% url 'topic_list' %}"><i class="bi bi-grid"></i> Biletlar</a></li>
+            <li><a class="dropdown-item" href="{% url 'account_settings' %}"><i class="bi bi-sliders"></i> Sozlamalar</a></li>
             {% if user.is_admin_role %}<li><a class="dropdown-item" href="{% url 'admin:index' %}"><i class="bi bi-gear"></i> Boshqaruv paneli</a></li>{% endif %}
             <li><hr class="dropdown-divider"></li>
             <li>

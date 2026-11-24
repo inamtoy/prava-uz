@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Haftalik reyting — Prava.uz{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/results.css' %}">{% endblock %}
+
+{% block content %}
+<section class="board" aria-labelledby="board-title">
+  <div class="board__head">
+    <div>
+      <span class="kicker">{{ board.week_start|date:"d.m" }} – {{ board.week_end|date:"d.m.Y" }}</span>
+      <h1 id="board-title" class="board__title">Haftalik TOP-10</h1>
+      <p class="board__lead">Shu hafta (dushanbadan beri) eng koʻp toʻgʻri javob berganlar. Har dushanba yangidan boshlanadi.</p>
+    </div>
+    <div class="board__me card-dark">
+      <span class="board__me-label">Sizning natijangiz</span>
+      <strong class="board__me-value">{{ board.my_correct }}</strong>
+      <span class="board__me-meta">{% if board.me %}{{ board.me.rank }}-oʻrin · {{ board.participants }} ishtirokchidan{% elif board.hidden %}Siz reytingda yashiringansiz{% else %}toʻgʻri javob{% endif %}</span>
+    </div>
+  </div>
+
+  {% if board.top %}
+    <ol class="card-x card-x--flush board__list">
+      {% for r in board.top %}
+        <li class="board__row{% if r.is_me %} is-me{% endif %}{% if r.rank <= 3 %} is-podium{% endif %}">
+          <span class="board__rank{% if r.rank <= 3 %} board__rank--{{ r.rank }}{% endif %}">{{ r.rank }}</span>
+          <span class="avatar" aria-hidden="true">{{ r.name|slice:":1"|upper }}</span>
+          <span class="board__name">{{ r.name }}{% if r.is_me %} <span class="chip chip--accent">Siz</span>{% endif %}</span>
+          <span class="board__score"><strong>{{ r.correct }}</strong> <small>toʻgʻri</small></span>
+        </li>
+      {% endfor %}
+    </ol>
+    {% if board.to_top %}
+      <p class="board__mine">Siz <strong>{{ board.me.rank }}-oʻrindasiz</strong>. TOP-10 ga kirish uchun yana <strong>{{ board.to_top }}</strong> ta toʻgʻri javob kerak.</p>
+    {% endif %}
+  {% else %}
+    <div class="card-x board__empty">
+      <i class="bi bi-trophy" aria-hidden="true"></i>
+      <p>Shu hafta hali hech kim savol yechmadi. Birinchi boʻling!</p>
+      <a href="{% url 'topic_list' %}" class="btn btn-accent btn-lg">Mashq qilish</a>
+    </div>
+  {% endif %}
+
+  <p class="board__note">
+    {% if board.hidden %}Ismingiz reytingda koʻrinmaydi. {% endif %}<a href="{% url 'account_settings' %}">Reytingda koʻrinishni sozlash</a>
+  </p>
+</section>
+{% endblock %}

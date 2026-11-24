@@ -291,3 +291,47 @@ class AppVersionApiTests(ApiTestBase):
             self.assertEqual((rel.version_code, rel.notes, rel.apk.size), (5, "Yangi", 100))
             with self.assertRaises(CommandError):  # kichik yoki teng versiya rad etiladi
                 call_command("publish_apk", str(apk), "--code", "5", "--name", "0.5.0")
+
+
+class ProfileApiTests(ApiTestBase):
+    def test_update_profile_partial(self):
+        self.auth()
+        r = self.client.post("/api/v1/me/", {"show_in_leaderboard": False}, format="json")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual((r.data["first_name"], r.data["email"], r.data["show_in_leaderboard"]),
+                         ("Ali", "ali@example.com", False))
+        r = self.client.post("/api/v1/me/", {"first_name": "Alisher", "email": "vali@example.com"}, format="json")
+        self.assertEqual(r.status_code, 400)
+        self.assertIn("email", r.data["errors"])
+        r = self.client.post("/api/v1/me/", {"first_name": "Alisher"}, format="json")
+        self.assertEqual(r.data["first_name"], "Alisher")
+        self.assertFalse(r.data["show_in_leaderboard"])  # berilmagan maydon o'zgarmadi
+
+    def test_change_password(self):
+        self.auth()
+        r = self.client.post("/api/v1/me/password/", {"old_password": "xato", "new_password": "Yangi-parol-2026"}, format="json")
+        self.assertEqual(r.status_code, 400)
+        self.assertIn("old_password", r.data["errors"])
+        r = self.client.post("/api/v1/me/password/", {"old_password": PASSWORD, "new_password": "123"}, format="json")
+        self.assertEqual(r.status_code, 400)
+        self.assertIn("new_password", r.data["errors"])
+        r = self.client.post("/api/v1/me/password/", {"old_password": PASSWORD, "new_password": "Yangi-parol-2026"}, format="json")
+        self.assertEqual(r.status_code, 200)
+        self.user.refresh_from_db()
+        self.assertTrue(self.user.check_password("Yangi-parol-2026"))
+        self.assertEqual(self.client.get("/api/v1/me/").status_code, 200)  # token amal qilaveradi
+
+    def test_leaderboard(self):
+        self.auth()
+        r = self.client.get("/api/v1/leaderboard/")
+        self.assertEqual(r.status_code, 200)
+        self.assertEqual((r.data["top"], r.data["me"], r.data["my_correct"]), ([], None, 0))
+        practice = self.client.post(f"/api/v1/topics/{self.topic.slug}/practice/").data
+        from quiz.models import Answer
+        item = practice["items"][0]
+        ok = Answer.objects.get(question_id=item["question_id"], is_correct=True)
+        self.client.post(f"/api/v1/sessions/{practice['id']}/answer/",
+                         {"question_id": item["question_id"], "answer_id": ok.pk}, format="json")
+        r = self.client.get("/api/v1/leaderboard/")
+        self.assertEqual(r.data["top"], [{"rank": 1, "name": "Ali", "correct": 1, "is_me": True}])
+        self.assertEqual(r.data["me"], {"rank": 1, "correct": 1})

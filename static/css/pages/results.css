@@ -303,3 +303,35 @@
 
 /* Yangi uslubda bezak konfetti ishlatilmaydi */
 .confetti { display: none !important; }
+
+/* Haftalik reyting (TOP-10) */
+.board { max-width: 760px; margin: 0 auto; padding: 1rem 0 3rem; }
+.board__head { display: grid; gap: 1rem; margin-bottom: 1.25rem; }
+@media (min-width: 768px) { .board__head { grid-template-columns: 1fr 220px; align-items: end; } }
+.board__title { margin: .25rem 0 .5rem; }
+.board__lead { margin: 0; color: var(--ink-500); }
+.board__me { display: flex; flex-direction: column; gap: .125rem; }
+.board__me-label { font-size: .8125rem; color: rgba(255, 255, 255, .8); }
+.board__me-value { font-family: var(--font-display); font-size: 2.5rem; line-height: 1; color: #fff; }
+.board__me-meta { font-size: .875rem; color: rgba(255, 255, 255, .85); }
+.board__list { list-style: none; margin: 0; padding: 0; }
+.board__row { display: flex; align-items: center; gap: .75rem; padding: .75rem 1rem; border-top: 1px solid var(--line); min-width: 0; }
+.board__row:first-child { border-top: 0; }
+.board__row.is-me { background: var(--primary-50); }
+.board__rank {
+  flex: 0 0 auto; display: grid; place-items: center; width: 36px; height: 36px;
+  font-family: var(--font-display); font-weight: 700; font-size: 1.125rem; color: var(--ink-500);
+}
+.board__rank--1, .board__rank--2, .board__rank--3 { color: #fff; border-radius: 50%; }
+.board__rank--1 { background: var(--primary); }
+.board__rank--2 { background: var(--success); }
+.board__rank--3 { background: var(--danger); }
+.board__name { flex: 1 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-weight: 600; }
+.board__score { flex: 0 0 auto; font-size: .875rem; color: var(--ink-500); }
+.board__score strong { font-family: var(--font-display); font-size: 1.375rem; color: var(--ink-900); }
+.board__mine, .board__note { margin: 1rem 0 0; color: var(--ink-700); font-size: .9375rem; }
+.board__empty { text-align: center; padding: 2rem 1rem; }
+.board__empty .bi { font-size: 2.5rem; color: var(--primary); }
+.profile-head__actions { display: flex; flex-wrap: wrap; gap: .5rem; width: 100%; }
+.profile-head__actions .btn { flex: 1 1 auto; }
+@media (min-width: 768px) { .profile-head__actions { width: auto; } .profile-head__actions .btn { flex: 0 0 auto; } }

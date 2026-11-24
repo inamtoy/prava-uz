@@ -5,7 +5,7 @@ from datetime import timedelta
 
 from django.conf import settings
 from django.db import transaction
-from django.db.models import Count, Q
+from django.db.models import Count, Max, Q
 from django.db.models.functions import TruncDate
 from django.http import Http404
 from django.utils import timezone
@@ -206,6 +206,65 @@ def current_session(user):
         exam.minutes_left = (exam.time_left_seconds or 0) // 60
         return exam
     return None
+
+
+LEADERBOARD_SIZE = 10
+
+
+def week_start(today=None):
+    """Joriy haftaning dushanbasi (Toshkent vaqti)."""
+    today = today or timezone.localdate()
+    return today - timedelta(days=today.weekday())
+
+
+def weekly_leaderboard(user, today=None, size=LEADERBOARD_SIZE):
+    """Haftalik reyting: dushanbadan beri to'g'ri javoblar soni (barcha rejimlar).
+
+    Reytingga faqat faol, admin bo'lmagan va "reytingda ko'rinish"ni o'chirmagan foydalanuvchilar kiradi.
+    Teng natijada — shu hafta birinchi bo'lib shu songa erishgan (oxirgi to'g'ri javobi oldinroq) yuqorida.
+    """
+    from accounts.models import User
+
+    start = week_start(today)
+    rows = list(
+        ExamAnswer.objects.filter(
+            is_correct=True,
+            answered_at__date__gte=start,
+            exam__user__is_active=True,
+            exam__user__show_in_leaderboard=True,
+        )
+        .exclude(exam__user__role=User.ROLE_ADMIN)
+        .values("exam__user_id", "exam__user__first_name", "exam__user__username")
+        .annotate(correct=Count("id"), last=Max("answered_at"))
+        .order_by("-correct", "last", "exam__user_id")
+    )
+    ranked = [
+        {
+            "rank": n,
+            "user_id": r["exam__user_id"],
+            "name": r["exam__user__first_name"] or r["exam__user__username"],
+            "correct": r["correct"],
+            "is_me": r["exam__user_id"] == user.pk,
+        }
+        for n, r in enumerate(rows, start=1)
+    ]
+    me = next((r for r in ranked if r["is_me"]), None)
+    my_correct = (
+        me["correct"]
+        if me
+        else ExamAnswer.objects.filter(exam__user=user, is_correct=True, answered_at__date__gte=start).count()
+    )
+    return {
+        "week_start": start,
+        "week_end": start + timedelta(days=6),
+        "top": ranked[:size],
+        "me": me,  # None — reytingda yo'q (yashirgan, admin yoki shu hafta to'g'ri javob yo'q)
+        "my_correct": my_correct,
+        "hidden": not user.show_in_leaderboard,
+        "participants": len(ranked),
+        # TOP-10 dan tashqarida bo'lsa: 10-o'rinni ortda qoldirish uchun kerakli to'g'ri javoblar
+        "to_top": (ranked[size - 1]["correct"] - me["correct"] + 1) if me and me["rank"] > size else 0,
+    }
 
 
 def overall_progress(user, total=None):

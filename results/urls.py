@@ -4,4 +4,5 @@ from . import views
 
 urlpatterns = [
     path("natija/<int:pk>/", views.result, name="result"),
+    path("reyting/", views.leaderboard, name="leaderboard"),
 ]

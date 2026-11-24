@@ -27,3 +27,8 @@ def result(request, pk):
         "wrong_count": sum(1 for i in items if i.selected_answer_id and not i.is_correct),
         "mistakes_left": 0 if exam.is_exam else len(services.mistake_question_ids(request.user)),
     })
+
+
+@login_required
+def leaderboard(request):
+    return render(request, "results/leaderboard.html", {"board": services.weekly_leaderboard(request.user)})

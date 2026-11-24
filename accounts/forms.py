@@ -1,5 +1,5 @@
 from django import forms
-from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
+from django.contrib.auth.forms import AuthenticationForm, PasswordChangeForm, UserCreationForm
 
 from .models import User
 
@@ -51,4 +51,44 @@ class LoginForm(BootstrapMixin, AuthenticationForm):
         super().__init__(*args, **kwargs)
         self.fields["username"].label = "Login yoki email"
         self.fields["password"].label = "Parol"
+        self._style_fields()
+
+
+class ProfileForm(BootstrapMixin, forms.ModelForm):
+    """Profil sozlamalari: ism, email, reytingda ko'rinish."""
+
+    first_name = forms.CharField(label="Ismingiz", max_length=150)
+    email = forms.EmailField(label="Email")
+
+    class Meta:
+        model = User
+        fields = ("first_name", "email", "show_in_leaderboard")
+        labels = {"show_in_leaderboard": "Haftalik reytingda (TOP-10) ismim koʻrinsin"}
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self._style_fields()
+        self.fields["show_in_leaderboard"].widget.attrs["class"] = "form-check-input"
+
+    def clean_email(self):
+        email = self.cleaned_data["email"].strip().lower()
+        if User.objects.filter(email__iexact=email).exclude(pk=self.instance.pk).exists():
+            raise forms.ValidationError("Bu email boshqa foydalanuvchiga tegishli.")
+        return email
+
+
+class PasswordForm(BootstrapMixin, PasswordChangeForm):
+    error_messages = {
+        **PasswordChangeForm.error_messages,
+        "password_incorrect": "Joriy parol notoʻgʻri.",
+        "password_mismatch": "Yangi parollar bir xil emas.",
+    }
+
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields["old_password"].label = "Joriy parol"
+        self.fields["new_password1"].label = "Yangi parol"
+        self.fields["new_password2"].label = "Yangi parolni takrorlang"
+        self.fields["new_password1"].help_text = "Kamida 8 ta belgi, faqat raqamlardan iborat boʻlmasin."
+        self.fields["new_password2"].help_text = ""
         self._style_fields()

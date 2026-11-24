@@ -466,3 +466,83 @@ class HomeDashboardViewTests(ServiceTestBase):
         self.client.post(reverse("set_daily_goal"), {"daily_goal": "7"})
         self.user.refresh_from_db()
         self.assertEqual(self.user.daily_goal, 30)
+
+
+class LeaderboardTests(ServiceTestBase):
+    def _correct(self, user, n, days_ago=0):
+        """`user` ga `n` ta to'g'ri javob (berilgan kunda) yozadi."""
+        qs = list(Question.objects.order_by("pk")[:n])
+        exam = services._create_session(user, Exam.MODE_PRACTICE, qs, topic=self.topic_a)
+        for q in qs:
+            services.save_answer(exam, q.pk, q.answers.get(is_correct=True).pk)
+        if days_ago:
+            exam.items.update(answered_at=timezone.now() - timedelta(days=days_ago))
+
+    def test_ranking_privacy_and_week(self):
+        self._correct(self.user, 5)
+        self._correct(self.other, 8)
+        third = User.objects.create_user("soli", "soli@example.com", "Kuchli-parol-2026", first_name="Soli")
+        self._correct(third, 3)
+        self._correct(third, 20, days_ago=8)  # o'tgan hafta — hisoblanmaydi
+        admin = User.objects.create_user("boss", "boss@example.com", "Kuchli-parol-2026", role=User.ROLE_ADMIN)
+        self._correct(admin, 25)  # admin reytingga kirmaydi
+
+        b = services.weekly_leaderboard(self.user)
+        self.assertEqual([(r["name"], r["correct"]) for r in b["top"]], [("vali", 8), ("ali", 5), ("Soli", 3)])
+        self.assertEqual(b["me"]["rank"], 2)
+        self.assertTrue(b["top"][1]["is_me"])
+        self.assertEqual((b["participants"], b["my_correct"], b["to_top"]), (3, 5, 0))
+        self.assertEqual(b["week_start"].weekday(), 0)
+
+        self.other.show_in_leaderboard = False
+        self.other.save()
+        b = services.weekly_leaderboard(self.user)
+        self.assertEqual([r["name"] for r in b["top"]], ["ali", "Soli"])
+        hidden = services.weekly_leaderboard(self.other)
+        self.assertTrue(hidden["hidden"])
+        self.assertIsNone(hidden["me"])
+        self.assertEqual(hidden["my_correct"], 8)  # o'z natijasini baribir ko'radi
+
+    def test_to_top_outside_top_size(self):
+        self._correct(self.other, 6)
+        self._correct(self.user, 2)
+        b = services.weekly_leaderboard(self.user, size=1)
+        self.assertEqual(b["me"]["rank"], 2)
+        self.assertEqual(b["to_top"], 5)
+
+    def test_pages(self):
+        self._correct(self.user, 4)
+        self.client.force_login(self.user)
+        resp = self.client.get(reverse("leaderboard"))
+        self.assertContains(resp, "Haftalik TOP-10")
+        self.assertContains(resp, "1-oʻrin")
+        self.client.logout()
+        self.assertEqual(self.client.get(reverse("leaderboard")).status_code, 302)
+
+
+class AccountSettingsViewTests(ServiceTestBase):
+    def setUp(self):
+        self.client.force_login(self.user)
+
+    def test_profile_update_and_unique_email(self):
+        url = reverse("account_settings")
+        self.assertEqual(self.client.get(url).status_code, 200)
+        resp = self.client.post(url, {"action": "profile", "first_name": "Alisher", "email": "vali@example.com"})
+        self.assertContains(resp, "boshqa foydalanuvchiga tegishli")
+        resp = self.client.post(url, {"action": "profile", "first_name": "Alisher", "email": "New@Example.com"})
+        self.assertRedirects(resp, url)
+        self.user.refresh_from_db()
+        self.assertEqual((self.user.first_name, self.user.email, self.user.show_in_leaderboard),
+                         ("Alisher", "new@example.com", False))  # belgilanmagan checkbox — yashirin
+
+    def test_password_change_keeps_session(self):
+        url = reverse("account_settings")
+        resp = self.client.post(url, {"action": "password", "old_password": "xato",
+                                      "new_password1": "Yangi-parol-2026", "new_password2": "Yangi-parol-2026"})
+        self.assertContains(resp, "Joriy parol notoʻgʻri")
+        resp = self.client.post(url, {"action": "password", "old_password": "Kuchli-parol-2026",
+                                      "new_password1": "Yangi-parol-2026", "new_password2": "Yangi-parol-2026"})
+        self.assertRedirects(resp, url)
+        self.user.refresh_from_db()
+        self.assertTrue(self.user.check_password("Yangi-parol-2026"))
+        self.assertEqual(self.client.get(reverse("profile")).status_code, 200)  # sessiya saqlandi

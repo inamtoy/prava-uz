@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}Sozlamalar — Prava.uz{% endblock %}
+{% block extra_css %}<link rel="stylesheet" href="{% static 'css/pages/auth.css' %}">{% endblock %}
+
+{% block content %}
+<nav class="crumbs" aria-label="Yoʻl">
+  <a href="{% url 'profile' %}"><i class="bi bi-person" aria-hidden="true"></i> Profil</a>
+  <i class="bi bi-chevron-right" aria-hidden="true"></i>
+  <span aria-current="page">Sozlamalar</span>
+</nav>
+
+<div class="settings">
+  <h1 class="settings__title">Sozlamalar</h1>
+  {% include "partials/messages.html" %}
+
+  <section class="card-x settings__card" aria-labelledby="s-profile">
+    <h2 id="s-profile" class="settings__h">Profil</h2>
+    <form method="post" novalidate>
+      {% csrf_token %}
+      <input type="hidden" name="action" value="profile">
+      {% with form=profile_form %}
+        {% for field in form %}
+          {% if field.name == "show_in_leaderboard" %}
+            <div class="form-check settings__check">
+              {{ field }}
+              <label class="form-check-label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+              <div class="field__hint">{{ field.help_text }}</div>
+            </div>
+          {% else %}
+            <div class="field">
+              <label class="field__label" for="{{ field.id_for_label }}">{{ field.label }}</label>
+              {{ field }}
+              {% for e in field.errors %}<div class="field__error"><i class="bi bi-exclamation-circle" aria-hidden="true"></i><span>{{ e }}</span></div>{% endfor %}
+            </div>
+          {% endif %}
+        {% endfor %}
+      {% endwith %}
+      <p class="field__hint">Login: <strong>{{ user.username }}</strong> (oʻzgartirilmaydi)</p>
+      <button type="submit" class="btn btn-accent btn-lg">Saqlash</button>
+    </form>
+  </section>
+
+  <section class="card-x settings__card" aria-labelledby="s-password">
+    <h2 id="s-password" class="settings__h">Parolni oʻzgartirish</h2>
+    <form method="post" novalidate>
+      {% csrf_token %}
+      <input type="hidden" name="action" value="password">
+      {% include "partials/form_fields.html" with form=password_form %}
+      <button type="submit" class="btn btn-soft btn-lg">Parolni oʻzgartirish</button>
+    </form>
+  </section>
+
+  <p class="settings__note">Vibratsiya, ovoz, animatsiya va qorongʻi rejim — mobil ilovadagi “Sozlamalar” boʻlimida.</p>
+</div>
+{% endblock %}

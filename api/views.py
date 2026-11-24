@@ -15,7 +15,7 @@ from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.throttling import AnonRateThrottle
 
-from accounts.forms import RegisterForm
+from accounts.forms import PasswordForm, ProfileForm, RegisterForm
 from quiz.models import Question, Topic
 from results import services
 from results.models import Exam
@@ -79,9 +79,61 @@ def logout(request):
     return Response({"ok": True})
 
 
-@api_view(["GET"])
+def _form_errors(form):
+    errors = {k: [str(m) for m in v] for k, v in form.errors.items()}
+    first = next(iter(errors.values()))[0] if errors else "Maʼlumot notoʻgʻri."
+    return _error(first, errors=errors)
+
+
+@api_view(["GET", "POST"])
 def me(request):
-    return Response(s.user_data(request.user))
+    """GET — profil; POST — ism, email, reytingda ko'rinishni o'zgartirish (berilmagan maydonlar o'zgarmaydi)."""
+    user = request.user
+    if request.method == "POST":
+        d = request.data
+        form = ProfileForm({
+            "first_name": d.get("first_name", user.first_name),
+            "email": d.get("email", user.email),
+            "show_in_leaderboard": d.get("show_in_leaderboard", user.show_in_leaderboard),
+        }, instance=user)
+        if not form.is_valid():
+            return _form_errors(form)
+        form.save()
+    return Response(s.user_data(user))
+
+
+@api_view(["POST"])
+def change_password(request):
+    d = request.data
+    form = PasswordForm(request.user, {
+        "old_password": d.get("old_password", ""),
+        "new_password1": d.get("new_password", ""),
+        "new_password2": d.get("new_password2", d.get("new_password", "")),
+    })
+    if not form.is_valid():
+        errors = {k: [str(m) for m in v] for k, v in form.errors.items()}
+        if "new_password2" in errors:
+            errors.setdefault("new_password", []).extend(errors.pop("new_password2"))
+        if "new_password1" in errors:
+            errors.setdefault("new_password", []).extend(errors.pop("new_password1"))
+        return _error(next(iter(errors.values()))[0], errors=errors)
+    form.save()
+    return Response({"ok": True})
+
+
+@api_view(["GET"])
+def leaderboard(request):
+    board = services.weekly_leaderboard(request.user)
+    return Response({
+        "week_start": board["week_start"].isoformat(),
+        "week_end": board["week_end"].isoformat(),
+        "top": [{k: r[k] for k in ("rank", "name", "correct", "is_me")} for r in board["top"]],
+        "me": {"rank": board["me"]["rank"], "correct": board["me"]["correct"]} if board["me"] else None,
+        "my_correct": board["my_correct"],
+        "hidden": board["hidden"],
+        "participants": board["participants"],
+        "to_top": board["to_top"],
+    })
 
 
 # ---------- Ma'lumotnoma ----------

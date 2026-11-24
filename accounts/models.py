@@ -17,6 +17,13 @@ class User(AbstractUser):
     role = models.CharField("rol", max_length=20, choices=ROLE_CHOICES, default=ROLE_STUDENT)
     DAILY_GOAL_CHOICES = [(10, "10 ta savol"), (20, "20 ta savol"), (30, "30 ta savol"), (50, "50 ta savol")]
     daily_goal = models.PositiveSmallIntegerField("kunlik maqsad", choices=DAILY_GOAL_CHOICES, default=20)
+    show_in_leaderboard = models.BooleanField(
+        "reytingda koʻrinish", default=True, help_text="Oʻchirilsa, haftalik TOP-10 da ismi chiqmaydi"
+    )
+
+    @property
+    def display_name(self):
+        return self.first_name or self.username
 
     objects = UserManager()
 

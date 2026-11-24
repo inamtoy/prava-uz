@@ -672,7 +672,7 @@ h5, .h5, h6, .h6 { font-size: 1rem; font-weight: 700; }
 /* Mobil pastki tab bar */
 .tabbar {
   position: fixed; left: 0; right: 0; bottom: 0; z-index: 1030;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; /* 4 yoki 5 ta tab */
   height: calc(var(--tabbar-h) + env(safe-area-inset-bottom, 0px));
   padding-bottom: env(safe-area-inset-bottom, 0px);
   background: rgba(255, 255, 255, .96);

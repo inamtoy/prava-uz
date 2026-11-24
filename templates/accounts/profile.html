@@ -17,7 +17,10 @@
       </ul>
     </div>
   </div>
-  <a href="{% url 'exam_start' %}" class="btn btn-accent btn-lg profile-head__cta"><i class="bi bi-play-circle" aria-hidden="true"></i> Imtihon topshirish</a>
+  <div class="profile-head__actions">
+    <a href="{% url 'account_settings' %}" class="btn btn-soft btn-lg"><i class="bi bi-sliders" aria-hidden="true"></i> Sozlamalar</a>
+    <a href="{% url 'exam_start' %}" class="btn btn-accent btn-lg profile-head__cta"><i class="bi bi-play-circle" aria-hidden="true"></i> Imtihon topshirish</a>
+  </div>
 </section>
 
 {# ---------- Davom etayotgan imtihon ---------- #}

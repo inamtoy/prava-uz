@@ -1,7 +1,7 @@
 from urllib.parse import urlencode
 
 from django.contrib import messages
-from django.contrib.auth import REDIRECT_FIELD_NAME, login
+from django.contrib.auth import REDIRECT_FIELD_NAME, login, update_session_auth_hash
 from django.contrib.auth import views as auth_views
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render
@@ -12,7 +12,7 @@ from django.utils.http import url_has_allowed_host_and_scheme
 from results import services
 from results.models import Exam
 
-from .forms import LoginForm, RegisterForm
+from .forms import LoginForm, PasswordForm, ProfileForm, RegisterForm
 
 ADMIN_ONLY_MESSAGE = "Bu boʻlimga faqat administratorlar kira oladi."
 
@@ -86,3 +86,21 @@ def profile(request):
         ).first(),
     })
 
+
+
+@login_required
+def account_settings(request):
+    """Profil sozlamalari: ism, email, reytingda ko'rinish va parolni o'zgartirish (ikki alohida forma)."""
+    action = request.POST.get("action") if request.method == "POST" else None
+    profile_form = ProfileForm(request.POST if action == "profile" else None, instance=request.user)
+    password_form = PasswordForm(request.user, request.POST if action == "password" else None)
+    if action == "profile" and profile_form.is_valid():
+        profile_form.save()
+        messages.success(request, "Profil saqlandi.")
+        return redirect("account_settings")
+    if action == "password" and password_form.is_valid():
+        user = password_form.save()
+        update_session_auth_hash(request, user)  # parol o'zgargach tizimdan chiqarib yubormaslik
+        messages.success(request, "Parol oʻzgartirildi.")
+        return redirect("account_settings")
+    return render(request, "accounts/settings.html", {"profile_form": profile_form, "password_form": password_form})
