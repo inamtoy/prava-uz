@@ -21,6 +21,7 @@ from results import services
 from results.models import Exam
 
 from . import serializers as s
+from .models import AppRelease
 
 
 def _error(message, code=status.HTTP_400_BAD_REQUEST, **extra):
@@ -93,6 +94,31 @@ def config(request):
         "exam_duration_seconds": settings.EXAM_DURATION_SECONDS,
         "exam_max_mistakes": settings.EXAM_MAX_MISTAKES,
         "question_count": Question.objects.filter(is_active=True).count(),
+    })
+
+
+@api_view(["GET"])
+@permission_classes([AllowAny])
+def app_version(request):
+    """Eng so'nggi Android versiyasi. `?current=<versionCode>` berilsa — majburiy yangilanish ham hisoblanadi."""
+    latest = AppRelease.objects.first()
+    if latest is None:
+        return Response({"latest": None})
+    try:
+        current = int(request.query_params.get("current", 0))
+    except ValueError:
+        current = 0
+    # Oraliqdagi versiyalardan biri majburiy bo'lsa — yangilanish ham majburiy
+    required = AppRelease.objects.filter(version_code__gt=current, is_required=True).exists() if current else latest.is_required
+    return Response({
+        "latest": {
+            "version_code": latest.version_code,
+            "version_name": latest.version_name,
+            "notes": latest.notes,
+            "apk_url": request.build_absolute_uri(latest.apk.url),
+            "size": latest.apk.size if latest.apk.storage.exists(latest.apk.name) else None,
+            "required": required,
+        }
     })
 
 

@@ -5,6 +5,8 @@ import 'package:prava_uz/screens/auth.dart';
 import 'package:prava_uz/screens/home.dart';
 import 'package:prava_uz/screens/quiz.dart';
 import 'package:prava_uz/screens/result.dart';
+import 'package:prava_uz/updater.dart';
+import 'package:prava_uz/widgets/update_dialog.dart';
 
 Map<String, dynamic> _item(int n, {bool answered = false, bool correct = false}) => {
       'question_id': n,
@@ -152,5 +154,27 @@ void main() {
     expect(find.text('Xatolar ustida ishlash'), findsNWidgets(2)); // AppBar + sarlavha
     expect(find.text('Hammasi toʻgʻri — barakalla!'), findsOneWidget);
     await tester.pumpAndSettle();
+  });
+
+  testWidgets('Yangilash oynasi: versiya, nima yangi, tugmalar', (tester) async {
+    AppUpdate upd({bool required = false}) => AppUpdate({
+          'version_code': 3,
+          'version_name': '0.2.1',
+          'notes': 'Xatolarim va kunlik maqsad',
+          'apk_url': 'http://x/media/app/p.apk',
+          'size': 5 * 1024 * 1024,
+          'required': required,
+        }, 2);
+
+    await tester.pumpWidget(_app(Scaffold(body: UpdateDialog(update: upd()))));
+    expect(find.text('Yangi versiya: 0.2.1'), findsOneWidget);
+    expect(find.text('Xatolarim va kunlik maqsad'), findsOneWidget);
+    expect(find.text('Hajmi: 5.0 MB'), findsOneWidget);
+    expect(find.text('Keyinroq'), findsOneWidget);
+    expect(find.text('Yangilash'), findsOneWidget);
+
+    await tester.pumpWidget(_app(Scaffold(body: UpdateDialog(update: upd(required: true)))));
+    expect(find.text('Keyinroq'), findsNothing); // majburiy — yopib bo'lmaydi
+    expect(find.textContaining('majburiy'), findsOneWidget);
   });
 }

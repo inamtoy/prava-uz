@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../updater.dart';
+import '../widgets/update_dialog.dart';
+
 import 'exam_start.dart';
 import 'home.dart';
 import 'profile.dart';
@@ -17,6 +20,20 @@ class _HomeShellState extends State<HomeShell> {
   int _index = 0;
   // Har tab qayta ochilganda yangilanishi uchun kalit
   final _keys = [GlobalKey(), GlobalKey(), GlobalKey(), GlobalKey()];
+  AppUpdate? _update; // "Keyinroq" bosilsa ham ekran pastida eslatma qoladi
+
+  @override
+  void initState() {
+    super.initState();
+    _checkUpdate();
+  }
+
+  Future<void> _checkUpdate() async {
+    final update = await Updater.check();
+    if (update == null || !mounted) return;
+    setState(() => _update = update);
+    await showUpdateDialog(context, update);
+  }
 
   void _open(int i) => setState(() {
     if (i == _index) return;
@@ -34,14 +51,24 @@ class _HomeShellState extends State<HomeShell> {
     ];
     return Scaffold(
       body: IndexedStack(index: _index, children: pages),
-      bottomNavigationBar: NavigationBar(
-        selectedIndex: _index,
-        onDestinationSelected: _open,
-        destinations: const [
-          NavigationDestination(icon: Icon(Icons.home_outlined), selectedIcon: Icon(Icons.home_rounded), label: 'Bosh'),
-          NavigationDestination(icon: Icon(Icons.grid_view_rounded), label: 'Biletlar'),
-          NavigationDestination(icon: Icon(Icons.timer_outlined), label: 'Imtihon'),
-          NavigationDestination(icon: Icon(Icons.person_outline_rounded), label: 'Profil'),
+      bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          if (_update != null) UpdateBar(update: _update!, onTap: () => showUpdateDialog(context, _update!)),
+          NavigationBar(
+            selectedIndex: _index,
+            onDestinationSelected: _open,
+            destinations: const [
+              NavigationDestination(
+                icon: Icon(Icons.home_outlined),
+                selectedIcon: Icon(Icons.home_rounded),
+                label: 'Bosh',
+              ),
+              NavigationDestination(icon: Icon(Icons.grid_view_rounded), label: 'Biletlar'),
+              NavigationDestination(icon: Icon(Icons.timer_outlined), label: 'Imtihon'),
+              NavigationDestination(icon: Icon(Icons.person_outline_rounded), label: 'Profil'),
+            ],
+          ),
         ],
       ),
     );

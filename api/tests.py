@@ -235,3 +235,59 @@ class HomeApiTests(ApiTestBase):
     def _is_correct(answer_id):
         from quiz.models import Answer
         return Answer.objects.get(pk=answer_id).is_correct
+
+
+class AppVersionApiTests(ApiTestBase):
+    def setUp(self):
+        super().setUp()
+        import tempfile
+        from django.test import override_settings
+        self._tmp = tempfile.TemporaryDirectory()
+        self._override = override_settings(MEDIA_ROOT=self._tmp.name)
+        self._override.enable()
+
+    def tearDown(self):
+        self._override.disable()
+        self._tmp.cleanup()
+
+    def _release(self, code, required=False):
+        from django.core.files.base import ContentFile
+        from api.models import AppRelease
+        r = AppRelease(version_code=code, version_name=f"0.{code}.0", notes=f"v{code}", is_required=required)
+        r.apk.save(f"p{code}.apk", ContentFile(b"apk" * 10), save=True)
+        return r
+
+    def test_no_release(self):
+        self.assertEqual(self.client.get("/api/v1/app/version/").data, {"latest": None})
+
+    def test_latest_release_public(self):
+        self._release(2)
+        self._release(3)
+        r = self.client.get("/api/v1/app/version/?current=2")
+        self.assertEqual(r.status_code, 200)
+        latest = r.data["latest"]
+        self.assertEqual((latest["version_code"], latest["version_name"], latest["notes"]), (3, "0.3.0", "v3"))
+        self.assertTrue(latest["apk_url"].startswith("http://testserver/media/app/"))
+        self.assertEqual(latest["size"], 30)
+        self.assertFalse(latest["required"])
+
+    def test_required_if_any_skipped_release_required(self):
+        self._release(2, required=True)
+        self._release(3)
+        self.assertTrue(self.client.get("/api/v1/app/version/?current=1").data["latest"]["required"])
+        self.assertFalse(self.client.get("/api/v1/app/version/?current=2").data["latest"]["required"])
+
+    def test_publish_apk_command(self):
+        import io
+        import tempfile
+        from pathlib import Path
+        from django.core.management import call_command, CommandError
+        from api.models import AppRelease
+        with tempfile.TemporaryDirectory() as d:
+            apk = Path(d) / "app.apk"
+            apk.write_bytes(b"x" * 100)
+            call_command("publish_apk", str(apk), "--code", "5", "--name", "0.5.0", "--notes", "Yangi", stdout=io.StringIO())
+            rel = AppRelease.objects.get()
+            self.assertEqual((rel.version_code, rel.notes, rel.apk.size), (5, "Yangi", 100))
+            with self.assertRaises(CommandError):  # kichik yoki teng versiya rad etiladi
+                call_command("publish_apk", str(apk), "--code", "5", "--name", "0.5.0")

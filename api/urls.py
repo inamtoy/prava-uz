@@ -11,6 +11,7 @@ urlpatterns = [
     path("home/", views.home, name="api_home"),
     path("mistakes/", views.mistakes_start, name="api_mistakes"),
     path("config/", views.config, name="api_config"),
+    path("app/version/", views.app_version, name="api_app_version"),
     path("topics/", views.topics, name="api_topics"),
     path("topics/<slug:slug>/practice/", views.practice_start, name="api_practice_start"),
     path("exams/", views.exam_current_or_start, name="api_exams"),

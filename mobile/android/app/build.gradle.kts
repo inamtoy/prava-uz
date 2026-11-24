@@ -42,3 +42,8 @@ android {
 flutter {
     source = "../.."
 }
+
+dependencies {
+    // FileProvider — ilova ichidan yangilanishda APK'ni o'rnatish oynasiga berish uchun
+    implementation("androidx.core:core-ktx:1.13.1")
+}
