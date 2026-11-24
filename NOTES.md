@@ -106,28 +106,37 @@
 - 1-bilet izohlari import qilindi (2026-11-13): 8 ta savol (#5900, #5901, #5902, #5906, #5908, #5909, #5912, #5914) — `import_explanations savollar/izohlar/bilet_001.json --apply`. #5903, #5904, #5905, #5907, #5913 — "tekshirish kerak", izohsiz.
 
 ## Kaliti tekshirilishi kerak (rasmiy manbadan)
-Bazadagi kalit manba Excel/PDF'ga mos, lekin mazmunan shubhali. Kalitni rasmiy manbadan tekshirmasdan O'ZGARTIRMA; tekshirilgach shu yerga natija yoziladi.
+Bazadagi kalit manba Excel/PDF'ga mos, lekin mazmunan shubhali. 2026-11-25 da ko'rib chiqildi (foydalanuvchi: "ketma-ket qilaver" — tavsiyalar bo'yicha). Qoida: ishonch o'rtacha yoki yuqori bo'lsa — kalit o'zgartirildi; past bo'lsa — manbadagi kalit qoldirildi (haqiqiy imtihon aynan shu kalitni kutishi mumkin). O'zgarishlar faqat bazada — `seed_data --reset` qayta ishga tushirilsa qo'lda takrorlash kerak. Zaxira: `backups/prava_20261125_0009.dump`. Eski imtihon javoblaridagi `is_correct` qayta hisoblanmadi.
 
+### Kalit o'zgartirildi (2026-11-25)
+| Savol | Bilet | Eski kalit → yangi kalit | Sabab |
+|---|---|---|---|
+| #5918 | 2 | "Ishchi tormoz tizimi ishlamayotgan boʻlsa" → "Hamma koʻrsatilgan holatlarda" | Tormoz suyuqligi oqishi va pnevmatik tizim bosimi yetmasligi ham foydalanish taqiqlanadigan nosozliklar ro'yxatida. |
+| #5976 | 6 | "Boʻlmaydi" → "Boʻladi" | #5996 (7-bilet) kaliti kunduzi yaqinni yorituvchi farani yoqishni ogohlantirish ishorasi deb hisoblaydi — ikkalasi endi bir xil. |
+| #6074 | 12 | "Yaqinni va uzoqni yorituvchi faralar" → "Faqat yaqinni yorituvchi faralar" | Xuddi shu savol #6064 (11-bilet) kaliti bilan bir xil qilindi. |
+| #6100 | 14 | "...foto va video moslamalardan foydalanish taʼqiqlanadi" → "DYHXX tomonidan ... foto va video kuzatuviga olingan yoʻl qismini bildiradi" | Fotoapparat tasvirli qo'shimcha belgi — foto-video qayd etish zonasi. |
+| #7182 | 84 | "c" → "a" | "a" — panjarali belgi (shlagbaumli temir yo'l kesishmasi); "c" — ko'tarma ko'prik belgisi. |
+
+### Nofaol qilindi
+- #6483 (39-bilet): "Svetoforning ushbu ishorasida..." — savolda rasm yo'q, yechib bo'lmaydi.
+
+### Tekshirildi — manbadagi kalit to'g'ri
+- #6338 (30-bilet): "T" harfli uchburchak — tishli (shipli) shinalar taniqlik belgisi. Kalit to'g'ri.
+- #6500 (41-bilet): "Chapga burilish taqiqlangan" belgisi qayrilishni taqiqlamaydi — kalit "2" to'g'ri (4-belgi ham ruxsat beradi, lekin "4 va 5" varianti 5 tufayli noto'g'ri).
+- #6960 / #7096 / #7147 / #7213 (aylanma harakat): kalitlar zid emas — hammasida aylanadagi transport ustun (#6960 da biz aylanadamiz, yuk avtomobili kirib kelyapti; #7096/#7147 da ko'k avtomobil kirib kelyapti va yo'l beradi). Avvalgi "zid" degan qayd xato edi.
+
+### Hali ochiq — manbadagi kalit qoldirildi (rasmiy manbadan tekshirish kerak)
 | Savol | Bilet | Kalit (bazada) | Shubha |
 |---|---|---|---|
-| #5918 | 2-bilet | "Ishchi tormoz tizimi ishlamayotgan boʻlsa" | Savol "foydalanish taqiqlanadi" deydi; tormoz suyuqligi oqishi va pnevmatik tizim bosimi nosozliklari ham foydalanish taqiqlanadigan nosozliklar qatorida — "Hamma koʻrsatilgan holatlarda" toʻgʻriroq koʻrinadi. Ehtimol "harakatlanish taqiqlanadi" bilan adashtirilgan. Izoh yozilmagan. |
-| #5952 | 4-bilet | "Istalgan usulda ruxsat etilgan" | Savol: avtomagistralda shatakka olishga ruxsat beriladimi? Odatda avtomagistralda shatakka olish taqiqlanadi — kalit shubhali. Izoh yozilmagan. |
-| #5976 / #5996 | 6-bilet / 7-bilet | #5976: "Boʻlmaydi"; #5996: "Sanab oʻtilgan barcha ishoralar" | Kalitlar bir-biriga zid: #5996 kunduzi yaqinni yorituvchi farani yoqishni ogohlantirish ishorasi deb hisoblaydi, #5976 esa yoʻq deydi. Eski qoidalarda bu ogohlantirish ishorasi sifatida sanalgan boʻlishi mumkin. #5976 izohi (2026-11-14 import qilingan) olib tashlandi; ikkalasi izohsiz. |
-| #6893 | 66-bilet | "Faqat A va B." (lotin B) | Rasmdagi belgilar kirillcha А, Б, В. Variantlarda "Faqat A va Б." va "Faqat A va B." bor — farqi faqat harf yozuvida. Qayrilishni Б belgisi taqiqlaydi, В — qayrilish joyi. Kalit ehtimol "A va Б" boʻlishi kerak. |
-| #7018 | 73-bilet | "Boshqa joylardagi toʻsiqlarning yon yuzalarini bildiradi" | Rasmda aynan kichik radiusli burilishdagi toʻsiq — 2-variant ("kichik radiusli burilishlar...") mosroq koʻrinadi. Rasmda tik chiziqlar koʻrinmaydi. |
-| #6064 / #6074 | 11 / 12-bilet | #6064: "Faralarning yaqinni yorituvchi chiroqlari"; #6074: "Yaqinni va uzoqni yorituvchi faralar" | Bir xil savol, kalitlar zid. #6074 izohsiz. |
-| #6100 | 14-bilet | "Belgining amal qilish hududida foto va video moslamalardan foydalanish taʼqiqlanadi" | Fotoapparat tasvirli qoʻshimcha belgi odatda foto-video qayd etish olib borilayotgan yoʻl qismini bildiradi. Izohsiz. |
-| #6230 | 23-bilet | "Faqat «Г» va «Е»" | Rasmdagi belgi oʻng boʻlakdan toʻgʻriga ham ruxsat beradi (Д). Izohsiz. |
-| #6338 | 30-bilet | Tishli (shipli) shinalar taniqlik belgisi | Rasmda "T" shaklidagi belgi — rasm yoki kalit xato. Izohsiz. |
-| #6385 | 33-bilet | "4" | Avtomagistral belgisi sifatida 4-belgi koʻrsatilgan, yashil fonli 3-belgi mosroq koʻrinadi. Izohsiz. |
-| #6500 | 41-bilet | "2." | 4-belgi (boʻlaklar boʻyicha yoʻnalish) ham qayrilish strelkasini koʻrsatadi. Izohsiz. |
-| #6594 | 47-bilet | "Boshqa joylardagi toʻsiqlarning yon yuzalarini bildiradi" | #7018 bilan bir xil holat: rasmda kichik radiusli burilishdagi toʻsiq. #7200, #7258 kaliti esa "kichik radiusli burilish, tik nishablik va boshqa xavfli joylar". Izohsiz. |
-| #6605 | 48-bilet | "150-300 m" | Uch chiziqli yaqinlashish koʻrsatkichi aholi punktida — odatda aholi punktida masofa qisqaroq. Izohsiz. |
-| #6702 | 54-bilet | "Sekinlashishi lozim boʻlsa toʻxtashi kerak" | Rasmda yashil avtomobil asosiy yoʻlda koʻrinadi. Izohsiz. |
-| #6960 / #7096 / #7147 / #7213 | 70 / 79 / 82 / 86-bilet | #6960: kiruvchi "birinchi harakatlanasiz"; #7096, #7147: kiruvchi yoʻl beradi; #7213: aylanadagi transport ustun | Aylanma harakatda kalitlar zid. #7213 izohli (umumiy qoida), qolganlari izohsiz. |
-| #7040 / #7118 / #7210 | 75 / 80 / 85-bilet | Bir xil rasm (3T yuk avtomobili, "P" + qoʻshimcha belgi): #7040 "yuk avtomobili buzdi", #7118 "faqat B (yengil) buzdi" | Zid. #7210 qoʻshimcha belgini "barcha transport vositalari uchun" deydi (izohli). #7040 izohi 2026-11-20 olib tashlandi; #7040, #7118 izohsiz. |
-| #7182 / #7261 | 84 / 89-bilet | Qiya chiziqli uchburchak belgi = "boshqariladigan toʻsuvchi qurilma (shlagbaum)" | #6599 da shlagbaumli kesishma = panjarali belgi, #6611 da shunga oʻxshash belgi "koʻtarma koʻprik". Belgi nomini tekshirish kerak. Izohsiz. |
-| #6483 | 39-bilet | "Yengil va yuk avtomobillariga" | Savol svetofor ishorasi haqida, lekin savolda rasm yoʻq. Izohsiz. |
+| #5952 | 4 | "Istalgan usulda ruxsat etilgan" | Avtomagistralda shatakka olish odatda taqiqlanadi. Ishonch past. |
+| #6230 | 23 | "Faqat «Г» va «Е»" | Belgi o'ng bo'lakdan to'g'riga ham ruxsat beradi (Д); to'g'ri to'plam (Г, Д, Е) variantlarda yo'q. |
+| #6385 | 33 | "4" | 4-belgi — aholi punkti oxiri; avtomagistral uchun yashil fonli 3-belgi mosroq. |
+| #6594 / #7018 | 47 / 73 | "Boshqa joylardagi toʻsiqlarning yon yuzalari" | Rasmda kichik radiusli burilishdagi to'siq, lekin chiziqlar ko'rinmaydi. Manbada ikkala savolda kalit bir xil — qoldirildi. |
+| #6605 | 48 | "150-300 m" | Aholi punktida masofa odatda qisqaroq. |
+| #6702 | 54 | "Sekinlashishi lozim boʻlsa toʻxtashi kerak" | Yashil avtomobil asosiy yo'lda; variantlarning hech biri aniq emas. |
+| #6893 | 66 | "Faqat A va B." (lotin B) | Б — qayrilish taqiqlangan, В — qayrilish joyi; A (qarama-qarshi yo'nalishdagi avtobus bo'lagi) — chapga burilishni taqiqlashi mumkin. "Faqat A" bo'lishi mumkin. |
+| #7040 / #7118 / #7210 | 75 / 80 / 86 | #7040 "Buzdi"; #7118 "Faqat B"; #7210 "trotuar yoniga qo'yish usuli" | Qo'shimcha belgi transport turi (yengil avtomobil, ≤3,5 t yuk ham kiradi) yoki qo'yish usuli ekani aniq emas; #7118 da "3T" yuk avtomobili. |
+| #7261 | 90 | "Oldinda boshqariladigan toʻsuvchi qurilma" | Rasmdagi belgi — ko'tarma ko'prik; to'g'ri variant yo'q. |
 
 ## Rasmi mos kelmaydigan savollar nofaol qilindi (2026-11-14)
 - #5960 (5-bilet, rasm `b007_s02_0_asl.jpeg`) va #5980 (6-bilet, `b009_s02_0_asl.jpeg`) — **nofaol**: savol matnidagi narsalar rasmda yo'q (#5960: A/Б/В yo'nalishlari so'raladi, rasmda harf ham strelka ham yo'q; #5980: qizil va ko'k avtomobil so'raladi, rasmda avtobus, yuk avtomobili va mototsikl). #5910/#5911 kabi PDF xatosi deb hisoblandi; to'g'ri rasm topilsa qayta faollashtiriladi. Faqat bazada o'zgartirildi (seed qayta ishga tushirilsa qo'lda takrorlash kerak). Zaxira: `backups/prava_20261114_2104.dump`. 5- va 6-biletlarda endi 14 tadan faol savol.
