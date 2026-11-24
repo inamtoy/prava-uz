@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:prava_uz/screens/auth.dart';
+import 'package:prava_uz/screens/home.dart';
 import 'package:prava_uz/screens/quiz.dart';
 import 'package:prava_uz/screens/result.dart';
 
@@ -83,5 +84,73 @@ void main() {
     expect(find.text('Imtihondan oʻtdingiz!'), findsOneWidget);
     expect(find.text('18 / 20'), findsOneWidget);
     expect(find.textContaining('Javob berilmagan', findRichText: true), findsOneWidget);
+  });
+
+  testWidgets('Bosh ekran: kunlik maqsad, seriya, xatolar va davom ettirish', (tester) async {
+    var mistakesTapped = 0;
+    var openedTab = -1;
+    Map? resumed;
+    final data = {
+      'daily': {
+        'goal': 20,
+        'today': 12,
+        'percent': 60,
+        'reached': false,
+        'left': 8,
+        'streak': 3,
+        'week': [
+          for (var i = 0; i < 7; i++)
+            {'date': '2026-11-${19 + i}', 'label': ['Ch', 'Pa', 'Ju', 'Sh', 'Ya', 'Du', 'Se'][i], 'count': i == 6 ? 12 : 20, 'reached': i != 6, 'is_today': i == 6},
+        ],
+      },
+      'goal_choices': [10, 20, 30, 50],
+      'mistakes_count': 5,
+      'current': {'id': 9, 'mode': 'practice', 'topic': '7-bilet', 'answered_count': 4, 'total_questions': 15, 'time_left': null},
+      'overall': {'percent': 40, 'solved': 540, 'total': 1350},
+    };
+    await tester.pumpWidget(_app(Scaffold(
+      body: HomeDashboard(
+        data: data,
+        userName: 'Ali',
+        onResume: (c) => resumed = c,
+        onMistakes: () => mistakesTapped++,
+        onGoal: () {},
+        onOpenTab: (i) => openedTab = i,
+      ),
+    )));
+    await tester.pump(const Duration(seconds: 1)); // olov animatsiyasi takrorlanadi — pumpAndSettle tugamaydi
+    expect(find.text('Salom, Ali!'), findsOneWidget);
+    expect(find.text('Yana 8 ta savol qoldi'), findsOneWidget);
+    expect(find.text('5 ta savol'), findsOneWidget);
+    expect(find.textContaining('7-bilet · 4 / 15 javob'), findsOneWidget);
+    expect(find.text('3 kun ketma-ket', findRichText: true), findsOneWidget); // seriya
+
+    await tester.tap(find.text('Davom ettirish'));
+    expect(resumed?['id'], 9);
+    await tester.ensureVisible(find.text('Xatolar ustida ishlash'));
+    await tester.pump();
+    await tester.tap(find.text('Xatolar ustida ishlash'));
+    expect(mistakesTapped, 1);
+    await tester.ensureVisible(find.text('Imtihon'));
+    await tester.pump();
+    await tester.tap(find.text('Imtihon'));
+    expect(openedTab, 2);
+  });
+
+  testWidgets('Xatolar mashqi natijasi: hammasi togri — konfetti va tabrik', (tester) async {
+    await tester.pumpWidget(_app(const ResultScreen(result: {
+      'mode': 'mistakes',
+      'status': 'finished',
+      'is_passed': null,
+      'score': 3,
+      'total_questions': 3,
+      'percent': 100,
+      'elapsed_seconds': 40,
+      'topic': null,
+      'mistakes': [],
+    })));
+    expect(find.text('Xatolar ustida ishlash'), findsNWidgets(2)); // AppBar + sarlavha
+    expect(find.text('Hammasi toʻgʻri — barakalla!'), findsOneWidget);
+    await tester.pumpAndSettle();
   });
 }

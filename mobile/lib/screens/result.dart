@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/motion.dart';
 
 /// Natija: ball, o'tdi/o'tmadi, vaqt va xatolar tahlili.
 class ResultScreen extends StatelessWidget {
@@ -14,49 +15,62 @@ class ResultScreen extends StatelessWidget {
     final passed = result['is_passed'] == true;
     final mistakes = List<Map>.from(result['mistakes'] as List);
     final headColor = !isExam ? AppColors.primary : (passed ? AppColors.success : AppColors.danger);
+    final isMistakes = result['mode'] == 'mistakes';
+    final total = result['total_questions'] as int;
+    // Konfetti: imtihondan o'tganda yoki mashqda hammasi to'g'ri bo'lganda
+    final celebrate = isExam ? passed : (total > 0 && result['score'] == total);
     return Scaffold(
-      appBar: AppBar(title: Text(isExam ? 'Imtihon natijasi' : 'Mashq natijasi')),
-      body: ListView(
-        padding: const EdgeInsets.all(16),
-        children: [
-          Container(
-            padding: const EdgeInsets.all(20),
-            decoration: BoxDecoration(color: headColor, borderRadius: BorderRadius.circular(10)),
-            child: Column(children: [
-              if (isExam)
-                Text(passed ? 'Imtihondan oʻtdingiz!' : 'Imtihondan oʻtmadingiz',
-                    style: barlow(size: 22, weight: FontWeight.w700, color: Colors.white))
-              else if (result['topic'] != null)
-                Text('${result['topic']}', style: barlow(size: 22, weight: FontWeight.w700, color: Colors.white)),
-              const SizedBox(height: 8),
-              Text('${result['score']} / ${result['total_questions']}',
-                  style: barlow(size: 44, weight: FontWeight.w700, color: Colors.white)),
-              Text('${result['percent']}% · vaqt ${formatSeconds(result['elapsed_seconds'] as int)}',
-                  style: const TextStyle(color: Colors.white, fontSize: 15)),
-              if (result['status'] == 'expired') ...[
-                const SizedBox(height: 6),
-                const Text('Vaqt tugagani uchun avtomatik yakunlandi',
-                    style: TextStyle(color: Colors.white70, fontSize: 14)),
-              ],
-            ]),
-          ),
-          const SizedBox(height: 20),
-          Text(
-            mistakes.isEmpty ? 'Xatolar yoʻq — barakalla!' : 'Xatolar tahlili (${mistakes.length})',
-            style: barlow(size: 20, weight: FontWeight.w700),
-          ),
-          const SizedBox(height: 10),
-          for (final m in mistakes) ...[
-            _MistakeCard(m: m),
-            const SizedBox(height: 12),
+      appBar: AppBar(title: Text(isExam ? 'Imtihon natijasi' : (isMistakes ? 'Xatolar ustida ishlash' : 'Mashq natijasi'))),
+      body: Stack(children: [
+        ListView(
+          padding: const EdgeInsets.all(16),
+          children: [
+            Container(
+              padding: const EdgeInsets.all(20),
+              decoration: BoxDecoration(color: headColor, borderRadius: BorderRadius.circular(10)),
+              child: Column(children: [
+                if (isExam)
+                  Text(passed ? 'Imtihondan oʻtdingiz!' : 'Imtihondan oʻtmadingiz',
+                      style: barlow(size: 22, weight: FontWeight.w700, color: Colors.white))
+                else if (result['topic'] != null)
+                  Text('${result['topic']}', style: barlow(size: 22, weight: FontWeight.w700, color: Colors.white))
+                else if (isMistakes)
+                  Text('Xatolar ustida ishlash', style: barlow(size: 22, weight: FontWeight.w700, color: Colors.white)),
+                if (celebrate && !isExam) ...[
+                  const SizedBox(height: 4),
+                  const Text('Hammasi toʻgʻri — barakalla!', style: TextStyle(color: Colors.white, fontSize: 15)),
+                ],
+                const SizedBox(height: 8),
+                Text('${result['score']} / ${result['total_questions']}',
+                    style: barlow(size: 44, weight: FontWeight.w700, color: Colors.white)),
+                Text('${result['percent']}% · vaqt ${formatSeconds(result['elapsed_seconds'] as int)}',
+                    style: const TextStyle(color: Colors.white, fontSize: 15)),
+                if (result['status'] == 'expired') ...[
+                  const SizedBox(height: 6),
+                  const Text('Vaqt tugagani uchun avtomatik yakunlandi',
+                      style: TextStyle(color: Colors.white70, fontSize: 14)),
+                ],
+              ]),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              mistakes.isEmpty ? 'Xatolar yoʻq — barakalla!' : 'Xatolar tahlili (${mistakes.length})',
+              style: barlow(size: 20, weight: FontWeight.w700),
+            ),
+            const SizedBox(height: 10),
+            for (final m in mistakes) ...[
+              _MistakeCard(m: m),
+              const SizedBox(height: 12),
+            ],
+            const SizedBox(height: 8),
+            FilledButton(
+              onPressed: () => Navigator.of(context).popUntil((r) => r.isFirst),
+              child: const Text('Bosh sahifaga'),
+            ),
           ],
-          const SizedBox(height: 8),
-          FilledButton(
-            onPressed: () => Navigator.of(context).popUntil((r) => r.isFirst),
-            child: const Text('Bosh sahifaga'),
-          ),
-        ],
-      ),
+        ),
+        if (celebrate) const Positioned.fill(child: Confetti()),
+      ]),
     );
   }
 }

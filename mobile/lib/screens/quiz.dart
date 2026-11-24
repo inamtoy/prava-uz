@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
 import '../api.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
+import '../widgets/motion.dart';
 import 'result.dart';
 
 /// Mashq va imtihon uchun umumiy test ekrani.
@@ -28,6 +30,7 @@ class _QuizScreenState extends State<QuizScreen> {
   int _timeLeft = 0;
   Timer? _timer;
   bool _finishing = false;
+  int _shake = 0; // xato javobda karta silkinadi
   final _navScroll = ScrollController();
 
   @override
@@ -81,7 +84,9 @@ class _QuizScreenState extends State<QuizScreen> {
           ..['correct_answer_id'] = r['correct_answer_id']
           ..['explanation'] = r['explanation'];
         if (r['time_left'] is int) _timeLeft = r['time_left'] as int;
+        if (r['is_correct'] != true) _shake++;
       });
+      answerHaptic(r['is_correct'] == true);
     } on ApiException catch (e) {
       if (!mounted) return;
       if (e.expired) {
@@ -198,10 +203,13 @@ class _QuizScreenState extends State<QuizScreen> {
               key: ValueKey(_index),
               padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
               children: [
-                _QuestionCard(
-                  item: item,
-                  sending: _sending == item['question_id'],
-                  onAnswer: (id) => _answer(item, id),
+                Shake(
+                  trigger: _shake,
+                  child: _QuestionCard(
+                    item: item,
+                    sending: _sending == item['question_id'],
+                    onAnswer: (id) => _answer(item, id),
+                  ),
                 ),
               ],
             ),
@@ -315,26 +323,28 @@ class _QuestionCard extends StatelessWidget {
       if (sending) const LinearProgressIndicator(),
       if (answered) ...[
         const SizedBox(height: 6),
-        Container(
-          padding: const EdgeInsets.all(14),
-          decoration: BoxDecoration(
-            color: item['is_correct'] == true ? AppColors.successSoft : AppColors.dangerSoft,
-            borderRadius: BorderRadius.circular(8),
-          ),
-          child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-            Text(
-              item['is_correct'] == true ? 'Toʻgʻri!' : 'Notoʻgʻri',
-              style: barlow(
-                size: 18,
-                weight: FontWeight.w700,
-                color: item['is_correct'] == true ? AppColors.success : AppColors.danger,
-              ),
+        _Appear(
+          child: Container(
+            padding: const EdgeInsets.all(14),
+            decoration: BoxDecoration(
+              color: item['is_correct'] == true ? AppColors.successSoft : AppColors.dangerSoft,
+              borderRadius: BorderRadius.circular(8),
             ),
-            if (explanation.isNotEmpty) ...[
-              const SizedBox(height: 6),
-              Text(explanation, style: const TextStyle(fontSize: 16, height: 1.4)),
-            ],
-          ]),
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Text(
+                item['is_correct'] == true ? 'Toʻgʻri!' : 'Notoʻgʻri',
+                style: barlow(
+                  size: 18,
+                  weight: FontWeight.w700,
+                  color: item['is_correct'] == true ? AppColors.success : AppColors.danger,
+                ),
+              ),
+              if (explanation.isNotEmpty) ...[
+                const SizedBox(height: 6),
+                Text(explanation, style: const TextStyle(fontSize: 16, height: 1.4)),
+              ],
+            ]),
+            ),
         ),
       ],
     ]);
@@ -358,37 +368,63 @@ class _AnswerButton extends StatelessWidget {
       _AnswerState.dim => (AppColors.surface, AppColors.line, AppColors.ink2),
       _AnswerState.idle => (AppColors.surface, AppColors.line, AppColors.primary),
     };
-    return Material(
-      color: bg,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(8),
-        side: BorderSide(color: border, width: state == _AnswerState.idle || state == _AnswerState.dim ? 1.5 : 2),
-      ),
-      child: InkWell(
-        borderRadius: BorderRadius.circular(8),
-        onTap: onTap,
-        child: ConstrainedBox(
-          constraints: const BoxConstraints(minHeight: 56),
-          child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-            child: Row(children: [
-              Container(
-                width: 34,
-                height: 34,
-                alignment: Alignment.center,
-                decoration: BoxDecoration(color: badge, borderRadius: BorderRadius.circular(6)),
-                child: Text('F$number', style: barlow(size: 14, weight: FontWeight.w700, color: Colors.white)),
-              ),
-              const SizedBox(width: 12),
-              Expanded(child: Text(text, style: const TextStyle(fontSize: 16, height: 1.3))),
-              if (state == _AnswerState.correct) const Icon(Icons.check_circle, color: AppColors.success),
-              if (state == _AnswerState.wrong) const Icon(Icons.cancel, color: AppColors.danger),
-            ]),
+    // To'g'ri javob belgilanganda tugma bir marta "chaqnaydi" (kattalashib qaytadi)
+    final pop = state == _AnswerState.correct ? 1.0 : 0.0;
+    return TweenAnimationBuilder<double>(
+      tween: Tween(begin: pop, end: pop),
+      duration: const Duration(milliseconds: 450),
+      curve: Curves.easeOut,
+      builder: (context, t, child) => Transform.scale(scale: 1 + .035 * math.sin(math.pi * t), child: child),
+      child: Material(
+        color: bg,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(8),
+          side: BorderSide(color: border, width: state == _AnswerState.idle || state == _AnswerState.dim ? 1.5 : 2),
+        ),
+        child: InkWell(
+          borderRadius: BorderRadius.circular(8),
+          onTap: onTap,
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(minHeight: 56),
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
+              child: Row(children: [
+                Container(
+                  width: 34,
+                  height: 34,
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(color: badge, borderRadius: BorderRadius.circular(6)),
+                  child: Text('F$number', style: barlow(size: 14, weight: FontWeight.w700, color: Colors.white)),
+                ),
+                const SizedBox(width: 12),
+                Expanded(child: Text(text, style: const TextStyle(fontSize: 16, height: 1.3))),
+                if (state == _AnswerState.correct) const Icon(Icons.check_circle, color: AppColors.success),
+                if (state == _AnswerState.wrong) const Icon(Icons.cancel, color: AppColors.danger),
+              ]),
+            ),
           ),
         ),
       ),
     );
   }
+}
+
+/// Izoh bloki paydo bo'lganda yumshoq ko'tarilib chiqadi.
+class _Appear extends StatelessWidget {
+  const _Appear({required this.child});
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
+        tween: Tween(begin: 0, end: 1),
+        duration: const Duration(milliseconds: 260),
+        curve: Curves.easeOut,
+        builder: (context, t, child) => Opacity(
+          opacity: t,
+          child: Transform.translate(offset: Offset(0, 8 * (1 - t)), child: child),
+        ),
+        child: child,
+      );
 }
 
 class _BottomBar extends StatelessWidget {
