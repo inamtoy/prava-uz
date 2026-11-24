@@ -101,7 +101,7 @@ class _UpdateDialogState extends State<UpdateDialog> with WidgetsBindingObserver
             const SizedBox(height: 12),
           ],
           if (u.required && _stage == _Stage.idle)
-            const Text(
+            Text(
               'Bu yangilanish majburiy — davom etish uchun ilovani yangilang.',
               style: TextStyle(color: AppColors.danger, fontSize: 14),
             ),
@@ -117,7 +117,7 @@ class _UpdateDialogState extends State<UpdateDialog> with WidgetsBindingObserver
                   : 'Yuklab olinmoqda: ${(_progress! * 100).round()}%'
                         '${u.size != null ? ' · ${_mb((u.size! * _progress!).round())} / ${_mb(u.size!)} MB' : ''}',
               textAlign: TextAlign.center,
-              style: const TextStyle(color: AppColors.ink2, fontSize: 14),
+              style: TextStyle(color: AppColors.ink2, fontSize: 14),
             ),
           ],
           if (_stage == _Stage.needPermission)
@@ -132,10 +132,10 @@ class _UpdateDialogState extends State<UpdateDialog> with WidgetsBindingObserver
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 14, height: 1.4),
             ),
-          if (_stage == _Stage.error) Text(_error, style: const TextStyle(color: AppColors.danger, fontSize: 14)),
+          if (_stage == _Stage.error) Text(_error, style: TextStyle(color: AppColors.danger, fontSize: 14)),
           if (_stage == _Stage.idle && u.size != null) ...[
             const SizedBox(height: 4),
-            Text('Hajmi: ${_mb(u.size!)} MB', style: const TextStyle(color: AppColors.ink2, fontSize: 13)),
+            Text('Hajmi: ${_mb(u.size!)} MB', style: TextStyle(color: AppColors.ink2, fontSize: 13)),
           ],
         ],
       ),

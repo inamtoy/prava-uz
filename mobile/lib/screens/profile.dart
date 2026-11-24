@@ -5,6 +5,7 @@ import '../theme.dart';
 import '../widgets/common.dart';
 import 'auth.dart';
 import 'result.dart';
+import 'settings.dart';
 
 /// Profil: 4 ta ko'rsatkich, biletlar bo'yicha progress, kuchsiz biletlar, oxirgi 10 ta urinish.
 class ProfileScreen extends StatefulWidget {
@@ -18,6 +19,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
   late Future<dynamic> _future = Api.instance.get('/stats/');
 
   void _reload() => setState(() => _future = Api.instance.get('/stats/'));
+
+  Future<void> _openSettings() async {
+    await Navigator.of(context).push(MaterialPageRoute(builder: (_) => const SettingsScreen()));
+    if (mounted) _reload(); // ism o'zgargan bo'lishi mumkin
+  }
 
   Future<void> _logout() async {
     await Api.instance.logout();
@@ -42,7 +48,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Profil'),
-        actions: [IconButton(onPressed: _logout, tooltip: 'Chiqish', icon: const Icon(Icons.logout_rounded))],
+        actions: [
+          IconButton(onPressed: _openSettings, tooltip: 'Sozlamalar', icon: const Icon(Icons.settings_outlined)),
+          IconButton(onPressed: _logout, tooltip: 'Chiqish', icon: const Icon(Icons.logout_rounded)),
+        ],
       ),
       body: FutureBuilder<dynamic>(
         future: _future,
@@ -174,7 +183,7 @@ class _Stat extends StatelessWidget {
           padding: const EdgeInsets.all(12),
           child: Column(crossAxisAlignment: CrossAxisAlignment.start, mainAxisAlignment: MainAxisAlignment.center, children: [
             Text(value, style: barlow(size: 26, weight: FontWeight.w700, color: AppColors.primary)),
-            Text(label, style: const TextStyle(color: AppColors.ink2, fontSize: 13)),
+            Text(label, style: TextStyle(color: AppColors.ink2, fontSize: 13)),
           ]),
         ),
       );

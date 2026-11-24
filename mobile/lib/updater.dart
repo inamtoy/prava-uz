@@ -30,6 +30,16 @@ class Updater {
   Updater._();
   static const _channel = MethodChannel('uz.prava/updater');
 
+  /// O'rnatilgan versiya nomi (masalan "0.2.1"); Android bo'lmasa yoki xatoda null.
+  static Future<String?> currentVersionName() async {
+    if (!Platform.isAndroid) return null;
+    try {
+      return await _channel.invokeMethod<String>('versionName');
+    } catch (_) {
+      return null;
+    }
+  }
+
   /// Yangi versiya bo'lsa — uni qaytaradi, aks holda (yoki xatoda) null.
   static Future<AppUpdate?> check() async {
     if (!Platform.isAndroid) return null;

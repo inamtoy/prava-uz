@@ -3,6 +3,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:prava_uz/screens/auth.dart';
 import 'package:prava_uz/screens/home.dart';
+import 'package:prava_uz/screens/leaderboard.dart';
+import 'package:prava_uz/screens/settings.dart';
+import 'package:prava_uz/settings.dart';
+import 'package:prava_uz/theme.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:prava_uz/screens/quiz.dart';
 import 'package:prava_uz/screens/result.dart';
 import 'package:prava_uz/updater.dart';
@@ -176,5 +181,62 @@ void main() {
     await tester.pumpWidget(_app(Scaffold(body: UpdateDialog(update: upd(required: true)))));
     expect(find.text('Keyinroq'), findsNothing); // majburiy — yopib bo'lmaydi
     expect(find.textContaining('majburiy'), findsOneWidget);
+  });
+
+  testWidgets('Reyting: TOP, mening ornim, podium', (tester) async {
+    await tester.pumpWidget(_app(Scaffold(
+      body: LeaderboardView(
+        onSettings: () {},
+        data: {
+          'week_start': '2026-11-23',
+          'week_end': '2026-11-29',
+          'top': [
+            {'rank': 1, 'name': 'Vali', 'correct': 40, 'is_me': false},
+            {'rank': 2, 'name': 'Ali', 'correct': 25, 'is_me': true},
+          ],
+          'me': {'rank': 2, 'correct': 25},
+          'my_correct': 25,
+          'hidden': false,
+          'participants': 2,
+          'to_top': 0,
+        },
+      ),
+    )));
+    expect(find.text('23.11 – 29.11'), findsOneWidget);
+    expect(find.text('Vali'), findsOneWidget);
+    expect(find.text('Siz'), findsOneWidget);
+    expect(find.text('oʻrin / 2'), findsOneWidget);
+  });
+
+  testWidgets('Sozlamalar: vibratsiya va ovoz saqlanadi', (tester) async {
+    SharedPreferences.setMockInitialValues({});
+    await AppSettings.instance.load();
+    await tester.pumpWidget(_app(const SettingsScreen()));
+    expect(AppSettings.instance.vibration, isTrue);
+    expect(AppSettings.instance.sound, isFalse);
+    await tester.tap(find.text('Vibratsiya'));
+    await tester.tap(find.text('Ovoz'));
+    await tester.pump();
+    expect(AppSettings.instance.vibration, isFalse);
+    expect(AppSettings.instance.sound, isTrue);
+    final prefs = await SharedPreferences.getInstance();
+    expect(prefs.getBool('set_vibration'), isFalse);
+    await tester.tap(find.text('Qorongʻi'));
+    await tester.pump();
+    expect(AppSettings.instance.themeMode, ThemeMode.dark);
+    expect(prefs.getString('set_theme'), 'dark');
+  });
+
+  testWidgets('Qorongi rejim: ranglar almashadi va ekran chiziladi', (tester) async {
+    final theme = buildTheme(dark: true);
+    expect(AppColors.dark, isTrue);
+    expect(AppColors.surface, isNot(const Color(0xFFFFFFFF)));
+    await tester.pumpWidget(MaterialApp(theme: theme, home: const ResultScreen(result: {
+      'mode': 'exam', 'status': 'finished', 'is_passed': false, 'score': 15, 'total_questions': 20,
+      'percent': 75, 'elapsed_seconds': 900, 'topic': null, 'mistakes': [],
+    })));
+    expect(find.text('Imtihondan oʻtmadingiz'), findsOneWidget);
+    buildTheme(); // keyingi testlar uchun yorug' holatga qaytarish
+    expect(AppColors.dark, isFalse);
   });
 }

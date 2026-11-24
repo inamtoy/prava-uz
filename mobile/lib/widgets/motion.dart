@@ -3,10 +3,21 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
+import '../settings.dart';
 import '../theme.dart';
 
-/// Javobdan keyingi "his": to'g'ri — yengil titrash, xato — ikki marta kuchliroq.
+const _sound = MethodChannel('uz.prava/updater');
+
+/// Javobdan keyingi "his" (sozlamalarga ko'ra): ovoz va titrash.
+/// To'g'ri — yengil titrash va qisqa "tasdiq" ovozi, xato — ikki marta kuchliroq va "xato" ovozi.
 Future<void> answerHaptic(bool correct) async {
+  final s = AppSettings.instance;
+  if (s.sound) {
+    try {
+      await _sound.invokeMethod('tone', {'ok': correct});
+    } catch (_) {} // ovoz chiqmasa — muhim emas
+  }
+  if (!s.vibration) return;
   if (correct) {
     await HapticFeedback.lightImpact();
   } else {
@@ -32,7 +43,7 @@ class _ShakeState extends State<Shake> with SingleTickerProviderStateMixin {
   @override
   void didUpdateWidget(Shake old) {
     super.didUpdateWidget(old);
-    if (widget.trigger != old.trigger && !MediaQuery.of(context).disableAnimations) _c.forward(from: 0);
+    if (widget.trigger != old.trigger && AppSettings.motionOn(context)) _c.forward(from: 0);
   }
 
   @override
@@ -74,7 +85,7 @@ class _Piece {
   final double x, delay, speed, drift, spin, size;
   final Color color;
   // "Yo'l belgisi" palitrasi: ko'k, yashil, qizil, och ko'k (sariq — faqat ogohlantirish uchun)
-  static const _colors = [AppColors.primary, AppColors.success, AppColors.danger, Color(0xFF6FA2D6)];
+  static List<Color> get _colors => [AppColors.primary, AppColors.success, AppColors.danger, Color(0xFF6FA2D6)];
 }
 
 class _ConfettiState extends State<Confetti> with SingleTickerProviderStateMixin {
@@ -85,7 +96,7 @@ class _ConfettiState extends State<Confetti> with SingleTickerProviderStateMixin
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      if (mounted && !MediaQuery.of(context).disableAnimations) _c.forward();
+      if (mounted && AppSettings.motionOn(context)) _c.forward();
     });
   }
 

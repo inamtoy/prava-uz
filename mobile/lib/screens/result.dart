@@ -89,7 +89,7 @@ class _MistakeCard extends StatelessWidget {
           border: Border(left: BorderSide(color: color, width: 4)),
         ),
         child: RichText(
-          text: TextSpan(style: const TextStyle(color: AppColors.ink, fontSize: 15, height: 1.35), children: [
+          text: TextSpan(style: TextStyle(color: AppColors.ink, fontSize: 15, height: 1.35), children: [
             TextSpan(text: '$label: ', style: TextStyle(fontWeight: FontWeight.w700, color: color)),
             TextSpan(text: text ?? 'Javob berilmagan'),
           ]),
@@ -103,7 +103,7 @@ class _MistakeCard extends StatelessWidget {
       child: Padding(
         padding: const EdgeInsets.all(14),
         child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-          Text('${m['order']}-savol', style: const TextStyle(color: AppColors.ink2, fontSize: 13)),
+          Text('${m['order']}-savol', style: TextStyle(color: AppColors.ink2, fontSize: 13)),
           const SizedBox(height: 6),
           if (m['image'] != null) ...[
             ClipRRect(borderRadius: BorderRadius.circular(6), child: Image.network(m['image'] as String)),
@@ -114,7 +114,7 @@ class _MistakeCard extends StatelessWidget {
           _line('Toʻgʻri javob', m['correct_answer'] as String?, AppColors.success, AppColors.successSoft),
           if (explanation.isNotEmpty) ...[
             const SizedBox(height: 10),
-            Text(explanation, style: const TextStyle(color: AppColors.ink2, height: 1.4)),
+            Text(explanation, style: TextStyle(color: AppColors.ink2, height: 1.4)),
           ],
         ]),
       ),

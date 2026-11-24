@@ -4,6 +4,7 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 
 import '../api.dart';
+import '../settings.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
 import '../widgets/motion.dart';
@@ -190,7 +191,7 @@ class _QuizScreenState extends State<QuizScreen> {
             else
               Center(
                 child: Text('$_correct / $_answered toʻgʻri',
-                    style: const TextStyle(color: AppColors.ink2, fontSize: 14)),
+                    style: TextStyle(color: AppColors.ink2, fontSize: 14)),
               ),
             TextButton(onPressed: _finishing ? null : () => _finish(), child: const Text('Yakunlash')),
           ],
@@ -299,7 +300,7 @@ class _QuestionCard extends StatelessWidget {
               height: 120,
               color: AppColors.line,
               alignment: Alignment.center,
-              child: const Text('Rasm yuklanmadi', style: TextStyle(color: AppColors.ink2)),
+              child: Text('Rasm yuklanmadi', style: TextStyle(color: AppColors.ink2)),
             ),
           ),
         ),
@@ -369,7 +370,7 @@ class _AnswerButton extends StatelessWidget {
       _AnswerState.idle => (AppColors.surface, AppColors.line, AppColors.primary),
     };
     // To'g'ri javob belgilanganda tugma bir marta "chaqnaydi" (kattalashib qaytadi)
-    final pop = state == _AnswerState.correct ? 1.0 : 0.0;
+    final pop = state == _AnswerState.correct && AppSettings.motionOn(context) ? 1.0 : 0.0;
     return TweenAnimationBuilder<double>(
       tween: Tween(begin: pop, end: pop),
       duration: const Duration(milliseconds: 450),
@@ -398,8 +399,8 @@ class _AnswerButton extends StatelessWidget {
                 ),
                 const SizedBox(width: 12),
                 Expanded(child: Text(text, style: const TextStyle(fontSize: 16, height: 1.3))),
-                if (state == _AnswerState.correct) const Icon(Icons.check_circle, color: AppColors.success),
-                if (state == _AnswerState.wrong) const Icon(Icons.cancel, color: AppColors.danger),
+                if (state == _AnswerState.correct) Icon(Icons.check_circle, color: AppColors.success),
+                if (state == _AnswerState.wrong) Icon(Icons.cancel, color: AppColors.danger),
               ]),
             ),
           ),
@@ -415,7 +416,9 @@ class _Appear extends StatelessWidget {
   final Widget child;
 
   @override
-  Widget build(BuildContext context) => TweenAnimationBuilder<double>(
+  Widget build(BuildContext context) => !AppSettings.motionOn(context)
+      ? child
+      : TweenAnimationBuilder<double>(
         tween: Tween(begin: 0, end: 1),
         duration: const Duration(milliseconds: 260),
         curve: Curves.easeOut,

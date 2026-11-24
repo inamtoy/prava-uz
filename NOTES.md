@@ -174,3 +174,11 @@ Foydalanuvchi so'rovi: yangi versiya chiqqanda ilovada oyna chiqsin, "Yangilash"
 - Yangilanish faqat bir xil kalit bilan imzolangan APK ustiga o'rnatiladi. Hozir debug kalit (shu kompyuterdagi `~/.android/debug.keystore`) — boshqa kompyuterda yig'ilgan APK eski ilova ustiga o'rnatilmaydi. Production uchun alohida release kalit yaratib, uni saqlash kerak.
 - Debug APK ~180 MB (release ~20 MB bo'ladi, lekin release'da HTTP taqiqlangan — production HTTPS bilan release'ga o'tiladi).
 - `androidx.core:core-ktx` qo'shildi (FileProvider uchun).
+
+## Sozlamalar va haftalik reyting (2026-11-25)
+Foydalanuvchi so'rovi. Til qo'shilmadi (foydalanuvchi: "hozir shart emas").
+- **Reyting jadvali** CLAUDE.md da "keyinga qoladi" edi — foydalanuvchi endi so'radi. Qaror: **haftalik TOP-10**, mezon — shu hafta (dushanba 00:00 Toshkent vaqtidan) to'g'ri javoblar soni, barcha rejimlarda. Teng natijada shu songa oldinroq yetgan yuqorida. Admin rolidagilar va `show_in_leaderboard=False` qilganlar kirmaydi; foydalanuvchi o'z natijasini baribir ko'radi. Ism — `first_name`, bo'sh bo'lsa login. Sayt: `/reyting/`, API: `GET /api/v1/leaderboard/`, ilovada "Reyting" tabi.
+- **Profil sozlamalari** (sayt `/accounts/sozlamalar/`, API `POST /api/v1/me/`, `POST /api/v1/me/password/`): ism, email (noyob), reytingda ko'rinish, parolni o'zgartirish (sessiya/token saqlanadi). Login o'zgartirilmaydi.
+- **Ilova sozlamalari** (faqat qurilmada, `shared_preferences`): vibratsiya (sukut: yoqiq), ovoz (sukut: o'chiq), animatsiyalar (yoqiq), mavzu — yorug'/qorong'i/tizim. Ovoz — Android `ToneGenerator` tizim ohanglari (fayl va paketsiz, `MainActivity.kt` "tone"). Telefonning "animatsiyalarni kamaytirish" sozlamasi ham hurmat qilinadi.
+- **Qorong'i rejim**: `AppColors` endi `const` emas — `AppColors.dark` ga qarab qiymat qaytaradi; mavzu o'zgarganda `main.dart` butun element daraxtini qayta chizadi (ekranlar holati saqlanadi). Yo'l belgisi doirasi (oq fon, qora raqam) har ikki rejimda bir xil. Qorong'i palitra: fon #0F1215, karta #1A1E23, primary #3A7FC2.
+- Saytda qorong'i rejim qilinmadi (so'rov ilova uchun edi).

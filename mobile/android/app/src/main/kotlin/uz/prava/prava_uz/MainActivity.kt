@@ -1,6 +1,8 @@
 package uz.prava.prava_uz
 
 import android.content.Intent
+import android.media.AudioManager
+import android.media.ToneGenerator
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
@@ -11,15 +13,35 @@ import io.flutter.plugin.common.MethodChannel
 import java.io.File
 
 /**
- * Ilova ichidan yangilanish: Dart APK'ni cacheDir/updates/ ga yuklab oladi,
- * bu yerdan esa Android o'rnatish oynasi ochiladi (FileProvider orqali).
+ * "uz.prava/updater" kanali: ilova ichidan yangilanish (Dart APK'ni cacheDir/updates/ ga yuklab oladi,
+ * bu yerdan Android o'rnatish oynasi ochiladi — FileProvider orqali) va javob ovozi ("tone").
  */
 class MainActivity : FlutterActivity() {
+    private var tones: ToneGenerator? = null
+
+    override fun onDestroy() {
+        tones?.release()
+        tones = null
+        super.onDestroy()
+    }
+
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, "uz.prava/updater").setMethodCallHandler { call, result ->
             when (call.method) {
                 "versionCode" -> result.success(currentVersionCode())
+                "versionName" -> result.success(packageManager.getPackageInfo(packageName, 0).versionName)
+                // Javob ovozi (sozlamada yoqilgan bo'lsa): fayl/paketsiz, tizim ohanglari bilan
+                "tone" -> {
+                    val ok = call.argument<Boolean>("ok") ?: true
+                    try {
+                        val tg = tones ?: ToneGenerator(AudioManager.STREAM_MUSIC, 60).also { tones = it }
+                        tg.startTone(if (ok) ToneGenerator.TONE_PROP_ACK else ToneGenerator.TONE_PROP_NACK, 180)
+                    } catch (_: RuntimeException) {
+                        // ba'zi qurilmalarda ToneGenerator yaratilmaydi — ovozsiz davom etamiz
+                    }
+                    result.success(null)
+                }
                 "updatesDir" -> {
                     val dir = File(cacheDir, "updates").apply { mkdirs() }
                     result.success(dir.absolutePath)

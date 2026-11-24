@@ -142,7 +142,7 @@ class _TicketTile extends StatelessWidget {
           padding: const EdgeInsets.all(8),
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             Text('${topic['order']}', style: barlow(size: 24, weight: FontWeight.w700)),
-            const Text('bilet', style: TextStyle(fontSize: 12, color: AppColors.ink2)),
+            Text('bilet', style: TextStyle(fontSize: 12, color: AppColors.ink2)),
             const SizedBox(height: 6),
             ClipRRect(
               borderRadius: BorderRadius.circular(3),

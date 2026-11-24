@@ -49,7 +49,7 @@ class _LoginScreenState extends State<LoginScreen> {
             const SizedBox(height: 16),
             Center(child: Text('Prava.uz', style: barlow(size: 30, weight: FontWeight.w700))),
             const SizedBox(height: 4),
-            const Center(
+            Center(
               child: Text('Haydovchilik imtihoniga tayyorlaning', style: TextStyle(color: AppColors.ink2)),
             ),
             const SizedBox(height: 32),
@@ -69,7 +69,7 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
             if (_error != null) ...[
               const SizedBox(height: 12),
-              Text(_error!, style: const TextStyle(color: AppColors.danger)),
+              Text(_error!, style: TextStyle(color: AppColors.danger)),
             ],
             const SizedBox(height: 20),
             FilledButton(
@@ -151,7 +151,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
             _field('password', 'Parol', obscure: true),
             _field('password2', 'Parolni takrorlang', obscure: true),
             if (_error != null) ...[
-              Text(_error!, style: const TextStyle(color: AppColors.danger)),
+              Text(_error!, style: TextStyle(color: AppColors.danger)),
               const SizedBox(height: 12),
             ],
             FilledButton(

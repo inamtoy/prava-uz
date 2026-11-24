@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../api.dart';
+import '../settings.dart';
 import '../theme.dart';
 import '../widgets/common.dart';
 import '../widgets/motion.dart';
@@ -10,7 +11,7 @@ import 'quiz.dart';
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.onOpenTab});
 
-  /// HomeShell'dagi tabni ochish: 1 — Biletlar, 2 — Imtihon, 3 — Profil.
+  /// HomeShell'dagi tabni ochish: 1 — Biletlar, 2 — Imtihon, 3 — Reyting, 4 — Profil.
   final ValueChanged<int> onOpenTab;
 
   @override
@@ -59,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               Text('Kunlik maqsad', style: barlow(size: 22, weight: FontWeight.w700)),
               const SizedBox(height: 4),
-              const Text('Har kuni nechta savol yechmoqchisiz?', style: TextStyle(color: AppColors.ink2)),
+              Text('Har kuni nechta savol yechmoqchisiz?', style: TextStyle(color: AppColors.ink2)),
               const SizedBox(height: 16),
               Wrap(
                 spacing: 10,
@@ -184,7 +185,7 @@ class HomeDashboard extends StatelessWidget {
             ),
             const SizedBox(width: 10),
             Expanded(
-              child: _Tile(icon: Icons.insights_rounded, label: 'Natijalar', onTap: () => onOpenTab(3)),
+              child: _Tile(icon: Icons.emoji_events_rounded, label: 'Reyting', onTap: () => onOpenTab(3)),
             ),
           ],
         ),
@@ -240,7 +241,7 @@ class _ResumeCard extends StatelessWidget {
             width: 42,
             height: 42,
             decoration: BoxDecoration(color: Colors.white, borderRadius: BorderRadius.circular(4)),
-            child: const Icon(Icons.play_arrow_rounded, color: AppColors.primary, size: 30),
+            child: Icon(Icons.play_arrow_rounded, color: AppColors.primary, size: 30),
           ),
           const SizedBox(width: 12),
           Expanded(
@@ -308,7 +309,7 @@ class _GoalCard extends StatelessWidget {
                   if (reached)
                     Row(
                       children: [
-                        const Icon(Icons.check_circle, color: AppColors.success, size: 20),
+                        Icon(Icons.check_circle, color: AppColors.success, size: 20),
                         const SizedBox(width: 6),
                         Expanded(
                           child: Text(
@@ -372,7 +373,7 @@ class _StreakCard extends StatelessWidget {
                               text: '$streak',
                               style: barlow(size: 28, weight: FontWeight.w700),
                             ),
-                            const TextSpan(
+                            TextSpan(
                               text: ' kun ketma-ket',
                               style: TextStyle(fontSize: 16, color: AppColors.ink2),
                             ),
@@ -453,7 +454,7 @@ class _FlameState extends State<_Flame> with SingleTickerProviderStateMixin {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    if (widget.on && !MediaQuery.of(context).disableAnimations && !_c.isAnimating) _c.repeat(reverse: true);
+    if (widget.on && AppSettings.motionOn(context) && !_c.isAnimating) _c.repeat(reverse: true);
   }
 
   @override
@@ -526,7 +527,7 @@ class _MistakesCard extends StatelessWidget {
             count > 0
                 ? 'Har birini 2 marta ketma-ket toʻgʻri yeching — roʻyxatdan chiqadi.'
                 : 'Biletlarni yechganingizda xato qilingan savollar shu yerga yigʻiladi.',
-            style: const TextStyle(color: AppColors.ink2, height: 1.35),
+            style: TextStyle(color: AppColors.ink2, height: 1.35),
           ),
           if (count > 0) ...[
             const SizedBox(height: 12),
@@ -553,7 +554,7 @@ class _Tile extends StatelessWidget {
     color: AppColors.surface,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(10),
-      side: const BorderSide(color: AppColors.line),
+      side: BorderSide(color: AppColors.line),
     ),
     child: InkWell(
       onTap: onTap,
@@ -613,7 +614,7 @@ class _Overall extends StatelessWidget {
       const SizedBox(height: 6),
       Text(
         '$solved / $total savol mashqda toʻgʻri yechilgan',
-        style: const TextStyle(color: AppColors.ink2, fontSize: 13),
+        style: TextStyle(color: AppColors.ink2, fontSize: 13),
       ),
     ],
   );

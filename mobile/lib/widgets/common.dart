@@ -38,10 +38,10 @@ class LimitSign extends StatelessWidget {
               shape: BoxShape.circle,
               border: Border.all(color: AppColors.danger, width: 8),
             ),
-            child: Text(value, style: barlow(size: 24, weight: FontWeight.w700)),
+            child: Text(value, style: barlow(size: 24, weight: FontWeight.w700, color: AppColors.signInk)),
           ),
           const SizedBox(height: 6),
-          Text(label, style: const TextStyle(color: AppColors.ink2, fontSize: 14)),
+          Text(label, style: TextStyle(color: AppColors.ink2, fontSize: 14)),
         ],
       );
 }
@@ -70,7 +70,7 @@ class ErrorView extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(24),
           child: Column(mainAxisSize: MainAxisSize.min, children: [
-            const Icon(Icons.wifi_off_rounded, size: 48, color: AppColors.ink2),
+            Icon(Icons.wifi_off_rounded, size: 48, color: AppColors.ink2),
             const SizedBox(height: 12),
             Text(message, textAlign: TextAlign.center),
             const SizedBox(height: 16),

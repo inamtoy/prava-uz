@@ -77,7 +77,7 @@ class _ExamStartScreenState extends State<ExamStartScreen> {
                       '${(count as int) - mistakes} ta toʻgʻri javob kerak. Javob berilmagan savol xato hisoblanadi. '
                       'Har bir savolga birinchi javobingiz yakuniy.',
                       textAlign: TextAlign.center,
-                      style: const TextStyle(color: AppColors.ink2, height: 1.4),
+                      style: TextStyle(color: AppColors.ink2, height: 1.4),
                     ),
                   ]),
                 ),
@@ -90,7 +90,7 @@ class _ExamStartScreenState extends State<ExamStartScreen> {
               ),
               if (current != null) ...[
                 const SizedBox(height: 10),
-                const Text(
+                Text(
                   'Sizda tugallanmagan imtihon bor. Vaqt hisoblanishda davom etmoqda.',
                   textAlign: TextAlign.center,
                   style: TextStyle(color: AppColors.ink2),
